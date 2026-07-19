@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Kathy_Hochul"
+		texturefile = "gfx/leaders/NYK/Portrait_NYK_Kathy_Hochul.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Elise_Stefanik"
+		texturefile = "gfx/leaders/NYK/Portrait_NYK_Elise_Stefanik.dds"
+	}
+
+}

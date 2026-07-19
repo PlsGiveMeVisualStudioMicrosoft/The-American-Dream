@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Tina_Kotek"
+		texturefile = "gfx/leaders/ORE/Portrait_ORE_Tina_Kotek.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Christine_Drazan"
+		texturefile = "gfx/leaders/ORE/Portrait_ORE_Christine_Drazan.dds"
+	}
+
+}

@@ -1,0 +1,35 @@
+state={
+	id=78
+	name="STATE_78"
+	history={
+		owner = USA
+		victory_points = {
+			3502 5
+		}
+		victory_points = {
+			3728 5
+		}
+		victory_points = {
+			8573 3
+		}
+		victory_points = {
+			8579 3
+		}
+		victory_points = {
+			8585 3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 6
+		}
+		add_core_of = USA
+		add_core_of = USA
+	}
+
+	provinces={
+		2871 3502 3728 5140 8561 8573 8579 8585 8597 9617 9618 
+	}
+	manpower=3200000
+	state_category=city
+	buildings_max_level_factor=1.000
+}

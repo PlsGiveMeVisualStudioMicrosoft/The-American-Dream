@@ -1,0 +1,28 @@
+characters={
+	OHI_Mike_DeWine={
+		name=OHI_Mike_DeWine
+		portraits={
+			civilian={
+				large="GFX_Portrait_OHI_Mike_DeWine"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	OHI_Sherrod_Brown={
+		name=OHI_Sherrod_Brown
+		portraits={
+			civilian={
+				large="GFX_Portrait_OHI_Sherrod_Brown"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Spencer_Cox"
+		texturefile = "gfx/leaders/UTA/Portrait_UTA_Spencer_Cox.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Ben_McAdams"
+		texturefile = "gfx/leaders/UTA/Portrait_UTA_Ben_McAdams.dds"
+	}
+
+}

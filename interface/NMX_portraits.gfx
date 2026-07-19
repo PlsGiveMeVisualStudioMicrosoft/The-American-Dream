@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Michelle_Lujan_Grisham"
+		texturefile = "gfx/leaders/NMX/Portrait_NMX_Michelle_Lujan_Grisham.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Mark_Ronchetti"
+		texturefile = "gfx/leaders/NMX/Portrait_NMX_Mark_Ronchetti.dds"
+	}
+
+}

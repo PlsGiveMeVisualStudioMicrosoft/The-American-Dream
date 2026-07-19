@@ -1,0 +1,28 @@
+characters={
+	IND_Mike_Braun={
+		name=IND_Mike_Braun
+		portraits={
+			civilian={
+				large="GFX_Portrait_IND_Mike_Braun"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	IND_Jennifer_McCormick={
+		name=IND_Jennifer_McCormick
+		portraits={
+			civilian={
+				large="GFX_Portrait_IND_Jennifer_McCormick"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

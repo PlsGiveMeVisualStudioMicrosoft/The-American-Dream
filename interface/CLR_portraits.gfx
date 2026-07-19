@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Jared_Polis"
+		texturefile = "gfx/leaders/CLR/Portrait_CLR_Jared_Polis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Lauren_Boebert"
+		texturefile = "gfx/leaders/CLR/Portrait_CLR_Lauren_Boebert.dds"
+	}
+
+}

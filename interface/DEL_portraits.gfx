@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Bethany_HallLong"
+		texturefile = "gfx/leaders/DEL/Portrait_DEL_Bethany_HallLong.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Mike_Ramone"
+		texturefile = "gfx/leaders/DEL/Portrait_DEL_Mike_Ramone.dds"
+	}
+
+}

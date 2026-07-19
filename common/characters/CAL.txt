@@ -1,0 +1,28 @@
+characters={
+	CAL_Gavin_Newsom={
+		name=CAL_Gavin_Newsom
+		portraits={
+			civilian={
+				large="GFX_Portrait_CAL_Gavin_Newsom"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	CAL_Kevin_McCarthy={
+		name=CAL_Kevin_McCarthy
+		portraits={
+			civilian={
+				large="GFX_Portrait_CAL_Kevin_McCarthy"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

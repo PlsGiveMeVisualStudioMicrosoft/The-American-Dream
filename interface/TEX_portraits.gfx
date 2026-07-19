@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Greg_Abbott"
+		texturefile = "gfx/leaders/TEX/Portrait_TEX_Greg_Abbott.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Beto_ORourke"
+		texturefile = "gfx/leaders/TEX/Portrait_TEX_Beto_ORourke.dds"
+	}
+
+}

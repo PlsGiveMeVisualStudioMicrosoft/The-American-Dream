@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Mike_Braun"
+		texturefile = "gfx/leaders/IND/Portrait_IND_Mike_Braun.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Jennifer_McCormick"
+		texturefile = "gfx/leaders/IND/Portrait_IND_Jennifer_McCormick.dds"
+	}
+
+}

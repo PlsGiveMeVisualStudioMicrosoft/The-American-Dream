@@ -1,0 +1,42 @@
+
+state={
+	id=37
+	name="STATE_37"
+
+	history={
+		owner = USA
+		victory_points = {
+			3979 20
+		}
+		victory_points = {
+			6935 10
+		}
+		victory_points = {
+			6918 5
+		}
+		victory_points = {
+			5844 3
+		}
+		victory_points = {
+			1395 3
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 11
+			arms_factory = 1
+		}
+		add_core_of = NYK
+
+		add_core_of = USA
+	}
+
+	provinces={
+		290 595 599 915 1073 1077 1395 1526 1565 1862 2340 2639 2719 2757 3029 3127 3385 3549 3599 3626 3682 3723 3922 3979 4133 4248 4520 4583 4764 4809 4860 4926 4988 5042 5146 5161 5298 5362 5517 5606 5683 5721 5780 5844 5919 6723 6757 6759 6793 6796 6806 6824 6826 6831 6839 6840 6870 6874 6878 6903 6911 6912 6918 6926 6931 6935 6936 6937 6939 6955 6956 6961 6962 6965 6971 6983 6988 7006 7007 7016 7019 7020 14501 14542 14546 14560 
+	}
+	manpower=20002427
+	resources={
+		aluminium = 4 # Massena
+	}
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

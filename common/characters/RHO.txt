@@ -1,0 +1,28 @@
+characters={
+	RHO_Dan_McKee={
+		name=RHO_Dan_McKee
+		portraits={
+			civilian={
+				large="GFX_Portrait_RHO_Dan_McKee"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	RHO_Allan_Fung={
+		name=RHO_Allan_Fung
+		portraits={
+			civilian={
+				large="GFX_Portrait_RHO_Allan_Fung"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

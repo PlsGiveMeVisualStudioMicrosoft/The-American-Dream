@@ -1,0 +1,28 @@
+characters={
+	ARZ_Katie_Hobbs={
+		name=ARZ_Katie_Hobbs
+		portraits={
+			civilian={
+				large="GFX_Portrait_ARZ_Katie_Hobbs"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	ARZ_Kari_Lake={
+		name=ARZ_Kari_Lake
+		portraits={
+			civilian={
+				large="GFX_Portrait_ARZ_Kari_Lake"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

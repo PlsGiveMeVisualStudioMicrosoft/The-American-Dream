@@ -1,0 +1,28 @@
+characters={
+	KAN_Laura_Kelly={
+		name=KAN_Laura_Kelly
+		portraits={
+			civilian={
+				large="GFX_Portrait_KAN_Laura_Kelly"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	KAN_Kris_Kobach={
+		name=KAN_Kris_Kobach
+		portraits={
+			civilian={
+				large="GFX_Portrait_KAN_Kris_Kobach"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

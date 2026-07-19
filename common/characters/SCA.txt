@@ -1,0 +1,28 @@
+characters={
+	SCA_Henry_McMaster={
+		name=SCA_Henry_McMaster
+		portraits={
+			civilian={
+				large="GFX_Portrait_SCA_Henry_McMaster"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	SCA_Jaime_Harrison={
+		name=SCA_Jaime_Harrison
+		portraits={
+			civilian={
+				large="GFX_Portrait_SCA_Jaime_Harrison"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,28 @@
+characters={
+	VIR_Glenn_Youngkin={
+		name=VIR_Glenn_Youngkin
+		portraits={
+			civilian={
+				large="GFX_Portrait_VIR_Glenn_Youngkin"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	VIR_Abigail_Spanberger={
+		name=VIR_Abigail_Spanberger
+		portraits={
+			civilian={
+				large="GFX_Portrait_VIR_Abigail_Spanberger"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

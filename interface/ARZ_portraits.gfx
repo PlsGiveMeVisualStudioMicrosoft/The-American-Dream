@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Katie_Hobbs"
+		texturefile = "gfx/leaders/ARZ/Portrait_ARZ_Katie_Hobbs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Kari_Lake"
+		texturefile = "gfx/leaders/ARZ/Portrait_ARZ_Kari_Lake.dds"
+	}
+
+}

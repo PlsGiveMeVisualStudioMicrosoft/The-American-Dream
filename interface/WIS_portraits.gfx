@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Tony_Evers"
+		texturefile = "gfx/leaders/WIS/Portrait_WIS_Tony_Evers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Ron_Johnson"
+		texturefile = "gfx/leaders/WIS/Portrait_WIS_Ron_Johnson.dds"
+	}
+
+}

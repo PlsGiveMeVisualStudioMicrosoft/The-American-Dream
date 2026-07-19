@@ -1,0 +1,28 @@
+characters={
+	MON_Greg_Gianforte={
+		name=MON_Greg_Gianforte
+		portraits={
+			civilian={
+				large="GFX_Portrait_MON_Greg_Gianforte"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	MON_Jon_Tester={
+		name=MON_Jon_Tester
+		portraits={
+			civilian={
+				large="GFX_Portrait_MON_Jon_Tester"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

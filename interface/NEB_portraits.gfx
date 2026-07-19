@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Jim_Pillen"
+		texturefile = "gfx/leaders/NEB/Portrait_NEB_Jim_Pillen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Jane_Kleeb"
+		texturefile = "gfx/leaders/NEB/Portrait_NEB_Jane_Kleeb.dds"
+	}
+
+}

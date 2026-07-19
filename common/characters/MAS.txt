@@ -1,0 +1,28 @@
+characters={
+	MAS_Maura_Healey={
+		name=MAS_Maura_Healey
+		portraits={
+			civilian={
+				large="GFX_Portrait_MAS_Maura_Healey"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	MAS_Charlie_Baker={
+		name=MAS_Charlie_Baker
+		portraits={
+			civilian={
+				large="GFX_Portrait_MAS_Charlie_Baker"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

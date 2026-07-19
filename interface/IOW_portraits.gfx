@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Kim_Reynolds"
+		texturefile = "gfx/leaders/IOW/Portrait_IOW_Kim_Reynolds.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Rob_Sand"
+		texturefile = "gfx/leaders/IOW/Portrait_IOW_Rob_Sand.dds"
+	}
+
+}

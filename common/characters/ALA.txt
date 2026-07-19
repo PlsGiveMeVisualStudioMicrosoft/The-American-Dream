@@ -1,0 +1,28 @@
+characters={
+	ALA_Kay_Ivey={
+		name=ALA_Kay_Ivey
+		portraits={
+			civilian={
+				large="GFX_Portrait_ALA_Kay_Ivey"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	ALA_Doug_Jones={
+		name=ALA_Doug_Jones
+		portraits={
+			civilian={
+				large="GFX_Portrait_ALA_Doug_Jones"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

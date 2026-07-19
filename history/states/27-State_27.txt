@@ -1,0 +1,28 @@
+
+state={
+	id=27
+	name="STATE_27"
+	history={
+		owner = USA
+		victory_points = {
+			6736 1
+		}
+		victory_points = {
+			2403 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 1
+		}
+		add_core_of = MAI
+		add_core_of = USA
+	}
+
+	provinces={
+		437 966 1043 2159 2403 2605 2950 2987 3062 3243 3474 3553 3621 3775 3778 3822 3879 3993 4441 4580 4590 5037 5126 5426 5450 5472 5789 6489 6498 6511 6530 6552 6559 6576 6589 6590 6595 6602 6610 6617 6619 6630 6642 6643 6663 6664 6671 6672 6684 6690 6736 14870 
+	}
+	manpower=1414874
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

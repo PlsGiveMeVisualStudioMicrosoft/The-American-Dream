@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Joe_Lombardo"
+		texturefile = "gfx/leaders/NEV/Portrait_NEV_Joe_Lombardo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Steve_Sisolak"
+		texturefile = "gfx/leaders/NEV/Portrait_NEV_Steve_Sisolak.dds"
+	}
+
+}

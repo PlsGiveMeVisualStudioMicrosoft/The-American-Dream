@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Mike_Dunleavy"
+		texturefile = "gfx/leaders/ALK/Portrait_ALK_Mike_Dunleavy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Mary_Peltola"
+		texturefile = "gfx/leaders/ALK/Portrait_ALK_Mary_Peltola.dds"
+	}
+
+}

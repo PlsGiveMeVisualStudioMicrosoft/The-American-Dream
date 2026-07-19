@@ -1,0 +1,28 @@
+characters={
+	SDA_Kristi_Noem={
+		name=SDA_Kristi_Noem
+		portraits={
+			civilian={
+				large="GFX_Portrait_SDA_Kristi_Noem"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	SDA_Billie_Sutton={
+		name=SDA_Billie_Sutton
+		portraits={
+			civilian={
+				large="GFX_Portrait_SDA_Billie_Sutton"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

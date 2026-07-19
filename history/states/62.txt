@@ -1,0 +1,37 @@
+
+state={
+	id=62
+	name="STATE_62"
+	history={
+		owner = USA
+		victory_points = {
+			2771 5
+		}
+		victory_points = {
+			7806 5
+		}
+		victory_points = {
+			30 5
+		}
+		victory_points = {
+			7829 3
+		}
+		victory_points = {
+			2926 3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 7
+			arms_factory = 1
+		}
+		add_core_of = SCA
+		add_core_of = USA
+	}
+
+	provinces={
+		30 380 1000 1224 1303 1315 1379 1573 1967 2051 2118 2269 2370 2705 2771 2781 2926 2979 3133 3208 3664 3761 4534 4619 4898 4998 5163 5200 5272 5279 5497 5579 5622 5625 5647 5680 7775 7778 7796 7800 7803 7806 7809 7819 7822 7829 7832 7835 7837 7839 7843 7850 7861 7862 7872 7881 7889 7897 7947 7952 7961 7984 
+	}
+	manpower=5570274
+	state_category=large_city
+	buildings_max_level_factor=1.000
+}

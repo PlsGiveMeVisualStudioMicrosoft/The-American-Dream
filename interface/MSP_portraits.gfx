@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Tate_Reeves"
+		texturefile = "gfx/leaders/MSP/Portrait_MSP_Tate_Reeves.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Brandon_Presley"
+		texturefile = "gfx/leaders/MSP/Portrait_MSP_Brandon_Presley.dds"
+	}
+
+}

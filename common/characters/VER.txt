@@ -1,0 +1,28 @@
+characters={
+	VER_Phil_Scott={
+		name=VER_Phil_Scott
+		portraits={
+			civilian={
+				large="GFX_Portrait_VER_Phil_Scott"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	VER_Bernie_Sanders={
+		name=VER_Bernie_Sanders
+		portraits={
+			civilian={
+				large="GFX_Portrait_VER_Bernie_Sanders"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

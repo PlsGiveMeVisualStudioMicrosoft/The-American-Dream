@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Dan_McKee"
+		texturefile = "gfx/leaders/RHO/Portrait_RHO_Dan_McKee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Allan_Fung"
+		texturefile = "gfx/leaders/RHO/Portrait_RHO_Allan_Fung.dds"
+	}
+
+}

@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Kelly_Ayotte"
+		texturefile = "gfx/leaders/NHA/Portrait_NHA_Kelly_Ayotte.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Jeanne_Shaheen"
+		texturefile = "gfx/leaders/NHA/Portrait_NHA_Jeanne_Shaheen.dds"
+	}
+
+}

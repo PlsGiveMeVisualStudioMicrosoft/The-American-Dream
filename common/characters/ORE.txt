@@ -1,0 +1,28 @@
+characters={
+	ORE_Tina_Kotek={
+		name=ORE_Tina_Kotek
+		portraits={
+			civilian={
+				large="GFX_Portrait_ORE_Tina_Kotek"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	ORE_Christine_Drazan={
+		name=ORE_Christine_Drazan
+		portraits={
+			civilian={
+				large="GFX_Portrait_ORE_Christine_Drazan"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

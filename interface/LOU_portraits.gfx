@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Jeff_Landry"
+		texturefile = "gfx/leaders/LOU/Portrait_LOU_Jeff_Landry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_John_Bel_Edwards"
+		texturefile = "gfx/leaders/LOU/Portrait_LOU_John_Bel_Edwards.dds"
+	}
+
+}

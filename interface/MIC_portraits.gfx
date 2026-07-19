@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Gretchen_Whitmer"
+		texturefile = "gfx/leaders/MIC/Portrait_MIC_Gretchen_Whitmer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Tudor_Dixon"
+		texturefile = "gfx/leaders/MIC/Portrait_MIC_Tudor_Dixon.dds"
+	}
+
+}

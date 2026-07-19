@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_Josh_Shapiro"
+		texturefile = "gfx/leaders/PEN/Portrait_PEN_Josh_Shapiro.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_Dave_McCormick"
+		texturefile = "gfx/leaders/PEN/Portrait_PEN_Dave_McCormick.dds"
+	}
+
+}

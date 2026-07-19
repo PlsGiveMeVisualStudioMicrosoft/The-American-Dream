@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_JB_Pritzker"
+		texturefile = "gfx/leaders/ILL/Portrait_ILL_JB_Pritzker.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Darren_Bailey"
+		texturefile = "gfx/leaders/ILL/Portrait_ILL_Darren_Bailey.dds"
+	}
+
+}

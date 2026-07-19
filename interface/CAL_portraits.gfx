@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Gavin_Newsom"
+		texturefile = "gfx/leaders/CAL/Portrait_CAL_Gavin_Newsom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Kevin_McCarthy"
+		texturefile = "gfx/leaders/CAL/Portrait_CAL_Kevin_McCarthy.dds"
+	}
+
+}

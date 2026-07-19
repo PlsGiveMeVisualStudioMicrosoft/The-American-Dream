@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Maura_Healey"
+		texturefile = "gfx/leaders/MAS/Portrait_MAS_Maura_Healey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Charlie_Baker"
+		texturefile = "gfx/leaders/MAS/Portrait_MAS_Charlie_Baker.dds"
+	}
+
+}

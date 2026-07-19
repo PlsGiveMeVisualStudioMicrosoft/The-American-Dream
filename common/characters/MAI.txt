@@ -1,0 +1,28 @@
+characters={
+	MAI_Janet_Mills={
+		name=MAI_Janet_Mills
+		portraits={
+			civilian={
+				large="GFX_Portrait_MAI_Janet_Mills"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	MAI_Susan_Collins={
+		name=MAI_Susan_Collins
+		portraits={
+			civilian={
+				large="GFX_Portrait_MAI_Susan_Collins"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

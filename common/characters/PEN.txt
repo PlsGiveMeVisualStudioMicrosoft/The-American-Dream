@@ -1,0 +1,28 @@
+characters={
+	PEN_Josh_Shapiro={
+		name=PEN_Josh_Shapiro
+		portraits={
+			civilian={
+				large="GFX_Portrait_PEN_Josh_Shapiro"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	PEN_Dave_McCormick={
+		name=PEN_Dave_McCormick
+		portraits={
+			civilian={
+				large="GFX_Portrait_PEN_Dave_McCormick"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

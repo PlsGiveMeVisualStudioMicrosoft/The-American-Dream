@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Henry_McMaster"
+		texturefile = "gfx/leaders/SCA/Portrait_SCA_Henry_McMaster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Jaime_Harrison"
+		texturefile = "gfx/leaders/SCA/Portrait_SCA_Jaime_Harrison.dds"
+	}
+
+}

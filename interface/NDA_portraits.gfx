@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Kelly_Armstrong"
+		texturefile = "gfx/leaders/NDA/Portrait_NDA_Kelly_Armstrong.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Heidi_Heitkamp"
+		texturefile = "gfx/leaders/NDA/Portrait_NDA_Heidi_Heitkamp.dds"
+	}
+
+}

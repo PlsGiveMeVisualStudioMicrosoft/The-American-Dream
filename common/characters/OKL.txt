@@ -1,0 +1,28 @@
+characters={
+	OKL_Kevin_Stitt={
+		name=OKL_Kevin_Stitt
+		portraits={
+			civilian={
+				large="GFX_Portrait_OKL_Kevin_Stitt"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	OKL_Kendra_Horn={
+		name=OKL_Kendra_Horn
+		portraits={
+			civilian={
+				large="GFX_Portrait_OKL_Kendra_Horn"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

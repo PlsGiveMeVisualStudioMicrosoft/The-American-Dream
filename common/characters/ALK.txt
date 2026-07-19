@@ -1,0 +1,28 @@
+characters={
+	ALK_Mike_Dunleavy={
+		name=ALK_Mike_Dunleavy
+		portraits={
+			civilian={
+				large="GFX_Portrait_ALK_Mike_Dunleavy"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	ALK_Mary_Peltola={
+		name=ALK_Mary_Peltola
+		portraits={
+			civilian={
+				large="GFX_Portrait_ALK_Mary_Peltola"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

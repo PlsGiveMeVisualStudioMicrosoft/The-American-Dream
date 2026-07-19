@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Greg_Gianforte"
+		texturefile = "gfx/leaders/MON/Portrait_MON_Greg_Gianforte.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Jon_Tester"
+		texturefile = "gfx/leaders/MON/Portrait_MON_Jon_Tester.dds"
+	}
+
+}

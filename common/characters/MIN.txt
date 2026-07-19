@@ -1,0 +1,28 @@
+characters={
+	MIN_Tim_Walz={
+		name=MIN_Tim_Walz
+		portraits={
+			civilian={
+				large="GFX_Portrait_MIN_Tim_Walz"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	MIN_Tom_Emmer={
+		name=MIN_Tom_Emmer
+		portraits={
+			civilian={
+				large="GFX_Portrait_MIN_Tom_Emmer"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,28 @@
+state={
+	id=74
+	name="STATE_74"
+	history={
+		owner = HAI
+		victory_points = {
+			8694 5
+		}
+		victory_points = {
+			1727 1
+		}
+		victory_points = {
+			5540 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 4
+		}
+		add_core_of = HAI
+	}
+
+	provinces={
+		895 1515 1727 2682 3200 4139 4525 5111 5490 5540 5862 8625 8635 8642 8645 8646 8672 8694 8703 8714 9622 9623 
+	}
+	manpower=11900000
+	state_category=town
+	buildings_max_level_factor=1.000
+}

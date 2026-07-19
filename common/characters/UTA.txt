@@ -1,0 +1,28 @@
+characters={
+	UTA_Spencer_Cox={
+		name=UTA_Spencer_Cox
+		portraits={
+			civilian={
+				large="GFX_Portrait_UTA_Spencer_Cox"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	UTA_Ben_McAdams={
+		name=UTA_Ben_McAdams
+		portraits={
+			civilian={
+				large="GFX_Portrait_UTA_Ben_McAdams"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

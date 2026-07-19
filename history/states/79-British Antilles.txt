@@ -1,0 +1,28 @@
+state={
+	id=79
+	name="STATE_79"
+	history={
+		owner = BAS
+		victory_points = {
+			9614 1
+		}
+		victory_points = {
+			9615 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 5
+		}
+		add_core_of = BAS
+	}
+
+	provinces={
+		9612 9614 9615 
+	}
+	manpower=3600000
+	resources={
+		oil = 4 # Trinidad
+	}
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,28 @@
+characters={
+	MSP_Tate_Reeves={
+		name=MSP_Tate_Reeves
+		portraits={
+			civilian={
+				large="GFX_Portrait_MSP_Tate_Reeves"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	MSP_Brandon_Presley={
+		name=MSP_Brandon_Presley
+		portraits={
+			civilian={
+				large="GFX_Portrait_MSP_Brandon_Presley"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

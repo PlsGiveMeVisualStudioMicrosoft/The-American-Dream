@@ -1,0 +1,28 @@
+characters={
+	CNT_Ned_Lamont={
+		name=CNT_Ned_Lamont
+		portraits={
+			civilian={
+				large="GFX_Portrait_CNT_Ned_Lamont"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	CNT_Bob_Stefanowski={
+		name=CNT_Bob_Stefanowski
+		portraits={
+			civilian={
+				large="GFX_Portrait_CNT_Bob_Stefanowski"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

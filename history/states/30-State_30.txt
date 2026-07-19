@@ -1,0 +1,27 @@
+state={
+	id=30
+	name="STATE_30"
+	history={
+		owner = USA
+		victory_points = {
+			2507 3
+		}
+		victory_points = {
+			6825 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 1
+		}
+		add_core_of = NHA
+		add_core_of = USA
+	}
+
+	provinces={
+		491 606 701 1915 2507 2895 5785 5866 5937 6679 6751 6765 6783 6790 6807 6811 6825 
+	}
+	manpower=1415342
+	state_category=city
+	buildings_max_level_factor=1.000
+}

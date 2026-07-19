@@ -1,0 +1,28 @@
+characters={
+	LOU_Jeff_Landry={
+		name=LOU_Jeff_Landry
+		portraits={
+			civilian={
+				large="GFX_Portrait_LOU_Jeff_Landry"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	LOU_John_Bel_Edwards={
+		name=LOU_John_Bel_Edwards
+		portraits={
+			civilian={
+				large="GFX_Portrait_LOU_John_Bel_Edwards"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

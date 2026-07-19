@@ -1,0 +1,34 @@
+state={
+	id=75
+	name="STATE_75"
+	history={
+		owner = DOM
+		victory_points = {
+			2976 5
+		}
+		victory_points = {
+			4555 3
+		}
+		victory_points = {
+			1721 3
+		}
+		victory_points = {
+			4501 3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 6
+		}
+		add_core_of = DOM
+	}
+
+	provinces={
+		841 1488 1721 1792 1848 2505 2976 3007 3149 3220 3640 4457 4501 4555 4729 4780 4794 5318 5323 5434 5505 5532 5551 8587 8592 8596 8600 8613 8615 8616 8618 8647 8650 8666 8701 8706 14944 
+	}
+	manpower=11500000
+	resources={
+		aluminium = 2 # bauxite
+	}
+	state_category=city
+	buildings_max_level_factor=1.000
+}

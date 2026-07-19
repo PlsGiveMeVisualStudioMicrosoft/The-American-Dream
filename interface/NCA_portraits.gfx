@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_Josh_Stein"
+		texturefile = "gfx/leaders/NCA/Portrait_NCA_Josh_Stein.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_Thom_Tillis"
+		texturefile = "gfx/leaders/NCA/Portrait_NCA_Thom_Tillis.dds"
+	}
+
+}

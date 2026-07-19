@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Phil_Murphy"
+		texturefile = "gfx/leaders/NJE/Portrait_NJE_Phil_Murphy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Jack_Ciattarelli"
+		texturefile = "gfx/leaders/NJE/Portrait_NJE_Jack_Ciattarelli.dds"
+	}
+
+}

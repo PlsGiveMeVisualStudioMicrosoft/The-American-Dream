@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Kamala_Harris"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Kamala_Harris.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Trump"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Trump.dds"
+	}
+
+}

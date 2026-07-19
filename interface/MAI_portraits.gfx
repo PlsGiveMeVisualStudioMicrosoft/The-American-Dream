@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Janet_Mills"
+		texturefile = "gfx/leaders/MAI/Portrait_MAI_Janet_Mills.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Susan_Collins"
+		texturefile = "gfx/leaders/MAI/Portrait_MAI_Susan_Collins.dds"
+	}
+
+}

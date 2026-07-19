@@ -1,0 +1,28 @@
+characters={
+	CLR_Jared_Polis={
+		name=CLR_Jared_Polis
+		portraits={
+			civilian={
+				large="GFX_Portrait_CLR_Jared_Polis"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	CLR_Lauren_Boebert={
+		name=CLR_Lauren_Boebert
+		portraits={
+			civilian={
+				large="GFX_Portrait_CLR_Lauren_Boebert"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

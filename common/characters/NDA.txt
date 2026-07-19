@@ -1,0 +1,28 @@
+characters={
+	NDA_Kelly_Armstrong={
+		name=NDA_Kelly_Armstrong
+		portraits={
+			civilian={
+				large="GFX_Portrait_NDA_Kelly_Armstrong"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	NDA_Heidi_Heitkamp={
+		name=NDA_Heidi_Heitkamp
+		portraits={
+			civilian={
+				large="GFX_Portrait_NDA_Heidi_Heitkamp"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

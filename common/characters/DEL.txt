@@ -1,0 +1,28 @@
+characters={
+	DEL_Bethany_HallLong={
+		name=DEL_Bethany_HallLong
+		portraits={
+			civilian={
+				large="GFX_Portrait_DEL_Bethany_HallLong"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	DEL_Mike_Ramone={
+		name=DEL_Mike_Ramone
+		portraits={
+			civilian={
+				large="GFX_Portrait_DEL_Mike_Ramone"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

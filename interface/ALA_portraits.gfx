@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Kay_Ivey"
+		texturefile = "gfx/leaders/ALA/Portrait_ALA_Kay_Ivey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Doug_Jones"
+		texturefile = "gfx/leaders/ALA/Portrait_ALA_Doug_Jones.dds"
+	}
+
+}

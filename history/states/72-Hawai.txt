@@ -1,0 +1,29 @@
+state={
+	id=72
+	name="STATE_72"
+	history={
+		owner = USA
+		victory_points = {
+			5786 3
+		}
+		victory_points = {
+			5051 1
+		}
+		victory_points = {
+			4274 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 6
+		}
+		add_core_of = HII
+		add_core_of = USA
+	}
+
+	provinces={
+		978 2484 2623 3009 4077 4267 4274 5001 5051 5065 5749 5786 8186 8232 9592 9595 
+	}
+	manpower=1432820
+	state_category=city
+	buildings_max_level_factor=1.000
+}

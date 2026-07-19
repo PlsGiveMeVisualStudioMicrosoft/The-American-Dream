@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Brian_Kemp"
+		texturefile = "gfx/leaders/GEO/Portrait_GEO_Brian_Kemp.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Stacey_Abrams"
+		texturefile = "gfx/leaders/GEO/Portrait_GEO_Stacey_Abrams.dds"
+	}
+
+}

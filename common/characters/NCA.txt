@@ -1,0 +1,28 @@
+characters={
+	NCA_Josh_Stein={
+		name=NCA_Josh_Stein
+		portraits={
+			civilian={
+				large="GFX_Portrait_NCA_Josh_Stein"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	NCA_Thom_Tillis={
+		name=NCA_Thom_Tillis
+		portraits={
+			civilian={
+				large="GFX_Portrait_NCA_Thom_Tillis"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

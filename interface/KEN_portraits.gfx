@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Andy_Beshear"
+		texturefile = "gfx/leaders/KEN/Portrait_KEN_Andy_Beshear.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Daniel_Cameron"
+		texturefile = "gfx/leaders/KEN/Portrait_KEN_Daniel_Cameron.dds"
+	}
+
+}

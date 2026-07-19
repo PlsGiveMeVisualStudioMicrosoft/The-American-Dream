@@ -1,0 +1,28 @@
+characters={
+	GEO_Brian_Kemp={
+		name=GEO_Brian_Kemp
+		portraits={
+			civilian={
+				large="GFX_Portrait_GEO_Brian_Kemp"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	GEO_Stacey_Abrams={
+		name=GEO_Stacey_Abrams
+		portraits={
+			civilian={
+				large="GFX_Portrait_GEO_Stacey_Abrams"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

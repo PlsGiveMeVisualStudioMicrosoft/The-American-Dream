@@ -1,0 +1,28 @@
+characters={
+	TEN_Bill_Lee={
+		name=TEN_Bill_Lee
+		portraits={
+			civilian={
+				large="GFX_Portrait_TEN_Bill_Lee"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	TEN_Justin_Jones={
+		name=TEN_Justin_Jones
+		portraits={
+			civilian={
+				large="GFX_Portrait_TEN_Justin_Jones"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

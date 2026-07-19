@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Laura_Kelly"
+		texturefile = "gfx/leaders/KAN/Portrait_KAN_Laura_Kelly.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Kris_Kobach"
+		texturefile = "gfx/leaders/KAN/Portrait_KAN_Kris_Kobach.dds"
+	}
+
+}

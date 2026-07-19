@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Brad_Little"
+		texturefile = "gfx/leaders/IDA/Portrait_IDA_Brad_Little.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Lauren_McLean"
+		texturefile = "gfx/leaders/IDA/Portrait_IDA_Lauren_McLean.dds"
+	}
+
+}

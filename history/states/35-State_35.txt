@@ -1,0 +1,24 @@
+
+state={
+	id=35
+	name="STATE_35"
+	history={
+		owner = USA
+		victory_points = {
+			6731 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+		}
+		add_core_of = VER
+		add_core_of = USA
+	}
+
+	provinces={
+		15 275 1352 1928 2339 2962 3539 4265 5382 5427 5561 6713 6724 6731 6753 6760 6767 6830 14886 
+	}
+	manpower=644663
+	state_category=town
+	buildings_max_level_factor=1.000
+}

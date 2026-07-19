@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Mike_Kehoe"
+		texturefile = "gfx/leaders/MSO/Portrait_MSO_Mike_Kehoe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Lucas_Kunce"
+		texturefile = "gfx/leaders/MSO/Portrait_MSO_Lucas_Kunce.dds"
+	}
+
+}

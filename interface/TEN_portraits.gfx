@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Bill_Lee"
+		texturefile = "gfx/leaders/TEN/Portrait_TEN_Bill_Lee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Justin_Jones"
+		texturefile = "gfx/leaders/TEN/Portrait_TEN_Justin_Jones.dds"
+	}
+
+}

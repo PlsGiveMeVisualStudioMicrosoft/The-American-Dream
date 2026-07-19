@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_Mike_DeWine"
+		texturefile = "gfx/leaders/OHI/Portrait_OHI_Mike_DeWine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_Sherrod_Brown"
+		texturefile = "gfx/leaders/OHI/Portrait_OHI_Sherrod_Brown.dds"
+	}
+
+}

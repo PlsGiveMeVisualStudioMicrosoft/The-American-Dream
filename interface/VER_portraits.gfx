@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Phil_Scott"
+		texturefile = "gfx/leaders/VER/Portrait_VER_Phil_Scott.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Bernie_Sanders"
+		texturefile = "gfx/leaders/VER/Portrait_VER_Bernie_Sanders.dds"
+	}
+
+}

@@ -1,0 +1,29 @@
+characters={
+	USA_Kamala_Harris={
+		name=USA_Kamala_Harris
+		portraits={
+			civilian={
+				large="GFX_Portrait_USA_Kamala_Harris"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	USA_Trump={
+		name=USA_Trump
+		portraits={
+			civilian={
+				large="GFX_Portrait_USA_Trump"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			traits={ GER_supreme_leader }
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

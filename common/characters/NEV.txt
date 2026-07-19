@@ -1,0 +1,28 @@
+characters={
+	NEV_Joe_Lombardo={
+		name=NEV_Joe_Lombardo
+		portraits={
+			civilian={
+				large="GFX_Portrait_NEV_Joe_Lombardo"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	NEV_Steve_Sisolak={
+		name=NEV_Steve_Sisolak
+		portraits={
+			civilian={
+				large="GFX_Portrait_NEV_Steve_Sisolak"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,28 @@
+characters={
+	NYK_Kathy_Hochul={
+		name=NYK_Kathy_Hochul
+		portraits={
+			civilian={
+				large="GFX_Portrait_NYK_Kathy_Hochul"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	NYK_Elise_Stefanik={
+		name=NYK_Elise_Stefanik
+		portraits={
+			civilian={
+				large="GFX_Portrait_NYK_Elise_Stefanik"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

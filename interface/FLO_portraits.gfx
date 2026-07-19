@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Ron_DeSantis"
+		texturefile = "gfx/leaders/FLO/Portrait_FLO_Ron_DeSantis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Nikki_Fried"
+		texturefile = "gfx/leaders/FLO/Portrait_FLO_Nikki_Fried.dds"
+	}
+
+}

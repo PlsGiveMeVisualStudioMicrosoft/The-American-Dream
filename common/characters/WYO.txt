@@ -1,0 +1,28 @@
+characters={
+	WYO_Mark_Gordon={
+		name=WYO_Mark_Gordon
+		portraits={
+			civilian={
+				large="GFX_Portrait_WYO_Mark_Gordon"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	WYO_Liz_Cheney={
+		name=WYO_Liz_Cheney
+		portraits={
+			civilian={
+				large="GFX_Portrait_WYO_Liz_Cheney"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

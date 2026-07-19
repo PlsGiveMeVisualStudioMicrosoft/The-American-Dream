@@ -1,0 +1,28 @@
+characters={
+	WVI_Patrick_Morrisey={
+		name=WVI_Patrick_Morrisey
+		portraits={
+			civilian={
+				large="GFX_Portrait_WVI_Patrick_Morrisey"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	WVI_Joe_Manchin={
+		name=WVI_Joe_Manchin
+		portraits={
+			civilian={
+				large="GFX_Portrait_WVI_Joe_Manchin"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

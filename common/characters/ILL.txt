@@ -1,0 +1,28 @@
+characters={
+	ILL_JB_Pritzker={
+		name=ILL_JB_Pritzker
+		portraits={
+			civilian={
+				large="GFX_Portrait_ILL_JB_Pritzker"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	ILL_Darren_Bailey={
+		name=ILL_Darren_Bailey
+		portraits={
+			civilian={
+				large="GFX_Portrait_ILL_Darren_Bailey"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

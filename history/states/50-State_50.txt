@@ -1,0 +1,33 @@
+state={
+	id=50
+	name="STATE_50"
+	history={
+		owner = USA
+		victory_points = {
+			5595 5
+		}
+		victory_points = {
+			5846 3
+		}
+		victory_points = {
+			1405 3
+		}
+		victory_points = {
+			1164 3
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 9
+			arms_factory = 1
+		}
+		add_core_of = NJE
+		add_core_of = USA
+	}
+
+	provinces={
+		1164 1341 1405 2148 3784 5595 5681 5846 7023 7042 7057 7162 7194 
+	}
+	manpower=9548215
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}

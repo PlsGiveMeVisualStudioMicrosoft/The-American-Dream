@@ -1,0 +1,28 @@
+characters={
+	KEN_Andy_Beshear={
+		name=KEN_Andy_Beshear
+		portraits={
+			civilian={
+				large="GFX_Portrait_KEN_Andy_Beshear"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	KEN_Daniel_Cameron={
+		name=KEN_Daniel_Cameron
+		portraits={
+			civilian={
+				large="GFX_Portrait_KEN_Daniel_Cameron"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

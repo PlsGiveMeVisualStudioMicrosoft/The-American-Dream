@@ -1,0 +1,28 @@
+characters={
+	MRY_Wes_Moore={
+		name=MRY_Wes_Moore
+		portraits={
+			civilian={
+				large="GFX_Portrait_MRY_Wes_Moore"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	MRY_Larry_Hogan={
+		name=MRY_Larry_Hogan
+		portraits={
+			civilian={
+				large="GFX_Portrait_MRY_Larry_Hogan"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

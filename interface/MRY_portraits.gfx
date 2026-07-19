@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Wes_Moore"
+		texturefile = "gfx/leaders/MRY/Portrait_MRY_Wes_Moore.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Larry_Hogan"
+		texturefile = "gfx/leaders/MRY/Portrait_MRY_Larry_Hogan.dds"
+	}
+
+}

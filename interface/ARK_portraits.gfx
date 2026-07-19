@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Sarah_Huckabee_Sanders"
+		texturefile = "gfx/leaders/ARK/Portrait_ARK_Sarah_Huckabee_Sanders.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Chris_Jones"
+		texturefile = "gfx/leaders/ARK/Portrait_ARK_Chris_Jones.dds"
+	}
+
+}

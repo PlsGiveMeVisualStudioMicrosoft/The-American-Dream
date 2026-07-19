@@ -1,0 +1,28 @@
+characters={
+	TEX_Greg_Abbott={
+		name=TEX_Greg_Abbott
+		portraits={
+			civilian={
+				large="GFX_Portrait_TEX_Greg_Abbott"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	TEX_Beto_ORourke={
+		name=TEX_Beto_ORourke
+		portraits={
+			civilian={
+				large="GFX_Portrait_TEX_Beto_ORourke"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

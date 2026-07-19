@@ -1,0 +1,28 @@
+characters={
+	FLO_Ron_DeSantis={
+		name=FLO_Ron_DeSantis
+		portraits={
+			civilian={
+				large="GFX_Portrait_FLO_Ron_DeSantis"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	FLO_Nikki_Fried={
+		name=FLO_Nikki_Fried
+		portraits={
+			civilian={
+				large="GFX_Portrait_FLO_Nikki_Fried"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,28 @@
+characters={
+	NHA_Kelly_Ayotte={
+		name=NHA_Kelly_Ayotte
+		portraits={
+			civilian={
+				large="GFX_Portrait_NHA_Kelly_Ayotte"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	NHA_Jeanne_Shaheen={
+		name=NHA_Jeanne_Shaheen
+		portraits={
+			civilian={
+				large="GFX_Portrait_NHA_Jeanne_Shaheen"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

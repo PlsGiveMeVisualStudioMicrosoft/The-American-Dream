@@ -1,0 +1,28 @@
+characters={
+	WAS_Bob_Ferguson={
+		name=WAS_Bob_Ferguson
+		portraits={
+			civilian={
+				large="GFX_Portrait_WAS_Bob_Ferguson"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	WAS_Dave_Reichert={
+		name=WAS_Dave_Reichert
+		portraits={
+			civilian={
+				large="GFX_Portrait_WAS_Dave_Reichert"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

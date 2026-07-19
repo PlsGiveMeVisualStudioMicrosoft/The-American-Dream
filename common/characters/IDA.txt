@@ -1,0 +1,28 @@
+characters={
+	IDA_Brad_Little={
+		name=IDA_Brad_Little
+		portraits={
+			civilian={
+				large="GFX_Portrait_IDA_Brad_Little"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	IDA_Lauren_McLean={
+		name=IDA_Lauren_McLean
+		portraits={
+			civilian={
+				large="GFX_Portrait_IDA_Lauren_McLean"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

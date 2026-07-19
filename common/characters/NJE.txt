@@ -1,0 +1,28 @@
+characters={
+	NJE_Phil_Murphy={
+		name=NJE_Phil_Murphy
+		portraits={
+			civilian={
+				large="GFX_Portrait_NJE_Phil_Murphy"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	NJE_Jack_Ciattarelli={
+		name=NJE_Jack_Ciattarelli
+		portraits={
+			civilian={
+				large="GFX_Portrait_NJE_Jack_Ciattarelli"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Glenn_Youngkin"
+		texturefile = "gfx/leaders/VIR/Portrait_VIR_Glenn_Youngkin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Abigail_Spanberger"
+		texturefile = "gfx/leaders/VIR/Portrait_VIR_Abigail_Spanberger.dds"
+	}
+
+}

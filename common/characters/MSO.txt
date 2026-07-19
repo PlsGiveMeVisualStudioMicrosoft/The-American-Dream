@@ -1,0 +1,28 @@
+characters={
+	MSO_Mike_Kehoe={
+		name=MSO_Mike_Kehoe
+		portraits={
+			civilian={
+				large="GFX_Portrait_MSO_Mike_Kehoe"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	MSO_Lucas_Kunce={
+		name=MSO_Lucas_Kunce
+		portraits={
+			civilian={
+				large="GFX_Portrait_MSO_Lucas_Kunce"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

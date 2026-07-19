@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Josh_Green"
+		texturefile = "gfx/leaders/HAW/Portrait_HAW_Josh_Green.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Duke_Aiona"
+		texturefile = "gfx/leaders/HAW/Portrait_HAW_Duke_Aiona.dds"
+	}
+
+}

@@ -1,0 +1,28 @@
+characters={
+	NEB_Jim_Pillen={
+		name=NEB_Jim_Pillen
+		portraits={
+			civilian={
+				large="GFX_Portrait_NEB_Jim_Pillen"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	NEB_Jane_Kleeb={
+		name=NEB_Jane_Kleeb
+		portraits={
+			civilian={
+				large="GFX_Portrait_NEB_Jane_Kleeb"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

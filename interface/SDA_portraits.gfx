@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Kristi_Noem"
+		texturefile = "gfx/leaders/SDA/Portrait_SDA_Kristi_Noem.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Billie_Sutton"
+		texturefile = "gfx/leaders/SDA/Portrait_SDA_Billie_Sutton.dds"
+	}
+
+}

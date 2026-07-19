@@ -1,0 +1,28 @@
+characters={
+	WIS_Tony_Evers={
+		name=WIS_Tony_Evers
+		portraits={
+			civilian={
+				large="GFX_Portrait_WIS_Tony_Evers"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	WIS_Ron_Johnson={
+		name=WIS_Ron_Johnson
+		portraits={
+			civilian={
+				large="GFX_Portrait_WIS_Ron_Johnson"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,28 @@
+characters={
+	HAW_Josh_Green={
+		name=HAW_Josh_Green
+		portraits={
+			civilian={
+				large="GFX_Portrait_HAW_Josh_Green"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	HAW_Duke_Aiona={
+		name=HAW_Duke_Aiona
+		portraits={
+			civilian={
+				large="GFX_Portrait_HAW_Duke_Aiona"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

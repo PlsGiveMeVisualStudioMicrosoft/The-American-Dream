@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Ned_Lamont"
+		texturefile = "gfx/leaders/CNT/Portrait_CNT_Ned_Lamont.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Bob_Stefanowski"
+		texturefile = "gfx/leaders/CNT/Portrait_CNT_Bob_Stefanowski.dds"
+	}
+
+}

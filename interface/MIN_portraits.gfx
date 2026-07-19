@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Tim_Walz"
+		texturefile = "gfx/leaders/MIN/Portrait_MIN_Tim_Walz.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Tom_Emmer"
+		texturefile = "gfx/leaders/MIN/Portrait_MIN_Tom_Emmer.dds"
+	}
+
+}

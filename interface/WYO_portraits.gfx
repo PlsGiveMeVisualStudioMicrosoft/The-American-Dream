@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Mark_Gordon"
+		texturefile = "gfx/leaders/WYO/Portrait_WYO_Mark_Gordon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Liz_Cheney"
+		texturefile = "gfx/leaders/WYO/Portrait_WYO_Liz_Cheney.dds"
+	}
+
+}

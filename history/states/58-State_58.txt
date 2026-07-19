@@ -1,0 +1,37 @@
+
+state={
+	id=58
+	name="STATE_58"
+	history={
+		owner = USA
+		victory_points = {
+			7281 75
+		}
+		victory_points = {
+			7233 10
+		}
+		victory_points = {
+			7236 3
+		}
+		victory_points = {
+			7220 1
+		}
+		victory_points = {
+			2798 1
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 9
+			arms_factory = 1
+		}
+		add_core_of = MRY
+		add_core_of = USA
+	}
+
+	provinces={
+		1951 2377 2547 2567 2798 2853 3334 3721 4607 5627 7156 7200 7220 7233 7236 7243 7270 7278 7281 7305 7318 
+	}
+	manpower=6958992
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}

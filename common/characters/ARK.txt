@@ -1,0 +1,28 @@
+characters={
+	ARK_Sarah_Huckabee_Sanders={
+		name=ARK_Sarah_Huckabee_Sanders
+		portraits={
+			civilian={
+				large="GFX_Portrait_ARK_Sarah_Huckabee_Sanders"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	ARK_Chris_Jones={
+		name=ARK_Chris_Jones
+		portraits={
+			civilian={
+				large="GFX_Portrait_ARK_Chris_Jones"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

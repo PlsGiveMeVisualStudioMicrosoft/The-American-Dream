@@ -1,0 +1,28 @@
+characters={
+	MIC_Gretchen_Whitmer={
+		name=MIC_Gretchen_Whitmer
+		portraits={
+			civilian={
+				large="GFX_Portrait_MIC_Gretchen_Whitmer"
+			}
+		}
+		country_leader={
+			ideology=Democratic_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+	MIC_Tudor_Dixon={
+		name=MIC_Tudor_Dixon
+		portraits={
+			civilian={
+				large="GFX_Portrait_MIC_Tudor_Dixon"
+			}
+		}
+		country_leader={
+			ideology=Republican_Party
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Kevin_Stitt"
+		texturefile = "gfx/leaders/OKL/Portrait_OKL_Kevin_Stitt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Kendra_Horn"
+		texturefile = "gfx/leaders/OKL/Portrait_OKL_Kendra_Horn.dds"
+	}
+
+}
