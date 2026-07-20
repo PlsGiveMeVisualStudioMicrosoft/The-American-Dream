@@ -46,5 +46,6 @@ tags={
 	"Graphics"
 	"Ideologies"
 }
+picture="thumbnail.png"
 name="The Dream"
 supported_version="1.19.2.0"
