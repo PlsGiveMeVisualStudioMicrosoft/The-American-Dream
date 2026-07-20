@@ -1,6 +1,6 @@
  #  The American Dream:
 
- The American Dream is a Hearts Of Iron 4 mod focusing on the North American Continent, in a state of Turmoil, feautiring many diffirent playable nations, rouge states, and action!
+ The American Dream is a Hearts Of Iron 4 mod focusing on the North American Continent, in a state of Turmoil, featuring many diffirent playable nations, rouge states, and action!
  
  
  
