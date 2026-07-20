@@ -1,3 +1,3 @@
-Discord for the mod:
+##Discord for the mod:
 
 https://discord.gg/GmhqdGmyEB
