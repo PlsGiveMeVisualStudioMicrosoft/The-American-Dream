@@ -47,16 +47,6 @@ bookmarks = {
 			}
 		}
         
-        "COL"={
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			
-			}
-		}
-        
 		
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"

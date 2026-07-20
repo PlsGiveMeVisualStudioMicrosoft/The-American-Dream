@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_CAN_Justin_Trudu"
+		texturefile = "gfx/leaders/CAN/Portrait_CAN_Justin_Trudu.dds"
+	}
+
+}

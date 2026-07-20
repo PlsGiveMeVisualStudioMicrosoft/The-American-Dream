@@ -1,0 +1,15 @@
+characters={
+	MEX_Claudia_Sheinbaum={
+		name=MEX_Claudia_Sheinbaum
+		portraits={
+			civilian={
+				large="GFX_Portrait_MEX_Claudia_Sheinbaum"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_MEX_Claudia_Sheinbaum"
+		texturefile = "gfx/leaders/MEX/Portrait_MEX_Claudia_Sheinbaum.dds"
+	}
+
+}

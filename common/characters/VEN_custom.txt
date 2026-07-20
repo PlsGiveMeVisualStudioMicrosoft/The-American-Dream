@@ -1,0 +1,15 @@
+characters={
+	VEN_Maduro={
+		name=VEN_Maduro
+		portraits={
+			civilian={
+				large="GFX_Portrait_VEN_Maduro"
+			}
+		}
+		country_leader={
+			ideology=russian_socialism
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

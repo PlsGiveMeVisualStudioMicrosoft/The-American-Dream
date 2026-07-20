@@ -1,0 +1,16 @@
+characters={
+	CAN_Justin_Trudu={
+		name=CAN_Justin_Trudu
+		portraits={
+			civilian={
+				large="GFX_Portrait_CAN_Justin_Trudu"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ pan_africanist_socialist }
+			expire="2083.1.1.1"
+			id=-1
+		}
+	}
+}

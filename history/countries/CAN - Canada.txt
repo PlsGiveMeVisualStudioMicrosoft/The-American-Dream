@@ -21,3 +21,6 @@ set_popularities = {
 	communism = 10
 	neutrality = 4
 }
+
+# Custom characters added by HOI4 Character Generator
+recruit_character = CAN_Justin_Trudu

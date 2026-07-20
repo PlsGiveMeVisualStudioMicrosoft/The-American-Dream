@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_VEN_Maduro"
+		texturefile = "gfx/leaders/VEN/Portrait_VEN_Maduro.dds"
+	}
+
+}
