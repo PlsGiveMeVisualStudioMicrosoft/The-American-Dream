@@ -7,7 +7,7 @@ state={
 			9614 1
 		}
 		victory_points = {
-			9615 3
+			9615 1
 		}
 		buildings = {
 			infrastructure = 2
@@ -19,7 +19,7 @@ state={
 	provinces={
 		9612 9614 9615 
 	}
-	manpower=39369
+	manpower=3600000
 	resources={
 		oil = 4 # Trinidad
 	}
