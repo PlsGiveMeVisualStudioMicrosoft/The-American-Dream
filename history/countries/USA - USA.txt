@@ -22,6 +22,9 @@ set_popularities = {
 	neutrality = 51
 }
 
+set_variable = {simp_frame_to_set = 2 }
+set_variable = {simp_slot_frame = simp_frame_to_set}
+
 # Custom characters added by HOI4 Character Generator
 recruit_character = USA_Kamala_Harris
 recruit_character = USA_Trump
