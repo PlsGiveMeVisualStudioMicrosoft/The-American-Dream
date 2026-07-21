@@ -1,0 +1,13 @@
+on_actions = {
+	on_startup = {
+	   #Trump
+		effect = {
+				USA = {
+				set_variable = {
+					set_variable = { ROOT.simp_frame_to_set = 2 }
+					simp_set_poster = yes
+				}
+			}
+		}
+	}
+}
