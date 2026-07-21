@@ -1,0 +1,37 @@
+guiTypes = {
+    containerWindowType = {
+        name = "simp_propoganda_ui_window"
+        position = { x = 0 y = 0 }
+        size = { width = 200 height = 450 }
+
+        iconType = {
+            name = "simp_slot"
+            position = { x = 135 y = 0 }
+            spriteType = "GFX_SIMP_prop_tileset"
+            frame = 2
+        }
+        instantTextBoxType = {
+            name = "my_custom_text_box"
+            position = { x = 150 y = 355 }
+            textureFile = ""
+            font = "hoi_arrow_font"
+            borderSize = { x = 0 y = 0 }
+            text = "MY_CUSTOM_PRESIDENT_KEY"
+            maxWidth = 200
+            maxHeight = 200
+            format = centre
+        }
+	iconType = {
+ 		name = "GFX_ISK_cw_progress_bar"
+  		spriteType = "GFX_ISK_cw"
+  		position = { x = 50 y = 50 }
+		}
+	iconType = {
+ 		name = "GFX_ISK_cw_progress_bar_2"
+  		spriteType = "GFX_ISK_cw_2"
+  		position = { x = 425 y = 50 }
+		}   
+       
+    }
+
+}

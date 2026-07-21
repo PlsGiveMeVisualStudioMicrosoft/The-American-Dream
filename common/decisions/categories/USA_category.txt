@@ -1,0 +1,12 @@
+ISK_my_category = {
+	icon = usa_congress
+
+	# picture = 
+
+	allowed = { original_tag = EES }
+
+	priority = 1000
+
+	scripted_gui = civilwar_gui
+	visible_when_empty = yes
+}

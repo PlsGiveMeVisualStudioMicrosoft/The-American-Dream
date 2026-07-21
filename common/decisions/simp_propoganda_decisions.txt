@@ -1,0 +1,48 @@
+simp_propoganda_category = {
+
+    simp_choose_poster_1 = {
+        icon = eng_ally_imperialist_coup
+
+       allowed = { always = yes}
+       available = { always = yes}
+       visible = { always = yes }
+
+       cost = 25
+
+        complete_effect = {
+            set_variable = { ROOT.simp_frame_to_set = 2 }
+            simp_set_poster = yes
+       }
+
+   }
+
+   simp_choose_poster_2 = {
+        icon = eng_ally_imperialist_coup
+
+       allowed = { always = yes}
+        available = { always = yes}
+        visible = { always = yes }
+
+        cost = 25
+
+        complete_effect = {
+            set_variable = { ROOT.simp_frame_to_set = 3 }
+            simp_set_poster = yes
+       }
+
+   }    
+
+
+simp_clear_poster_decision = {
+    icon = GFX_decision_generic_propaganda
+    allowed = { always = yes }
+    visible = { always = yes }
+    available = { ROOT.simp_slot_frame?1 > 1 }
+    cost = 25
+
+    complete_effect = {
+        simp_clear_poster = yes
+    }
+}
+
+}

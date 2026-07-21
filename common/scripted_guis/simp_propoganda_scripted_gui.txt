@@ -1,0 +1,20 @@
+scripted_gui = {
+	simp_propoganda_ui = {
+		context_type = decision_category
+		window_name = simp_propoganda_ui_window
+		
+		properties = {
+			simp_slot = {
+				image = "[simp_tileset]"
+				frame = ROOT.simp_slot_frame
+			}
+  GFX_ISK_cw_progress_bar = {
+ 			 frame = aproval_rate
+			}
+  GFX_ISK_cw_progress_bar_2 = {
+ 			 frame = civil_war
+			}
+		}
+		
+	}
+}

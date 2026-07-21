@@ -1,0 +1,10 @@
+simp_propoganda_category = {
+
+    icon = usa_congress
+
+    allowed = { always = yes}
+    visible = { always = yes}
+    allowed = { original_tag = USA }
+    scripted_gui = simp_propoganda_ui
+    priority = 1000
+}

@@ -38,9 +38,10 @@ ideologies = {
 			}
 			social_democracy = {
 			}
-			Democratic_Party = {}
+			Democratic_Party = {
+		color = { 0 174 243 }
 		}
-
+	}
 		dynamic_faction_names = {
 			"FACTION_NAME_DEMOCRATIC_1"
 			"FACTION_NAME_DEMOCRATIC_2"
@@ -321,7 +322,10 @@ ideologies = {
 
 			neutral_centrism = {
 			}
-			Republican_Party = {}
+			Republican_Party = {
+		color = { 232 27 35 }
+
+}
 		}
 
 		dynamic_faction_names = {

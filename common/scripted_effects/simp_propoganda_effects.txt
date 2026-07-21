@@ -1,0 +1,7 @@
+simp_set_poster = {
+	set_variable = {ROOT.simp_slot_frame = ROOT.simp_frame_to_set}
+}
+
+simp_clear_poster = {
+	set_variable = {ROOT.simp_slot_frame = 1}
+}

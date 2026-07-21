@@ -1,0 +1,29 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_SIMP_prop_tileset"
+        texturefile = "gfx/interface/simp_prop_tileset.dds"
+        noOfFrames = 15
+    }
+    progressbartype = {
+        name = "GFX_ISK_cw"
+        color = { 0.0 0.0 0.0 }
+        colortwo = { 0.0 0.0 0.0 }
+        textureFile1 = "gfx/interface/bar/GFX_ISK_cw_progress_bar.dds"
+        textureFile2 = "gfx/interface/bar/progress_bar_background.dds"
+        size = { x = 35 y = 375 }
+        horizontal = no       
+        effectFile = "gfx/FX/progress.lua"
+        steps = 100
+    }
+    progressbartype = {
+        name = "GFX_ISK_cw_2"
+        color = { 0.0 0.0 0.0 }
+        colortwo = { 0.0 0.0 0.0 }
+        textureFile1 = "gfx/interface/bar/GFX_ISK_cw_progress_bar.dds"
+        textureFile2 = "gfx/interface/bar/progress_bar_background2.dds"
+        size = { x = 35 y = 375 }
+        horizontal = no       
+        effectFile = "gfx/FX/progress.lua"
+        steps = 100
+    }
+}
