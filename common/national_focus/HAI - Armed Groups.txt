@@ -1,0 +1,623 @@
+focus_tree = {
+	id = HAI_armed_groups_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			OR = {
+				tag = VIV
+				tag = GRF
+				tag = KRB
+			}
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	# Shared opening: every armed group begins with territory, weapons and recruits.
+	focus = {
+		id = HAI_GANG_consolidate_territory
+		icon = GFX_goal_generic_position_armies
+		x = 10
+		y = 0
+		cost = 2
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.03
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = HAI_GANG_smuggled_rifles
+		icon = GFX_goal_generic_small_arms
+		x = 8
+		y = 1
+		cost = 4
+		prerequisite = { focus = HAI_GANG_consolidate_territory }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 350
+			}
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = HAI_GANG_recruit_local_forces
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 12
+		y = 1
+		cost = 4
+		prerequisite = { focus = HAI_GANG_consolidate_territory }
+		completion_reward = {
+			add_manpower = 4000
+			army_experience = 8
+			add_war_support = 0.03
+		}
+	}
+
+	# -------------------------------------------------------------------------
+	# Viv Ansanm: coalition cohesion and the metropolitan chokehold.
+	# -------------------------------------------------------------------------
+	focus = {
+		id = VIV_hold_coalition_together
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 3
+		cost = 4
+		prerequisite = { focus = HAI_GANG_smuggled_rifles }
+		prerequisite = { focus = HAI_GANG_recruit_local_forces }
+		available = { tag = VIV }
+		completion_reward = {
+			set_country_flag = VIV_coalition_decisions
+			add_stability = 0.04
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = VIV_truce_between_g9_and_gpep
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 4
+		cost = 4
+		prerequisite = { focus = VIV_hold_coalition_together }
+		completion_reward = {
+			add_stability = 0.04
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = VIV_coordinate_neighborhood_bosses
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 2
+		y = 5
+		cost = 4
+		prerequisite = { focus = VIV_truce_between_g9_and_gpep }
+		completion_reward = {
+			add_political_power = 25
+			army_experience = 8
+		}
+	}
+
+	focus = {
+		id = VIV_seize_police_arsenals
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 6
+		cost = 4
+		prerequisite = { focus = VIV_coordinate_neighborhood_bosses }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 250
+			}
+			HAI = { add_to_variable = { HAI_escalation = 3 } }
+			HAI_check_escalation_threshold = yes
+		}
+	}
+
+	focus = {
+		id = VIV_open_prison_gates
+		icon = GFX_goal_generic_special_forces
+		x = 0
+		y = 7
+		cost = 4
+		prerequisite = { focus = VIV_seize_police_arsenals }
+		completion_reward = {
+			add_manpower = 2500
+			add_stability = -0.03
+			add_war_support = 0.03
+			HAI = { add_to_variable = { HAI_escalation = 3 } }
+			HAI_check_escalation_threshold = yes
+		}
+	}
+
+	focus = {
+		id = VIV_barricade_the_capital
+		icon = GFX_goal_generic_demand_territory
+		x = 4
+		y = 6
+		cost = 4
+		prerequisite = { focus = VIV_coordinate_neighborhood_bosses }
+		completion_reward = {
+			set_country_flag = VIV_barricade_operations
+			add_ideas = VIV_metropolitan_chokehold
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = VIV_shut_down_airport_road
+		icon = GFX_goal_generic_demand_territory
+		x = 4
+		y = 7
+		cost = 4
+		prerequisite = { focus = VIV_barricade_the_capital }
+		completion_reward = {
+			set_country_flag = VIV_airport_operations
+			add_political_power = 20
+			HAI = { add_stability = -0.01 }
+		}
+	}
+
+	focus = {
+		id = VIV_pressure_national_port
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 2
+		y = 8
+		cost = 4
+		prerequisite = { focus = VIV_open_prison_gates }
+		prerequisite = { focus = VIV_shut_down_airport_road }
+		completion_reward = {
+			set_country_flag = VIV_port_operations
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = VIV_unify_metropolitan_coalition
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 9
+		cost = 5
+		prerequisite = { focus = VIV_pressure_national_port }
+		completion_reward = {
+			remove_ideas = HAI_fragmented_command
+			remove_ideas = VIV_coalition_of_former_rivals
+			add_ideas = VIV_unified_command
+			add_stability = 0.05
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = VIV_prepare_palace_assault
+		icon = GFX_goal_generic_major_war
+		x = 2
+		y = 10
+		cost = 1
+		prerequisite = { focus = VIV_unify_metropolitan_coalition }
+		available = { HAI = { check_variable = { HAI_escalation > 79 } } }
+		completion_reward = {
+			set_country_flag = HAI_GANG_offensive_announced
+			HAI = { country_event = { id = hai_gangs.10 hours = 3 } }
+		}
+	}
+
+	focus = {
+		id = VIV_seize_national_palace
+		icon = GFX_goal_generic_major_war
+		x = 2
+		y = 11
+		cost = 5
+		prerequisite = { focus = VIV_prepare_palace_assault }
+		available = { HAI = { check_variable = { HAI_escalation > 79 } } }
+		cancel_if_invalid = yes
+		completion_reward = {
+			HAI = { add_to_variable = { HAI_escalation = 12 } }
+			HAI_check_escalation_threshold = yes
+			add_war_support = 0.05
+		}
+	}
+
+	# -------------------------------------------------------------------------
+	# Gran Grif: Savien, rural routes and the Artibonite road economy.
+	# -------------------------------------------------------------------------
+	focus = {
+		id = GRF_fortify_savien
+		icon = GFX_goal_generic_fortify_city
+		x = 10
+		y = 3
+		cost = 4
+		prerequisite = { focus = HAI_GANG_smuggled_rifles }
+		prerequisite = { focus = HAI_GANG_recruit_local_forces }
+		available = { tag = GRF }
+		completion_reward = {
+			set_country_flag = GRF_savien_operations
+			add_stability = 0.04
+			army_experience = 8
+		}
+	}
+
+	focus = {
+		id = GRF_expand_rural_network
+		icon = GFX_goal_generic_position_armies
+		x = 10
+		y = 4
+		cost = 4
+		prerequisite = { focus = GRF_fortify_savien }
+		completion_reward = {
+			add_manpower = 2500
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = GRF_tax_route_nationale_one
+		icon = GFX_goal_generic_demand_territory
+		x = 8
+		y = 5
+		cost = 4
+		prerequisite = { focus = GRF_expand_rural_network }
+		completion_reward = {
+			set_country_flag = GRF_road_operations
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = GRF_hijack_truck_routes
+		icon = GFX_goal_generic_small_arms
+		x = 8
+		y = 6
+		cost = 4
+		prerequisite = { focus = GRF_tax_route_nationale_one }
+		completion_reward = {
+			set_country_flag = GRF_arms_truck_operations
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 200
+			}
+		}
+	}
+
+	focus = {
+		id = GRF_weapons_from_port_au_prince
+		icon = GFX_goal_generic_small_arms
+		x = 12
+		y = 5
+		cost = 4
+		prerequisite = { focus = GRF_expand_rural_network }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 300
+			}
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = GRF_old_political_connections
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 6
+		cost = 4
+		prerequisite = { focus = GRF_weapons_from_port_au_prince }
+		completion_reward = {
+			add_political_power = 30
+			add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = GRF_break_departmental_police
+		icon = GFX_goal_generic_position_armies
+		x = 10
+		y = 7
+		cost = 4
+		prerequisite = { focus = GRF_hijack_truck_routes }
+		prerequisite = { focus = GRF_old_political_connections }
+		completion_reward = {
+			army_experience = 15
+			HAI = { add_to_variable = { HAI_escalation = 4 } }
+			HAI_check_escalation_threshold = yes
+		}
+	}
+
+	focus = {
+		id = GRF_control_saint_marc_corridor
+		icon = GFX_goal_generic_demand_territory
+		x = 10
+		y = 8
+		cost = 4
+		prerequisite = { focus = GRF_break_departmental_police }
+		completion_reward = {
+			set_country_flag = GRF_saint_marc_operations
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = GRF_lock_down_artibonite
+		icon = GFX_goal_generic_position_armies
+		x = 10
+		y = 9
+		cost = 5
+		prerequisite = { focus = GRF_control_saint_marc_corridor }
+		completion_reward = {
+			remove_ideas = HAI_fragmented_command
+			add_ideas = GRF_elan_expanding_network
+			add_stability = 0.05
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = GRF_prepare_southern_march
+		icon = GFX_goal_generic_major_war
+		x = 10
+		y = 10
+		cost = 1
+		prerequisite = { focus = GRF_lock_down_artibonite }
+		available = { HAI = { check_variable = { HAI_escalation > 79 } } }
+		completion_reward = {
+			set_country_flag = HAI_GANG_offensive_announced
+			HAI = { country_event = { id = hai_gangs.11 hours = 3 } }
+		}
+	}
+
+	focus = {
+		id = GRF_march_on_the_capital
+		icon = GFX_goal_generic_major_war
+		x = 10
+		y = 11
+		cost = 5
+		prerequisite = { focus = GRF_prepare_southern_march }
+		available = { HAI = { check_variable = { HAI_escalation > 79 } } }
+		cancel_if_invalid = yes
+		completion_reward = {
+			HAI = { add_to_variable = { HAI_escalation = 12 } }
+			HAI_check_escalation_threshold = yes
+			add_war_support = 0.05
+		}
+	}
+
+	# -------------------------------------------------------------------------
+	# Kraze Barye: ransom, infiltration and the eastern capital corridor.
+	# -------------------------------------------------------------------------
+	focus = {
+		id = KRB_entrench_torcelle
+		icon = GFX_goal_generic_fortify_city
+		x = 18
+		y = 3
+		cost = 4
+		prerequisite = { focus = HAI_GANG_smuggled_rifles }
+		prerequisite = { focus = HAI_GANG_recruit_local_forces }
+		available = { tag = KRB }
+		completion_reward = {
+			add_stability = 0.04
+			army_experience = 8
+		}
+	}
+
+	focus = {
+		id = KRB_build_tabarre_network
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 18
+		y = 4
+		cost = 4
+		prerequisite = { focus = KRB_entrench_torcelle }
+		completion_reward = {
+			add_political_power = 20
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = KRB_professionalize_ransom_network
+		icon = GFX_goal_generic_political_pressure
+		x = 16
+		y = 5
+		cost = 4
+		prerequisite = { focus = KRB_build_tabarre_network }
+		completion_reward = {
+			set_country_flag = KRB_ransom_operations
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = KRB_negotiate_through_intermediaries
+		icon = GFX_goal_generic_political_pressure
+		x = 16
+		y = 6
+		cost = 4
+		prerequisite = { focus = KRB_professionalize_ransom_network }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = KRB_expand_vehicle_theft_rings
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 20
+		y = 5
+		cost = 4
+		prerequisite = { focus = KRB_build_tabarre_network }
+		completion_reward = {
+			set_country_flag = KRB_vehicle_operations
+			set_technology = { motorised_infantry = 1 }
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = KRB_arrangement_with_400_mawozo
+		icon = GFX_goal_generic_national_unity
+		x = 20
+		y = 6
+		cost = 4
+		prerequisite = { focus = KRB_expand_vehicle_theft_rings }
+		completion_reward = {
+			set_country_flag = KRB_400_mawozo_operations
+			add_ideas = KRB_400_mawozo_partnership
+			add_manpower = 1500
+		}
+	}
+
+	focus = {
+		id = KRB_open_eastern_smuggling_route
+		icon = GFX_goal_generic_small_arms
+		x = 18
+		y = 7
+		cost = 4
+		prerequisite = { focus = KRB_negotiate_through_intermediaries }
+		prerequisite = { focus = KRB_arrangement_with_400_mawozo }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 275
+			}
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = KRB_infiltrate_local_authorities
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 18
+		y = 8
+		cost = 4
+		prerequisite = { focus = KRB_open_eastern_smuggling_route }
+		completion_reward = {
+			add_political_power = 25
+			HAI = { add_stability = -0.01 }
+		}
+	}
+
+	focus = {
+		id = KRB_threaten_airport_corridor
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 9
+		cost = 5
+		prerequisite = { focus = KRB_infiltrate_local_authorities }
+		completion_reward = {
+			set_country_flag = KRB_airport_operations
+			remove_ideas = HAI_fragmented_command
+			add_stability = 0.04
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = KRB_prepare_eastern_encirclement
+		icon = GFX_goal_generic_major_war
+		x = 18
+		y = 10
+		cost = 1
+		prerequisite = { focus = KRB_threaten_airport_corridor }
+		available = { HAI = { check_variable = { HAI_escalation > 79 } } }
+		completion_reward = {
+			set_country_flag = HAI_GANG_offensive_announced
+			HAI = { country_event = { id = hai_gangs.12 hours = 3 } }
+		}
+	}
+
+	focus = {
+		id = KRB_encircle_port_au_prince
+		icon = GFX_goal_generic_major_war
+		x = 18
+		y = 11
+		cost = 5
+		prerequisite = { focus = KRB_prepare_eastern_encirclement }
+		available = { HAI = { check_variable = { HAI_escalation > 79 } } }
+		cancel_if_invalid = yes
+		completion_reward = {
+			HAI = { add_to_variable = { HAI_escalation = 12 } }
+			HAI_check_escalation_threshold = yes
+			add_war_support = 0.05
+		}
+	}
+
+	# Shared endgame. The focuses inside this prerequisite block are alternatives.
+	focus = {
+		id = HAI_GANG_destroy_the_rivals
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 10
+		y = 12
+		cost = 6
+		prerequisite = {
+			focus = VIV_seize_national_palace
+			focus = GRF_march_on_the_capital
+			focus = KRB_encircle_port_au_prince
+		}
+		completion_reward = {
+			if = {
+				limit = { NOT = { tag = VIV } country_exists = VIV }
+				create_wargoal = { type = annex_everything target = VIV }
+			}
+			if = {
+				limit = { NOT = { tag = GRF } country_exists = GRF }
+				create_wargoal = { type = annex_everything target = GRF }
+			}
+			if = {
+				limit = { NOT = { tag = KRB } country_exists = KRB }
+				create_wargoal = { type = annex_everything target = KRB }
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_GANG_claim_all_haiti
+		icon = GFX_goal_generic_demand_territory
+		x = 10
+		y = 13
+		cost = 6
+		prerequisite = { focus = HAI_GANG_destroy_the_rivals }
+		available = {
+			owns_state = 74
+			owns_state = 82
+			owns_state = 83
+			owns_state = 84
+			owns_state = 85
+			owns_state = 86
+			owns_state = 87
+		}
+		completion_reward = {
+			74 = { add_core_of = ROOT }
+			82 = { add_core_of = ROOT }
+			83 = { add_core_of = ROOT }
+			84 = { add_core_of = ROOT }
+			85 = { add_core_of = ROOT }
+			86 = { add_core_of = ROOT }
+			87 = { add_core_of = ROOT }
+			remove_ideas = HAI_non_state_armed_group
+			add_war_support = 0.10
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = HAI_GANG_criminal_hegemony
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 14
+		cost = 7
+		prerequisite = { focus = HAI_GANG_claim_all_haiti }
+		completion_reward = {
+			add_ideas = HAI_criminal_hegemony
+			add_political_power = 100
+			add_stability = -0.05
+		}
+	}
+}

@@ -1,0 +1,22 @@
+state = {
+	id = 86
+	name = "STATE_86"
+	history = {
+		owner = KRB
+		victory_points = {
+			4525 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = HAI
+		add_core_of = KRB
+	}
+
+	provinces = {
+		4525 5490
+	}
+	manpower = 900000
+	state_category = rural
+	buildings_max_level_factor = 1.000
+}

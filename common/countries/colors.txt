@@ -46,6 +46,18 @@ HAI = {
 	color = rgb { 174 113 113 }
 	color_ui = rgb { 174 113 113 }
 }
+VIV = {
+	color = rgb { 116 24 32 }
+	color_ui = rgb { 160 35 44 }
+}
+GRF = {
+	color = rgb { 79 61 39 }
+	color_ui = rgb { 126 96 56 }
+}
+KRB = {
+	color = rgb { 38 58 77 }
+	color_ui = rgb { 55 91 122 }
+}
 HON = {
 	color = rgb { 161 76 65 }
 	color_ui = rgb { 161 76 65 }

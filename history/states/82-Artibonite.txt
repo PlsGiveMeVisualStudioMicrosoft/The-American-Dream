@@ -1,0 +1,22 @@
+state = {
+	id = 82
+	name = "STATE_82"
+	history = {
+		owner = GRF
+		victory_points = {
+			5540 2
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = HAI
+		add_core_of = GRF
+	}
+
+	provinces = {
+		8635 5540 895 8646
+	}
+	manpower = 2000000
+	state_category = rural
+	buildings_max_level_factor = 1.000
+}

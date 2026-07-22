@@ -1,0 +1,18 @@
+state = {
+	id = 87
+	name = "STATE_87"
+	history = {
+		owner = HAI
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = HAI
+	}
+
+	provinces = {
+		9623
+	}
+	manpower = 80000
+	state_category = rural
+	buildings_max_level_factor = 1.000
+}

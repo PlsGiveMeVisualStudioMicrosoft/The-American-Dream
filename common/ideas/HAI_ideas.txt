@@ -1,0 +1,678 @@
+ideas = {
+	country = {
+		HAI_transitional_presidential_council = {
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+
+		HAI_collapsed_state_institutions = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				consumer_goods_factor = 0.25
+				research_speed_factor = -0.15
+				industrial_capacity_factory = -0.10
+			}
+		}
+
+		HAI_gang_controlled_capital = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.15
+				war_support_factor = -0.10
+				industrial_capacity_factory = -0.15
+			}
+		}
+
+		HAI_mass_displacement = {
+			picture = generic_manpower_bonus
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				industrial_capacity_factory = -0.10
+				consumer_goods_factor = 0.10
+			}
+		}
+
+		HAI_underfunded_security_forces = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.20
+				army_attack_factor = -0.15
+				training_time_army_factor = 0.25
+			}
+		}
+
+		HAI_multinational_security_support = {
+			picture = generic_volunteer_expedition_bonus
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.10
+				war_support_factor = 0.05
+			}
+		}
+
+		HAI_reformed_pnh = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.10
+				army_defence_factor = 0.10
+				training_time_army_factor = -0.10
+			}
+		}
+
+		HAI_emergency_administration = {
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.10
+			}
+		}
+
+		HAI_customs_revenue_administration = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+
+		HAI_confidential_informants = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				civilian_intel_factor = 0.10
+			}
+		}
+
+		HAI_restored_authority = {
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.15
+				industrial_capacity_factory = 0.10
+			}
+		}
+
+		HAI_new_republic_idea = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.10
+				research_speed_factor = 0.05
+			}
+		}
+
+		HAI_national_directorate_idea = {
+			picture = generic_fascism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.20
+				army_attack_factor = 0.10
+				political_power_factor = 0.15
+				stability_factor = -0.05
+			}
+		}
+
+		HAI_salvation_government_idea = {
+			picture = generic_morale_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.10
+				army_org_factor = 0.05
+				stability_factor = -0.10
+			}
+		}
+
+		HAI_international_protectorate = {
+			picture = generic_volunteer_expedition_bonus
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.15
+				industrial_capacity_factory = 0.10
+				political_power_factor = -0.15
+				stability_factor = 0.10
+			}
+		}
+
+		HAI_recovery_fund_idea = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.10
+				research_speed_factor = 0.05
+			}
+		}
+
+		HAI_gonave_hotels = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+
+		HAI_gonave_tourism = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		HAI_gonave_resource_investment = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.65
+			}
+		}
+
+		HAI_gonave_heavy_construction = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.35
+			}
+		}
+
+		HAI_gonave_transport_construction = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+		}
+
+		HAI_gonave_shipyards = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0.10
+				consumer_goods_factor = -0.01
+			}
+		}
+
+		HAI_gonave_air_links = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		HAI_gonave_deepwater_harbor = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
+		HAI_gonave_construction_abandoned = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.15
+			}
+		}
+
+		HAI_gonave_tourism_panic = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_industrial_complex_factor = -0.10
+			}
+		}
+
+		HAI_gonave_resorts_burning = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.10
+			}
+		}
+
+		# Active national fuel programs. Their fixed daily stockpile costs are
+		# handled by HAI's daily on-action so the player can overcommit reserves.
+		HAI_fuel_fishing_fleet = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { stability_factor = 0.01 }
+		}
+
+		HAI_fuel_hospitals = {
+			picture = generic_manpower_bonus
+			removal_cost = -1
+			modifier = { stability_factor = 0.02 }
+		}
+
+		HAI_fuel_ferry_network = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = { consumer_goods_factor = -0.02 }
+		}
+
+		HAI_fuel_local_support = {
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			modifier = { stability_factor = 0.03 }
+		}
+
+		HAI_fuel_tanker_escorts = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = { civilian_intel_factor = 0.05 }
+		}
+
+		HAI_fuel_channel_patrol = {
+			picture = generic_volunteer_expedition_bonus
+			removal_cost = -1
+			modifier = { civilian_intel_factor = 0.05 }
+		}
+
+		HAI_fuel_gang_tracking = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = { civilian_intel_factor = 0.15 }
+		}
+
+		HAI_fuel_emergency_generators = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+
+		HAI_fuel_power_capital = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				stability_factor = 0.03
+			}
+		}
+
+		HAI_fuel_cssm_transport = {
+			picture = generic_volunteer_expedition_bonus
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.10
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		HAI_fuel_coastal_interdiction = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = { civilian_intel_factor = 0.10 }
+		}
+
+		HAI_fuel_emergency_airlift = {
+			picture = generic_volunteer_expedition_bonus
+			removal_cost = -1
+			modifier = { supply_consumption_factor = -0.10 }
+		}
+
+		HAI_fuel_caribbean_export = {
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			modifier = { political_power_factor = 0.05 }
+		}
+
+		HAI_fuel_decoy_operation = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = { civilian_intel_factor = 0.10 }
+		}
+
+		HAI_fuel_emergency_repairs = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.10 }
+		}
+
+		HAI_fuel_reserve_construction = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = { consumer_goods_factor = 0.15 }
+		}
+
+		HAI_distributed_fuel_reserves = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = { civilian_intel_factor = 0.05 }
+		}
+
+		HAI_oil_engineers_missing = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.10
+			}
+		}
+
+		HAI_offshore_output_disrupted = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		VIV_fuel_police_pressure = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = { political_power_factor = -0.25 stability_factor = -0.03 }
+		}
+
+		GRF_fuel_police_pressure = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = { political_power_factor = -0.25 stability_factor = -0.03 }
+		}
+
+		KRB_fuel_police_pressure = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = { political_power_factor = -0.25 stability_factor = -0.03 }
+		}
+
+		HAI_fuelled_gang_operations = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_speed_factor = 0.05
+				political_power_factor = 0.10
+			}
+		}
+
+		HAI_armed_network = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.10
+				training_time_army_factor = -0.20
+				war_support_factor = 0.10
+			}
+		}
+
+		# Armed groups are territorial networks, not functioning governments.
+		# The very high civilian-law costs keep both AI and player PP focused on
+		# operations until one organization has actually unified all seven states.
+		HAI_non_state_armed_group = {
+			picture = generic_political_reform
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.15
+				political_advisor_cost_factor = 10.0
+				trade_laws_cost_factor = 10.0
+				mobilization_laws_cost_factor = 10.0
+				economy_cost_factor = 10.0
+			}
+		}
+
+		HAI_illicit_economy = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.10
+				industrial_capacity_factory = -0.15
+				research_speed_factor = -0.25
+			}
+		}
+
+		HAI_fragmented_command = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.15
+				stability_factor = -0.10
+			}
+		}
+
+		VIV_urban_strongholds = {
+			picture = generic_morale_bonus
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.15
+				army_org_factor = 0.05
+			}
+		}
+
+		VIV_coalition_of_former_rivals = {
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			modifier = {
+				recruitable_population_factor = 0.08
+				political_power_factor = 0.08
+				army_org_factor = -0.08
+				stability_factor = -0.05
+			}
+		}
+
+		VIV_metropolitan_chokehold = {
+			picture = generic_morale_bonus
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.10
+				army_speed_factor = 0.05
+				attrition = -0.05
+			}
+		}
+
+		VIV_unified_command = {
+			picture = generic_army_doctrines
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.10
+				army_attack_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		GRF_artibonite_network = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.10
+				political_power_factor = 0.05
+			}
+		}
+
+		GRF_savien_stronghold = {
+			picture = generic_morale_bonus
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.12
+				max_dig_in = 2
+				dig_in_speed_factor = 0.20
+			}
+		}
+
+		GRF_artibonite_road_predation = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = {
+				equipment_capture_factor = 0.08
+				political_power_factor = 0.10
+				army_speed_factor = 0.05
+				research_speed_factor = -0.05
+			}
+		}
+
+		GRF_elan_expanding_network = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.08
+				army_org_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		KRB_eastern_corridor = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.10
+				army_defence_factor = 0.05
+			}
+		}
+
+		KRB_ransom_economy = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.18
+				civilian_intel_factor = 0.10
+				stability_factor = -0.08
+				recruitable_population_factor = -0.05
+			}
+		}
+
+		KRB_torcelle_tabarre_network = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.08
+				army_defence_factor = 0.08
+				army_speed_factor = 0.05
+			}
+		}
+
+		KRB_400_mawozo_partnership = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				training_time_army_factor = -0.10
+				army_org_factor = -0.03
+			}
+		}
+
+		# A major operation consumes attention, cash and ammunition even when it
+		# succeeds. Aggressive decisions are unavailable while this timed idea is
+		# active; military combat modifiers are intentionally untouched.
+		HAI_operational_exhaustion = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.25
+			}
+		}
+
+		VIV_coalition_in_disarray = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.80
+				stability_factor = -0.10
+				industrial_capacity_factory = -0.10
+			}
+		}
+
+		GRF_routes_under_surveillance = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.65
+				equipment_capture_factor = -0.50
+				industrial_capacity_factory = -0.10
+			}
+		}
+
+		KRB_ransom_channels_frozen = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.75
+				civilian_intel_factor = -0.25
+				stability_factor = -0.05
+			}
+		}
+
+		HAI_cssm_framework = {
+			picture = generic_volunteer_expedition_bonus
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+				war_support_factor = 0.03
+			}
+		}
+
+		HAI_foreign_dependence = {
+			picture = generic_volunteer_expedition_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.10
+				consumer_goods_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+
+		HAI_support_not_occupation_idea = {
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		HAI_haitian_led_security_idea = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.10
+				army_defence_factor = 0.05
+				training_time_army_factor = -0.10
+			}
+		}
+
+		HAI_international_arms_interdiction = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.10
+				army_attack_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+
+		HAI_criminal_hegemony = {
+			picture = generic_fascism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.20
+				war_support_factor = 0.20
+				army_attack_factor = 0.10
+				stability_factor = -0.15
+			}
+		}
+	}
+}

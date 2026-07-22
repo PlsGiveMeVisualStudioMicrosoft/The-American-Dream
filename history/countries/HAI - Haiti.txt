@@ -1,23 +1,67 @@
 capital = 74
 
-oob = "standard_templates"
+oob = "HAI_2025"
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
+	tech_support = 1
+	support_weapons = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	basic_machine_tools = 1
+	construction1 = 1
 }
 
-set_convoys = 20
+set_convoys = 8
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = yes
+	ruling_party = neutrality
+	last_election = "2016.11.20"
+	election_frequency = 60
+	elections_allowed = no
 }
+
 set_popularities = {
-	democratic = 50
-	fascism = 36
-	communism = 10
-	neutrality = 4
+	democratic = 22
+	fascism = 4
+	communism = 3
+	neutrality = 71
+}
+
+set_stability = 0.12
+set_war_support = 0.42
+
+set_variable = { HAI_escalation = 35 }
+set_variable = { HAI_regional_influence = 0 }
+set_variable = { HAI_checkpoint_raid_cost = 30 }
+set_variable = { HAI_humanitarian_convoy_cost = 25 }
+set_variable = { HAI_joint_intelligence_cost = 45 }
+set_variable = { HAI_gonave_oil_stage = 0 }
+set_variable = { HAI_daily_fuel_commitment = 0 }
+set_variable = { HAI_offshore_security = 0 }
+set_variable = { HAI_transport_security = 0 }
+set_variable = { HAI_personnel_security = 0 }
+
+set_country_flag = HAI_crisis_active
+set_country_flag = HAI_historical_council_rotation
+set_country_flag = HAI_progressive_crisis_costs_initialized
+set_country_flag = HAI_fuel_system_initialized
+
+add_ideas = {
+	HAI_transitional_presidential_council
+	HAI_collapsed_state_institutions
+	HAI_gang_controlled_capital
+	HAI_mass_displacement
+	HAI_underfunded_security_forces
+	HAI_multinational_security_support
+}
+
+recruit_character = HAI_Leslie_Voltaire
+recruit_character = HAI_Fritz_Alphonse_Jean
+recruit_character = HAI_Laurent_Saint_Cyr
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 900
+	producer = HAI
 }

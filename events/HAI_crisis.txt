@@ -1,0 +1,90 @@
+add_namespace = hai_crisis
+
+country_event = {
+	id = hai_crisis.1
+	title = hai_crisis.1.t
+	desc = hai_crisis.1.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_crisis.1.a
+		add_political_power = 10
+	}
+}
+
+country_event = {
+	id = hai_crisis.2
+	title = hai_crisis.2.t
+	desc = hai_crisis.2.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_crisis.2.a
+		promote_character = HAI_Fritz_Alphonse_Jean
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = hai_crisis.3
+	title = hai_crisis.3.t
+	desc = hai_crisis.3.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_crisis.3.a
+		promote_character = HAI_Laurent_Saint_Cyr
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = hai_crisis.20
+	title = hai_crisis.20.t
+	desc = hai_crisis.20.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	immediate = {
+		clr_country_flag = HAI_crisis_active
+		clr_country_flag = HAI_war_event_pending
+		set_country_flag = HAI_haiti_war_started
+		set_variable = { HAI_escalation = 100 }
+
+		# Do not create a formal gang faction here. The legacy create_faction
+		# effect is obsolete in HOI4 1.19 and causes an access violation when this
+		# event fires. Haiti declares separate wars below, so every armed group
+		# still enters the conflict on the same tick.
+
+		if = {
+			limit = {
+				country_exists = VIV
+				NOT = { has_war_with = VIV }
+			}
+			declare_war_on = { target = VIV type = annex_everything }
+		}
+		if = {
+			limit = {
+				country_exists = KRB
+				NOT = { has_war_with = KRB }
+			}
+			declare_war_on = { target = KRB type = annex_everything }
+		}
+		if = {
+			limit = {
+				country_exists = GRF
+				NOT = { has_war_with = GRF }
+			}
+			declare_war_on = { target = GRF type = annex_everything }
+		}
+	}
+
+	option = {
+		name = hai_crisis.20.a
+		add_war_support = 0.10
+		add_stability = -0.03
+	}
+}

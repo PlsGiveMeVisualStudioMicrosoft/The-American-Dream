@@ -1,0 +1,16 @@
+characters = {
+	GRF_Luckson_Elan = {
+		name = GRF_Luckson_Elan
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_GRF_Luckson_Elan"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { HAI_gang_boss }
+			expire = "2083.1.1.1"
+			id = -1
+		}
+	}
+}

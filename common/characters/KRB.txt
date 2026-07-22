@@ -1,0 +1,16 @@
+characters = {
+	KRB_Vitelhomme_Innocent = {
+		name = KRB_Vitelhomme_Innocent
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_KRB_Vitelhomme_Innocent"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { HAI_gang_boss }
+			expire = "2083.1.1.1"
+			id = -1
+		}
+	}
+}

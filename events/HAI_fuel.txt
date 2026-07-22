@@ -1,0 +1,653 @@
+add_namespace = hai_fuel
+
+# Oil-threat warnings. Map the Armed Networks is reflected in the text and in
+# the player's ability to see the named attacker before the twelve-day strike.
+country_event = {
+	id = hai_fuel.90
+	title = hai_fuel.90.t
+	desc = hai_fuel.90.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_fuel.90.a }
+}
+
+country_event = {
+	id = hai_fuel.91
+	title = hai_fuel.91.t
+	desc = hai_fuel.91.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_fuel.91.a }
+}
+
+country_event = {
+	id = hai_fuel.92
+	title = hai_fuel.92.t
+	desc = hai_fuel.92.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_fuel.92.a }
+}
+
+# Haiti chooses where the motorized police column applies pressure.
+country_event = {
+	id = hai_fuel.50
+	title = hai_fuel.50.t
+	desc = hai_fuel.50.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_fuel.50.a
+		trigger = { country_exists = VIV }
+		VIV = { add_timed_idea = { idea = VIV_fuel_police_pressure days = 21 } }
+	}
+	option = {
+		name = hai_fuel.50.b
+		trigger = { country_exists = GRF }
+		GRF = { add_timed_idea = { idea = GRF_fuel_police_pressure days = 21 } }
+	}
+	option = {
+		name = hai_fuel.50.c
+		trigger = { country_exists = KRB }
+		KRB = { add_timed_idea = { idea = KRB_fuel_police_pressure days = 21 } }
+	}
+}
+
+country_event = {
+	id = hai_fuel.52
+	title = hai_fuel.52.t
+	desc = hai_fuel.52.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_fuel.52.a }
+}
+
+# Hidden gang-side resolution events preserve the attacker as FROM when the
+# visible outcome is delivered to Haiti.
+country_event = {
+	id = hai_fuel.100
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		HAI = {
+			has_country_flag = HAI_crisis_active
+			has_country_flag = HAI_oil_attack_viv_pending
+			controls_state = 87
+		}
+	}
+	immediate = {
+		if = {
+			limit = { HAI = { has_country_flag = HAI_program_decoy_convoy } }
+			random_list = {
+				20 = { HAI = { country_event = { id = hai_fuel.110 hours = 2 } } }
+				80 = { HAI = { country_event = { id = hai_fuel.111 hours = 2 } } }
+			}
+		}
+		else_if = {
+			limit = { HAI = { check_variable = { HAI_offshore_security > 2 } } }
+			random_list = {
+				15 = { HAI = { country_event = { id = hai_fuel.110 hours = 2 } } }
+				85 = { HAI = { country_event = { id = hai_fuel.111 hours = 2 } } }
+			}
+		}
+		else_if = {
+			limit = { HAI = { check_variable = { HAI_offshore_security > 1 } } }
+			random_list = {
+				35 = { HAI = { country_event = { id = hai_fuel.110 hours = 2 } } }
+				65 = { HAI = { country_event = { id = hai_fuel.111 hours = 2 } } }
+			}
+		}
+		else_if = {
+			limit = { HAI = { check_variable = { HAI_offshore_security > 0 } } }
+			random_list = {
+				60 = { HAI = { country_event = { id = hai_fuel.110 hours = 2 } } }
+				40 = { HAI = { country_event = { id = hai_fuel.111 hours = 2 } } }
+			}
+		}
+		else = {
+			random_list = {
+				80 = { HAI = { country_event = { id = hai_fuel.110 hours = 2 } } }
+				20 = { HAI = { country_event = { id = hai_fuel.111 hours = 2 } } }
+			}
+		}
+		HAI_clear_oil_attack_flags = yes
+	}
+}
+
+country_event = {
+	id = hai_fuel.101
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		HAI = {
+			has_country_flag = HAI_crisis_active
+			has_country_flag = HAI_oil_attack_grf_pending
+			controls_state = 87
+		}
+	}
+	immediate = {
+		if = {
+			limit = { HAI = { has_country_flag = HAI_program_decoy_convoy } }
+			random_list = {
+				20 = { HAI = { country_event = { id = hai_fuel.120 hours = 2 } } }
+				80 = { HAI = { country_event = { id = hai_fuel.121 hours = 2 } } }
+			}
+		}
+		else_if = {
+			limit = { HAI = { check_variable = { HAI_transport_security > 2 } } }
+			random_list = {
+				15 = { HAI = { country_event = { id = hai_fuel.120 hours = 2 } } }
+				85 = { HAI = { country_event = { id = hai_fuel.121 hours = 2 } } }
+			}
+		}
+		else_if = {
+			limit = { HAI = { check_variable = { HAI_transport_security > 1 } } }
+			random_list = {
+				35 = { HAI = { country_event = { id = hai_fuel.120 hours = 2 } } }
+				65 = { HAI = { country_event = { id = hai_fuel.121 hours = 2 } } }
+			}
+		}
+		else_if = {
+			limit = { HAI = { check_variable = { HAI_transport_security > 0 } } }
+			random_list = {
+				60 = { HAI = { country_event = { id = hai_fuel.120 hours = 2 } } }
+				40 = { HAI = { country_event = { id = hai_fuel.121 hours = 2 } } }
+			}
+		}
+		else = {
+			random_list = {
+				80 = { HAI = { country_event = { id = hai_fuel.120 hours = 2 } } }
+				20 = { HAI = { country_event = { id = hai_fuel.121 hours = 2 } } }
+			}
+		}
+		HAI_clear_oil_attack_flags = yes
+	}
+}
+
+country_event = {
+	id = hai_fuel.102
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		HAI = {
+			has_country_flag = HAI_crisis_active
+			has_country_flag = HAI_oil_attack_krb_pending
+			controls_state = 87
+		}
+	}
+	immediate = {
+		if = {
+			limit = { HAI = { has_country_flag = HAI_program_decoy_convoy } }
+			random_list = {
+				20 = { HAI = { country_event = { id = hai_fuel.130 hours = 2 } } }
+				80 = { HAI = { country_event = { id = hai_fuel.131 hours = 2 } } }
+			}
+		}
+		else_if = {
+			limit = { HAI = { check_variable = { HAI_personnel_security > 2 } } }
+			random_list = {
+				15 = { HAI = { country_event = { id = hai_fuel.130 hours = 2 } } }
+				85 = { HAI = { country_event = { id = hai_fuel.131 hours = 2 } } }
+			}
+		}
+		else_if = {
+			limit = { HAI = { check_variable = { HAI_personnel_security > 1 } } }
+			random_list = {
+				35 = { HAI = { country_event = { id = hai_fuel.130 hours = 2 } } }
+				65 = { HAI = { country_event = { id = hai_fuel.131 hours = 2 } } }
+			}
+		}
+		else_if = {
+			limit = { HAI = { check_variable = { HAI_personnel_security > 0 } } }
+			random_list = {
+				60 = { HAI = { country_event = { id = hai_fuel.130 hours = 2 } } }
+				40 = { HAI = { country_event = { id = hai_fuel.131 hours = 2 } } }
+			}
+		}
+		else = {
+			random_list = {
+				80 = { HAI = { country_event = { id = hai_fuel.130 hours = 2 } } }
+				20 = { HAI = { country_event = { id = hai_fuel.131 hours = 2 } } }
+			}
+		}
+		HAI_clear_oil_attack_flags = yes
+	}
+}
+
+# Viv Ansanm: offshore sabotage.
+country_event = {
+	id = hai_fuel.110
+	title = hai_fuel.110.t
+	desc = hai_fuel.110.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_fuel.110.a
+		add_manpower = -100
+		add_stability = -0.02
+		custom_effect_tooltip = HAI_fuel_loss_scales_with_oil_tt
+		HAI_offshore_raid_scaled_fuel_transfer = yes
+		custom_effect_tooltip = HAI_escalation_increase_6_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 6 } }
+		if = {
+			limit = { NOT = { has_country_flag = HAI_offshore_output_disrupted } }
+			set_country_flag = HAI_offshore_output_disrupted
+			add_ideas = HAI_offshore_output_disrupted
+			87 = { add_resource = { type = oil amount = -3 } }
+			country_event = { id = hai_fuel.140 days = 90 }
+		}
+		subtract_from_variable = { HAI_offshore_security = 1 }
+		FROM = {
+			add_political_power = 45
+			add_war_support = 0.02
+			country_event = { id = hai_fuel.112 hours = 2 }
+		}
+		HAI_clamp_oil_security = yes
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_fuel.111
+	title = hai_fuel.111.t
+	desc = hai_fuel.111.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_fuel.111.a
+		add_manpower = -50
+		add_war_support = 0.01
+		custom_effect_tooltip = HAI_escalation_increase_2_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 2 } }
+		subtract_from_variable = { HAI_offshore_security = 1 }
+		FROM = {
+			add_manpower = -200
+			add_political_power = -30
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -150 }
+			country_event = { id = hai_fuel.113 hours = 2 }
+		}
+		HAI_clamp_oil_security = yes
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = { id = hai_fuel.112 title = hai_fuel.112.t desc = hai_fuel.112.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_fuel.112.a } }
+country_event = { id = hai_fuel.113 title = hai_fuel.113.t desc = hai_fuel.113.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_fuel.113.a } }
+
+# Gran Grif: tanker hijacking.
+country_event = {
+	id = hai_fuel.120
+	title = hai_fuel.120.t
+	desc = hai_fuel.120.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_fuel.120.a
+		add_manpower = -125
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -180 }
+		add_stability = -0.01
+		custom_effect_tooltip = HAI_fuel_loss_scales_with_oil_tt
+		HAI_tanker_raid_scaled_fuel_transfer = yes
+		custom_effect_tooltip = HAI_escalation_increase_5_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 5 } }
+		subtract_from_variable = { HAI_transport_security = 1 }
+		FROM = {
+			add_political_power = 40
+			add_war_support = 0.02
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 120 }
+			country_event = { id = hai_fuel.122 hours = 2 }
+		}
+		HAI_clamp_oil_security = yes
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_fuel.121
+	title = hai_fuel.121.t
+	desc = hai_fuel.121.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_fuel.121.a
+		add_manpower = -40
+		add_war_support = 0.01
+		custom_effect_tooltip = HAI_escalation_increase_2_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 2 } }
+		subtract_from_variable = { HAI_transport_security = 1 }
+		FROM = {
+			add_manpower = -180
+			add_political_power = -25
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -120 }
+			country_event = { id = hai_fuel.123 hours = 2 }
+		}
+		HAI_clamp_oil_security = yes
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = { id = hai_fuel.122 title = hai_fuel.122.t desc = hai_fuel.122.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_fuel.122.a } }
+country_event = { id = hai_fuel.123 title = hai_fuel.123.t desc = hai_fuel.123.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_fuel.123.a } }
+
+# Kraze Barye: engineer abduction with a player-facing ransom choice.
+country_event = {
+	id = hai_fuel.130
+	title = hai_fuel.130.t
+	desc = hai_fuel.130.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_fuel.130.a
+		custom_effect_tooltip = HAI_fuel_ransom_scales_with_oil_tt
+		HAI_engineer_ransom_scaled_fuel_transfer = yes
+		custom_effect_tooltip = HAI_escalation_increase_3_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 3 } }
+		FROM = { add_political_power = 30 country_event = { id = hai_fuel.132 hours = 2 } }
+		subtract_from_variable = { HAI_personnel_security = 1 }
+		HAI_clamp_oil_security = yes
+		HAI_check_escalation_threshold = yes
+	}
+	option = {
+		name = hai_fuel.130.b
+		trigger = { political_power > 74 }
+		add_political_power = -75
+		custom_effect_tooltip = HAI_escalation_increase_3_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 3 } }
+		FROM = { add_political_power = 75 country_event = { id = hai_fuel.132 hours = 2 } }
+		subtract_from_variable = { HAI_personnel_security = 1 }
+		HAI_clamp_oil_security = yes
+		HAI_check_escalation_threshold = yes
+	}
+	option = {
+		name = hai_fuel.130.c
+		add_manpower = -100
+		add_stability = -0.02
+		add_timed_idea = { idea = HAI_oil_engineers_missing days = 60 }
+		custom_effect_tooltip = HAI_escalation_increase_5_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 5 } }
+		FROM = { add_war_support = 0.02 country_event = { id = hai_fuel.133 hours = 2 } }
+		subtract_from_variable = { HAI_personnel_security = 1 }
+		HAI_clamp_oil_security = yes
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_fuel.131
+	title = hai_fuel.131.t
+	desc = hai_fuel.131.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_fuel.131.a
+		add_manpower = -25
+		add_war_support = 0.01
+		custom_effect_tooltip = HAI_escalation_increase_2_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 2 } }
+		subtract_from_variable = { HAI_personnel_security = 1 }
+		FROM = {
+			add_manpower = -150
+			add_political_power = -25
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -100 }
+			country_event = { id = hai_fuel.134 hours = 2 }
+		}
+		HAI_clamp_oil_security = yes
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = { id = hai_fuel.132 title = hai_fuel.132.t desc = hai_fuel.132.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_fuel.132.a } }
+country_event = { id = hai_fuel.133 title = hai_fuel.133.t desc = hai_fuel.133.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_fuel.133.a } }
+country_event = { id = hai_fuel.134 title = hai_fuel.134.t desc = hai_fuel.134.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_fuel.134.a } }
+
+# Natural and accelerated restoration of a sabotaged three-oil field.
+country_event = {
+	id = hai_fuel.140
+	title = hai_fuel.140.t
+	desc = hai_fuel.140.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	trigger = { has_country_flag = HAI_offshore_output_disrupted }
+	option = {
+		name = hai_fuel.140.a
+		87 = { add_resource = { type = oil amount = 3 } }
+		clr_country_flag = HAI_offshore_output_disrupted
+		remove_ideas = HAI_offshore_output_disrupted
+	}
+}
+
+# Program completion events clear their daily commitment and deliver the
+# promised end reward only if the program survived fuel exhaustion.
+country_event = {
+	id = hai_fuel.200 title = hai_fuel.200.t desc = hai_fuel.200.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_fishing_fleet }
+	option = {
+		name = hai_fuel.200.a
+		clr_country_flag = HAI_program_fishing_fleet remove_ideas = HAI_fuel_fishing_fleet
+		subtract_from_variable = { HAI_daily_fuel_commitment = 300 }
+		add_manpower = 250 add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = hai_fuel.201 title = hai_fuel.201.t desc = hai_fuel.201.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_hospitals }
+	option = {
+		name = hai_fuel.201.a
+		clr_country_flag = HAI_program_hospitals remove_ideas = HAI_fuel_hospitals
+		subtract_from_variable = { HAI_daily_fuel_commitment = 350 }
+		add_manpower = 500 add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = hai_fuel.202 title = hai_fuel.202.t desc = hai_fuel.202.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_ferry_network }
+	option = {
+		name = hai_fuel.202.a
+		clr_country_flag = HAI_program_ferry_network remove_ideas = HAI_fuel_ferry_network
+		subtract_from_variable = { HAI_daily_fuel_commitment = 400 }
+		subtract_from_variable = { HAI_transport_security = 1 }
+		add_stability = 0.01 HAI_clamp_oil_security = yes
+	}
+}
+
+country_event = {
+	id = hai_fuel.203 title = hai_fuel.203.t desc = hai_fuel.203.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_local_support }
+	option = {
+		name = hai_fuel.203.a
+		clr_country_flag = HAI_program_local_support remove_ideas = HAI_fuel_local_support
+		subtract_from_variable = { HAI_daily_fuel_commitment = 550 }
+		subtract_from_variable = { HAI_offshore_security = 1 }
+		subtract_from_variable = { HAI_transport_security = 1 }
+		subtract_from_variable = { HAI_personnel_security = 1 }
+		add_stability = 0.02 HAI_add_ruling_party_popularity = yes HAI_clamp_oil_security = yes
+	}
+}
+
+country_event = {
+	id = hai_fuel.204 title = hai_fuel.204.t desc = hai_fuel.204.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_tanker_escorts }
+	option = {
+		name = hai_fuel.204.a
+		clr_country_flag = HAI_program_tanker_escorts remove_ideas = HAI_fuel_tanker_escorts
+		subtract_from_variable = { HAI_daily_fuel_commitment = 700 }
+		subtract_from_variable = { HAI_transport_security = 2 }
+		HAI_clamp_oil_security = yes
+	}
+}
+
+country_event = {
+	id = hai_fuel.205 title = hai_fuel.205.t desc = hai_fuel.205.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_channel_patrol }
+	option = {
+		name = hai_fuel.205.a
+		clr_country_flag = HAI_program_channel_patrol remove_ideas = HAI_fuel_channel_patrol
+		subtract_from_variable = { HAI_daily_fuel_commitment = 750 }
+		subtract_from_variable = { HAI_offshore_security = 2 }
+		HAI_clamp_oil_security = yes
+	}
+}
+
+country_event = {
+	id = hai_fuel.206 title = hai_fuel.206.t desc = hai_fuel.206.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_gang_tracking }
+	option = {
+		name = hai_fuel.206.a
+		clr_country_flag = HAI_program_gang_tracking remove_ideas = HAI_fuel_gang_tracking
+		subtract_from_variable = { HAI_daily_fuel_commitment = 850 }
+		subtract_from_variable = { HAI_personnel_security = 2 }
+		HAI_clamp_oil_security = yes
+	}
+}
+
+country_event = {
+	id = hai_fuel.207 title = hai_fuel.207.t desc = hai_fuel.207.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_generators }
+	option = {
+		name = hai_fuel.207.a
+		clr_country_flag = HAI_program_generators remove_ideas = HAI_fuel_emergency_generators
+		subtract_from_variable = { HAI_daily_fuel_commitment = 900 }
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = hai_fuel.208 title = hai_fuel.208.t desc = hai_fuel.208.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_power_capital }
+	option = {
+		name = hai_fuel.208.a
+		clr_country_flag = HAI_program_power_capital remove_ideas = HAI_fuel_power_capital
+		subtract_from_variable = { HAI_daily_fuel_commitment = 950 }
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = hai_fuel.209 title = hai_fuel.209.t desc = hai_fuel.209.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_motorized_police }
+	option = {
+		name = hai_fuel.209.a
+		clr_country_flag = HAI_program_motorized_police
+		subtract_from_variable = { HAI_daily_fuel_commitment = 1150 }
+	}
+}
+
+country_event = {
+	id = hai_fuel.210 title = hai_fuel.210.t desc = hai_fuel.210.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_cssm_transport }
+	option = {
+		name = hai_fuel.210.a
+		clr_country_flag = HAI_program_cssm_transport remove_ideas = HAI_fuel_cssm_transport
+		subtract_from_variable = { HAI_daily_fuel_commitment = 1450 }
+		army_experience = 3
+	}
+}
+
+country_event = {
+	id = hai_fuel.211 title = hai_fuel.211.t desc = hai_fuel.211.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_coastal_interdiction }
+	option = {
+		name = hai_fuel.211.a
+		clr_country_flag = HAI_program_coastal_interdiction remove_ideas = HAI_fuel_coastal_interdiction
+		subtract_from_variable = { HAI_daily_fuel_commitment = 1850 }
+		subtract_from_variable = { HAI_offshore_security = 1 }
+		subtract_from_variable = { HAI_transport_security = 1 }
+		subtract_from_variable = { HAI_escalation = 2 }
+		HAI_clamp_oil_security = yes HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_fuel.212 title = hai_fuel.212.t desc = hai_fuel.212.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_airlift }
+	option = {
+		name = hai_fuel.212.a
+		clr_country_flag = HAI_program_airlift remove_ideas = HAI_fuel_emergency_airlift
+		subtract_from_variable = { HAI_daily_fuel_commitment = 2250 }
+		add_manpower = 750 add_stability = 0.01
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 300 }
+		add_equipment_to_stockpile = { type = support_equipment_1 amount = 30 }
+	}
+}
+
+country_event = {
+	id = hai_fuel.213 title = hai_fuel.213.t desc = hai_fuel.213.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_fuel_export }
+	option = {
+		name = hai_fuel.213.a
+		clr_country_flag = HAI_program_fuel_export remove_ideas = HAI_fuel_caribbean_export
+		subtract_from_variable = { HAI_daily_fuel_commitment = 2550 }
+		add_political_power = 75
+		add_to_variable = { HAI_regional_influence = 10 }
+		HAI_check_regional_influence_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_fuel.214 title = hai_fuel.214.t desc = hai_fuel.214.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_decoy_convoy }
+	option = {
+		name = hai_fuel.214.a
+		clr_country_flag = HAI_program_decoy_convoy remove_ideas = HAI_fuel_decoy_operation
+		subtract_from_variable = { HAI_daily_fuel_commitment = 1250 }
+	}
+}
+
+country_event = {
+	id = hai_fuel.215 title = hai_fuel.215.t desc = hai_fuel.215.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	trigger = { has_country_flag = HAI_program_oil_repairs }
+	option = {
+		name = hai_fuel.215.a
+		clr_country_flag = HAI_program_oil_repairs remove_ideas = HAI_fuel_emergency_repairs
+		subtract_from_variable = { HAI_daily_fuel_commitment = 900 }
+		if = {
+			limit = { has_country_flag = HAI_offshore_output_disrupted }
+			87 = { add_resource = { type = oil amount = 3 } }
+			clr_country_flag = HAI_offshore_output_disrupted
+			remove_ideas = HAI_offshore_output_disrupted
+		}
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = hai_fuel.216 title = hai_fuel.216.t desc = hai_fuel.216.d
+	picture = GFX_report_event_generic_political_reform is_triggered_only = yes
+	option = { name = hai_fuel.216.a }
+}
+
+country_event = {
+	id = hai_fuel.220
+	title = hai_fuel.220.t
+	desc = hai_fuel.220.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_fuel.220.a add_stability = -0.02 add_war_support = -0.01 }
+}
+
+country_event = {
+	id = hai_fuel.221
+	title = hai_fuel.221.t
+	desc = hai_fuel.221.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_fuel.221.a }
+}

@@ -791,9 +791,7 @@ guiTypes = {
 			maxWidth = 485
 			maxHeight = 70
 			format = center
-			horizontalScrollbar = "bottom_horizontal_slider"
-
-		}
+			}
 		
 		instantTextboxType = {
 			name = "reward"

@@ -1,23 +1,22 @@
 state = {
-	id = 74
-	name = "STATE_74"
+	id = 83
+	name = "STATE_83"
 	history = {
 		owner = HAI
 		victory_points = {
-			8694 5
+			3200 3
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
-			arms_factory = 1
+			industrial_complex = 1
 		}
 		add_core_of = HAI
 	}
 
 	provinces = {
-		8694
+		9622 8642 1515 8645 3200 8625
 	}
-	manpower = 420000
+	manpower = 2800000
 	state_category = town
 	buildings_max_level_factor = 1.000
 }

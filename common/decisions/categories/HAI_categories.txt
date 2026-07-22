@@ -1,0 +1,115 @@
+HAI_haitian_crisis_category = {
+	icon = generic_research
+	allowed = {
+		OR = {
+			tag = HAI
+			tag = VIV
+			tag = GRF
+			tag = KRB
+		}
+	}
+	visible = {
+		HAI = { has_country_flag = HAI_crisis_active }
+	}
+	priority = 100
+}
+
+HAI_counter_operations_category = {
+	icon = generic_research
+	allowed = { tag = HAI }
+	visible = {
+		tag = HAI
+		has_country_flag = HAI_counter_operations_unlocked
+		has_country_flag = HAI_crisis_active
+	}
+	priority = 105
+}
+
+HAI_regional_support_category = {
+	icon = generic_research
+	allowed = {
+		OR = {
+			tag = HAI
+			tag = VIV
+			tag = GRF
+			tag = KRB
+		}
+	}
+	visible = {
+		HAI = { has_country_flag = HAI_regional_contest_active }
+	}
+	priority = 95
+}
+
+HAI_regional_alternatives_category = {
+	icon = generic_research
+	allowed = { tag = HAI }
+	visible = {
+		tag = HAI
+		has_country_flag = HAI_choose_alternative_partner
+		NOT = { has_country_flag = HAI_partner_secured }
+	}
+	priority = 96
+}
+
+HAI_cssm_operations_category = {
+	icon = generic_research
+	allowed = { tag = HAI }
+	visible = {
+		tag = HAI
+		has_idea = HAI_cssm_framework
+	}
+	priority = 90
+}
+
+HAI_gonave_security_category = {
+	icon = generic_research
+	allowed = {
+		OR = {
+			tag = HAI
+			tag = VIV
+			tag = GRF
+			tag = KRB
+		}
+	}
+	visible = {
+		HAI = { has_country_flag = HAI_gonave_security_unlocked }
+	}
+	priority = 110
+}
+
+HAI_gonave_development_category = {
+	icon = generic_research
+	allowed = { tag = HAI }
+	visible = {
+		tag = HAI
+		has_country_flag = HAI_gonave_development_authority
+	}
+	priority = 109
+}
+
+HAI_fuel_programs_category = {
+	icon = generic_research
+	allowed = { tag = HAI }
+	visible = {
+		tag = HAI
+		has_country_flag = HAI_fuel_programs_unlocked
+	}
+	priority = 114
+}
+
+HAI_oil_security_category = {
+	icon = generic_research
+	allowed = {
+		OR = {
+			tag = HAI
+			tag = VIV
+			tag = GRF
+			tag = KRB
+		}
+	}
+	visible = {
+		HAI = { has_country_flag = HAI_fuel_programs_unlocked }
+	}
+	priority = 115
+}

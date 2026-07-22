@@ -1,0 +1,295 @@
+add_namespace = hai_cssm
+
+# Haiti has reached +60 influence. AI partners accept; human partners may refuse.
+country_event = {
+	id = hai_cssm.1
+	title = hai_cssm.1.t
+	desc = hai_cssm.1.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_cssm.1.a
+		ai_chance = { factor = 100 }
+		add_political_power = 25
+		if = {
+			limit = { tag = DOM }
+			FROM = { set_country_flag = HAI_partner_DOM }
+		}
+		if = {
+			limit = { tag = JAM }
+			FROM = { set_country_flag = HAI_partner_JAM }
+		}
+		if = {
+			limit = { tag = BAH }
+			FROM = { set_country_flag = HAI_partner_BAH }
+		}
+		FROM = {
+			set_country_flag = HAI_partner_secured
+			clr_country_flag = HAI_regional_contest_active
+			clr_country_flag = HAI_choose_alternative_partner
+			HAI_clear_regional_target_flags = yes
+			add_stability = 0.03
+			country_event = { id = hai_cssm.3 hours = 3 }
+		}
+	}
+
+	option = {
+		name = hai_cssm.1.b
+		ai_chance = { factor = 0 }
+		VIV = {
+			add_stability = 0.05
+			add_war_support = 0.02
+		}
+		GRF = {
+			add_stability = 0.05
+			add_war_support = 0.02
+		}
+		KRB = {
+			add_stability = 0.05
+			add_war_support = 0.02
+		}
+		give_military_access = VIV
+		give_military_access = GRF
+		give_military_access = KRB
+		FROM = {
+			clr_country_flag = HAI_regional_contest_active
+			HAI_clear_regional_target_flags = yes
+			if = {
+				limit = {
+					has_country_flag = HAI_tried_DOM
+					has_country_flag = HAI_tried_JAM
+					has_country_flag = HAI_tried_BAH
+				}
+				set_country_flag = HAI_cssm_failed
+				country_event = { id = hai_cssm.5 hours = 3 }
+			}
+			else = {
+				set_country_flag = HAI_choose_alternative_partner
+				country_event = { id = hai_cssm.4 hours = 3 }
+			}
+		}
+	}
+}
+
+# The gangs have reached -60 influence. AI partners refuse; human partners may defy the pressure.
+country_event = {
+	id = hai_cssm.2
+	title = hai_cssm.2.t
+	desc = hai_cssm.2.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_cssm.2.a
+		ai_chance = { factor = 100 }
+		VIV = {
+			add_stability = 0.05
+			add_war_support = 0.02
+		}
+		GRF = {
+			add_stability = 0.05
+			add_war_support = 0.02
+		}
+		KRB = {
+			add_stability = 0.05
+			add_war_support = 0.02
+		}
+		give_military_access = VIV
+		give_military_access = GRF
+		give_military_access = KRB
+		FROM = {
+			clr_country_flag = HAI_regional_contest_active
+			HAI_clear_regional_target_flags = yes
+			if = {
+				limit = {
+					has_country_flag = HAI_tried_DOM
+					has_country_flag = HAI_tried_JAM
+					has_country_flag = HAI_tried_BAH
+				}
+				set_country_flag = HAI_cssm_failed
+				country_event = { id = hai_cssm.5 hours = 3 }
+			}
+			else = {
+				set_country_flag = HAI_choose_alternative_partner
+				country_event = { id = hai_cssm.4 hours = 3 }
+			}
+		}
+	}
+
+	option = {
+		name = hai_cssm.2.b
+		ai_chance = { factor = 0 }
+		add_political_power = -75
+		add_stability = -0.05
+		if = {
+			limit = { tag = DOM }
+			FROM = { set_country_flag = HAI_partner_DOM }
+		}
+		if = {
+			limit = { tag = JAM }
+			FROM = { set_country_flag = HAI_partner_JAM }
+		}
+		if = {
+			limit = { tag = BAH }
+			FROM = { set_country_flag = HAI_partner_BAH }
+		}
+		FROM = {
+			set_country_flag = HAI_partner_secured
+			clr_country_flag = HAI_regional_contest_active
+			clr_country_flag = HAI_choose_alternative_partner
+			HAI_clear_regional_target_flags = yes
+			country_event = { id = hai_cssm.3 hours = 3 }
+		}
+	}
+}
+
+country_event = {
+	id = hai_cssm.3
+	title = hai_cssm.3.t
+	desc = hai_cssm.3.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_cssm.3.a
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = hai_cssm.4
+	title = hai_cssm.4.t
+	desc = hai_cssm.4.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_cssm.4.a
+		add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = hai_cssm.5
+	title = hai_cssm.5.t
+	desc = hai_cssm.5.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_cssm.5.a
+		add_stability = -0.05
+		add_war_support = -0.03
+	}
+}
+
+country_event = {
+	id = hai_cssm.6
+	title = hai_cssm.6.t
+	desc = hai_cssm.6.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_cssm.6.a
+	}
+}
+
+country_event = {
+	id = hai_cssm.7
+	title = hai_cssm.7.t
+	desc = hai_cssm.7.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_cssm.7.a
+	}
+}
+
+country_event = {
+	id = hai_cssm.8
+	title = hai_cssm.8.t
+	desc = hai_cssm.8.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_cssm.8.a
+	}
+}
+
+country_event = {
+	id = hai_cssm.9
+	title = hai_cssm.9.t
+	desc = hai_cssm.9.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_cssm.9.a
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = hai_cssm.20
+	title = hai_cssm.20.t
+	desc = hai_cssm.20.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	immediate = {
+		country_event = { id = hai_cssm.21 days = 21 }
+	}
+
+	option = {
+		name = hai_cssm.20.a
+		add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = hai_cssm.21
+	title = hai_cssm.21.t
+	desc = hai_cssm.21.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_cssm.21.a
+		trigger = { controls_state = 74 }
+		clr_country_flag = HAI_cssm_evacuation_pending
+		add_war_support = 0.02
+	}
+
+	option = {
+		name = hai_cssm.21.b
+		trigger = { NOT = { controls_state = 74 } }
+		clr_country_flag = HAI_cssm_evacuation_pending
+		clr_country_flag = HAI_cssm_brigade_deployed
+		set_country_flag = HAI_cssm_brigade_withdrawn
+		add_stability = -0.08
+		add_war_support = -0.08
+		VIV = { add_war_support = 0.05 }
+		GRF = { add_war_support = 0.05 }
+		KRB = { add_war_support = 0.05 }
+	}
+}
+
+# Save-compatibility handler for v6 saves that already queued hai_cssm.22.
+# Do not delete the locked brigade template here: native delete_units calls on
+# this formation can CTD. The foreign command evacuates while the local
+# remnants are absorbed into Haitian service.
+country_event = {
+	id = hai_cssm.22
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		clr_country_flag = HAI_cssm_evacuation_pending
+		clr_country_flag = HAI_cssm_brigade_deployed
+		set_country_flag = HAI_cssm_brigade_withdrawn
+	}
+}

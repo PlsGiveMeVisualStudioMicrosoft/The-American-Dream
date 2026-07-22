@@ -1,0 +1,29 @@
+VIV = {
+	male = {
+		names = { Jean Pierre Joseph Michel Paul Jacques Louis Emmanuel Frantz Stanley Peterson Ricardo }
+	}
+	female = {
+		names = { Marie Anne Rose Nadia Stephanie Guerda Patricia Fabienne }
+	}
+	surnames = { Jean Baptiste Pierre Joseph Charles Louis Michel Laurent Augustin Desir Etienne Toussaint }
+}
+
+GRF = {
+	male = {
+		names = { Jean Pierre Joseph Michel Paul Jacques Louis Emmanuel Frantz Stanley Peterson Ricardo }
+	}
+	female = {
+		names = { Marie Anne Rose Nadia Stephanie Guerda Patricia Fabienne }
+	}
+	surnames = { Jean Baptiste Pierre Joseph Charles Louis Michel Laurent Augustin Desir Etienne Toussaint }
+}
+
+KRB = {
+	male = {
+		names = { Jean Pierre Joseph Michel Paul Jacques Louis Emmanuel Frantz Stanley Peterson Ricardo }
+	}
+	female = {
+		names = { Marie Anne Rose Nadia Stephanie Guerda Patricia Fabienne }
+	}
+	surnames = { Jean Baptiste Pierre Joseph Charles Louis Michel Laurent Augustin Desir Etienne Toussaint }
+}

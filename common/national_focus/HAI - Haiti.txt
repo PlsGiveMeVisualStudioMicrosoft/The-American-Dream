@@ -1,0 +1,1038 @@
+focus_tree = {
+	id = HAI_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = HAI
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+	# Keep the continuous-focus palette clear of Haiti's security branch.
+	continuous_focus_position = { x = 3300 y = 100 }
+
+	focus = {
+		id = HAI_nation_on_the_brink
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 0
+		cost = 1
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.02
+			country_event = { id = hai_crisis.1 hours = 6 }
+		}
+	}
+
+	focus = {
+		id = HAI_emergency_council_session
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 1
+		cost = 3
+		prerequisite = { focus = HAI_nation_on_the_brink }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = HAI_emergency_administration
+		}
+	}
+
+	# Security and reunification
+	focus = {
+		id = HAI_secure_national_palace
+		icon = GFX_goal_generic_position_armies
+		x = 2
+		y = 2
+		cost = 4
+		prerequisite = { focus = HAI_emergency_council_session }
+		completion_reward = {
+			add_war_support = 0.05
+			74 = {
+				add_building_construction = {
+					type = bunker
+					province = 8694
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_reorganize_pnh
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 3
+		cost = 5
+		prerequisite = { focus = HAI_secure_national_palace }
+		completion_reward = {
+			remove_ideas = HAI_underfunded_security_forces
+			add_ideas = HAI_reformed_pnh
+			army_experience = 10
+			add_manpower = 8000
+		}
+	}
+
+	focus = {
+		id = HAI_request_mss_reinforcements
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 4
+		cost = 4
+		prerequisite = { focus = HAI_reorganize_pnh }
+		completion_reward = {
+			add_war_support = 0.05
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 600
+				producer = USA
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_protect_port
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 4
+		y = 4
+		cost = 4
+		prerequisite = { focus = HAI_reorganize_pnh }
+		completion_reward = {
+			add_stability = 0.04
+			74 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_map_gang_networks
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 2
+		y = 5
+		cost = 4
+		prerequisite = { focus = HAI_request_mss_reinforcements }
+		prerequisite = { focus = HAI_protect_port }
+		completion_reward = {
+			add_political_power = 40
+			army_experience = 10
+			if = {
+				limit = { NOT = { has_country_flag = HAI_gonave_security_unlocked } }
+				set_country_flag = HAI_gonave_security_unlocked
+				set_variable = { HAI_gonave_security = 0 }
+				country_event = { id = hai_gonave.1 hours = 3 }
+			}
+		}
+	}
+
+	# A costly intelligence detour that can temporarily suppress one armed
+	# network without weakening its frontline divisions.
+	focus = {
+		id = HAI_delay_the_catastrophe
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 5
+		y = 6
+		cost = 4
+		prerequisite = { focus = HAI_map_gang_networks }
+		completion_reward = {
+			set_country_flag = HAI_counter_operations_unlocked
+			set_variable = { HAI_counter_operation_tokens = 1 }
+			if = {
+				limit = { has_completed_focus = HAI_joint_operations_command }
+				add_to_variable = { HAI_counter_operation_tokens = 1 }
+			}
+			subtract_from_variable = { HAI_escalation = 4 }
+			add_political_power = 20
+			HAI_check_escalation_threshold = yes
+			country_event = { id = hai_gangs.99 hours = 3 }
+		}
+	}
+
+	focus = {
+		id = HAI_cultivate_confidential_informants
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 5
+		y = 7
+		cost = 4
+		prerequisite = { focus = HAI_delay_the_catastrophe }
+		completion_reward = {
+			set_country_flag = HAI_informant_network_active
+			add_to_variable = { HAI_counter_operation_tokens = 1 }
+			add_ideas = HAI_confidential_informants
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = HAI_buy_the_republic_time
+		icon = GFX_goal_generic_political_pressure
+		x = 5
+		y = 8
+		cost = 5
+		prerequisite = { focus = HAI_cultivate_confidential_informants }
+		completion_reward = {
+			subtract_from_variable = { HAI_escalation = 6 }
+			add_stability = 0.02
+			add_political_power = 30
+			HAI_check_escalation_threshold = yes
+		}
+	}
+
+	focus = {
+		id = HAI_state_of_siege
+		icon = GFX_goal_generic_forceful_treaty
+		x = 2
+		y = 6
+		cost = 5
+		prerequisite = { focus = HAI_map_gang_networks }
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = -0.03
+			add_to_variable = { HAI_escalation = 15 }
+			HAI_check_escalation_threshold = yes
+		}
+	}
+
+	focus = {
+		id = HAI_operation_port_au_prince
+		icon = GFX_goal_generic_major_war
+		x = 1
+		y = 7
+		cost = 5
+		prerequisite = { focus = HAI_state_of_siege }
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_country_flag = HAI_haiti_war_started } }
+				set_variable = { HAI_escalation = 100 }
+				HAI_check_escalation_threshold = yes
+			}
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = HAI_break_gran_grif
+		icon = GFX_goal_generic_major_war
+		x = 3
+		y = 7
+		cost = 5
+		prerequisite = { focus = HAI_state_of_siege }
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_country_flag = HAI_haiti_war_started } }
+				set_variable = { HAI_escalation = 100 }
+				HAI_check_escalation_threshold = yes
+			}
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = HAI_restore_state_authority
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 8
+		cost = 6
+		prerequisite = { focus = HAI_operation_port_au_prince }
+		prerequisite = { focus = HAI_break_gran_grif }
+		available = {
+			controls_state = 82
+			controls_state = 85
+			controls_state = 86
+			controls_state = 87
+		}
+		completion_reward = {
+			remove_ideas = HAI_collapsed_state_institutions
+			remove_ideas = HAI_gang_controlled_capital
+			remove_ideas = HAI_mass_displacement
+			add_ideas = HAI_restored_authority
+			add_stability = 0.15
+			add_war_support = 0.05
+		}
+	}
+
+	# Security modernization
+	focus = {
+		id = HAI_import_small_arms
+		icon = GFX_goal_generic_small_arms
+		x = 6
+		y = 2
+		cost = 4
+		prerequisite = { focus = HAI_emergency_council_session }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 500
+				producer = USA
+			}
+			add_tech_bonus = {
+				name = HAI_small_arms_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_police_drones
+		icon = GFX_goal_generic_scientific_exchange
+		x = 6
+		y = 3
+		cost = 5
+		prerequisite = { focus = HAI_import_small_arms }
+		completion_reward = {
+			add_tech_bonus = {
+				name = HAI_electronics_bonus
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = HAI_motorize_rapid_response
+		icon = GFX_goal_generic_army_motorized
+		x = 8
+		y = 3
+		cost = 5
+		prerequisite = { focus = HAI_import_small_arms }
+		completion_reward = {
+			set_technology = { motorised_infantry = 1 }
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 100
+				producer = USA
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_expand_fadh
+		icon = GFX_goal_generic_army_doctrines
+		x = 7
+		y = 4
+		cost = 5
+		prerequisite = { focus = HAI_police_drones }
+		prerequisite = { focus = HAI_motorize_rapid_response }
+		completion_reward = {
+			army_experience = 20
+			add_manpower = 12000
+			add_war_support = 0.05
+		}
+	}
+
+	# Political futures
+	focus = {
+		id = HAI_clean_transition_council
+		icon = GFX_goal_generic_demand_territory
+		x = 10
+		y = 2
+		cost = 5
+		prerequisite = { focus = HAI_emergency_council_session }
+		mutually_exclusive = { focus = HAI_empower_fadh focus = HAI_open_backchannels }
+		completion_reward = {
+			add_stability = 0.08
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = HAI_restore_courts
+		icon = GFX_goal_generic_political_pressure
+		x = 10
+		y = 3
+		cost = 5
+		prerequisite = { focus = HAI_clean_transition_council }
+		completion_reward = {
+			add_stability = 0.07
+			add_political_power = 35
+		}
+	}
+
+	focus = {
+		id = HAI_prepare_elections
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 4
+		cost = 6
+		prerequisite = { focus = HAI_restore_courts }
+		completion_reward = {
+			clr_country_flag = HAI_historical_council_rotation
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				election_frequency = 60
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.45
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.45
+			}
+			add_stability = 0.08
+		}
+	}
+
+	focus = {
+		id = HAI_new_republic
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 5
+		cost = 7
+		prerequisite = { focus = HAI_prepare_elections }
+		completion_reward = {
+			remove_ideas = HAI_transitional_presidential_council
+			add_ideas = HAI_new_republic_idea
+			add_stability = 0.12
+		}
+	}
+
+	focus = {
+		id = HAI_empower_fadh
+		icon = GFX_goal_generic_position_armies
+		x = 13
+		y = 2
+		cost = 5
+		prerequisite = { focus = HAI_emergency_council_session }
+		mutually_exclusive = { focus = HAI_clean_transition_council focus = HAI_open_backchannels }
+		completion_reward = {
+			clr_country_flag = HAI_historical_council_rotation
+			add_war_support = 0.10
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = HAI_martial_law
+		icon = GFX_goal_generic_forceful_treaty
+		x = 13
+		y = 3
+		cost = 5
+		prerequisite = { focus = HAI_empower_fadh }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.10
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = HAI_national_directorate
+		icon = GFX_goal_generic_major_war
+		x = 13
+		y = 4
+		cost = 7
+		prerequisite = { focus = HAI_martial_law }
+		completion_reward = {
+			remove_ideas = HAI_transitional_presidential_council
+			add_ideas = HAI_national_directorate_idea
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_open_backchannels
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 16
+		y = 2
+		cost = 5
+		prerequisite = { focus = HAI_emergency_council_session }
+		mutually_exclusive = { focus = HAI_clean_transition_council focus = HAI_empower_fadh }
+		completion_reward = {
+			clr_country_flag = HAI_historical_council_rotation
+			add_political_power = 75
+			add_stability = -0.03
+		}
+	}
+
+	focus = {
+		id = HAI_offer_local_amnesty
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 16
+		y = 3
+		cost = 5
+		prerequisite = { focus = HAI_open_backchannels }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+
+	focus = {
+		id = HAI_integrate_armed_committees
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 16
+		y = 4
+		cost = 6
+		prerequisite = { focus = HAI_offer_local_amnesty }
+		completion_reward = {
+			add_manpower = 15000
+			army_experience = 15
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = HAI_government_national_salvation
+		icon = GFX_goal_generic_national_unity
+		x = 16
+		y = 5
+		cost = 7
+		prerequisite = { focus = HAI_integrate_armed_committees }
+		completion_reward = {
+			if = {
+				limit = { country_exists = VIV }
+				annex_country = { target = VIV transfer_troops = yes }
+			}
+			if = {
+				limit = { country_exists = GRF }
+				annex_country = { target = GRF transfer_troops = yes }
+			}
+			if = {
+				limit = { country_exists = KRB }
+				annex_country = { target = KRB transfer_troops = yes }
+			}
+			remove_ideas = HAI_transitional_presidential_council
+			add_ideas = HAI_salvation_government_idea
+			add_stability = -0.10
+		}
+	}
+
+	# Caribbean Security Support Mission
+	focus = {
+		id = HAI_caricom_appeal
+		icon = GFX_goal_generic_major_alliance
+		x = 20
+		y = 2
+		cost = 2
+		prerequisite = { focus = HAI_emergency_council_session }
+		completion_reward = {
+			add_political_power = 35
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = HAI_return_security_council
+		icon = GFX_goal_generic_major_alliance
+		x = 20
+		y = 3
+		cost = 2
+		prerequisite = { focus = HAI_caricom_appeal }
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = HAI_seek_regional_leader
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 20
+		y = 4
+		cost = 2
+		prerequisite = { focus = HAI_return_security_council }
+		available = {
+			country_exists = DOM
+			NOT = { has_country_flag = HAI_cssm_failed }
+		}
+		completion_reward = {
+			set_variable = { HAI_regional_influence = 0 }
+			set_country_flag = HAI_target_DOM
+			set_country_flag = HAI_tried_DOM
+			set_country_flag = HAI_regional_contest_active
+			country_event = { id = hai_cssm.8 hours = 3 }
+		}
+	}
+
+	focus = {
+		id = HAI_establish_cssm
+		icon = GFX_goal_generic_major_alliance
+		x = 20
+		y = 5
+		cost = 3
+		prerequisite = { focus = HAI_seek_regional_leader }
+		available = { has_country_flag = HAI_partner_secured }
+		completion_reward = {
+			remove_ideas = HAI_multinational_security_support
+			add_ideas = HAI_cssm_framework
+			add_stability = 0.04
+			add_war_support = 0.04
+			set_technology = {
+				tech_engineers = 1
+				artillery1 = 1
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_joint_operations_command
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 19
+		y = 6
+		cost = 3
+		prerequisite = { focus = HAI_establish_cssm }
+		completion_reward = {
+			army_experience = 10
+			add_war_support = 0.03
+			if = {
+				limit = { has_country_flag = HAI_counter_operations_unlocked }
+				add_to_variable = { HAI_counter_operation_tokens = 1 }
+			}
+			HAI = { subtract_from_variable = { HAI_escalation = 3 } }
+			HAI_check_escalation_threshold = yes
+		}
+	}
+
+	focus = {
+		id = HAI_caribbean_logistics_network
+		icon = GFX_goal_generic_trade
+		x = 21
+		y = 6
+		cost = 3
+		prerequisite = { focus = HAI_establish_cssm }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 250
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 30
+			}
+			74 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_enforce_arms_embargo
+		icon = GFX_goal_generic_trade
+		x = 19
+		y = 7
+		cost = 3
+		prerequisite = { focus = HAI_joint_operations_command }
+		completion_reward = {
+			set_country_flag = HAI_arms_embargo_active
+			if = {
+				limit = { country_exists = VIV }
+				VIV = { add_ideas = HAI_international_arms_interdiction }
+			}
+			if = {
+				limit = { country_exists = GRF }
+				GRF = { add_ideas = HAI_international_arms_interdiction }
+			}
+			if = {
+				limit = { country_exists = KRB }
+				KRB = { add_ideas = HAI_international_arms_interdiction }
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_emergency_arms_airlift
+		icon = GFX_goal_generic_small_arms
+		x = 21
+		y = 7
+		cost = 2
+		prerequisite = { focus = HAI_caribbean_logistics_network }
+		available = {
+			OR = {
+				check_variable = { HAI_escalation > 29 }
+				has_war = yes
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { check_variable = { HAI_escalation < 60 } }
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 400
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 800
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 60
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 24
+				}
+				add_ideas = HAI_foreign_dependence
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_region_cannot_look_away
+		icon = GFX_goal_generic_major_alliance
+		x = 20
+		y = 8
+		cost = 2
+		prerequisite = { focus = HAI_enforce_arms_embargo }
+		prerequisite = { focus = HAI_emergency_arms_airlift }
+		available = {
+			OR = {
+				check_variable = { HAI_escalation > 59 }
+				has_war = yes
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 35
+		}
+	}
+
+	focus = {
+		id = HAI_deploy_caribbean_brigade
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 20
+		y = 9
+		cost = 4
+		prerequisite = { focus = HAI_region_cannot_look_away }
+		available = {
+			controls_state = 74
+			NOT = { has_country_flag = HAI_cssm_brigade_deployed }
+			OR = {
+				check_variable = { HAI_escalation > 59 }
+				has_war = yes
+			}
+		}
+		completion_reward = {
+			74 = {
+				create_unit = {
+					division = "name = \"Caribbean Joint Security Brigade\" division_template = \"Caribbean Joint Security Brigade\" start_experience_factor = 0.75 start_equipment_factor = 1"
+					owner = HAI
+				}
+			}
+			set_country_flag = HAI_cssm_brigade_deployed
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 100
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 20
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 12
+			}
+			country_event = { id = hai_cssm.9 hours = 3 }
+		}
+	}
+
+	focus = {
+		id = HAI_support_not_occupation
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 19
+		y = 10
+		cost = 4
+		prerequisite = { focus = HAI_deploy_caribbean_brigade }
+		mutually_exclusive = { focus = HAI_foreign_control_ports }
+		completion_reward = {
+			remove_ideas = HAI_foreign_dependence
+			add_ideas = HAI_support_not_occupation_idea
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = HAI_foreign_control_ports
+		icon = GFX_goal_generic_trade
+		x = 21
+		y = 10
+		cost = 4
+		prerequisite = { focus = HAI_deploy_caribbean_brigade }
+		mutually_exclusive = { focus = HAI_support_not_occupation }
+		completion_reward = {
+			add_ideas = HAI_foreign_dependence
+			add_stability = 0.04
+			add_political_power = -40
+			74 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_haitian_led_security_force
+		icon = GFX_goal_generic_national_unity
+		x = 19
+		y = 11
+		cost = 5
+		prerequisite = { focus = HAI_support_not_occupation }
+		completion_reward = {
+			add_ideas = HAI_haitian_led_security_idea
+			army_experience = 20
+			add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = HAI_stabilization_at_any_cost
+		icon = GFX_goal_generic_forceful_treaty
+		x = 21
+		y = 11
+		cost = 5
+		prerequisite = { focus = HAI_foreign_control_ports }
+		completion_reward = {
+			add_ideas = HAI_international_protectorate
+			add_stability = 0.10
+			add_war_support = 0.05
+		}
+	}
+
+	# Recovery and infrastructure
+	focus = {
+		id = HAI_reopen_customs
+		icon = GFX_goal_generic_trade
+		x = 25
+		y = 2
+		cost = 4
+		prerequisite = { focus = HAI_emergency_council_session }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+			add_ideas = HAI_customs_revenue_administration
+		}
+	}
+
+	focus = {
+		id = HAI_humanitarian_corridors
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 23
+		y = 3
+		cost = 4
+		prerequisite = { focus = HAI_reopen_customs }
+		completion_reward = {
+			add_stability = 0.08
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = HAI_repair_power_grid
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 27
+		y = 3
+		cost = 5
+		prerequisite = { focus = HAI_reopen_customs }
+		completion_reward = {
+			83 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			84 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_rebuild_national_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 23
+		y = 4
+		cost = 5
+		prerequisite = { focus = HAI_humanitarian_corridors }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 35
+		}
+	}
+
+	focus = {
+		id = HAI_ports_and_markets
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 27
+		y = 4
+		cost = 5
+		prerequisite = { focus = HAI_repair_power_grid }
+		completion_reward = {
+			83 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			84 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HAI_restore_port_au_prince_harbor
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 27
+		y = 5
+		cost = 5
+		prerequisite = { focus = HAI_ports_and_markets }
+		available = { controls_state = 74 }
+		completion_reward = {
+			74 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+				}
+			}
+			add_political_power = 15
+			country_event = { id = hai_gonave.71 hours = 3 }
+		}
+	}
+
+	focus = {
+		id = HAI_build_hotels_on_gonave
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 29
+		y = 5
+		cost = 5
+		prerequisite = { focus = HAI_ports_and_markets }
+		available = {
+			has_stability > 0.14
+			controls_state = 87
+		}
+		completion_reward = {
+			87 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = HAI_gonave_hotels_built
+			set_country_flag = HAI_gonave_hotel_burden_active
+			set_country_flag = HAI_gonave_hotel_burden_migrated
+			add_timed_idea = { idea = HAI_gonave_hotels days = 1095 }
+			country_event = { id = hai_gonave.70 days = 1095 }
+			country_event = { id = hai_gonave.2 hours = 3 }
+		}
+	}
+
+	focus = {
+		id = HAI_open_gonave_to_tourism
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 29
+		y = 6
+		cost = 5
+		prerequisite = { focus = HAI_build_hotels_on_gonave }
+		available = {
+			has_stability > 0.19
+			controls_state = 87
+		}
+		completion_reward = {
+			set_country_flag = HAI_gonave_tourism_open
+			add_ideas = HAI_gonave_tourism
+			add_stability = 0.05
+			country_event = { id = hai_gonave.3 hours = 3 }
+		}
+	}
+
+	focus = {
+		id = HAI_gonave_development_authority
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 29
+		y = 7
+		cost = 6
+		prerequisite = { focus = HAI_open_gonave_to_tourism }
+		available = {
+			has_stability > 0.24
+			controls_state = 87
+		}
+		completion_reward = {
+			set_country_flag = HAI_gonave_development_authority
+			add_political_power = 25
+			country_event = { id = hai_gonave.72 hours = 3 }
+		}
+	}
+
+	focus = {
+		id = HAI_chart_gonave_waters
+		icon = GFX_goal_generic_production
+		x = 28
+		y = 8
+		cost = 5
+		prerequisite = { focus = HAI_gonave_development_authority }
+		available = { controls_state = 87 }
+		completion_reward = {
+			set_country_flag = HAI_gonave_resources_unlocked
+			country_event = { id = hai_gonave.73 hours = 3 }
+		}
+	}
+
+	focus = {
+		id = HAI_gonave_maritime_corridor
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 30
+		y = 8
+		cost = 5
+		prerequisite = { focus = HAI_gonave_development_authority }
+		available = { controls_state = 87 }
+		completion_reward = {
+			set_country_flag = HAI_gonave_transport_unlocked
+			country_event = { id = hai_gonave.74 hours = 3 }
+		}
+	}
+
+	focus = {
+		id = HAI_recovery_fund
+		icon = GFX_goal_generic_production
+		x = 25
+		y = 5
+		cost = 6
+		prerequisite = { focus = HAI_rebuild_national_roads }
+		prerequisite = { focus = HAI_ports_and_markets }
+		completion_reward = {
+			add_ideas = HAI_recovery_fund_idea
+			add_stability = 0.05
+		}
+	}
+}

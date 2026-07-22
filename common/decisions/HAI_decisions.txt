@@ -1,0 +1,1294 @@
+HAI_haitian_crisis_category = {
+	HAI_pnh_checkpoint_raids = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = {
+			HAI = { check_variable = { HAI_escalation > 0 } }
+		}
+		cost = HAI_checkpoint_raid_cost
+		days_re_enable = 30
+		complete_effect = {
+			add_to_variable = { HAI_checkpoint_raid_cost = 5 }
+			random_list = {
+				70 = {
+					country_event = { id = hai_feedback.1 hours = 2 }
+				}
+				30 = {
+					country_event = { id = hai_feedback.2 hours = 2 }
+				}
+			}
+		}
+		ai_will_do = { base = 90 }
+	}
+
+	HAI_protect_humanitarian_convoy = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = {
+			HAI = { check_variable = { HAI_escalation > 5 } }
+		}
+		cost = HAI_humanitarian_convoy_cost
+		days_re_enable = 35
+		complete_effect = {
+			add_to_variable = { HAI_humanitarian_convoy_cost = 5 }
+			country_event = { id = hai_feedback.3 hours = 2 }
+		}
+		ai_will_do = { base = 70 }
+	}
+
+	HAI_joint_intelligence_operation = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = {
+			has_completed_focus = HAI_map_gang_networks
+			HAI = { check_variable = { HAI_escalation > 10 } }
+		}
+		cost = HAI_joint_intelligence_cost
+		days_re_enable = 45
+		complete_effect = {
+			add_to_variable = { HAI_joint_intelligence_cost = 5 }
+			country_event = { id = hai_feedback.4 hours = 2 }
+		}
+		ai_will_do = { base = 80 }
+	}
+
+	HAI_GANG_assault_police_checkpoint = {
+		icon = GFX_decision_generic_propaganda
+		visible = { always = no }
+		allowed = {
+			OR = { tag = VIV tag = GRF tag = KRB }
+		}
+		cost = 45
+		days_re_enable = 35
+		complete_effect = {
+			HAI = {
+				add_to_variable = { HAI_escalation = 7 }
+				country_event = { id = hai_feedback.5 hours = 2 }
+			}
+			add_war_support = 0.02
+			HAI_check_escalation_threshold = yes
+		}
+		ai_will_do = { base = 240 }
+	}
+
+	HAI_GANG_block_national_road = {
+		icon = GFX_decision_generic_propaganda
+		visible = { always = no }
+		allowed = {
+			OR = { tag = VIV tag = GRF tag = KRB }
+		}
+		cost = 55
+		days_re_enable = 45
+		complete_effect = {
+			HAI = {
+				add_to_variable = { HAI_escalation = 9 }
+				add_stability = -0.01
+				country_event = { id = hai_feedback.6 hours = 2 }
+			}
+			HAI_check_escalation_threshold = yes
+		}
+		ai_will_do = { base = 220 }
+	}
+
+	HAI_GANG_raid_government_stockpiles = {
+		icon = GFX_decision_generic_propaganda
+		visible = { always = no }
+		allowed = {
+			OR = { tag = VIV tag = GRF tag = KRB }
+		}
+		cost = 65
+		days_re_enable = 50
+		complete_effect = {
+			HAI = {
+				add_to_variable = { HAI_escalation = 10 }
+				add_manpower = -125
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = -100
+				}
+				country_event = { id = hai_feedback.7 hours = 2 }
+			}
+			add_manpower = -75
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 100
+			}
+			country_event = { id = hai_gangs.1 hours = 2 }
+			HAI_check_escalation_threshold = yes
+		}
+		ai_will_do = { base = 300 }
+	}
+
+	HAI_GANG_hijack_coastal_shipment = {
+		icon = GFX_decision_generic_propaganda
+		visible = { always = no }
+		allowed = {
+			OR = { tag = VIV tag = GRF tag = KRB }
+		}
+		available = {
+			OR = {
+				controls_state = 82
+				controls_state = 83
+				controls_state = 84
+				controls_state = 85
+			}
+		}
+		cost = 60
+		days_re_enable = 55
+		complete_effect = {
+			HAI = {
+				add_to_variable = { HAI_escalation = 9 }
+				add_manpower = -125
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = -2
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = -120
+				}
+				country_event = { id = hai_gangs.2 hours = 2 }
+			}
+			add_manpower = -60
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 120
+			}
+			country_event = { id = hai_gangs.3 hours = 2 }
+			HAI_check_escalation_threshold = yes
+		}
+		ai_will_do = { base = 260 }
+	}
+
+	# Viv Ansanm operations
+	VIV_call_coalition_council = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = VIV }
+		available = { has_country_flag = VIV_coalition_decisions }
+		cost = 40
+		days_re_enable = 90
+		complete_effect = {
+			add_stability = 0.01
+			add_war_support = 0.01
+			country_event = { id = hai_gangs.20 hours = 2 }
+		}
+		ai_will_do = { base = 25 }
+	}
+
+	VIV_raise_metropolitan_barricades = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = VIV }
+		available = {
+			OR = {
+				has_country_flag = VIV_barricade_operations
+				has_completed_focus = HAI_GANG_consolidate_territory
+			}
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = VIV_coalition_in_disarray }
+			HAI = { NOT = { has_country_flag = HAI_major_gang_operation_active } }
+		}
+		cost = 75
+		days_re_enable = 50
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = { country_event = { id = hai_gangs.21 hours = 2 } }
+		}
+		ai_will_do = { base = 200 }
+	}
+
+	VIV_shut_airport_access = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = VIV }
+		available = {
+			has_country_flag = VIV_airport_operations
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = VIV_coalition_in_disarray }
+			HAI = { NOT = { has_country_flag = HAI_major_gang_operation_active } }
+		}
+		cost = 95
+		days_re_enable = 65
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = { country_event = { id = hai_gangs.22 hours = 2 } }
+		}
+		ai_will_do = { base = 155 }
+	}
+
+	VIV_seize_port_warehouses = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = VIV }
+		available = {
+			has_country_flag = VIV_port_operations
+			controls_state = 85
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = VIV_coalition_in_disarray }
+			HAI = { NOT = { has_country_flag = HAI_major_gang_operation_active } }
+		}
+		cost = 120
+		days_re_enable = 80
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = { country_event = { id = hai_gangs.23 hours = 2 } }
+		}
+		ai_will_do = { base = 175 }
+	}
+
+	# Gran Grif operations
+	GRF_expand_savien_perimeter = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GRF }
+		available = { has_country_flag = GRF_savien_operations }
+		cost = 40
+		days_re_enable = 90
+		complete_effect = {
+			add_stability = 0.01
+			add_war_support = 0.01
+			HAI = { add_to_variable = { HAI_escalation = 1 } }
+			HAI_check_escalation_threshold = yes
+		}
+		ai_will_do = { base = 30 }
+	}
+
+	GRF_extort_route_nationale_one = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GRF }
+		available = {
+			OR = {
+				has_country_flag = GRF_road_operations
+				has_completed_focus = HAI_GANG_consolidate_territory
+			}
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = GRF_routes_under_surveillance }
+			HAI = { NOT = { has_country_flag = HAI_major_gang_operation_active } }
+		}
+		cost = 55
+		days_re_enable = 120
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = { country_event = { id = hai_gangs.40 hours = 2 } }
+		}
+		ai_will_do = { base = 220 }
+	}
+
+	GRF_hijack_arms_truck = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GRF }
+		available = {
+			has_country_flag = GRF_arms_truck_operations
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = GRF_routes_under_surveillance }
+			HAI = { NOT = { has_country_flag = HAI_major_gang_operation_active } }
+		}
+		cost = 100
+		days_re_enable = 70
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = { country_event = { id = hai_gangs.41 hours = 2 } }
+		}
+		ai_will_do = { base = 175 }
+	}
+
+	GRF_cut_saint_marc_road = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GRF }
+		available = {
+			has_country_flag = GRF_saint_marc_operations
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = GRF_routes_under_surveillance }
+			HAI = { NOT = { has_country_flag = HAI_major_gang_operation_active } }
+		}
+		cost = 90
+		days_re_enable = 60
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = { country_event = { id = hai_gangs.43 hours = 2 } }
+		}
+		ai_will_do = { base = 150 }
+	}
+
+	GRF_hijack_coastal_shipment = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GRF }
+		available = {
+			has_country_flag = GRF_road_operations
+			controls_state = 82
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = GRF_routes_under_surveillance }
+			HAI = { NOT = { has_country_flag = HAI_major_gang_operation_active } }
+		}
+		cost = 110
+		days_re_enable = 75
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = { country_event = { id = hai_gangs.2 hours = 2 } }
+		}
+		ai_will_do = { base = 165 }
+	}
+
+	# Kraze Barye operations
+	KRB_abduct_high_value_target = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = KRB }
+		available = {
+			has_country_flag = KRB_ransom_operations
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = KRB_ransom_channels_frozen }
+			HAI = { NOT = { has_country_flag = HAI_major_gang_operation_active } }
+		}
+		cost = 120
+		days_re_enable = 80
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = { country_event = { id = hai_gangs.60 hours = 2 } }
+		}
+		ai_will_do = { base = 180 }
+	}
+
+	KRB_steal_vehicle_convoy = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = KRB }
+		available = {
+			has_country_flag = KRB_vehicle_operations
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = KRB_ransom_channels_frozen }
+			HAI = { NOT = { has_country_flag = HAI_major_gang_operation_active } }
+		}
+		cost = 100
+		days_re_enable = 70
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = { country_event = { id = hai_gangs.61 hours = 2 } }
+		}
+		ai_will_do = { base = 165 }
+	}
+
+	KRB_extort_tabarre_businesses = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = KRB }
+		available = {
+			OR = {
+				has_country_flag = KRB_ransom_operations
+				has_completed_focus = HAI_GANG_consolidate_territory
+			}
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = KRB_ransom_channels_frozen }
+			HAI = { NOT = { has_country_flag = HAI_major_gang_operation_active } }
+		}
+		cost = 65
+		days_re_enable = 120
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = { country_event = { id = hai_gangs.63 hours = 2 } }
+		}
+		ai_will_do = { base = 210 }
+	}
+
+	KRB_coordinate_with_400_mawozo = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = KRB }
+		available = { has_country_flag = KRB_400_mawozo_operations }
+		cost = 65
+		days_re_enable = 90
+		complete_effect = {
+			add_manpower = 350
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 50
+			}
+			add_stability = -0.01
+			HAI = { add_to_variable = { HAI_escalation = 1 } }
+			HAI_check_escalation_threshold = yes
+		}
+		ai_will_do = { base = 70 }
+	}
+
+	KRB_disrupt_airport_corridor = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = KRB }
+		available = {
+			has_country_flag = KRB_airport_operations
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = KRB_ransom_channels_frozen }
+			HAI = { NOT = { has_country_flag = HAI_major_gang_operation_active } }
+		}
+		cost = 105
+		days_re_enable = 70
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = { country_event = { id = hai_gangs.64 hours = 2 } }
+		}
+		ai_will_do = { base = 160 }
+	}
+}
+
+HAI_counter_operations_category = {
+	HAI_fracture_viv_command = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			country_exists = VIV
+			NOT = { has_country_flag = HAI_viv_counter_operation_attempted }
+		}
+		available = {
+			check_variable = { HAI_counter_operation_tokens > 0 }
+			has_equipment = { infantry_equipment_0 > 149 }
+			VIV = { NOT = { has_idea = VIV_coalition_in_disarray } }
+		}
+		cost = 120
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_viv_counter_operation_attempted
+			subtract_from_variable = { HAI_counter_operation_tokens = 1 }
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -150 }
+			if = {
+				limit = { has_country_flag = HAI_informant_network_active }
+				random_list = {
+					75 = { country_event = { id = hai_gangs.100 hours = 3 } }
+					25 = { country_event = { id = hai_gangs.101 hours = 3 } }
+				}
+			}
+			else = {
+				random_list = {
+					60 = { country_event = { id = hai_gangs.100 hours = 3 } }
+					40 = { country_event = { id = hai_gangs.101 hours = 3 } }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 45
+			modifier = { factor = 2 check_variable = { HAI_escalation > 69 } }
+		}
+	}
+
+	HAI_break_savien_supply_chain = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			country_exists = GRF
+			NOT = { has_country_flag = HAI_grf_counter_operation_attempted }
+		}
+		available = {
+			check_variable = { HAI_counter_operation_tokens > 0 }
+			has_equipment = { infantry_equipment_0 > 119 }
+			GRF = { NOT = { has_idea = GRF_routes_under_surveillance } }
+		}
+		cost = 110
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_grf_counter_operation_attempted
+			subtract_from_variable = { HAI_counter_operation_tokens = 1 }
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -120 }
+			if = {
+				limit = { has_country_flag = HAI_informant_network_active }
+				random_list = {
+					75 = { country_event = { id = hai_gangs.102 hours = 3 } }
+					25 = { country_event = { id = hai_gangs.103 hours = 3 } }
+				}
+			}
+			else = {
+				random_list = {
+					60 = { country_event = { id = hai_gangs.102 hours = 3 } }
+					40 = { country_event = { id = hai_gangs.103 hours = 3 } }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 50
+			modifier = { factor = 2 check_variable = { HAI_escalation > 69 } }
+		}
+	}
+
+	HAI_freeze_krb_ransom_channels = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			country_exists = KRB
+			NOT = { has_country_flag = HAI_krb_counter_operation_attempted }
+		}
+		available = {
+			check_variable = { HAI_counter_operation_tokens > 0 }
+			has_equipment = { infantry_equipment_0 > 99 }
+			KRB = { NOT = { has_idea = KRB_ransom_channels_frozen } }
+		}
+		cost = 130
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_krb_counter_operation_attempted
+			subtract_from_variable = { HAI_counter_operation_tokens = 1 }
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -100 }
+			if = {
+				limit = { has_country_flag = HAI_informant_network_active }
+				random_list = {
+					75 = { country_event = { id = hai_gangs.104 hours = 3 } }
+					25 = { country_event = { id = hai_gangs.105 hours = 3 } }
+				}
+			}
+			else = {
+				random_list = {
+					60 = { country_event = { id = hai_gangs.104 hours = 3 } }
+					40 = { country_event = { id = hai_gangs.105 hours = 3 } }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 40
+			modifier = { factor = 2 check_variable = { HAI_escalation > 69 } }
+		}
+	}
+}
+
+HAI_regional_support_category = {
+	HAI_share_regional_intelligence = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		cost = 30
+		days_re_enable = 25
+		complete_effect = {
+			add_to_variable = { HAI_regional_influence = 10 }
+			if = {
+				limit = { has_country_flag = HAI_target_DOM }
+				DOM = { HAI = { country_event = { id = hai_feedback.20 hours = 2 } } }
+			}
+			if = {
+				limit = { has_country_flag = HAI_target_JAM }
+				JAM = { HAI = { country_event = { id = hai_feedback.20 hours = 2 } } }
+			}
+			if = {
+				limit = { has_country_flag = HAI_target_BAH }
+				BAH = { HAI = { country_event = { id = hai_feedback.20 hours = 2 } } }
+			}
+			HAI_check_regional_influence_threshold = yes
+		}
+		ai_will_do = { base = 90 }
+	}
+
+	HAI_offer_joint_border_patrols = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		cost = 40
+		days_re_enable = 35
+		complete_effect = {
+			add_to_variable = { HAI_regional_influence = 12 }
+			if = {
+				limit = { has_country_flag = HAI_target_DOM }
+				DOM = { HAI = { country_event = { id = hai_feedback.21 hours = 2 } } }
+			}
+			if = {
+				limit = { has_country_flag = HAI_target_JAM }
+				JAM = { HAI = { country_event = { id = hai_feedback.21 hours = 2 } } }
+			}
+			if = {
+				limit = { has_country_flag = HAI_target_BAH }
+				BAH = { HAI = { country_event = { id = hai_feedback.21 hours = 2 } } }
+			}
+			HAI_check_regional_influence_threshold = yes
+		}
+		ai_will_do = { base = 75 }
+	}
+
+	HAI_appeal_to_regional_stability = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		cost = 25
+		days_re_enable = 20
+		complete_effect = {
+			add_to_variable = { HAI_regional_influence = 8 }
+			if = {
+				limit = { has_country_flag = HAI_target_DOM }
+				DOM = { HAI = { country_event = { id = hai_feedback.22 hours = 2 } } }
+			}
+			if = {
+				limit = { has_country_flag = HAI_target_JAM }
+				JAM = { HAI = { country_event = { id = hai_feedback.22 hours = 2 } } }
+			}
+			if = {
+				limit = { has_country_flag = HAI_target_BAH }
+				BAH = { HAI = { country_event = { id = hai_feedback.22 hours = 2 } } }
+			}
+			HAI_check_regional_influence_threshold = yes
+		}
+		ai_will_do = { base = 100 }
+	}
+
+	HAI_GANG_bribe_border_guards = {
+		icon = GFX_decision_generic_propaganda
+		allowed = {
+			OR = { tag = VIV tag = GRF tag = KRB }
+		}
+		available = {
+			NOT = { has_idea = VIV_coalition_in_disarray }
+			NOT = { has_idea = GRF_routes_under_surveillance }
+			NOT = { has_idea = KRB_ransom_channels_frozen }
+		}
+		cost = 75
+		days_re_enable = 40
+		complete_effect = {
+			HAI = {
+				subtract_from_variable = { HAI_regional_influence = 5 }
+				country_event = { id = hai_feedback.23 hours = 2 }
+			}
+			HAI_check_regional_influence_threshold = yes
+		}
+		ai_will_do = { base = 130 }
+	}
+
+	HAI_GANG_sabotage_bilateral_talks = {
+		icon = GFX_decision_generic_propaganda
+		allowed = {
+			OR = { tag = VIV tag = GRF tag = KRB }
+		}
+		available = {
+			NOT = { has_idea = VIV_coalition_in_disarray }
+			NOT = { has_idea = GRF_routes_under_surveillance }
+			NOT = { has_idea = KRB_ransom_channels_frozen }
+		}
+		cost = 90
+		days_re_enable = 50
+		complete_effect = {
+			HAI = {
+				subtract_from_variable = { HAI_regional_influence = 7 }
+				country_event = { id = hai_feedback.24 hours = 2 }
+			}
+			HAI_check_regional_influence_threshold = yes
+		}
+		ai_will_do = { base = 150 }
+	}
+
+	HAI_GANG_threaten_regional_interests = {
+		icon = GFX_decision_generic_propaganda
+		allowed = {
+			OR = { tag = VIV tag = GRF tag = KRB }
+		}
+		available = {
+			NOT = { has_idea = VIV_coalition_in_disarray }
+			NOT = { has_idea = GRF_routes_under_surveillance }
+			NOT = { has_idea = KRB_ransom_channels_frozen }
+		}
+		cost = 100
+		days_re_enable = 60
+		complete_effect = {
+			HAI = {
+				subtract_from_variable = { HAI_regional_influence = 8 }
+				add_to_variable = { HAI_escalation = 3 }
+				country_event = { id = hai_feedback.25 hours = 2 }
+			}
+			HAI_check_regional_influence_threshold = yes
+			HAI_check_escalation_threshold = yes
+		}
+		ai_will_do = { base = 110 }
+	}
+}
+
+HAI_regional_alternatives_category = {
+	HAI_turn_to_jamaica = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			NOT = { has_country_flag = HAI_tried_JAM }
+			country_exists = JAM
+		}
+		cost = 25
+		fire_only_once = yes
+		complete_effect = {
+			clr_country_flag = HAI_choose_alternative_partner
+			HAI_clear_regional_target_flags = yes
+			set_country_flag = HAI_target_JAM
+			set_country_flag = HAI_tried_JAM
+			set_country_flag = HAI_regional_contest_active
+			set_variable = { HAI_regional_influence = 0 }
+			country_event = { id = hai_cssm.6 hours = 3 }
+		}
+		ai_will_do = { base = 100 }
+	}
+
+	HAI_turn_to_bahamas = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			NOT = { has_country_flag = HAI_tried_BAH }
+			country_exists = BAH
+		}
+		cost = 25
+		fire_only_once = yes
+		complete_effect = {
+			clr_country_flag = HAI_choose_alternative_partner
+			HAI_clear_regional_target_flags = yes
+			set_country_flag = HAI_target_BAH
+			set_country_flag = HAI_tried_BAH
+			set_country_flag = HAI_regional_contest_active
+			set_variable = { HAI_regional_influence = 0 }
+			country_event = { id = hai_cssm.7 hours = 3 }
+		}
+		ai_will_do = { base = 40 }
+	}
+}
+
+HAI_cssm_operations_category = {
+	HAI_request_cssm_reconnaissance = {
+		icon = GFX_decision_generic_propaganda
+		cost = 30
+		days_re_enable = 45
+		complete_effect = {
+			army_experience = 4
+			add_war_support = 0.01
+			country_event = { id = hai_feedback.30 hours = 2 }
+		}
+		ai_will_do = { base = 45 }
+	}
+
+	HAI_request_emergency_cssm_supplies = {
+		icon = GFX_decision_generic_propaganda
+		cost = 35
+		days_re_enable = 60
+		complete_effect = {
+			if = {
+				limit = { check_variable = { HAI_escalation < 60 } }
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 200
+				}
+				country_event = { id = hai_feedback.31 hours = 2 }
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 400
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 25
+				}
+				country_event = { id = hai_feedback.32 hours = 2 }
+			}
+		}
+		ai_will_do = { base = 80 }
+	}
+
+	HAI_intercept_arms_shipment = {
+		icon = GFX_decision_generic_propaganda
+		visible = { has_country_flag = HAI_arms_embargo_active }
+		cost = 40
+		days_re_enable = 50
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 120
+			}
+			subtract_from_variable = { HAI_escalation = 3 }
+			country_event = { id = hai_feedback.33 hours = 2 }
+			HAI_check_escalation_threshold = yes
+		}
+		ai_will_do = { base = 65 }
+	}
+}
+
+HAI_gonave_security_category = {
+	HAI_reinforce_gonave_guard = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = { NOT = { has_country_flag = HAI_gonave_local_watch } }
+		available = {
+			controls_state = 87
+			check_variable = { HAI_gonave_security < 3 }
+			has_equipment = { infantry_equipment_0 > 179 }
+		}
+		cost = 5
+		days_re_enable = 25
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = -180
+			}
+			add_to_variable = { HAI_gonave_security = 1 }
+			HAI_clamp_gonave_security = yes
+			country_event = { id = hai_gonave.4 hours = 2 }
+		}
+		ai_will_do = { base = 320 }
+	}
+
+	HAI_escort_gonave_ferries = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = {
+			controls_state = 87
+			check_variable = { HAI_gonave_security < 3 }
+			has_equipment = { infantry_equipment_0 > 119 }
+		}
+		cost = 10
+		days_re_enable = 45
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = -120
+			}
+			add_to_variable = { HAI_gonave_security = 1 }
+			HAI_clamp_gonave_security = yes
+			country_event = { id = hai_gonave.5 hours = 2 }
+		}
+		ai_will_do = { base = 160 }
+	}
+
+	HAI_fund_gonave_local_watch = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			NOT = { has_country_flag = HAI_gonave_local_watch }
+			check_variable = { HAI_gonave_raids_repelled > 1 }
+		}
+		available = {
+			controls_state = 87
+			has_equipment = { infantry_equipment_0 > 449 }
+		}
+		cost = 75
+		fire_only_once = yes
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = -450
+			}
+			set_country_flag = HAI_gonave_local_watch
+			if = {
+				limit = { check_variable = { HAI_gonave_security < 1 } }
+				set_variable = { HAI_gonave_security = 1 }
+			}
+			country_event = { id = hai_gonave.50 hours = 2 }
+		}
+		ai_will_do = { base = 240 }
+	}
+
+	HAI_reinforce_gonave_local_watch = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = { has_country_flag = HAI_gonave_local_watch }
+		available = {
+			controls_state = 87
+			check_variable = { HAI_gonave_security < 3 }
+			has_equipment = { infantry_equipment_0 > 119 }
+		}
+		cost = 5
+		days_re_enable = 25
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = -120
+			}
+			add_to_variable = { HAI_gonave_security = 1 }
+			HAI_clamp_gonave_security = yes
+			country_event = { id = hai_gonave.4 hours = 2 }
+		}
+		ai_will_do = { base = 340 }
+	}
+
+	HAI_restore_confidence_in_gonave = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			OR = {
+				has_idea = HAI_gonave_construction_abandoned
+				has_idea = HAI_gonave_tourism_panic
+				has_idea = HAI_gonave_resorts_burning
+			}
+		}
+		available = {
+			controls_state = 87
+			check_variable = { HAI_gonave_security > 0 }
+			has_equipment = { infantry_equipment_0 > 59 }
+		}
+		cost = 35
+		days_re_enable = 60
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = -60
+			}
+			remove_ideas = HAI_gonave_construction_abandoned
+			remove_ideas = HAI_gonave_tourism_panic
+			remove_ideas = HAI_gonave_resorts_burning
+			add_stability = 0.01
+			country_event = { id = hai_gonave.51 hours = 2 }
+		}
+		ai_will_do = { base = 220 }
+	}
+
+	HAI_GANG_raid_gonave = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { OR = { tag = VIV tag = GRF tag = KRB } }
+		available = {
+			NOT = { has_country_flag = HAI_gonave_breach }
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = VIV_coalition_in_disarray }
+			NOT = { has_idea = GRF_routes_under_surveillance }
+			NOT = { has_idea = KRB_ransom_channels_frozen }
+			has_equipment = { infantry_equipment_0 > 24 }
+			HAI = {
+				has_country_flag = HAI_gonave_hotels_built
+				has_country_flag = HAI_crisis_active
+				controls_state = 87
+				NOT = { has_country_flag = HAI_major_gang_operation_active }
+			}
+		}
+		cost = 90
+		days_re_enable = 75
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			if = {
+				limit = { HAI = { check_variable = { HAI_gonave_security > 2 } } }
+				random_list = {
+					10 = { HAI_gonave_raid_success = yes }
+					90 = { HAI_gonave_raid_repelled = yes }
+				}
+			}
+			else_if = {
+				limit = { HAI = { check_variable = { HAI_gonave_security > 1 } } }
+				random_list = {
+					30 = { HAI_gonave_raid_success = yes }
+					70 = { HAI_gonave_raid_repelled = yes }
+				}
+			}
+			else_if = {
+				limit = { HAI = { check_variable = { HAI_gonave_security > 0 } } }
+				random_list = {
+					55 = { HAI_gonave_raid_success = yes }
+					45 = { HAI_gonave_raid_repelled = yes }
+				}
+			}
+			else = {
+				random_list = {
+					80 = { HAI_gonave_raid_success = yes }
+					20 = { HAI_gonave_raid_repelled = yes }
+				}
+			}
+		}
+		ai_will_do = { base = 145 }
+	}
+
+	HAI_GANG_loot_gonave_hotel_sites = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { OR = { tag = VIV tag = GRF tag = KRB } }
+		available = {
+			has_country_flag = HAI_gonave_breach
+			has_equipment = { infantry_equipment_0 > 24 }
+			HAI = {
+				has_country_flag = HAI_gonave_hotels_built
+				NOT = { has_country_flag = HAI_gonave_tourism_open }
+				controls_state = 87
+			}
+		}
+		cost = 35
+		complete_effect = {
+			HAI = { country_event = { id = hai_gonave.20 hours = 2 } }
+		}
+		ai_will_do = {
+			base = 130
+			modifier = { factor = 2 tag = GRF }
+		}
+	}
+
+	HAI_GANG_rob_gonave_tourists = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { OR = { tag = VIV tag = GRF tag = KRB } }
+		available = {
+			has_country_flag = HAI_gonave_breach
+			has_equipment = { infantry_equipment_0 > 24 }
+			HAI = {
+				has_country_flag = HAI_gonave_tourism_open
+				controls_state = 87
+			}
+		}
+		cost = 55
+		complete_effect = {
+			HAI = { country_event = { id = hai_gonave.30 hours = 2 } }
+		}
+		ai_will_do = {
+			base = 125
+			modifier = { factor = 3 tag = KRB }
+		}
+	}
+
+	HAI_GANG_burn_gonave_resorts = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { OR = { tag = VIV tag = GRF tag = KRB } }
+		available = {
+			has_country_flag = HAI_gonave_breach
+			has_equipment = { infantry_equipment_0 > 24 }
+			HAI = {
+				has_country_flag = HAI_gonave_tourism_open
+				controls_state = 87
+			}
+		}
+		cost = 75
+		complete_effect = {
+			HAI = { country_event = { id = hai_gonave.40 hours = 2 } }
+		}
+		ai_will_do = {
+			base = 115
+			modifier = { factor = 3 tag = VIV }
+		}
+	}
+}
+
+HAI_gonave_development_category = {
+	HAI_invest_in_gonave_resources = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			has_country_flag = HAI_gonave_resources_unlocked
+			check_variable = { HAI_gonave_oil_stage < 1 }
+		}
+		available = {
+			controls_state = 87
+			NOT = { has_country_flag = HAI_gonave_project_active }
+		}
+		cost = 60
+		days_remove = 70
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_gonave_project_active
+			add_ideas = HAI_gonave_resource_investment
+			country_event = { id = hai_gonave.75 hours = 2 }
+		}
+		remove_effect = {
+			clr_country_flag = HAI_gonave_project_active
+			remove_ideas = HAI_gonave_resource_investment
+			set_variable = { HAI_gonave_oil_stage = 1 }
+			set_country_flag = HAI_fuel_programs_unlocked
+			87 = { add_resource = { type = oil amount = 3 } }
+			add_fuel = 5000
+			country_event = { id = hai_gonave.80 hours = 2 }
+		}
+		ai_will_do = { base = 65 }
+	}
+
+	HAI_expand_gonave_offshore_platforms = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			has_country_flag = HAI_gonave_resources_unlocked
+			check_variable = { HAI_gonave_oil_stage > 0 }
+			check_variable = { HAI_gonave_oil_stage < 2 }
+		}
+		available = {
+			controls_state = 87
+			NOT = { has_country_flag = HAI_gonave_project_active }
+		}
+		cost = 75
+		days_remove = 90
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_gonave_project_active
+			add_ideas = HAI_gonave_resource_investment
+			country_event = { id = hai_gonave.75 hours = 2 }
+		}
+		remove_effect = {
+			clr_country_flag = HAI_gonave_project_active
+			remove_ideas = HAI_gonave_resource_investment
+			set_variable = { HAI_gonave_oil_stage = 2 }
+			87 = { add_resource = { type = oil amount = 3 } }
+			country_event = { id = hai_gonave.84 hours = 2 }
+		}
+		ai_will_do = { base = 60 }
+	}
+
+	HAI_begin_gonave_deepwater_drilling = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			has_country_flag = HAI_gonave_resources_unlocked
+			check_variable = { HAI_gonave_oil_stage > 1 }
+			check_variable = { HAI_gonave_oil_stage < 3 }
+		}
+		available = {
+			controls_state = 87
+			NOT = { has_country_flag = HAI_gonave_project_active }
+		}
+		cost = 90
+		days_remove = 110
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_gonave_project_active
+			add_ideas = HAI_gonave_resource_investment
+			country_event = { id = hai_gonave.75 hours = 2 }
+		}
+		remove_effect = {
+			clr_country_flag = HAI_gonave_project_active
+			remove_ideas = HAI_gonave_resource_investment
+			set_variable = { HAI_gonave_oil_stage = 3 }
+			87 = { add_resource = { type = oil amount = 3 } }
+			country_event = { id = hai_gonave.85 hours = 2 }
+		}
+		ai_will_do = { base = 55 }
+	}
+
+	HAI_open_gonave_southern_fields = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			has_country_flag = HAI_gonave_resources_unlocked
+			check_variable = { HAI_gonave_oil_stage > 2 }
+			check_variable = { HAI_gonave_oil_stage < 4 }
+		}
+		available = {
+			controls_state = 87
+			NOT = { has_country_flag = HAI_gonave_project_active }
+		}
+		cost = 110
+		days_remove = 130
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_gonave_project_active
+			add_ideas = HAI_gonave_resource_investment
+			country_event = { id = hai_gonave.75 hours = 2 }
+		}
+		remove_effect = {
+			clr_country_flag = HAI_gonave_project_active
+			remove_ideas = HAI_gonave_resource_investment
+			set_variable = { HAI_gonave_oil_stage = 4 }
+			87 = { add_resource = { type = oil amount = 3 } }
+			country_event = { id = hai_gonave.86 hours = 2 }
+		}
+		ai_will_do = { base = 50 }
+	}
+
+	HAI_establish_national_petroleum_network = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			has_country_flag = HAI_gonave_resources_unlocked
+			check_variable = { HAI_gonave_oil_stage > 3 }
+			check_variable = { HAI_gonave_oil_stage < 5 }
+		}
+		available = {
+			controls_state = 87
+			NOT = { has_country_flag = HAI_gonave_project_active }
+		}
+		cost = 130
+		days_remove = 150
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_gonave_project_active
+			add_ideas = HAI_gonave_resource_investment
+			country_event = { id = hai_gonave.75 hours = 2 }
+		}
+		remove_effect = {
+			clr_country_flag = HAI_gonave_project_active
+			remove_ideas = HAI_gonave_resource_investment
+			set_variable = { HAI_gonave_oil_stage = 5 }
+			set_country_flag = HAI_gonave_oil_completed
+			87 = { add_resource = { type = oil amount = 3 } }
+			country_event = { id = hai_gonave.87 hours = 2 }
+		}
+		ai_will_do = { base = 45 }
+	}
+
+	HAI_develop_gonave_shipyards = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			has_country_flag = HAI_gonave_transport_unlocked
+			NOT = { has_country_flag = HAI_gonave_shipyards_completed }
+		}
+		available = {
+			controls_state = 87
+			NOT = { has_country_flag = HAI_gonave_project_active }
+		}
+		cost = 55
+		days_remove = 90
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_gonave_project_active
+			add_ideas = HAI_gonave_heavy_construction
+			country_event = { id = hai_gonave.76 hours = 2 }
+		}
+		remove_effect = {
+			clr_country_flag = HAI_gonave_project_active
+			remove_ideas = HAI_gonave_heavy_construction
+			set_country_flag = HAI_gonave_shipyards_completed
+			87 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = HAI_gonave_shipyards
+			country_event = { id = hai_gonave.81 hours = 2 }
+		}
+		ai_will_do = { base = 55 }
+	}
+
+	HAI_build_gonave_airport = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			has_country_flag = HAI_gonave_transport_unlocked
+			NOT = { has_country_flag = HAI_gonave_airport_completed }
+		}
+		available = {
+			controls_state = 87
+			NOT = { has_country_flag = HAI_gonave_project_active }
+		}
+		cost = 45
+		days_remove = 80
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_gonave_project_active
+			add_ideas = HAI_gonave_transport_construction
+			country_event = { id = hai_gonave.77 hours = 2 }
+		}
+		remove_effect = {
+			clr_country_flag = HAI_gonave_project_active
+			remove_ideas = HAI_gonave_transport_construction
+			set_country_flag = HAI_gonave_airport_completed
+			87 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = HAI_gonave_air_links
+			country_event = { id = hai_gonave.82 hours = 2 }
+		}
+		ai_will_do = { base = 50 }
+	}
+
+	HAI_build_gonave_deepwater_harbor = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			has_country_flag = HAI_gonave_transport_unlocked
+			NOT = { has_country_flag = HAI_gonave_harbor_completed }
+		}
+		available = {
+			controls_state = 87
+			NOT = { has_country_flag = HAI_gonave_project_active }
+		}
+		cost = 50
+		days_remove = 100
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_gonave_project_active
+			add_ideas = HAI_gonave_transport_construction
+			country_event = { id = hai_gonave.78 hours = 2 }
+		}
+		remove_effect = {
+			clr_country_flag = HAI_gonave_project_active
+			remove_ideas = HAI_gonave_transport_construction
+			set_country_flag = HAI_gonave_harbor_completed
+			87 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+				}
+			}
+			add_ideas = HAI_gonave_deepwater_harbor
+			country_event = { id = hai_gonave.83 hours = 2 }
+		}
+		ai_will_do = { base = 60 }
+	}
+}

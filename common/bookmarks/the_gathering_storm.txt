@@ -6,7 +6,7 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "USA"
 		default = yes
-		
+
 		"USA"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -46,8 +46,21 @@ bookmarks = {
 			
 			}
 		}
-        
-		
+
+		"HAI"={
+			history = "HAI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				HAI_transitional_presidential_council
+				HAI_collapsed_state_institutions
+				HAI_gang_controlled_capital
+			}
+			focuses = {
+				HAI_nation_on_the_brink
+			}
+		}
+
+
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}

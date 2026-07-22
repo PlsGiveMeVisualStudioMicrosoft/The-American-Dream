@@ -1,0 +1,449 @@
+HAI_fuel_programs_category = {
+	HAI_fuel_fishing_fleet = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = { fuel_ratio > 0.05 NOT = { has_country_flag = HAI_program_fishing_fleet } }
+		cost = 10
+		days_re_enable = 120
+		complete_effect = {
+			add_fuel = -400
+			set_country_flag = HAI_program_fishing_fleet
+			add_ideas = HAI_fuel_fishing_fleet
+			add_to_variable = { HAI_daily_fuel_commitment = 300 }
+			country_event = { id = hai_fuel.200 days = 90 }
+		}
+		ai_will_do = { base = 35 }
+	}
+
+	HAI_fuel_hospitals_water = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = { fuel_ratio > 0.05 NOT = { has_country_flag = HAI_program_hospitals } }
+		cost = 15
+		days_re_enable = 75
+		complete_effect = {
+			add_fuel = -500
+			set_country_flag = HAI_program_hospitals
+			add_ideas = HAI_fuel_hospitals
+			add_to_variable = { HAI_daily_fuel_commitment = 350 }
+			country_event = { id = hai_fuel.201 days = 45 }
+		}
+		ai_will_do = { base = 45 }
+	}
+
+	HAI_fuel_ferry_network = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = {
+			fuel_ratio > 0.05
+			controls_state = 87
+			NOT = { has_country_flag = HAI_program_ferry_network }
+		}
+		cost = 15
+		days_re_enable = 90
+		complete_effect = {
+			add_fuel = -600
+			set_country_flag = HAI_program_ferry_network
+			add_ideas = HAI_fuel_ferry_network
+			add_to_variable = { HAI_daily_fuel_commitment = 400 }
+			add_to_variable = { HAI_transport_security = 1 }
+			HAI_clamp_oil_security = yes
+			country_event = { id = hai_fuel.202 days = 60 }
+		}
+		ai_will_do = { base = 50 }
+	}
+
+	HAI_fuel_support_local_communities = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = { fuel_ratio > 0.05 NOT = { has_country_flag = HAI_program_local_support } }
+		cost = 20
+		days_re_enable = 120
+		complete_effect = {
+			add_fuel = -800
+			set_country_flag = HAI_program_local_support
+			add_ideas = HAI_fuel_local_support
+			add_to_variable = { HAI_daily_fuel_commitment = 550 }
+			add_to_variable = { HAI_offshore_security = 1 }
+			add_to_variable = { HAI_transport_security = 1 }
+			add_to_variable = { HAI_personnel_security = 1 }
+			HAI_clamp_oil_security = yes
+			country_event = { id = hai_fuel.203 days = 45 }
+		}
+		ai_will_do = { base = 65 }
+	}
+
+	HAI_fuel_escort_tankers = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = { fuel_ratio > 0.05 NOT = { has_country_flag = HAI_program_tanker_escorts } }
+		cost = 20
+		days_re_enable = 60
+		complete_effect = {
+			add_fuel = -900
+			set_country_flag = HAI_program_tanker_escorts
+			add_ideas = HAI_fuel_tanker_escorts
+			add_to_variable = { HAI_daily_fuel_commitment = 700 }
+			add_to_variable = { HAI_transport_security = 2 }
+			HAI_clamp_oil_security = yes
+			country_event = { id = hai_fuel.204 days = 30 }
+		}
+		ai_will_do = { base = 70 }
+	}
+
+	HAI_fuel_patrol_gonave_channel = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = {
+			fuel_ratio > 0.05
+			controls_state = 87
+			NOT = { has_country_flag = HAI_program_channel_patrol }
+		}
+		cost = 20
+		days_re_enable = 60
+		complete_effect = {
+			add_fuel = -1000
+			set_country_flag = HAI_program_channel_patrol
+			add_ideas = HAI_fuel_channel_patrol
+			add_to_variable = { HAI_daily_fuel_commitment = 750 }
+			add_to_variable = { HAI_offshore_security = 2 }
+			HAI_clamp_oil_security = yes
+			country_event = { id = hai_fuel.205 days = 30 }
+		}
+		ai_will_do = { base = 75 }
+	}
+
+	HAI_fuel_track_gang_movements = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = { fuel_ratio > 0.05 NOT = { has_country_flag = HAI_program_gang_tracking } }
+		cost = 25
+		days_re_enable = 55
+		complete_effect = {
+			add_fuel = -1250
+			set_country_flag = HAI_program_gang_tracking
+			add_ideas = HAI_fuel_gang_tracking
+			add_to_variable = { HAI_daily_fuel_commitment = 850 }
+			add_to_variable = { HAI_personnel_security = 2 }
+			HAI_clamp_oil_security = yes
+			country_event = { id = hai_fuel.206 days = 20 }
+		}
+		ai_will_do = { base = 80 }
+	}
+
+	HAI_fuel_emergency_generators = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = { fuel_ratio > 0.05 NOT = { has_country_flag = HAI_program_generators } }
+		cost = 20
+		days_re_enable = 60
+		complete_effect = {
+			add_fuel = -1200
+			set_country_flag = HAI_program_generators
+			add_ideas = HAI_fuel_emergency_generators
+			add_to_variable = { HAI_daily_fuel_commitment = 900 }
+			country_event = { id = hai_fuel.207 days = 30 }
+		}
+		ai_will_do = { base = 45 }
+	}
+
+	HAI_fuel_power_port_au_prince = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = { fuel_ratio > 0.05 controls_state = 74 NOT = { has_country_flag = HAI_program_power_capital } }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_fuel = -1400
+			set_country_flag = HAI_program_power_capital
+			add_ideas = HAI_fuel_power_capital
+			add_to_variable = { HAI_daily_fuel_commitment = 950 }
+			country_event = { id = hai_fuel.208 days = 30 }
+		}
+		ai_will_do = { base = 60 }
+	}
+
+	HAI_fuel_motorized_police = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = { fuel_ratio > 0.05 NOT = { has_country_flag = HAI_program_motorized_police } }
+		cost = 30
+		days_re_enable = 65
+		complete_effect = {
+			add_fuel = -1600
+			set_country_flag = HAI_program_motorized_police
+			add_to_variable = { HAI_daily_fuel_commitment = 1150 }
+			country_event = { id = hai_fuel.50 hours = 2 }
+			country_event = { id = hai_fuel.209 days = 21 }
+		}
+		ai_will_do = { base = 85 }
+	}
+
+	HAI_fuel_cssm_transport_pool = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = { has_idea = HAI_cssm_framework }
+		available = { fuel_ratio > 0.05 NOT = { has_country_flag = HAI_program_cssm_transport } }
+		cost = 25
+		days_re_enable = 65
+		complete_effect = {
+			add_fuel = -1800
+			set_country_flag = HAI_program_cssm_transport
+			add_ideas = HAI_fuel_cssm_transport
+			add_to_variable = { HAI_daily_fuel_commitment = 1450 }
+			country_event = { id = hai_fuel.210 days = 30 }
+		}
+		ai_will_do = { base = 60 }
+	}
+
+	HAI_fuel_coastal_interdiction = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		available = { fuel_ratio > 0.05 NOT = { has_country_flag = HAI_program_coastal_interdiction } }
+		cost = 30
+		days_re_enable = 55
+		complete_effect = {
+			add_fuel = -3000
+			set_country_flag = HAI_program_coastal_interdiction
+			add_ideas = HAI_fuel_coastal_interdiction
+			add_to_variable = { HAI_daily_fuel_commitment = 1850 }
+			add_to_variable = { HAI_offshore_security = 1 }
+			add_to_variable = { HAI_transport_security = 1 }
+			HAI_clamp_oil_security = yes
+			VIV = { add_political_power = -20 }
+			GRF = { add_political_power = -20 }
+			country_event = { id = hai_fuel.211 days = 14 }
+		}
+		ai_will_do = { base = 90 }
+	}
+
+	HAI_fuel_emergency_airlift = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = { has_country_flag = HAI_gonave_airport_completed }
+		available = { fuel_ratio > 0.05 NOT = { has_country_flag = HAI_program_airlift } }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_fuel = -3500
+			set_country_flag = HAI_program_airlift
+			add_ideas = HAI_fuel_emergency_airlift
+			add_to_variable = { HAI_daily_fuel_commitment = 2250 }
+			country_event = { id = hai_fuel.212 days = 14 }
+		}
+		ai_will_do = { base = 55 }
+	}
+
+	HAI_fuel_caribbean_export = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = { has_country_flag = HAI_partner_secured }
+		available = { fuel_ratio > 0.10 NOT = { has_country_flag = HAI_program_fuel_export } }
+		cost = 25
+		days_re_enable = 90
+		complete_effect = {
+			add_fuel = -4500
+			set_country_flag = HAI_program_fuel_export
+			add_ideas = HAI_fuel_caribbean_export
+			add_to_variable = { HAI_daily_fuel_commitment = 2550 }
+			country_event = { id = hai_fuel.213 days = 30 }
+		}
+		ai_will_do = { base = 40 }
+	}
+}
+
+HAI_oil_security_category = {
+	HAI_run_decoy_fuel_convoy = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = { has_country_flag = HAI_oil_attack_pending }
+		available = { fuel_ratio > 0.05 NOT = { has_country_flag = HAI_program_decoy_convoy } }
+		cost = 15
+		complete_effect = {
+			add_fuel = -2000
+			set_country_flag = HAI_program_decoy_convoy
+			add_ideas = HAI_fuel_decoy_operation
+			add_to_variable = { HAI_daily_fuel_commitment = 1250 }
+			country_event = { id = hai_fuel.214 days = 14 }
+		}
+		ai_will_do = { base = 180 }
+	}
+
+	HAI_mobilize_oil_repair_crews = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = { has_country_flag = HAI_offshore_output_disrupted }
+		available = { fuel_ratio > 0.05 NOT = { has_country_flag = HAI_program_oil_repairs } }
+		cost = 20
+		complete_effect = {
+			add_fuel = -1200
+			set_country_flag = HAI_program_oil_repairs
+			add_ideas = HAI_fuel_emergency_repairs
+			add_to_variable = { HAI_daily_fuel_commitment = 900 }
+			country_event = { id = hai_fuel.215 days = 20 }
+		}
+		ai_will_do = { base = 160 }
+	}
+
+	HAI_disperse_national_fuel_reserves = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = { NOT = { has_country_flag = HAI_distributed_fuel_reserves } }
+		available = { NOT = { has_country_flag = HAI_reserve_construction_active } }
+		cost = 75
+		days_remove = 60
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_reserve_construction_active
+			add_ideas = HAI_fuel_reserve_construction
+			country_event = { id = hai_fuel.52 hours = 2 }
+		}
+		remove_effect = {
+			clr_country_flag = HAI_reserve_construction_active
+			set_country_flag = HAI_distributed_fuel_reserves
+			remove_ideas = HAI_fuel_reserve_construction
+			add_ideas = HAI_distributed_fuel_reserves
+			country_event = { id = hai_fuel.216 hours = 2 }
+		}
+		ai_will_do = { base = 75 }
+	}
+
+	VIV_prepare_offshore_oil_raid = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = VIV }
+		available = {
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = VIV_coalition_in_disarray }
+			HAI = {
+				has_country_flag = HAI_fuel_programs_unlocked
+				has_country_flag = HAI_crisis_active
+				controls_state = 87
+				NOT = { has_country_flag = HAI_major_gang_operation_active }
+				NOT = { has_country_flag = HAI_oil_attack_pending }
+				NOT = { has_country_flag = HAI_program_coastal_interdiction }
+			}
+		}
+		cost = 95
+		days_re_enable = 60
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = {
+				set_country_flag = HAI_oil_attack_pending
+				set_country_flag = HAI_oil_attack_viv_pending
+				country_event = { id = hai_fuel.90 hours = 2 }
+			}
+			country_event = { id = hai_fuel.100 days = 12 }
+		}
+		ai_will_do = {
+			base = 900
+			modifier = { factor = 1.5 HAI = { check_variable = { HAI_gonave_oil_stage > 2 } } }
+			modifier = { factor = 1.5 HAI = { check_variable = { HAI_gonave_oil_stage > 4 } } }
+		}
+	}
+
+	GRF_prepare_tanker_hijacking = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GRF }
+		available = {
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = GRF_routes_under_surveillance }
+			HAI = {
+				has_country_flag = HAI_fuel_programs_unlocked
+				has_country_flag = HAI_crisis_active
+				controls_state = 87
+				NOT = { has_country_flag = HAI_major_gang_operation_active }
+				NOT = { has_country_flag = HAI_oil_attack_pending }
+				NOT = { has_country_flag = HAI_program_coastal_interdiction }
+			}
+		}
+		cost = 85
+		days_re_enable = 55
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = {
+				set_country_flag = HAI_oil_attack_pending
+				set_country_flag = HAI_oil_attack_grf_pending
+				country_event = { id = hai_fuel.91 hours = 2 }
+			}
+			country_event = { id = hai_fuel.101 days = 12 }
+		}
+		ai_will_do = {
+			base = 950
+			modifier = { factor = 1.5 HAI = { check_variable = { HAI_gonave_oil_stage > 2 } } }
+			modifier = { factor = 1.5 HAI = { check_variable = { HAI_gonave_oil_stage > 4 } } }
+		}
+	}
+
+	KRB_prepare_engineer_abduction = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = KRB }
+		available = {
+			NOT = { has_idea = HAI_operational_exhaustion }
+			NOT = { has_idea = KRB_ransom_channels_frozen }
+			HAI = {
+				has_country_flag = HAI_fuel_programs_unlocked
+				has_country_flag = HAI_crisis_active
+				controls_state = 87
+				NOT = { has_country_flag = HAI_major_gang_operation_active }
+				NOT = { has_country_flag = HAI_oil_attack_pending }
+			}
+		}
+		cost = 100
+		days_re_enable = 65
+		complete_effect = {
+			HAI_begin_major_gang_operation = yes
+			HAI = {
+				set_country_flag = HAI_oil_attack_pending
+				set_country_flag = HAI_oil_attack_krb_pending
+				country_event = { id = hai_fuel.92 hours = 2 }
+			}
+			country_event = { id = hai_fuel.102 days = 12 }
+		}
+		ai_will_do = {
+			base = 850
+			modifier = { factor = 1.5 HAI = { check_variable = { HAI_gonave_oil_stage > 2 } } }
+			modifier = { factor = 1.5 HAI = { check_variable = { HAI_gonave_oil_stage > 4 } } }
+		}
+	}
+
+	HAI_GANG_sell_stolen_fuel = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { OR = { tag = VIV tag = GRF tag = KRB } }
+		available = { fuel_ratio > 0.10 }
+		cost = 10
+		days_re_enable = 45
+		complete_effect = {
+			add_fuel = -5000
+			add_political_power = 60
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 120 }
+		}
+		ai_will_do = { base = 220 }
+	}
+
+	HAI_GANG_fuel_major_raid = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { OR = { tag = VIV tag = GRF tag = KRB } }
+		available = { fuel_ratio > 0.08 NOT = { has_idea = HAI_fuelled_gang_operations } }
+		cost = 10
+		days_re_enable = 60
+		complete_effect = {
+			add_fuel = -4000
+			add_timed_idea = { idea = HAI_fuelled_gang_operations days = 45 }
+		}
+		ai_will_do = { base = 190 }
+	}
+
+	HAI_GANG_buy_local_loyalty_with_fuel = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { OR = { tag = VIV tag = GRF tag = KRB } }
+		available = { fuel_ratio > 0.06 }
+		cost = 10
+		days_re_enable = 60
+		complete_effect = {
+			add_fuel = -3000
+			add_stability = 0.02
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+		}
+		ai_will_do = { base = 170 }
+	}
+}

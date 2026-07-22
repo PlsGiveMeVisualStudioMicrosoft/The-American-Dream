@@ -1,0 +1,18 @@
+division_template = {
+	name = "Kraze Barye Armed Group"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "Tabarre Group"
+		location = 4525
+		division_template = "Kraze Barye Armed Group"
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.75
+	}
+}

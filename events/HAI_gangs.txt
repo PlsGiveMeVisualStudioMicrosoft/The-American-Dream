@@ -1,0 +1,540 @@
+add_namespace = hai_gangs
+
+# Save-compatible acknowledgement for an old generic depot raid. New games use
+# specialised operations below.
+country_event = {
+	id = hai_gangs.1
+	title = hai_gangs.1.t
+	desc = hai_gangs.1.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.1.a }
+}
+
+# Gran Grif: a coastal shipment is intercepted. All mechanical losses are on
+# this option so Haiti sees and actually receives the native HOI4 effects.
+country_event = {
+	id = hai_gangs.2
+	title = hai_gangs.2.t
+	desc = hai_gangs.2.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.2.a
+		add_manpower = -125
+		add_equipment_to_stockpile = { type = convoy_1 amount = -2 }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -300 }
+		custom_effect_tooltip = HAI_escalation_increase_7_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 7 } }
+		FROM = {
+			add_manpower = -60
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 300 }
+			add_war_support = 0.01
+			country_event = { id = hai_gangs.3 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.3
+	title = hai_gangs.3.t
+	desc = hai_gangs.3.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.3.a }
+}
+
+# Final-offensive warnings.
+country_event = {
+	id = hai_gangs.10
+	title = hai_gangs.10.t
+	desc = hai_gangs.10.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.10.a add_war_support = 0.01 }
+}
+
+country_event = {
+	id = hai_gangs.11
+	title = hai_gangs.11.t
+	desc = hai_gangs.11.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.11.a add_war_support = 0.01 }
+}
+
+country_event = {
+	id = hai_gangs.12
+	title = hai_gangs.12.t
+	desc = hai_gangs.12.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.12.a add_war_support = 0.01 }
+}
+
+# Viv Ansanm: metropolitan mass coordination.
+country_event = {
+	id = hai_gangs.20
+	title = hai_gangs.20.t
+	desc = hai_gangs.20.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.20.a }
+}
+
+country_event = {
+	id = hai_gangs.21
+	title = hai_gangs.21.t
+	desc = hai_gangs.21.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.21.a
+		add_manpower = -75
+		add_stability = -0.005
+		custom_effect_tooltip = HAI_escalation_increase_5_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 5 } }
+		FROM = {
+			add_manpower = -40
+			add_war_support = 0.01
+			army_experience = 2
+			country_event = { id = hai_gangs.25 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.22
+	title = hai_gangs.22.t
+	desc = hai_gangs.22.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.22.a
+		add_manpower = -100
+		add_stability = -0.01
+		custom_effect_tooltip = HAI_escalation_increase_6_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 6 } }
+		FROM = {
+			add_manpower = -60
+			add_war_support = 0.01
+			country_event = { id = hai_gangs.26 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.23
+	title = hai_gangs.23.t
+	desc = hai_gangs.23.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.23.a
+		add_manpower = -150
+		add_equipment_to_stockpile = { type = convoy_1 amount = -2 }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -360 }
+		add_stability = -0.01
+		custom_effect_tooltip = HAI_escalation_increase_8_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 8 } }
+		FROM = {
+			add_manpower = -80
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 360 }
+			add_war_support = 0.02
+			country_event = { id = hai_gangs.24 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.24
+	title = hai_gangs.24.t
+	desc = hai_gangs.24.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.24.a }
+}
+
+country_event = {
+	id = hai_gangs.25
+	title = hai_gangs.25.t
+	desc = hai_gangs.25.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.25.a }
+}
+
+country_event = {
+	id = hai_gangs.26
+	title = hai_gangs.26.t
+	desc = hai_gangs.26.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.26.a }
+}
+
+# Gran Grif: road control and material interdiction.
+country_event = {
+	id = hai_gangs.40
+	title = hai_gangs.40.t
+	desc = hai_gangs.40.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.40.a
+		add_political_power = -10
+		add_stability = -0.005
+		custom_effect_tooltip = HAI_escalation_increase_3_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 3 } }
+		FROM = {
+			add_political_power = 55
+			country_event = { id = hai_gangs.44 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.41
+	title = hai_gangs.41.t
+	desc = hai_gangs.41.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.41.a
+		add_manpower = -125
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -240 }
+		custom_effect_tooltip = HAI_escalation_increase_7_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 7 } }
+		FROM = {
+			add_manpower = -60
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 240 }
+			add_war_support = 0.01
+			country_event = { id = hai_gangs.42 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.42
+	title = hai_gangs.42.t
+	desc = hai_gangs.42.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.42.a }
+}
+
+country_event = {
+	id = hai_gangs.43
+	title = hai_gangs.43.t
+	desc = hai_gangs.43.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.43.a
+		add_manpower = -100
+		add_stability = -0.01
+		custom_effect_tooltip = HAI_escalation_increase_6_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 6 } }
+		FROM = {
+			add_manpower = -60
+			add_war_support = 0.01
+			country_event = { id = hai_gangs.45 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.44
+	title = hai_gangs.44.t
+	desc = hai_gangs.44.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.44.a }
+}
+
+country_event = {
+	id = hai_gangs.45
+	title = hai_gangs.45.t
+	desc = hai_gangs.45.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.45.a }
+}
+
+# Kraze Barye: ransom, infiltration and vehicle theft.
+country_event = {
+	id = hai_gangs.60
+	title = hai_gangs.60.t
+	desc = hai_gangs.60.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.60.a
+		add_political_power = -40
+		add_stability = -0.01
+		custom_effect_tooltip = HAI_escalation_increase_4_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 4 } }
+		FROM = {
+			add_political_power = 50
+			country_event = { id = hai_gangs.65 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+	option = {
+		name = hai_gangs.60.b
+		add_manpower = -125
+		add_stability = -0.01
+		custom_effect_tooltip = HAI_escalation_increase_5_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 5 } }
+		FROM = {
+			add_war_support = 0.01
+			country_event = { id = hai_gangs.66 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+	option = {
+		name = hai_gangs.60.c
+		random_list = {
+			55 = {
+				add_manpower = -50
+				custom_effect_tooltip = HAI_escalation_decrease_3_tt
+				hidden_effect = { subtract_from_variable = { HAI_escalation = 3 } }
+				army_experience = 3
+				FROM = {
+					add_manpower = -100
+					country_event = { id = hai_gangs.67 hours = 2 }
+				}
+			}
+			45 = {
+				add_manpower = -150
+				add_stability = -0.02
+				custom_effect_tooltip = HAI_escalation_increase_6_tt
+				hidden_effect = { add_to_variable = { HAI_escalation = 6 } }
+				FROM = {
+					add_political_power = 40
+					country_event = { id = hai_gangs.68 hours = 2 }
+				}
+			}
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.61
+	title = hai_gangs.61.t
+	desc = hai_gangs.61.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.61.a
+		add_manpower = -100
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = -10 }
+		custom_effect_tooltip = HAI_escalation_increase_6_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 6 } }
+		FROM = {
+			add_manpower = -50
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 10 }
+			country_event = { id = hai_gangs.62 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.62
+	title = hai_gangs.62.t
+	desc = hai_gangs.62.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.62.a }
+}
+
+country_event = {
+	id = hai_gangs.63
+	title = hai_gangs.63.t
+	desc = hai_gangs.63.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.63.a
+		add_political_power = -10
+		add_stability = -0.005
+		custom_effect_tooltip = HAI_escalation_increase_3_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 3 } }
+		FROM = {
+			add_political_power = 55
+			country_event = { id = hai_gangs.69 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.64
+	title = hai_gangs.64.t
+	desc = hai_gangs.64.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.64.a
+		add_manpower = -125
+		add_stability = -0.01
+		custom_effect_tooltip = HAI_escalation_increase_7_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 7 } }
+		FROM = {
+			add_manpower = -75
+			add_war_support = 0.01
+			country_event = { id = hai_gangs.70 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = { id = hai_gangs.65 title = hai_gangs.65.t desc = hai_gangs.65.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_gangs.65.a } }
+country_event = { id = hai_gangs.66 title = hai_gangs.66.t desc = hai_gangs.66.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_gangs.66.a } }
+country_event = { id = hai_gangs.67 title = hai_gangs.67.t desc = hai_gangs.67.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_gangs.67.a } }
+country_event = { id = hai_gangs.68 title = hai_gangs.68.t desc = hai_gangs.68.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_gangs.68.a } }
+country_event = { id = hai_gangs.69 title = hai_gangs.69.t desc = hai_gangs.69.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_gangs.69.a } }
+country_event = { id = hai_gangs.70 title = hai_gangs.70.t desc = hai_gangs.70.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_gangs.70.a } }
+
+# Clears the shared operation window. Hidden to avoid notification spam.
+country_event = {
+	id = hai_gangs.90
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { clr_country_flag = HAI_major_gang_operation_active }
+}
+
+country_event = {
+	id = hai_gangs.99
+	title = hai_gangs.99.t
+	desc = hai_gangs.99.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = hai_gangs.99.a }
+}
+
+# Targeted Haitian counter-operations. These suppress political and operational
+# capacity for ninety days but deliberately do not modify division combat.
+country_event = {
+	id = hai_gangs.100
+	title = hai_gangs.100.t
+	desc = hai_gangs.100.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.100.a
+		add_stability = 0.01
+		custom_effect_tooltip = HAI_escalation_decrease_5_tt
+		hidden_effect = { subtract_from_variable = { HAI_escalation = 5 } }
+		VIV = {
+			add_political_power = -50
+			add_timed_idea = { idea = VIV_coalition_in_disarray days = 90 }
+			country_event = { id = hai_gangs.106 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.101
+	title = hai_gangs.101.t
+	desc = hai_gangs.101.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.101.a
+		add_manpower = -125
+		add_stability = -0.01
+		custom_effect_tooltip = HAI_escalation_increase_3_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 3 } }
+		VIV = { add_political_power = 25 }
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.102
+	title = hai_gangs.102.t
+	desc = hai_gangs.102.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.102.a
+		add_stability = 0.01
+		custom_effect_tooltip = HAI_escalation_decrease_4_tt
+		hidden_effect = { subtract_from_variable = { HAI_escalation = 4 } }
+		GRF = {
+			add_political_power = -50
+			add_timed_idea = { idea = GRF_routes_under_surveillance days = 90 }
+			country_event = { id = hai_gangs.107 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.103
+	title = hai_gangs.103.t
+	desc = hai_gangs.103.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.103.a
+		add_manpower = -100
+		add_stability = -0.01
+		custom_effect_tooltip = HAI_escalation_increase_3_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 3 } }
+		GRF = { add_political_power = 25 }
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.104
+	title = hai_gangs.104.t
+	desc = hai_gangs.104.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.104.a
+		add_stability = 0.01
+		custom_effect_tooltip = HAI_escalation_decrease_4_tt
+		hidden_effect = { subtract_from_variable = { HAI_escalation = 4 } }
+		KRB = {
+			add_political_power = -50
+			add_timed_idea = { idea = KRB_ransom_channels_frozen days = 90 }
+			country_event = { id = hai_gangs.108 hours = 2 }
+		}
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_gangs.105
+	title = hai_gangs.105.t
+	desc = hai_gangs.105.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = hai_gangs.105.a
+		add_manpower = -100
+		add_stability = -0.01
+		custom_effect_tooltip = HAI_escalation_increase_4_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 4 } }
+		KRB = { add_political_power = 30 }
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = { id = hai_gangs.106 title = hai_gangs.106.t desc = hai_gangs.106.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_gangs.106.a } }
+country_event = { id = hai_gangs.107 title = hai_gangs.107.t desc = hai_gangs.107.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_gangs.107.a } }
+country_event = { id = hai_gangs.108 title = hai_gangs.108.t desc = hai_gangs.108.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = hai_gangs.108.a } }

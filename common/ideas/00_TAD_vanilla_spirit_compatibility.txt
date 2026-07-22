@@ -1,0 +1,70 @@
+ideas = {
+	hidden_ideas = {
+		# The total conversion replaces common/ideas, while the inherited vanilla
+		# unit-leader traits still test for these academy and purge spirits.
+		# Empty hidden definitions keep those has_idea checks valid without
+		# granting any country a spirit or changing gameplay.
+		best_of_the_best_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+
+		academy_scholarships_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+
+		SOV_purged_junior_army_officers_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+
+		best_of_the_best_naval_academy_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+
+		naval_academy_scholarships_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+
+		SOV_purged_junior_navy_officers_3 = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+
+		mass_assault_academy_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+
+		mobile_warfare_academy_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+
+		superior_firepower_academy_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+
+		theatre_training_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+
+		# Checked by the vanilla tank and ship chassis allow-branches. The AAT
+		# idea file is intentionally absent because common/ideas is replaced.
+		BUL_army_restrictions_aat = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+
+		# Referenced by the inherited faction AI goal scripts.
+		MTG_naval_treaty_adherent = {
+			allowed = { always = no }
+			removal_cost = -1
+		}
+	}
+}

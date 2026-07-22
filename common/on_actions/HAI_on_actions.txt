@@ -1,0 +1,247 @@
+on_actions = {
+	on_daily_HAI = {
+		effect = {
+			HAI_check_escalation_threshold = yes
+
+			# Backfill progressive crisis-response costs into saves made before the
+			# variable-backed prices were introduced.
+			if = {
+				limit = { NOT = { has_country_flag = HAI_progressive_crisis_costs_initialized } }
+				set_variable = { HAI_checkpoint_raid_cost = 30 }
+				set_variable = { HAI_humanitarian_convoy_cost = 25 }
+				set_variable = { HAI_joint_intelligence_cost = 45 }
+				set_country_flag = HAI_progressive_crisis_costs_initialized
+			}
+
+			# Backfill the staged oil and fuel-program variables into older saves.
+			if = {
+				limit = { NOT = { has_country_flag = HAI_fuel_system_initialized } }
+				set_variable = { HAI_daily_fuel_commitment = 0 }
+				set_variable = { HAI_offshore_security = 0 }
+				set_variable = { HAI_transport_security = 0 }
+				set_variable = { HAI_personnel_security = 0 }
+				if = {
+					limit = { has_country_flag = HAI_gonave_oil_completed }
+					set_variable = { HAI_gonave_oil_stage = 1 }
+					set_country_flag = HAI_fuel_programs_unlocked
+					clr_country_flag = HAI_gonave_oil_completed
+				}
+				else = { set_variable = { HAI_gonave_oil_stage = 0 } }
+				set_country_flag = HAI_fuel_system_initialized
+			}
+
+			# Visible fuel programs use fixed stockpile drains. They may be stacked,
+			# intentionally allowing a player to run a large daily deficit.
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = HAI_program_fishing_fleet
+						has_country_flag = HAI_program_hospitals
+						has_country_flag = HAI_program_ferry_network
+						has_country_flag = HAI_program_local_support
+						has_country_flag = HAI_program_tanker_escorts
+						has_country_flag = HAI_program_channel_patrol
+						has_country_flag = HAI_program_gang_tracking
+						has_country_flag = HAI_program_generators
+						has_country_flag = HAI_program_power_capital
+						has_country_flag = HAI_program_motorized_police
+						has_country_flag = HAI_program_cssm_transport
+						has_country_flag = HAI_program_coastal_interdiction
+						has_country_flag = HAI_program_airlift
+						has_country_flag = HAI_program_fuel_export
+						has_country_flag = HAI_program_decoy_convoy
+						has_country_flag = HAI_program_oil_repairs
+					}
+					fuel_ratio < 0.10
+					fuel_ratio > 0.001
+					NOT = { has_country_flag = HAI_low_fuel_warning_active }
+				}
+				set_country_flag = HAI_low_fuel_warning_active
+				country_event = { id = hai_fuel.221 hours = 2 }
+			}
+
+			if = {
+				limit = { fuel_ratio > 0.15 }
+				clr_country_flag = HAI_low_fuel_warning_active
+			}
+
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = HAI_program_fishing_fleet
+						has_country_flag = HAI_program_hospitals
+						has_country_flag = HAI_program_ferry_network
+						has_country_flag = HAI_program_local_support
+						has_country_flag = HAI_program_tanker_escorts
+						has_country_flag = HAI_program_channel_patrol
+						has_country_flag = HAI_program_gang_tracking
+						has_country_flag = HAI_program_generators
+						has_country_flag = HAI_program_power_capital
+						has_country_flag = HAI_program_motorized_police
+						has_country_flag = HAI_program_cssm_transport
+						has_country_flag = HAI_program_coastal_interdiction
+						has_country_flag = HAI_program_airlift
+						has_country_flag = HAI_program_fuel_export
+						has_country_flag = HAI_program_decoy_convoy
+						has_country_flag = HAI_program_oil_repairs
+					}
+					fuel_ratio < 0.001
+				}
+				country_event = { id = hai_fuel.220 hours = 2 }
+				HAI_shutdown_fuel_programs = yes
+			}
+
+			if = { limit = { has_country_flag = HAI_program_fishing_fleet } add_fuel = -300 }
+			if = { limit = { has_country_flag = HAI_program_hospitals } add_fuel = -350 }
+			if = { limit = { has_country_flag = HAI_program_ferry_network } add_fuel = -400 }
+			if = { limit = { has_country_flag = HAI_program_local_support } add_fuel = -550 }
+			if = { limit = { has_country_flag = HAI_program_tanker_escorts } add_fuel = -700 }
+			if = { limit = { has_country_flag = HAI_program_channel_patrol } add_fuel = -750 }
+			if = { limit = { has_country_flag = HAI_program_gang_tracking } add_fuel = -850 }
+			if = { limit = { has_country_flag = HAI_program_generators } add_fuel = -900 }
+			if = { limit = { has_country_flag = HAI_program_power_capital } add_fuel = -950 }
+			if = { limit = { has_country_flag = HAI_program_motorized_police } add_fuel = -1150 }
+			if = { limit = { has_country_flag = HAI_program_cssm_transport } add_fuel = -1450 }
+			if = { limit = { has_country_flag = HAI_program_coastal_interdiction } add_fuel = -1850 }
+			if = { limit = { has_country_flag = HAI_program_airlift } add_fuel = -2250 }
+			if = { limit = { has_country_flag = HAI_program_fuel_export } add_fuel = -2550 }
+			if = { limit = { has_country_flag = HAI_program_decoy_convoy } add_fuel = -1250 }
+			if = { limit = { has_country_flag = HAI_program_oil_repairs } add_fuel = -900 }
+
+			# Losing Gonâve immediately grounds every oil-backed national program and
+			# cancels operations which can no longer reach the island. The unlock is
+			# retained, so Haiti can restart programs after retaking the state.
+			if = {
+				limit = {
+					has_country_flag = HAI_fuel_programs_unlocked
+					NOT = { controls_state = 87 }
+					NOT = { has_country_flag = HAI_oil_control_lost }
+				}
+				set_country_flag = HAI_oil_control_lost
+				HAI_shutdown_fuel_programs = yes
+				HAI_clear_oil_attack_flags = yes
+			}
+			else_if = {
+				limit = {
+					has_country_flag = HAI_oil_control_lost
+					controls_state = 87
+				}
+				clr_country_flag = HAI_oil_control_lost
+			}
+
+			# Convert the old permanent hotel-development burden into a three-year
+			# program without invalidating an existing campaign.
+			if = {
+				limit = {
+					has_country_flag = HAI_gonave_hotels_built
+					NOT = { has_country_flag = HAI_gonave_hotel_burden_migrated }
+				}
+				set_country_flag = HAI_gonave_hotel_burden_migrated
+				set_country_flag = HAI_gonave_hotel_burden_active
+				remove_ideas = HAI_gonave_hotels
+				add_timed_idea = { idea = HAI_gonave_hotels days = 1095 }
+				country_event = { id = hai_gonave.70 days = 1095 }
+			}
+
+			if = {
+				limit = {
+					has_country_flag = HAI_historical_council_rotation
+					NOT = { has_country_flag = HAI_fritz_rotation_complete }
+					date > 2025.3.6
+					date < 2025.8.7
+				}
+				set_country_flag = HAI_fritz_rotation_complete
+				country_event = { id = hai_crisis.2 hours = 3 }
+			}
+
+			if = {
+				limit = {
+					has_country_flag = HAI_historical_council_rotation
+					NOT = { has_country_flag = HAI_laurent_rotation_complete }
+					date > 2025.8.6
+				}
+				set_country_flag = HAI_laurent_rotation_complete
+				country_event = { id = hai_crisis.3 hours = 3 }
+			}
+
+			if = {
+				limit = {
+					has_country_flag = HAI_cssm_brigade_deployed
+					NOT = { controls_state = 74 }
+					NOT = { has_country_flag = HAI_cssm_evacuation_pending }
+				}
+				set_country_flag = HAI_cssm_evacuation_pending
+				country_event = { id = hai_cssm.20 hours = 3 }
+			}
+
+			# Gonâve's economic benefits are suspended while Haiti does not
+			# control the island, then restored after a government return.
+			if = {
+				limit = {
+					has_country_flag = HAI_gonave_hotels_built
+					NOT = { controls_state = 87 }
+				}
+				if = {
+					limit = { NOT = { has_country_flag = HAI_gonave_lost } }
+					set_country_flag = HAI_gonave_lost
+					country_event = { id = hai_gonave.60 hours = 3 }
+				}
+				set_variable = { HAI_gonave_security = 0 }
+				remove_ideas = HAI_gonave_hotels
+				remove_ideas = HAI_gonave_tourism
+				remove_ideas = HAI_gonave_construction_abandoned
+				remove_ideas = HAI_gonave_tourism_panic
+				remove_ideas = HAI_gonave_resorts_burning
+				remove_ideas = HAI_gonave_air_links
+				remove_ideas = HAI_gonave_deepwater_harbor
+				remove_ideas = HAI_gonave_shipyards
+			}
+			else_if = {
+				limit = {
+					has_country_flag = HAI_gonave_hotels_built
+					controls_state = 87
+				}
+				if = {
+					limit = { has_country_flag = HAI_gonave_lost }
+					clr_country_flag = HAI_gonave_lost
+					country_event = { id = hai_gonave.61 hours = 3 }
+				}
+				if = {
+					limit = {
+						has_country_flag = HAI_gonave_hotel_burden_active
+						NOT = { has_idea = HAI_gonave_hotels }
+					}
+					add_timed_idea = { idea = HAI_gonave_hotels days = 1095 }
+				}
+				if = {
+					limit = {
+						has_country_flag = HAI_gonave_tourism_open
+						NOT = { has_idea = HAI_gonave_tourism }
+					}
+					add_ideas = HAI_gonave_tourism
+				}
+				if = {
+					limit = {
+						has_country_flag = HAI_gonave_airport_completed
+						NOT = { has_idea = HAI_gonave_air_links }
+					}
+					add_ideas = HAI_gonave_air_links
+				}
+				if = {
+					limit = {
+						has_country_flag = HAI_gonave_harbor_completed
+						NOT = { has_idea = HAI_gonave_deepwater_harbor }
+					}
+					add_ideas = HAI_gonave_deepwater_harbor
+				}
+				if = {
+					limit = {
+						has_country_flag = HAI_gonave_shipyards_completed
+						NOT = { has_idea = HAI_gonave_shipyards }
+					}
+					add_ideas = HAI_gonave_shipyards
+				}
+			}
+		}
+	}
+}

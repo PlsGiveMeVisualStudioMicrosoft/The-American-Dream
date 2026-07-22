@@ -1,0 +1,196 @@
+add_namespace = hai_feedback
+
+country_event = {
+	id = hai_feedback.1
+	title = hai_feedback.1.t
+	desc = hai_feedback.1.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_feedback.1.a
+		army_experience = 2
+		custom_effect_tooltip = HAI_escalation_decrease_6_tt
+		hidden_effect = { subtract_from_variable = { HAI_escalation = 6 } }
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_feedback.2
+	title = hai_feedback.2.t
+	desc = hai_feedback.2.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_feedback.2.a
+		add_manpower = -75
+		add_stability = -0.01
+		custom_effect_tooltip = HAI_escalation_increase_3_tt
+		hidden_effect = { add_to_variable = { HAI_escalation = 3 } }
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_feedback.3
+	title = hai_feedback.3.t
+	desc = hai_feedback.3.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_feedback.3.a
+		add_stability = 0.01
+		custom_effect_tooltip = HAI_escalation_decrease_4_tt
+		hidden_effect = { subtract_from_variable = { HAI_escalation = 4 } }
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_feedback.4
+	title = hai_feedback.4.t
+	desc = hai_feedback.4.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = {
+		name = hai_feedback.4.a
+		army_experience = 4
+		custom_effect_tooltip = HAI_escalation_decrease_8_tt
+		hidden_effect = { subtract_from_variable = { HAI_escalation = 8 } }
+		HAI_check_escalation_threshold = yes
+	}
+}
+
+country_event = {
+	id = hai_feedback.5
+	title = hai_feedback.5.t
+	desc = hai_feedback.5.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.5.a }
+}
+
+country_event = {
+	id = hai_feedback.6
+	title = hai_feedback.6.t
+	desc = hai_feedback.6.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.6.a }
+}
+
+country_event = {
+	id = hai_feedback.7
+	title = hai_feedback.7.t
+	desc = hai_feedback.7.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.7.a }
+}
+
+country_event = {
+	id = hai_feedback.20
+	title = hai_feedback.20.t
+	desc = hai_feedback.20.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.20.a }
+}
+
+country_event = {
+	id = hai_feedback.21
+	title = hai_feedback.21.t
+	desc = hai_feedback.21.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.21.a }
+}
+
+country_event = {
+	id = hai_feedback.22
+	title = hai_feedback.22.t
+	desc = hai_feedback.22.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.22.a }
+}
+
+country_event = {
+	id = hai_feedback.23
+	title = hai_feedback.23.t
+	desc = hai_feedback.23.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.23.a }
+}
+
+country_event = {
+	id = hai_feedback.24
+	title = hai_feedback.24.t
+	desc = hai_feedback.24.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.24.a }
+}
+
+country_event = {
+	id = hai_feedback.25
+	title = hai_feedback.25.t
+	desc = hai_feedback.25.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.25.a }
+}
+
+country_event = {
+	id = hai_feedback.30
+	title = hai_feedback.30.t
+	desc = hai_feedback.30.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.30.a }
+}
+
+country_event = {
+	id = hai_feedback.31
+	title = hai_feedback.31.t
+	desc = hai_feedback.31.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.31.a }
+}
+
+country_event = {
+	id = hai_feedback.32
+	title = hai_feedback.32.t
+	desc = hai_feedback.32.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.32.a }
+}
+
+country_event = {
+	id = hai_feedback.33
+	title = hai_feedback.33.t
+	desc = hai_feedback.33.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+
+	option = { name = hai_feedback.33.a }
+}

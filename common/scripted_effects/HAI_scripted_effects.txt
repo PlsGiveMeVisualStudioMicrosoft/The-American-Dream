@@ -1,0 +1,266 @@
+HAI_clamp_escalation = {
+	HAI = {
+		if = {
+			limit = { check_variable = { HAI_escalation > 100 } }
+			set_variable = { HAI_escalation = 100 }
+		}
+		if = {
+			limit = { check_variable = { HAI_escalation < 0 } }
+			set_variable = { HAI_escalation = 0 }
+		}
+	}
+}
+
+HAI_check_escalation_threshold = {
+	HAI_clamp_escalation = yes
+	HAI = {
+		if = {
+			limit = {
+				has_country_flag = HAI_crisis_active
+				check_variable = { HAI_escalation > 99 }
+				NOT = { has_country_flag = HAI_war_event_pending }
+			}
+			set_country_flag = HAI_war_event_pending
+			country_event = { id = hai_crisis.20 hours = 6 }
+		}
+	}
+}
+
+# ROOT is the attacking armed group. Haiti receives a national operation lock
+# immediately, before the result event is queued, so two AI countries cannot
+# launch major attacks in the same hour. The attacker remains exhausted longer
+# than the shared eighteen-day window, encouraging natural rotation.
+HAI_begin_major_gang_operation = {
+	HAI = {
+		set_country_flag = HAI_major_gang_operation_active
+		country_event = { id = hai_gangs.90 days = 18 }
+	}
+	add_timed_idea = { idea = HAI_operational_exhaustion days = 45 }
+}
+
+HAI_check_regional_influence_threshold = {
+	HAI = {
+		if = {
+			limit = {
+				has_country_flag = HAI_regional_contest_active
+				NOT = { has_country_flag = HAI_influence_resolution_pending }
+				check_variable = { HAI_regional_influence > 59 }
+			}
+			set_country_flag = HAI_influence_resolution_pending
+			if = {
+				limit = { has_country_flag = HAI_target_DOM }
+				DOM = { country_event = { id = hai_cssm.1 } }
+			}
+			if = {
+				limit = { has_country_flag = HAI_target_JAM }
+				JAM = { country_event = { id = hai_cssm.1 } }
+			}
+			if = {
+				limit = { has_country_flag = HAI_target_BAH }
+				BAH = { country_event = { id = hai_cssm.1 } }
+			}
+		}
+
+		if = {
+			limit = {
+				has_country_flag = HAI_regional_contest_active
+				NOT = { has_country_flag = HAI_influence_resolution_pending }
+				check_variable = { HAI_regional_influence < -59 }
+			}
+			set_country_flag = HAI_influence_resolution_pending
+			if = {
+				limit = { has_country_flag = HAI_target_DOM }
+				DOM = { country_event = { id = hai_cssm.2 } }
+			}
+			if = {
+				limit = { has_country_flag = HAI_target_JAM }
+				JAM = { country_event = { id = hai_cssm.2 } }
+			}
+			if = {
+				limit = { has_country_flag = HAI_target_BAH }
+				BAH = { country_event = { id = hai_cssm.2 } }
+			}
+		}
+	}
+}
+
+HAI_clear_regional_target_flags = {
+	clr_country_flag = HAI_target_DOM
+	clr_country_flag = HAI_target_JAM
+	clr_country_flag = HAI_target_BAH
+	clr_country_flag = HAI_influence_resolution_pending
+}
+
+HAI_clamp_gonave_security = {
+	HAI = {
+		if = {
+			limit = { check_variable = { HAI_gonave_security > 3 } }
+			set_variable = { HAI_gonave_security = 3 }
+		}
+		if = {
+			limit = { check_variable = { HAI_gonave_security < 0 } }
+			set_variable = { HAI_gonave_security = 0 }
+		}
+	}
+}
+
+# ROOT is the attacking gang for both results. Mechanical losses are resolved
+# on Haiti's event button so the player sees native manpower and equipment
+# effects instead of numbers written only into flavour text.
+HAI_gonave_raid_success = {
+	HAI = { country_event = { id = hai_gonave.10 hours = 2 } }
+}
+
+HAI_gonave_raid_repelled = {
+	HAI = { country_event = { id = hai_gonave.12 hours = 2 } }
+}
+
+HAI_clamp_oil_security = {
+	HAI = {
+		if = {
+			limit = { check_variable = { HAI_offshore_security > 3 } }
+			set_variable = { HAI_offshore_security = 3 }
+		}
+		if = {
+			limit = { check_variable = { HAI_offshore_security < 0 } }
+			set_variable = { HAI_offshore_security = 0 }
+		}
+		if = {
+			limit = { check_variable = { HAI_transport_security > 3 } }
+			set_variable = { HAI_transport_security = 3 }
+		}
+		if = {
+			limit = { check_variable = { HAI_transport_security < 0 } }
+			set_variable = { HAI_transport_security = 0 }
+		}
+		if = {
+			limit = { check_variable = { HAI_personnel_security > 3 } }
+			set_variable = { HAI_personnel_security = 3 }
+		}
+		if = {
+			limit = { check_variable = { HAI_personnel_security < 0 } }
+			set_variable = { HAI_personnel_security = 0 }
+		}
+	}
+}
+
+HAI_clear_oil_attack_flags = {
+	HAI = {
+		clr_country_flag = HAI_oil_attack_pending
+		clr_country_flag = HAI_oil_attack_viv_pending
+		clr_country_flag = HAI_oil_attack_grf_pending
+		clr_country_flag = HAI_oil_attack_krb_pending
+	}
+}
+
+# Cancels every fuel-backed program when Haiti's stockpile reaches zero. Timed
+# completion events all require their corresponding flag, preventing rewards
+# from firing after an emergency shutdown.
+HAI_shutdown_fuel_programs = {
+	HAI = {
+		clr_country_flag = HAI_program_fishing_fleet
+		clr_country_flag = HAI_program_hospitals
+		clr_country_flag = HAI_program_ferry_network
+		clr_country_flag = HAI_program_local_support
+		clr_country_flag = HAI_program_tanker_escorts
+		clr_country_flag = HAI_program_channel_patrol
+		clr_country_flag = HAI_program_gang_tracking
+		clr_country_flag = HAI_program_generators
+		clr_country_flag = HAI_program_power_capital
+		clr_country_flag = HAI_program_motorized_police
+		clr_country_flag = HAI_program_cssm_transport
+		clr_country_flag = HAI_program_coastal_interdiction
+		clr_country_flag = HAI_program_airlift
+		clr_country_flag = HAI_program_fuel_export
+		clr_country_flag = HAI_program_decoy_convoy
+		clr_country_flag = HAI_program_oil_repairs
+		remove_ideas = HAI_fuel_fishing_fleet
+		remove_ideas = HAI_fuel_hospitals
+		remove_ideas = HAI_fuel_ferry_network
+		remove_ideas = HAI_fuel_local_support
+		remove_ideas = HAI_fuel_tanker_escorts
+		remove_ideas = HAI_fuel_channel_patrol
+		remove_ideas = HAI_fuel_gang_tracking
+		remove_ideas = HAI_fuel_emergency_generators
+		remove_ideas = HAI_fuel_power_capital
+		remove_ideas = HAI_fuel_cssm_transport
+		remove_ideas = HAI_fuel_coastal_interdiction
+		remove_ideas = HAI_fuel_emergency_airlift
+		remove_ideas = HAI_fuel_caribbean_export
+		remove_ideas = HAI_fuel_decoy_operation
+		remove_ideas = HAI_fuel_emergency_repairs
+		set_variable = { HAI_daily_fuel_commitment = 0 }
+		set_variable = { HAI_offshore_security = 0 }
+		set_variable = { HAI_transport_security = 0 }
+		set_variable = { HAI_personnel_security = 0 }
+		VIV = { remove_ideas = VIV_fuel_police_pressure }
+		GRF = { remove_ideas = GRF_fuel_police_pressure }
+		KRB = { remove_ideas = KRB_fuel_police_pressure }
+	}
+}
+
+HAI_add_ruling_party_popularity = {
+	HAI = {
+		if = {
+			limit = { has_government = democratic }
+			add_popularity = { ideology = democratic popularity = 0.03 }
+		}
+		else_if = {
+			limit = { has_government = fascism }
+			add_popularity = { ideology = fascism popularity = 0.03 }
+		}
+		else_if = {
+			limit = { has_government = communism }
+			add_popularity = { ideology = communism popularity = 0.03 }
+		}
+		else = {
+			add_popularity = { ideology = neutrality popularity = 0.03 }
+		}
+	}
+}
+
+# ROOT is Haiti and FROM is the successful attacker. Dispersed reserve sites
+# halve the amount that can be removed in one strike.
+HAI_offshore_raid_scaled_fuel_transfer = {
+	if = {
+		limit = { has_country_flag = HAI_distributed_fuel_reserves }
+		if = { limit = { check_variable = { HAI_gonave_oil_stage > 4 } } add_fuel = -15000 FROM = { add_fuel = 15000 } }
+		else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 3 } } add_fuel = -12000 FROM = { add_fuel = 12000 } }
+		else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 2 } } add_fuel = -9000 FROM = { add_fuel = 9000 } }
+		else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 1 } } add_fuel = -6000 FROM = { add_fuel = 6000 } }
+		else = { add_fuel = -3000 FROM = { add_fuel = 3000 } }
+	}
+	else = {
+		if = { limit = { check_variable = { HAI_gonave_oil_stage > 4 } } add_fuel = -30000 FROM = { add_fuel = 30000 } }
+		else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 3 } } add_fuel = -24000 FROM = { add_fuel = 24000 } }
+		else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 2 } } add_fuel = -18000 FROM = { add_fuel = 18000 } }
+		else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 1 } } add_fuel = -12000 FROM = { add_fuel = 12000 } }
+		else = { add_fuel = -6000 FROM = { add_fuel = 6000 } }
+	}
+}
+
+HAI_tanker_raid_scaled_fuel_transfer = {
+	if = {
+		limit = { has_country_flag = HAI_distributed_fuel_reserves }
+		if = { limit = { check_variable = { HAI_gonave_oil_stage > 4 } } add_fuel = -12500 FROM = { add_fuel = 12500 } }
+		else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 3 } } add_fuel = -10000 FROM = { add_fuel = 10000 } }
+		else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 2 } } add_fuel = -7500 FROM = { add_fuel = 7500 } }
+		else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 1 } } add_fuel = -5000 FROM = { add_fuel = 5000 } }
+		else = { add_fuel = -2500 FROM = { add_fuel = 2500 } }
+	}
+	else = {
+		if = { limit = { check_variable = { HAI_gonave_oil_stage > 4 } } add_fuel = -25000 FROM = { add_fuel = 25000 } }
+		else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 3 } } add_fuel = -20000 FROM = { add_fuel = 20000 } }
+		else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 2 } } add_fuel = -15000 FROM = { add_fuel = 15000 } }
+		else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 1 } } add_fuel = -10000 FROM = { add_fuel = 10000 } }
+		else = { add_fuel = -5000 FROM = { add_fuel = 5000 } }
+	}
+}
+
+HAI_engineer_ransom_scaled_fuel_transfer = {
+	if = { limit = { check_variable = { HAI_gonave_oil_stage > 4 } } add_fuel = -20000 FROM = { add_fuel = 20000 } }
+	else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 3 } } add_fuel = -16000 FROM = { add_fuel = 16000 } }
+	else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 2 } } add_fuel = -12000 FROM = { add_fuel = 12000 } }
+	else_if = { limit = { check_variable = { HAI_gonave_oil_stage > 1 } } add_fuel = -8000 FROM = { add_fuel = 8000 } }
+	else = { add_fuel = -4000 FROM = { add_fuel = 4000 } }
+}

@@ -1,0 +1,46 @@
+characters = {
+	HAI_Leslie_Voltaire = {
+		name = HAI_Leslie_Voltaire
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_HAI_Leslie_Voltaire"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = { HAI_rotating_president }
+			expire = "2083.1.1.1"
+			id = -1
+		}
+	}
+
+	HAI_Fritz_Alphonse_Jean = {
+		name = HAI_Fritz_Alphonse_Jean
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_HAI_Fritz_Alphonse_Jean"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = { HAI_rotating_president }
+			expire = "2083.1.1.1"
+			id = -1
+		}
+	}
+
+	HAI_Laurent_Saint_Cyr = {
+		name = HAI_Laurent_Saint_Cyr
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_HAI_Laurent_Saint_Cyr"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = { HAI_rotating_president }
+			expire = "2083.1.1.1"
+			id = -1
+		}
+	}
+}

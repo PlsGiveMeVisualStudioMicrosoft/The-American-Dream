@@ -1,0 +1,16 @@
+characters = {
+	VIV_Jimmy_Cherizier = {
+		name = VIV_Jimmy_Cherizier
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_VIV_Jimmy_Cherizier"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { HAI_former_police_commander HAI_gang_boss }
+			expire = "2083.1.1.1"
+			id = -1
+		}
+	}
+}
