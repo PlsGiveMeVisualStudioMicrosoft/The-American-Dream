@@ -1,0 +1,625 @@
+# The American Dream - custom commander traits
+
+leader_traits = {
+
+	TAD_joint_operations = {
+		type = land
+		trait_type = personality_trait
+		modifier = { planning_speed = 0.08 army_speed_factor = 0.03 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_gwot_veteran = {
+		type = land
+		trait_type = personality_trait
+		modifier = { army_infantry_attack_factor = 0.06 out_of_supply_factor = -0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_abct_commander = {
+		type = land
+		trait_type = personality_trait
+		modifier = { army_armor_attack_factor = 0.10 army_armor_speed_factor = 0.05 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_stryker_commander = {
+		type = land
+		trait_type = personality_trait
+		modifier = { army_speed_factor = 0.06 army_infantry_attack_factor = 0.04 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_light_fighter = {
+		type = land
+		trait_type = personality_trait
+		modifier = { forest = { attack = 0.08 defence = 0.05 } hills = { attack = 0.08 } }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_sof_raider = {
+		type = land
+		trait_type = personality_trait
+		modifier = { out_of_supply_factor = -0.20 army_infantry_attack_factor = 0.05 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_drone_pioneer = {
+		type = land
+		trait_type = personality_trait
+		modifier = { recon_factor = 0.15 planning_speed = 0.05 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_urban_siege = {
+		type = land
+		trait_type = personality_trait
+		modifier = { urban = { attack = 0.10 defence = 0.08 } }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_fires_master = {
+		type = land
+		trait_type = personality_trait
+		modifier = { army_artillery_attack_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_air_component = {
+		type = land
+		trait_type = personality_trait
+		modifier = { recon_factor = 0.10 army_speed_factor = 0.03 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_logistics_veteran = {
+		type = land
+		trait_type = personality_trait
+		modifier = { supply_consumption_factor = -0.08 out_of_supply_factor = -0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_expeditionary = {
+		type = land
+		trait_type = personality_trait
+		modifier = { army_infantry_attack_factor = 0.07 marsh = { attack = 0.05 } }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_hurricane_response = {
+		type = land
+		trait_type = personality_trait
+		modifier = { supply_consumption_factor = -0.06 experience_gain_factor = 0.05 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_border_mission = {
+		type = land
+		trait_type = personality_trait
+		modifier = { desert = { attack = 0.06 } plains = { movement = 0.05 } }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_state_guard_organizer = {
+		type = land
+		trait_type = personality_trait
+		modifier = { experience_gain_factor = 0.10 max_dig_in = 1 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_academy_instructor = {
+		type = land
+		trait_type = personality_trait
+		modifier = { experience_gain_factor = 0.08 planning_speed = 0.05 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_cold_weather = {
+		type = land
+		trait_type = personality_trait
+		modifier = { winter_attrition_factor = -0.30 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_state_legend = {
+		type = land
+		trait_type = personality_trait
+		modifier = { army_infantry_attack_factor = 0.05 experience_gain_factor = 0.05 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_national_command = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = { supply_consumption_factor = -0.08 }
+		modifier = { planning_speed = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_homeland_defense = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = { supply_consumption_factor = -0.05 }
+		modifier = { max_dig_in = 1 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_guard_bureau = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = { supply_consumption_factor = -0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_ALA_yellowhammer_command = {
+		type = land
+		trait_type = personality_trait
+		modifier = { forest = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_ALK_last_frontier_warden = {
+		type = land
+		trait_type = personality_trait
+		modifier = { hills = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_ARZ_sonoran_marshal = {
+		type = land
+		trait_type = personality_trait
+		modifier = { desert = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_ARK_razorback_resolve = {
+		type = land
+		trait_type = personality_trait
+		modifier = { hills = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_CAL_pacific_shield = {
+		type = land
+		trait_type = personality_trait
+		modifier = { urban = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_CLR_high_country_command = {
+		type = land
+		trait_type = personality_trait
+		modifier = { mountain = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_CNT_charter_oak_defiance = {
+		type = land
+		trait_type = personality_trait
+		modifier = { urban = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_DEL_first_state_vanguard = {
+		type = land
+		trait_type = personality_trait
+		modifier = { urban = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_FLO_hurricane_veteran = {
+		type = land
+		trait_type = personality_trait
+		modifier = { marsh = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_GEO_peach_state_pivot = {
+		type = land
+		trait_type = personality_trait
+		modifier = { forest = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_HAW_island_bastion = {
+		type = land
+		trait_type = personality_trait
+		modifier = { hills = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_IDA_gem_state_ranger = {
+		type = land
+		trait_type = personality_trait
+		modifier = { mountain = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_ILL_prairie_arsenal = {
+		type = land
+		trait_type = personality_trait
+		modifier = { plains = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_IND_crossroads_marshal = {
+		type = land
+		trait_type = personality_trait
+		modifier = { plains = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_IOW_hawkeye_discipline = {
+		type = land
+		trait_type = personality_trait
+		modifier = { plains = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_KAN_jayhawk_maneuver = {
+		type = land
+		trait_type = personality_trait
+		modifier = { plains = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_KEN_bluegrass_rifleman = {
+		type = land
+		trait_type = personality_trait
+		modifier = { hills = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_LOU_bayou_fighter = {
+		type = land
+		trait_type = personality_trait
+		modifier = { marsh = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_MAI_down_east_tenacity = {
+		type = land
+		trait_type = personality_trait
+		modifier = { forest = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_MRY_chesapeake_command = {
+		type = land
+		trait_type = personality_trait
+		modifier = { urban = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_MAS_minuteman_legacy = {
+		type = land
+		trait_type = personality_trait
+		modifier = { urban = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_MIC_great_lakes_armorer = {
+		type = land
+		trait_type = personality_trait
+		modifier = { forest = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_MIN_north_star_endurance = {
+		type = land
+		trait_type = personality_trait
+		modifier = { forest = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_MSP_magnolia_grit = {
+		type = land
+		trait_type = personality_trait
+		modifier = { marsh = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_MSO_show_me_skeptic = {
+		type = land
+		trait_type = personality_trait
+		modifier = { plains = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_MON_big_sky_dispersal = {
+		type = land
+		trait_type = personality_trait
+		modifier = { mountain = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_NEB_cornhusker_logistics = {
+		type = land
+		trait_type = personality_trait
+		modifier = { plains = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_NEV_silver_state_raider = {
+		type = land
+		trait_type = personality_trait
+		modifier = { desert = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_NHA_live_free_or_die = {
+		type = land
+		trait_type = personality_trait
+		modifier = { hills = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_NJE_garden_state_industry = {
+		type = land
+		trait_type = personality_trait
+		modifier = { urban = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_NMX_proving_ground_command = {
+		type = land
+		trait_type = personality_trait
+		modifier = { desert = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_NYK_empire_state_marshal = {
+		type = land
+		trait_type = personality_trait
+		modifier = { urban = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_NCA_tar_heel_airborne = {
+		type = land
+		trait_type = personality_trait
+		modifier = { forest = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_NDA_northern_watch = {
+		type = land
+		trait_type = personality_trait
+		modifier = { plains = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_OHI_buckeye_backbone = {
+		type = land
+		trait_type = personality_trait
+		modifier = { plains = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_OKL_thunderbird_command = {
+		type = land
+		trait_type = personality_trait
+		modifier = { plains = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_ORE_cascadia_woodsman = {
+		type = land
+		trait_type = personality_trait
+		modifier = { forest = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_PEN_keystone_iron = {
+		type = land
+		trait_type = personality_trait
+		modifier = { hills = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_RHO_ocean_state_professional = {
+		type = land
+		trait_type = personality_trait
+		modifier = { urban = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_SCA_palmetto_stand = {
+		type = land
+		trait_type = personality_trait
+		modifier = { marsh = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_SDA_badlands_marksman = {
+		type = land
+		trait_type = personality_trait
+		modifier = { plains = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_TEN_volunteer_spirit = {
+		type = land
+		trait_type = personality_trait
+		modifier = { hills = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_TEX_lone_star_marshal = {
+		type = land
+		trait_type = personality_trait
+		modifier = { plains = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_UTA_deseret_organizer = {
+		type = land
+		trait_type = personality_trait
+		modifier = { mountain = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_VER_green_mountain_boy = {
+		type = land
+		trait_type = personality_trait
+		modifier = { hills = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_VIR_old_dominion_staff = {
+		type = land
+		trait_type = personality_trait
+		modifier = { urban = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_WAS_evergreen_expeditionary = {
+		type = land
+		trait_type = personality_trait
+		modifier = { forest = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_WVI_mountaineer_ambusher = {
+		type = land
+		trait_type = personality_trait
+		modifier = { hills = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_WIS_badger_marksman = {
+		type = land
+		trait_type = personality_trait
+		modifier = { forest = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+	TAD_WYO_cowboy_state_cavalry = {
+		type = land
+		trait_type = personality_trait
+		modifier = { mountain = { attack = 0.08 defence = 0.08 } }
+		non_shared_modifier = { experience_gain_factor = 0.10 }
+		new_commander_weight = { factor = 0 }
+		ai_will_do = { factor = 0 }
+	}
+
+}

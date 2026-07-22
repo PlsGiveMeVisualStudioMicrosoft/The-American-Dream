@@ -1,0 +1,155 @@
+characters = {
+
+	NEB_Craig_W_Strong = {
+		name = NEB_Craig_W_Strong
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NEB_Craig_W_Strong"
+				small = "GFX_Portrait_NEB_Craig_W_Strong_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = neb_craig_w_strong_adv
+			allowed = { original_tag = NEB }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_NEB_cornhusker_logistics TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	NEB_Daryl_L_Bohac = {
+		name = NEB_Daryl_L_Bohac
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NEB_Daryl_L_Bohac"
+				small = "GFX_Portrait_NEB_Daryl_L_Bohac_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = neb_daryl_l_bohac_adv
+			allowed = { original_tag = NEB }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	NEB_Rick_L_Evans = {
+		name = NEB_Rick_L_Evans
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NEB_Rick_L_Evans"
+				small = "GFX_Portrait_NEB_Rick_L_Evans_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = neb_rick_l_evans_adv
+			ledger = army
+			allowed = { original_tag = NEB }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	NEB_John_J_Pershing_III = {
+		name = NEB_John_J_Pershing_III
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NEB_John_J_Pershing_III"
+				small = "GFX_Portrait_NEB_John_J_Pershing_III_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = neb_john_j_pershing_iii_adv
+			allowed = { original_tag = NEB }
+			traits = { army_chief_offensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	NEB_Charles_P_Summerall = {
+		name = NEB_Charles_P_Summerall
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NEB_Charles_P_Summerall"
+				small = "GFX_Portrait_NEB_Charles_P_Summerall_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = neb_charles_p_summerall_adv
+			ledger = army
+			allowed = { original_tag = NEB }
+			traits = { superior_firepower_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_fires_master trait_cautious career_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	NEB_Roger_T_Lempke = {
+		name = NEB_Roger_T_Lempke
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NEB_Roger_T_Lempke"
+				small = "GFX_Portrait_NEB_Roger_T_Lempke_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = neb_roger_t_lempke_adv
+			allowed = { original_tag = NEB }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+}

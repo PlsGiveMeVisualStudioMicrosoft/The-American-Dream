@@ -1,0 +1,54 @@
+characters = {
+
+	SCA_Lindsey_Graham = {
+		name = SCA_Lindsey_Graham
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_SCA_Lindsey_Graham"
+				small = "GFX_Portrait_SCA_Lindsey_Graham_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = sca_lindsey_graham_pol
+			allowed = { original_tag = SCA }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+	SCA_Tim_Scott = {
+		name = SCA_Tim_Scott
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_SCA_Tim_Scott"
+				small = "GFX_Portrait_SCA_Tim_Scott_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = sca_tim_scott_pol
+			allowed = { original_tag = SCA }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	SCA_Anita_Zucker = {
+		name = SCA_Anita_Zucker
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_SCA_Anita_Zucker"
+				small = "GFX_Portrait_SCA_Anita_Zucker_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = sca_anita_zucker_pol
+			allowed = { original_tag = SCA }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

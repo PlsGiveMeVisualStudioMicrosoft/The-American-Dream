@@ -1,0 +1,54 @@
+characters = {
+
+	MSP_Roger_Wicker = {
+		name = MSP_Roger_Wicker
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MSP_Roger_Wicker"
+				small = "GFX_Portrait_MSP_Roger_Wicker_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = msp_roger_wicker_pol
+			allowed = { original_tag = MSP }
+			traits = { war_industrialist }
+			cost = 150
+		}
+	}
+
+	MSP_Cindy_Hyde_Smith = {
+		name = MSP_Cindy_Hyde_Smith
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MSP_Cindy_Hyde_Smith"
+				small = "GFX_Portrait_MSP_Cindy_Hyde_Smith_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = msp_cindy_hyde_smith_pol
+			allowed = { original_tag = MSP }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	MSP_Haley_Barbour = {
+		name = MSP_Haley_Barbour
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MSP_Haley_Barbour"
+				small = "GFX_Portrait_MSP_Haley_Barbour_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = msp_haley_barbour_pol
+			allowed = { original_tag = MSP }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+}

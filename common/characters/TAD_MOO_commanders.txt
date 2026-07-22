@@ -1,0 +1,156 @@
+characters = {
+
+	MON_Trenton_J_Gibson = {
+		name = MON_Trenton_J_Gibson
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MON_Trenton_J_Gibson"
+				small = "GFX_Portrait_MON_Trenton_J_Gibson_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = mon_trenton_j_gibson_adv
+			allowed = { original_tag = MOO }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_MON_big_sky_dispersal TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	MON_J_Peter_Hronek = {
+		name = MON_J_Peter_Hronek
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MON_J_Peter_Hronek"
+				small = "GFX_Portrait_MON_J_Peter_Hronek_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = mon_j_peter_hronek_adv
+			allowed = { original_tag = MOO }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	MON_Matthew_T_Quinn = {
+		name = MON_Matthew_T_Quinn
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MON_Matthew_T_Quinn"
+				small = "GFX_Portrait_MON_Matthew_T_Quinn_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = mon_matthew_t_quinn_adv
+			allowed = { original_tag = MOO }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	MON_John_E_Walsh = {
+		name = MON_John_E_Walsh
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MON_John_E_Walsh"
+				small = "GFX_Portrait_MON_John_E_Walsh_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = mon_john_e_walsh_adv
+			ledger = army
+			allowed = { original_tag = MOO }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	MON_Thomas_F_Meagher = {
+		name = MON_Thomas_F_Meagher
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MON_Thomas_F_Meagher"
+				small = "GFX_Portrait_MON_Thomas_F_Meagher_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = mon_thomas_f_meagher_adv
+			ledger = army
+			allowed = { original_tag = MOO }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_legend war_hero }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	MON_Charles_L_Bolte = {
+		name = MON_Charles_L_Bolte
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MON_Charles_L_Bolte"
+				small = "GFX_Portrait_MON_Charles_L_Bolte_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = mon_charles_l_bolte_adv
+			ledger = army
+			allowed = { original_tag = MOO }
+			traits = { army_armored_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer trickster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+}

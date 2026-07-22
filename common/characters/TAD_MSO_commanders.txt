@@ -1,0 +1,156 @@
+characters = {
+
+	MSO_Charles_D_Hausman = {
+		name = MSO_Charles_D_Hausman
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MSO_Charles_D_Hausman"
+				small = "GFX_Portrait_MSO_Charles_D_Hausman_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = mso_charles_d_hausman_adv
+			allowed = { original_tag = MSO }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_MSO_show_me_skeptic TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	MSO_Levon_E_Cumpton = {
+		name = MSO_Levon_E_Cumpton
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MSO_Levon_E_Cumpton"
+				small = "GFX_Portrait_MSO_Levon_E_Cumpton_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = mso_levon_e_cumpton_adv
+			allowed = { original_tag = MSO }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	MSO_Shawn_R_Satterfield = {
+		name = MSO_Shawn_R_Satterfield
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MSO_Shawn_R_Satterfield"
+				small = "GFX_Portrait_MSO_Shawn_R_Satterfield_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = mso_shawn_r_satterfield_adv
+			ledger = army
+			allowed = { original_tag = MSO }
+			traits = { army_commando_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_sof_raider commando }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	MSO_Omar_N_Bradley = {
+		name = MSO_Omar_N_Bradley
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MSO_Omar_N_Bradley"
+				small = "GFX_Portrait_MSO_Omar_N_Bradley_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = mso_omar_n_bradley_adv
+			ledger = army
+			allowed = { original_tag = MSO }
+			traits = { military_theorist TAD_arsenal_of_democracy }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	MSO_John_J_Pershing = {
+		name = MSO_John_J_Pershing
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MSO_John_J_Pershing"
+				small = "GFX_Portrait_MSO_John_J_Pershing_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = mso_john_j_pershing_adv
+			allowed = { original_tag = MSO }
+			traits = { army_chief_offensive_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	MSO_Enoch_H_Crowder = {
+		name = MSO_Enoch_H_Crowder
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MSO_Enoch_H_Crowder"
+				small = "GFX_Portrait_MSO_Enoch_H_Crowder_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = mso_enoch_h_crowder_adv
+			ledger = army
+			allowed = { original_tag = MSO }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+}

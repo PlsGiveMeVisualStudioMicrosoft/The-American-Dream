@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = mic_gretchen_whitmer_gov
+			allowed = { original_tag = MIC }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	MIC_Tudor_Dixon={
 		name=MIC_Tudor_Dixon
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = mic_tudor_dixon_gov
+			allowed = { original_tag = MIC }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

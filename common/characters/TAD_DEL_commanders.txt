@@ -1,0 +1,155 @@
+characters = {
+
+	DEL_James_A_Benson = {
+		name = DEL_James_A_Benson
+		portraits = {
+			army = {
+				large = "GFX_Portrait_DEL_James_A_Benson"
+				small = "GFX_Portrait_DEL_James_A_Benson_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = del_james_a_benson_adv
+			allowed = { original_tag = DEL }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_DEL_first_state_vanguard TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	DEL_Michael_R_Berry = {
+		name = DEL_Michael_R_Berry
+		portraits = {
+			army = {
+				large = "GFX_Portrait_DEL_Michael_R_Berry"
+				small = "GFX_Portrait_DEL_Michael_R_Berry_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = del_michael_r_berry_adv
+			allowed = { original_tag = DEL }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	DEL_Francis_D_Vavala = {
+		name = DEL_Francis_D_Vavala
+		portraits = {
+			army = {
+				large = "GFX_Portrait_DEL_Francis_D_Vavala"
+				small = "GFX_Portrait_DEL_Francis_D_Vavala_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = del_francis_d_vavala_adv
+			allowed = { original_tag = DEL }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	DEL_Carol_A_Timmons = {
+		name = DEL_Carol_A_Timmons
+		portraits = {
+			army = {
+				large = "GFX_Portrait_DEL_Carol_A_Timmons"
+				small = "GFX_Portrait_DEL_Carol_A_Timmons_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = del_carol_a_timmons_adv
+			allowed = { original_tag = DEL }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	DEL_Caesar_Rodney = {
+		name = DEL_Caesar_Rodney
+		portraits = {
+			army = {
+				large = "GFX_Portrait_DEL_Caesar_Rodney"
+				small = "GFX_Portrait_DEL_Caesar_Rodney_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = del_caesar_rodney_adv
+			ledger = army
+			allowed = { original_tag = DEL }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_legend war_hero }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	DEL_John_Haslet = {
+		name = DEL_John_Haslet
+		portraits = {
+			army = {
+				large = "GFX_Portrait_DEL_John_Haslet"
+				small = "GFX_Portrait_DEL_John_Haslet_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = del_john_haslet_adv
+			ledger = army
+			allowed = { original_tag = DEL }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_legend war_hero }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+}

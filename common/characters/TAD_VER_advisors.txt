@@ -1,0 +1,37 @@
+characters = {
+
+	VER_Peter_Welch = {
+		name = VER_Peter_Welch
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_VER_Peter_Welch"
+				small = "GFX_Portrait_VER_Peter_Welch_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ver_peter_welch_pol
+			allowed = { original_tag = VER }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	VER_Ben_Cohen = {
+		name = VER_Ben_Cohen
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_VER_Ben_Cohen"
+				small = "GFX_Portrait_VER_Ben_Cohen_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ver_ben_cohen_pol
+			allowed = { original_tag = VER }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

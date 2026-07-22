@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = tex_greg_abbott_gov
+			allowed = { original_tag = TEX }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	TEX_Beto_ORourke={
 		name=TEX_Beto_ORourke
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = tex_beto_orourke_gov
+			allowed = { original_tag = TEX }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

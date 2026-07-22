@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = iow_kim_reynolds_gov
+			allowed = { original_tag = IOW }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	IOW_Rob_Sand={
 		name=IOW_Rob_Sand
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = iow_rob_sand_gov
+			allowed = { original_tag = IOW }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

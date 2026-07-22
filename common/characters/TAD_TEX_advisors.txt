@@ -1,0 +1,54 @@
+characters = {
+
+	TEX_John_Cornyn = {
+		name = TEX_John_Cornyn
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_TEX_John_Cornyn"
+				small = "GFX_Portrait_TEX_John_Cornyn_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = tex_john_cornyn_pol
+			allowed = { original_tag = TEX }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+	TEX_Ted_Cruz = {
+		name = TEX_Ted_Cruz
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_TEX_Ted_Cruz"
+				small = "GFX_Portrait_TEX_Ted_Cruz_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = tex_ted_cruz_pol
+			allowed = { original_tag = TEX }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	TEX_Elon_Musk = {
+		name = TEX_Elon_Musk
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_TEX_Elon_Musk"
+				small = "GFX_Portrait_TEX_Elon_Musk_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = tex_elon_musk_pol
+			allowed = { original_tag = TEX }
+			traits = { war_industrialist TAD_first_principles }
+			cost = 150
+		}
+	}
+
+}

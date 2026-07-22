@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = mas_maura_healey_gov
+			allowed = { original_tag = MAS }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	MAS_Charlie_Baker={
 		name=MAS_Charlie_Baker
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = mas_charlie_baker_gov
+			allowed = { original_tag = MAS }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

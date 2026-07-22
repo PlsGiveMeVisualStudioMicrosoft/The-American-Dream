@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = alk_mike_dunleavy_gov
+			allowed = { original_tag = ALK }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	ALK_Mary_Peltola={
 		name=ALK_Mary_Peltola
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = alk_mary_peltola_gov
+			allowed = { original_tag = ALK }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

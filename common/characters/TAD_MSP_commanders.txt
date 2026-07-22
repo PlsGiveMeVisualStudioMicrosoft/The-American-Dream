@@ -1,0 +1,156 @@
+characters = {
+
+	MSP_Bobby_M_Ginn_Jr = {
+		name = MSP_Bobby_M_Ginn_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MSP_Bobby_M_Ginn_Jr"
+				small = "GFX_Portrait_MSP_Bobby_M_Ginn_Jr_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = msp_bobby_m_ginn_jr_adv
+			allowed = { original_tag = MSP }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_MSP_magnolia_grit TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	MSP_Edward_H_Evans_Jr = {
+		name = MSP_Edward_H_Evans_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MSP_Edward_H_Evans_Jr"
+				small = "GFX_Portrait_MSP_Edward_H_Evans_Jr_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = msp_edward_h_evans_jr_adv
+			allowed = { original_tag = MSP }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	MSP_Janson_D_Boyles = {
+		name = MSP_Janson_D_Boyles
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MSP_Janson_D_Boyles"
+				small = "GFX_Portrait_MSP_Janson_D_Boyles_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = msp_janson_d_boyles_adv
+			allowed = { original_tag = MSP }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	MSP_John_M_Rhodes = {
+		name = MSP_John_M_Rhodes
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MSP_John_M_Rhodes"
+				small = "GFX_Portrait_MSP_John_M_Rhodes_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = msp_john_m_rhodes_adv
+			ledger = army
+			allowed = { original_tag = MSP }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	MSP_Earl_Van_Dorn = {
+		name = MSP_Earl_Van_Dorn
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MSP_Earl_Van_Dorn"
+				small = "GFX_Portrait_MSP_Earl_Van_Dorn_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = msp_earl_van_dorn_adv
+			ledger = army
+			allowed = { original_tag = MSP }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	MSP_Bennie_G_Adkins = {
+		name = MSP_Bennie_G_Adkins
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MSP_Bennie_G_Adkins"
+				small = "GFX_Portrait_MSP_Bennie_G_Adkins_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = msp_bennie_g_adkins_adv
+			ledger = army
+			allowed = { original_tag = MSP }
+			traits = { grand_battle_plan_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_sof_raider commando trickster war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+
+}

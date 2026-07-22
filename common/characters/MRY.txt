@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = mry_wes_moore_gov
+			allowed = { original_tag = MRY }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	MRY_Larry_Hogan={
 		name=MRY_Larry_Hogan
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = mry_larry_hogan_gov
+			allowed = { original_tag = MRY }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

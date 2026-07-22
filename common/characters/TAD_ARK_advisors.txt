@@ -1,0 +1,54 @@
+characters = {
+
+	ARK_John_Boozman = {
+		name = ARK_John_Boozman
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ARK_John_Boozman"
+				small = "GFX_Portrait_ARK_John_Boozman_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ark_john_boozman_pol
+			allowed = { original_tag = ARK }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	ARK_Tom_Cotton = {
+		name = ARK_Tom_Cotton
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ARK_Tom_Cotton"
+				small = "GFX_Portrait_ARK_Tom_Cotton_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ark_tom_cotton_pol
+			allowed = { original_tag = ARK }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	ARK_Doug_McMillon = {
+		name = ARK_Doug_McMillon
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ARK_Doug_McMillon"
+				small = "GFX_Portrait_ARK_Doug_McMillon_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ark_doug_mcmillon_pol
+			allowed = { original_tag = ARK }
+			traits = { captain_of_industry TAD_everyday_low_prices }
+			cost = 150
+		}
+	}
+
+}

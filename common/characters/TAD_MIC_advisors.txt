@@ -1,0 +1,54 @@
+characters = {
+
+	MIC_Gary_Peters = {
+		name = MIC_Gary_Peters
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MIC_Gary_Peters"
+				small = "GFX_Portrait_MIC_Gary_Peters_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mic_gary_peters_pol
+			allowed = { original_tag = MIC }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	MIC_Elissa_Slotkin = {
+		name = MIC_Elissa_Slotkin
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MIC_Elissa_Slotkin"
+				small = "GFX_Portrait_MIC_Elissa_Slotkin_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mic_elissa_slotkin_pol
+			allowed = { original_tag = MIC }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	MIC_Mary_Barra = {
+		name = MIC_Mary_Barra
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MIC_Mary_Barra"
+				small = "GFX_Portrait_MIC_Mary_Barra_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mic_mary_barra_pol
+			allowed = { original_tag = MIC }
+			traits = { war_industrialist TAD_motor_city_line }
+			cost = 150
+		}
+	}
+
+}

@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = ida_brad_little_gov
+			allowed = { original_tag = IDA }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	IDA_Lauren_McLean={
 		name=IDA_Lauren_McLean
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = ida_lauren_mclean_gov
+			allowed = { original_tag = IDA }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

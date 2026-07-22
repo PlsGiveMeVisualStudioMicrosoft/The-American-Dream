@@ -1,0 +1,618 @@
+characters = {
+
+	USA_J_Daniel_Caine = {
+		name = USA_J_Daniel_Caine
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_J_Daniel_Caine"
+				small = "GFX_Portrait_USA_J_Daniel_Caine_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = usa_j_daniel_caine_adv
+			allowed = { original_tag = USA }
+			traits = { army_chief_offensive_2 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_national_command TAD_homeland_defense TAD_joint_operations brilliant_strategist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	USA_Randy_A_George = {
+		name = USA_Randy_A_George
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Randy_A_George"
+				small = "GFX_Portrait_USA_Randy_A_George_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = usa_randy_a_george_adv
+			allowed = { original_tag = USA }
+			traits = { army_chief_offensive_2 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_national_command TAD_homeland_defense TAD_joint_operations brilliant_strategist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	USA_Steven_S_Nordhaus = {
+		name = USA_Steven_S_Nordhaus
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Steven_S_Nordhaus"
+				small = "GFX_Portrait_USA_Steven_S_Nordhaus_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = usa_steven_s_nordhaus_adv
+			allowed = { original_tag = USA }
+			traits = { army_chief_defensive_2 TAD_guard_the_home_front }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_national_command TAD_homeland_defense TAD_state_guard_organizer brilliant_strategist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	USA_Gregory_M_Guillot = {
+		name = USA_Gregory_M_Guillot
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Gregory_M_Guillot"
+				small = "GFX_Portrait_USA_Gregory_M_Guillot_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = usa_gregory_m_guillot_adv
+			allowed = { original_tag = USA }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_national_command TAD_homeland_defense TAD_air_component brilliant_strategist }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	USA_Christopher_T_Donahue = {
+		name = USA_Christopher_T_Donahue
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Christopher_T_Donahue"
+				small = "GFX_Portrait_USA_Christopher_T_Donahue_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = usa_christopher_t_donahue_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_commando_2 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_national_command TAD_homeland_defense TAD_sof_raider brilliant_strategist }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+
+	USA_Christopher_J_Mahoney = {
+		name = USA_Christopher_J_Mahoney
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Christopher_J_Mahoney"
+				small = "GFX_Portrait_USA_Christopher_J_Mahoney_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = usa_christopher_j_mahoney_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_expeditionary naval_invader war_hero }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	USA_Eric_M_Smith = {
+		name = USA_Eric_M_Smith
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Eric_M_Smith"
+				small = "GFX_Portrait_USA_Eric_M_Smith_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = usa_eric_m_smith_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_expeditionary naval_invader war_hero }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	USA_James_J_Mingus = {
+		name = USA_James_J_Mingus
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_James_J_Mingus"
+				small = "GFX_Portrait_USA_James_J_Mingus_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = usa_james_j_mingus_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { mobile_warfare_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer trickster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	USA_David_M_Hodne = {
+		name = USA_David_M_Hodne
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_David_M_Hodne"
+				small = "GFX_Portrait_USA_David_M_Hodne_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = usa_david_m_hodne_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	USA_Bryan_P_Fenton = {
+		name = USA_Bryan_P_Fenton
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Bryan_P_Fenton"
+				small = "GFX_Portrait_USA_Bryan_P_Fenton_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = usa_bryan_p_fenton_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_commando_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_sof_raider commando trickster }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	USA_Xavier_T_Brunson = {
+		name = USA_Xavier_T_Brunson
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Xavier_T_Brunson"
+				small = "GFX_Portrait_USA_Xavier_T_Brunson_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = usa_xavier_t_brunson_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_armored_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer trickster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	USA_Ronald_P_Clark = {
+		name = USA_Ronald_P_Clark
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Ronald_P_Clark"
+				small = "GFX_Portrait_USA_Ronald_P_Clark_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = usa_ronald_p_clark_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	USA_Alexus_G_Grynkewich = {
+		name = USA_Alexus_G_Grynkewich
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Alexus_G_Grynkewich"
+				small = "GFX_Portrait_USA_Alexus_G_Grynkewich_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = usa_alexus_g_grynkewich_adv
+			allowed = { original_tag = USA }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	USA_Dagvin_R_M_Anderson = {
+		name = USA_Dagvin_R_M_Anderson
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Dagvin_R_M_Anderson"
+				small = "GFX_Portrait_USA_Dagvin_R_M_Anderson_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = usa_dagvin_r_m_anderson_adv
+			allowed = { original_tag = USA }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	USA_C_Bradford_Cooper_II = {
+		name = USA_C_Bradford_Cooper_II
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_C_Bradford_Cooper_II"
+				small = "GFX_Portrait_USA_C_Bradford_Cooper_II_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = usa_c_bradford_cooper_ii_adv
+			allowed = { original_tag = USA }
+			traits = { army_chief_offensive_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	USA_Samuel_J_Paparo = {
+		name = USA_Samuel_J_Paparo
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Samuel_J_Paparo"
+				small = "GFX_Portrait_USA_Samuel_J_Paparo_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = usa_samuel_j_paparo_adv
+			allowed = { original_tag = USA }
+			traits = { army_chief_offensive_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	USA_Mark_A_Milley = {
+		name = USA_Mark_A_Milley
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Mark_A_Milley"
+				small = "GFX_Portrait_USA_Mark_A_Milley_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = usa_mark_a_milley_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	USA_David_H_Petraeus = {
+		name = USA_David_H_Petraeus
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_David_H_Petraeus"
+				small = "GFX_Portrait_USA_David_H_Petraeus_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = usa_david_h_petraeus_adv
+			allowed = { original_tag = USA }
+			traits = { army_chief_offensive_2 TAD_coin_doctrine }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	USA_Stanley_A_McChrystal = {
+		name = USA_Stanley_A_McChrystal
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Stanley_A_McChrystal"
+				small = "GFX_Portrait_USA_Stanley_A_McChrystal_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = usa_stanley_a_mcchrystal_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_commando_2 TAD_team_of_teams }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_sof_raider commando trickster war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+
+	USA_Robert_B_Abrams = {
+		name = USA_Robert_B_Abrams
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Robert_B_Abrams"
+				small = "GFX_Portrait_USA_Robert_B_Abrams_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = usa_robert_b_abrams_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_armored_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_abct_commander armor_officer panzer_leader }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	USA_Joseph_L_Votel = {
+		name = USA_Joseph_L_Votel
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Joseph_L_Votel"
+				small = "GFX_Portrait_USA_Joseph_L_Votel_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = usa_joseph_l_votel_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { grand_battle_plan_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_sof_raider commando trickster }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	USA_Paul_M_Nakasone = {
+		name = USA_Paul_M_Nakasone
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Paul_M_Nakasone"
+				small = "GFX_Portrait_USA_Paul_M_Nakasone_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = usa_paul_m_nakasone_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer skilled_staffer }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+
+	USA_Paul_J_LaCamera = {
+		name = USA_Paul_J_LaCamera
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Paul_J_LaCamera"
+				small = "GFX_Portrait_USA_Paul_J_LaCamera_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = usa_paul_j_lacamera_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	USA_Michael_E_Kurilla = {
+		name = USA_Michael_E_Kurilla
+		portraits = {
+			army = {
+				large = "GFX_Portrait_USA_Michael_E_Kurilla"
+				small = "GFX_Portrait_USA_Michael_E_Kurilla_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = usa_michael_e_kurilla_adv
+			ledger = army
+			allowed = { original_tag = USA }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+}

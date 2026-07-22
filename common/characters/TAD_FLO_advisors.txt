@@ -1,0 +1,54 @@
+characters = {
+
+	FLO_Rick_Scott = {
+		name = FLO_Rick_Scott
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_FLO_Rick_Scott"
+				small = "GFX_Portrait_FLO_Rick_Scott_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = flo_rick_scott_pol
+			allowed = { original_tag = FLO }
+			traits = { war_industrialist }
+			cost = 150
+		}
+	}
+
+	FLO_Ashley_Moody = {
+		name = FLO_Ashley_Moody
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_FLO_Ashley_Moody"
+				small = "GFX_Portrait_FLO_Ashley_Moody_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = flo_ashley_moody_pol
+			allowed = { original_tag = FLO }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	FLO_Ken_Griffin = {
+		name = FLO_Ken_Griffin
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_FLO_Ken_Griffin"
+				small = "GFX_Portrait_FLO_Ken_Griffin_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = flo_ken_griffin_pol
+			allowed = { original_tag = FLO }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

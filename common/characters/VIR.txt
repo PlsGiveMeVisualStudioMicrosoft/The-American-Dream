@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = vir_glenn_youngkin_gov
+			allowed = { original_tag = VIR }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	VIR_Abigail_Spanberger={
 		name=VIR_Abigail_Spanberger
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = vir_abigail_spanberger_gov
+			allowed = { original_tag = VIR }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

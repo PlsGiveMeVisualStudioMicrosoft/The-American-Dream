@@ -1,0 +1,156 @@
+characters = {
+
+	ARK_Chad_Bridges = {
+		name = ARK_Chad_Bridges
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ARK_Chad_Bridges"
+				small = "GFX_Portrait_ARK_Chad_Bridges_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ark_chad_bridges_adv
+			allowed = { original_tag = ARK }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_ARK_razorback_resolve TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	ARK_Douglas_MacArthur = {
+		name = ARK_Douglas_MacArthur
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ARK_Douglas_MacArthur"
+				small = "GFX_Portrait_ARK_Douglas_MacArthur_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ark_douglas_macarthur_adv
+			ledger = army
+			allowed = { original_tag = ARK }
+			traits = { military_theorist TAD_i_shall_return }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	ARK_Wesley_K_Clark = {
+		name = ARK_Wesley_K_Clark
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ARK_Wesley_K_Clark"
+				small = "GFX_Portrait_ARK_Wesley_K_Clark_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ark_wesley_k_clark_adv
+			allowed = { original_tag = ARK }
+			traits = { army_chief_offensive_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	ARK_William_O_Darby = {
+		name = ARK_William_O_Darby
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ARK_William_O_Darby"
+				small = "GFX_Portrait_ARK_William_O_Darby_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ark_william_o_darby_adv
+			ledger = army
+			allowed = { original_tag = ARK }
+			traits = { army_commando_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_sof_raider commando trickster war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+
+	ARK_Kendall_Penn = {
+		name = ARK_Kendall_Penn
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ARK_Kendall_Penn"
+				small = "GFX_Portrait_ARK_Kendall_Penn_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ark_kendall_penn_adv
+			allowed = { original_tag = ARK }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	ARK_Patrick_Cleburne = {
+		name = ARK_Patrick_Cleburne
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ARK_Patrick_Cleburne"
+				small = "GFX_Portrait_ARK_Patrick_Cleburne_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ark_patrick_cleburne_adv
+			ledger = army
+			allowed = { original_tag = ARK }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+}

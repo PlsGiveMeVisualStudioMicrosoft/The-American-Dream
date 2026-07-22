@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = NMX_Michelle_Lujan_Grisham #Democratic
 recruit_character = NMX_Mark_Ronchetti #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = NMX_Miguel_Aguilar
+recruit_character = NMX_Kenneth_Nava
+recruit_character = NMX_Andrew_E_Salas
+recruit_character = NMX_Edward_D_Baca
+recruit_character = NMX_Kenny_C_Montoya
+recruit_character = NMX_Bill_Mauldin
+recruit_character = NMX_Martin_Heinrich
+recruit_character = NMX_Ben_Ray_Lujan
+recruit_character = NMX_Mack_Chase
+
+# end of commanders

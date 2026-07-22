@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = DEL_Bethany_HallLong #Democratic
 recruit_character = DEL_Mike_Ramone #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = DEL_James_A_Benson
+recruit_character = DEL_Michael_R_Berry
+recruit_character = DEL_Francis_D_Vavala
+recruit_character = DEL_Carol_A_Timmons
+recruit_character = DEL_Caesar_Rodney
+recruit_character = DEL_John_Haslet
+recruit_character = DEL_Chris_Coons
+recruit_character = DEL_Lisa_Blunt_Rochester
+recruit_character = DEL_Thomas_Carper
+
+# end of commanders

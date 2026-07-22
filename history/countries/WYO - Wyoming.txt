@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = WYO_Mark_Gordon #Nationalist/Non-Aligned
 recruit_character = WYO_Liz_Cheney #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = WYO_Gregory_C_Porter
+recruit_character = WYO_Luke_Reiner
+recruit_character = WYO_Edward_L_Wright
+recruit_character = WYO_Francis_E_Warren
+recruit_character = WYO_Michael_A_Kilbride
+recruit_character = WYO_Kenneth_D_Sanders
+recruit_character = WYO_John_Barrasso
+recruit_character = WYO_Cynthia_Lummis
+recruit_character = WYO_Diemer_True
+
+# end of commanders

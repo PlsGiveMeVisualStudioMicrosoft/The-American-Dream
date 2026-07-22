@@ -1,0 +1,37 @@
+characters = {
+
+	NHA_Maggie_Hassan = {
+		name = NHA_Maggie_Hassan
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NHA_Maggie_Hassan"
+				small = "GFX_Portrait_NHA_Maggie_Hassan_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nha_maggie_hassan_pol
+			allowed = { original_tag = NHA }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	NHA_Dean_Kamen = {
+		name = NHA_Dean_Kamen
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NHA_Dean_Kamen"
+				small = "GFX_Portrait_NHA_Dean_Kamen_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nha_dean_kamen_pol
+			allowed = { original_tag = NHA }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

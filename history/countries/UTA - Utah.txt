@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = UTA_Spencer_Cox #Nationalist/Non-Aligned
 recruit_character = UTA_Ben_McAdams #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = UTA_Daniel_D_Boyack
+recruit_character = UTA_Michael_J_Turley
+recruit_character = UTA_Jefferson_S_Burton
+recruit_character = UTA_Brian_L_Tarbet
+recruit_character = UTA_Peter_M_Cooke
+recruit_character = UTA_Maxwell_E_Rich
+recruit_character = UTA_Mike_Lee
+recruit_character = UTA_John_Curtis
+recruit_character = UTA_Gail_Miller
+
+# end of commanders

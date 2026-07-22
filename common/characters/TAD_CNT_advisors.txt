@@ -1,0 +1,54 @@
+characters = {
+
+	CNT_Richard_Blumenthal = {
+		name = CNT_Richard_Blumenthal
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_CNT_Richard_Blumenthal"
+				small = "GFX_Portrait_CNT_Richard_Blumenthal_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = cnt_richard_blumenthal_pol
+			allowed = { original_tag = CNT }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+	CNT_Chris_Murphy = {
+		name = CNT_Chris_Murphy
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_CNT_Chris_Murphy"
+				small = "GFX_Portrait_CNT_Chris_Murphy_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = cnt_chris_murphy_pol
+			allowed = { original_tag = CNT }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	CNT_Ray_Dalio = {
+		name = CNT_Ray_Dalio
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_CNT_Ray_Dalio"
+				small = "GFX_Portrait_CNT_Ray_Dalio_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = cnt_ray_dalio_pol
+			allowed = { original_tag = CNT }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

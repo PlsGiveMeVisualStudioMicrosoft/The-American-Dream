@@ -89,3 +89,15 @@ set_popularities = {
 
 recruit_character = MAI_Janet_Mills #Democratic
 recruit_character = MAI_Susan_Collins #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = MAI_Diane_L_Dunn
+recruit_character = MAI_Robert_I_Kinney
+recruit_character = MAI_Douglas_A_Farnham
+recruit_character = MAI_Joshua_L_Chamberlain
+recruit_character = MAI_Oliver_O_Howard
+recruit_character = MAI_Adelbert_Ames
+recruit_character = MAI_Angus_King
+recruit_character = MAI_Shawn_Gorman
+
+# end of commanders

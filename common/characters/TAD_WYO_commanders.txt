@@ -1,0 +1,156 @@
+characters = {
+
+	WYO_Gregory_C_Porter = {
+		name = WYO_Gregory_C_Porter
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WYO_Gregory_C_Porter"
+				small = "GFX_Portrait_WYO_Gregory_C_Porter_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = wyo_gregory_c_porter_adv
+			allowed = { original_tag = WYO }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_WYO_cowboy_state_cavalry TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	WYO_Luke_Reiner = {
+		name = WYO_Luke_Reiner
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WYO_Luke_Reiner"
+				small = "GFX_Portrait_WYO_Luke_Reiner_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = wyo_luke_reiner_adv
+			allowed = { original_tag = WYO }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	WYO_Edward_L_Wright = {
+		name = WYO_Edward_L_Wright
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WYO_Edward_L_Wright"
+				small = "GFX_Portrait_WYO_Edward_L_Wright_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = wyo_edward_l_wright_adv
+			allowed = { original_tag = WYO }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	WYO_Francis_E_Warren = {
+		name = WYO_Francis_E_Warren
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WYO_Francis_E_Warren"
+				small = "GFX_Portrait_WYO_Francis_E_Warren_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = wyo_francis_e_warren_adv
+			ledger = army
+			allowed = { original_tag = WYO }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_legend war_hero }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	WYO_Michael_A_Kilbride = {
+		name = WYO_Michael_A_Kilbride
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WYO_Michael_A_Kilbride"
+				small = "GFX_Portrait_WYO_Michael_A_Kilbride_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = wyo_michael_a_kilbride_adv
+			ledger = army
+			allowed = { original_tag = WYO }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	WYO_Kenneth_D_Sanders = {
+		name = WYO_Kenneth_D_Sanders
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WYO_Kenneth_D_Sanders"
+				small = "GFX_Portrait_WYO_Kenneth_D_Sanders_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = wyo_kenneth_d_sanders_adv
+			ledger = army
+			allowed = { original_tag = WYO }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+}

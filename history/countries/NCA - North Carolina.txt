@@ -89,3 +89,15 @@ set_popularities = {
 
 recruit_character = NCA_Josh_Stein #Democratic
 recruit_character = NCA_Thom_Tillis #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = NCA_M_Todd_Hunt
+recruit_character = NCA_Robert_A_Boyette
+recruit_character = NCA_Allen_E_Boyette
+recruit_character = NCA_Hugh_Shelton
+recruit_character = NCA_William_C_Lee
+recruit_character = NCA_Braxton_Bragg
+recruit_character = NCA_Ted_Budd
+recruit_character = NCA_James_Goodnight
+
+# end of commanders

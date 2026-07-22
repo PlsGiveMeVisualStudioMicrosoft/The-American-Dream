@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = kan_laura_kelly_gov
+			allowed = { original_tag = KAN }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	KAN_Kris_Kobach={
 		name=KAN_Kris_Kobach
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = kan_kris_kobach_gov
+			allowed = { original_tag = KAN }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

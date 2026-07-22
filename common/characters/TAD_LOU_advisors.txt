@@ -1,0 +1,54 @@
+characters = {
+
+	LOU_Bill_Cassidy = {
+		name = LOU_Bill_Cassidy
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_LOU_Bill_Cassidy"
+				small = "GFX_Portrait_LOU_Bill_Cassidy_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = lou_bill_cassidy_pol
+			allowed = { original_tag = LOU }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	LOU_John_Kennedy = {
+		name = LOU_John_Kennedy
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_LOU_John_Kennedy"
+				small = "GFX_Portrait_LOU_John_Kennedy_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = lou_john_kennedy_pol
+			allowed = { original_tag = LOU }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	LOU_Gayle_Benson = {
+		name = LOU_Gayle_Benson
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_LOU_Gayle_Benson"
+				small = "GFX_Portrait_LOU_Gayle_Benson_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = lou_gayle_benson_pol
+			allowed = { original_tag = LOU }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

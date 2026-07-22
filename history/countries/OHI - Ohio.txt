@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = OHI_Mike_DeWine #Nationalist/Non-Aligned
 recruit_character = OHI_Sherrod_Brown #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = OHI_Matthew_S_Woodruff
+recruit_character = OHI_David_B_Johnson
+recruit_character = OHI_John_C_Harris_Jr
+recruit_character = OHI_William_T_Sherman
+recruit_character = OHI_Curtis_E_LeMay
+recruit_character = OHI_George_A_Custer
+recruit_character = OHI_Jon_Husted
+recruit_character = OHI_Bernie_Moreno
+recruit_character = OHI_Les_Wexner
+
+# end of commanders

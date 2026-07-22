@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = nev_joe_lombardo_gov
+			allowed = { original_tag = NEV }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	NEV_Steve_Sisolak={
 		name=NEV_Steve_Sisolak
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = nev_steve_sisolak_gov
+			allowed = { original_tag = NEV }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

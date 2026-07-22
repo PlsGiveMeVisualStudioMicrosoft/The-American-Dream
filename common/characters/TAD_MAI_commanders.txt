@@ -1,0 +1,156 @@
+characters = {
+
+	MAI_Diane_L_Dunn = {
+		name = MAI_Diane_L_Dunn
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MAI_Diane_L_Dunn"
+				small = "GFX_Portrait_MAI_Diane_L_Dunn_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = mai_diane_l_dunn_adv
+			allowed = { original_tag = MAI }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_MAI_down_east_tenacity TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	MAI_Robert_I_Kinney = {
+		name = MAI_Robert_I_Kinney
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MAI_Robert_I_Kinney"
+				small = "GFX_Portrait_MAI_Robert_I_Kinney_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = mai_robert_i_kinney_adv
+			allowed = { original_tag = MAI }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	MAI_Douglas_A_Farnham = {
+		name = MAI_Douglas_A_Farnham
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MAI_Douglas_A_Farnham"
+				small = "GFX_Portrait_MAI_Douglas_A_Farnham_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = mai_douglas_a_farnham_adv
+			allowed = { original_tag = MAI }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	MAI_Joshua_L_Chamberlain = {
+		name = MAI_Joshua_L_Chamberlain
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MAI_Joshua_L_Chamberlain"
+				small = "GFX_Portrait_MAI_Joshua_L_Chamberlain_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = mai_joshua_l_chamberlain_adv
+			ledger = army
+			allowed = { original_tag = MAI }
+			traits = { grand_battle_plan_expert TAD_fix_bayonets }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	MAI_Oliver_O_Howard = {
+		name = MAI_Oliver_O_Howard
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MAI_Oliver_O_Howard"
+				small = "GFX_Portrait_MAI_Oliver_O_Howard_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = mai_oliver_o_howard_adv
+			ledger = army
+			allowed = { original_tag = MAI }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	MAI_Adelbert_Ames = {
+		name = MAI_Adelbert_Ames
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MAI_Adelbert_Ames"
+				small = "GFX_Portrait_MAI_Adelbert_Ames_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = mai_adelbert_ames_adv
+			ledger = army
+			allowed = { original_tag = MAI }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+}

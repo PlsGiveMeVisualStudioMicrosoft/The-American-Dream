@@ -1,0 +1,54 @@
+characters = {
+
+	DEL_Chris_Coons = {
+		name = DEL_Chris_Coons
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_DEL_Chris_Coons"
+				small = "GFX_Portrait_DEL_Chris_Coons_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = del_chris_coons_pol
+			allowed = { original_tag = DEL }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	DEL_Lisa_Blunt_Rochester = {
+		name = DEL_Lisa_Blunt_Rochester
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_DEL_Lisa_Blunt_Rochester"
+				small = "GFX_Portrait_DEL_Lisa_Blunt_Rochester_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = del_lisa_blunt_rochester_pol
+			allowed = { original_tag = DEL }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	DEL_Thomas_Carper = {
+		name = DEL_Thomas_Carper
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_DEL_Thomas_Carper"
+				small = "GFX_Portrait_DEL_Thomas_Carper_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = del_thomas_carper_pol
+			allowed = { original_tag = DEL }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+}

@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = NJE_Phil_Murphy #Democratic
 recruit_character = NJE_Jack_Ciattarelli #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = NJE_Yvonne_Mays
+recruit_character = NJE_Edward_J_Chrystal_Jr
+recruit_character = NJE_Lisa_J_Hou
+recruit_character = NJE_H_Norman_Schwarzkopf
+recruit_character = NJE_Raymond_T_Odierno
+recruit_character = NJE_Philip_Kearny
+recruit_character = NJE_Cory_Booker
+recruit_character = NJE_Andy_Kim
+recruit_character = NJE_David_Tepper
+
+# end of commanders

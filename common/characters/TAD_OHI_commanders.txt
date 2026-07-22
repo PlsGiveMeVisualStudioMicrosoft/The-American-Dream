@@ -1,0 +1,155 @@
+characters = {
+
+	OHI_Matthew_S_Woodruff = {
+		name = OHI_Matthew_S_Woodruff
+		portraits = {
+			army = {
+				large = "GFX_Portrait_OHI_Matthew_S_Woodruff"
+				small = "GFX_Portrait_OHI_Matthew_S_Woodruff_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ohi_matthew_s_woodruff_adv
+			allowed = { original_tag = OHI }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_OHI_buckeye_backbone TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	OHI_David_B_Johnson = {
+		name = OHI_David_B_Johnson
+		portraits = {
+			army = {
+				large = "GFX_Portrait_OHI_David_B_Johnson"
+				small = "GFX_Portrait_OHI_David_B_Johnson_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ohi_david_b_johnson_adv
+			allowed = { original_tag = OHI }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	OHI_John_C_Harris_Jr = {
+		name = OHI_John_C_Harris_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_OHI_John_C_Harris_Jr"
+				small = "GFX_Portrait_OHI_John_C_Harris_Jr_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ohi_john_c_harris_jr_adv
+			allowed = { original_tag = OHI }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	OHI_William_T_Sherman = {
+		name = OHI_William_T_Sherman
+		portraits = {
+			army = {
+				large = "GFX_Portrait_OHI_William_T_Sherman"
+				small = "GFX_Portrait_OHI_William_T_Sherman_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ohi_william_t_sherman_adv
+			ledger = army
+			allowed = { original_tag = OHI }
+			traits = { military_theorist TAD_march_to_the_sea }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	OHI_Curtis_E_LeMay = {
+		name = OHI_Curtis_E_LeMay
+		portraits = {
+			army = {
+				large = "GFX_Portrait_OHI_Curtis_E_LeMay"
+				small = "GFX_Portrait_OHI_Curtis_E_LeMay_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ohi_curtis_e_lemay_adv
+			allowed = { original_tag = OHI }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer war_hero }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	OHI_George_A_Custer = {
+		name = OHI_George_A_Custer
+		portraits = {
+			army = {
+				large = "GFX_Portrait_OHI_George_A_Custer"
+				small = "GFX_Portrait_OHI_George_A_Custer_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ohi_george_a_custer_adv
+			ledger = army
+			allowed = { original_tag = OHI }
+			traits = { army_armored_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer trickster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+}

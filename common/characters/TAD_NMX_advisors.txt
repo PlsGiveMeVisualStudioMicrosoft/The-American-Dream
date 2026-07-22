@@ -1,0 +1,54 @@
+characters = {
+
+	NMX_Martin_Heinrich = {
+		name = NMX_Martin_Heinrich
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NMX_Martin_Heinrich"
+				small = "GFX_Portrait_NMX_Martin_Heinrich_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nmx_martin_heinrich_pol
+			allowed = { original_tag = NMX }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	NMX_Ben_Ray_Lujan = {
+		name = NMX_Ben_Ray_Lujan
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NMX_Ben_Ray_Lujan"
+				small = "GFX_Portrait_NMX_Ben_Ray_Lujan_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nmx_ben_ray_lujan_pol
+			allowed = { original_tag = NMX }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	NMX_Mack_Chase = {
+		name = NMX_Mack_Chase
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NMX_Mack_Chase"
+				small = "GFX_Portrait_NMX_Mack_Chase_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nmx_mack_chase_pol
+			allowed = { original_tag = NMX }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

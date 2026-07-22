@@ -1,0 +1,156 @@
+characters = {
+
+	NHA_David_J_Mikolaities = {
+		name = NHA_David_J_Mikolaities
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NHA_David_J_Mikolaities"
+				small = "GFX_Portrait_NHA_David_J_Mikolaities_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nha_david_j_mikolaities_adv
+			allowed = { original_tag = NHA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_NHA_live_free_or_die TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	NHA_Warren_E_Perry = {
+		name = NHA_Warren_E_Perry
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NHA_Warren_E_Perry"
+				small = "GFX_Portrait_NHA_Warren_E_Perry_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nha_warren_e_perry_adv
+			allowed = { original_tag = NHA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	NHA_Laurie_M_Farris = {
+		name = NHA_Laurie_M_Farris
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NHA_Laurie_M_Farris"
+				small = "GFX_Portrait_NHA_Laurie_M_Farris_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = nha_laurie_m_farris_adv
+			allowed = { original_tag = NHA }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	NHA_John_Stark = {
+		name = NHA_John_Stark
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NHA_John_Stark"
+				small = "GFX_Portrait_NHA_John_Stark_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = nha_john_stark_adv
+			ledger = army
+			allowed = { original_tag = NHA }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_legend war_hero old_guard }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	NHA_Fitz_John_Porter = {
+		name = NHA_Fitz_John_Porter
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NHA_Fitz_John_Porter"
+				small = "GFX_Portrait_NHA_Fitz_John_Porter_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nha_fitz_john_porter_adv
+			ledger = army
+			allowed = { original_tag = NHA }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	NHA_Benjamin_F_Butler = {
+		name = NHA_Benjamin_F_Butler
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NHA_Benjamin_F_Butler"
+				small = "GFX_Portrait_NHA_Benjamin_F_Butler_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nha_benjamin_f_butler_adv
+			ledger = army
+			allowed = { original_tag = NHA }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+}

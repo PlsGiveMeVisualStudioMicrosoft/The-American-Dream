@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = nmx_michelle_lujan_grisham_gov
+			allowed = { original_tag = NMX }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	NMX_Mark_Ronchetti={
 		name=NMX_Mark_Ronchetti
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = nmx_mark_ronchetti_gov
+			allowed = { original_tag = NMX }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

@@ -1,0 +1,54 @@
+characters = {
+
+	ARZ_Mark_Kelly = {
+		name = ARZ_Mark_Kelly
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ARZ_Mark_Kelly"
+				small = "GFX_Portrait_ARZ_Mark_Kelly_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = arz_mark_kelly_pol
+			allowed = { original_tag = ARZ }
+			traits = { popular_figurehead TAD_astronaut_senator }
+			cost = 150
+		}
+	}
+
+	ARZ_Ruben_Gallego = {
+		name = ARZ_Ruben_Gallego
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ARZ_Ruben_Gallego"
+				small = "GFX_Portrait_ARZ_Ruben_Gallego_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = arz_ruben_gallego_pol
+			allowed = { original_tag = ARZ }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	ARZ_Jerry_Colangelo = {
+		name = ARZ_Jerry_Colangelo
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ARZ_Jerry_Colangelo"
+				small = "GFX_Portrait_ARZ_Jerry_Colangelo_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = arz_jerry_colangelo_pol
+			allowed = { original_tag = ARZ }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

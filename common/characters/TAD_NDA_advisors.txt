@@ -1,0 +1,54 @@
+characters = {
+
+	NDA_John_Hoeven = {
+		name = NDA_John_Hoeven
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NDA_John_Hoeven"
+				small = "GFX_Portrait_NDA_John_Hoeven_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nda_john_hoeven_pol
+			allowed = { original_tag = NDA }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	NDA_Kevin_Cramer = {
+		name = NDA_Kevin_Cramer
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NDA_Kevin_Cramer"
+				small = "GFX_Portrait_NDA_Kevin_Cramer_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nda_kevin_cramer_pol
+			allowed = { original_tag = NDA }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	NDA_Gary_Tharaldson = {
+		name = NDA_Gary_Tharaldson
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NDA_Gary_Tharaldson"
+				small = "GFX_Portrait_NDA_Gary_Tharaldson_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nda_gary_tharaldson_pol
+			allowed = { original_tag = NDA }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

@@ -1,0 +1,155 @@
+characters = {
+
+	CAL_Matthew_P_Beevers = {
+		name = CAL_Matthew_P_Beevers
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CAL_Matthew_P_Beevers"
+				small = "GFX_Portrait_CAL_Matthew_P_Beevers_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = cal_matthew_p_beevers_adv
+			allowed = { original_tag = CAL }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_CAL_pacific_shield TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	CAL_Jeffrey_D_Smiley = {
+		name = CAL_Jeffrey_D_Smiley
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CAL_Jeffrey_D_Smiley"
+				small = "GFX_Portrait_CAL_Jeffrey_D_Smiley_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = cal_jeffrey_d_smiley_adv
+			allowed = { original_tag = CAL }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	CAL_Steven_J_Butow = {
+		name = CAL_Steven_J_Butow
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CAL_Steven_J_Butow"
+				small = "GFX_Portrait_CAL_Steven_J_Butow_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = cal_steven_j_butow_adv
+			allowed = { original_tag = CAL }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	CAL_William_J_Prendergast_IV = {
+		name = CAL_William_J_Prendergast_IV
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CAL_William_J_Prendergast_IV"
+				small = "GFX_Portrait_CAL_William_J_Prendergast_IV_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = cal_william_j_prendergast_iv_adv
+			ledger = army
+			allowed = { original_tag = CAL }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	CAL_George_S_Patton = {
+		name = CAL_George_S_Patton
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CAL_George_S_Patton"
+				small = "GFX_Portrait_CAL_George_S_Patton_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = cal_george_s_patton_adv
+			ledger = army
+			allowed = { original_tag = CAL }
+			traits = { mobile_warfare_expert TAD_blood_and_guts }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_abct_commander armor_officer panzer_leader war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	CAL_James_H_Doolittle = {
+		name = CAL_James_H_Doolittle
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CAL_James_H_Doolittle"
+				small = "GFX_Portrait_CAL_James_H_Doolittle_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = cal_james_h_doolittle_adv
+			allowed = { original_tag = CAL }
+			traits = { air_chief_ground_support_2 TAD_thirty_seconds }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer war_hero }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+}

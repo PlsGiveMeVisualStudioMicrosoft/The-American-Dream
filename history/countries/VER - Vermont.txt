@@ -89,3 +89,15 @@ set_popularities = {
 
 recruit_character = VER_Phil_Scott #Nationalist/Non-Aligned
 recruit_character = VER_Bernie_Sanders #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = VER_Henry_U_Harder
+recruit_character = VER_Gregory_C_Knight
+recruit_character = VER_Steven_Cray
+recruit_character = VER_George_J_Stannard
+recruit_character = VER_Truman_Seymour
+recruit_character = VER_Ethan_Allen
+recruit_character = VER_Peter_Welch
+recruit_character = VER_Ben_Cohen
+
+# end of commanders

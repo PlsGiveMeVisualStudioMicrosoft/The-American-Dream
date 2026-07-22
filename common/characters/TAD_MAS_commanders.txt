@@ -1,0 +1,157 @@
+characters = {
+
+	MAS_Gary_W_Keefe = {
+		name = MAS_Gary_W_Keefe
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MAS_Gary_W_Keefe"
+				small = "GFX_Portrait_MAS_Gary_W_Keefe_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = mas_gary_w_keefe_adv
+			allowed = { original_tag = MAS }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_MAS_minuteman_legacy TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	MAS_L_Scott_Rice = {
+		name = MAS_L_Scott_Rice
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MAS_L_Scott_Rice"
+				small = "GFX_Portrait_MAS_L_Scott_Rice_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = mas_l_scott_rice_adv
+			allowed = { original_tag = MAS }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	MAS_Joseph_F_Dunford_Jr = {
+		name = MAS_Joseph_F_Dunford_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MAS_Joseph_F_Dunford_Jr"
+				small = "GFX_Portrait_MAS_Joseph_F_Dunford_Jr_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = mas_joseph_f_dunford_jr_adv
+			ledger = army
+			allowed = { original_tag = MAS }
+			traits = { grand_battle_plan_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_expeditionary naval_invader war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	MAS_John_F_Kelly = {
+		name = MAS_John_F_Kelly
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MAS_John_F_Kelly"
+				small = "GFX_Portrait_MAS_John_F_Kelly_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = mas_john_f_kelly_adv
+			ledger = army
+			allowed = { original_tag = MAS }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_expeditionary naval_invader war_hero }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	MAS_Henry_Knox = {
+		name = MAS_Henry_Knox
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MAS_Henry_Knox"
+				small = "GFX_Portrait_MAS_Henry_Knox_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = mas_henry_knox_adv
+			ledger = army
+			allowed = { original_tag = MAS }
+			traits = { army_artillery_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_fires_master trait_cautious career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	MAS_Joseph_Hooker = {
+		name = MAS_Joseph_Hooker
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MAS_Joseph_Hooker"
+				small = "GFX_Portrait_MAS_Joseph_Hooker_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = mas_joseph_hooker_adv
+			ledger = army
+			allowed = { original_tag = MAS }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+}

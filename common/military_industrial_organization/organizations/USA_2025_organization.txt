@@ -424,7 +424,7 @@ USA_general_atomics_organization = {
 		any_parent = { generic_mio_trait_advanced_production_techniques }
 
 		equipment_bonus = {
-			manpower = -0.3
+			reliability = 0.05
 			build_cost_ic = -0.1
 		}
 	}
@@ -519,7 +519,7 @@ USA_anduril_organization = {
 
 		equipment_bonus = {
 			build_cost_ic = -0.15
-			manpower = -0.25
+			reliability = 0.04
 			air_defence = -0.05
 		}
 	}
@@ -1187,7 +1187,7 @@ USA_newport_news_organization = {
 		}
 
 		equipment_bonus = {
-			naval_dominance_factor = 0.1
+			reliability = 0.05
 			max_strength = 0.05
 		}
 	}

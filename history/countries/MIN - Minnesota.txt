@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = MIN_Tim_Walz #Democratic
 recruit_character = MIN_Tom_Emmer #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = MIN_Shawn_P_Manke
+recruit_character = MIN_Stefanie_K_Horvath
+recruit_character = MIN_Jon_A_Jensen
+recruit_character = MIN_Richard_C_Nash
+recruit_character = MIN_Joseph_T_Ward
+recruit_character = MIN_Charles_W_Lindbergh
+recruit_character = MIN_Amy_Klobuchar
+recruit_character = MIN_Tina_Smith
+recruit_character = MIN_Glen_Taylor
+
+# end of commanders

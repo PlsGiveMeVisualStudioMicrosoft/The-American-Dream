@@ -1,0 +1,157 @@
+characters = {
+
+	IND_Lawrence_M_Muennich = {
+		name = IND_Lawrence_M_Muennich
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IND_Lawrence_M_Muennich"
+				small = "GFX_Portrait_IND_Lawrence_M_Muennich_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ind_lawrence_m_muennich_adv
+			allowed = { original_tag = IND }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_IND_crossroads_marshal TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	IND_Daniel_A_Degelow = {
+		name = IND_Daniel_A_Degelow
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IND_Daniel_A_Degelow"
+				small = "GFX_Portrait_IND_Daniel_A_Degelow_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ind_daniel_a_degelow_adv
+			ledger = army
+			allowed = { original_tag = IND }
+			traits = { mobile_warfare_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	IND_R_Dale_Lyles = {
+		name = IND_R_Dale_Lyles
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IND_R_Dale_Lyles"
+				small = "GFX_Portrait_IND_R_Dale_Lyles_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ind_r_dale_lyles_adv
+			allowed = { original_tag = IND }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	IND_Ambrose_Burnside = {
+		name = IND_Ambrose_Burnside
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IND_Ambrose_Burnside"
+				small = "GFX_Portrait_IND_Ambrose_Burnside_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ind_ambrose_burnside_adv
+			ledger = army
+			allowed = { original_tag = IND }
+			traits = { army_artillery_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_fires_master trait_cautious }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	IND_Lew_Wallace = {
+		name = IND_Lew_Wallace
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IND_Lew_Wallace"
+				small = "GFX_Portrait_IND_Lew_Wallace_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ind_lew_wallace_adv
+			ledger = army
+			allowed = { original_tag = IND }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	IND_Frank_M_McCoy = {
+		name = IND_Frank_M_McCoy
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IND_Frank_M_McCoy"
+				small = "GFX_Portrait_IND_Frank_M_McCoy_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ind_frank_m_mccoy_adv
+			ledger = army
+			allowed = { original_tag = IND }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+}

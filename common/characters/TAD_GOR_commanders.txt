@@ -1,0 +1,156 @@
+characters = {
+
+	GEO_Richard_D_Wilson = {
+		name = GEO_Richard_D_Wilson
+		portraits = {
+			army = {
+				large = "GFX_Portrait_GEO_Richard_D_Wilson"
+				small = "GFX_Portrait_GEO_Richard_D_Wilson_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = geo_richard_d_wilson_adv
+			allowed = { original_tag = GOR }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_GEO_peach_state_pivot TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	GEO_Konata_A_Crumbly = {
+		name = GEO_Konata_A_Crumbly
+		portraits = {
+			army = {
+				large = "GFX_Portrait_GEO_Konata_A_Crumbly"
+				small = "GFX_Portrait_GEO_Konata_A_Crumbly_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = geo_konata_a_crumbly_adv
+			allowed = { original_tag = GOR }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	GEO_Bobby_L_Christine = {
+		name = GEO_Bobby_L_Christine
+		portraits = {
+			army = {
+				large = "GFX_Portrait_GEO_Bobby_L_Christine"
+				small = "GFX_Portrait_GEO_Bobby_L_Christine_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = geo_bobby_l_christine_adv
+			ledger = army
+			allowed = { original_tag = GOR }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	GEO_Philip_M_Breedlove = {
+		name = GEO_Philip_M_Breedlove
+		portraits = {
+			army = {
+				large = "GFX_Portrait_GEO_Philip_M_Breedlove"
+				small = "GFX_Portrait_GEO_Philip_M_Breedlove_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = geo_philip_m_breedlove_adv
+			allowed = { original_tag = GOR }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer war_hero }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	GEO_John_B_Gordon = {
+		name = GEO_John_B_Gordon
+		portraits = {
+			army = {
+				large = "GFX_Portrait_GEO_John_B_Gordon"
+				small = "GFX_Portrait_GEO_John_B_Gordon_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = geo_john_b_gordon_adv
+			ledger = army
+			allowed = { original_tag = GOR }
+			traits = { grand_battle_plan_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	GEO_Joseph_Wheeler = {
+		name = GEO_Joseph_Wheeler
+		portraits = {
+			army = {
+				large = "GFX_Portrait_GEO_Joseph_Wheeler"
+				small = "GFX_Portrait_GEO_Joseph_Wheeler_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = geo_joseph_wheeler_adv
+			ledger = army
+			allowed = { original_tag = GOR }
+			traits = { army_armored_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer trickster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+}

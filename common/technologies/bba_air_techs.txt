@@ -17,7 +17,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1933
+		start_year = 1995
 
 		folder = {
 			name = bba_air_techs_folder
@@ -51,7 +51,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1940
+		start_year = 2015
 		
 		folder = {
 			name = bba_air_techs_folder
@@ -80,7 +80,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1945
+		start_year = 2037
 		
 		folder = {
 			name = bba_air_techs_folder
@@ -123,7 +123,7 @@ technologies = {
 		
 		
 		research_cost = 2
-		start_year = 1926
+		start_year = 1994
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 2 }
@@ -180,7 +180,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1998
 
 		folder = {
 			name = bba_air_techs_folder
@@ -260,7 +260,7 @@ technologies = {
 		}				
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 2015
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 6 }
@@ -340,7 +340,7 @@ technologies = {
 			}
 		}		
 		research_cost = 2
-		start_year = 1944
+		start_year = 2031
 
 		folder = {
 			name = bba_air_techs_folder
@@ -413,7 +413,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1945
+		start_year = 2037
 
 		folder = {
 			name = bba_air_techs_folder
@@ -457,7 +457,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1950
+		start_year = 2050
 		
 		categories = {
 			light_air
@@ -484,7 +484,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1926
+		start_year = 1994
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 2 }
@@ -523,7 +523,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1998
 
 		folder = {
 			name = bba_air_techs_folder
@@ -587,7 +587,7 @@ technologies = {
 			}
 		}		
 		research_cost = 2
-		start_year = 1940
+		start_year = 2015
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 6 }
@@ -650,7 +650,7 @@ technologies = {
 			}
 		}
 		research_cost = 2
-		start_year = 1944
+		start_year = 2031
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 8 }
@@ -705,7 +705,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1945
+		start_year = 2037
 		
 		folder = {
 			name = bba_air_techs_folder
@@ -743,7 +743,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1926
+		start_year = 1994
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 2 }
@@ -792,7 +792,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1998
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 4 }
@@ -853,7 +853,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1940
+		start_year = 2015
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 6 }
@@ -896,7 +896,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1944
+		start_year = 2031
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 8 }
@@ -942,7 +942,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1945
+		start_year = 2037
 
 		folder = {
 			name = bba_air_techs_folder
@@ -979,7 +979,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1922
+		start_year = 1992
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1042,7 +1042,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1940
+		start_year = 2015
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1079,7 +1079,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1936
+		start_year = 1998
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1115,7 +1115,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1922
+		start_year = 1992
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1148,7 +1148,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1936
+		start_year = 1998
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1191,7 +1191,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1940
+		start_year = 2015
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1234,7 +1234,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1944
+		start_year = 2031
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1276,7 +1276,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1922
+		start_year = 1992
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1334,7 +1334,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1939
+		start_year = 2010
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1382,7 +1382,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1939
+		start_year = 2010
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1428,7 +1428,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1939
+		start_year = 2010
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1486,7 +1486,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1943
+		start_year = 2027
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1535,7 +1535,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1945
+		start_year = 2037
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1572,6 +1572,11 @@ technologies = {
 				factor = 3
 			}
 		}
+
+		path = {
+			leads_to_tech = tad_hypersonic_weapons
+			research_cost_coeff = 1
+		}
 	}
 
 	engines_1 = {
@@ -1585,7 +1590,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1922
+		start_year = 1992
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1669,7 +1674,7 @@ technologies = {
 			}
 		}		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1998
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1735,7 +1740,7 @@ technologies = {
 			}
 		}		
 		research_cost = 1.5
-		start_year = 1940
+		start_year = 2015
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1803,7 +1808,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1944
+		start_year = 2031
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1863,7 +1868,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1998
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1927,7 +1932,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1998
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1958,7 +1963,7 @@ technologies = {
 		}
 				
 		research_cost = 1.5 #Carrier Variant
-		start_year = 1944
+		start_year = 2031
 
 		# only from focus!!! #####
 		allow = {
@@ -1994,7 +1999,7 @@ technologies = {
 		is_special_project_tech = yes
 
 		research_cost = 2
-		start_year = 1945
+		start_year = 2037
 		
 		folder = {
 			name = bba_air_techs_folder
@@ -2047,7 +2052,7 @@ technologies = {
 			research_cost_coeff = 1
 		}	
 		research_cost = 1.75
-		start_year = 1942
+		start_year = 2023
 
 		folder = {
 			name = bba_air_techs_folder
@@ -2089,7 +2094,7 @@ technologies = {
 		}	
 
 		research_cost = 1.5
-		start_year = 1944
+		start_year = 2031
 
 		folder = {
 			name = bba_air_techs_folder
@@ -2129,7 +2134,7 @@ technologies = {
 		is_special_project_tech = yes
 
 		research_cost = 1.75
-		start_year = 1946
+		start_year = 2045
 
 		folder = {
 			name = bba_air_techs_folder
@@ -2156,6 +2161,56 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+		}
+	}
+
+	### The American Dream - new technologies
+	tad_hypersonic_weapons = {
+
+		enable_equipment_modules = {
+			aircraft_cannon_2_1x
+			aircraft_cannon_2_2x
+			cannon_defense_turret
+			cannon_defense_turret_2x
+		}
+		
+		research_cost = 2
+		start_year = 2045
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 14 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
 		}
 	}
 }

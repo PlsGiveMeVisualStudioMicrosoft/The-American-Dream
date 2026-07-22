@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = ARK_Sarah_Huckabee_Sanders #Nationalist/Non-Aligned
 recruit_character = ARK_Chris_Jones #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = ARK_Chad_Bridges
+recruit_character = ARK_Douglas_MacArthur
+recruit_character = ARK_Wesley_K_Clark
+recruit_character = ARK_William_O_Darby
+recruit_character = ARK_Kendall_Penn
+recruit_character = ARK_Patrick_Cleburne
+recruit_character = ARK_John_Boozman
+recruit_character = ARK_Tom_Cotton
+recruit_character = ARK_Doug_McMillon
+
+# end of commanders

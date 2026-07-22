@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = rho_dan_mckee_gov
+			allowed = { original_tag = RHO }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	RHO_Allan_Fung={
 		name=RHO_Allan_Fung
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = rho_allan_fung_gov
+			allowed = { original_tag = RHO }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

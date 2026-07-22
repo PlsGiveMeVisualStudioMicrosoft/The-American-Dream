@@ -1,0 +1,54 @@
+characters = {
+
+	CAL_Alex_Padilla = {
+		name = CAL_Alex_Padilla
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_CAL_Alex_Padilla"
+				small = "GFX_Portrait_CAL_Alex_Padilla_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = cal_alex_padilla_pol
+			allowed = { original_tag = CAL }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	CAL_Adam_Schiff = {
+		name = CAL_Adam_Schiff
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_CAL_Adam_Schiff"
+				small = "GFX_Portrait_CAL_Adam_Schiff_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = cal_adam_schiff_pol
+			allowed = { original_tag = CAL }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+	CAL_Tim_Cook = {
+		name = CAL_Tim_Cook
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_CAL_Tim_Cook"
+				small = "GFX_Portrait_CAL_Tim_Cook_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = cal_tim_cook_pol
+			allowed = { original_tag = CAL }
+			traits = { captain_of_industry TAD_designed_in_california }
+			cost = 150
+		}
+	}
+
+}

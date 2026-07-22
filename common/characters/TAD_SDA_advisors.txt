@@ -1,0 +1,54 @@
+characters = {
+
+	SDA_John_Thune = {
+		name = SDA_John_Thune
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_SDA_John_Thune"
+				small = "GFX_Portrait_SDA_John_Thune_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = sda_john_thune_pol
+			allowed = { original_tag = SDA }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+	SDA_Mike_Rounds = {
+		name = SDA_Mike_Rounds
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_SDA_Mike_Rounds"
+				small = "GFX_Portrait_SDA_Mike_Rounds_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = sda_mike_rounds_pol
+			allowed = { original_tag = SDA }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	SDA_T_Denny_Sanford = {
+		name = SDA_T_Denny_Sanford
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_SDA_T_Denny_Sanford"
+				small = "GFX_Portrait_SDA_T_Denny_Sanford_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = sda_t_denny_sanford_pol
+			allowed = { original_tag = SDA }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = TEN_Bill_Lee #Nationalist/Non-Aligned
 recruit_character = TEN_Justin_Jones #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = TEN_Warner_A_Ross_II
+recruit_character = TEN_Terry_M_Haston
+recruit_character = TEN_Max_Haston
+recruit_character = TEN_Nathan_Bedford_Forrest
+recruit_character = TEN_Alvin_C_York
+recruit_character = TEN_Carl_W_Stiner
+recruit_character = TEN_Marsha_Blackburn
+recruit_character = TEN_Bill_Hagerty
+recruit_character = TEN_Thomas_Frist_III
+
+# end of commanders

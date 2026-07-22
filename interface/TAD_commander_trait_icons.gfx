@@ -1,0 +1,358 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_TAD_joint_operations"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_gwot_veteran"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_abct_commander"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_stryker_commander"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_light_fighter"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_sof_raider"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_drone_pioneer"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_urban_siege"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_fires_master"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_air_component"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_logistics_veteran"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_expeditionary"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_hurricane_response"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_border_mission"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_state_guard_organizer"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_academy_instructor"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_cold_weather"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_state_legend"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_national_command"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_homeland_defense"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_guard_bureau"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_ALA_yellowhammer_command"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_ALK_last_frontier_warden"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_ARZ_sonoran_marshal"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_ARK_razorback_resolve"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_CAL_pacific_shield"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_CLR_high_country_command"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_CNT_charter_oak_defiance"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_DEL_first_state_vanguard"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_FLO_hurricane_veteran"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_GEO_peach_state_pivot"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_HAW_island_bastion"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_IDA_gem_state_ranger"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_ILL_prairie_arsenal"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_IND_crossroads_marshal"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_IOW_hawkeye_discipline"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_KAN_jayhawk_maneuver"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_KEN_bluegrass_rifleman"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_LOU_bayou_fighter"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_MAI_down_east_tenacity"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_MRY_chesapeake_command"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_MAS_minuteman_legacy"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_MIC_great_lakes_armorer"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_MIN_north_star_endurance"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_MSP_magnolia_grit"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_MSO_show_me_skeptic"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_MON_big_sky_dispersal"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_NEB_cornhusker_logistics"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_NEV_silver_state_raider"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_NHA_live_free_or_die"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_NJE_garden_state_industry"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_NMX_proving_ground_command"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_NYK_empire_state_marshal"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_NCA_tar_heel_airborne"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_NDA_northern_watch"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_OHI_buckeye_backbone"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_OKL_thunderbird_command"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_ORE_cascadia_woodsman"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_PEN_keystone_iron"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_RHO_ocean_state_professional"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_SCA_palmetto_stand"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_SDA_badlands_marksman"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_TEN_volunteer_spirit"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_TEX_lone_star_marshal"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_UTA_deseret_organizer"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_VER_green_mountain_boy"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_VIR_old_dominion_staff"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_WAS_evergreen_expeditionary"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_WVI_mountaineer_ambusher"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_WIS_badger_marksman"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_TAD_WYO_cowboy_state_cavalry"
+		texturefile = "gfx/interface/TAD/TAD_trait_icon.dds"
+	}
+
+}

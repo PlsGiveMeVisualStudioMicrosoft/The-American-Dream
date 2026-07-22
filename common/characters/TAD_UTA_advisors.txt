@@ -1,0 +1,54 @@
+characters = {
+
+	UTA_Mike_Lee = {
+		name = UTA_Mike_Lee
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_UTA_Mike_Lee"
+				small = "GFX_Portrait_UTA_Mike_Lee_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = uta_mike_lee_pol
+			allowed = { original_tag = UTA }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	UTA_John_Curtis = {
+		name = UTA_John_Curtis
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_UTA_John_Curtis"
+				small = "GFX_Portrait_UTA_John_Curtis_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = uta_john_curtis_pol
+			allowed = { original_tag = UTA }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	UTA_Gail_Miller = {
+		name = UTA_Gail_Miller
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_UTA_Gail_Miller"
+				small = "GFX_Portrait_UTA_Gail_Miller_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = uta_gail_miller_pol
+			allowed = { original_tag = UTA }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

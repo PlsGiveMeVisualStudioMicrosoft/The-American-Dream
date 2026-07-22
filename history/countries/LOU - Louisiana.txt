@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = LOU_Jeff_Landry #Nationalist/Non-Aligned
 recruit_character = LOU_John_Bel_Edwards #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = LOU_Thomas_C_Friloux
+recruit_character = LOU_Keith_Waddell
+recruit_character = LOU_Glenn_H_Curtis
+recruit_character = LOU_Russel_L_Honore
+recruit_character = LOU_P_G_T_Beauregard
+recruit_character = LOU_Claire_L_Chennault
+recruit_character = LOU_Bill_Cassidy
+recruit_character = LOU_John_Kennedy
+recruit_character = LOU_Gayle_Benson
+
+# end of commanders

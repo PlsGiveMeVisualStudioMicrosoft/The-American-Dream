@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = MSP_Tate_Reeves #Nationalist/Non-Aligned
 recruit_character = MSP_Brandon_Presley #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = MSP_Bobby_M_Ginn_Jr
+recruit_character = MSP_Edward_H_Evans_Jr
+recruit_character = MSP_Janson_D_Boyles
+recruit_character = MSP_John_M_Rhodes
+recruit_character = MSP_Earl_Van_Dorn
+recruit_character = MSP_Bennie_G_Adkins
+recruit_character = MSP_Roger_Wicker
+recruit_character = MSP_Cindy_Hyde_Smith
+recruit_character = MSP_Haley_Barbour
+
+# end of commanders

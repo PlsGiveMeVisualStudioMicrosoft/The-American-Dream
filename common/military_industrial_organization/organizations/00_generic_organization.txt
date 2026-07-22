@@ -14,7 +14,7 @@
 generic_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_1
 	allowed = {
-		always = yes
+		NOT = { original_tag = USA }
 	} 
 
 	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
@@ -6764,7 +6764,7 @@ generic_artillery_organization = {
 	icon = GFX_idea_generic_artillery_manufacturer_2
 
 	allowed = {
-		always = yes
+		NOT = { original_tag = USA }
 	}
 
 
@@ -7075,7 +7075,7 @@ generic_infantry_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = {
-		always = yes
+		NOT = { original_tag = USA }
 	}
 
 	equipment_type = {

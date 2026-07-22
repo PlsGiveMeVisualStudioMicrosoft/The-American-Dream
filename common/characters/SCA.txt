@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = sca_henry_mcmaster_gov
+			allowed = { original_tag = SCA }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	SCA_Jaime_Harrison={
 		name=SCA_Jaime_Harrison
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = sca_jaime_harrison_gov
+			allowed = { original_tag = SCA }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

@@ -89,3 +89,15 @@ set_popularities = {
 
 recruit_character = WIS_Tony_Evers #Democratic
 recruit_character = WIS_Ron_Johnson #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = WIS_Matthew_J_Strub
+recruit_character = WIS_Paul_E_Knapp
+recruit_character = WIS_Donald_P_Dunbar
+recruit_character = WIS_Lucius_Fairchild
+recruit_character = WIS_Arthur_MacArthur_Jr
+recruit_character = WIS_Billy_Mitchell
+recruit_character = WIS_Tammy_Baldwin
+recruit_character = WIS_John_Menard_Jr
+
+# end of commanders

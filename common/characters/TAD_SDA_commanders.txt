@@ -1,0 +1,155 @@
+characters = {
+
+	SDA_Mark_R_Morrell = {
+		name = SDA_Mark_R_Morrell
+		portraits = {
+			army = {
+				large = "GFX_Portrait_SDA_Mark_R_Morrell"
+				small = "GFX_Portrait_SDA_Mark_R_Morrell_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = sda_mark_r_morrell_adv
+			allowed = { original_tag = SDA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_SDA_badlands_marksman TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	SDA_Jeffrey_L_Marlette = {
+		name = SDA_Jeffrey_L_Marlette
+		portraits = {
+			army = {
+				large = "GFX_Portrait_SDA_Jeffrey_L_Marlette"
+				small = "GFX_Portrait_SDA_Jeffrey_L_Marlette_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = sda_jeffrey_l_marlette_adv
+			ledger = army
+			allowed = { original_tag = SDA }
+			traits = { mass_assault_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	SDA_Timothy_A_Reisch = {
+		name = SDA_Timothy_A_Reisch
+		portraits = {
+			army = {
+				large = "GFX_Portrait_SDA_Timothy_A_Reisch"
+				small = "GFX_Portrait_SDA_Timothy_A_Reisch_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = sda_timothy_a_reisch_adv
+			allowed = { original_tag = SDA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	SDA_Joe_Foss = {
+		name = SDA_Joe_Foss
+		portraits = {
+			army = {
+				large = "GFX_Portrait_SDA_Joe_Foss"
+				small = "GFX_Portrait_SDA_Joe_Foss_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = sda_joe_foss_adv
+			allowed = { original_tag = SDA }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer war_hero }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	SDA_Richard_Bong = {
+		name = SDA_Richard_Bong
+		portraits = {
+			army = {
+				large = "GFX_Portrait_SDA_Richard_Bong"
+				small = "GFX_Portrait_SDA_Richard_Bong_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = sda_richard_bong_adv
+			allowed = { original_tag = SDA }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	SDA_Merton_Tice = {
+		name = SDA_Merton_Tice
+		portraits = {
+			army = {
+				large = "GFX_Portrait_SDA_Merton_Tice"
+				small = "GFX_Portrait_SDA_Merton_Tice_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = sda_merton_tice_adv
+			ledger = army
+			allowed = { original_tag = SDA }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+}

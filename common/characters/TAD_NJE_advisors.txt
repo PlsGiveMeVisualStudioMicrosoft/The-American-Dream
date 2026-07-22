@@ -1,0 +1,54 @@
+characters = {
+
+	NJE_Cory_Booker = {
+		name = NJE_Cory_Booker
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NJE_Cory_Booker"
+				small = "GFX_Portrait_NJE_Cory_Booker_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nje_cory_booker_pol
+			allowed = { original_tag = NJE }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	NJE_Andy_Kim = {
+		name = NJE_Andy_Kim
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NJE_Andy_Kim"
+				small = "GFX_Portrait_NJE_Andy_Kim_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nje_andy_kim_pol
+			allowed = { original_tag = NJE }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	NJE_David_Tepper = {
+		name = NJE_David_Tepper
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NJE_David_Tepper"
+				small = "GFX_Portrait_NJE_David_Tepper_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nje_david_tepper_pol
+			allowed = { original_tag = NJE }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

@@ -1,0 +1,4743 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_USA_J_Daniel_Caine"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_J_Daniel_Caine_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Randy_A_George"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Randy_A_George_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Steven_S_Nordhaus"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Steven_S_Nordhaus_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Gregory_M_Guillot"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Gregory_M_Guillot_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Christopher_T_Donahue"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Christopher_T_Donahue_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Christopher_J_Mahoney"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Christopher_J_Mahoney_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Eric_M_Smith"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Eric_M_Smith_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_James_J_Mingus"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_James_J_Mingus_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_David_M_Hodne"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_David_M_Hodne_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Bryan_P_Fenton"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Bryan_P_Fenton_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Xavier_T_Brunson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Xavier_T_Brunson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Ronald_P_Clark"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Ronald_P_Clark_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Alexus_G_Grynkewich"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Alexus_G_Grynkewich_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Dagvin_R_M_Anderson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Dagvin_R_M_Anderson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_C_Bradford_Cooper_II"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_C_Bradford_Cooper_II_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Samuel_J_Paparo"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Samuel_J_Paparo_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Mark_A_Milley"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Mark_A_Milley_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_David_H_Petraeus"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_David_H_Petraeus_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Stanley_A_McChrystal"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Stanley_A_McChrystal_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Robert_B_Abrams"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Robert_B_Abrams_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Joseph_L_Votel"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Joseph_L_Votel_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Paul_M_Nakasone"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Paul_M_Nakasone_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Paul_J_LaCamera"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Paul_J_LaCamera_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Michael_E_Kurilla"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Michael_E_Kurilla_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_JD_Vance"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_JD_Vance_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Marco_Rubio"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Marco_Rubio_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Pete_Hegseth"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Pete_Hegseth_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Scott_Bessent"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Scott_Bessent_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Markwayne_Mullin"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Markwayne_Mullin_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Susie_Wiles"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Susie_Wiles_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_David_K_Pritchett"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_David_K_Pritchett_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Roger_A_Presley_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Roger_A_Presley_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Lloyd_J_Austin_III"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Lloyd_J_Austin_III_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Holland_M_Smith"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Holland_M_Smith_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Sheryl_E_Gordon"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Sheryl_E_Gordon_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_John_Pelham"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_John_Pelham_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Tommy_Tuberville"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Tommy_Tuberville_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Katie_Britt"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Katie_Britt_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Jimmy_Rane"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALA_Jimmy_Rane_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Torrence_W_Saxe"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Torrence_W_Saxe_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Vincent_K_Brooks"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Vincent_K_Brooks_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Laurie_J_Hummel"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Laurie_J_Hummel_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Wayne_Don"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Wayne_Don_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Randy_A_Kee"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Randy_A_Kee_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Marvin_Marston"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Marvin_Marston_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Lisa_Murkowski"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Lisa_Murkowski_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Dan_Sullivan"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Dan_Sullivan_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Sarah_Palin"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ALK_Sarah_Palin_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Kerry_L_Muehlenbeck"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Kerry_L_Muehlenbeck_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Troy_T_Daniels"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Troy_T_Daniels_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Barry_M_Goldwater"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Barry_M_Goldwater_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Michael_T_McGuire"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Michael_T_McGuire_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Frank_Luke_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Frank_Luke_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Andrew_J_MacDonald"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Andrew_J_MacDonald_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Mark_Kelly"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Mark_Kelly_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Ruben_Gallego"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Ruben_Gallego_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Jerry_Colangelo"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARZ_Jerry_Colangelo_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Chad_Bridges"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Chad_Bridges_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Douglas_MacArthur"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Douglas_MacArthur_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Wesley_K_Clark"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Wesley_K_Clark_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_William_O_Darby"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_William_O_Darby_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Kendall_Penn"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Kendall_Penn_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Patrick_Cleburne"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Patrick_Cleburne_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_John_Boozman"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_John_Boozman_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Tom_Cotton"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Tom_Cotton_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Doug_McMillon"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ARK_Doug_McMillon_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Matthew_P_Beevers"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Matthew_P_Beevers_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Jeffrey_D_Smiley"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Jeffrey_D_Smiley_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Steven_J_Butow"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Steven_J_Butow_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_William_J_Prendergast_IV"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_William_J_Prendergast_IV_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_George_S_Patton"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_George_S_Patton_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_James_H_Doolittle"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_James_H_Doolittle_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Alex_Padilla"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Alex_Padilla_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Adam_Schiff"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Adam_Schiff_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Tim_Cook"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CAL_Tim_Cook_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Robert_B_Davis"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Robert_B_Davis_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Laura_L_Clellan"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Laura_L_Clellan_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Michael_A_Loh"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Michael_A_Loh_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_H_Michael_Edwards"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_H_Michael_Edwards_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Mason_Whitney"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Mason_Whitney_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Edward_Eberhart"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Edward_Eberhart_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Michael_Bennet"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Michael_Bennet_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_John_Hickenlooper"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_John_Hickenlooper_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Philip_Anschutz"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CLR_Philip_Anschutz_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Francis_J_Evon_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Francis_J_Evon_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Thaddeus_J_Martin"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Thaddeus_J_Martin_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Alfred_H_Terry"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Alfred_H_Terry_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_John_Sedgwick"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_John_Sedgwick_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Israel_Putnam"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Israel_Putnam_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_David_Wooster"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_David_Wooster_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Richard_Blumenthal"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Richard_Blumenthal_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Chris_Murphy"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Chris_Murphy_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Ray_Dalio"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_CNT_Ray_Dalio_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_James_A_Benson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_James_A_Benson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Michael_R_Berry"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Michael_R_Berry_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Francis_D_Vavala"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Francis_D_Vavala_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Carol_A_Timmons"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Carol_A_Timmons_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Caesar_Rodney"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Caesar_Rodney_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_John_Haslet"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_John_Haslet_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Chris_Coons"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Chris_Coons_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Lisa_Blunt_Rochester"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Lisa_Blunt_Rochester_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Thomas_Carper"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_DEL_Thomas_Carper_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_John_D_Haas"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_John_D_Haas_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Robert_G_Carruthers_III"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Robert_G_Carruthers_III_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Michael_A_Valle"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Michael_A_Valle_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Joseph_W_Stilwell"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Joseph_W_Stilwell_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Daniel_James_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Daniel_James_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_James_O_Eifert"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_James_O_Eifert_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Rick_Scott"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Rick_Scott_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Ashley_Moody"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Ashley_Moody_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Ken_Griffin"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_FLO_Ken_Griffin_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Richard_D_Wilson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Richard_D_Wilson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Konata_A_Crumbly"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Konata_A_Crumbly_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Bobby_L_Christine"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Bobby_L_Christine_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Philip_M_Breedlove"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Philip_M_Breedlove_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_John_B_Gordon"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_John_B_Gordon_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Joseph_Wheeler"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Joseph_Wheeler_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Jon_Ossoff"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Jon_Ossoff_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Raphael_Warnock"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Raphael_Warnock_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Ed_Bastian"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_GEO_Ed_Bastian_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Stephen_F_Logan"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Stephen_F_Logan_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Joseph_R_Harris_II"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Joseph_R_Harris_II_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Lance_A_Okamura"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Lance_A_Okamura_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Eric_K_Shinseki"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Eric_K_Shinseki_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Kenneth_S_Hara"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Kenneth_S_Hara_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Arthur_S_Ishimoto"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Arthur_S_Ishimoto_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Brian_Schatz"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Brian_Schatz_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Mazie_Hirono"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_Mazie_Hirono_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_David_Ige"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_HAW_David_Ige_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Timothy_J_Donnellan"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Timothy_J_Donnellan_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Michael_J_Garshak"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Michael_J_Garshak_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Gary_L_Sayler"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Gary_L_Sayler_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Lawrence_F_Lafrenz"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Lawrence_F_Lafrenz_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Farin_M_Schwartz"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Farin_M_Schwartz_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Darrell_V_Manning"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Darrell_V_Manning_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Mike_Crapo"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Mike_Crapo_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Jim_Risch"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Jim_Risch_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Frank_VanderSloot"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IDA_Frank_VanderSloot_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Rodney_C_Boyd"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Rodney_C_Boyd_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Daniel_R_McDonough"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Daniel_R_McDonough_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Richard_J_Hayes_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Richard_J_Hayes_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_John_A_Logan"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_John_A_Logan_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Paul_W_Tibbets"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Paul_W_Tibbets_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_William_L_Enyart"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_William_L_Enyart_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Dick_Durbin"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Dick_Durbin_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Tammy_Duckworth"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Tammy_Duckworth_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Penny_Pritzker"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ILL_Penny_Pritzker_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Lawrence_M_Muennich"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Lawrence_M_Muennich_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Daniel_A_Degelow"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Daniel_A_Degelow_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_R_Dale_Lyles"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_R_Dale_Lyles_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Ambrose_Burnside"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Ambrose_Burnside_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Lew_Wallace"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Lew_Wallace_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Frank_M_McCoy"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Frank_M_McCoy_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Todd_Young"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Todd_Young_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Jim_Banks"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_Jim_Banks_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_David_Ricks"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IND_David_Ricks_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Stephen_E_Osborn"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Stephen_E_Osborn_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Benjamin_J_Corell"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Benjamin_J_Corell_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Timothy_E_Orr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Timothy_E_Orr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Charles_A_Horner"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Charles_A_Horner_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Grenville_M_Dodge"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Grenville_M_Dodge_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Hanford_MacNider"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Hanford_MacNider_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Chuck_Grassley"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Chuck_Grassley_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Joni_Ernst"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Joni_Ernst_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Harry_Stine"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_IOW_Harry_Stine_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Michael_T_Venerdi"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Michael_T_Venerdi_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_David_C_Weishaar"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_David_C_Weishaar_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Lee_Tafanelli"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Lee_Tafanelli_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Dwight_D_Eisenhower"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Dwight_D_Eisenhower_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Richard_E_Hawley"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Richard_E_Hawley_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Frederick_Funston"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Frederick_Funston_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Jerry_Moran"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Jerry_Moran_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Roger_Marshall"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Roger_Marshall_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Charles_Koch"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KAN_Charles_Koch_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Haldane_B_Lamberton"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Haldane_B_Lamberton_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Bryan_M_Howay"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Bryan_M_Howay_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Charles_M_Walker"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Charles_M_Walker_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Simon_B_Buckner_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Simon_B_Buckner_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_John_B_Hood"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_John_B_Hood_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Roger_H_Nye"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Roger_H_Nye_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Mitch_McConnell"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Mitch_McConnell_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Rand_Paul"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Rand_Paul_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Steve_Beshear"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_KEN_Steve_Beshear_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Thomas_C_Friloux"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Thomas_C_Friloux_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Keith_Waddell"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Keith_Waddell_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Glenn_H_Curtis"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Glenn_H_Curtis_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Russel_L_Honore"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Russel_L_Honore_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_P_G_T_Beauregard"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_P_G_T_Beauregard_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Claire_L_Chennault"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Claire_L_Chennault_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Bill_Cassidy"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Bill_Cassidy_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_John_Kennedy"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_John_Kennedy_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Gayle_Benson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LOU_Gayle_Benson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Diane_L_Dunn"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Diane_L_Dunn_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Robert_I_Kinney"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Robert_I_Kinney_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Douglas_A_Farnham"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Douglas_A_Farnham_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Joshua_L_Chamberlain"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Joshua_L_Chamberlain_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Oliver_O_Howard"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Oliver_O_Howard_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Adelbert_Ames"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Adelbert_Ames_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Angus_King"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Angus_King_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Shawn_Gorman"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAI_Shawn_Gorman_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Janeen_L_Birckhead"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Janeen_L_Birckhead_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Victor_R_Macias"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Victor_R_Macias_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Timothy_E_Gowen"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Timothy_E_Gowen_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_David_H_Berger"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_David_H_Berger_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_William_E_Ward"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_William_E_Ward_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_John_Eager_Howard"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_John_Eager_Howard_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Chris_Van_Hollen"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Chris_Van_Hollen_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Angela_Alsobrooks"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Angela_Alsobrooks_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Kevin_Plank"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MRY_Kevin_Plank_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Gary_W_Keefe"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Gary_W_Keefe_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_L_Scott_Rice"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_L_Scott_Rice_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Joseph_F_Dunford_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Joseph_F_Dunford_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_John_F_Kelly"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_John_F_Kelly_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Henry_Knox"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Henry_Knox_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Joseph_Hooker"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Joseph_Hooker_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Elizabeth_Warren"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Elizabeth_Warren_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Ed_Markey"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Ed_Markey_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Abigail_Johnson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MAS_Abigail_Johnson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Paul_D_Rogers"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Paul_D_Rogers_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Scott_W_Hiipakka"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Scott_W_Hiipakka_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Bryan_J_Teff"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Bryan_J_Teff_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Robert_B_Neller"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Robert_B_Neller_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Alpheus_S_Williams"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Alpheus_S_Williams_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Gregory_J_Vadnais"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Gregory_J_Vadnais_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Gary_Peters"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Gary_Peters_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Elissa_Slotkin"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Elissa_Slotkin_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Mary_Barra"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIC_Mary_Barra_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Shawn_P_Manke"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Shawn_P_Manke_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Stefanie_K_Horvath"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Stefanie_K_Horvath_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Jon_A_Jensen"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Jon_A_Jensen_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Richard_C_Nash"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Richard_C_Nash_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Joseph_T_Ward"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Joseph_T_Ward_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Charles_W_Lindbergh"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Charles_W_Lindbergh_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Amy_Klobuchar"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Amy_Klobuchar_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Tina_Smith"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Tina_Smith_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Glen_Taylor"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MIN_Glen_Taylor_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Bobby_M_Ginn_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Bobby_M_Ginn_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Edward_H_Evans_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Edward_H_Evans_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Janson_D_Boyles"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Janson_D_Boyles_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_John_M_Rhodes"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_John_M_Rhodes_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Earl_Van_Dorn"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Earl_Van_Dorn_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Bennie_G_Adkins"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Bennie_G_Adkins_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Roger_Wicker"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Roger_Wicker_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Cindy_Hyde_Smith"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Cindy_Hyde_Smith_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Haley_Barbour"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSP_Haley_Barbour_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Charles_D_Hausman"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Charles_D_Hausman_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Levon_E_Cumpton"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Levon_E_Cumpton_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Shawn_R_Satterfield"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Shawn_R_Satterfield_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Omar_N_Bradley"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Omar_N_Bradley_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_John_J_Pershing"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_John_J_Pershing_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Enoch_H_Crowder"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Enoch_H_Crowder_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Josh_Hawley"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Josh_Hawley_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Eric_Schmitt"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_Eric_Schmitt_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_David_Steward"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MSO_David_Steward_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Trenton_J_Gibson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Trenton_J_Gibson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_J_Peter_Hronek"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_J_Peter_Hronek_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Matthew_T_Quinn"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Matthew_T_Quinn_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_John_E_Walsh"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_John_E_Walsh_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Thomas_F_Meagher"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Thomas_F_Meagher_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Charles_L_Bolte"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Charles_L_Bolte_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Steve_Daines"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Steve_Daines_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Tim_Sheehy"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Tim_Sheehy_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Dennis_Washington"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_MON_Dennis_Washington_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Craig_W_Strong"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Craig_W_Strong_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Daryl_L_Bohac"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Daryl_L_Bohac_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Rick_L_Evans"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Rick_L_Evans_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_John_J_Pershing_III"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_John_J_Pershing_III_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Charles_P_Summerall"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Charles_P_Summerall_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Roger_T_Lempke"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Roger_T_Lempke_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Deb_Fischer"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Deb_Fischer_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Pete_Ricketts"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Pete_Ricketts_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Warren_Buffett"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEB_Warren_Buffett_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_D_Rodger_Waters"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_D_Rodger_Waters_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Ondra_L_Berry"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Ondra_L_Berry_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_William_R_Burks"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_William_R_Burks_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Cindy_N_Kirkland"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Cindy_N_Kirkland_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Zachary_F_Doser"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Zachary_F_Doser_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Michael_J_Hanifan"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Michael_J_Hanifan_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Catherine_Cortez_Masto"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Catherine_Cortez_Masto_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Jacky_Rosen"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Jacky_Rosen_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Miriam_Adelson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NEV_Miriam_Adelson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_David_J_Mikolaities"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_David_J_Mikolaities_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Warren_E_Perry"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Warren_E_Perry_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Laurie_M_Farris"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Laurie_M_Farris_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_John_Stark"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_John_Stark_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Fitz_John_Porter"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Fitz_John_Porter_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Benjamin_F_Butler"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Benjamin_F_Butler_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Maggie_Hassan"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Maggie_Hassan_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Dean_Kamen"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NHA_Dean_Kamen_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Yvonne_Mays"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Yvonne_Mays_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Edward_J_Chrystal_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Edward_J_Chrystal_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Lisa_J_Hou"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Lisa_J_Hou_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_H_Norman_Schwarzkopf"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_H_Norman_Schwarzkopf_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Raymond_T_Odierno"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Raymond_T_Odierno_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Philip_Kearny"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Philip_Kearny_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Cory_Booker"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Cory_Booker_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Andy_Kim"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_Andy_Kim_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_David_Tepper"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NJE_David_Tepper_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Miguel_Aguilar"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Miguel_Aguilar_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Kenneth_Nava"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Kenneth_Nava_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Andrew_E_Salas"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Andrew_E_Salas_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Edward_D_Baca"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Edward_D_Baca_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Kenny_C_Montoya"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Kenny_C_Montoya_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Bill_Mauldin"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Bill_Mauldin_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Martin_Heinrich"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Martin_Heinrich_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Ben_Ray_Lujan"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Ben_Ray_Lujan_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Mack_Chase"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NMX_Mack_Chase_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Raymond_F_Shields_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Raymond_F_Shields_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Michel_A_Natali"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Michel_A_Natali_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Jack_A_James_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Jack_A_James_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Colin_L_Powell"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Colin_L_Powell_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Emory_Upton"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Emory_Upton_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Abner_Doubleday"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Abner_Doubleday_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Chuck_Schumer"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Chuck_Schumer_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Kirsten_Gillibrand"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Kirsten_Gillibrand_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Jamie_Dimon"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NYK_Jamie_Dimon_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_M_Todd_Hunt"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_M_Todd_Hunt_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_Robert_A_Boyette"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_Robert_A_Boyette_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_Allen_E_Boyette"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_Allen_E_Boyette_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_Hugh_Shelton"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_Hugh_Shelton_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_William_C_Lee"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_William_C_Lee_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_Braxton_Bragg"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_Braxton_Bragg_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_Ted_Budd"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_Ted_Budd_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_James_Goodnight"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NCA_James_Goodnight_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Mitchell_R_Johnson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Mitchell_R_Johnson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Alan_S_Dohrmann"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Alan_S_Dohrmann_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_David_A_Sprynczynatyk"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_David_A_Sprynczynatyk_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_David_C_Jones"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_David_C_Jones_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Robert_Fischer"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Robert_Fischer_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Michael_J_Haugen"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Michael_J_Haugen_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_John_Hoeven"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_John_Hoeven_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Kevin_Cramer"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Kevin_Cramer_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Gary_Tharaldson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NDA_Gary_Tharaldson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_Matthew_S_Woodruff"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_Matthew_S_Woodruff_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_David_B_Johnson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_David_B_Johnson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_John_C_Harris_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_John_C_Harris_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_William_T_Sherman"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_William_T_Sherman_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_Curtis_E_LeMay"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_Curtis_E_LeMay_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_George_A_Custer"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_George_A_Custer_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_Jon_Husted"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_Jon_Husted_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_Bernie_Moreno"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_Bernie_Moreno_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_Les_Wexner"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OHI_Les_Wexner_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Thomas_H_Mancino"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Thomas_H_Mancino_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Michael_C_Thompson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Michael_C_Thompson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Louis_W_Wilson_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Louis_W_Wilson_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Tommy_R_Franks"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Tommy_R_Franks_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Clarence_L_Tinker"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Clarence_L_Tinker_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Ernest_Childers"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Ernest_Childers_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_James_Lankford"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_James_Lankford_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Alan_Armstrong"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Alan_Armstrong_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Harold_Hamm"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_OKL_Harold_Hamm_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Alan_Gronewold"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Alan_Gronewold_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Michael_E_Stencel"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Michael_E_Stencel_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Daniel_R_Hokanson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Daniel_R_Hokanson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Adrian_Sullivan"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Adrian_Sullivan_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Gregory_Day"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Gregory_Day_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Terrence_M_Kraft"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Terrence_M_Kraft_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Ron_Wyden"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Ron_Wyden_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Jeff_Merkley"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Jeff_Merkley_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Phil_Knight"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_ORE_Phil_Knight_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_John_R_Pippy"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_John_R_Pippy_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_Laura_A_McHugh"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_Laura_A_McHugh_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_Michael_E_Wegscheider"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_Michael_E_Wegscheider_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_Curtis_M_Scaparrotti"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_Curtis_M_Scaparrotti_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_George_C_Marshall"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_George_C_Marshall_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_Winfield_S_Hancock"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_Winfield_S_Hancock_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_John_Fetterman"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_John_Fetterman_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_Jeffrey_Yass"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_PEN_Jeffrey_Yass_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Andrew_J_Chevalier"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Andrew_J_Chevalier_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Christopher_P_Callahan"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Christopher_P_Callahan_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Nathanael_Greene"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Nathanael_Greene_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_George_S_Greene"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_George_S_Greene_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Isaac_P_Rodman"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Isaac_P_Rodman_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Bruce_E_Hedlund"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Bruce_E_Hedlund_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Jack_Reed"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Jack_Reed_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Sheldon_Whitehouse"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Sheldon_Whitehouse_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Jonathan_Nelson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_RHO_Jonathan_Nelson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Robin_B_Stilwell"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Robin_B_Stilwell_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Jeffrey_A_Jones"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Jeffrey_A_Jones_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Richard_A_Wholey_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Richard_A_Wholey_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_William_C_Westmoreland"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_William_C_Westmoreland_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Wade_Hampton_III"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Wade_Hampton_III_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Charles_Duke"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Charles_Duke_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Lindsey_Graham"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Lindsey_Graham_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Tim_Scott"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Tim_Scott_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Anita_Zucker"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SCA_Anita_Zucker_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Mark_R_Morrell"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Mark_R_Morrell_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Jeffrey_L_Marlette"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Jeffrey_L_Marlette_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Timothy_A_Reisch"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Timothy_A_Reisch_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Joe_Foss"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Joe_Foss_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Richard_Bong"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Richard_Bong_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Merton_Tice"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Merton_Tice_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_John_Thune"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_John_Thune_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Mike_Rounds"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_Mike_Rounds_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_T_Denny_Sanford"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SDA_T_Denny_Sanford_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Warner_A_Ross_II"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Warner_A_Ross_II_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Terry_M_Haston"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Terry_M_Haston_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Max_Haston"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Max_Haston_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Nathan_Bedford_Forrest"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Nathan_Bedford_Forrest_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Alvin_C_York"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Alvin_C_York_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Carl_W_Stiner"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Carl_W_Stiner_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Marsha_Blackburn"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Marsha_Blackburn_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Bill_Hagerty"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Bill_Hagerty_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Thomas_Frist_III"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEN_Thomas_Frist_III_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Thomas_M_Suelzer"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Thomas_M_Suelzer_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_John_B_Bowlin"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_John_B_Bowlin_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Marc_A_Cisneros"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Marc_A_Cisneros_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Ricardo_S_Sanchez"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Ricardo_S_Sanchez_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Richard_E_Cavazos"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Richard_E_Cavazos_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Audie_L_Murphy"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Audie_L_Murphy_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_John_Cornyn"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_John_Cornyn_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Ted_Cruz"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Ted_Cruz_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Elon_Musk"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_TEX_Elon_Musk_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Daniel_D_Boyack"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Daniel_D_Boyack_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Michael_J_Turley"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Michael_J_Turley_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Jefferson_S_Burton"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Jefferson_S_Burton_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Brian_L_Tarbet"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Brian_L_Tarbet_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Peter_M_Cooke"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Peter_M_Cooke_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Maxwell_E_Rich"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Maxwell_E_Rich_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Mike_Lee"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Mike_Lee_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_John_Curtis"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_John_Curtis_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Gail_Miller"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_UTA_Gail_Miller_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Henry_U_Harder"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Henry_U_Harder_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Gregory_C_Knight"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Gregory_C_Knight_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Steven_Cray"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Steven_Cray_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_George_J_Stannard"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_George_J_Stannard_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Truman_Seymour"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Truman_Seymour_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Ethan_Allen"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Ethan_Allen_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Peter_Welch"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Peter_Welch_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Ben_Cohen"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VER_Ben_Cohen_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_James_W_Ring"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_James_W_Ring_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Joseph_A_Dinonno"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Joseph_A_Dinonno_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Timothy_P_Williams"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Timothy_P_Williams_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_George_H_Thomas"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_George_H_Thomas_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Lewis_B_Puller"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Lewis_B_Puller_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Dennis_L_Via"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Dennis_L_Via_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Mark_Warner"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Mark_Warner_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Tim_Kaine"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Tim_Kaine_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Jacqueline_Mars"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_VIR_Jacqueline_Mars_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Gent_Welsh_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Gent_Welsh_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Bret_D_Daugherty"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Bret_D_Daugherty_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Timothy_J_Lowenberg"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Timothy_J_Lowenberg_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_James_N_Mattis"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_James_N_Mattis_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_John_H_Tuohy"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_John_H_Tuohy_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Daniel_Dent"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Daniel_Dent_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Patty_Murray"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Patty_Murray_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Maria_Cantwell"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Maria_Cantwell_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Jeff_Bezos"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WAS_Jeff_Bezos_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_James_D_Seward"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_James_D_Seward_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_William_E_Crane"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_William_E_Crane_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Bill_Crane"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Bill_Crane_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Charles_E_Yeager"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Charles_E_Yeager_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Thomas_J_Jackson"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Thomas_J_Jackson_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Melvin_Zais"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Melvin_Zais_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Shelley_Moore_Capito"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Shelley_Moore_Capito_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Jim_Justice"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Jim_Justice_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Brad_Smith"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WVI_Brad_Smith_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Matthew_J_Strub"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Matthew_J_Strub_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Paul_E_Knapp"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Paul_E_Knapp_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Donald_P_Dunbar"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Donald_P_Dunbar_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Lucius_Fairchild"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Lucius_Fairchild_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Arthur_MacArthur_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Arthur_MacArthur_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Billy_Mitchell"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Billy_Mitchell_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Tammy_Baldwin"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_Tammy_Baldwin_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_John_Menard_Jr"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WIS_John_Menard_Jr_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Gregory_C_Porter"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Gregory_C_Porter_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Luke_Reiner"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Luke_Reiner_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Edward_L_Wright"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Edward_L_Wright_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Francis_E_Warren"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Francis_E_Warren_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Michael_A_Kilbride"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Michael_A_Kilbride_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Kenneth_D_Sanders"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Kenneth_D_Sanders_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_John_Barrasso"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_John_Barrasso_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Cynthia_Lummis"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Cynthia_Lummis_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Diemer_True"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_WYO_Diemer_True_small"
+		texturefile = "gfx/leaders/TAD/Portrait_TAD_placeholder_small.dds"
+	}
+
+}

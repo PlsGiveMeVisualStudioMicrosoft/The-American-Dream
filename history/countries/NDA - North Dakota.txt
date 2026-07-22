@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = NDA_Kelly_Armstrong #Nationalist/Non-Aligned
 recruit_character = NDA_Heidi_Heitkamp #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = NDA_Mitchell_R_Johnson
+recruit_character = NDA_Alan_S_Dohrmann
+recruit_character = NDA_David_A_Sprynczynatyk
+recruit_character = NDA_David_C_Jones
+recruit_character = NDA_Robert_Fischer
+recruit_character = NDA_Michael_J_Haugen
+recruit_character = NDA_John_Hoeven
+recruit_character = NDA_Kevin_Cramer
+recruit_character = NDA_Gary_Tharaldson
+
+# end of commanders

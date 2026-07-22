@@ -1,0 +1,157 @@
+characters = {
+
+	CNT_Francis_J_Evon_Jr = {
+		name = CNT_Francis_J_Evon_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CNT_Francis_J_Evon_Jr"
+				small = "GFX_Portrait_CNT_Francis_J_Evon_Jr_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = cnt_francis_j_evon_jr_adv
+			allowed = { original_tag = CNT }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_CNT_charter_oak_defiance TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	CNT_Thaddeus_J_Martin = {
+		name = CNT_Thaddeus_J_Martin
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CNT_Thaddeus_J_Martin"
+				small = "GFX_Portrait_CNT_Thaddeus_J_Martin_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = cnt_thaddeus_j_martin_adv
+			allowed = { original_tag = CNT }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	CNT_Alfred_H_Terry = {
+		name = CNT_Alfred_H_Terry
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CNT_Alfred_H_Terry"
+				small = "GFX_Portrait_CNT_Alfred_H_Terry_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = cnt_alfred_h_terry_adv
+			ledger = army
+			allowed = { original_tag = CNT }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	CNT_John_Sedgwick = {
+		name = CNT_John_Sedgwick
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CNT_John_Sedgwick"
+				small = "GFX_Portrait_CNT_John_Sedgwick_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = cnt_john_sedgwick_adv
+			ledger = army
+			allowed = { original_tag = CNT }
+			traits = { army_artillery_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_fires_master trait_cautious career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	CNT_Israel_Putnam = {
+		name = CNT_Israel_Putnam
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CNT_Israel_Putnam"
+				small = "GFX_Portrait_CNT_Israel_Putnam_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = cnt_israel_putnam_adv
+			ledger = army
+			allowed = { original_tag = CNT }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_legend war_hero old_guard }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	CNT_David_Wooster = {
+		name = CNT_David_Wooster
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CNT_David_Wooster"
+				small = "GFX_Portrait_CNT_David_Wooster_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = cnt_david_wooster_adv
+			ledger = army
+			allowed = { original_tag = CNT }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_legend war_hero }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+}

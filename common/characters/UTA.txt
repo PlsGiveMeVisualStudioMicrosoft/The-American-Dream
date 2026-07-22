@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = uta_spencer_cox_gov
+			allowed = { original_tag = UTA }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	UTA_Ben_McAdams={
 		name=UTA_Ben_McAdams
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = uta_ben_mcadams_gov
+			allowed = { original_tag = UTA }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = IDA_Brad_Little #Nationalist/Non-Aligned
 recruit_character = IDA_Lauren_McLean #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = IDA_Timothy_J_Donnellan
+recruit_character = IDA_Michael_J_Garshak
+recruit_character = IDA_Gary_L_Sayler
+recruit_character = IDA_Lawrence_F_Lafrenz
+recruit_character = IDA_Farin_M_Schwartz
+recruit_character = IDA_Darrell_V_Manning
+recruit_character = IDA_Mike_Crapo
+recruit_character = IDA_Jim_Risch
+recruit_character = IDA_Frank_VanderSloot
+
+# end of commanders

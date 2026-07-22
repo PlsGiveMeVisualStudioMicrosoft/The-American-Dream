@@ -1,0 +1,54 @@
+characters = {
+
+	KAN_Jerry_Moran = {
+		name = KAN_Jerry_Moran
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_KAN_Jerry_Moran"
+				small = "GFX_Portrait_KAN_Jerry_Moran_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = kan_jerry_moran_pol
+			allowed = { original_tag = KAN }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	KAN_Roger_Marshall = {
+		name = KAN_Roger_Marshall
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_KAN_Roger_Marshall"
+				small = "GFX_Portrait_KAN_Roger_Marshall_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = kan_roger_marshall_pol
+			allowed = { original_tag = KAN }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	KAN_Charles_Koch = {
+		name = KAN_Charles_Koch
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_KAN_Charles_Koch"
+				small = "GFX_Portrait_KAN_Charles_Koch_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = kan_charles_koch_pol
+			allowed = { original_tag = KAN }
+			traits = { war_industrialist TAD_wichita_machine }
+			cost = 150
+		}
+	}
+
+}

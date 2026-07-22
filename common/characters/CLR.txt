@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = clr_jared_polis_gov
+			allowed = { original_tag = CLR }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	CLR_Lauren_Boebert={
 		name=CLR_Lauren_Boebert
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = clr_lauren_boebert_gov
+			allowed = { original_tag = CLR }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

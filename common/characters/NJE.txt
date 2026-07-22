@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = nje_phil_murphy_gov
+			allowed = { original_tag = NJE }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	NJE_Jack_Ciattarelli={
 		name=NJE_Jack_Ciattarelli
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = nje_jack_ciattarelli_gov
+			allowed = { original_tag = NJE }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

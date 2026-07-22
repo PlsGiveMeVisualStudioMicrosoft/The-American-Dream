@@ -1,0 +1,54 @@
+characters = {
+
+	NYK_Chuck_Schumer = {
+		name = NYK_Chuck_Schumer
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NYK_Chuck_Schumer"
+				small = "GFX_Portrait_NYK_Chuck_Schumer_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nyk_chuck_schumer_pol
+			allowed = { original_tag = NYK }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+	NYK_Kirsten_Gillibrand = {
+		name = NYK_Kirsten_Gillibrand
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NYK_Kirsten_Gillibrand"
+				small = "GFX_Portrait_NYK_Kirsten_Gillibrand_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nyk_kirsten_gillibrand_pol
+			allowed = { original_tag = NYK }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	NYK_Jamie_Dimon = {
+		name = NYK_Jamie_Dimon
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NYK_Jamie_Dimon"
+				small = "GFX_Portrait_NYK_Jamie_Dimon_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nyk_jamie_dimon_pol
+			allowed = { original_tag = NYK }
+			traits = { captain_of_industry TAD_fortress_balance_sheet }
+			cost = 150
+		}
+	}
+
+}

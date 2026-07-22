@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = neb_jim_pillen_gov
+			allowed = { original_tag = NEB }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	NEB_Jane_Kleeb={
 		name=NEB_Jane_Kleeb
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = neb_jane_kleeb_gov
+			allowed = { original_tag = NEB }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

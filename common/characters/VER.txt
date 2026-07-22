@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = ver_phil_scott_gov
+			allowed = { original_tag = VER }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	VER_Bernie_Sanders={
 		name=VER_Bernie_Sanders
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = ver_bernie_sanders_gov
+			allowed = { original_tag = VER }
+			traits = { silent_workhorse TAD_grassroots_machine }
+			cost = 150
 		}
 	}
 }

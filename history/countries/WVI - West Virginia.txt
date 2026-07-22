@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = WVI_Patrick_Morrisey #Nationalist/Non-Aligned
 recruit_character = WVI_Joe_Manchin #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = WVI_James_D_Seward
+recruit_character = WVI_William_E_Crane
+recruit_character = WVI_Bill_Crane
+recruit_character = WVI_Charles_E_Yeager
+recruit_character = WVI_Thomas_J_Jackson
+recruit_character = WVI_Melvin_Zais
+recruit_character = WVI_Shelley_Moore_Capito
+recruit_character = WVI_Jim_Justice
+recruit_character = WVI_Brad_Smith
+
+# end of commanders

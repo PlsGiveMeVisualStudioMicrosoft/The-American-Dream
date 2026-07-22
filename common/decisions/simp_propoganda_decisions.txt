@@ -37,7 +37,7 @@ simp_clear_poster_decision = {
     icon = GFX_decision_generic_propaganda
     allowed = { always = yes }
     visible = { always = yes }
-    available = { ROOT.simp_slot_frame?1 > 1 }
+    available = { check_variable = { var = ROOT.simp_slot_frame value = 1 compare = greater_than } }
     cost = 25
 
     complete_effect = {

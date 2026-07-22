@@ -1,0 +1,155 @@
+characters = {
+
+	KAN_Michael_T_Venerdi = {
+		name = KAN_Michael_T_Venerdi
+		portraits = {
+			army = {
+				large = "GFX_Portrait_KAN_Michael_T_Venerdi"
+				small = "GFX_Portrait_KAN_Michael_T_Venerdi_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = kan_michael_t_venerdi_adv
+			allowed = { original_tag = KAN }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_KAN_jayhawk_maneuver TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	KAN_David_C_Weishaar = {
+		name = KAN_David_C_Weishaar
+		portraits = {
+			army = {
+				large = "GFX_Portrait_KAN_David_C_Weishaar"
+				small = "GFX_Portrait_KAN_David_C_Weishaar_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = kan_david_c_weishaar_adv
+			allowed = { original_tag = KAN }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	KAN_Lee_Tafanelli = {
+		name = KAN_Lee_Tafanelli
+		portraits = {
+			army = {
+				large = "GFX_Portrait_KAN_Lee_Tafanelli"
+				small = "GFX_Portrait_KAN_Lee_Tafanelli_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = kan_lee_tafanelli_adv
+			allowed = { original_tag = KAN }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	KAN_Dwight_D_Eisenhower = {
+		name = KAN_Dwight_D_Eisenhower
+		portraits = {
+			army = {
+				large = "GFX_Portrait_KAN_Dwight_D_Eisenhower"
+				small = "GFX_Portrait_KAN_Dwight_D_Eisenhower_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = kan_dwight_d_eisenhower_adv
+			ledger = army
+			allowed = { original_tag = KAN }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	KAN_Richard_E_Hawley = {
+		name = KAN_Richard_E_Hawley
+		portraits = {
+			army = {
+				large = "GFX_Portrait_KAN_Richard_E_Hawley"
+				small = "GFX_Portrait_KAN_Richard_E_Hawley_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = kan_richard_e_hawley_adv
+			allowed = { original_tag = KAN }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	KAN_Frederick_Funston = {
+		name = KAN_Frederick_Funston
+		portraits = {
+			army = {
+				large = "GFX_Portrait_KAN_Frederick_Funston"
+				small = "GFX_Portrait_KAN_Frederick_Funston_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = kan_frederick_funston_adv
+			ledger = army
+			allowed = { original_tag = KAN }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+}

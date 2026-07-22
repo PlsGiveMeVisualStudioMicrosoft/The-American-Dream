@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = wis_tony_evers_gov
+			allowed = { original_tag = WSS }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	WIS_Ron_Johnson={
 		name=WIS_Ron_Johnson
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = wis_ron_johnson_gov
+			allowed = { original_tag = WSS }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

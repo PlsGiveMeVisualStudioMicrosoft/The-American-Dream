@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = CLR_Jared_Polis #Democratic
 recruit_character = CLR_Lauren_Boebert #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = CLR_Robert_B_Davis
+recruit_character = CLR_Laura_L_Clellan
+recruit_character = CLR_Michael_A_Loh
+recruit_character = CLR_H_Michael_Edwards
+recruit_character = CLR_Mason_Whitney
+recruit_character = CLR_Edward_Eberhart
+recruit_character = CLR_Michael_Bennet
+recruit_character = CLR_John_Hickenlooper
+recruit_character = CLR_Philip_Anschutz
+
+# end of commanders

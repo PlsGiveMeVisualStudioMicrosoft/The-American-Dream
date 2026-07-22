@@ -1,0 +1,54 @@
+characters = {
+
+	CLR_Michael_Bennet = {
+		name = CLR_Michael_Bennet
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_CLR_Michael_Bennet"
+				small = "GFX_Portrait_CLR_Michael_Bennet_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = clr_michael_bennet_pol
+			allowed = { original_tag = CLR }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	CLR_John_Hickenlooper = {
+		name = CLR_John_Hickenlooper
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_CLR_John_Hickenlooper"
+				small = "GFX_Portrait_CLR_John_Hickenlooper_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = clr_john_hickenlooper_pol
+			allowed = { original_tag = CLR }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	CLR_Philip_Anschutz = {
+		name = CLR_Philip_Anschutz
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_CLR_Philip_Anschutz"
+				small = "GFX_Portrait_CLR_Philip_Anschutz_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = clr_philip_anschutz_pol
+			allowed = { original_tag = CLR }
+			traits = { war_industrialist }
+			cost = 150
+		}
+	}
+
+}

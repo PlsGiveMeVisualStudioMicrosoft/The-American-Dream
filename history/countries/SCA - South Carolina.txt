@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = SCA_Henry_McMaster #Nationalist/Non-Aligned
 recruit_character = SCA_Jaime_Harrison #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = SCA_Robin_B_Stilwell
+recruit_character = SCA_Jeffrey_A_Jones
+recruit_character = SCA_Richard_A_Wholey_Jr
+recruit_character = SCA_William_C_Westmoreland
+recruit_character = SCA_Wade_Hampton_III
+recruit_character = SCA_Charles_Duke
+recruit_character = SCA_Lindsey_Graham
+recruit_character = SCA_Tim_Scott
+recruit_character = SCA_Anita_Zucker
+
+# end of commanders

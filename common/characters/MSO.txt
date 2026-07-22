@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = mso_mike_kehoe_gov
+			allowed = { original_tag = MSO }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	MSO_Lucas_Kunce={
 		name=MSO_Lucas_Kunce
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = mso_lucas_kunce_gov
+			allowed = { original_tag = MSO }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

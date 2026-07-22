@@ -1,0 +1,37 @@
+characters = {
+
+	PEN_John_Fetterman = {
+		name = PEN_John_Fetterman
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_PEN_John_Fetterman"
+				small = "GFX_Portrait_PEN_John_Fetterman_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = pen_john_fetterman_pol
+			allowed = { original_tag = PEN }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	PEN_Jeffrey_Yass = {
+		name = PEN_Jeffrey_Yass
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_PEN_Jeffrey_Yass"
+				small = "GFX_Portrait_PEN_Jeffrey_Yass_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = pen_jeffrey_yass_pol
+			allowed = { original_tag = PEN }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

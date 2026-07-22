@@ -1,0 +1,156 @@
+characters = {
+
+	UTA_Daniel_D_Boyack = {
+		name = UTA_Daniel_D_Boyack
+		portraits = {
+			army = {
+				large = "GFX_Portrait_UTA_Daniel_D_Boyack"
+				small = "GFX_Portrait_UTA_Daniel_D_Boyack_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = uta_daniel_d_boyack_adv
+			allowed = { original_tag = UTA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_UTA_deseret_organizer TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	UTA_Michael_J_Turley = {
+		name = UTA_Michael_J_Turley
+		portraits = {
+			army = {
+				large = "GFX_Portrait_UTA_Michael_J_Turley"
+				small = "GFX_Portrait_UTA_Michael_J_Turley_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = uta_michael_j_turley_adv
+			ledger = army
+			allowed = { original_tag = UTA }
+			traits = { mass_assault_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	UTA_Jefferson_S_Burton = {
+		name = UTA_Jefferson_S_Burton
+		portraits = {
+			army = {
+				large = "GFX_Portrait_UTA_Jefferson_S_Burton"
+				small = "GFX_Portrait_UTA_Jefferson_S_Burton_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = uta_jefferson_s_burton_adv
+			allowed = { original_tag = UTA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	UTA_Brian_L_Tarbet = {
+		name = UTA_Brian_L_Tarbet
+		portraits = {
+			army = {
+				large = "GFX_Portrait_UTA_Brian_L_Tarbet"
+				small = "GFX_Portrait_UTA_Brian_L_Tarbet_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = uta_brian_l_tarbet_adv
+			allowed = { original_tag = UTA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	UTA_Peter_M_Cooke = {
+		name = UTA_Peter_M_Cooke
+		portraits = {
+			army = {
+				large = "GFX_Portrait_UTA_Peter_M_Cooke"
+				small = "GFX_Portrait_UTA_Peter_M_Cooke_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = uta_peter_m_cooke_adv
+			ledger = army
+			allowed = { original_tag = UTA }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	UTA_Maxwell_E_Rich = {
+		name = UTA_Maxwell_E_Rich
+		portraits = {
+			army = {
+				large = "GFX_Portrait_UTA_Maxwell_E_Rich"
+				small = "GFX_Portrait_UTA_Maxwell_E_Rich_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = uta_maxwell_e_rich_adv
+			ledger = army
+			allowed = { original_tag = UTA }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+}

@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = VIR_Glenn_Youngkin #Nationalist/Non-Aligned
 recruit_character = VIR_Abigail_Spanberger #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = VIR_James_W_Ring
+recruit_character = VIR_Joseph_A_Dinonno
+recruit_character = VIR_Timothy_P_Williams
+recruit_character = VIR_George_H_Thomas
+recruit_character = VIR_Lewis_B_Puller
+recruit_character = VIR_Dennis_L_Via
+recruit_character = VIR_Mark_Warner
+recruit_character = VIR_Tim_Kaine
+recruit_character = VIR_Jacqueline_Mars
+
+# end of commanders

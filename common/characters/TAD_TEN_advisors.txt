@@ -1,0 +1,54 @@
+characters = {
+
+	TEN_Marsha_Blackburn = {
+		name = TEN_Marsha_Blackburn
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_TEN_Marsha_Blackburn"
+				small = "GFX_Portrait_TEN_Marsha_Blackburn_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ten_marsha_blackburn_pol
+			allowed = { original_tag = TEN }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	TEN_Bill_Hagerty = {
+		name = TEN_Bill_Hagerty
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_TEN_Bill_Hagerty"
+				small = "GFX_Portrait_TEN_Bill_Hagerty_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ten_bill_hagerty_pol
+			allowed = { original_tag = TEN }
+			traits = { war_industrialist }
+			cost = 150
+		}
+	}
+
+	TEN_Thomas_Frist_III = {
+		name = TEN_Thomas_Frist_III
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_TEN_Thomas_Frist_III"
+				small = "GFX_Portrait_TEN_Thomas_Frist_III_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ten_thomas_frist_iii_pol
+			allowed = { original_tag = TEN }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

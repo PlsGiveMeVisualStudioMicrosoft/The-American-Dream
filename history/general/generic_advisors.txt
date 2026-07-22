@@ -3,6 +3,7 @@
 
 # Political advisors
 every_possible_country = {
+	limit = { NOT = { TAD_has_custom_advisors = yes } }
 	
 	generate_character = {
 		token_base = generic_communist_revolutionary # token will be TAG_token_base
@@ -27,6 +28,7 @@ every_possible_country = {
 }
 
 every_possible_country = {
+	limit = { NOT = { TAD_has_custom_advisors = yes } }
 	
 	generate_character = {
 		token_base = generic_democratic_reformer # token will be TAG_token_base
@@ -51,6 +53,7 @@ every_possible_country = {
 }
 
 every_possible_country = {
+	limit = { NOT = { TAD_has_custom_advisors = yes } }
 	
 	generate_character = {
 		token_base = generic_fascist_demagogue # token will be TAG_token_base
@@ -74,6 +77,7 @@ every_possible_country = {
 }
 
 every_possible_country = {
+	limit = { NOT = { TAD_has_custom_advisors = yes } }
 	
 	generate_character = {
 		token_base = generic_head_of_intelligence # token will be TAG_token_base
@@ -99,6 +103,7 @@ every_possible_country = {
 
 # Military advisors
 every_possible_country = {
+	limit = { NOT = { TAD_has_custom_advisors = yes } }
 	
 	# generic political advisors
 	generate_character = {
@@ -289,6 +294,7 @@ every_possible_country = {
 }
 
 every_possible_country = {
+	limit = { NOT = { TAD_has_custom_advisors = yes } }
 	
 	generate_character = { #Apparently MAN needs this to get an Illusive Gentleman with the new character sytem
 		token_base = generic_head_of_intelligence # token will be TAG_token_base
@@ -313,6 +319,7 @@ every_possible_country = {
 }
 
 every_possible_country = { #Iceland is a special case
+	limit = { NOT = { TAD_has_custom_advisors = yes } }
 	
 	generate_character = {
 		token_base = generic_army_art # token will be TAG_token_base
@@ -402,6 +409,7 @@ every_possible_country = { #Iceland is a special case
 }
 
 every_possible_country = { #BEL has no chief of navy, nor any naval theorists
+	limit = { NOT = { TAD_has_custom_advisors = yes } }
 	
 	generate_character = {
 		token_base = generic_naval_theorist # token will be TAG_token_base
@@ -429,6 +437,7 @@ every_possible_country = { #BEL has no chief of navy, nor any naval theorists
 }
 
 every_possible_country = { #AFG has no chief of navy, nor any naval theorists
+	limit = { NOT = { TAD_has_custom_advisors = yes } }
 	
 	generate_character = {
 		token_base = generic_naval_theorist # token will be TAG_token_base

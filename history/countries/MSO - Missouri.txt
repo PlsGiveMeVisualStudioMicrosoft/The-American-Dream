@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = MSO_Mike_Kehoe #Nationalist/Non-Aligned
 recruit_character = MSO_Lucas_Kunce #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = MSO_Charles_D_Hausman
+recruit_character = MSO_Levon_E_Cumpton
+recruit_character = MSO_Shawn_R_Satterfield
+recruit_character = MSO_Omar_N_Bradley
+recruit_character = MSO_John_J_Pershing
+recruit_character = MSO_Enoch_H_Crowder
+recruit_character = MSO_Josh_Hawley
+recruit_character = MSO_Eric_Schmitt
+recruit_character = MSO_David_Steward
+
+# end of commanders

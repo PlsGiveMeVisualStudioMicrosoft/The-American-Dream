@@ -1,0 +1,54 @@
+characters = {
+
+	ALA_Tommy_Tuberville = {
+		name = ALA_Tommy_Tuberville
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ALA_Tommy_Tuberville"
+				small = "GFX_Portrait_ALA_Tommy_Tuberville_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ala_tommy_tuberville_pol
+			allowed = { original_tag = ALA }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	ALA_Katie_Britt = {
+		name = ALA_Katie_Britt
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ALA_Katie_Britt"
+				small = "GFX_Portrait_ALA_Katie_Britt_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ala_katie_britt_pol
+			allowed = { original_tag = ALA }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	ALA_Jimmy_Rane = {
+		name = ALA_Jimmy_Rane
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ALA_Jimmy_Rane"
+				small = "GFX_Portrait_ALA_Jimmy_Rane_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ala_jimmy_rane_pol
+			allowed = { original_tag = ALA }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

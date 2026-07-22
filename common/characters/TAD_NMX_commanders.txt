@@ -1,0 +1,156 @@
+characters = {
+
+	NMX_Miguel_Aguilar = {
+		name = NMX_Miguel_Aguilar
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NMX_Miguel_Aguilar"
+				small = "GFX_Portrait_NMX_Miguel_Aguilar_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nmx_miguel_aguilar_adv
+			allowed = { original_tag = NMX }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_NMX_proving_ground_command TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	NMX_Kenneth_Nava = {
+		name = NMX_Kenneth_Nava
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NMX_Kenneth_Nava"
+				small = "GFX_Portrait_NMX_Kenneth_Nava_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nmx_kenneth_nava_adv
+			allowed = { original_tag = NMX }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	NMX_Andrew_E_Salas = {
+		name = NMX_Andrew_E_Salas
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NMX_Andrew_E_Salas"
+				small = "GFX_Portrait_NMX_Andrew_E_Salas_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nmx_andrew_e_salas_adv
+			allowed = { original_tag = NMX }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	NMX_Edward_D_Baca = {
+		name = NMX_Edward_D_Baca
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NMX_Edward_D_Baca"
+				small = "GFX_Portrait_NMX_Edward_D_Baca_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = nmx_edward_d_baca_adv
+			ledger = army
+			allowed = { original_tag = NMX }
+			traits = { mass_assault_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer organizer }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	NMX_Kenny_C_Montoya = {
+		name = NMX_Kenny_C_Montoya
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NMX_Kenny_C_Montoya"
+				small = "GFX_Portrait_NMX_Kenny_C_Montoya_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nmx_kenny_c_montoya_adv
+			ledger = army
+			allowed = { original_tag = NMX }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	NMX_Bill_Mauldin = {
+		name = NMX_Bill_Mauldin
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NMX_Bill_Mauldin"
+				small = "GFX_Portrait_NMX_Bill_Mauldin_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nmx_bill_mauldin_adv
+			ledger = army
+			allowed = { original_tag = NMX }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+}

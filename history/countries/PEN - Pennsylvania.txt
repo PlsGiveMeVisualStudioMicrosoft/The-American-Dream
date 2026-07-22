@@ -89,3 +89,15 @@ set_popularities = {
 
 recruit_character = PEN_Josh_Shapiro #Democratic
 recruit_character = PEN_Dave_McCormick #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = PEN_John_R_Pippy
+recruit_character = PEN_Laura_A_McHugh
+recruit_character = PEN_Michael_E_Wegscheider
+recruit_character = PEN_Curtis_M_Scaparrotti
+recruit_character = PEN_George_C_Marshall
+recruit_character = PEN_Winfield_S_Hancock
+recruit_character = PEN_John_Fetterman
+recruit_character = PEN_Jeffrey_Yass
+
+# end of commanders

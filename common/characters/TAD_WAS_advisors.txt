@@ -1,0 +1,54 @@
+characters = {
+
+	WAS_Patty_Murray = {
+		name = WAS_Patty_Murray
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_WAS_Patty_Murray"
+				small = "GFX_Portrait_WAS_Patty_Murray_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = was_patty_murray_pol
+			allowed = { original_tag = WAS }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	WAS_Maria_Cantwell = {
+		name = WAS_Maria_Cantwell
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_WAS_Maria_Cantwell"
+				small = "GFX_Portrait_WAS_Maria_Cantwell_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = was_maria_cantwell_pol
+			allowed = { original_tag = WAS }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+	WAS_Jeff_Bezos = {
+		name = WAS_Jeff_Bezos
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_WAS_Jeff_Bezos"
+				small = "GFX_Portrait_WAS_Jeff_Bezos_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = was_jeff_bezos_pol
+			allowed = { original_tag = WAS }
+			traits = { war_industrialist TAD_two_day_delivery }
+			cost = 150
+		}
+	}
+
+}

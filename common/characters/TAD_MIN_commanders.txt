@@ -1,0 +1,156 @@
+characters = {
+
+	MIN_Shawn_P_Manke = {
+		name = MIN_Shawn_P_Manke
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MIN_Shawn_P_Manke"
+				small = "GFX_Portrait_MIN_Shawn_P_Manke_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = min_shawn_p_manke_adv
+			allowed = { original_tag = MIN }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_MIN_north_star_endurance TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	MIN_Stefanie_K_Horvath = {
+		name = MIN_Stefanie_K_Horvath
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MIN_Stefanie_K_Horvath"
+				small = "GFX_Portrait_MIN_Stefanie_K_Horvath_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = min_stefanie_k_horvath_adv
+			ledger = army
+			allowed = { original_tag = MIN }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	MIN_Jon_A_Jensen = {
+		name = MIN_Jon_A_Jensen
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MIN_Jon_A_Jensen"
+				small = "GFX_Portrait_MIN_Jon_A_Jensen_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = min_jon_a_jensen_adv
+			ledger = army
+			allowed = { original_tag = MIN }
+			traits = { mass_assault_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer organizer }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	MIN_Richard_C_Nash = {
+		name = MIN_Richard_C_Nash
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MIN_Richard_C_Nash"
+				small = "GFX_Portrait_MIN_Richard_C_Nash_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = min_richard_c_nash_adv
+			allowed = { original_tag = MIN }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	MIN_Joseph_T_Ward = {
+		name = MIN_Joseph_T_Ward
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MIN_Joseph_T_Ward"
+				small = "GFX_Portrait_MIN_Joseph_T_Ward_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = min_joseph_t_ward_adv
+			ledger = army
+			allowed = { original_tag = MIN }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	MIN_Charles_W_Lindbergh = {
+		name = MIN_Charles_W_Lindbergh
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MIN_Charles_W_Lindbergh"
+				small = "GFX_Portrait_MIN_Charles_W_Lindbergh_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = min_charles_w_lindbergh_adv
+			allowed = { original_tag = MIN }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+}

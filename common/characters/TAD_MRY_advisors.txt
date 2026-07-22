@@ -1,0 +1,54 @@
+characters = {
+
+	MRY_Chris_Van_Hollen = {
+		name = MRY_Chris_Van_Hollen
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MRY_Chris_Van_Hollen"
+				small = "GFX_Portrait_MRY_Chris_Van_Hollen_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mry_chris_van_hollen_pol
+			allowed = { original_tag = MRY }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	MRY_Angela_Alsobrooks = {
+		name = MRY_Angela_Alsobrooks
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MRY_Angela_Alsobrooks"
+				small = "GFX_Portrait_MRY_Angela_Alsobrooks_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mry_angela_alsobrooks_pol
+			allowed = { original_tag = MRY }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	MRY_Kevin_Plank = {
+		name = MRY_Kevin_Plank
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MRY_Kevin_Plank"
+				small = "GFX_Portrait_MRY_Kevin_Plank_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mry_kevin_plank_pol
+			allowed = { original_tag = MRY }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

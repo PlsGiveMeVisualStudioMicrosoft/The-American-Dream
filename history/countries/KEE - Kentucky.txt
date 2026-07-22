@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = KEN_Andy_Beshear #Democratic
 recruit_character = KEN_Daniel_Cameron #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = KEN_Haldane_B_Lamberton
+recruit_character = KEN_Bryan_M_Howay
+recruit_character = KEN_Charles_M_Walker
+recruit_character = KEN_Simon_B_Buckner_Jr
+recruit_character = KEN_John_B_Hood
+recruit_character = KEN_Roger_H_Nye
+recruit_character = KEN_Mitch_McConnell
+recruit_character = KEN_Rand_Paul
+recruit_character = KEN_Steve_Beshear
+
+# end of commanders

@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = ind_mike_braun_gov
+			allowed = { original_tag = IND }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	IND_Jennifer_McCormick={
 		name=IND_Jennifer_McCormick
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = ind_jennifer_mccormick_gov
+			allowed = { original_tag = IND }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

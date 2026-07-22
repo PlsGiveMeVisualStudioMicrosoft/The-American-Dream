@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = CNT_Ned_Lamont #Democratic
 recruit_character = CNT_Bob_Stefanowski #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = CNT_Francis_J_Evon_Jr
+recruit_character = CNT_Thaddeus_J_Martin
+recruit_character = CNT_Alfred_H_Terry
+recruit_character = CNT_John_Sedgwick
+recruit_character = CNT_Israel_Putnam
+recruit_character = CNT_David_Wooster
+recruit_character = CNT_Richard_Blumenthal
+recruit_character = CNT_Chris_Murphy
+recruit_character = CNT_Ray_Dalio
+
+# end of commanders

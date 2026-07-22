@@ -1,0 +1,157 @@
+characters = {
+
+	NJE_Yvonne_Mays = {
+		name = NJE_Yvonne_Mays
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NJE_Yvonne_Mays"
+				small = "GFX_Portrait_NJE_Yvonne_Mays_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nje_yvonne_mays_adv
+			allowed = { original_tag = NJE }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_NJE_garden_state_industry TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	NJE_Edward_J_Chrystal_Jr = {
+		name = NJE_Edward_J_Chrystal_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NJE_Edward_J_Chrystal_Jr"
+				small = "GFX_Portrait_NJE_Edward_J_Chrystal_Jr_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nje_edward_j_chrystal_jr_adv
+			ledger = army
+			allowed = { original_tag = NJE }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	NJE_Lisa_J_Hou = {
+		name = NJE_Lisa_J_Hou
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NJE_Lisa_J_Hou"
+				small = "GFX_Portrait_NJE_Lisa_J_Hou_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nje_lisa_j_hou_adv
+			allowed = { original_tag = NJE }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	NJE_H_Norman_Schwarzkopf = {
+		name = NJE_H_Norman_Schwarzkopf
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NJE_H_Norman_Schwarzkopf"
+				small = "GFX_Portrait_NJE_H_Norman_Schwarzkopf_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = nje_h_norman_schwarzkopf_adv
+			ledger = army
+			allowed = { original_tag = NJE }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	NJE_Raymond_T_Odierno = {
+		name = NJE_Raymond_T_Odierno
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NJE_Raymond_T_Odierno"
+				small = "GFX_Portrait_NJE_Raymond_T_Odierno_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nje_raymond_t_odierno_adv
+			ledger = army
+			allowed = { original_tag = NJE }
+			traits = { army_armored_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_abct_commander armor_officer panzer_leader war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	NJE_Philip_Kearny = {
+		name = NJE_Philip_Kearny
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NJE_Philip_Kearny"
+				small = "GFX_Portrait_NJE_Philip_Kearny_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nje_philip_kearny_adv
+			ledger = army
+			allowed = { original_tag = NJE }
+			traits = { army_armored_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer trickster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+}

@@ -69,3 +69,37 @@ set_variable = {simp_slot_frame = simp_frame_to_set}
 # Custom characters added by HOI4 Character Generator
 recruit_character = USA_Kamala_Harris
 recruit_character = USA_Trump
+
+##### The American Dream - commanders & advisors #####
+recruit_character = USA_J_Daniel_Caine
+recruit_character = USA_Randy_A_George
+recruit_character = USA_Steven_S_Nordhaus
+recruit_character = USA_Gregory_M_Guillot
+recruit_character = USA_Christopher_T_Donahue
+recruit_character = USA_Christopher_J_Mahoney
+recruit_character = USA_Eric_M_Smith
+recruit_character = USA_James_J_Mingus
+recruit_character = USA_David_M_Hodne
+recruit_character = USA_Bryan_P_Fenton
+recruit_character = USA_Xavier_T_Brunson
+recruit_character = USA_Ronald_P_Clark
+recruit_character = USA_Alexus_G_Grynkewich
+recruit_character = USA_Dagvin_R_M_Anderson
+recruit_character = USA_C_Bradford_Cooper_II
+recruit_character = USA_Samuel_J_Paparo
+recruit_character = USA_Mark_A_Milley
+recruit_character = USA_David_H_Petraeus
+recruit_character = USA_Stanley_A_McChrystal
+recruit_character = USA_Robert_B_Abrams
+recruit_character = USA_Joseph_L_Votel
+recruit_character = USA_Paul_M_Nakasone
+recruit_character = USA_Paul_J_LaCamera
+recruit_character = USA_Michael_E_Kurilla
+recruit_character = USA_JD_Vance
+recruit_character = USA_Marco_Rubio
+recruit_character = USA_Pete_Hegseth
+recruit_character = USA_Scott_Bessent
+recruit_character = USA_Markwayne_Mullin
+recruit_character = USA_Susie_Wiles
+
+# end of commanders
