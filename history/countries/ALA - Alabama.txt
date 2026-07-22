@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = ALA_Kay_Ivey #Nationalist/Non-Aligned
 recruit_character = ALA_Doug_Jones #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = ALA_David_K_Pritchett
+recruit_character = ALA_Roger_A_Presley_Jr
+recruit_character = ALA_Lloyd_J_Austin_III
+recruit_character = ALA_Holland_M_Smith
+recruit_character = ALA_Sheryl_E_Gordon
+recruit_character = ALA_John_Pelham
+recruit_character = ALA_Tommy_Tuberville
+recruit_character = ALA_Katie_Britt
+recruit_character = ALA_Jimmy_Rane
+
+# end of commanders

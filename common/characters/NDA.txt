@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = nda_kelly_armstrong_gov
+			allowed = { original_tag = NDA }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	NDA_Heidi_Heitkamp={
 		name=NDA_Heidi_Heitkamp
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = nda_heidi_heitkamp_gov
+			allowed = { original_tag = NDA }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

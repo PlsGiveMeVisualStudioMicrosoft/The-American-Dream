@@ -1,0 +1,157 @@
+characters = {
+
+	VIR_James_W_Ring = {
+		name = VIR_James_W_Ring
+		portraits = {
+			army = {
+				large = "GFX_Portrait_VIR_James_W_Ring"
+				small = "GFX_Portrait_VIR_James_W_Ring_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = vir_james_w_ring_adv
+			allowed = { original_tag = VIR }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_VIR_old_dominion_staff TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	VIR_Joseph_A_Dinonno = {
+		name = VIR_Joseph_A_Dinonno
+		portraits = {
+			army = {
+				large = "GFX_Portrait_VIR_Joseph_A_Dinonno"
+				small = "GFX_Portrait_VIR_Joseph_A_Dinonno_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = vir_joseph_a_dinonno_adv
+			ledger = army
+			allowed = { original_tag = VIR }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	VIR_Timothy_P_Williams = {
+		name = VIR_Timothy_P_Williams
+		portraits = {
+			army = {
+				large = "GFX_Portrait_VIR_Timothy_P_Williams"
+				small = "GFX_Portrait_VIR_Timothy_P_Williams_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = vir_timothy_p_williams_adv
+			allowed = { original_tag = VIR }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	VIR_George_H_Thomas = {
+		name = VIR_George_H_Thomas
+		portraits = {
+			army = {
+				large = "GFX_Portrait_VIR_George_H_Thomas"
+				small = "GFX_Portrait_VIR_George_H_Thomas_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = vir_george_h_thomas_adv
+			ledger = army
+			allowed = { original_tag = VIR }
+			traits = { mobile_warfare_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_abct_commander armor_officer panzer_leader war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	VIR_Lewis_B_Puller = {
+		name = VIR_Lewis_B_Puller
+		portraits = {
+			army = {
+				large = "GFX_Portrait_VIR_Lewis_B_Puller"
+				small = "GFX_Portrait_VIR_Lewis_B_Puller_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = vir_lewis_b_puller_adv
+			ledger = army
+			allowed = { original_tag = VIR }
+			traits = { army_infantry_2 TAD_both_sides }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_expeditionary naval_invader war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	VIR_Dennis_L_Via = {
+		name = VIR_Dennis_L_Via
+		portraits = {
+			army = {
+				large = "GFX_Portrait_VIR_Dennis_L_Via"
+				small = "GFX_Portrait_VIR_Dennis_L_Via_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = vir_dennis_l_via_adv
+			ledger = army
+			allowed = { original_tag = VIR }
+			traits = { army_logistics_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer skilled_staffer }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+
+}

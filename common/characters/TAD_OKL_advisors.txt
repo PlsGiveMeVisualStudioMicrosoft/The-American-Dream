@@ -1,0 +1,54 @@
+characters = {
+
+	OKL_James_Lankford = {
+		name = OKL_James_Lankford
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_OKL_James_Lankford"
+				small = "GFX_Portrait_OKL_James_Lankford_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = okl_james_lankford_pol
+			allowed = { original_tag = OKL }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	OKL_Alan_Armstrong = {
+		name = OKL_Alan_Armstrong
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_OKL_Alan_Armstrong"
+				small = "GFX_Portrait_OKL_Alan_Armstrong_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = okl_alan_armstrong_pol
+			allowed = { original_tag = OKL }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+	OKL_Harold_Hamm = {
+		name = OKL_Harold_Hamm
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_OKL_Harold_Hamm"
+				small = "GFX_Portrait_OKL_Harold_Hamm_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = okl_harold_hamm_pol
+			allowed = { original_tag = OKL }
+			traits = { war_industrialist }
+			cost = 150
+		}
+	}
+
+}

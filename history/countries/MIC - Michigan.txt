@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = MIC_Gretchen_Whitmer #Democratic
 recruit_character = MIC_Tudor_Dixon #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = MIC_Paul_D_Rogers
+recruit_character = MIC_Scott_W_Hiipakka
+recruit_character = MIC_Bryan_J_Teff
+recruit_character = MIC_Robert_B_Neller
+recruit_character = MIC_Alpheus_S_Williams
+recruit_character = MIC_Gregory_J_Vadnais
+recruit_character = MIC_Gary_Peters
+recruit_character = MIC_Elissa_Slotkin
+recruit_character = MIC_Mary_Barra
+
+# end of commanders

@@ -1,0 +1,156 @@
+characters = {
+
+	IDA_Timothy_J_Donnellan = {
+		name = IDA_Timothy_J_Donnellan
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IDA_Timothy_J_Donnellan"
+				small = "GFX_Portrait_IDA_Timothy_J_Donnellan_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ida_timothy_j_donnellan_adv
+			allowed = { original_tag = IDA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_IDA_gem_state_ranger TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	IDA_Michael_J_Garshak = {
+		name = IDA_Michael_J_Garshak
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IDA_Michael_J_Garshak"
+				small = "GFX_Portrait_IDA_Michael_J_Garshak_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ida_michael_j_garshak_adv
+			ledger = army
+			allowed = { original_tag = IDA }
+			traits = { mass_assault_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	IDA_Gary_L_Sayler = {
+		name = IDA_Gary_L_Sayler
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IDA_Gary_L_Sayler"
+				small = "GFX_Portrait_IDA_Gary_L_Sayler_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ida_gary_l_sayler_adv
+			allowed = { original_tag = IDA }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	IDA_Lawrence_F_Lafrenz = {
+		name = IDA_Lawrence_F_Lafrenz
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IDA_Lawrence_F_Lafrenz"
+				small = "GFX_Portrait_IDA_Lawrence_F_Lafrenz_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ida_lawrence_f_lafrenz_adv
+			allowed = { original_tag = IDA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	IDA_Farin_M_Schwartz = {
+		name = IDA_Farin_M_Schwartz
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IDA_Farin_M_Schwartz"
+				small = "GFX_Portrait_IDA_Farin_M_Schwartz_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ida_farin_m_schwartz_adv
+			ledger = army
+			allowed = { original_tag = IDA }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	IDA_Darrell_V_Manning = {
+		name = IDA_Darrell_V_Manning
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IDA_Darrell_V_Manning"
+				small = "GFX_Portrait_IDA_Darrell_V_Manning_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ida_darrell_v_manning_adv
+			ledger = army
+			allowed = { original_tag = IDA }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+}

@@ -1,0 +1,54 @@
+characters = {
+
+	VIR_Mark_Warner = {
+		name = VIR_Mark_Warner
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_VIR_Mark_Warner"
+				small = "GFX_Portrait_VIR_Mark_Warner_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = vir_mark_warner_pol
+			allowed = { original_tag = VIR }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	VIR_Tim_Kaine = {
+		name = VIR_Tim_Kaine
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_VIR_Tim_Kaine"
+				small = "GFX_Portrait_VIR_Tim_Kaine_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = vir_tim_kaine_pol
+			allowed = { original_tag = VIR }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	VIR_Jacqueline_Mars = {
+		name = VIR_Jacqueline_Mars
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_VIR_Jacqueline_Mars"
+				small = "GFX_Portrait_VIR_Jacqueline_Mars_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = vir_jacqueline_mars_pol
+			allowed = { original_tag = VIR }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

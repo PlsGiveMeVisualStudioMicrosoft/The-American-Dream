@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = OKL_Kevin_Stitt #Nationalist/Non-Aligned
 recruit_character = OKL_Kendra_Horn #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = OKL_Thomas_H_Mancino
+recruit_character = OKL_Michael_C_Thompson
+recruit_character = OKL_Louis_W_Wilson_Jr
+recruit_character = OKL_Tommy_R_Franks
+recruit_character = OKL_Clarence_L_Tinker
+recruit_character = OKL_Ernest_Childers
+recruit_character = OKL_James_Lankford
+recruit_character = OKL_Alan_Armstrong
+recruit_character = OKL_Harold_Hamm
+
+# end of commanders

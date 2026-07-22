@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = RHO_Dan_McKee #Democratic
 recruit_character = RHO_Allan_Fung #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = RHO_Andrew_J_Chevalier
+recruit_character = RHO_Christopher_P_Callahan
+recruit_character = RHO_Nathanael_Greene
+recruit_character = RHO_George_S_Greene
+recruit_character = RHO_Isaac_P_Rodman
+recruit_character = RHO_Bruce_E_Hedlund
+recruit_character = RHO_Jack_Reed
+recruit_character = RHO_Sheldon_Whitehouse
+recruit_character = RHO_Jonathan_Nelson
+
+# end of commanders

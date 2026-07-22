@@ -1,20 +1,20 @@
 technologies = {
 
 
-	@1918 = 0
-	@1934 = 2
-	@1935 = 3
-	@1936 = 4
-	@1937 = 5
-	@1938 = 5
-	@1939 = 7
-	@1940 = 7
-	@1941 = 8
-	@1942 = 9
-	@1943 = 10
-	@1944 = 11
-	@1945 = 12
-	@1946 = 20
+	@1991 = 0
+	@1996 = 2
+	@1997 = 3
+	@1998 = 4
+	@2001 = 5
+	@2004 = 5
+	@2010 = 7
+	@2015 = 7
+	@2019 = 8
+	@2023 = 9
+	@2027 = 10
+	@2031 = 11
+	@2037 = 12
+	@2045 = 20
 
 	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
 	gwtank_chassis = { #Leichttraktor
@@ -117,7 +117,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1918
+		start_year = 1991
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 0 }
@@ -208,7 +208,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1934
+		start_year = 1996
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -1 y = 2 }
@@ -267,7 +267,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1998
 
 		folder = {
 			name = nsb_armour_folder
@@ -392,7 +392,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1938
+		start_year = 2004
 
 		folder = {
 			name = nsb_armour_folder
@@ -462,7 +462,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1941
+		start_year = 2019
 
 		folder = {
 			name = nsb_armour_folder
@@ -512,7 +512,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1941
+		start_year = 2019
 
 		folder = {
 			name = nsb_armour_folder
@@ -602,11 +602,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1938
+		start_year = 2004
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1937 }
+			position = { x = 2 y = @2001 }
 		}
 
 		ai_will_do = {
@@ -706,11 +706,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 2015
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1940 }
+			position = { x = 2 y = @2015 }
 		}
 
 		on_research_complete = {
@@ -862,11 +862,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1943
+		start_year = 2027
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1943 }
+			position = { x = 2 y = @2027 }
 		}
 
 		on_research_complete = {
@@ -986,11 +986,11 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1945
+		start_year = 2037
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1945 }
+			position = { x = 2 y = @2037 }
 		}
 
 		ai_will_do = {
@@ -1074,7 +1074,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1934
+		start_year = 1996
 
 		folder = {
 			name = nsb_armour_folder
@@ -1142,11 +1142,11 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1940
+		start_year = 2015
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 5 y = @1940 }
+			position = { x = 5 y = @2015 }
 		}
 
 		on_research_complete = {
@@ -1222,11 +1222,11 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1943
+		start_year = 2027
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 5 y = @1943 }
+			position = { x = 5 y = @2027 }
 		}
 
 		on_research_complete = {
@@ -1296,10 +1296,10 @@ technologies = {
 		}
 
 		research_cost = 3
-		start_year = 1941
+		start_year = 2019
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 9 y = @1941 }
+			position = { x = 9 y = @2019 }
 		}
 
 		path = {
@@ -1415,10 +1415,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1998
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1935 }
+			position = { x = 3 y = @1997 }
 		}
 
 		ai_will_do = {
@@ -1475,10 +1475,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1938
+		start_year = 2004
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1938 }
+			position = { x = 3 y = @2004 }
 		}
 
 		ai_will_do = {
@@ -1536,10 +1536,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1941
+		start_year = 2019
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1941 }
+			position = { x = 3 y = @2019 }
 		}
 
 		ai_will_do = {
@@ -1583,10 +1583,10 @@ technologies = {
 	armor_tech_4 = {
 
 		research_cost = 1
-		start_year = 1944
+		start_year = 2031
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1944 }
+			position = { x = 3 y = @2031 }
 		}
 
 		on_research_complete = {
@@ -1630,6 +1630,11 @@ technologies = {
 			mio_cat_tech_heavy_armor_and_modules
 		}
 		special_project_specialization = { specialization_land }
+
+		path = {
+			leads_to_tech = tad_active_protection
+			research_cost_coeff = 1
+		}
 	}
 
 	engine_tech_1 = {
@@ -1644,10 +1649,10 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1934
+		start_year = 1996
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1935 }
+			position = { x = 2 y = @1997 }
 		}
 
 		ai_will_do = {
@@ -1702,10 +1707,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1938
+		start_year = 2004
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1938 }
+			position = { x = 2 y = @2004 }
 		}
 
 		ai_will_do = {
@@ -1758,10 +1763,10 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1941
+		start_year = 2019
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1941 }
+			position = { x = 2 y = @2019 }
 		}
 
 		ai_will_do = {
@@ -1805,10 +1810,10 @@ technologies = {
 	engine_tech_4 = {
 
 		research_cost = 1
-		start_year = 1944
+		start_year = 2031
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1944 }
+			position = { x = 2 y = @2031 }
 		}
 		on_research_complete = {
 			custom_effect_tooltip = engine_tech_4_tt
@@ -1850,6 +1855,11 @@ technologies = {
 			mio_cat_tech_heavy_armor_and_modules
 		}
 		special_project_specialization = { specialization_land }
+
+		path = {
+			leads_to_tech = tad_unmanned_turret
+			research_cost_coeff = 1
+		}
 	}
 
 	NOR_rikstanken_tech = {
@@ -1871,7 +1881,7 @@ technologies = {
 		show_effect_as_desc = no
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1998
 
 
 		categories = {
@@ -1895,11 +1905,11 @@ technologies = {
 		is_special_project_tech = yes
 
 		research_cost = 1
-		start_year = 1941
+		start_year = 2019
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 12 y = @1941 }
+			position = { x = 12 y = @2019 }
 		}
 
 		enable_equipment_modules = {
@@ -2028,16 +2038,16 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1943
+		start_year = 2027
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 7 y = @1943 }
+			position = { x = 7 y = @2027 }
 		}
 
 		folder = {
 			name = armour_folder
-			position = { x = 7 y = @1943 }
+			position = { x = 7 y = @2027 }
 		}
 
 		show_effect_as_desc = yes
@@ -2122,16 +2132,16 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1943
+		start_year = 2027
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 9 y = @1943 }
+			position = { x = 9 y = @2027 }
 		}
 
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = @1943 }
+			position = { x = 9 y = @2027 }
 		}
 
 		show_effect_as_desc = yes
@@ -2192,16 +2202,16 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1943
+		start_year = 2027
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 11 y = @1943 }
+			position = { x = 11 y = @2027 }
 		}
 
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = @1943 }
+			position = { x = 11 y = @2027 }
 		}
 
 		show_effect_as_desc = yes
@@ -2256,16 +2266,16 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1945
+		start_year = 2037
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 9 y = @1945 }
+			position = { x = 9 y = @2037 }
 		}
 
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = @1945 }
+			position = { x = 9 y = @2037 }
 		}
 
 		show_effect_as_desc = yes
@@ -2315,11 +2325,11 @@ technologies = {
 		is_special_project_tech = yes
 
 		research_cost = 1
-		start_year = 1943
+		start_year = 2027
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 13 y = @1943 }
+			position = { x = 13 y = @2027 }
 		}
 
 		enable_equipment_modules = {
@@ -2359,4 +2369,105 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
+	### The American Dream - new technologies
+	tad_active_protection = {
+
+		research_cost = 1
+		start_year = 2037
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 3 y = 13 }
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_4_tt
+		}
+		show_effect_as_desc = yes
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 1.5
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+	tad_unmanned_turret = {
+
+		research_cost = 1
+		start_year = 2045
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 13 }
+		}
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_4_tt
+		}
+		show_effect_as_desc = yes
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 1.5
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
 }

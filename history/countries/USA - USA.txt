@@ -1,10 +1,51 @@
 capital = 58
 
-oob = "standard_templates"
+oob = "USA_2025"
 
-# Starting tech
+# Starting tech - covers every subunit used by USA_2025.txt
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	marines = 1
+	paratroopers = 1
+	tech_mountaineers = 1
+	rangers_tech = 1
+	amphibious_mechanized_infantry = 1
+
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+
+	tech_trucks = 1
+	armored_car1 = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+	basic_medium_art = 1
+	motorized_rocket_unit = 1
+}
+
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_medium_tank = 1
+	}
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_medium_tank_chassis = 1
+	}
 }
 
 set_convoys = 20
@@ -22,6 +63,43 @@ set_popularities = {
 	neutrality = 51
 }
 
+set_variable = {simp_frame_to_set = 2 }
+set_variable = {simp_slot_frame = simp_frame_to_set}
+
 # Custom characters added by HOI4 Character Generator
 recruit_character = USA_Kamala_Harris
 recruit_character = USA_Trump
+
+##### The American Dream - commanders & advisors #####
+recruit_character = USA_J_Daniel_Caine
+recruit_character = USA_Randy_A_George
+recruit_character = USA_Steven_S_Nordhaus
+recruit_character = USA_Gregory_M_Guillot
+recruit_character = USA_Christopher_T_Donahue
+recruit_character = USA_Christopher_J_Mahoney
+recruit_character = USA_Eric_M_Smith
+recruit_character = USA_James_J_Mingus
+recruit_character = USA_David_M_Hodne
+recruit_character = USA_Bryan_P_Fenton
+recruit_character = USA_Xavier_T_Brunson
+recruit_character = USA_Ronald_P_Clark
+recruit_character = USA_Alexus_G_Grynkewich
+recruit_character = USA_Dagvin_R_M_Anderson
+recruit_character = USA_C_Bradford_Cooper_II
+recruit_character = USA_Samuel_J_Paparo
+recruit_character = USA_Mark_A_Milley
+recruit_character = USA_David_H_Petraeus
+recruit_character = USA_Stanley_A_McChrystal
+recruit_character = USA_Robert_B_Abrams
+recruit_character = USA_Joseph_L_Votel
+recruit_character = USA_Paul_M_Nakasone
+recruit_character = USA_Paul_J_LaCamera
+recruit_character = USA_Michael_E_Kurilla
+recruit_character = USA_JD_Vance
+recruit_character = USA_Marco_Rubio
+recruit_character = USA_Pete_Hegseth
+recruit_character = USA_Scott_Bessent
+recruit_character = USA_Markwayne_Mullin
+recruit_character = USA_Susie_Wiles
+
+# end of commanders

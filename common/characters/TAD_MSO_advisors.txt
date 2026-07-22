@@ -1,0 +1,54 @@
+characters = {
+
+	MSO_Josh_Hawley = {
+		name = MSO_Josh_Hawley
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MSO_Josh_Hawley"
+				small = "GFX_Portrait_MSO_Josh_Hawley_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mso_josh_hawley_pol
+			allowed = { original_tag = MSO }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	MSO_Eric_Schmitt = {
+		name = MSO_Eric_Schmitt
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MSO_Eric_Schmitt"
+				small = "GFX_Portrait_MSO_Eric_Schmitt_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mso_eric_schmitt_pol
+			allowed = { original_tag = MSO }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+	MSO_David_Steward = {
+		name = MSO_David_Steward
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MSO_David_Steward"
+				small = "GFX_Portrait_MSO_David_Steward_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mso_david_steward_pol
+			allowed = { original_tag = MSO }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

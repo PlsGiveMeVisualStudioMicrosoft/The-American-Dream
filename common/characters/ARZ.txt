@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = arz_katie_hobbs_gov
+			allowed = { original_tag = ARZ }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	ARZ_Kari_Lake={
 		name=ARZ_Kari_Lake
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = arz_kari_lake_gov
+			allowed = { original_tag = ARZ }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

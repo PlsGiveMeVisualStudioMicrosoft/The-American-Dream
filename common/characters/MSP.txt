@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = msp_tate_reeves_gov
+			allowed = { original_tag = MSP }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	MSP_Brandon_Presley={
 		name=MSP_Brandon_Presley
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = msp_brandon_presley_gov
+			allowed = { original_tag = MSP }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

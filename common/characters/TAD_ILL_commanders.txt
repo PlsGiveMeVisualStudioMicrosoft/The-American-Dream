@@ -1,0 +1,154 @@
+characters = {
+
+	ILL_Rodney_C_Boyd = {
+		name = ILL_Rodney_C_Boyd
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ILL_Rodney_C_Boyd"
+				small = "GFX_Portrait_ILL_Rodney_C_Boyd_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ill_rodney_c_boyd_adv
+			allowed = { original_tag = ILL }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_ILL_prairie_arsenal TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	ILL_Daniel_R_McDonough = {
+		name = ILL_Daniel_R_McDonough
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ILL_Daniel_R_McDonough"
+				small = "GFX_Portrait_ILL_Daniel_R_McDonough_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ill_daniel_r_mcdonough_adv
+			allowed = { original_tag = ILL }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	ILL_Richard_J_Hayes_Jr = {
+		name = ILL_Richard_J_Hayes_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ILL_Richard_J_Hayes_Jr"
+				small = "GFX_Portrait_ILL_Richard_J_Hayes_Jr_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ill_richard_j_hayes_jr_adv
+			allowed = { original_tag = ILL }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	ILL_John_A_Logan = {
+		name = ILL_John_A_Logan
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ILL_John_A_Logan"
+				small = "GFX_Portrait_ILL_John_A_Logan_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ill_john_a_logan_adv
+			ledger = army
+			allowed = { original_tag = ILL }
+			traits = { grand_battle_plan_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	ILL_Paul_W_Tibbets = {
+		name = ILL_Paul_W_Tibbets
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ILL_Paul_W_Tibbets"
+				small = "GFX_Portrait_ILL_Paul_W_Tibbets_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ill_paul_w_tibbets_adv
+			allowed = { original_tag = ILL }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer war_hero }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	ILL_William_L_Enyart = {
+		name = ILL_William_L_Enyart
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ILL_William_L_Enyart"
+				small = "GFX_Portrait_ILL_William_L_Enyart_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ill_william_l_enyart_adv
+			allowed = { original_tag = ILL }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+}

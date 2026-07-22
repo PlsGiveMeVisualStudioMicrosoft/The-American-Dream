@@ -1,0 +1,54 @@
+characters = {
+
+	ILL_Dick_Durbin = {
+		name = ILL_Dick_Durbin
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ILL_Dick_Durbin"
+				small = "GFX_Portrait_ILL_Dick_Durbin_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ill_dick_durbin_pol
+			allowed = { original_tag = ILL }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+	ILL_Tammy_Duckworth = {
+		name = ILL_Tammy_Duckworth
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ILL_Tammy_Duckworth"
+				small = "GFX_Portrait_ILL_Tammy_Duckworth_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ill_tammy_duckworth_pol
+			allowed = { original_tag = ILL }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	ILL_Penny_Pritzker = {
+		name = ILL_Penny_Pritzker
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ILL_Penny_Pritzker"
+				small = "GFX_Portrait_ILL_Penny_Pritzker_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ill_penny_pritzker_pol
+			allowed = { original_tag = ILL }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

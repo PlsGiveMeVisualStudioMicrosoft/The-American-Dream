@@ -1,0 +1,155 @@
+characters = {
+
+	IOW_Stephen_E_Osborn = {
+		name = IOW_Stephen_E_Osborn
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IOW_Stephen_E_Osborn"
+				small = "GFX_Portrait_IOW_Stephen_E_Osborn_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = iow_stephen_e_osborn_adv
+			allowed = { original_tag = IOW }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_IOW_hawkeye_discipline TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	IOW_Benjamin_J_Corell = {
+		name = IOW_Benjamin_J_Corell
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IOW_Benjamin_J_Corell"
+				small = "GFX_Portrait_IOW_Benjamin_J_Corell_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = iow_benjamin_j_corell_adv
+			allowed = { original_tag = IOW }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	IOW_Timothy_E_Orr = {
+		name = IOW_Timothy_E_Orr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IOW_Timothy_E_Orr"
+				small = "GFX_Portrait_IOW_Timothy_E_Orr_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = iow_timothy_e_orr_adv
+			allowed = { original_tag = IOW }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	IOW_Charles_A_Horner = {
+		name = IOW_Charles_A_Horner
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IOW_Charles_A_Horner"
+				small = "GFX_Portrait_IOW_Charles_A_Horner_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = iow_charles_a_horner_adv
+			allowed = { original_tag = IOW }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer war_hero }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	IOW_Grenville_M_Dodge = {
+		name = IOW_Grenville_M_Dodge
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IOW_Grenville_M_Dodge"
+				small = "GFX_Portrait_IOW_Grenville_M_Dodge_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = iow_grenville_m_dodge_adv
+			ledger = army
+			allowed = { original_tag = IOW }
+			traits = { superior_firepower_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer skilled_staffer }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+
+	IOW_Hanford_MacNider = {
+		name = IOW_Hanford_MacNider
+		portraits = {
+			army = {
+				large = "GFX_Portrait_IOW_Hanford_MacNider"
+				small = "GFX_Portrait_IOW_Hanford_MacNider_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = iow_hanford_macnider_adv
+			ledger = army
+			allowed = { original_tag = IOW }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+}

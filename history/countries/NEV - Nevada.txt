@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = NEV_Joe_Lombardo #Nationalist/Non-Aligned
 recruit_character = NEV_Steve_Sisolak #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = NEV_D_Rodger_Waters
+recruit_character = NEV_Ondra_L_Berry
+recruit_character = NEV_William_R_Burks
+recruit_character = NEV_Cindy_N_Kirkland
+recruit_character = NEV_Zachary_F_Doser
+recruit_character = NEV_Michael_J_Hanifan
+recruit_character = NEV_Catherine_Cortez_Masto
+recruit_character = NEV_Jacky_Rosen
+recruit_character = NEV_Miriam_Adelson
+
+# end of commanders

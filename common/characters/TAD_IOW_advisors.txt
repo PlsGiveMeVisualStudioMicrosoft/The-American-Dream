@@ -1,0 +1,54 @@
+characters = {
+
+	IOW_Chuck_Grassley = {
+		name = IOW_Chuck_Grassley
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_IOW_Chuck_Grassley"
+				small = "GFX_Portrait_IOW_Chuck_Grassley_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = iow_chuck_grassley_pol
+			allowed = { original_tag = IOW }
+			traits = { silent_workhorse TAD_longest_serving }
+			cost = 150
+		}
+	}
+
+	IOW_Joni_Ernst = {
+		name = IOW_Joni_Ernst
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_IOW_Joni_Ernst"
+				small = "GFX_Portrait_IOW_Joni_Ernst_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = iow_joni_ernst_pol
+			allowed = { original_tag = IOW }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	IOW_Harry_Stine = {
+		name = IOW_Harry_Stine
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_IOW_Harry_Stine"
+				small = "GFX_Portrait_IOW_Harry_Stine_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = iow_harry_stine_pol
+			allowed = { original_tag = IOW }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

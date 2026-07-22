@@ -1,0 +1,54 @@
+characters = {
+
+	MIN_Amy_Klobuchar = {
+		name = MIN_Amy_Klobuchar
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MIN_Amy_Klobuchar"
+				small = "GFX_Portrait_MIN_Amy_Klobuchar_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = min_amy_klobuchar_pol
+			allowed = { original_tag = MIN }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	MIN_Tina_Smith = {
+		name = MIN_Tina_Smith
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MIN_Tina_Smith"
+				small = "GFX_Portrait_MIN_Tina_Smith_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = min_tina_smith_pol
+			allowed = { original_tag = MIN }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	MIN_Glen_Taylor = {
+		name = MIN_Glen_Taylor
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MIN_Glen_Taylor"
+				small = "GFX_Portrait_MIN_Glen_Taylor_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = min_glen_taylor_pol
+			allowed = { original_tag = MIN }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

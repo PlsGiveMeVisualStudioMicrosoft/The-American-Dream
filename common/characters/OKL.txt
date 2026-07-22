@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = okl_kevin_stitt_gov
+			allowed = { original_tag = OKL }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	OKL_Kendra_Horn={
 		name=OKL_Kendra_Horn
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = okl_kendra_horn_gov
+			allowed = { original_tag = OKL }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

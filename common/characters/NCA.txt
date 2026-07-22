@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = nca_josh_stein_gov
+			allowed = { original_tag = NCA }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	NCA_Thom_Tillis={
 		name=NCA_Thom_Tillis
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = nca_thom_tillis_gov
+			allowed = { original_tag = NCA }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

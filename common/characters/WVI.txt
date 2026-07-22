@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = wvi_patrick_morrisey_gov
+			allowed = { original_tag = WVI }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	WVI_Joe_Manchin={
 		name=WVI_Joe_Manchin
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = wvi_joe_manchin_gov
+			allowed = { original_tag = WVI }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

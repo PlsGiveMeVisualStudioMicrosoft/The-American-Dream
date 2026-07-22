@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = IND_Mike_Braun #Nationalist/Non-Aligned
 recruit_character = IND_Jennifer_McCormick #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = IND_Lawrence_M_Muennich
+recruit_character = IND_Daniel_A_Degelow
+recruit_character = IND_R_Dale_Lyles
+recruit_character = IND_Ambrose_Burnside
+recruit_character = IND_Lew_Wallace
+recruit_character = IND_Frank_M_McCoy
+recruit_character = IND_Todd_Young
+recruit_character = IND_Jim_Banks
+recruit_character = IND_David_Ricks
+
+# end of commanders

@@ -1,2 +1,7 @@
 ﻿l_english:
  simp_propoganda_category:0 "Presidental Situation" 
+ MY_CUSTOM_PRESIDENT_DESC_KEY:0 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset took a 1914 Cicero translation and scrambled it..."
+ MY_CUSTOM_VAR_KEY_civil_war:0 "[?civil_war]"
+ MY_CUSTOM_VAR_KEY_aproval_rate:0 "[?aproval_rate]"
+ MY_CUSTOM_TEXT_KEY_aproval_rate:0 "Aproval"
+ MY_CUSTOM_TEXT_KEY_civil_war:0 "Chaos"

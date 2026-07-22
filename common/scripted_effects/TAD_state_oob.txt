@@ -1,0 +1,92 @@
+# ==========================================================================
+# The American Dream - state order of battle loader
+# Call TAD_load_state_oob = yes in the scope of a newly independent state,
+# e.g. inside your release decision/event:
+#     ALA = { TAD_load_state_oob = yes }
+# or generically:  every_country = { limit = { ... } TAD_load_state_oob = yes }
+# ==========================================================================
+
+TAD_load_state_oob = {
+	if = { limit = { tag = ALA } load_oob = "ALA_2025" }
+	else_if = { limit = { tag = ALK } load_oob = "ALK_2025" }
+	else_if = { limit = { tag = ARZ } load_oob = "ARZ_2025" }
+	else_if = { limit = { tag = ARK } load_oob = "ARK_2025" }
+	else_if = { limit = { tag = CAL } load_oob = "CAL_2025" }
+	else_if = { limit = { tag = CLR } load_oob = "CLR_2025" }
+	else_if = { limit = { tag = CNT } load_oob = "CNT_2025" }
+	else_if = { limit = { tag = DEL } load_oob = "DEL_2025" }
+	else_if = { limit = { tag = FLO } load_oob = "FLO_2025" }
+	else_if = { limit = { tag = GOR } load_oob = "GOR_2025" }
+	else_if = { limit = { tag = HII } load_oob = "HII_2025" }
+	else_if = { limit = { tag = IDA } load_oob = "IDA_2025" }
+	else_if = { limit = { tag = ILL } load_oob = "ILL_2025" }
+	else_if = { limit = { tag = IND } load_oob = "IND_2025" }
+	else_if = { limit = { tag = IOW } load_oob = "IOW_2025" }
+	else_if = { limit = { tag = KAN } load_oob = "KAN_2025" }
+	else_if = { limit = { tag = KEE } load_oob = "KEE_2025" }
+	else_if = { limit = { tag = LOU } load_oob = "LOU_2025" }
+	else_if = { limit = { tag = MAI } load_oob = "MAI_2025" }
+	else_if = { limit = { tag = MRY } load_oob = "MRY_2025" }
+	else_if = { limit = { tag = MAS } load_oob = "MAS_2025" }
+	else_if = { limit = { tag = MIC } load_oob = "MIC_2025" }
+	else_if = { limit = { tag = MIN } load_oob = "MIN_2025" }
+	else_if = { limit = { tag = MSP } load_oob = "MSP_2025" }
+	else_if = { limit = { tag = MSO } load_oob = "MSO_2025" }
+	else_if = { limit = { tag = MOO } load_oob = "MOO_2025" }
+	else_if = { limit = { tag = NEB } load_oob = "NEB_2025" }
+	else_if = { limit = { tag = NEV } load_oob = "NEV_2025" }
+	else_if = { limit = { tag = NHA } load_oob = "NHA_2025" }
+	else_if = { limit = { tag = NJE } load_oob = "NJE_2025" }
+	else_if = { limit = { tag = NMX } load_oob = "NMX_2025" }
+	else_if = { limit = { tag = NYK } load_oob = "NYK_2025" }
+	else_if = { limit = { tag = NCA } load_oob = "NCA_2025" }
+	else_if = { limit = { tag = NDA } load_oob = "NDA_2025" }
+	else_if = { limit = { tag = OHI } load_oob = "OHI_2025" }
+	else_if = { limit = { tag = OKL } load_oob = "OKL_2025" }
+	else_if = { limit = { tag = ORE } load_oob = "ORE_2025" }
+	else_if = { limit = { tag = PEN } load_oob = "PEN_2025" }
+	else_if = { limit = { tag = RHO } load_oob = "RHO_2025" }
+	else_if = { limit = { tag = SCA } load_oob = "SCA_2025" }
+	else_if = { limit = { tag = SDA } load_oob = "SDA_2025" }
+	else_if = { limit = { tag = TEN } load_oob = "TEN_2025" }
+	else_if = { limit = { tag = TEX } load_oob = "TEX_2025" }
+	else_if = { limit = { tag = UTA } load_oob = "UTA_2025" }
+	else_if = { limit = { tag = VER } load_oob = "VER_2025" }
+	else_if = { limit = { tag = VIR } load_oob = "VIR_2025" }
+	else_if = { limit = { tag = WAS } load_oob = "WAS_2025" }
+	else_if = { limit = { tag = WVI } load_oob = "WVI_2025" }
+	else_if = { limit = { tag = WSS } load_oob = "WSS_2025" }
+	else_if = { limit = { tag = WYO } load_oob = "WYO_2025" }
+}
+
+# Grants a newly free state the tech needed to field its own OOB.
+TAD_state_starting_tech = {
+	set_technology = {
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		motorised_infantry = 1
+		mechanised_infantry = 1
+		tech_mountaineers = 1
+		rangers_tech = 1
+		tech_support = 1
+		tech_recon = 1
+		tech_engineers = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		tech_signal_company = 1
+		tech_trucks = 1
+		armored_car1 = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+	}
+	if = {
+		limit = { NOT = { has_dlc = "No Step Back" } }
+		set_technology = { gwtank = 1 basic_light_tank = 1 }
+	}
+	if = {
+		limit = { has_dlc = "No Step Back" }
+		set_technology = { gwtank_chassis = 1 basic_light_tank_chassis = 1 }
+	}
+}

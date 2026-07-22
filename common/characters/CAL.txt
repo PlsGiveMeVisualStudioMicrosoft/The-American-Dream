@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = cal_gavin_newsom_gov
+			allowed = { original_tag = CAL }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	CAL_Kevin_McCarthy={
 		name=CAL_Kevin_McCarthy
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = cal_kevin_mccarthy_gov
+			allowed = { original_tag = CAL }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

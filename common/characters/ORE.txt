@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = ore_tina_kotek_gov
+			allowed = { original_tag = ORE }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	ORE_Christine_Drazan={
 		name=ORE_Christine_Drazan
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = ore_christine_drazan_gov
+			allowed = { original_tag = ORE }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

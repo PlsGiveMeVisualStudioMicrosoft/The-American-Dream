@@ -1,0 +1,105 @@
+characters = {
+
+	USA_JD_Vance = {
+		name = USA_JD_Vance
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_USA_JD_Vance"
+				small = "GFX_Portrait_USA_JD_Vance_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = usa_jd_vance_pol
+			allowed = { original_tag = USA }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	USA_Marco_Rubio = {
+		name = USA_Marco_Rubio
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_USA_Marco_Rubio"
+				small = "GFX_Portrait_USA_Marco_Rubio_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = usa_marco_rubio_pol
+			allowed = { original_tag = USA }
+			traits = { ideological_crusader TAD_diplomatic_offensive }
+			cost = 150
+		}
+	}
+
+	USA_Pete_Hegseth = {
+		name = USA_Pete_Hegseth
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_USA_Pete_Hegseth"
+				small = "GFX_Portrait_USA_Pete_Hegseth_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = usa_pete_hegseth_pol
+			allowed = { original_tag = USA }
+			traits = { war_industrialist TAD_pentagon_reformer }
+			cost = 150
+		}
+	}
+
+	USA_Scott_Bessent = {
+		name = USA_Scott_Bessent
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_USA_Scott_Bessent"
+				small = "GFX_Portrait_USA_Scott_Bessent_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = usa_scott_bessent_pol
+			allowed = { original_tag = USA }
+			traits = { captain_of_industry TAD_treasury_hawk }
+			cost = 150
+		}
+	}
+
+	USA_Markwayne_Mullin = {
+		name = USA_Markwayne_Mullin
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_USA_Markwayne_Mullin"
+				small = "GFX_Portrait_USA_Markwayne_Mullin_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = usa_markwayne_mullin_pol
+			allowed = { original_tag = USA }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	USA_Susie_Wiles = {
+		name = USA_Susie_Wiles
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_USA_Susie_Wiles"
+				small = "GFX_Portrait_USA_Susie_Wiles_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = usa_susie_wiles_pol
+			allowed = { original_tag = USA }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+}

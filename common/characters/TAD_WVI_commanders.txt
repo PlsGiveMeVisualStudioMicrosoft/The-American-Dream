@@ -1,0 +1,155 @@
+characters = {
+
+	WVI_James_D_Seward = {
+		name = WVI_James_D_Seward
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WVI_James_D_Seward"
+				small = "GFX_Portrait_WVI_James_D_Seward_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = wvi_james_d_seward_adv
+			allowed = { original_tag = WVI }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_WVI_mountaineer_ambusher TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	WVI_William_E_Crane = {
+		name = WVI_William_E_Crane
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WVI_William_E_Crane"
+				small = "GFX_Portrait_WVI_William_E_Crane_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = wvi_william_e_crane_adv
+			allowed = { original_tag = WVI }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	WVI_Bill_Crane = {
+		name = WVI_Bill_Crane
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WVI_Bill_Crane"
+				small = "GFX_Portrait_WVI_Bill_Crane_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = wvi_bill_crane_adv
+			allowed = { original_tag = WVI }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	WVI_Charles_E_Yeager = {
+		name = WVI_Charles_E_Yeager
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WVI_Charles_E_Yeager"
+				small = "GFX_Portrait_WVI_Charles_E_Yeager_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = wvi_charles_e_yeager_adv
+			allowed = { original_tag = WVI }
+			traits = { air_chief_ground_support_2 TAD_sound_barrier }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer war_hero }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	WVI_Thomas_J_Jackson = {
+		name = WVI_Thomas_J_Jackson
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WVI_Thomas_J_Jackson"
+				small = "GFX_Portrait_WVI_Thomas_J_Jackson_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = wvi_thomas_j_jackson_adv
+			ledger = army
+			allowed = { original_tag = WVI }
+			traits = { grand_battle_plan_expert TAD_stone_wall }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	WVI_Melvin_Zais = {
+		name = WVI_Melvin_Zais
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WVI_Melvin_Zais"
+				small = "GFX_Portrait_WVI_Melvin_Zais_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = wvi_melvin_zais_adv
+			ledger = army
+			allowed = { original_tag = WVI }
+			traits = { army_commando_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_sof_raider commando trickster }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+}

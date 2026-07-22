@@ -1,0 +1,155 @@
+characters = {
+
+	WAS_Gent_Welsh_Jr = {
+		name = WAS_Gent_Welsh_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WAS_Gent_Welsh_Jr"
+				small = "GFX_Portrait_WAS_Gent_Welsh_Jr_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = was_gent_welsh_jr_adv
+			allowed = { original_tag = WAS }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_WAS_evergreen_expeditionary TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	WAS_Bret_D_Daugherty = {
+		name = WAS_Bret_D_Daugherty
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WAS_Bret_D_Daugherty"
+				small = "GFX_Portrait_WAS_Bret_D_Daugherty_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = was_bret_d_daugherty_adv
+			allowed = { original_tag = WAS }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	WAS_Timothy_J_Lowenberg = {
+		name = WAS_Timothy_J_Lowenberg
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WAS_Timothy_J_Lowenberg"
+				small = "GFX_Portrait_WAS_Timothy_J_Lowenberg_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = was_timothy_j_lowenberg_adv
+			allowed = { original_tag = WAS }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	WAS_James_N_Mattis = {
+		name = WAS_James_N_Mattis
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WAS_James_N_Mattis"
+				small = "GFX_Portrait_WAS_James_N_Mattis_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = was_james_n_mattis_adv
+			ledger = army
+			allowed = { original_tag = WAS }
+			traits = { grand_battle_plan_expert TAD_no_better_friend }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_expeditionary naval_invader war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	WAS_John_H_Tuohy = {
+		name = WAS_John_H_Tuohy
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WAS_John_H_Tuohy"
+				small = "GFX_Portrait_WAS_John_H_Tuohy_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = was_john_h_tuohy_adv
+			allowed = { original_tag = WAS }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	WAS_Daniel_Dent = {
+		name = WAS_Daniel_Dent
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WAS_Daniel_Dent"
+				small = "GFX_Portrait_WAS_Daniel_Dent_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = was_daniel_dent_adv
+			ledger = army
+			allowed = { original_tag = WAS }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+}

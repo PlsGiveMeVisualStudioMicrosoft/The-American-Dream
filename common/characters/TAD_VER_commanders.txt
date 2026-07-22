@@ -1,0 +1,156 @@
+characters = {
+
+	VER_Henry_U_Harder = {
+		name = VER_Henry_U_Harder
+		portraits = {
+			army = {
+				large = "GFX_Portrait_VER_Henry_U_Harder"
+				small = "GFX_Portrait_VER_Henry_U_Harder_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ver_henry_u_harder_adv
+			allowed = { original_tag = VER }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_VER_green_mountain_boy TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	VER_Gregory_C_Knight = {
+		name = VER_Gregory_C_Knight
+		portraits = {
+			army = {
+				large = "GFX_Portrait_VER_Gregory_C_Knight"
+				small = "GFX_Portrait_VER_Gregory_C_Knight_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ver_gregory_c_knight_adv
+			allowed = { original_tag = VER }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	VER_Steven_Cray = {
+		name = VER_Steven_Cray
+		portraits = {
+			army = {
+				large = "GFX_Portrait_VER_Steven_Cray"
+				small = "GFX_Portrait_VER_Steven_Cray_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ver_steven_cray_adv
+			allowed = { original_tag = VER }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	VER_George_J_Stannard = {
+		name = VER_George_J_Stannard
+		portraits = {
+			army = {
+				large = "GFX_Portrait_VER_George_J_Stannard"
+				small = "GFX_Portrait_VER_George_J_Stannard_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ver_george_j_stannard_adv
+			ledger = army
+			allowed = { original_tag = VER }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	VER_Truman_Seymour = {
+		name = VER_Truman_Seymour
+		portraits = {
+			army = {
+				large = "GFX_Portrait_VER_Truman_Seymour"
+				small = "GFX_Portrait_VER_Truman_Seymour_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ver_truman_seymour_adv
+			ledger = army
+			allowed = { original_tag = VER }
+			traits = { army_artillery_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_fires_master trait_cautious }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	VER_Ethan_Allen = {
+		name = VER_Ethan_Allen
+		portraits = {
+			army = {
+				large = "GFX_Portrait_VER_Ethan_Allen"
+				small = "GFX_Portrait_VER_Ethan_Allen_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ver_ethan_allen_adv
+			ledger = army
+			allowed = { original_tag = VER }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_legend war_hero old_guard }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+}

@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = WAS_Bob_Ferguson #Democratic
 recruit_character = WAS_Dave_Reichert #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = WAS_Gent_Welsh_Jr
+recruit_character = WAS_Bret_D_Daugherty
+recruit_character = WAS_Timothy_J_Lowenberg
+recruit_character = WAS_James_N_Mattis
+recruit_character = WAS_John_H_Tuohy
+recruit_character = WAS_Daniel_Dent
+recruit_character = WAS_Patty_Murray
+recruit_character = WAS_Maria_Cantwell
+recruit_character = WAS_Jeff_Bezos
+
+# end of commanders

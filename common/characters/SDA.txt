@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = sda_kristi_noem_gov
+			allowed = { original_tag = SDA }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	SDA_Billie_Sutton={
 		name=SDA_Billie_Sutton
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = sda_billie_sutton_gov
+			allowed = { original_tag = SDA }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

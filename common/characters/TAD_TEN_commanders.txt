@@ -1,0 +1,157 @@
+characters = {
+
+	TEN_Warner_A_Ross_II = {
+		name = TEN_Warner_A_Ross_II
+		portraits = {
+			army = {
+				large = "GFX_Portrait_TEN_Warner_A_Ross_II"
+				small = "GFX_Portrait_TEN_Warner_A_Ross_II_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ten_warner_a_ross_ii_adv
+			allowed = { original_tag = TEN }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_TEN_volunteer_spirit TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	TEN_Terry_M_Haston = {
+		name = TEN_Terry_M_Haston
+		portraits = {
+			army = {
+				large = "GFX_Portrait_TEN_Terry_M_Haston"
+				small = "GFX_Portrait_TEN_Terry_M_Haston_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ten_terry_m_haston_adv
+			allowed = { original_tag = TEN }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	TEN_Max_Haston = {
+		name = TEN_Max_Haston
+		portraits = {
+			army = {
+				large = "GFX_Portrait_TEN_Max_Haston"
+				small = "GFX_Portrait_TEN_Max_Haston_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ten_max_haston_adv
+			ledger = army
+			allowed = { original_tag = TEN }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	TEN_Nathan_Bedford_Forrest = {
+		name = TEN_Nathan_Bedford_Forrest
+		portraits = {
+			army = {
+				large = "GFX_Portrait_TEN_Nathan_Bedford_Forrest"
+				small = "GFX_Portrait_TEN_Nathan_Bedford_Forrest_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ten_nathan_bedford_forrest_adv
+			ledger = army
+			allowed = { original_tag = TEN }
+			traits = { army_armored_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer trickster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	TEN_Alvin_C_York = {
+		name = TEN_Alvin_C_York
+		portraits = {
+			army = {
+				large = "GFX_Portrait_TEN_Alvin_C_York"
+				small = "GFX_Portrait_TEN_Alvin_C_York_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ten_alvin_c_york_adv
+			ledger = army
+			allowed = { original_tag = TEN }
+			traits = { grand_battle_plan_expert TAD_turkey_shoot }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	TEN_Carl_W_Stiner = {
+		name = TEN_Carl_W_Stiner
+		portraits = {
+			army = {
+				large = "GFX_Portrait_TEN_Carl_W_Stiner"
+				small = "GFX_Portrait_TEN_Carl_W_Stiner_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ten_carl_w_stiner_adv
+			ledger = army
+			allowed = { original_tag = TEN }
+			traits = { army_commando_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_sof_raider commando trickster war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+
+}

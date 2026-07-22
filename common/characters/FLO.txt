@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = flo_ron_desantis_gov
+			allowed = { original_tag = FLO }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	FLO_Nikki_Fried={
 		name=FLO_Nikki_Fried
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = flo_nikki_fried_gov
+			allowed = { original_tag = FLO }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

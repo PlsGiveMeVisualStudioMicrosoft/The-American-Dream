@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = TEX_Greg_Abbott #Nationalist/Non-Aligned
 recruit_character = TEX_Beto_ORourke #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = TEX_Thomas_M_Suelzer
+recruit_character = TEX_John_B_Bowlin
+recruit_character = TEX_Marc_A_Cisneros
+recruit_character = TEX_Ricardo_S_Sanchez
+recruit_character = TEX_Richard_E_Cavazos
+recruit_character = TEX_Audie_L_Murphy
+recruit_character = TEX_John_Cornyn
+recruit_character = TEX_Ted_Cruz
+recruit_character = TEX_Elon_Musk
+
+# end of commanders

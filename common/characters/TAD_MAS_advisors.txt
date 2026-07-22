@@ -1,0 +1,54 @@
+characters = {
+
+	MAS_Elizabeth_Warren = {
+		name = MAS_Elizabeth_Warren
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MAS_Elizabeth_Warren"
+				small = "GFX_Portrait_MAS_Elizabeth_Warren_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mas_elizabeth_warren_pol
+			allowed = { original_tag = MAS }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	MAS_Ed_Markey = {
+		name = MAS_Ed_Markey
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MAS_Ed_Markey"
+				small = "GFX_Portrait_MAS_Ed_Markey_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mas_ed_markey_pol
+			allowed = { original_tag = MAS }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	MAS_Abigail_Johnson = {
+		name = MAS_Abigail_Johnson
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MAS_Abigail_Johnson"
+				small = "GFX_Portrait_MAS_Abigail_Johnson_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mas_abigail_johnson_pol
+			allowed = { original_tag = MAS }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

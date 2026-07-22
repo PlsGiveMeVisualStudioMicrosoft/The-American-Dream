@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = GEO_Brian_Kemp #Nationalist/Non-Aligned
 recruit_character = GEO_Stacey_Abrams #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = GEO_Richard_D_Wilson
+recruit_character = GEO_Konata_A_Crumbly
+recruit_character = GEO_Bobby_L_Christine
+recruit_character = GEO_Philip_M_Breedlove
+recruit_character = GEO_John_B_Gordon
+recruit_character = GEO_Joseph_Wheeler
+recruit_character = GEO_Jon_Ossoff
+recruit_character = GEO_Raphael_Warnock
+recruit_character = GEO_Ed_Bastian
+
+# end of commanders

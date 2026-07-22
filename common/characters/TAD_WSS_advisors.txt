@@ -1,0 +1,37 @@
+characters = {
+
+	WIS_Tammy_Baldwin = {
+		name = WIS_Tammy_Baldwin
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_WIS_Tammy_Baldwin"
+				small = "GFX_Portrait_WIS_Tammy_Baldwin_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = wis_tammy_baldwin_pol
+			allowed = { original_tag = WSS }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	WIS_John_Menard_Jr = {
+		name = WIS_John_Menard_Jr
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_WIS_John_Menard_Jr"
+				small = "GFX_Portrait_WIS_John_Menard_Jr_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = wis_john_menard_jr_pol
+			allowed = { original_tag = WSS }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

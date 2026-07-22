@@ -1,0 +1,54 @@
+characters = {
+
+	OHI_Jon_Husted = {
+		name = OHI_Jon_Husted
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_OHI_Jon_Husted"
+				small = "GFX_Portrait_OHI_Jon_Husted_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ohi_jon_husted_pol
+			allowed = { original_tag = OHI }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	OHI_Bernie_Moreno = {
+		name = OHI_Bernie_Moreno
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_OHI_Bernie_Moreno"
+				small = "GFX_Portrait_OHI_Bernie_Moreno_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ohi_bernie_moreno_pol
+			allowed = { original_tag = OHI }
+			traits = { war_industrialist }
+			cost = 150
+		}
+	}
+
+	OHI_Les_Wexner = {
+		name = OHI_Les_Wexner
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_OHI_Les_Wexner"
+				small = "GFX_Portrait_OHI_Les_Wexner_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ohi_les_wexner_pol
+			allowed = { original_tag = OHI }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

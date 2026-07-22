@@ -1,0 +1,54 @@
+characters = {
+
+	IDA_Mike_Crapo = {
+		name = IDA_Mike_Crapo
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_IDA_Mike_Crapo"
+				small = "GFX_Portrait_IDA_Mike_Crapo_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ida_mike_crapo_pol
+			allowed = { original_tag = IDA }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	IDA_Jim_Risch = {
+		name = IDA_Jim_Risch
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_IDA_Jim_Risch"
+				small = "GFX_Portrait_IDA_Jim_Risch_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ida_jim_risch_pol
+			allowed = { original_tag = IDA }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+	IDA_Frank_VanderSloot = {
+		name = IDA_Frank_VanderSloot
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_IDA_Frank_VanderSloot"
+				small = "GFX_Portrait_IDA_Frank_VanderSloot_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ida_frank_vandersloot_pol
+			allowed = { original_tag = IDA }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

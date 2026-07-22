@@ -1,0 +1,54 @@
+characters = {
+
+	RHO_Jack_Reed = {
+		name = RHO_Jack_Reed
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_RHO_Jack_Reed"
+				small = "GFX_Portrait_RHO_Jack_Reed_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = rho_jack_reed_pol
+			allowed = { original_tag = RHO }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	RHO_Sheldon_Whitehouse = {
+		name = RHO_Sheldon_Whitehouse
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_RHO_Sheldon_Whitehouse"
+				small = "GFX_Portrait_RHO_Sheldon_Whitehouse_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = rho_sheldon_whitehouse_pol
+			allowed = { original_tag = RHO }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	RHO_Jonathan_Nelson = {
+		name = RHO_Jonathan_Nelson
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_RHO_Jonathan_Nelson"
+				small = "GFX_Portrait_RHO_Jonathan_Nelson_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = rho_jonathan_nelson_pol
+			allowed = { original_tag = RHO }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

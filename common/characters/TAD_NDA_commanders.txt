@@ -1,0 +1,157 @@
+characters = {
+
+	NDA_Mitchell_R_Johnson = {
+		name = NDA_Mitchell_R_Johnson
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NDA_Mitchell_R_Johnson"
+				small = "GFX_Portrait_NDA_Mitchell_R_Johnson_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nda_mitchell_r_johnson_adv
+			allowed = { original_tag = NDA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_NDA_northern_watch TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	NDA_Alan_S_Dohrmann = {
+		name = NDA_Alan_S_Dohrmann
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NDA_Alan_S_Dohrmann"
+				small = "GFX_Portrait_NDA_Alan_S_Dohrmann_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = nda_alan_s_dohrmann_adv
+			ledger = army
+			allowed = { original_tag = NDA }
+			traits = { mass_assault_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	NDA_David_A_Sprynczynatyk = {
+		name = NDA_David_A_Sprynczynatyk
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NDA_David_A_Sprynczynatyk"
+				small = "GFX_Portrait_NDA_David_A_Sprynczynatyk_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nda_david_a_sprynczynatyk_adv
+			ledger = army
+			allowed = { original_tag = NDA }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	NDA_David_C_Jones = {
+		name = NDA_David_C_Jones
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NDA_David_C_Jones"
+				small = "GFX_Portrait_NDA_David_C_Jones_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = nda_david_c_jones_adv
+			allowed = { original_tag = NDA }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer war_hero }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	NDA_Robert_Fischer = {
+		name = NDA_Robert_Fischer
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NDA_Robert_Fischer"
+				small = "GFX_Portrait_NDA_Robert_Fischer_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nda_robert_fischer_adv
+			ledger = army
+			allowed = { original_tag = NDA }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	NDA_Michael_J_Haugen = {
+		name = NDA_Michael_J_Haugen
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NDA_Michael_J_Haugen"
+				small = "GFX_Portrait_NDA_Michael_J_Haugen_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nda_michael_j_haugen_adv
+			ledger = army
+			allowed = { original_tag = NDA }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+}

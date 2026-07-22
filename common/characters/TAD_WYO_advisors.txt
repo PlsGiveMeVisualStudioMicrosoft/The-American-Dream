@@ -1,0 +1,54 @@
+characters = {
+
+	WYO_John_Barrasso = {
+		name = WYO_John_Barrasso
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_WYO_John_Barrasso"
+				small = "GFX_Portrait_WYO_John_Barrasso_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = wyo_john_barrasso_pol
+			allowed = { original_tag = WYO }
+			traits = { backroom_backstabber }
+			cost = 150
+		}
+	}
+
+	WYO_Cynthia_Lummis = {
+		name = WYO_Cynthia_Lummis
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_WYO_Cynthia_Lummis"
+				small = "GFX_Portrait_WYO_Cynthia_Lummis_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = wyo_cynthia_lummis_pol
+			allowed = { original_tag = WYO }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	WYO_Diemer_True = {
+		name = WYO_Diemer_True
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_WYO_Diemer_True"
+				small = "GFX_Portrait_WYO_Diemer_True_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = wyo_diemer_true_pol
+			allowed = { original_tag = WYO }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

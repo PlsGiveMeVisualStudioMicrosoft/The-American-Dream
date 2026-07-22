@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = FLO_Ron_DeSantis #Nationalist/Non-Aligned
 recruit_character = FLO_Nikki_Fried #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = FLO_John_D_Haas
+recruit_character = FLO_Robert_G_Carruthers_III
+recruit_character = FLO_Michael_A_Valle
+recruit_character = FLO_Joseph_W_Stilwell
+recruit_character = FLO_Daniel_James_Jr
+recruit_character = FLO_James_O_Eifert
+recruit_character = FLO_Rick_Scott
+recruit_character = FLO_Ashley_Moody
+recruit_character = FLO_Ken_Griffin
+
+# end of commanders

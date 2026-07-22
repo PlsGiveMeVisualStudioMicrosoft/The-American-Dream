@@ -1,0 +1,54 @@
+characters = {
+
+	GEO_Jon_Ossoff = {
+		name = GEO_Jon_Ossoff
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_GEO_Jon_Ossoff"
+				small = "GFX_Portrait_GEO_Jon_Ossoff_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = geo_jon_ossoff_pol
+			allowed = { original_tag = GOR }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	GEO_Raphael_Warnock = {
+		name = GEO_Raphael_Warnock
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_GEO_Raphael_Warnock"
+				small = "GFX_Portrait_GEO_Raphael_Warnock_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = geo_raphael_warnock_pol
+			allowed = { original_tag = GOR }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+	GEO_Ed_Bastian = {
+		name = GEO_Ed_Bastian
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_GEO_Ed_Bastian"
+				small = "GFX_Portrait_GEO_Ed_Bastian_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = geo_ed_bastian_pol
+			allowed = { original_tag = GOR }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

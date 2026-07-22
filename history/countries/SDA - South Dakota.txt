@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = SDA_Kristi_Noem #Nationalist/Non-Aligned
 recruit_character = SDA_Billie_Sutton #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = SDA_Mark_R_Morrell
+recruit_character = SDA_Jeffrey_L_Marlette
+recruit_character = SDA_Timothy_A_Reisch
+recruit_character = SDA_Joe_Foss
+recruit_character = SDA_Richard_Bong
+recruit_character = SDA_Merton_Tice
+recruit_character = SDA_John_Thune
+recruit_character = SDA_Mike_Rounds
+recruit_character = SDA_T_Denny_Sanford
+
+# end of commanders

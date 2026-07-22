@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = IOW_Kim_Reynolds #Nationalist/Non-Aligned
 recruit_character = IOW_Rob_Sand #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = IOW_Stephen_E_Osborn
+recruit_character = IOW_Benjamin_J_Corell
+recruit_character = IOW_Timothy_E_Orr
+recruit_character = IOW_Charles_A_Horner
+recruit_character = IOW_Grenville_M_Dodge
+recruit_character = IOW_Hanford_MacNider
+recruit_character = IOW_Chuck_Grassley
+recruit_character = IOW_Joni_Ernst
+recruit_character = IOW_Harry_Stine
+
+# end of commanders

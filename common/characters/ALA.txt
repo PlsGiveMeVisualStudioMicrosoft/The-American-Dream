@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = ala_kay_ivey_gov
+			allowed = { original_tag = ALA }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	ALA_Doug_Jones={
 		name=ALA_Doug_Jones
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = ala_doug_jones_gov
+			allowed = { original_tag = ALA }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

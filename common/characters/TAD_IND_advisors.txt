@@ -1,0 +1,54 @@
+characters = {
+
+	IND_Todd_Young = {
+		name = IND_Todd_Young
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_IND_Todd_Young"
+				small = "GFX_Portrait_IND_Todd_Young_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ind_todd_young_pol
+			allowed = { original_tag = IND }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	IND_Jim_Banks = {
+		name = IND_Jim_Banks
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_IND_Jim_Banks"
+				small = "GFX_Portrait_IND_Jim_Banks_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ind_jim_banks_pol
+			allowed = { original_tag = IND }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	IND_David_Ricks = {
+		name = IND_David_Ricks
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_IND_David_Ricks"
+				small = "GFX_Portrait_IND_David_Ricks_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ind_david_ricks_pol
+			allowed = { original_tag = IND }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

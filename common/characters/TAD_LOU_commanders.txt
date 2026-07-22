@@ -1,0 +1,155 @@
+characters = {
+
+	LOU_Thomas_C_Friloux = {
+		name = LOU_Thomas_C_Friloux
+		portraits = {
+			army = {
+				large = "GFX_Portrait_LOU_Thomas_C_Friloux"
+				small = "GFX_Portrait_LOU_Thomas_C_Friloux_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = lou_thomas_c_friloux_adv
+			allowed = { original_tag = LOU }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_LOU_bayou_fighter TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	LOU_Keith_Waddell = {
+		name = LOU_Keith_Waddell
+		portraits = {
+			army = {
+				large = "GFX_Portrait_LOU_Keith_Waddell"
+				small = "GFX_Portrait_LOU_Keith_Waddell_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = lou_keith_waddell_adv
+			allowed = { original_tag = LOU }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	LOU_Glenn_H_Curtis = {
+		name = LOU_Glenn_H_Curtis
+		portraits = {
+			army = {
+				large = "GFX_Portrait_LOU_Glenn_H_Curtis"
+				small = "GFX_Portrait_LOU_Glenn_H_Curtis_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = lou_glenn_h_curtis_adv
+			allowed = { original_tag = LOU }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	LOU_Russel_L_Honore = {
+		name = LOU_Russel_L_Honore
+		portraits = {
+			army = {
+				large = "GFX_Portrait_LOU_Russel_L_Honore"
+				small = "GFX_Portrait_LOU_Russel_L_Honore_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = lou_russel_l_honore_adv
+			ledger = army
+			allowed = { original_tag = LOU }
+			traits = { grand_battle_plan_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	LOU_P_G_T_Beauregard = {
+		name = LOU_P_G_T_Beauregard
+		portraits = {
+			army = {
+				large = "GFX_Portrait_LOU_P_G_T_Beauregard"
+				small = "GFX_Portrait_LOU_P_G_T_Beauregard_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = lou_p_g_t_beauregard_adv
+			ledger = army
+			allowed = { original_tag = LOU }
+			traits = { army_artillery_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_fires_master trait_cautious career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	LOU_Claire_L_Chennault = {
+		name = LOU_Claire_L_Chennault
+		portraits = {
+			army = {
+				large = "GFX_Portrait_LOU_Claire_L_Chennault"
+				small = "GFX_Portrait_LOU_Claire_L_Chennault_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = lou_claire_l_chennault_adv
+			allowed = { original_tag = LOU }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer war_hero }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+}

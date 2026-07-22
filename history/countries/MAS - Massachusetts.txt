@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = MAS_Maura_Healey #Democratic
 recruit_character = MAS_Charlie_Baker #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = MAS_Gary_W_Keefe
+recruit_character = MAS_L_Scott_Rice
+recruit_character = MAS_Joseph_F_Dunford_Jr
+recruit_character = MAS_John_F_Kelly
+recruit_character = MAS_Henry_Knox
+recruit_character = MAS_Joseph_Hooker
+recruit_character = MAS_Elizabeth_Warren
+recruit_character = MAS_Ed_Markey
+recruit_character = MAS_Abigail_Johnson
+
+# end of commanders

@@ -1,0 +1,157 @@
+characters = {
+
+	NYK_Raymond_F_Shields_Jr = {
+		name = NYK_Raymond_F_Shields_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NYK_Raymond_F_Shields_Jr"
+				small = "GFX_Portrait_NYK_Raymond_F_Shields_Jr_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nyk_raymond_f_shields_jr_adv
+			allowed = { original_tag = NYK }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_NYK_empire_state_marshal TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	NYK_Michel_A_Natali = {
+		name = NYK_Michel_A_Natali
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NYK_Michel_A_Natali"
+				small = "GFX_Portrait_NYK_Michel_A_Natali_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nyk_michel_a_natali_adv
+			allowed = { original_tag = NYK }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	NYK_Jack_A_James_Jr = {
+		name = NYK_Jack_A_James_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NYK_Jack_A_James_Jr"
+				small = "GFX_Portrait_NYK_Jack_A_James_Jr_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nyk_jack_a_james_jr_adv
+			ledger = army
+			allowed = { original_tag = NYK }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	NYK_Colin_L_Powell = {
+		name = NYK_Colin_L_Powell
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NYK_Colin_L_Powell"
+				small = "GFX_Portrait_NYK_Colin_L_Powell_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = nyk_colin_l_powell_adv
+			ledger = army
+			allowed = { original_tag = NYK }
+			traits = { military_theorist TAD_overwhelming_force }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	NYK_Emory_Upton = {
+		name = NYK_Emory_Upton
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NYK_Emory_Upton"
+				small = "GFX_Portrait_NYK_Emory_Upton_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nyk_emory_upton_adv
+			ledger = army
+			allowed = { original_tag = NYK }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	NYK_Abner_Doubleday = {
+		name = NYK_Abner_Doubleday
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NYK_Abner_Doubleday"
+				small = "GFX_Portrait_NYK_Abner_Doubleday_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nyk_abner_doubleday_adv
+			ledger = army
+			allowed = { original_tag = NYK }
+			traits = { army_artillery_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_fires_master trait_cautious }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+}

@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = NEB_Jim_Pillen #Nationalist/Non-Aligned
 recruit_character = NEB_Jane_Kleeb #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = NEB_Craig_W_Strong
+recruit_character = NEB_Daryl_L_Bohac
+recruit_character = NEB_Rick_L_Evans
+recruit_character = NEB_John_J_Pershing_III
+recruit_character = NEB_Charles_P_Summerall
+recruit_character = NEB_Roger_T_Lempke
+recruit_character = NEB_Deb_Fischer
+recruit_character = NEB_Pete_Ricketts
+recruit_character = NEB_Warren_Buffett
+
+# end of commanders

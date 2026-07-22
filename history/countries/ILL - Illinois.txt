@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = ILL_JB_Pritzker #Democratic
 recruit_character = ILL_Darren_Bailey #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = ILL_Rodney_C_Boyd
+recruit_character = ILL_Daniel_R_McDonough
+recruit_character = ILL_Richard_J_Hayes_Jr
+recruit_character = ILL_John_A_Logan
+recruit_character = ILL_Paul_W_Tibbets
+recruit_character = ILL_William_L_Enyart
+recruit_character = ILL_Dick_Durbin
+recruit_character = ILL_Tammy_Duckworth
+recruit_character = ILL_Penny_Pritzker
+
+# end of commanders

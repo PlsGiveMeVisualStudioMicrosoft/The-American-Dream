@@ -1,0 +1,157 @@
+characters = {
+
+	ALA_David_K_Pritchett = {
+		name = ALA_David_K_Pritchett
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ALA_David_K_Pritchett"
+				small = "GFX_Portrait_ALA_David_K_Pritchett_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ala_david_k_pritchett_adv
+			allowed = { original_tag = ALA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_ALA_yellowhammer_command TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	ALA_Roger_A_Presley_Jr = {
+		name = ALA_Roger_A_Presley_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ALA_Roger_A_Presley_Jr"
+				small = "GFX_Portrait_ALA_Roger_A_Presley_Jr_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ala_roger_a_presley_jr_adv
+			allowed = { original_tag = ALA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	ALA_Lloyd_J_Austin_III = {
+		name = ALA_Lloyd_J_Austin_III
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ALA_Lloyd_J_Austin_III"
+				small = "GFX_Portrait_ALA_Lloyd_J_Austin_III_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ala_lloyd_j_austin_iii_adv
+			ledger = army
+			allowed = { original_tag = ALA }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	ALA_Holland_M_Smith = {
+		name = ALA_Holland_M_Smith
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ALA_Holland_M_Smith"
+				small = "GFX_Portrait_ALA_Holland_M_Smith_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ala_holland_m_smith_adv
+			ledger = army
+			allowed = { original_tag = ALA }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_expeditionary naval_invader war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	ALA_Sheryl_E_Gordon = {
+		name = ALA_Sheryl_E_Gordon
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ALA_Sheryl_E_Gordon"
+				small = "GFX_Portrait_ALA_Sheryl_E_Gordon_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ala_sheryl_e_gordon_adv
+			ledger = army
+			allowed = { original_tag = ALA }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	ALA_John_Pelham = {
+		name = ALA_John_Pelham
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ALA_John_Pelham"
+				small = "GFX_Portrait_ALA_John_Pelham_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ala_john_pelham_adv
+			ledger = army
+			allowed = { original_tag = ALA }
+			traits = { army_artillery_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_fires_master trait_cautious career_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+}

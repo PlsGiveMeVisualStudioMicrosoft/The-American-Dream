@@ -2,7 +2,7 @@ guiTypes = {
     containerWindowType = {
         name = "simp_propoganda_ui_window"
         position = { x = 0 y = 0 }
-        size = { width = 200 height = 450 }
+        size = { width = 200 height = 525 }
 
         iconType = {
             name = "simp_slot"
@@ -14,22 +14,78 @@ guiTypes = {
             name = "my_custom_text_box"
             position = { x = 150 y = 355 }
             textureFile = ""
-            font = "hoi_arrow_font"
+            font = "hoi_mapfont4"
             borderSize = { x = 0 y = 0 }
             text = "MY_CUSTOM_PRESIDENT_KEY"
             maxWidth = 200
             maxHeight = 200
             format = centre
         }
+        instantTextBoxType = {
+            name = "my_custom_var_box_civil_war"
+            position = { x = -33 y = 435 }
+            textureFile = ""
+            font = "hoi_arrow_font"
+            borderSize = { x = 0 y = 0 }
+            text = "MY_CUSTOM_VAR_KEY_civil_war"
+            maxWidth = 200
+            maxHeight = 200
+            format = centre
+        }
+        instantTextBoxType = {
+            name = "my_custom_var_box_aproval_rate"
+            position = { x = 342 y = 435 }
+            textureFile = ""
+            font = "hoi_arrow_font"
+            borderSize = { x = 0 y = 0 }
+            text = "MY_CUSTOM_VAR_KEY_aproval_rate"
+            maxWidth = 200
+            maxHeight = 200
+            format = centre
+        }
+        instantTextBoxType = {
+            name = "my_custom_TEXT_box_civil_war"
+            position = { x = -33 y = 0 }
+            textureFile = ""
+            font = "hoi_arrow_font"
+            borderSize = { x = 0 y = 0 }
+            text = "MY_CUSTOM_TEXT_KEY_civil_war"
+            maxWidth = 200
+            maxHeight = 200
+            format = centre
+        }
+        instantTextBoxType = {
+            name = "my_custom_TEXT_box_aproval_rate"
+            position = { x = 338 y = 0 }
+            textureFile = ""
+            font = "hoi_arrow_font"
+            borderSize = { x = 0 y = 0 }
+            text = "MY_CUSTOM_TEXT_KEY_aproval_rate"
+            maxWidth = 200
+            maxHeight = 200
+            format = centre
+        }
+        instantTextBoxType = {
+            name = "my_custom_text_box2"
+            position = { x = 115 y = 385 }
+            textureFile = ""
+            font = "hoi_18b"
+            borderSize = { x = 0 y = 0 }
+            text = "MY_CUSTOM_PRESIDENT_DESC_KEY"
+            maxWidth = 275
+            maxHeight = 200
+            format = centre
+        }
+
 	iconType = {
  		name = "GFX_ISK_cw_progress_bar"
   		spriteType = "GFX_ISK_cw"
-  		position = { x = 50 y = 50 }
+  		position = { x = 425 y = 50 }
 		}
 	iconType = {
  		name = "GFX_ISK_cw_progress_bar_2"
   		spriteType = "GFX_ISK_cw_2"
-  		position = { x = 425 y = 50 }
+  		position = { x = 50 y = 50 }
 		}   
        
     }

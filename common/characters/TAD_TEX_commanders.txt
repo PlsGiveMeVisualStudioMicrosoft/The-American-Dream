@@ -1,0 +1,158 @@
+characters = {
+
+	TEX_Thomas_M_Suelzer = {
+		name = TEX_Thomas_M_Suelzer
+		portraits = {
+			army = {
+				large = "GFX_Portrait_TEX_Thomas_M_Suelzer"
+				small = "GFX_Portrait_TEX_Thomas_M_Suelzer_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = tex_thomas_m_suelzer_adv
+			allowed = { original_tag = TEX }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_TEX_lone_star_marshal TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	TEX_John_B_Bowlin = {
+		name = TEX_John_B_Bowlin
+		portraits = {
+			army = {
+				large = "GFX_Portrait_TEX_John_B_Bowlin"
+				small = "GFX_Portrait_TEX_John_B_Bowlin_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = tex_john_b_bowlin_adv
+			ledger = army
+			allowed = { original_tag = TEX }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	TEX_Marc_A_Cisneros = {
+		name = TEX_Marc_A_Cisneros
+		portraits = {
+			army = {
+				large = "GFX_Portrait_TEX_Marc_A_Cisneros"
+				small = "GFX_Portrait_TEX_Marc_A_Cisneros_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = tex_marc_a_cisneros_adv
+			ledger = army
+			allowed = { original_tag = TEX }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	TEX_Ricardo_S_Sanchez = {
+		name = TEX_Ricardo_S_Sanchez
+		portraits = {
+			army = {
+				large = "GFX_Portrait_TEX_Ricardo_S_Sanchez"
+				small = "GFX_Portrait_TEX_Ricardo_S_Sanchez_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = tex_ricardo_s_sanchez_adv
+			ledger = army
+			allowed = { original_tag = TEX }
+			traits = { army_armored_2 TAD_thunder_run }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_abct_commander armor_officer panzer_leader }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	TEX_Richard_E_Cavazos = {
+		name = TEX_Richard_E_Cavazos
+		portraits = {
+			army = {
+				large = "GFX_Portrait_TEX_Richard_E_Cavazos"
+				small = "GFX_Portrait_TEX_Richard_E_Cavazos_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = tex_richard_e_cavazos_adv
+			ledger = army
+			allowed = { original_tag = TEX }
+			traits = { grand_battle_plan_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	TEX_Audie_L_Murphy = {
+		name = TEX_Audie_L_Murphy
+		portraits = {
+			army = {
+				large = "GFX_Portrait_TEX_Audie_L_Murphy"
+				small = "GFX_Portrait_TEX_Audie_L_Murphy_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = tex_audie_l_murphy_adv
+			ledger = army
+			allowed = { original_tag = TEX }
+			traits = { army_infantry_2 TAD_to_hell_and_back }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+}

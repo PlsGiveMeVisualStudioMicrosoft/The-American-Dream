@@ -1,0 +1,37 @@
+characters = {
+
+	MAI_Angus_King = {
+		name = MAI_Angus_King
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MAI_Angus_King"
+				small = "GFX_Portrait_MAI_Angus_King_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mai_angus_king_pol
+			allowed = { original_tag = MAI }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	MAI_Shawn_Gorman = {
+		name = MAI_Shawn_Gorman
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MAI_Shawn_Gorman"
+				small = "GFX_Portrait_MAI_Shawn_Gorman_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mai_shawn_gorman_pol
+			allowed = { original_tag = MAI }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

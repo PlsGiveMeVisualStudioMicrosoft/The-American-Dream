@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = KAN_Laura_Kelly #Democratic
 recruit_character = KAN_Kris_Kobach #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = KAN_Michael_T_Venerdi
+recruit_character = KAN_David_C_Weishaar
+recruit_character = KAN_Lee_Tafanelli
+recruit_character = KAN_Dwight_D_Eisenhower
+recruit_character = KAN_Richard_E_Hawley
+recruit_character = KAN_Frederick_Funston
+recruit_character = KAN_Jerry_Moran
+recruit_character = KAN_Roger_Marshall
+recruit_character = KAN_Charles_Koch
+
+# end of commanders

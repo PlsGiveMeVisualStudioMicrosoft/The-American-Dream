@@ -1,0 +1,121 @@
+##############################################################################
+# TENNESSEE - STATE ORDER OF BATTLE
+# National Guard, State Defense Force and law enforcement
+# Land forces only. Generated for The American Dream.
+##############################################################################
+
+# Loaded when this state becomes independent.
+# Until then these formations are represented inside the USA OOB.
+
+##### Division Templates #####
+division_template = {
+	name = "National Guard Armored Brigade"		# ARNG ABCT/CavBCT - Abrams & Bradley
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		military_police = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "National Guard Support Brigade"		# MEB / sustainment / engineer troops
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		mot_anti_air_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		military_police = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "State Defense Force"		# volunteer SDF under sole state control
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "State Police"		# highway patrol / state troopers, SWAT
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+##### Order of Battle #####
+units = {
+	division = {
+		name = "278th Armored Cavalry Regiment"
+		location = 7718		# Knoxville - Abrams/Bradley
+		division_template = "National Guard Armored Brigade"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "194th Engineer Brigade"
+		location = 7774		# Nashville
+		division_template = "National Guard Support Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Tennessee State Guard"
+		location = 7774		# TNSG
+		division_template = "State Defense Force"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "Tennessee Highway Patrol"
+		location = 7774
+		division_template = "State Police"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.45
+	}
+}

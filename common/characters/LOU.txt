@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = lou_jeff_landry_gov
+			allowed = { original_tag = LOU }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	LOU_John_Bel_Edwards={
 		name=LOU_John_Bel_Edwards
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = lou_john_bel_edwards_gov
+			allowed = { original_tag = LOU }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

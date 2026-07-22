@@ -1,0 +1,156 @@
+characters = {
+
+	MIC_Paul_D_Rogers = {
+		name = MIC_Paul_D_Rogers
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MIC_Paul_D_Rogers"
+				small = "GFX_Portrait_MIC_Paul_D_Rogers_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = mic_paul_d_rogers_adv
+			allowed = { original_tag = MIC }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_MIC_great_lakes_armorer TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	MIC_Scott_W_Hiipakka = {
+		name = MIC_Scott_W_Hiipakka
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MIC_Scott_W_Hiipakka"
+				small = "GFX_Portrait_MIC_Scott_W_Hiipakka_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = mic_scott_w_hiipakka_adv
+			ledger = army
+			allowed = { original_tag = MIC }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	MIC_Bryan_J_Teff = {
+		name = MIC_Bryan_J_Teff
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MIC_Bryan_J_Teff"
+				small = "GFX_Portrait_MIC_Bryan_J_Teff_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = mic_bryan_j_teff_adv
+			allowed = { original_tag = MIC }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	MIC_Robert_B_Neller = {
+		name = MIC_Robert_B_Neller
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MIC_Robert_B_Neller"
+				small = "GFX_Portrait_MIC_Robert_B_Neller_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = mic_robert_b_neller_adv
+			ledger = army
+			allowed = { original_tag = MIC }
+			traits = { grand_battle_plan_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_expeditionary naval_invader war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	MIC_Alpheus_S_Williams = {
+		name = MIC_Alpheus_S_Williams
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MIC_Alpheus_S_Williams"
+				small = "GFX_Portrait_MIC_Alpheus_S_Williams_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = mic_alpheus_s_williams_adv
+			ledger = army
+			allowed = { original_tag = MIC }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	MIC_Gregory_J_Vadnais = {
+		name = MIC_Gregory_J_Vadnais
+		portraits = {
+			army = {
+				large = "GFX_Portrait_MIC_Gregory_J_Vadnais"
+				small = "GFX_Portrait_MIC_Gregory_J_Vadnais_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = mic_gregory_j_vadnais_adv
+			allowed = { original_tag = MIC }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+}

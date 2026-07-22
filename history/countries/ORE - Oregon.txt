@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = ORE_Tina_Kotek #Democratic
 recruit_character = ORE_Christine_Drazan #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = ORE_Alan_Gronewold
+recruit_character = ORE_Michael_E_Stencel
+recruit_character = ORE_Daniel_R_Hokanson
+recruit_character = ORE_Adrian_Sullivan
+recruit_character = ORE_Gregory_Day
+recruit_character = ORE_Terrence_M_Kraft
+recruit_character = ORE_Ron_Wyden
+recruit_character = ORE_Jeff_Merkley
+recruit_character = ORE_Phil_Knight
+
+# end of commanders

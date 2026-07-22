@@ -1,0 +1,156 @@
+characters = {
+
+	SCA_Robin_B_Stilwell = {
+		name = SCA_Robin_B_Stilwell
+		portraits = {
+			army = {
+				large = "GFX_Portrait_SCA_Robin_B_Stilwell"
+				small = "GFX_Portrait_SCA_Robin_B_Stilwell_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = sca_robin_b_stilwell_adv
+			allowed = { original_tag = SCA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_SCA_palmetto_stand TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	SCA_Jeffrey_A_Jones = {
+		name = SCA_Jeffrey_A_Jones
+		portraits = {
+			army = {
+				large = "GFX_Portrait_SCA_Jeffrey_A_Jones"
+				small = "GFX_Portrait_SCA_Jeffrey_A_Jones_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = sca_jeffrey_a_jones_adv
+			allowed = { original_tag = SCA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	SCA_Richard_A_Wholey_Jr = {
+		name = SCA_Richard_A_Wholey_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_SCA_Richard_A_Wholey_Jr"
+				small = "GFX_Portrait_SCA_Richard_A_Wholey_Jr_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = sca_richard_a_wholey_jr_adv
+			ledger = army
+			allowed = { original_tag = SCA }
+			traits = { army_artillery_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_fires_master trait_cautious }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	SCA_William_C_Westmoreland = {
+		name = SCA_William_C_Westmoreland
+		portraits = {
+			army = {
+				large = "GFX_Portrait_SCA_William_C_Westmoreland"
+				small = "GFX_Portrait_SCA_William_C_Westmoreland_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = sca_william_c_westmoreland_adv
+			ledger = army
+			allowed = { original_tag = SCA }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	SCA_Wade_Hampton_III = {
+		name = SCA_Wade_Hampton_III
+		portraits = {
+			army = {
+				large = "GFX_Portrait_SCA_Wade_Hampton_III"
+				small = "GFX_Portrait_SCA_Wade_Hampton_III_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = sca_wade_hampton_iii_adv
+			ledger = army
+			allowed = { original_tag = SCA }
+			traits = { army_armored_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer trickster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	SCA_Charles_Duke = {
+		name = SCA_Charles_Duke
+		portraits = {
+			army = {
+				large = "GFX_Portrait_SCA_Charles_Duke"
+				small = "GFX_Portrait_SCA_Charles_Duke_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = sca_charles_duke_adv
+			allowed = { original_tag = SCA }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+}

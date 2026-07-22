@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = MRY_Wes_Moore #Democratic
 recruit_character = MRY_Larry_Hogan #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = MRY_Janeen_L_Birckhead
+recruit_character = MRY_Victor_R_Macias
+recruit_character = MRY_Timothy_E_Gowen
+recruit_character = MRY_David_H_Berger
+recruit_character = MRY_William_E_Ward
+recruit_character = MRY_John_Eager_Howard
+recruit_character = MRY_Chris_Van_Hollen
+recruit_character = MRY_Angela_Alsobrooks
+recruit_character = MRY_Kevin_Plank
+
+# end of commanders

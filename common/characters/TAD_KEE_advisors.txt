@@ -1,0 +1,54 @@
+characters = {
+
+	KEN_Mitch_McConnell = {
+		name = KEN_Mitch_McConnell
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_KEN_Mitch_McConnell"
+				small = "GFX_Portrait_KEN_Mitch_McConnell_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ken_mitch_mcconnell_pol
+			allowed = { original_tag = KEE }
+			traits = { backroom_backstabber TAD_master_of_the_floor }
+			cost = 150
+		}
+	}
+
+	KEN_Rand_Paul = {
+		name = KEN_Rand_Paul
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_KEN_Rand_Paul"
+				small = "GFX_Portrait_KEN_Rand_Paul_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ken_rand_paul_pol
+			allowed = { original_tag = KEE }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	KEN_Steve_Beshear = {
+		name = KEN_Steve_Beshear
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_KEN_Steve_Beshear"
+				small = "GFX_Portrait_KEN_Steve_Beshear_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ken_steve_beshear_pol
+			allowed = { original_tag = KEE }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+}

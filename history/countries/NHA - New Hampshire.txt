@@ -89,3 +89,15 @@ set_popularities = {
 
 recruit_character = NHA_Kelly_Ayotte #Nationalist/Non-Aligned
 recruit_character = NHA_Jeanne_Shaheen #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = NHA_David_J_Mikolaities
+recruit_character = NHA_Warren_E_Perry
+recruit_character = NHA_Laurie_M_Farris
+recruit_character = NHA_John_Stark
+recruit_character = NHA_Fitz_John_Porter
+recruit_character = NHA_Benjamin_F_Butler
+recruit_character = NHA_Maggie_Hassan
+recruit_character = NHA_Dean_Kamen
+
+# end of commanders

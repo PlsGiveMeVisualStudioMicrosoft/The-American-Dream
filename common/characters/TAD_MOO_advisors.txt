@@ -1,0 +1,54 @@
+characters = {
+
+	MON_Steve_Daines = {
+		name = MON_Steve_Daines
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MON_Steve_Daines"
+				small = "GFX_Portrait_MON_Steve_Daines_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mon_steve_daines_pol
+			allowed = { original_tag = MOO }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	MON_Tim_Sheehy = {
+		name = MON_Tim_Sheehy
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MON_Tim_Sheehy"
+				small = "GFX_Portrait_MON_Tim_Sheehy_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mon_tim_sheehy_pol
+			allowed = { original_tag = MOO }
+			traits = { war_industrialist }
+			cost = 150
+		}
+	}
+
+	MON_Dennis_Washington = {
+		name = MON_Dennis_Washington
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_MON_Dennis_Washington"
+				small = "GFX_Portrait_MON_Dennis_Washington_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mon_dennis_washington_pol
+			allowed = { original_tag = MOO }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

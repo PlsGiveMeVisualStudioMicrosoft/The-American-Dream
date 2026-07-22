@@ -1,0 +1,156 @@
+characters = {
+
+	RHO_Andrew_J_Chevalier = {
+		name = RHO_Andrew_J_Chevalier
+		portraits = {
+			army = {
+				large = "GFX_Portrait_RHO_Andrew_J_Chevalier"
+				small = "GFX_Portrait_RHO_Andrew_J_Chevalier_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = rho_andrew_j_chevalier_adv
+			allowed = { original_tag = RHO }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_RHO_ocean_state_professional TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	RHO_Christopher_P_Callahan = {
+		name = RHO_Christopher_P_Callahan
+		portraits = {
+			army = {
+				large = "GFX_Portrait_RHO_Christopher_P_Callahan"
+				small = "GFX_Portrait_RHO_Christopher_P_Callahan_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = rho_christopher_p_callahan_adv
+			allowed = { original_tag = RHO }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	RHO_Nathanael_Greene = {
+		name = RHO_Nathanael_Greene
+		portraits = {
+			army = {
+				large = "GFX_Portrait_RHO_Nathanael_Greene"
+				small = "GFX_Portrait_RHO_Nathanael_Greene_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = rho_nathanael_greene_adv
+			ledger = army
+			allowed = { original_tag = RHO }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_legend war_hero old_guard }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	RHO_George_S_Greene = {
+		name = RHO_George_S_Greene
+		portraits = {
+			army = {
+				large = "GFX_Portrait_RHO_George_S_Greene"
+				small = "GFX_Portrait_RHO_George_S_Greene_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = rho_george_s_greene_adv
+			ledger = army
+			allowed = { original_tag = RHO }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	RHO_Isaac_P_Rodman = {
+		name = RHO_Isaac_P_Rodman
+		portraits = {
+			army = {
+				large = "GFX_Portrait_RHO_Isaac_P_Rodman"
+				small = "GFX_Portrait_RHO_Isaac_P_Rodman_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = rho_isaac_p_rodman_adv
+			ledger = army
+			allowed = { original_tag = RHO }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	RHO_Bruce_E_Hedlund = {
+		name = RHO_Bruce_E_Hedlund
+		portraits = {
+			army = {
+				large = "GFX_Portrait_RHO_Bruce_E_Hedlund"
+				small = "GFX_Portrait_RHO_Bruce_E_Hedlund_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = rho_bruce_e_hedlund_adv
+			allowed = { original_tag = RHO }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+}

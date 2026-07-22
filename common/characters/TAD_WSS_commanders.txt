@@ -1,0 +1,155 @@
+characters = {
+
+	WIS_Matthew_J_Strub = {
+		name = WIS_Matthew_J_Strub
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WIS_Matthew_J_Strub"
+				small = "GFX_Portrait_WIS_Matthew_J_Strub_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = wis_matthew_j_strub_adv
+			allowed = { original_tag = WSS }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_WIS_badger_marksman TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	WIS_Paul_E_Knapp = {
+		name = WIS_Paul_E_Knapp
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WIS_Paul_E_Knapp"
+				small = "GFX_Portrait_WIS_Paul_E_Knapp_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = wis_paul_e_knapp_adv
+			allowed = { original_tag = WSS }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	WIS_Donald_P_Dunbar = {
+		name = WIS_Donald_P_Dunbar
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WIS_Donald_P_Dunbar"
+				small = "GFX_Portrait_WIS_Donald_P_Dunbar_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = wis_donald_p_dunbar_adv
+			allowed = { original_tag = WSS }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	WIS_Lucius_Fairchild = {
+		name = WIS_Lucius_Fairchild
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WIS_Lucius_Fairchild"
+				small = "GFX_Portrait_WIS_Lucius_Fairchild_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = wis_lucius_fairchild_adv
+			ledger = army
+			allowed = { original_tag = WSS }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	WIS_Arthur_MacArthur_Jr = {
+		name = WIS_Arthur_MacArthur_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WIS_Arthur_MacArthur_Jr"
+				small = "GFX_Portrait_WIS_Arthur_MacArthur_Jr_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = wis_arthur_macarthur_jr_adv
+			ledger = army
+			allowed = { original_tag = WSS }
+			traits = { grand_battle_plan_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	WIS_Billy_Mitchell = {
+		name = WIS_Billy_Mitchell
+		portraits = {
+			army = {
+				large = "GFX_Portrait_WIS_Billy_Mitchell"
+				small = "GFX_Portrait_WIS_Billy_Mitchell_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = wis_billy_mitchell_adv
+			allowed = { original_tag = WSS }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer war_hero }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+}

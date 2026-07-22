@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = geo_brian_kemp_gov
+			allowed = { original_tag = GOR }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	GEO_Stacey_Abrams={
 		name=GEO_Stacey_Abrams
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = geo_stacey_abrams_gov
+			allowed = { original_tag = GOR }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

@@ -1,0 +1,54 @@
+characters = {
+
+	WVI_Shelley_Moore_Capito = {
+		name = WVI_Shelley_Moore_Capito
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_WVI_Shelley_Moore_Capito"
+				small = "GFX_Portrait_WVI_Shelley_Moore_Capito_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = wvi_shelley_moore_capito_pol
+			allowed = { original_tag = WVI }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	WVI_Jim_Justice = {
+		name = WVI_Jim_Justice
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_WVI_Jim_Justice"
+				small = "GFX_Portrait_WVI_Jim_Justice_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = wvi_jim_justice_pol
+			allowed = { original_tag = WVI }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+	WVI_Brad_Smith = {
+		name = WVI_Brad_Smith
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_WVI_Brad_Smith"
+				small = "GFX_Portrait_WVI_Brad_Smith_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = wvi_brad_smith_pol
+			allowed = { original_tag = WVI }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+}

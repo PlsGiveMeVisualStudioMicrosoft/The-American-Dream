@@ -1,0 +1,54 @@
+characters = {
+
+	ORE_Ron_Wyden = {
+		name = ORE_Ron_Wyden
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ORE_Ron_Wyden"
+				small = "GFX_Portrait_ORE_Ron_Wyden_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ore_ron_wyden_pol
+			allowed = { original_tag = ORE }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	ORE_Jeff_Merkley = {
+		name = ORE_Jeff_Merkley
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ORE_Jeff_Merkley"
+				small = "GFX_Portrait_ORE_Jeff_Merkley_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ore_jeff_merkley_pol
+			allowed = { original_tag = ORE }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	ORE_Phil_Knight = {
+		name = ORE_Phil_Knight
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ORE_Phil_Knight"
+				small = "GFX_Portrait_ORE_Phil_Knight_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ore_phil_knight_pol
+			allowed = { original_tag = ORE }
+			traits = { captain_of_industry TAD_just_do_it }
+			cost = 150
+		}
+	}
+
+}

@@ -1,0 +1,156 @@
+characters = {
+
+	ALK_Torrence_W_Saxe = {
+		name = ALK_Torrence_W_Saxe
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ALK_Torrence_W_Saxe"
+				small = "GFX_Portrait_ALK_Torrence_W_Saxe_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = alk_torrence_w_saxe_adv
+			allowed = { original_tag = ALK }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_ALK_last_frontier_warden TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	ALK_Vincent_K_Brooks = {
+		name = ALK_Vincent_K_Brooks
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ALK_Vincent_K_Brooks"
+				small = "GFX_Portrait_ALK_Vincent_K_Brooks_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = alk_vincent_k_brooks_adv
+			ledger = army
+			allowed = { original_tag = ALK }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	ALK_Laurie_J_Hummel = {
+		name = ALK_Laurie_J_Hummel
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ALK_Laurie_J_Hummel"
+				small = "GFX_Portrait_ALK_Laurie_J_Hummel_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = alk_laurie_j_hummel_adv
+			allowed = { original_tag = ALK }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	ALK_Wayne_Don = {
+		name = ALK_Wayne_Don
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ALK_Wayne_Don"
+				small = "GFX_Portrait_ALK_Wayne_Don_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = alk_wayne_don_adv
+			ledger = army
+			allowed = { original_tag = ALK }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	ALK_Randy_A_Kee = {
+		name = ALK_Randy_A_Kee
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ALK_Randy_A_Kee"
+				small = "GFX_Portrait_ALK_Randy_A_Kee_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = alk_randy_a_kee_adv
+			allowed = { original_tag = ALK }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	ALK_Marvin_Marston = {
+		name = ALK_Marvin_Marston
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ALK_Marvin_Marston"
+				small = "GFX_Portrait_ALK_Marvin_Marston_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = alk_marvin_marston_adv
+			ledger = army
+			allowed = { original_tag = ALK }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+}

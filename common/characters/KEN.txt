@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = ken_andy_beshear_gov
+			allowed = { original_tag = KEE }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	KEN_Daniel_Cameron={
 		name=KEN_Daniel_Cameron
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = ken_daniel_cameron_gov
+			allowed = { original_tag = KEE }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

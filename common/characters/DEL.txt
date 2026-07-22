@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = del_bethany_halllong_gov
+			allowed = { original_tag = DEL }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	DEL_Mike_Ramone={
 		name=DEL_Mike_Ramone
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = del_mike_ramone_gov
+			allowed = { original_tag = DEL }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

@@ -1,0 +1,54 @@
+characters = {
+
+	NEB_Deb_Fischer = {
+		name = NEB_Deb_Fischer
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NEB_Deb_Fischer"
+				small = "GFX_Portrait_NEB_Deb_Fischer_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = neb_deb_fischer_pol
+			allowed = { original_tag = NEB }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	NEB_Pete_Ricketts = {
+		name = NEB_Pete_Ricketts
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NEB_Pete_Ricketts"
+				small = "GFX_Portrait_NEB_Pete_Ricketts_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = neb_pete_ricketts_pol
+			allowed = { original_tag = NEB }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+	NEB_Warren_Buffett = {
+		name = NEB_Warren_Buffett
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NEB_Warren_Buffett"
+				small = "GFX_Portrait_NEB_Warren_Buffett_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = neb_warren_buffett_pol
+			allowed = { original_tag = NEB }
+			traits = { war_industrialist TAD_oracle_of_omaha }
+			cost = 150
+		}
+	}
+
+}

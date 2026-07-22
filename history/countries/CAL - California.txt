@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = CAL_Gavin_Newsom #Democratic
 recruit_character = CAL_Kevin_McCarthy #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = CAL_Matthew_P_Beevers
+recruit_character = CAL_Jeffrey_D_Smiley
+recruit_character = CAL_Steven_J_Butow
+recruit_character = CAL_William_J_Prendergast_IV
+recruit_character = CAL_George_S_Patton
+recruit_character = CAL_James_H_Doolittle
+recruit_character = CAL_Alex_Padilla
+recruit_character = CAL_Adam_Schiff
+recruit_character = CAL_Tim_Cook
+
+# end of commanders

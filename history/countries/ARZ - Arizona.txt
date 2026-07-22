@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = ARZ_Katie_Hobbs #Democratic
 recruit_character = ARZ_Kari_Lake #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = ARZ_Kerry_L_Muehlenbeck
+recruit_character = ARZ_Troy_T_Daniels
+recruit_character = ARZ_Barry_M_Goldwater
+recruit_character = ARZ_Michael_T_McGuire
+recruit_character = ARZ_Frank_Luke_Jr
+recruit_character = ARZ_Andrew_J_MacDonald
+recruit_character = ARZ_Mark_Kelly
+recruit_character = ARZ_Ruben_Gallego
+recruit_character = ARZ_Jerry_Colangelo
+
+# end of commanders

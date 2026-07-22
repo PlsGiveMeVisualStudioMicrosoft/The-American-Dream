@@ -1,0 +1,157 @@
+characters = {
+
+	NCA_M_Todd_Hunt = {
+		name = NCA_M_Todd_Hunt
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NCA_M_Todd_Hunt"
+				small = "GFX_Portrait_NCA_M_Todd_Hunt_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nca_m_todd_hunt_adv
+			allowed = { original_tag = NCA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_NCA_tar_heel_airborne TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	NCA_Robert_A_Boyette = {
+		name = NCA_Robert_A_Boyette
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NCA_Robert_A_Boyette"
+				small = "GFX_Portrait_NCA_Robert_A_Boyette_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nca_robert_a_boyette_adv
+			allowed = { original_tag = NCA }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	NCA_Allen_E_Boyette = {
+		name = NCA_Allen_E_Boyette
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NCA_Allen_E_Boyette"
+				small = "GFX_Portrait_NCA_Allen_E_Boyette_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nca_allen_e_boyette_adv
+			ledger = army
+			allowed = { original_tag = NCA }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	NCA_Hugh_Shelton = {
+		name = NCA_Hugh_Shelton
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NCA_Hugh_Shelton"
+				small = "GFX_Portrait_NCA_Hugh_Shelton_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = nca_hugh_shelton_adv
+			ledger = army
+			allowed = { original_tag = NCA }
+			traits = { grand_battle_plan_expert TAD_first_in_last_out }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_sof_raider commando trickster war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+
+	NCA_William_C_Lee = {
+		name = NCA_William_C_Lee
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NCA_William_C_Lee"
+				small = "GFX_Portrait_NCA_William_C_Lee_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nca_william_c_lee_adv
+			ledger = army
+			allowed = { original_tag = NCA }
+			traits = { army_commando_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_sof_raider commando trickster war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+
+	NCA_Braxton_Bragg = {
+		name = NCA_Braxton_Bragg
+		portraits = {
+			army = {
+				large = "GFX_Portrait_NCA_Braxton_Bragg"
+				small = "GFX_Portrait_NCA_Braxton_Bragg_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nca_braxton_bragg_adv
+			ledger = army
+			allowed = { original_tag = NCA }
+			traits = { army_artillery_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_fires_master trait_cautious }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+}

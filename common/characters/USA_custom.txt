@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = usa_kamala_harris_gov
+			allowed = { original_tag = USA }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	USA_Trump={
 		name=USA_Trump
@@ -24,6 +31,13 @@ characters={
 			traits={ GER_supreme_leader }
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = usa_trump_gov
+			allowed = { original_tag = USA }
+			traits = { silent_workhorse TAD_art_of_the_deal }
+			cost = 150
 		}
 	}
 }

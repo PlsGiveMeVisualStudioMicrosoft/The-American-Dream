@@ -1,0 +1,54 @@
+characters = {
+
+	NEV_Catherine_Cortez_Masto = {
+		name = NEV_Catherine_Cortez_Masto
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NEV_Catherine_Cortez_Masto"
+				small = "GFX_Portrait_NEV_Catherine_Cortez_Masto_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nev_catherine_cortez_masto_pol
+			allowed = { original_tag = NEV }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+	NEV_Jacky_Rosen = {
+		name = NEV_Jacky_Rosen
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NEV_Jacky_Rosen"
+				small = "GFX_Portrait_NEV_Jacky_Rosen_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nev_jacky_rosen_pol
+			allowed = { original_tag = NEV }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	NEV_Miriam_Adelson = {
+		name = NEV_Miriam_Adelson
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NEV_Miriam_Adelson"
+				small = "GFX_Portrait_NEV_Miriam_Adelson_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nev_miriam_adelson_pol
+			allowed = { original_tag = NEV }
+			traits = { captain_of_industry TAD_house_always_wins }
+			cost = 150
+		}
+	}
+
+}

@@ -1,0 +1,154 @@
+characters = {
+
+	FLO_John_D_Haas = {
+		name = FLO_John_D_Haas
+		portraits = {
+			army = {
+				large = "GFX_Portrait_FLO_John_D_Haas"
+				small = "GFX_Portrait_FLO_John_D_Haas_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = flo_john_d_haas_adv
+			allowed = { original_tag = FLO }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_FLO_hurricane_veteran TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	FLO_Robert_G_Carruthers_III = {
+		name = FLO_Robert_G_Carruthers_III
+		portraits = {
+			army = {
+				large = "GFX_Portrait_FLO_Robert_G_Carruthers_III"
+				small = "GFX_Portrait_FLO_Robert_G_Carruthers_III_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = flo_robert_g_carruthers_iii_adv
+			allowed = { original_tag = FLO }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	FLO_Michael_A_Valle = {
+		name = FLO_Michael_A_Valle
+		portraits = {
+			army = {
+				large = "GFX_Portrait_FLO_Michael_A_Valle"
+				small = "GFX_Portrait_FLO_Michael_A_Valle_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = flo_michael_a_valle_adv
+			allowed = { original_tag = FLO }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	FLO_Joseph_W_Stilwell = {
+		name = FLO_Joseph_W_Stilwell
+		portraits = {
+			army = {
+				large = "GFX_Portrait_FLO_Joseph_W_Stilwell"
+				small = "GFX_Portrait_FLO_Joseph_W_Stilwell_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = flo_joseph_w_stilwell_adv
+			ledger = army
+			allowed = { original_tag = FLO }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	FLO_Daniel_James_Jr = {
+		name = FLO_Daniel_James_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_FLO_Daniel_James_Jr"
+				small = "GFX_Portrait_FLO_Daniel_James_Jr_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = flo_daniel_james_jr_adv
+			allowed = { original_tag = FLO }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer war_hero }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	FLO_James_O_Eifert = {
+		name = FLO_James_O_Eifert
+		portraits = {
+			army = {
+				large = "GFX_Portrait_FLO_James_O_Eifert"
+				small = "GFX_Portrait_FLO_James_O_Eifert_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = flo_james_o_eifert_adv
+			allowed = { original_tag = FLO }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+}

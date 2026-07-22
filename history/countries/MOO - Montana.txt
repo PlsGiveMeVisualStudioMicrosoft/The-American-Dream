@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = MON_Greg_Gianforte #Nationalist/Non-Aligned
 recruit_character = MON_Jon_Tester #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = MON_Trenton_J_Gibson
+recruit_character = MON_J_Peter_Hronek
+recruit_character = MON_Matthew_T_Quinn
+recruit_character = MON_John_E_Walsh
+recruit_character = MON_Thomas_F_Meagher
+recruit_character = MON_Charles_L_Bolte
+recruit_character = MON_Steve_Daines
+recruit_character = MON_Tim_Sheehy
+recruit_character = MON_Dennis_Washington
+
+# end of commanders

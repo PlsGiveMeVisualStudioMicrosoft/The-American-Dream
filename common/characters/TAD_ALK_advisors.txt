@@ -1,0 +1,54 @@
+characters = {
+
+	ALK_Lisa_Murkowski = {
+		name = ALK_Lisa_Murkowski
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ALK_Lisa_Murkowski"
+				small = "GFX_Portrait_ALK_Lisa_Murkowski_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = alk_lisa_murkowski_pol
+			allowed = { original_tag = ALK }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	ALK_Dan_Sullivan = {
+		name = ALK_Dan_Sullivan
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ALK_Dan_Sullivan"
+				small = "GFX_Portrait_ALK_Dan_Sullivan_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = alk_dan_sullivan_pol
+			allowed = { original_tag = ALK }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	ALK_Sarah_Palin = {
+		name = ALK_Sarah_Palin
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ALK_Sarah_Palin"
+				small = "GFX_Portrait_ALK_Sarah_Palin_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = alk_sarah_palin_pol
+			allowed = { original_tag = ALK }
+			traits = { popular_figurehead }
+			cost = 150
+		}
+	}
+
+}

@@ -1,0 +1,155 @@
+characters = {
+
+	CLR_Robert_B_Davis = {
+		name = CLR_Robert_B_Davis
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CLR_Robert_B_Davis"
+				small = "GFX_Portrait_CLR_Robert_B_Davis_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = clr_robert_b_davis_adv
+			allowed = { original_tag = CLR }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_CLR_high_country_command TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	CLR_Laura_L_Clellan = {
+		name = CLR_Laura_L_Clellan
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CLR_Laura_L_Clellan"
+				small = "GFX_Portrait_CLR_Laura_L_Clellan_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = clr_laura_l_clellan_adv
+			ledger = army
+			allowed = { original_tag = CLR }
+			traits = { mass_assault_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	CLR_Michael_A_Loh = {
+		name = CLR_Michael_A_Loh
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CLR_Michael_A_Loh"
+				small = "GFX_Portrait_CLR_Michael_A_Loh_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = clr_michael_a_loh_adv
+			allowed = { original_tag = CLR }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	CLR_H_Michael_Edwards = {
+		name = CLR_H_Michael_Edwards
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CLR_H_Michael_Edwards"
+				small = "GFX_Portrait_CLR_H_Michael_Edwards_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = clr_h_michael_edwards_adv
+			allowed = { original_tag = CLR }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	CLR_Mason_Whitney = {
+		name = CLR_Mason_Whitney
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CLR_Mason_Whitney"
+				small = "GFX_Portrait_CLR_Mason_Whitney_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = clr_mason_whitney_adv
+			ledger = army
+			allowed = { original_tag = CLR }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	CLR_Edward_Eberhart = {
+		name = CLR_Edward_Eberhart
+		portraits = {
+			army = {
+				large = "GFX_Portrait_CLR_Edward_Eberhart"
+				small = "GFX_Portrait_CLR_Edward_Eberhart_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = clr_edward_eberhart_adv
+			allowed = { original_tag = CLR }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+}

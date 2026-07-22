@@ -1,0 +1,289 @@
+# The American Dream - custom advisor traits
+
+leader_traits = {
+
+	TAD_blood_and_guts = {
+		sprite = 7
+		random = no
+		army_attack_factor = 0.08
+		army_speed_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_i_shall_return = {
+		sprite = 7
+		random = no
+		planning_speed = 0.10
+		army_org_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_fix_bayonets = {
+		sprite = 8
+		random = no
+		army_defence_factor = 0.10
+		army_morale_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_march_to_the_sea = {
+		sprite = 7
+		random = no
+		army_speed_factor = 0.08
+		army_attack_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_stone_wall = {
+		sprite = 8
+		random = no
+		army_defence_factor = 0.12
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_thirty_seconds = {
+		sprite = 6
+		random = no
+		air_accidents_factor = -0.20
+		experience_gain_air = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_to_hell_and_back = {
+		sprite = 13
+		random = no
+		war_support_factor = 0.05
+		army_morale_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_both_sides = {
+		sprite = 7
+		random = no
+		army_attack_factor = 0.06
+		army_morale_factor = 0.06
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_overwhelming_force = {
+		sprite = 14
+		random = no
+		land_doctrine_cost_factor = -0.10
+		army_org_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_coin_doctrine = {
+		sprite = 14
+		random = no
+		compliance_growth = 0.10
+		resistance_damage_to_garrison = -0.10
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_team_of_teams = {
+		sprite = 14
+		random = no
+		planning_speed = 0.10
+		army_org_factor = 0.04
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_no_better_friend = {
+		sprite = 13
+		random = no
+		army_morale_factor = 0.08
+		war_support_factor = 0.04
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_sound_barrier = {
+		sprite = 6
+		random = no
+		air_ace_generation_chance_factor = 0.15
+		air_accidents_factor = -0.10
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_turkey_shoot = {
+		sprite = 8
+		random = no
+		army_infantry_attack_factor = 0.08
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_thunder_run = {
+		sprite = 7
+		random = no
+		army_armor_attack_factor = 0.10
+		army_speed_factor = 0.04
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_arsenal_of_democracy = {
+		sprite = 10
+		random = no
+		production_speed_arms_factory_factor = 0.10
+		production_speed_industrial_complex_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_first_in_last_out = {
+		sprite = 8
+		random = no
+		army_org_factor = 0.05
+		experience_gain_army = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_guard_the_home_front = {
+		sprite = 13
+		random = no
+		stability_factor = 0.08
+		conscription = 0.01
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_oracle_of_omaha = {
+		sprite = 10
+		random = no
+		consumer_goods_factor = -0.05
+		political_power_gain = 0.10
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_two_day_delivery = {
+		sprite = 10
+		random = no
+		production_speed_infrastructure_factor = 0.10
+		supply_consumption_factor = -0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_first_principles = {
+		sprite = 10
+		random = no
+		production_speed_arms_factory_factor = 0.10
+		research_speed_factor = 0.03
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_wichita_machine = {
+		sprite = 10
+		random = no
+		production_speed_industrial_complex_factor = 0.10
+		political_power_gain = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_designed_in_california = {
+		sprite = 10
+		random = no
+		research_speed_factor = 0.05
+		consumer_goods_factor = -0.03
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_fortress_balance_sheet = {
+		sprite = 10
+		random = no
+		political_power_gain = 0.08
+		consumer_goods_factor = -0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_just_do_it = {
+		sprite = 13
+		random = no
+		war_support_factor = 0.05
+		consumer_goods_factor = -0.03
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_everyday_low_prices = {
+		sprite = 10
+		random = no
+		consumer_goods_factor = -0.07
+		production_speed_infrastructure_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_house_always_wins = {
+		sprite = 10
+		random = no
+		political_power_gain = 0.15
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_motor_city_line = {
+		sprite = 10
+		random = no
+		production_speed_arms_factory_factor = 0.10
+		production_speed_industrial_complex_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_master_of_the_floor = {
+		sprite = 13
+		random = no
+		political_power_gain = 0.15
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_grassroots_machine = {
+		sprite = 13
+		random = no
+		stability_factor = 0.10
+		consumer_goods_factor = -0.03
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_longest_serving = {
+		sprite = 13
+		random = no
+		political_power_gain = 0.10
+		stability_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_art_of_the_deal = {
+		sprite = 13
+		random = no
+		political_power_gain = 0.15
+		war_support_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_pentagon_reformer = {
+		sprite = 10
+		random = no
+		production_speed_arms_factory_factor = 0.08
+		army_morale_factor = 0.03
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_diplomatic_offensive = {
+		sprite = 13
+		random = no
+		political_power_gain = 0.08
+		stability_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_treasury_hawk = {
+		sprite = 10
+		random = no
+		consumer_goods_factor = -0.05
+		production_speed_industrial_complex_factor = 0.05
+		ai_will_do = { factor = 2 }
+	}
+
+	TAD_astronaut_senator = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.04
+		stability_factor = 0.04
+		ai_will_do = { factor = 2 }
+	}
+
+}

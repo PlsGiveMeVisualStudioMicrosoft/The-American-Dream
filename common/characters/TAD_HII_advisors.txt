@@ -1,0 +1,54 @@
+characters = {
+
+	HAW_Brian_Schatz = {
+		name = HAW_Brian_Schatz
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_HAW_Brian_Schatz"
+				small = "GFX_Portrait_HAW_Brian_Schatz_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = haw_brian_schatz_pol
+			allowed = { original_tag = HII }
+			traits = { silent_workhorse }
+			cost = 150
+		}
+	}
+
+	HAW_Mazie_Hirono = {
+		name = HAW_Mazie_Hirono
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_HAW_Mazie_Hirono"
+				small = "GFX_Portrait_HAW_Mazie_Hirono_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = haw_mazie_hirono_pol
+			allowed = { original_tag = HII }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	HAW_David_Ige = {
+		name = HAW_David_Ige
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_HAW_David_Ige"
+				small = "GFX_Portrait_HAW_David_Ige_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = haw_david_ige_pol
+			allowed = { original_tag = HII }
+			traits = { compassionate_gentleman }
+			cost = 150
+		}
+	}
+
+}

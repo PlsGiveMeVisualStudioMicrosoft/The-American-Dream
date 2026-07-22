@@ -1,0 +1,156 @@
+characters = {
+
+	ORE_Alan_Gronewold = {
+		name = ORE_Alan_Gronewold
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ORE_Alan_Gronewold"
+				small = "GFX_Portrait_ORE_Alan_Gronewold_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ore_alan_gronewold_adv
+			allowed = { original_tag = ORE }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_ORE_cascadia_woodsman TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	ORE_Michael_E_Stencel = {
+		name = ORE_Michael_E_Stencel
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ORE_Michael_E_Stencel"
+				small = "GFX_Portrait_ORE_Michael_E_Stencel_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ore_michael_e_stencel_adv
+			allowed = { original_tag = ORE }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	ORE_Daniel_R_Hokanson = {
+		name = ORE_Daniel_R_Hokanson
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ORE_Daniel_R_Hokanson"
+				small = "GFX_Portrait_ORE_Daniel_R_Hokanson_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ore_daniel_r_hokanson_adv
+			ledger = army
+			allowed = { original_tag = ORE }
+			traits = { mass_assault_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer organizer war_hero }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+
+	ORE_Adrian_Sullivan = {
+		name = ORE_Adrian_Sullivan
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ORE_Adrian_Sullivan"
+				small = "GFX_Portrait_ORE_Adrian_Sullivan_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ore_adrian_sullivan_adv
+			allowed = { original_tag = ORE }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	ORE_Gregory_Day = {
+		name = ORE_Gregory_Day
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ORE_Gregory_Day"
+				small = "GFX_Portrait_ORE_Gregory_Day_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ore_gregory_day_adv
+			ledger = army
+			allowed = { original_tag = ORE }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	ORE_Terrence_M_Kraft = {
+		name = ORE_Terrence_M_Kraft
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ORE_Terrence_M_Kraft"
+				small = "GFX_Portrait_ORE_Terrence_M_Kraft_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ore_terrence_m_kraft_adv
+			ledger = army
+			allowed = { original_tag = ORE }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+}

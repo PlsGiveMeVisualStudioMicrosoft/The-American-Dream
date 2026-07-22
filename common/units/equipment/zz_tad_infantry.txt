@@ -1,0 +1,34 @@
+# The American Dream - late-game infantry weapon.
+# The filename starts with zz on purpose: this directory is read in
+# alphabetical order and infantry_equipment_4 inherits from an archetype
+# declared in infantry.txt, so this file has to be parsed after it.
+
+equipments = {
+
+	# Caseless rifle ~2037 - unlocked by tad_caseless_rifle
+	infantry_equipment_4 = {
+		year = 2037
+
+		archetype = infantry_equipment
+		parent = infantry_equipment_3
+		priority = 15
+		visual_level = 3
+
+		#Defensive Abilities
+		defense = 40
+		breakthrough = 6
+
+		#Offensive Abilities
+		soft_attack = 15
+		hard_attack = 3
+		ap_attack = 14
+		air_attack = 0
+
+		reliability = 0.85
+		build_cost_ic = 0.82
+		resources = {
+			steel = 4
+			tungsten = 1
+		}
+	}
+}

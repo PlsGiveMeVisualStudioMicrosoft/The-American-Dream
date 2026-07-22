@@ -1,0 +1,37 @@
+characters = {
+
+	NCA_Ted_Budd = {
+		name = NCA_Ted_Budd
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NCA_Ted_Budd"
+				small = "GFX_Portrait_NCA_Ted_Budd_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nca_ted_budd_pol
+			allowed = { original_tag = NCA }
+			traits = { ideological_crusader }
+			cost = 150
+		}
+	}
+
+	NCA_James_Goodnight = {
+		name = NCA_James_Goodnight
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_NCA_James_Goodnight"
+				small = "GFX_Portrait_NCA_James_Goodnight_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nca_james_goodnight_pol
+			allowed = { original_tag = NCA }
+			traits = { captain_of_industry }
+			cost = 150
+		}
+	}
+
+}

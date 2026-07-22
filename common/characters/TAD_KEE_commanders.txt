@@ -1,0 +1,157 @@
+characters = {
+
+	KEN_Haldane_B_Lamberton = {
+		name = KEN_Haldane_B_Lamberton
+		portraits = {
+			army = {
+				large = "GFX_Portrait_KEN_Haldane_B_Lamberton"
+				small = "GFX_Portrait_KEN_Haldane_B_Lamberton_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ken_haldane_b_lamberton_adv
+			allowed = { original_tag = KEE }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_KEN_bluegrass_rifleman TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	KEN_Bryan_M_Howay = {
+		name = KEN_Bryan_M_Howay
+		portraits = {
+			army = {
+				large = "GFX_Portrait_KEN_Bryan_M_Howay"
+				small = "GFX_Portrait_KEN_Bryan_M_Howay_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ken_bryan_m_howay_adv
+			ledger = army
+			allowed = { original_tag = KEE }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	KEN_Charles_M_Walker = {
+		name = KEN_Charles_M_Walker
+		portraits = {
+			army = {
+				large = "GFX_Portrait_KEN_Charles_M_Walker"
+				small = "GFX_Portrait_KEN_Charles_M_Walker_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ken_charles_m_walker_adv
+			allowed = { original_tag = KEE }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	KEN_Simon_B_Buckner_Jr = {
+		name = KEN_Simon_B_Buckner_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_KEN_Simon_B_Buckner_Jr"
+				small = "GFX_Portrait_KEN_Simon_B_Buckner_Jr_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ken_simon_b_buckner_jr_adv
+			ledger = army
+			allowed = { original_tag = KEE }
+			traits = { grand_battle_plan_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	KEN_John_B_Hood = {
+		name = KEN_John_B_Hood
+		portraits = {
+			army = {
+				large = "GFX_Portrait_KEN_John_B_Hood"
+				small = "GFX_Portrait_KEN_John_B_Hood_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ken_john_b_hood_adv
+			ledger = army
+			allowed = { original_tag = KEE }
+			traits = { army_armored_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_abct_commander armor_officer panzer_leader }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	KEN_Roger_H_Nye = {
+		name = KEN_Roger_H_Nye
+		portraits = {
+			army = {
+				large = "GFX_Portrait_KEN_Roger_H_Nye"
+				small = "GFX_Portrait_KEN_Roger_H_Nye_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ken_roger_h_nye_adv
+			ledger = army
+			allowed = { original_tag = KEE }
+			traits = { army_logistics_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_logistics_veteran organizer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+}

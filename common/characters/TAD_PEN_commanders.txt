@@ -1,0 +1,156 @@
+characters = {
+
+	PEN_John_R_Pippy = {
+		name = PEN_John_R_Pippy
+		portraits = {
+			army = {
+				large = "GFX_Portrait_PEN_John_R_Pippy"
+				small = "GFX_Portrait_PEN_John_R_Pippy_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = pen_john_r_pippy_adv
+			allowed = { original_tag = PEN }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_PEN_keystone_iron TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	PEN_Laura_A_McHugh = {
+		name = PEN_Laura_A_McHugh
+		portraits = {
+			army = {
+				large = "GFX_Portrait_PEN_Laura_A_McHugh"
+				small = "GFX_Portrait_PEN_Laura_A_McHugh_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = pen_laura_a_mchugh_adv
+			allowed = { original_tag = PEN }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	PEN_Michael_E_Wegscheider = {
+		name = PEN_Michael_E_Wegscheider
+		portraits = {
+			army = {
+				large = "GFX_Portrait_PEN_Michael_E_Wegscheider"
+				small = "GFX_Portrait_PEN_Michael_E_Wegscheider_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = pen_michael_e_wegscheider_adv
+			ledger = army
+			allowed = { original_tag = PEN }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	PEN_Curtis_M_Scaparrotti = {
+		name = PEN_Curtis_M_Scaparrotti
+		portraits = {
+			army = {
+				large = "GFX_Portrait_PEN_Curtis_M_Scaparrotti"
+				small = "GFX_Portrait_PEN_Curtis_M_Scaparrotti_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = pen_curtis_m_scaparrotti_adv
+			ledger = army
+			allowed = { original_tag = PEN }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	PEN_George_C_Marshall = {
+		name = PEN_George_C_Marshall
+		portraits = {
+			army = {
+				large = "GFX_Portrait_PEN_George_C_Marshall"
+				small = "GFX_Portrait_PEN_George_C_Marshall_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = pen_george_c_marshall_adv
+			allowed = { original_tag = PEN }
+			traits = { army_chief_offensive_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	PEN_Winfield_S_Hancock = {
+		name = PEN_Winfield_S_Hancock
+		portraits = {
+			army = {
+				large = "GFX_Portrait_PEN_Winfield_S_Hancock"
+				small = "GFX_Portrait_PEN_Winfield_S_Hancock_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = pen_winfield_s_hancock_adv
+			ledger = army
+			allowed = { original_tag = PEN }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+}

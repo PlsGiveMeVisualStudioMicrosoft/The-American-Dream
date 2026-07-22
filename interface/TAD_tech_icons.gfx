@@ -1,0 +1,3122 @@
+# The American Dream - placeholder art, one file per technology.
+# To replace any of these with real art just overwrite
+#   gfx/interface/technologies/tad/<technology name>.dds
+# keeping the same filename. Nothing else needs editing.
+# Both GFX_<tech>_medium and GFX_USA_<tech>_medium are defined because a
+# country-specific sprite overrides the generic one.
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_weapons.dds"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_weapons1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_weapons1.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_weapons1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_weapons1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_weapons2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_weapons2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_infantry_weapons.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_infantry_weapons_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_infantry_weapons_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_at_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_at.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_infantry_at_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_at.dds"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_at2_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_at2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_infantry_at2_medium"
+		texturefile = "gfx/interface/technologies/tad/infantry_at2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_infantry_weapons.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_infantry_weapons2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_infantry_weapons2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_paratroopers_medium"
+		texturefile = "gfx/interface/technologies/tad/paratroopers.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_paratroopers_medium"
+		texturefile = "gfx/interface/technologies/tad/paratroopers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_paratroopers2_medium"
+		texturefile = "gfx/interface/technologies/tad/paratroopers2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_paratroopers2_medium"
+		texturefile = "gfx/interface/technologies/tad/paratroopers2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_paratroopers3_medium"
+		texturefile = "gfx/interface/technologies/tad/paratroopers3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_paratroopers3_medium"
+		texturefile = "gfx/interface/technologies/tad/paratroopers3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_marines_medium"
+		texturefile = "gfx/interface/technologies/tad/marines.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_marines_medium"
+		texturefile = "gfx/interface/technologies/tad/marines.dds"
+	}
+
+	spriteType = {
+		name = "GFX_marines2_medium"
+		texturefile = "gfx/interface/technologies/tad/marines2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_marines2_medium"
+		texturefile = "gfx/interface/technologies/tad/marines2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_marines3_medium"
+		texturefile = "gfx/interface/technologies/tad/marines3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_marines3_medium"
+		texturefile = "gfx/interface/technologies/tad/marines3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_mountaineers_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_mountaineers.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_mountaineers_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_mountaineers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_mountaineers2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_mountaineers2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_mountaineers2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_mountaineers2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_mountaineers3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_mountaineers3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_mountaineers3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_mountaineers3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_rangers_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/rangers_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_rangers_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/rangers_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_rangers_tech2_medium"
+		texturefile = "gfx/interface/technologies/tad/rangers_tech2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_rangers_tech2_medium"
+		texturefile = "gfx/interface/technologies/tad/rangers_tech2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_rangers_tech3_medium"
+		texturefile = "gfx/interface/technologies/tad/rangers_tech3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_rangers_tech3_medium"
+		texturefile = "gfx/interface/technologies/tad/rangers_tech3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_special_forces_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_special_forces_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_special_forces.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_special_forces_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_special_forces_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_special_forces.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_special_forces_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_special_forces_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_special_forces.dds"
+	}
+
+	spriteType = {
+		name = "GFX_extreme_environment_training_medium"
+		texturefile = "gfx/interface/technologies/tad/extreme_environment_training.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_extreme_environment_training_medium"
+		texturefile = "gfx/interface/technologies/tad/extreme_environment_training.dds"
+	}
+
+	spriteType = {
+		name = "GFX_survival_training_medium"
+		texturefile = "gfx/interface/technologies/tad/survival_training.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_survival_training_medium"
+		texturefile = "gfx/interface/technologies/tad/survival_training.dds"
+	}
+
+	spriteType = {
+		name = "GFX_elite_forces_medium"
+		texturefile = "gfx/interface/technologies/tad/elite_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_elite_forces_medium"
+		texturefile = "gfx/interface/technologies/tad/elite_forces.dds"
+	}
+
+	spriteType = {
+		name = "GFX_night_vision_medium"
+		texturefile = "gfx/interface/technologies/tad/night_vision.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_night_vision_medium"
+		texturefile = "gfx/interface/technologies/tad/night_vision.dds"
+	}
+
+	spriteType = {
+		name = "GFX_night_vision2_medium"
+		texturefile = "gfx/interface/technologies/tad/night_vision2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_night_vision2_medium"
+		texturefile = "gfx/interface/technologies/tad/night_vision2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/tad/support_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/tad/support_weapons.dds"
+	}
+
+	spriteType = {
+		name = "GFX_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/tad/support_weapons2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/tad/support_weapons2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/tad/support_weapons3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/tad/support_weapons3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_support_weapons4_medium"
+		texturefile = "gfx/interface/technologies/tad/support_weapons4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_support_weapons4_medium"
+		texturefile = "gfx/interface/technologies/tad/support_weapons4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_trucks_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_trucks.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_trucks_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_trucks.dds"
+	}
+	spriteType = {
+		name = "GFX_motorized_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_trucks.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_motorized_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_trucks.dds"
+	}
+
+	spriteType = {
+		name = "GFX_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/tad/motorised_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/tad/motorised_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/motorised_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/motorised_infantry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_car1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_car1.dds"
+	}
+	spriteType = {
+		name = "GFX_gw_armored_car_equipment_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_car1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_gw_armored_car_equipment_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_car1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_car2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_car2.dds"
+	}
+	spriteType = {
+		name = "GFX_armored_car_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_car2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_armored_car_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_car2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_car3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_car3.dds"
+	}
+	spriteType = {
+		name = "GFX_armored_car_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_car3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_armored_car_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_car3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanised_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanised_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_mechanized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanised_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_mechanized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanised_infantry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_amphibious_mechanized_infantry_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_mechanized_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_amphibious_mechanized_infantry_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_mechanized_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_amphibious_mechanized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_mechanized_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_amphibious_mechanized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_mechanized_infantry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_amphibious_mechanized_infantry_2_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_mechanized_infantry_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_amphibious_mechanized_infantry_2_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_mechanized_infantry_2.dds"
+	}
+	spriteType = {
+		name = "GFX_amphibious_mechanized_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_mechanized_infantry_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_amphibious_mechanized_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_mechanized_infantry_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanised_infantry2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanised_infantry2.dds"
+	}
+	spriteType = {
+		name = "GFX_mechanized_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanised_infantry2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_mechanized_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanised_infantry2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanised_infantry3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanised_infantry3.dds"
+	}
+	spriteType = {
+		name = "GFX_mechanized_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanised_infantry3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_mechanized_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanised_infantry3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_squad_drones_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_squad_drones.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_squad_drones_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_squad_drones.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_counter_uas_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_counter_uas.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_counter_uas_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_counter_uas.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_caseless_rifle_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_caseless_rifle.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_caseless_rifle_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_caseless_rifle.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_caseless_rifle.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_infantry_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_caseless_rifle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_exoskeleton_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_exoskeleton.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_exoskeleton_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_exoskeleton.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_crew_served5_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_crew_served5.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_crew_served5_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_crew_served5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_sensor_fusion_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_sensor_fusion.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_sensor_fusion_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_sensor_fusion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_omfv_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_omfv.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_omfv_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_omfv.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gwtank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/gwtank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_gwtank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/gwtank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/tad/gwtank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_light_tank_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/tad/gwtank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_light_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_light_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_light_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_light_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_light_tank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_light_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_light_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_light_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_light_tank_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_light_tank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_amphibious_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_amphibious_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_tank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_amphibious_drive_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_drive.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_amphibious_drive_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_drive.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank_amphibious_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_drive.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_light_tank_amphibious_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/tad/amphibious_drive.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_light_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_light_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_light_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_light_tank_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_light_tank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_medium_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_medium_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_medium_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_medium_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_medium_tank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_medium_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_medium_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_tank_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_medium_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_medium_tank_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_medium_tank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_medium_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_medium_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_tank_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_medium_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_medium_tank_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_medium_tank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_main_battle_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/main_battle_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_main_battle_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/main_battle_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_modern_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/tad/main_battle_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_modern_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/tad/main_battle_tank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_heavy_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_heavy_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_heavy_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_heavy_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_heavy_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_heavy_tank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_heavy_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_heavy_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_heavy_tank_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_heavy_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_heavy_tank_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_heavy_tank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_heavy_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_heavy_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_heavy_tank_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_heavy_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_heavy_tank_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_heavy_tank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_super_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/super_heavy_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_super_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/tad/super_heavy_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_super_heavy_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/tad/super_heavy_tank_chassis.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_super_heavy_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/tad/super_heavy_tank_chassis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_armor_tech_1_medium"
+		texturefile = "gfx/interface/technologies/tad/armor_tech_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_armor_tech_1_medium"
+		texturefile = "gfx/interface/technologies/tad/armor_tech_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_armor_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tad/armor_tech_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_armor_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tad/armor_tech_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_armor_tech_3_medium"
+		texturefile = "gfx/interface/technologies/tad/armor_tech_3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_armor_tech_3_medium"
+		texturefile = "gfx/interface/technologies/tad/armor_tech_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_armor_tech_4_medium"
+		texturefile = "gfx/interface/technologies/tad/armor_tech_4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_armor_tech_4_medium"
+		texturefile = "gfx/interface/technologies/tad/armor_tech_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_engine_tech_1_medium"
+		texturefile = "gfx/interface/technologies/tad/engine_tech_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_engine_tech_1_medium"
+		texturefile = "gfx/interface/technologies/tad/engine_tech_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_engine_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tad/engine_tech_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_engine_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tad/engine_tech_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_engine_tech_3_medium"
+		texturefile = "gfx/interface/technologies/tad/engine_tech_3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_engine_tech_3_medium"
+		texturefile = "gfx/interface/technologies/tad/engine_tech_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_engine_tech_4_medium"
+		texturefile = "gfx/interface/technologies/tad/engine_tech_4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_engine_tech_4_medium"
+		texturefile = "gfx/interface/technologies/tad/engine_tech_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_armored_advanced_flamethrower_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_advanced_flamethrower_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_armored_advanced_flamethrower_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_advanced_flamethrower_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_armored_lc_naval_engine_conversion_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_lc_naval_engine_conversion_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_armored_lc_naval_engine_conversion_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_lc_naval_engine_conversion_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_armored_lc_transmission_improvements_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_lc_transmission_improvements_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_armored_lc_transmission_improvements_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_lc_transmission_improvements_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_armored_lc_specialized_field_manuals_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_lc_specialized_field_manuals_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_armored_lc_specialized_field_manuals_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_lc_specialized_field_manuals_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_armored_lc_weapon_fire_control_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_lc_weapon_fire_control_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_armored_lc_weapon_fire_control_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_lc_weapon_fire_control_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_armored_lc_high_impact_obliterator_cannon_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_lc_high_impact_obliterator_cannon_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_armored_lc_high_impact_obliterator_cannon_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_lc_high_impact_obliterator_cannon_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_active_protection_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_active_protection.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_active_protection_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_active_protection.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_unmanned_turret_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_unmanned_turret.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_unmanned_turret_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_unmanned_turret.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/tad/gw_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/tad/gw_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_artillery_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/gw_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_artillery_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/gw_artillery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_interwar_artillery_medium"
+		texturefile = "gfx/interface/technologies/tad/interwar_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_interwar_artillery_medium"
+		texturefile = "gfx/interface/technologies/tad/interwar_artillery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_artillery1_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_artillery1_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery1.dds"
+	}
+	spriteType = {
+		name = "GFX_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_artillery2_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_artillery2_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_artillery3_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_artillery3_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_artillery4_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_artillery4_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery4.dds"
+	}
+	spriteType = {
+		name = "GFX_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_artillery5_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery5.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_artillery5_medium"
+		texturefile = "gfx/interface/technologies/tad/artillery5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_rocket_artillery_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_rocket_artillery_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_artillery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_rocket_artillery2_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_artillery2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_rocket_artillery2_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_artillery2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_rocket_artillery3_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_artillery3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_rocket_artillery3_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_artillery3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_artillery4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_artillery4.dds"
+	}
+	spriteType = {
+		name = "GFX_rocket_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_artillery4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_rocket_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_artillery4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/tad/interwar_antiair.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/tad/interwar_antiair.dds"
+	}
+	spriteType = {
+		name = "GFX_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/interwar_antiair.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/interwar_antiair.dds"
+	}
+
+	spriteType = {
+		name = "GFX_antiair1_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_antiair1_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_antiair2_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_antiair2_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair2.dds"
+	}
+	spriteType = {
+		name = "GFX_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_antiair3_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_antiair3_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_antiair4_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_antiair4_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_antiair5_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair5.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_antiair5_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair5.dds"
+	}
+	spriteType = {
+		name = "GFX_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair5.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/antiair5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/tad/interwar_antitank.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/tad/interwar_antitank.dds"
+	}
+	spriteType = {
+		name = "GFX_anti_tank_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/interwar_antitank.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_anti_tank_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/interwar_antitank.dds"
+	}
+
+	spriteType = {
+		name = "GFX_antitank1_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_antitank1_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_antitank2_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_antitank2_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank2.dds"
+	}
+	spriteType = {
+		name = "GFX_anti_tank_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_anti_tank_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_antitank3_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_antitank3_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_antitank4_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_antitank4_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_antitank5_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank5.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_antitank5_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank5.dds"
+	}
+	spriteType = {
+		name = "GFX_anti_tank_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank5.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_anti_tank_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/antitank5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_artillery_rocket_assisted_projectiles_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_artillery_rocket_assisted_projectiles_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_artillery_rocket_assisted_projectiles_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_artillery_rocket_assisted_projectiles_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_artillery_purpose_built_gun_motor_carriages_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_artillery_purpose_built_gun_motor_carriages_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_artillery_purpose_built_gun_motor_carriages_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_artillery_purpose_built_gun_motor_carriages_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_shock_hardening_techniques_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_shock_hardening_techniques.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_shock_hardening_techniques_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_shock_hardening_techniques.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_variable_time_fuze_shells_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_variable_time_fuze_shells.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_variable_time_fuze_shells_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_variable_time_fuze_shells.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_advance_sabot_shells_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_advance_sabot_shells.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_advance_sabot_shells_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_advance_sabot_shells.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_loitering_munitions_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_loitering_munitions.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_loitering_munitions_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_loitering_munitions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_directed_energy_aa_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_directed_energy_aa.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_directed_energy_aa_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_directed_energy_aa.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_support_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_support.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_support_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_support.dds"
+	}
+	spriteType = {
+		name = "GFX_support_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_support.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_support_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_support.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_engineers_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_engineers.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_engineers_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_engineers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_engineers2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_engineers2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_engineers2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_engineers2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_engineers3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_engineers3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_engineers3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_engineers3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_engineers4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_engineers4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_engineers4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_engineers4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_recon_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_recon.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_recon_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_recon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_recon2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_recon2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_recon2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_recon2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_recon3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_recon3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_recon3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_recon3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_recon4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_recon4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_recon4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_recon4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_military_police_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_military_police.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_military_police_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_military_police.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_military_police2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_military_police2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_military_police2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_military_police2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_military_police3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_military_police3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_military_police3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_military_police3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_military_police4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_military_police4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_military_police4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_military_police4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_maintenance_company_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_maintenance_company.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_maintenance_company_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_maintenance_company.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_maintenance_company2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_maintenance_company2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_maintenance_company2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_maintenance_company2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_maintenance_company3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_maintenance_company3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_maintenance_company3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_maintenance_company3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_maintenance_company4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_maintenance_company4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_maintenance_company4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_maintenance_company4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_field_hospital_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_field_hospital.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_field_hospital_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_field_hospital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_field_hospital2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_field_hospital2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_field_hospital2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_field_hospital2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_field_hospital3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_field_hospital3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_field_hospital3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_field_hospital3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_field_hospital4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_field_hospital4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_field_hospital4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_field_hospital4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_logistics_company_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_logistics_company.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_logistics_company_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_logistics_company.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_logistics_company2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_logistics_company2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_logistics_company2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_logistics_company2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_logistics_company3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_logistics_company3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_logistics_company3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_logistics_company3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_logistics_company4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_logistics_company4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_logistics_company4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_logistics_company4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_signal_company_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_signal_company.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_signal_company_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_signal_company.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_signal_company2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_signal_company2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_signal_company2_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_signal_company2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_signal_company3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_signal_company3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_signal_company3_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_signal_company3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_signal_company4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_signal_company4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tech_signal_company4_medium"
+		texturefile = "gfx/interface/technologies/tad/tech_signal_company4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_basic_train_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_train.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_train_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_train.dds"
+	}
+	spriteType = {
+		name = "GFX_train_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_train.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_train_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_train.dds"
+	}
+
+	spriteType = {
+		name = "GFX_railway_gun_medium"
+		texturefile = "gfx/interface/technologies/tad/railway_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_railway_gun_medium"
+		texturefile = "gfx/interface/technologies/tad/railway_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_railway_gun_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/railway_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_railway_gun_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/railway_gun.dds"
+	}
+
+	spriteType = {
+		name = "GFX_wartime_train_medium"
+		texturefile = "gfx/interface/technologies/tad/wartime_train.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_wartime_train_medium"
+		texturefile = "gfx/interface/technologies/tad/wartime_train.dds"
+	}
+	spriteType = {
+		name = "GFX_train_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/wartime_train.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_train_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/wartime_train.dds"
+	}
+
+	spriteType = {
+		name = "GFX_armored_train_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_train.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_armored_train_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_train.dds"
+	}
+	spriteType = {
+		name = "GFX_train_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_train.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_train_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/armored_train.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_armored_engineer_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_engineer_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_armored_engineer_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_engineer_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_armored_maintenance_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_maintenance_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_armored_maintenance_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_maintenance_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_armored_signal_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_signal_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_armored_signal_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_signal_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_helicopter_transport_pods_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_helicopter_transport_pods_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_helicopter_transport_pods_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_helicopter_transport_pods_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_helicopter_artillery_observers_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_helicopter_artillery_observers_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_helicopter_artillery_observers_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_helicopter_artillery_observers_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_helicopter_med_evac_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_helicopter_med_evac_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_helicopter_med_evac_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_helicopter_med_evac_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_armored_motorized_military_police_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_motorized_military_police_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_armored_motorized_military_police_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_motorized_military_police_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_motorbike_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_motorized_military_police_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_motorbike_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_armored_motorized_military_police_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_drone_logistics_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_drone_logistics.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_drone_logistics_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_drone_logistics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bba_early_transport_plane_medium"
+		texturefile = "gfx/interface/technologies/tad/bba_early_transport_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_bba_early_transport_plane_medium"
+		texturefile = "gfx/interface/technologies/tad/bba_early_transport_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_transport_plane_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/bba_early_transport_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_transport_plane_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/tad/bba_early_transport_plane.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bba_improved_transport_plane_medium"
+		texturefile = "gfx/interface/technologies/tad/bba_improved_transport_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_bba_improved_transport_plane_medium"
+		texturefile = "gfx/interface/technologies/tad/bba_improved_transport_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_transport_plane_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/bba_improved_transport_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_transport_plane_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/tad/bba_improved_transport_plane.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bba_strategic_airlifter_medium"
+		texturefile = "gfx/interface/technologies/tad/bba_strategic_airlifter.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_bba_strategic_airlifter_medium"
+		texturefile = "gfx/interface/technologies/tad/bba_strategic_airlifter.dds"
+	}
+	spriteType = {
+		name = "GFX_transport_plane_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/bba_strategic_airlifter.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_transport_plane_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tad/bba_strategic_airlifter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/iw_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/iw_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_small_plane_airframe_0_medium"
+		texturefile = "gfx/interface/technologies/tad/iw_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_small_plane_airframe_0_medium"
+		texturefile = "gfx/interface/technologies/tad/iw_small_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_small_plane_airframe_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_small_plane_airframe_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_small_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_small_plane_airframe_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_small_plane_airframe_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_small_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_small_plane_airframe_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_small_plane_airframe_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_small_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modern_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_modern_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_small_plane_airframe_4_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_small_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_small_plane_airframe_4_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_small_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/iw_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/iw_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_plane_airframe_0_medium"
+		texturefile = "gfx/interface/technologies/tad/iw_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_medium_plane_airframe_0_medium"
+		texturefile = "gfx/interface/technologies/tad/iw_medium_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_plane_airframe_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_medium_plane_airframe_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_medium_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_plane_airframe_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_medium_plane_airframe_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_medium_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_plane_airframe_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_medium_plane_airframe_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_medium_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modern_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_modern_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_plane_airframe_4_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_medium_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_medium_plane_airframe_4_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_medium_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_iw_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/iw_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_iw_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/iw_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_large_plane_airframe_0_medium"
+		texturefile = "gfx/interface/technologies/tad/iw_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_large_plane_airframe_0_medium"
+		texturefile = "gfx/interface/technologies/tad/iw_large_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_large_plane_airframe_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_large_plane_airframe_1_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_large_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_large_plane_airframe_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_large_plane_airframe_2_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_large_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_large_plane_airframe_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_large_plane_airframe_3_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_large_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modern_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_modern_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_large_plane_airframe_4_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_large_airframe.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_large_plane_airframe_4_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_large_airframe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_early_bombs_medium"
+		texturefile = "gfx/interface/technologies/tad/early_bombs.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_early_bombs_medium"
+		texturefile = "gfx/interface/technologies/tad/early_bombs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_heavy_bombs_medium"
+		texturefile = "gfx/interface/technologies/tad/heavy_bombs.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_heavy_bombs_medium"
+		texturefile = "gfx/interface/technologies/tad/heavy_bombs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_armor_piercing_bombs_medium"
+		texturefile = "gfx/interface/technologies/tad/armor_piercing_bombs.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_armor_piercing_bombs_medium"
+		texturefile = "gfx/interface/technologies/tad/armor_piercing_bombs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_photo_reconnaisance_medium"
+		texturefile = "gfx/interface/technologies/tad/photo_reconnaisance.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_photo_reconnaisance_medium"
+		texturefile = "gfx/interface/technologies/tad/photo_reconnaisance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_air_torpedoe_1_medium"
+		texturefile = "gfx/interface/technologies/tad/air_torpedoe_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_air_torpedoe_1_medium"
+		texturefile = "gfx/interface/technologies/tad/air_torpedoe_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_air_torpedoe_2_medium"
+		texturefile = "gfx/interface/technologies/tad/air_torpedoe_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_air_torpedoe_2_medium"
+		texturefile = "gfx/interface/technologies/tad/air_torpedoe_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_air_torpedoe_3_medium"
+		texturefile = "gfx/interface/technologies/tad/air_torpedoe_3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_air_torpedoe_3_medium"
+		texturefile = "gfx/interface/technologies/tad/air_torpedoe_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aa_lmg_medium"
+		texturefile = "gfx/interface/technologies/tad/aa_lmg.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_aa_lmg_medium"
+		texturefile = "gfx/interface/technologies/tad/aa_lmg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_survivability_studies_medium"
+		texturefile = "gfx/interface/technologies/tad/survivability_studies.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_survivability_studies_medium"
+		texturefile = "gfx/interface/technologies/tad/survivability_studies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aa_hmg_medium"
+		texturefile = "gfx/interface/technologies/tad/aa_hmg.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_aa_hmg_medium"
+		texturefile = "gfx/interface/technologies/tad/aa_hmg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aa_cannon_1_medium"
+		texturefile = "gfx/interface/technologies/tad/aa_cannon_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_aa_cannon_1_medium"
+		texturefile = "gfx/interface/technologies/tad/aa_cannon_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aa_cannon_2_medium"
+		texturefile = "gfx/interface/technologies/tad/aa_cannon_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_aa_cannon_2_medium"
+		texturefile = "gfx/interface/technologies/tad/aa_cannon_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aa_cannon_3_medium"
+		texturefile = "gfx/interface/technologies/tad/aa_cannon_3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_aa_cannon_3_medium"
+		texturefile = "gfx/interface/technologies/tad/aa_cannon_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_engines_1_medium"
+		texturefile = "gfx/interface/technologies/tad/engines_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_engines_1_medium"
+		texturefile = "gfx/interface/technologies/tad/engines_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_engines_2_medium"
+		texturefile = "gfx/interface/technologies/tad/engines_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_engines_2_medium"
+		texturefile = "gfx/interface/technologies/tad/engines_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_engines_3_medium"
+		texturefile = "gfx/interface/technologies/tad/engines_3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_engines_3_medium"
+		texturefile = "gfx/interface/technologies/tad/engines_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_engines_4_medium"
+		texturefile = "gfx/interface/technologies/tad/engines_4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_engines_4_medium"
+		texturefile = "gfx/interface/technologies/tad/engines_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_range_improvements_medium"
+		texturefile = "gfx/interface/technologies/tad/range_improvements.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_range_improvements_medium"
+		texturefile = "gfx/interface/technologies/tad/range_improvements.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aircraft_construction_medium"
+		texturefile = "gfx/interface/technologies/tad/aircraft_construction.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_aircraft_construction_medium"
+		texturefile = "gfx/interface/technologies/tad/aircraft_construction.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_centrifugal_jet_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_centrifugal_jet_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_centrifugal_jet_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_centrifugal_jet_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_reinforced_wings_mothership_medium"
+		texturefile = "gfx/interface/technologies/tad/reinforced_wings_mothership.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_reinforced_wings_mothership_medium"
+		texturefile = "gfx/interface/technologies/tad/reinforced_wings_mothership.dds"
+	}
+
+	spriteType = {
+		name = "GFX_miniature_fighters_medium"
+		texturefile = "gfx/interface/technologies/tad/miniature_fighters.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_miniature_fighters_medium"
+		texturefile = "gfx/interface/technologies/tad/miniature_fighters.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aerial_hangars_medium"
+		texturefile = "gfx/interface/technologies/tad/aerial_hangars.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_aerial_hangars_medium"
+		texturefile = "gfx/interface/technologies/tad/aerial_hangars.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_hypersonic_weapons_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_hypersonic_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_hypersonic_weapons_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_hypersonic_weapons.dds"
+	}
+
+	spriteType = {
+		name = "GFX_basic_machine_tools_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_machine_tools.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_machine_tools_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_machine_tools.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_machine_tools_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_machine_tools.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_machine_tools_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_machine_tools.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_machine_tools_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_machine_tools.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_machine_tools_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_machine_tools.dds"
+	}
+
+	spriteType = {
+		name = "GFX_assembly_line_production_medium"
+		texturefile = "gfx/interface/technologies/tad/assembly_line_production.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_assembly_line_production_medium"
+		texturefile = "gfx/interface/technologies/tad/assembly_line_production.dds"
+	}
+
+	spriteType = {
+		name = "GFX_flexible_line_medium"
+		texturefile = "gfx/interface/technologies/tad/flexible_line.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_flexible_line_medium"
+		texturefile = "gfx/interface/technologies/tad/flexible_line.dds"
+	}
+
+	spriteType = {
+		name = "GFX_streamlined_line_medium"
+		texturefile = "gfx/interface/technologies/tad/streamlined_line.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_streamlined_line_medium"
+		texturefile = "gfx/interface/technologies/tad/streamlined_line.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_equipment_conversion.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_equipment_conversion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_equipment_conversion.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_equipment_conversion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_concentrated_industry_medium"
+		texturefile = "gfx/interface/technologies/tad/concentrated_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_concentrated_industry_medium"
+		texturefile = "gfx/interface/technologies/tad/concentrated_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_concentrated_industry2_medium"
+		texturefile = "gfx/interface/technologies/tad/concentrated_industry2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_concentrated_industry2_medium"
+		texturefile = "gfx/interface/technologies/tad/concentrated_industry2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_concentrated_industry3_medium"
+		texturefile = "gfx/interface/technologies/tad/concentrated_industry3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_concentrated_industry3_medium"
+		texturefile = "gfx/interface/technologies/tad/concentrated_industry3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_concentrated_industry4_medium"
+		texturefile = "gfx/interface/technologies/tad/concentrated_industry4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_concentrated_industry4_medium"
+		texturefile = "gfx/interface/technologies/tad/concentrated_industry4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_concentrated_industry5_medium"
+		texturefile = "gfx/interface/technologies/tad/concentrated_industry5.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_concentrated_industry5_medium"
+		texturefile = "gfx/interface/technologies/tad/concentrated_industry5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_dispersed_industry_medium"
+		texturefile = "gfx/interface/technologies/tad/dispersed_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_dispersed_industry_medium"
+		texturefile = "gfx/interface/technologies/tad/dispersed_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_dispersed_industry2_medium"
+		texturefile = "gfx/interface/technologies/tad/dispersed_industry2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_dispersed_industry2_medium"
+		texturefile = "gfx/interface/technologies/tad/dispersed_industry2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_dispersed_industry3_medium"
+		texturefile = "gfx/interface/technologies/tad/dispersed_industry3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_dispersed_industry3_medium"
+		texturefile = "gfx/interface/technologies/tad/dispersed_industry3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_dispersed_industry4_medium"
+		texturefile = "gfx/interface/technologies/tad/dispersed_industry4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_dispersed_industry4_medium"
+		texturefile = "gfx/interface/technologies/tad/dispersed_industry4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_dispersed_industry5_medium"
+		texturefile = "gfx/interface/technologies/tad/dispersed_industry5.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_dispersed_industry5_medium"
+		texturefile = "gfx/interface/technologies/tad/dispersed_industry5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_silos_medium"
+		texturefile = "gfx/interface/technologies/tad/fuel_silos.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_fuel_silos_medium"
+		texturefile = "gfx/interface/technologies/tad/fuel_silos.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining_medium"
+		texturefile = "gfx/interface/technologies/tad/fuel_refining.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_fuel_refining_medium"
+		texturefile = "gfx/interface/technologies/tad/fuel_refining.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining2_medium"
+		texturefile = "gfx/interface/technologies/tad/fuel_refining2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_fuel_refining2_medium"
+		texturefile = "gfx/interface/technologies/tad/fuel_refining2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining3_medium"
+		texturefile = "gfx/interface/technologies/tad/fuel_refining3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_fuel_refining3_medium"
+		texturefile = "gfx/interface/technologies/tad/fuel_refining3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining4_medium"
+		texturefile = "gfx/interface/technologies/tad/fuel_refining4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_fuel_refining4_medium"
+		texturefile = "gfx/interface/technologies/tad/fuel_refining4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining5_medium"
+		texturefile = "gfx/interface/technologies/tad/fuel_refining5.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_fuel_refining5_medium"
+		texturefile = "gfx/interface/technologies/tad/fuel_refining5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synth_oil_experiments_medium"
+		texturefile = "gfx/interface/technologies/tad/synth_oil_experiments.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_synth_oil_experiments_medium"
+		texturefile = "gfx/interface/technologies/tad/synth_oil_experiments.dds"
+	}
+
+	spriteType = {
+		name = "GFX_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/oil_processing.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/oil_processing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_oil_processing.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_oil_processing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_oil_processing.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_oil_processing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modern_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_oil_processing.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_modern_oil_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_oil_processing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/rubber_processing.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/rubber_processing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_rubber_processing.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_rubber_processing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_rubber_processing.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_rubber_processing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modern_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_rubber_processing.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_modern_rubber_processing_medium"
+		texturefile = "gfx/interface/technologies/tad/modern_rubber_processing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction1_medium"
+		texturefile = "gfx/interface/technologies/tad/construction1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_construction1_medium"
+		texturefile = "gfx/interface/technologies/tad/construction1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation1_medium"
+		texturefile = "gfx/interface/technologies/tad/excavation1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_excavation1_medium"
+		texturefile = "gfx/interface/technologies/tad/excavation1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction2_medium"
+		texturefile = "gfx/interface/technologies/tad/construction2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_construction2_medium"
+		texturefile = "gfx/interface/technologies/tad/construction2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation2_medium"
+		texturefile = "gfx/interface/technologies/tad/excavation2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_excavation2_medium"
+		texturefile = "gfx/interface/technologies/tad/excavation2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction3_medium"
+		texturefile = "gfx/interface/technologies/tad/construction3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_construction3_medium"
+		texturefile = "gfx/interface/technologies/tad/construction3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation3_medium"
+		texturefile = "gfx/interface/technologies/tad/excavation3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_excavation3_medium"
+		texturefile = "gfx/interface/technologies/tad/excavation3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction4_medium"
+		texturefile = "gfx/interface/technologies/tad/construction4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_construction4_medium"
+		texturefile = "gfx/interface/technologies/tad/construction4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation4_medium"
+		texturefile = "gfx/interface/technologies/tad/excavation4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_excavation4_medium"
+		texturefile = "gfx/interface/technologies/tad/excavation4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction5_medium"
+		texturefile = "gfx/interface/technologies/tad/construction5.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_construction5_medium"
+		texturefile = "gfx/interface/technologies/tad/construction5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation5_medium"
+		texturefile = "gfx/interface/technologies/tad/excavation5.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_excavation5_medium"
+		texturefile = "gfx/interface/technologies/tad/excavation5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_additive_manufacturing_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_additive_manufacturing.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_additive_manufacturing_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_additive_manufacturing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_semiconductor_fabs_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_semiconductor_fabs.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_semiconductor_fabs_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_semiconductor_fabs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_automated_factories_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_automated_factories.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_automated_factories_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_automated_factories.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_gigafactory_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_gigafactory.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_gigafactory_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_gigafactory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_dispersed_resilience_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_dispersed_resilience.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_dispersed_resilience_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_dispersed_resilience.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_deep_extraction_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_deep_extraction.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_deep_extraction_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_deep_extraction.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_battery_production_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_battery_production.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_battery_production_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_battery_production.dds"
+	}
+
+	spriteType = {
+		name = "GFX_electronic_mechanical_engineering_medium"
+		texturefile = "gfx/interface/technologies/tad/electronic_mechanical_engineering.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_electronic_mechanical_engineering_medium"
+		texturefile = "gfx/interface/technologies/tad/electronic_mechanical_engineering.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radio_medium"
+		texturefile = "gfx/interface/technologies/tad/radio.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_radio_medium"
+		texturefile = "gfx/interface/technologies/tad/radio.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_radio_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_radio.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_radio_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_radio.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_radio_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_radio.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_radio_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_radio.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radio_detection_medium"
+		texturefile = "gfx/interface/technologies/tad/radio_detection.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_radio_detection_medium"
+		texturefile = "gfx/interface/technologies/tad/radio_detection.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cavity_magnatron_medium"
+		texturefile = "gfx/interface/technologies/tad/cavity_magnatron.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_cavity_magnatron_medium"
+		texturefile = "gfx/interface/technologies/tad/cavity_magnatron.dds"
+	}
+
+	spriteType = {
+		name = "GFX_centimetric_radar_medium"
+		texturefile = "gfx/interface/technologies/tad/centimetric_radar.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_centimetric_radar_medium"
+		texturefile = "gfx/interface/technologies/tad/centimetric_radar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_phased_array_medium"
+		texturefile = "gfx/interface/technologies/tad/phased_array.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_phased_array_medium"
+		texturefile = "gfx/interface/technologies/tad/phased_array.dds"
+	}
+
+	spriteType = {
+		name = "GFX_monopulse_radar_medium"
+		texturefile = "gfx/interface/technologies/tad/monopulse_radar.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_monopulse_radar_medium"
+		texturefile = "gfx/interface/technologies/tad/monopulse_radar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mechanical_computing_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanical_computing.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_mechanical_computing_medium"
+		texturefile = "gfx/interface/technologies/tad/mechanical_computing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_computing_machine_medium"
+		texturefile = "gfx/interface/technologies/tad/computing_machine.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_computing_machine_medium"
+		texturefile = "gfx/interface/technologies/tad/computing_machine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_computing_machine_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_computing_machine.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_computing_machine_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_computing_machine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_computing_machine_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_computing_machine.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_computing_machine_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_computing_machine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_basic_encryption_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_encryption.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_encryption_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_encryption.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_encryption_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_encryption.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_encryption_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_encryption.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_encryption_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_encryption.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_encryption_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_encryption.dds"
+	}
+
+	spriteType = {
+		name = "GFX_basic_decryption_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_decryption.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_decryption_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_decryption.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_decryption_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_decryption.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_decryption_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_decryption.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_decryption_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_decryption.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_decryption_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_decryption.dds"
+	}
+
+	spriteType = {
+		name = "GFX_basic_fire_control_system_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_fire_control_system.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_fire_control_system_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_fire_control_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_fire_control_system_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_fire_control_system.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_fire_control_system_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_fire_control_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_fire_control_system_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_fire_control_system.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_fire_control_system_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_fire_control_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_basic_fortification_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_fortification_tech.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_fortification_tech_medium"
+		texturefile = "gfx/interface/technologies/tad/basic_fortification_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_land_fort_tech_1_medium"
+		texturefile = "gfx/interface/technologies/tad/land_fort_tech_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_land_fort_tech_1_medium"
+		texturefile = "gfx/interface/technologies/tad/land_fort_tech_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_land_fort_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tad/land_fort_tech_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_land_fort_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tad/land_fort_tech_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_coastal_fort_tech_1_medium"
+		texturefile = "gfx/interface/technologies/tad/coastal_fort_tech_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_coastal_fort_tech_1_medium"
+		texturefile = "gfx/interface/technologies/tad/coastal_fort_tech_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_coastal_fort_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tad/coastal_fort_tech_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_coastal_fort_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tad/coastal_fort_tech_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_experimental_rockets_medium"
+		texturefile = "gfx/interface/technologies/tad/experimental_rockets.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_experimental_rockets_medium"
+		texturefile = "gfx/interface/technologies/tad/experimental_rockets.dds"
+	}
+
+	spriteType = {
+		name = "GFX_rocket_engines_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_engines.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_rocket_engines_medium"
+		texturefile = "gfx/interface/technologies/tad/rocket_engines.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_rockets_improved_guidance_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_rockets_improved_guidance.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_rockets_improved_guidance_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_rockets_improved_guidance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_rockets_rocket_bomber_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_rockets_rocket_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_rockets_rocket_bomber_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_rockets_rocket_bomber.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_rockets_improved_rocket_bomber_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_rockets_improved_rocket_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_rockets_improved_rocket_bomber_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_rockets_improved_rocket_bomber.dds"
+	}
+
+	spriteType = {
+		name = "GFX_improved_rocket_engines_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_rocket_engines.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_rocket_engines_medium"
+		texturefile = "gfx/interface/technologies/tad/improved_rocket_engines.dds"
+	}
+
+	spriteType = {
+		name = "GFX_advanced_rocket_engines_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_rocket_engines.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_rocket_engines_medium"
+		texturefile = "gfx/interface/technologies/tad/advanced_rocket_engines.dds"
+	}
+
+	spriteType = {
+		name = "GFX_jet_engines_medium"
+		texturefile = "gfx/interface/technologies/tad/jet_engines.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_jet_engines_medium"
+		texturefile = "gfx/interface/technologies/tad/jet_engines.dds"
+	}
+
+	spriteType = {
+		name = "GFX_atomic_research_medium"
+		texturefile = "gfx/interface/technologies/tad/atomic_research.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_atomic_research_medium"
+		texturefile = "gfx/interface/technologies/tad/atomic_research.dds"
+	}
+
+	spriteType = {
+		name = "GFX_nuclear_reactor_medium"
+		texturefile = "gfx/interface/technologies/tad/nuclear_reactor.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_nuclear_reactor_medium"
+		texturefile = "gfx/interface/technologies/tad/nuclear_reactor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_nuclear_reactor_heavy_water_medium"
+		texturefile = "gfx/interface/technologies/tad/nuclear_reactor_heavy_water.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_nuclear_reactor_heavy_water_medium"
+		texturefile = "gfx/interface/technologies/tad/nuclear_reactor_heavy_water.dds"
+	}
+
+	spriteType = {
+		name = "GFX_nukes_medium"
+		texturefile = "gfx/interface/technologies/tad/nukes.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_nukes_medium"
+		texturefile = "gfx/interface/technologies/tad/nukes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_rockets_dual_chamber_rocket_engine_1_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_rockets_dual_chamber_rocket_engine_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_rockets_dual_chamber_rocket_engine_1_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_rockets_dual_chamber_rocket_engine_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_rockets_dual_chamber_rocket_engine_2_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_rockets_dual_chamber_rocket_engine_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_sp_rockets_dual_chamber_rocket_engine_2_medium"
+		texturefile = "gfx/interface/technologies/tad/sp_rockets_dual_chamber_rocket_engine_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_artificial_intelligence_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_artificial_intelligence.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_artificial_intelligence_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_artificial_intelligence.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_quantum_computing_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_quantum_computing.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_quantum_computing_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_quantum_computing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_satellite_network_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_satellite_network.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_satellite_network_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_satellite_network.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_cyber_command_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_cyber_command.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_cyber_command_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_cyber_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tad_datalink_c2_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_datalink_c2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_tad_datalink_c2_medium"
+		texturefile = "gfx/interface/technologies/tad/tad_datalink_c2.dds"
+	}
+}

@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = wyo_mark_gordon_gov
+			allowed = { original_tag = WYO }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	WYO_Liz_Cheney={
 		name=WYO_Liz_Cheney
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = wyo_liz_cheney_gov
+			allowed = { original_tag = WYO }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

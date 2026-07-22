@@ -1,0 +1,156 @@
+characters = {
+
+	OKL_Thomas_H_Mancino = {
+		name = OKL_Thomas_H_Mancino
+		portraits = {
+			army = {
+				large = "GFX_Portrait_OKL_Thomas_H_Mancino"
+				small = "GFX_Portrait_OKL_Thomas_H_Mancino_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = okl_thomas_h_mancino_adv
+			allowed = { original_tag = OKL }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_OKL_thunderbird_command TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	OKL_Michael_C_Thompson = {
+		name = OKL_Michael_C_Thompson
+		portraits = {
+			army = {
+				large = "GFX_Portrait_OKL_Michael_C_Thompson"
+				small = "GFX_Portrait_OKL_Michael_C_Thompson_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = okl_michael_c_thompson_adv
+			allowed = { original_tag = OKL }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	OKL_Louis_W_Wilson_Jr = {
+		name = OKL_Louis_W_Wilson_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_OKL_Louis_W_Wilson_Jr"
+				small = "GFX_Portrait_OKL_Louis_W_Wilson_Jr_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = okl_louis_w_wilson_jr_adv
+			ledger = army
+			allowed = { original_tag = OKL }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_expeditionary naval_invader war_hero }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	OKL_Tommy_R_Franks = {
+		name = OKL_Tommy_R_Franks
+		portraits = {
+			army = {
+				large = "GFX_Portrait_OKL_Tommy_R_Franks"
+				small = "GFX_Portrait_OKL_Tommy_R_Franks_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = okl_tommy_r_franks_adv
+			ledger = army
+			allowed = { original_tag = OKL }
+			traits = { military_theorist }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_joint_operations TAD_gwot_veteran brilliant_strategist career_officer war_hero }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+	}
+
+	OKL_Clarence_L_Tinker = {
+		name = OKL_Clarence_L_Tinker
+		portraits = {
+			army = {
+				large = "GFX_Portrait_OKL_Clarence_L_Tinker"
+				small = "GFX_Portrait_OKL_Clarence_L_Tinker_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = okl_clarence_l_tinker_adv
+			allowed = { original_tag = OKL }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	OKL_Ernest_Childers = {
+		name = OKL_Ernest_Childers
+		portraits = {
+			army = {
+				large = "GFX_Portrait_OKL_Ernest_Childers"
+				small = "GFX_Portrait_OKL_Ernest_Childers_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = okl_ernest_childers_adv
+			ledger = army
+			allowed = { original_tag = OKL }
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader trait_cautious }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+}

@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = NYK_Kathy_Hochul #Democratic
 recruit_character = NYK_Elise_Stefanik #Nationalist/Non-Aligned
+
+##### The American Dream - commanders & advisors #####
+recruit_character = NYK_Raymond_F_Shields_Jr
+recruit_character = NYK_Michel_A_Natali
+recruit_character = NYK_Jack_A_James_Jr
+recruit_character = NYK_Colin_L_Powell
+recruit_character = NYK_Emory_Upton
+recruit_character = NYK_Abner_Doubleday
+recruit_character = NYK_Chuck_Schumer
+recruit_character = NYK_Kirsten_Gillibrand
+recruit_character = NYK_Jamie_Dimon
+
+# end of commanders

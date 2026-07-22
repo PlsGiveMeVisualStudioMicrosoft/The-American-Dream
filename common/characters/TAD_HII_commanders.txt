@@ -1,0 +1,156 @@
+characters = {
+
+	HAW_Stephen_F_Logan = {
+		name = HAW_Stephen_F_Logan
+		portraits = {
+			army = {
+				large = "GFX_Portrait_HAW_Stephen_F_Logan"
+				small = "GFX_Portrait_HAW_Stephen_F_Logan_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = haw_stephen_f_logan_adv
+			allowed = { original_tag = HII }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_HAW_island_bastion TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	HAW_Joseph_R_Harris_II = {
+		name = HAW_Joseph_R_Harris_II
+		portraits = {
+			army = {
+				large = "GFX_Portrait_HAW_Joseph_R_Harris_II"
+				small = "GFX_Portrait_HAW_Joseph_R_Harris_II_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = haw_joseph_r_harris_ii_adv
+			allowed = { original_tag = HII }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	HAW_Lance_A_Okamura = {
+		name = HAW_Lance_A_Okamura
+		portraits = {
+			army = {
+				large = "GFX_Portrait_HAW_Lance_A_Okamura"
+				small = "GFX_Portrait_HAW_Lance_A_Okamura_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = haw_lance_a_okamura_adv
+			ledger = army
+			allowed = { original_tag = HII }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	HAW_Eric_K_Shinseki = {
+		name = HAW_Eric_K_Shinseki
+		portraits = {
+			army = {
+				large = "GFX_Portrait_HAW_Eric_K_Shinseki"
+				small = "GFX_Portrait_HAW_Eric_K_Shinseki_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = haw_eric_k_shinseki_adv
+			ledger = army
+			allowed = { original_tag = HII }
+			traits = { mobile_warfare_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_abct_commander armor_officer panzer_leader war_hero }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	HAW_Kenneth_S_Hara = {
+		name = HAW_Kenneth_S_Hara
+		portraits = {
+			army = {
+				large = "GFX_Portrait_HAW_Kenneth_S_Hara"
+				small = "GFX_Portrait_HAW_Kenneth_S_Hara_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = haw_kenneth_s_hara_adv
+			allowed = { original_tag = HII }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	HAW_Arthur_S_Ishimoto = {
+		name = HAW_Arthur_S_Ishimoto
+		portraits = {
+			army = {
+				large = "GFX_Portrait_HAW_Arthur_S_Ishimoto"
+				small = "GFX_Portrait_HAW_Arthur_S_Ishimoto_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = haw_arthur_s_ishimoto_adv
+			ledger = army
+			allowed = { original_tag = HII }
+			traits = { army_infantry_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_light_fighter TAD_gwot_veteran infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+}

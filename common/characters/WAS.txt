@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = was_bob_ferguson_gov
+			allowed = { original_tag = WAS }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	WAS_Dave_Reichert={
 		name=WAS_Dave_Reichert
@@ -23,6 +30,13 @@ characters={
 			ideology=Republican_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = was_dave_reichert_gov
+			allowed = { original_tag = WAS }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

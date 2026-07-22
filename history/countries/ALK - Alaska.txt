@@ -89,3 +89,16 @@ set_popularities = {
 
 recruit_character = ALK_Mike_Dunleavy #Nationalist/Non-Aligned
 recruit_character = ALK_Mary_Peltola #Democratic
+
+##### The American Dream - commanders & advisors #####
+recruit_character = ALK_Torrence_W_Saxe
+recruit_character = ALK_Vincent_K_Brooks
+recruit_character = ALK_Laurie_J_Hummel
+recruit_character = ALK_Wayne_Don
+recruit_character = ALK_Randy_A_Kee
+recruit_character = ALK_Marvin_Marston
+recruit_character = ALK_Lisa_Murkowski
+recruit_character = ALK_Dan_Sullivan
+recruit_character = ALK_Sarah_Palin
+
+# end of commanders

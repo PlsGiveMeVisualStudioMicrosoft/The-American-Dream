@@ -11,6 +11,13 @@ characters={
 			expire="2083.1.1.1"
 			id=-1
 		}
+			advisor = {
+			slot = political_advisor
+			idea_token = nha_kelly_ayotte_gov
+			allowed = { original_tag = NHA }
+			traits = { popular_figurehead }
+			cost = 150
+		}
 	}
 	NHA_Jeanne_Shaheen={
 		name=NHA_Jeanne_Shaheen
@@ -23,6 +30,13 @@ characters={
 			ideology=Democratic_Party
 			expire="2083.1.1.1"
 			id=-1
+		}
+			advisor = {
+			slot = political_advisor
+			idea_token = nha_jeanne_shaheen_gov
+			allowed = { original_tag = NHA }
+			traits = { silent_workhorse }
+			cost = 150
 		}
 	}
 }

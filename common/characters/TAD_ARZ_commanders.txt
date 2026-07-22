@@ -1,0 +1,155 @@
+characters = {
+
+	ARZ_Kerry_L_Muehlenbeck = {
+		name = ARZ_Kerry_L_Muehlenbeck
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ARZ_Kerry_L_Muehlenbeck"
+				small = "GFX_Portrait_ARZ_Kerry_L_Muehlenbeck_small"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = arz_kerry_l_muehlenbeck_adv
+			allowed = { original_tag = ARZ }
+			traits = { army_chief_defensive_1 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { TAD_ARZ_sonoran_marshal TAD_guard_bureau TAD_homeland_defense career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	ARZ_Troy_T_Daniels = {
+		name = ARZ_Troy_T_Daniels
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ARZ_Troy_T_Daniels"
+				small = "GFX_Portrait_ARZ_Troy_T_Daniels_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = arz_troy_t_daniels_adv
+			allowed = { original_tag = ARZ }
+			traits = { air_chief_ground_support_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	ARZ_Barry_M_Goldwater = {
+		name = ARZ_Barry_M_Goldwater
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ARZ_Barry_M_Goldwater"
+				small = "GFX_Portrait_ARZ_Barry_M_Goldwater_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = arz_barry_m_goldwater_adv
+			allowed = { original_tag = ARZ }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	ARZ_Michael_T_McGuire = {
+		name = ARZ_Michael_T_McGuire
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ARZ_Michael_T_McGuire"
+				small = "GFX_Portrait_ARZ_Michael_T_McGuire_small"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = arz_michael_t_mcguire_adv
+			ledger = army
+			allowed = { original_tag = ARZ }
+			traits = { mass_assault_expert }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_state_guard_organizer TAD_hurricane_response career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	ARZ_Frank_Luke_Jr = {
+		name = ARZ_Frank_Luke_Jr
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ARZ_Frank_Luke_Jr"
+				small = "GFX_Portrait_ARZ_Frank_Luke_Jr_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = arz_frank_luke_jr_adv
+			allowed = { original_tag = ARZ }
+			traits = { air_chief_ground_support_2 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_air_component TAD_drone_pioneer career_officer organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	ARZ_Andrew_J_MacDonald = {
+		name = ARZ_Andrew_J_MacDonald
+		portraits = {
+			army = {
+				large = "GFX_Portrait_ARZ_Andrew_J_MacDonald"
+				small = "GFX_Portrait_ARZ_Andrew_J_MacDonald_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = arz_andrew_j_macdonald_adv
+			ledger = army
+			allowed = { original_tag = ARZ }
+			traits = { army_armored_1 }
+			cost = 100
+		}
+		corps_commander = {
+			traits = { TAD_stryker_commander armor_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+}
