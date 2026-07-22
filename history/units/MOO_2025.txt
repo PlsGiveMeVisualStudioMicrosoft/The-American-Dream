@@ -1,0 +1,90 @@
+##############################################################################
+# MONTANA - STATE ORDER OF BATTLE
+# National Guard, State Defense Force and law enforcement
+# Land forces only. Generated for The American Dream.
+##############################################################################
+
+# Loaded when this state becomes independent.
+# Until then these formations are represented inside the USA OOB.
+
+##### Division Templates #####
+division_template = {
+	name = "National Guard Infantry Brigade"		# ARNG IBCT - part-time, older kit
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		military_police = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "State Police"		# highway patrol / state troopers, SWAT
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "State Guard Battalion"		# county-raised emergency militia
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+##### Order of Battle #####
+units = {
+	division = {
+		name = "Montana Guard Brigade"
+		location = 6833		# Helena/Great Falls
+		division_template = "National Guard Infantry Brigade"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "Montana State Guard"
+		location = 6833
+		division_template = "State Guard Battalion"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.35
+	}
+	division = {
+		name = "Montana Highway Patrol"
+		location = 6833
+		division_template = "State Police"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.45
+	}
+}

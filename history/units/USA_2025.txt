@@ -1,0 +1,696 @@
+##############################################################################
+# UNITED STATES ARMED FORCES - 2025
+# Regular Army, USMC and National Guard divisional HQs
+# Land forces only. Generated for The American Dream.
+##############################################################################
+
+##### Division Templates #####
+division_template = {
+	name = "Armored Division"		# ABCT x3: M1 Abrams, M2 Bradley, M109 Paladin
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
+		medium_sp_artillery_brigade = { x = 2 y = 0 }
+		medium_sp_artillery_brigade = { x = 2 y = 1 }
+		medium_sp_artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Stryker Division"		# SBCT x3: Stryker inf, cav sqn, M777
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		armored_car = { x = 2 y = 0 }
+		armored_car = { x = 2 y = 1 }
+		armored_car = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+		mot_artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Light Infantry Division"		# IBCT x3: light inf, cav sqn, M119/M777
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Airborne Division"		# 3 airborne IBCTs, M119 105mm
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 0 y = 4 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Air Assault Division"		# 101st: heliborne inf, no HOI4 heli subunit exists
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Mountain Division"		# 10th Mountain: light/alpine infantry
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 0 y = 4 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Marine Division"		# 3 inf regts, ACV/AAV bn, arty regt, LAR
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 0 y = 4 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+		amphibious_mechanized = { x = 2 y = 0 }
+		amphibious_mechanized = { x = 2 y = 1 }
+		amphibious_mechanized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Marine Littoral Regiment"		# MLR: NMESIS anti-ship, EABO island defence
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 0 y = 4 }
+		mot_anti_air_brigade = { x = 1 y = 0 }
+		mot_anti_air_brigade = { x = 1 y = 1 }
+		mot_anti_tank_brigade = { x = 2 y = 0 }
+		mot_anti_tank_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Armored Cavalry Regiment"		# 3rd Cav / 11th ACR / 278th ACR
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		armored_car = { x = 2 y = 0 }
+		armored_car = { x = 2 y = 1 }
+		medium_sp_artillery_brigade = { x = 3 y = 0 }
+		medium_sp_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Ranger Regiment"		# 75th Ranger Regiment: 3 ranger bns
+
+	regiments = {
+		ranger_battalion = { x = 0 y = 0 }
+		ranger_battalion = { x = 0 y = 1 }
+		ranger_battalion = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Special Forces Group"		# 4 SF battalions per group
+
+	regiments = {
+		ranger_battalion = { x = 0 y = 0 }
+		ranger_battalion = { x = 0 y = 1 }
+		ranger_battalion = { x = 0 y = 2 }
+		ranger_battalion = { x = 0 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Fires Brigade"		# HIMARS / M270 MLRS / M109 corps artillery
+
+	regiments = {
+		motorized_rocket_brigade = { x = 0 y = 0 }
+		motorized_rocket_brigade = { x = 0 y = 1 }
+		motorized_rocket_brigade = { x = 0 y = 2 }
+		mot_artillery_brigade = { x = 1 y = 0 }
+		mot_artillery_brigade = { x = 1 y = 1 }
+		mot_artillery_brigade = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		mot_recon = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Air Defense Brigade"		# Patriot / THAAD / M-SHORAD
+
+	regiments = {
+		mot_anti_air_brigade = { x = 0 y = 0 }
+		mot_anti_air_brigade = { x = 0 y = 1 }
+		mot_anti_air_brigade = { x = 0 y = 2 }
+		mot_anti_air_brigade = { x = 0 y = 3 }
+		mot_anti_air_brigade = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		mot_recon = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Military Police Brigade"		# rear area security, detention, route control
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "National Guard Infantry Brigade"		# ARNG IBCT - part-time, older kit
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		military_police = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+
+##### Order of Battle #####
+units = {
+
+	### III Armored Corps - Fort Cavazos, Texas ###
+	division = {
+		name = "1st Cavalry Division"
+		location = 8385		# Fort Cavazos, TX
+		division_template = "Armored Division"
+		start_experience_factor = 0.55
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1st Armored Division"
+		location = 4175		# Fort Bliss, TX (El Paso)
+		division_template = "Armored Division"
+		start_experience_factor = 0.55
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1st Infantry Division"
+		location = 5906		# Fort Riley, KS
+		division_template = "Armored Division"
+		start_experience_factor = 0.55
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4th Infantry Division"
+		location = 2433		# Fort Carson, CO
+		division_template = "Armored Division"
+		start_experience_factor = 0.55
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3rd Cavalry Regiment"
+		location = 8385		# Fort Cavazos, TX
+		division_template = "Armored Cavalry Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1st Air Cavalry Brigade"
+		location = 8385		# Fort Cavazos, TX
+		division_template = "Air Assault Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.95
+	}
+
+	### XVIII Airborne Corps - Fort Bragg, North Carolina ###
+	division = {
+		name = "82nd Airborne Division"
+		location = 7709		# Fort Bragg, NC
+		division_template = "Airborne Division"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "101st Airborne Division (Air Assault)"
+		location = 2884		# Fort Campbell, KY
+		division_template = "Air Assault Division"
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3rd Infantry Division"
+		location = 7909		# Fort Stewart, GA
+		division_template = "Armored Division"
+		start_experience_factor = 0.55
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "10th Mountain Division"
+		location = 4988		# Fort Drum, NY
+		division_template = "Mountain Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "18th Field Artillery Brigade"
+		location = 7709		# Fort Bragg, NC
+		division_template = "Fires Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "16th Military Police Brigade"
+		location = 7709		# Fort Bragg, NC
+		division_template = "Military Police Brigade"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.85
+	}
+
+	### I Corps - Joint Base Lewis-McChord, Washington ###
+	division = {
+		name = "7th Infantry Division"
+		location = 5796		# JBLM, WA
+		division_template = "Stryker Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2nd Infantry Division"
+		location = 5796		# JBLM, WA / Korea rotation
+		division_template = "Stryker Division"
+		start_experience_factor = 0.55
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "11th Airborne Division"
+		location = 2784		# Fort Wainwright & JBER, AK
+		division_template = "Airborne Division"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "25th Infantry Division"
+		location = 5786		# Schofield Barracks, HI
+		division_template = "Light Infantry Division"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "17th Field Artillery Brigade"
+		location = 5796		# JBLM, WA
+		division_template = "Fires Brigade"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.9
+	}
+
+	### Army Special Operations Command ###
+	division = {
+		name = "75th Ranger Regiment"
+		location = 8078		# Fort Moore, GA
+		division_template = "Ranger Regiment"
+		start_experience_factor = 0.9
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1st Special Forces Group"
+		location = 5796		# JBLM, WA
+		division_template = "Special Forces Group"
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3rd Special Forces Group"
+		location = 7709		# Fort Bragg, NC
+		division_template = "Special Forces Group"
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "5th Special Forces Group"
+		location = 2884		# Fort Campbell, KY
+		division_template = "Special Forces Group"
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "7th Special Forces Group"
+		location = 4239		# Eglin AFB, FL
+		division_template = "Special Forces Group"
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "10th Special Forces Group"
+		location = 2433		# Fort Carson, CO
+		division_template = "Special Forces Group"
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+
+	### Army Air & Missile Defense / OPFOR ###
+	division = {
+		name = "11th Air Defense Artillery Brigade"
+		location = 4175		# Fort Bliss, TX
+		division_template = "Air Defense Brigade"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "31st Air Defense Artillery Brigade"
+		location = 4175		# Fort Bliss, TX
+		division_template = "Air Defense Brigade"
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "11th Armored Cavalry Regiment"
+		location = 2783		# Fort Irwin, CA - OPFOR
+		division_template = "Armored Cavalry Regiment"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.9
+	}
+
+	### United States Marine Corps ###
+	division = {
+		name = "1st Marine Division"
+		location = 4546		# Camp Pendleton, CA
+		division_template = "Marine Division"
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2nd Marine Division"
+		location = 7654		# Camp Lejeune, NC
+		division_template = "Marine Division"
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3rd Marine Division"
+		location = 5051		# III MEF - Hawaii/Okinawa
+		division_template = "Marine Division"
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3rd Marine Littoral Regiment"
+		location = 5051		# Kaneohe Bay, HI
+		division_template = "Marine Littoral Regiment"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4th Marine Division"
+		location = 2132		# USMC Reserve - New Orleans, LA
+		division_template = "Marine Division"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Marine Raider Regiment"
+		location = 7654		# MARSOC - Camp Lejeune, NC
+		division_template = "Special Forces Group"
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+
+	### Army National Guard - Divisional Headquarters ###
+	division = {
+		name = "28th Infantry Division"
+		location = 7142		# PA ARNG - Harrisburg
+		division_template = "National Guard Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "29th Infantry Division"
+		location = 3847		# VA ARNG - Fort Belvoir
+		division_template = "National Guard Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "34th Infantry Division"
+		location = 6968		# MN ARNG - Rosemount
+		division_template = "National Guard Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "35th Infantry Division"
+		location = 7562		# KS ARNG - Fort Leavenworth
+		division_template = "National Guard Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "36th Infantry Division"
+		location = 8385		# TX ARNG - Austin
+		division_template = "National Guard Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "38th Infantry Division"
+		location = 5522		# IN ARNG - Indianapolis
+		division_template = "National Guard Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "40th Infantry Division"
+		location = 2783		# CA ARNG - Los Alamitos
+		division_template = "National Guard Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "42nd Infantry Division"
+		location = 5844		# NY ARNG - Troy
+		division_template = "National Guard Infantry Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+}
+
+##### Starting equipment production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = { type = infantry_equipment_1 creator = "USA" }
+		requested_factories = 6
+		progress = 0.35
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = { type = support_equipment_1 creator = "USA" }
+		requested_factories = 4
+		progress = 0.25
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = { type = artillery_equipment_1 creator = "USA" }
+		requested_factories = 3
+		progress = 0.20
+		efficiency = 90
+	}
+	add_equipment_production = {
+		equipment = { type = mechanized_equipment_1 creator = "USA" }
+		requested_factories = 4
+		progress = 0.30
+		efficiency = 90
+	}
+	add_equipment_production = {
+		equipment = { type = motorized_equipment_1 creator = "USA" }
+		requested_factories = 3
+		progress = 0.15
+		efficiency = 90
+	}
+}

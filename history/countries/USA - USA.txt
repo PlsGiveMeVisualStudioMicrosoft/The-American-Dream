@@ -1,10 +1,51 @@
 capital = 58
 
-oob = "standard_templates"
+oob = "USA_2025"
 
-# Starting tech
+# Starting tech - covers every subunit used by USA_2025.txt
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	marines = 1
+	paratroopers = 1
+	tech_mountaineers = 1
+	rangers_tech = 1
+	amphibious_mechanized_infantry = 1
+
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+
+	tech_trucks = 1
+	armored_car1 = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+	basic_medium_art = 1
+	motorized_rocket_unit = 1
+}
+
+if = {
+	limit = { NOT = { has_dlc = "No Step Back" } }
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_medium_tank = 1
+	}
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_medium_tank_chassis = 1
+	}
 }
 
 set_convoys = 20
