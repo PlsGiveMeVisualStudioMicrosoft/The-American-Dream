@@ -1,0 +1,79 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_TAD_lockheed_martin_aero"
+		texturefile = "gfx/interface/mio/lockheed_martin_aero.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_boeing_defense"
+		texturefile = "gfx/interface/mio/boeing_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_northrop_grumman"
+		texturefile = "gfx/interface/mio/northrop_grumman.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_sikorsky"
+		texturefile = "gfx/interface/mio/sikorsky.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_bell_textron"
+		texturefile = "gfx/interface/mio/bell_textron.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_general_atomics"
+		texturefile = "gfx/interface/mio/general_atomics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_anduril"
+		texturefile = "gfx/interface/mio/anduril.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_gd_land_systems"
+		texturefile = "gfx/interface/mio/gd_land_systems.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_bae_land_armaments"
+		texturefile = "gfx/interface/mio/bae_land_armaments.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_oshkosh_defense"
+		texturefile = "gfx/interface/mio/oshkosh_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_raytheon_rtx"
+		texturefile = "gfx/interface/mio/raytheon_rtx.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_lm_missiles_fire_ctrl"
+		texturefile = "gfx/interface/mio/lm_missiles_fire_ctrl.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_sig_sauer"
+		texturefile = "gfx/interface/mio/sig_sauer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_fn_america"
+		texturefile = "gfx/interface/mio/fn_america.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_newport_news"
+		texturefile = "gfx/interface/mio/newport_news.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_electric_boat"
+		texturefile = "gfx/interface/mio/electric_boat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_ingalls_shipbuilding"
+		texturefile = "gfx/interface/mio/ingalls_shipbuilding.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_bath_iron_works"
+		texturefile = "gfx/interface/mio/bath_iron_works.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TAD_l3harris"
+		texturefile = "gfx/interface/mio/l3harris.dds"
+	}
+}

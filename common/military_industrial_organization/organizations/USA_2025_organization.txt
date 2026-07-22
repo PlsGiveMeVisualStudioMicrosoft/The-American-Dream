@@ -1,0 +1,1514 @@
+##############################################################################
+# UNITED STATES - MILITARY INDUSTRIAL ORGANIZATIONS (2025)
+# TheAmericanDream
+#
+# Each MIO includes a vanilla generic tree and layers a custom branch on top.
+# Custom traits sit in cells the generic tree leaves empty, so nothing overlaps.
+# Availability: the United States, plus the company's home state if it splits off.
+##############################################################################
+
+# --------------------------------------------------------------------------
+# Lockheed Martin Aeronautics
+# Fort Worth, Texas. Builder of the F-35 Lightning II, F-22 Raptor and F-16, and home of the Skunk Works advanced projects division.
+# --------------------------------------------------------------------------
+USA_lockheed_martin_aeronautics_organization = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_TAD_lockheed_martin_aero
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = TEX
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_lm_low_observable
+		name = USA_mio_trait_lm_low_observable
+		icon = GFX_generic_mio_trait_icon_air_agility
+
+		position = { x=1 y=3 }
+		any_parent = { generic_mio_trait_hardened_frames }
+
+		equipment_bonus = {
+			air_defence = 0.1
+			air_agility = 0.05
+			build_cost_ic = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_lm_sensor_fusion
+		name = USA_mio_trait_lm_sensor_fusion
+		icon = GFX_generic_mio_trait_icon_detection
+
+		position = { x=2 y=3 }
+		any_parent = { USA_mio_trait_lm_low_observable }
+
+		equipment_bonus = {
+			air_attack = 0.1
+			surface_detection = 0.15
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_lm_skunk_works
+		name = USA_mio_trait_lm_skunk_works
+		icon = GFX_generic_mio_department_icon_plane_fighter_technology
+		special_trait_background = yes
+
+		position = { x=1 y=4 }
+		any_parent = { USA_mio_trait_lm_sensor_fusion }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_task_capacity = 1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_lm_joint_strike_line
+		name = USA_mio_trait_lm_joint_strike_line
+		icon = GFX_generic_mio_department_icon_plane_fighter_production
+
+		position = { x=2 y=4 }
+		any_parent = { USA_mio_trait_lm_sensor_fusion }
+
+		production_bonus = {
+			production_capacity_factor = 0.15
+			production_efficiency_cap_factor = 0.05
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# Boeing Defense, Space & Security
+# St. Louis, Missouri and Everett, Washington. Builds the F-15EX, F/A-18 Super Hornet, KC-46 tanker and rotorcraft.
+# --------------------------------------------------------------------------
+USA_boeing_defense_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_TAD_boeing_defense
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = MSO
+			original_tag = WAS
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_boeing_advanced_avionics
+		name = USA_mio_trait_boeing_advanced_avionics
+		icon = GFX_generic_mio_trait_icon_detection
+
+		position = { x=0 y=3 }
+		any_parent = { generic_mio_trait_high_speed_design }
+
+		equipment_bonus = {
+			air_attack = 0.08
+			reliability = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_boeing_eagle_ii
+		name = USA_mio_trait_boeing_eagle_ii
+		icon = GFX_generic_mio_department_icon_plane_fighter_combat
+
+		position = { x=3 y=3 }
+		any_parent = { generic_mio_trait_bomb_trucks }
+
+		equipment_bonus = {
+			air_attack = 0.1
+			air_ground_attack = 0.1
+			air_range = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_boeing_aerial_refuelling
+		name = USA_mio_trait_boeing_aerial_refuelling
+		icon = GFX_generic_mio_trait_icon_naval_range
+
+		position = { x=6 y=3 }
+		any_parent = { generic_mio_trait_naval_strike }
+
+		equipment_bonus = {
+			air_range = 0.15
+			fuel_consumption = -0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_boeing_st_louis_line
+		name = USA_mio_trait_boeing_st_louis_line
+		icon = GFX_generic_mio_department_icon_plane_general_production
+		special_trait_background = yes
+
+		position = { x=9 y=2 }
+		any_parent = { generic_mio_trait_naval_air_patrol }
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.15
+			production_cost_factor = -0.08
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# Northrop Grumman Aeronautics Systems
+# Palmdale, California. Flying-wing specialists behind the B-2 Spirit and the B-21 Raider.
+# --------------------------------------------------------------------------
+USA_northrop_grumman_organization = {
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_TAD_northrop_grumman
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = CAL
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_ng_flying_wing
+		name = USA_mio_trait_ng_flying_wing
+		icon = GFX_generic_mio_trait_icon_air_agility
+
+		position = { x=5 y=2 }
+		any_parent = { generic_mio_trait_pressurized_cockpit }
+
+		equipment_bonus = {
+			air_agility = 0.08
+			air_defence = 0.1
+			air_range = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_ng_radar_absorbent
+		name = USA_mio_trait_ng_radar_absorbent
+		icon = GFX_generic_mio_trait_icon_armor_value
+
+		position = { x=4 y=3 }
+		any_parent = { USA_mio_trait_ng_flying_wing }
+
+		equipment_bonus = {
+			air_defence = 0.15
+			build_cost_ic = 0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_ng_open_architecture
+		name = USA_mio_trait_ng_open_architecture
+		icon = GFX_generic_mio_department_icon_plane_strategic_bomber_engine
+
+		position = { x=6 y=3 }
+		any_parent = { USA_mio_trait_ng_flying_wing }
+
+		equipment_bonus = {
+			air_bombing = 0.1
+			surface_detection = 0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_ng_raider_program
+		name = USA_mio_trait_ng_raider_program
+		icon = GFX_generic_mio_department_icon_plane_strategic_bomber_production
+		special_trait_background = yes
+
+		position = { x=5 y=4 }
+		parent = {
+			traits = { USA_mio_trait_ng_radar_absorbent USA_mio_trait_ng_open_architecture }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			air_bombing = 0.1
+			air_range = 0.1
+		}
+		production_bonus = {
+			production_cost_factor = -0.1
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# Sikorsky Aircraft
+# Stratford, Connecticut. Builds the UH-60 Black Hawk, MH-60 Seahawk and CH-53K King Stallion.
+# --------------------------------------------------------------------------
+USA_sikorsky_organization = {
+	include = generic_helicopter_organization
+	icon = GFX_idea_TAD_sikorsky
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = CNT
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_sik_composite_rotors
+		name = USA_mio_trait_sik_composite_rotors
+		icon = GFX_generic_mio_trait_icon_reliability
+
+		position = { x=1 y=3 }
+		any_parent = { generic_mio_trait_extra_seating }
+
+		equipment_bonus = {
+			reliability = 0.1
+			maximum_speed = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_sik_crashworthy_airframe
+		name = USA_mio_trait_sik_crashworthy_airframe
+		icon = GFX_generic_mio_trait_icon_defense
+
+		position = { x=3 y=3 }
+		any_parent = { generic_mio_trait_co_axial_rotors }
+
+		equipment_bonus = {
+			defense = 0.1
+			armor_value = 0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_sik_naval_variants
+		name = USA_mio_trait_sik_naval_variants
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = { x=7 y=3 }
+		any_parent = { generic_mio_trait_mass_production_certification }
+
+		equipment_bonus = {
+			maximum_speed = 0.05
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_sik_utility_workhorse
+		name = USA_mio_trait_sik_utility_workhorse
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x=3 y=4 }
+		parent = {
+			traits = { USA_mio_trait_sik_composite_rotors USA_mio_trait_sik_crashworthy_airframe }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+		production_bonus = {
+			production_efficiency_cap_factor = 0.1
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# Bell Textron
+# Fort Worth, Texas. Tiltrotor pioneers - the V-22 Osprey and the V-280 Valor.
+# --------------------------------------------------------------------------
+USA_bell_textron_organization = {
+	include = generic_helicopter_organization
+	icon = GFX_idea_TAD_bell_textron
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = TEX
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_bell_tiltrotor
+		name = USA_mio_trait_bell_tiltrotor
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = { x=1 y=3 }
+		any_parent = { generic_mio_trait_extra_seating }
+
+		equipment_bonus = {
+			maximum_speed = 0.15
+			build_cost_ic = 0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_bell_fly_by_wire
+		name = USA_mio_trait_bell_fly_by_wire
+		icon = GFX_generic_mio_trait_icon_reliability
+
+		position = { x=3 y=3 }
+		any_parent = { generic_mio_trait_co_axial_rotors }
+
+		equipment_bonus = {
+			reliability = 0.12
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_bell_armed_scout
+		name = USA_mio_trait_bell_armed_scout
+		icon = GFX_generic_mio_trait_icon_hardness
+
+		position = { x=7 y=3 }
+		any_parent = { generic_mio_trait_mass_production_certification }
+
+		equipment_bonus = {
+			hardness = 0.1
+			defense = 0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_bell_valor_program
+		name = USA_mio_trait_bell_valor_program
+		icon = GFX_generic_mio_department_icon_air_transport_technology
+		special_trait_background = yes
+
+		position = { x=3 y=4 }
+		parent = {
+			traits = { USA_mio_trait_bell_tiltrotor USA_mio_trait_bell_fly_by_wire }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			maximum_speed = 0.1
+			reliability = 0.05
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# General Atomics Aeronautical Systems
+# Poway, California. The MQ-9 Reaper and MQ-20 Avenger - unmanned aircraft measured in days aloft, not hours.
+# --------------------------------------------------------------------------
+USA_general_atomics_organization = {
+	include = generic_range_focused_aircraft_organization
+	icon = GFX_idea_TAD_general_atomics
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = CAL
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_ga_unmanned_airframe
+		name = USA_mio_trait_ga_unmanned_airframe
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+
+		position = { x=2 y=2 }
+		any_parent = { generic_mio_trait_advanced_production_techniques }
+
+		equipment_bonus = {
+			manpower = -0.3
+			build_cost_ic = -0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_ga_persistent_orbit
+		name = USA_mio_trait_ga_persistent_orbit
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+
+		position = { x=1 y=3 }
+		any_parent = { USA_mio_trait_ga_unmanned_airframe }
+
+		equipment_bonus = {
+			air_range = 0.2
+			fuel_consumption = -0.15
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_ga_satellite_datalink
+		name = USA_mio_trait_ga_satellite_datalink
+		icon = GFX_generic_mio_trait_icon_detection
+
+		position = { x=2 y=3 }
+		any_parent = { USA_mio_trait_ga_unmanned_airframe }
+
+		equipment_bonus = {
+			surface_detection = 0.2
+			air_attack = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_ga_hunter_killer
+		name = USA_mio_trait_ga_hunter_killer
+		icon = GFX_generic_mio_trait_icon_air_ground_attack
+		special_trait_background = yes
+
+		position = { x=2 y=4 }
+		parent = {
+			traits = { USA_mio_trait_ga_persistent_orbit USA_mio_trait_ga_satellite_datalink }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			air_ground_attack = 0.15
+		}
+		production_bonus = {
+			production_cost_factor = -0.1
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# Anduril Industries
+# Columbus, Ohio and Costa Mesa, California. Autonomous collaborative aircraft and loitering munitions, built like consumer electronics.
+# --------------------------------------------------------------------------
+USA_anduril_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_TAD_anduril
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = OHI
+			original_tag = CAL
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_and_autonomy_stack
+		name = USA_mio_trait_and_autonomy_stack
+		icon = GFX_generic_mio_trait_icon_detection
+
+		position = { x=2 y=2 }
+		any_parent = { generic_mio_trait_fixed_tailwheels }
+
+		equipment_bonus = {
+			surface_detection = 0.15
+			air_attack = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_and_attritable_mass
+		name = USA_mio_trait_and_attritable_mass
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+
+		position = { x=2 y=3 }
+		any_parent = { USA_mio_trait_and_autonomy_stack }
+
+		equipment_bonus = {
+			build_cost_ic = -0.15
+			manpower = -0.25
+			air_defence = -0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_and_collaborative_combat
+		name = USA_mio_trait_and_collaborative_combat
+		icon = GFX_generic_mio_department_icon_plane_light_combat
+
+		position = { x=4 y=2 }
+		any_parent = { USA_mio_trait_and_autonomy_stack }
+
+		equipment_bonus = {
+			air_attack = 0.12
+			air_agility = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_and_arsenal_plant
+		name = USA_mio_trait_and_arsenal_plant
+		icon = GFX_generic_mio_department_icon_plane_light_line_efficiency
+		special_trait_background = yes
+
+		position = { x=2 y=4 }
+		any_parent = { USA_mio_trait_and_attritable_mass }
+
+		production_bonus = {
+			production_capacity_factor = 0.2
+			production_efficiency_gain_factor = 0.15
+		}
+		organization_modifier = {
+			military_industrial_organization_task_capacity = 1
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# General Dynamics Land Systems
+# Lima, Ohio and Sterling Heights, Michigan. The M1 Abrams line - the only heavy armour plant left in the country.
+# --------------------------------------------------------------------------
+USA_gd_land_systems_organization = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_TAD_gd_land_systems
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = OHI
+			original_tag = MIC
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_gdls_gas_turbine
+		name = USA_mio_trait_gdls_gas_turbine
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = { x=2 y=1 }
+		any_parent = { generic_mio_trait_wide_tracks }
+
+		equipment_bonus = {
+			maximum_speed = 0.1
+			fuel_consumption = 0.15
+			reliability = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_gdls_composite_armour
+		name = USA_mio_trait_gdls_composite_armour
+		icon = GFX_generic_mio_trait_icon_armor_value
+
+		position = { x=4 y=1 }
+		any_parent = { generic_mio_trait_one_piece_hull_side_coverings }
+
+		equipment_bonus = {
+			armor_value = 0.15
+			build_cost_ic = 0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_gdls_dense_penetrators
+		name = USA_mio_trait_gdls_dense_penetrators
+		icon = GFX_generic_mio_trait_icon_ap_attack
+
+		position = { x=6 y=1 }
+		any_parent = { generic_mio_trait_fully_cast_turret }
+
+		equipment_bonus = {
+			ap_attack = 0.15
+			hard_attack = 0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_gdls_next_gen_mbt
+		name = USA_mio_trait_gdls_next_gen_mbt
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_technology
+		special_trait_background = yes
+
+		position = { x=5 y=3 }
+		parent = {
+			traits = { USA_mio_trait_gdls_gas_turbine USA_mio_trait_gdls_composite_armour USA_mio_trait_gdls_dense_penetrators }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			breakthrough = 0.1
+			defense = 0.05
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# BAE Systems Land & Armaments
+# York, Pennsylvania. Bradley fighting vehicles, the AMPV family, M109 Paladin and amphibious combat vehicles.
+# --------------------------------------------------------------------------
+USA_bae_land_armaments_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_TAD_bae_land_armaments
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = PEN
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_bae_spaced_armour
+		name = USA_mio_trait_bae_spaced_armour
+		icon = GFX_generic_mio_trait_icon_armor_value
+
+		position = { x=1 y=1 }
+		any_parent = { generic_mio_trait_steel_cargo_bed }
+
+		equipment_bonus = {
+			armor_value = 0.12
+			hardness = 0.05
+			maximum_speed = -0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_bae_turreted_ifv
+		name = USA_mio_trait_bae_turreted_ifv
+		icon = GFX_generic_mio_department_icon_mechanized_hull
+
+		position = { x=4 y=1 }
+		any_parent = { generic_mio_trait_medium_machinegun_mounts }
+
+		equipment_bonus = {
+			ap_attack = 0.12
+			breakthrough = 0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_bae_common_hull
+		name = USA_mio_trait_bae_common_hull
+		icon = GFX_generic_mio_department_icon_mechanized_production
+
+		position = { x=7 y=1 }
+		any_parent = { generic_mio_trait_closed_chassi }
+
+		production_bonus = {
+			production_cost_factor = -0.12
+			production_efficiency_gain_factor = 0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_bae_active_protection
+		name = USA_mio_trait_bae_active_protection
+		icon = GFX_generic_mio_trait_icon_defense
+		special_trait_background = yes
+
+		position = { x=4 y=3 }
+		parent = {
+			traits = { USA_mio_trait_bae_spaced_armour USA_mio_trait_bae_turreted_ifv USA_mio_trait_bae_common_hull }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			defense = 0.15
+			reliability = -0.05
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# Oshkosh Defense
+# Oshkosh, Wisconsin. The JLTV, the HEMTT and the heavy tactical truck fleet the whole army moves on.
+# --------------------------------------------------------------------------
+USA_oshkosh_defense_organization = {
+	include = generic_armored_car_organization
+	icon = GFX_idea_TAD_oshkosh_defense
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = WSS
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_osh_independent_suspension
+		name = USA_mio_trait_osh_independent_suspension
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = { x=2 y=1 }
+		any_parent = { generic_mio_trait_simplified_suspension }
+
+		equipment_bonus = {
+			maximum_speed = 0.12
+			reliability = 0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_osh_v_hull
+		name = USA_mio_trait_osh_v_hull
+		icon = GFX_generic_mio_trait_icon_hardness
+
+		position = { x=6 y=1 }
+		any_parent = { generic_mio_trait_defensive_equipment }
+
+		equipment_bonus = {
+			hardness = 0.15
+			defense = 0.1
+			maximum_speed = -0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_osh_common_chassis
+		name = USA_mio_trait_osh_common_chassis
+		icon = GFX_generic_mio_department_icon_armored_car_production
+
+		position = { x=2 y=3 }
+		any_parent = { USA_mio_trait_osh_independent_suspension }
+
+		production_bonus = {
+			production_capacity_factor = 0.15
+			production_cost_factor = -0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_osh_protected_mobility
+		name = USA_mio_trait_osh_protected_mobility
+		icon = GFX_generic_mio_department_icon_armored_car_technology
+		special_trait_background = yes
+
+		position = { x=5 y=3 }
+		parent = {
+			traits = { USA_mio_trait_osh_v_hull USA_mio_trait_osh_common_chassis }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			reliability = 0.1
+			armor_value = 0.08
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# Raytheon (RTX)
+# Tucson, Arizona and Andover, Massachusetts. Patriot, AMRAAM, Stinger, Javelin - the missile house.
+# --------------------------------------------------------------------------
+USA_raytheon_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_TAD_raytheon_rtx
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = ARZ
+			original_tag = MAS
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_rtx_guided_munitions
+		name = USA_mio_trait_rtx_guided_munitions
+		icon = GFX_generic_mio_trait_icon_hard_attack
+
+		position = { x=2 y=1 }
+		any_parent = { generic_mio_trait_stable_platforms }
+
+		equipment_bonus = {
+			hard_attack = 0.12
+			soft_attack = 0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_rtx_phased_array
+		name = USA_mio_trait_rtx_phased_array
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+
+		position = { x=5 y=1 }
+		any_parent = { generic_mio_trait_advanced_barrel_forging }
+		limit_to_equipment_type = { anti_air_equipment }
+
+		equipment_bonus = {
+			air_attack = 0.2
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_rtx_top_attack
+		name = USA_mio_trait_rtx_top_attack
+		icon = GFX_generic_mio_trait_icon_ap_attack
+
+		position = { x=8 y=1 }
+		any_parent = { generic_mio_trait_big_guns }
+		limit_to_equipment_type = { anti_tank_equipment }
+
+		equipment_bonus = {
+			ap_attack = 0.25
+			hard_attack = 0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_rtx_layered_air_defence
+		name = USA_mio_trait_rtx_layered_air_defence
+		icon = GFX_generic_mio_department_icon_anti_air
+		special_trait_background = yes
+
+		position = { x=5 y=3 }
+		parent = {
+			traits = { USA_mio_trait_rtx_guided_munitions USA_mio_trait_rtx_phased_array USA_mio_trait_rtx_top_attack }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			air_attack = 0.1
+			reliability = 0.08
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# Lockheed Martin Missiles and Fire Control
+# Camden, Arkansas and Orlando, Florida. HIMARS, GMLRS, ATACMS, JASSM and the PAC-3 interceptor.
+# --------------------------------------------------------------------------
+USA_lm_missiles_fire_control_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_TAD_lm_missiles_fire_ctrl
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = ARK
+			original_tag = FLO
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_lmfc_shoot_and_scoot
+		name = USA_mio_trait_lmfc_shoot_and_scoot
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = { x=0 y=1 }
+		any_parent = { generic_mio_trait_mobile_limbers }
+
+		equipment_bonus = {
+			reliability = 0.08
+			defense = 0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_lmfc_guided_rockets
+		name = USA_mio_trait_lmfc_guided_rockets
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		position = { x=3 y=1 }
+		any_parent = { generic_mio_trait_rapid_fire }
+		limit_to_equipment_type = { rocket_artillery_equipment }
+
+		equipment_bonus = {
+			soft_attack = 0.2
+			hard_attack = 0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_lmfc_hit_to_kill
+		name = USA_mio_trait_lmfc_hit_to_kill
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+
+		position = { x=7 y=1 }
+		any_parent = { generic_mio_trait_big_guns }
+		limit_to_equipment_type = { anti_air_equipment }
+
+		equipment_bonus = {
+			air_attack = 0.18
+			reliability = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_lmfc_deep_strike
+		name = USA_mio_trait_lmfc_deep_strike
+		icon = GFX_generic_mio_department_icon_artillery
+		special_trait_background = yes
+
+		position = { x=3 y=3 }
+		parent = {
+			traits = { USA_mio_trait_lmfc_shoot_and_scoot USA_mio_trait_lmfc_guided_rockets }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# SIG Sauer
+# Newington, New Hampshire. Winner of the Next Generation Squad Weapon programme - the XM7 rifle and XM250 automatic rifle.
+# --------------------------------------------------------------------------
+USA_sig_sauer_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_TAD_sig_sauer
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = NHA
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_sig_next_gen_cartridge
+		name = USA_mio_trait_sig_next_gen_cartridge
+		icon = GFX_generic_mio_trait_icon_ap_attack
+
+		position = { x=2 y=1 }
+		any_parent = { generic_mio_trait_drum_pattern_sights }
+
+		equipment_bonus = {
+			ap_attack = 0.2
+			hard_attack = 0.1
+			build_cost_ic = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_sig_modular_receiver
+		name = USA_mio_trait_sig_modular_receiver
+		icon = GFX_generic_mio_trait_icon_reliability
+
+		position = { x=5 y=1 }
+		any_parent = { generic_mio_trait_reinforced_stocks }
+
+		equipment_bonus = {
+			reliability = 0.12
+		}
+		production_bonus = {
+			production_cost_factor = -0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_sig_computerised_optics
+		name = USA_mio_trait_sig_computerised_optics
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		position = { x=8 y=1 }
+		any_parent = { generic_mio_trait_heavy_anti_armor_ammunition }
+
+		equipment_bonus = {
+			soft_attack = 0.15
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_sig_squad_weapon_programme
+		name = USA_mio_trait_sig_squad_weapon_programme
+		icon = GFX_generic_mio_department_icon_infantry_quality
+		special_trait_background = yes
+
+		position = { x=5 y=3 }
+		parent = {
+			traits = { USA_mio_trait_sig_next_gen_cartridge USA_mio_trait_sig_modular_receiver USA_mio_trait_sig_computerised_optics }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			breakthrough = 0.08
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# FN America
+# Columbia, South Carolina. Builds the M240 and M249 machine guns and the M16/M4 family under contract.
+# --------------------------------------------------------------------------
+USA_fn_america_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_TAD_fn_america
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = SCA
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_fn_belt_fed_automatics
+		name = USA_mio_trait_fn_belt_fed_automatics
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		position = { x=2 y=1 }
+		any_parent = { generic_mio_trait_drum_pattern_sights }
+
+		equipment_bonus = {
+			soft_attack = 0.15
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_fn_chrome_lined_barrels
+		name = USA_mio_trait_fn_chrome_lined_barrels
+		icon = GFX_generic_mio_trait_icon_reliability
+
+		position = { x=5 y=1 }
+		any_parent = { generic_mio_trait_reinforced_stocks }
+
+		equipment_bonus = {
+			reliability = 0.15
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_fn_polymer_furniture
+		name = USA_mio_trait_fn_polymer_furniture
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+
+		position = { x=8 y=1 }
+		any_parent = { generic_mio_trait_heavy_anti_armor_ammunition }
+
+		equipment_bonus = {
+			build_cost_ic = -0.12
+			maximum_speed = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_fn_columbia_plant
+		name = USA_mio_trait_fn_columbia_plant
+		icon = GFX_generic_mio_department_icon_infantry_line_efficiency
+		special_trait_background = yes
+
+		position = { x=5 y=3 }
+		parent = {
+			traits = { USA_mio_trait_fn_belt_fed_automatics USA_mio_trait_fn_chrome_lined_barrels USA_mio_trait_fn_polymer_furniture }
+			num_parents_needed = 2
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.18
+			production_efficiency_cap_factor = 0.08
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# Newport News Shipbuilding
+# Newport News, Virginia. The only yard in the country able to build nuclear aircraft carriers.
+# --------------------------------------------------------------------------
+USA_newport_news_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_TAD_newport_news
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = VIR
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_nns_nuclear_propulsion
+		name = USA_mio_trait_nns_nuclear_propulsion
+		icon = GFX_generic_mio_trait_icon_naval_range
+
+		position = { x=0 y=1 }
+		any_parent = { generic_mio_trait_long_range_cruising }
+
+		equipment_bonus = {
+			naval_range = 0.3
+			fuel_consumption = -0.25
+			build_cost_ic = 0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_nns_electromagnetic_launch
+		name = USA_mio_trait_nns_electromagnetic_launch
+		icon = GFX_generic_mio_trait_icon_max_strength
+
+		position = { x=3 y=1 }
+		any_parent = { generic_mio_trait_high_speed_cruising }
+		limit_to_equipment_type = { mio_cat_eq_all_carrier }
+
+		equipment_bonus = {
+			max_strength = 0.1
+			reliability = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_nns_modular_construction
+		name = USA_mio_trait_nns_modular_construction
+		icon = GFX_generic_mio_department_icon_ship_general_production
+
+		position = { x=7 y=1 }
+		any_parent = { generic_mio_trait_primary_fire_director_control }
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.15
+			production_cost_factor = -0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_nns_supercarrier_programme
+		name = USA_mio_trait_nns_supercarrier_programme
+		icon = GFX_generic_mio_department_icon_ship_carrier_offense
+		special_trait_background = yes
+
+		position = { x=3 y=3 }
+		parent = {
+			traits = { USA_mio_trait_nns_nuclear_propulsion USA_mio_trait_nns_electromagnetic_launch }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			naval_dominance_factor = 0.1
+			max_strength = 0.05
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# General Dynamics Electric Boat
+# Groton, Connecticut and Quonset Point, Rhode Island. Virginia-class attack boats and Columbia-class ballistic missile submarines.
+# --------------------------------------------------------------------------
+USA_electric_boat_organization = {
+	include = generic_submarine_organization
+	icon = GFX_idea_TAD_electric_boat
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = CNT
+			original_tag = RHO
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_eb_nuclear_reactor
+		name = USA_mio_trait_eb_nuclear_reactor
+		icon = GFX_generic_mio_trait_icon_naval_range
+
+		position = { x=0 y=1 }
+		any_parent = { generic_mio_trait_long_range_raiding }
+
+		equipment_bonus = {
+			naval_range = 0.3
+			naval_speed = 0.1
+			fuel_consumption = -0.3
+			build_cost_ic = 0.12
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_eb_pump_jet
+		name = USA_mio_trait_eb_pump_jet
+		icon = GFX_generic_mio_trait_icon_sub_visibility
+
+		position = { x=6 y=1 }
+		any_parent = { generic_mio_trait_decalin_fueled_torpedo }
+
+		equipment_bonus = {
+			sub_visibility = -0.2
+			naval_speed = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_eb_vertical_launch
+		name = USA_mio_trait_eb_vertical_launch
+		icon = GFX_generic_mio_trait_icon_lg_attack
+
+		position = { x=8 y=1 }
+		any_parent = { generic_mio_trait_decalin_fueled_torpedo }
+
+		equipment_bonus = {
+			lg_attack = 0.2
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_eb_attack_boat_programme
+		name = USA_mio_trait_eb_attack_boat_programme
+		icon = GFX_generic_mio_department_icon_ship_submarine_production
+		special_trait_background = yes
+
+		position = { x=5 y=3 }
+		parent = {
+			traits = { USA_mio_trait_eb_nuclear_reactor USA_mio_trait_eb_pump_jet }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			sub_detection = 0.1
+			reliability = 0.08
+		}
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# Ingalls Shipbuilding
+# Pascagoula, Mississippi. Arleigh Burke destroyers, amphibious assault ships and coast guard cutters.
+# --------------------------------------------------------------------------
+USA_ingalls_shipbuilding_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_TAD_ingalls_shipbuilding
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = MSP
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_ing_aegis_combat_system
+		name = USA_mio_trait_ing_aegis_combat_system
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+
+		position = { x=2 y=1 }
+		any_parent = { generic_mio_trait_submarine_hunters }
+
+		equipment_bonus = {
+			anti_air_attack = 0.2
+			surface_detection = 0.15
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_ing_vertical_launch_cells
+		name = USA_mio_trait_ing_vertical_launch_cells
+		icon = GFX_generic_mio_trait_icon_lg_attack
+
+		position = { x=6 y=1 }
+		any_parent = { generic_mio_trait_fleet_escorts }
+
+		equipment_bonus = {
+			lg_attack = 0.15
+			anti_air_attack = 0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_ing_gulf_coast_yard
+		name = USA_mio_trait_ing_gulf_coast_yard
+		icon = GFX_generic_mio_department_icon_ship_screen_ship_production
+
+		position = { x=4 y=2 }
+		any_parent = { generic_mio_trait_anti_air_ships }
+
+		production_bonus = {
+			production_capacity_factor = 0.15
+			production_efficiency_gain_factor = 0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_ing_serial_destroyer_build
+		name = USA_mio_trait_ing_serial_destroyer_build
+		icon = GFX_generic_mio_department_icon_ship_screen_ship_offense
+		special_trait_background = yes
+
+		position = { x=4 y=3 }
+		parent = {
+			traits = { USA_mio_trait_ing_aegis_combat_system USA_mio_trait_ing_vertical_launch_cells }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			reliability = 0.1
+			max_strength = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = -0.1
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# Bath Iron Works
+# Bath, Maine. Arleigh Burke and Zumwalt class destroyers, built by a yard with a reputation for finish quality.
+# --------------------------------------------------------------------------
+USA_bath_iron_works_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_TAD_bath_iron_works
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = MAI
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_biw_low_observable_hull
+		name = USA_mio_trait_biw_low_observable_hull
+		icon = GFX_generic_mio_trait_icon_surface_visibility
+
+		position = { x=2 y=1 }
+		any_parent = { generic_mio_trait_submarine_hunters }
+
+		equipment_bonus = {
+			surface_visibility = -0.2
+			build_cost_ic = 0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_biw_integrated_power
+		name = USA_mio_trait_biw_integrated_power
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = { x=6 y=1 }
+		any_parent = { generic_mio_trait_fleet_escorts }
+
+		equipment_bonus = {
+			naval_speed = 0.12
+			reliability = 0.05
+			fuel_consumption = -0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_biw_maine_shipwrights
+		name = USA_mio_trait_biw_maine_shipwrights
+		icon = GFX_generic_mio_department_icon_ship_general_engine
+
+		position = { x=4 y=2 }
+		any_parent = { generic_mio_trait_anti_air_ships }
+
+		equipment_bonus = {
+			max_strength = 0.1
+			armor_value = 0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_biw_advanced_destroyer
+		name = USA_mio_trait_biw_advanced_destroyer
+		icon = GFX_generic_mio_department_icon_ship_screen_ship_engine
+		special_trait_background = yes
+
+		position = { x=4 y=3 }
+		parent = {
+			traits = { USA_mio_trait_biw_low_observable_hull USA_mio_trait_biw_integrated_power }
+			num_parents_needed = 2
+		}
+
+		equipment_bonus = {
+			lg_attack = 0.12
+			surface_detection = 0.1
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+	}
+
+}
+
+# --------------------------------------------------------------------------
+# L3Harris Technologies
+# Melbourne, Florida. Tactical radios, night vision, electronic warfare and battlefield networks.
+# --------------------------------------------------------------------------
+USA_l3harris_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_TAD_l3harris
+
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = FLO
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_l3_tactical_radios
+		name = USA_mio_trait_l3_tactical_radios
+		icon = GFX_generic_mio_trait_icon_reliability
+
+		position = { x=3 y=1 }
+		any_parent = { generic_mio_trait_material_recycling }
+		limit_to_equipment_type = { support_equipment }
+
+		equipment_bonus = {
+			reliability = 0.15
+			build_cost_ic = -0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_l3_night_vision
+		name = USA_mio_trait_l3_night_vision
+		icon = GFX_generic_mio_trait_icon_soft_attack
+
+		position = { x=7 y=1 }
+		any_parent = { generic_mio_trait_anti_tank_rifle }
+		limit_to_equipment_type = { infantry_equipment }
+
+		equipment_bonus = {
+			soft_attack = 0.12
+			defense = 0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_l3_electronic_warfare
+		name = USA_mio_trait_l3_electronic_warfare
+		icon = GFX_generic_mio_department_icon_support_materials
+
+		position = { x=3 y=3 }
+		any_parent = { USA_mio_trait_l3_tactical_radios }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_funds_gain = 0.25
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_l3_melbourne_campus
+		name = USA_mio_trait_l3_melbourne_campus
+		icon = GFX_generic_mio_department_icon_support_production
+		special_trait_background = yes
+
+		position = { x=7 y=3 }
+		any_parent = { USA_mio_trait_l3_night_vision }
+
+		production_bonus = {
+			production_capacity_factor = 0.15
+			production_cost_factor = -0.1
+		}
+	}
+
+}
