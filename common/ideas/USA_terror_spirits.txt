@@ -1,0 +1,44 @@
+# ==============================================================
+#  USA APPROVAL - TIER SPIRITS
+#
+#  Six mutually exclusive national spirits. Only one is ever
+#  active; the swap is handled by USA_apr_apply_tier and the
+#  thresholds live in USA_approval_00_tuning.txt.
+#
+#  The modifiers here are STEP effects - they change only when
+#  the tier changes. The smooth, continuously scaling effects
+#  live in the dynamic modifier USA_approval_dm instead.
+#
+#  The pictures are vanilla idea sprites so this works with no
+#  new art. To use your own, uncomment the block in
+#  interface/USA_approval_spirits.gfx and change picture = here.
+# ==============================================================
+
+ideas = {
+
+	country = {
+
+		USA_ISIS_init = {
+			picture = ISIS_USA
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.05
+			}
+		}
+
+		USA_Exept = {
+			picture = USA_Exept
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_weekly_factor = 0.05
+				offensive_war_stability_factor = 0.05
+			}
+		}
+
+	}
+}

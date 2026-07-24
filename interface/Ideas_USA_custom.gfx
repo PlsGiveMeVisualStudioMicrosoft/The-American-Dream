@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_ISIS_USA"
+		texturefile = "gfx/interface/ideas/Idea_ISIS_USA.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_USA_Exept"
+		texturefile = "gfx/interface/ideas/Idea_USA_Exept.dds"
+	}
+
+}
