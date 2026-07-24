@@ -16,7 +16,7 @@ guiTypes = {
             textureFile = ""
             font = "hoi_mapfont4"
             borderSize = { x = 0 y = 0 }
-            text = "MY_CUSTOM_PRESIDENT_KEY"
+            text = "SIMP_PRESIDENT_NAME"
             maxWidth = 200
             maxHeight = 200
             format = centre
@@ -71,7 +71,7 @@ guiTypes = {
             textureFile = ""
             font = "hoi_18b"
             borderSize = { x = 0 y = 0 }
-            text = "MY_CUSTOM_PRESIDENT_DESC_KEY"
+            text = "SIMP_PRESIDENT_DESC"
             maxWidth = 275
             maxHeight = 200
             format = centre

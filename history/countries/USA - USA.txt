@@ -68,6 +68,9 @@ set_popularities = {
 set_variable = {simp_frame_to_set = 3 }
 set_variable = {simp_slot_frame = simp_frame_to_set}
 
+set_variable = {aproval_rate = 42}
+set_variable = {civil_war = 3}
+
 # Custom characters added by HOI4 Character Generator
 recruit_character = USA_Joe_Biden
 recruit_character = USA_Rossana_Cambron

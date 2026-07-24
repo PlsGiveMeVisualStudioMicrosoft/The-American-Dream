@@ -1,0 +1,71 @@
+# ==============================================================
+#  Dynamic president NAME + DESCRIPTION for the
+#  "Presidental Situation" panel (simp_propoganda_ui_window)
+#
+#  Everything hangs off ONE variable: USA.simp_slot_frame
+#  Indices match the portrait frames in simp_prop_tileset.dds:
+#      1 = empty frame (no portrait)  -> falls through to the
+#          trigger-less fallback block at the bottom
+#      2 = Trump
+#      3 = Biden
+#      4 = whoever is next...
+#
+#  That is the same variable that picks the portrait frame, so
+#  the picture, the name and the text can never drift apart.
+#  The starting value is set in history/countries/USA - USA.txt.
+#
+#  ADDING A NEW PRESIDENT:
+#      copy one text = { } block in each defined_text below and
+#      bump the number in BOTH the trigger and the
+#      localization_key. Then add the matching two lines in
+#      localisation/english/simp_president_l_english.yml.
+# ==============================================================
+
+defined_text = {
+	name = GetSimpPresidentName
+
+	text = {
+		trigger = { check_variable = { var = USA.simp_slot_frame value = 2 compare = equals } }
+		localization_key = SIMP_PRESIDENT_NAME_2
+	}
+	text = {
+		trigger = { check_variable = { var = USA.simp_slot_frame value = 3 compare = equals } }
+		localization_key = SIMP_PRESIDENT_NAME_3
+	}
+
+	# --- next president goes here (index 4) ---
+	# text = {
+	# 	trigger = { check_variable = { var = USA.simp_slot_frame value = 4 compare = equals } }
+	# 	localization_key = SIMP_PRESIDENT_NAME_4
+	# }
+
+	# Fallback - also covers frame 1 (the empty portrait).
+	# MUST stay last: it has no trigger, so it always matches.
+	text = {
+		localization_key = SIMP_PRESIDENT_NAME_VACANT
+	}
+}
+
+defined_text = {
+	name = GetSimpPresidentDesc
+
+	text = {
+		trigger = { check_variable = { var = USA.simp_slot_frame value = 2 compare = equals } }
+		localization_key = SIMP_PRESIDENT_DESC_2
+	}
+	text = {
+		trigger = { check_variable = { var = USA.simp_slot_frame value = 3 compare = equals } }
+		localization_key = SIMP_PRESIDENT_DESC_3
+	}
+
+	# --- next president goes here (index 4) ---
+	# text = {
+	# 	trigger = { check_variable = { var = USA.simp_slot_frame value = 4 compare = equals } }
+	# 	localization_key = SIMP_PRESIDENT_DESC_4
+	# }
+
+	# Fallback - also covers frame 1 (the empty portrait). MUST stay last.
+	text = {
+		localization_key = SIMP_PRESIDENT_DESC_VACANT
+	}
+}

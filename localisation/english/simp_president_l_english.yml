@@ -1,0 +1,16 @@
+﻿l_english:
+ SIMP_PRESIDENT_NAME:0 "[GetSimpPresidentName]"
+ SIMP_PRESIDENT_DESC:0 "[GetSimpPresidentDesc]"
+
+ SIMP_PRESIDENT_NAME_2:0 "Donald Trump"
+ SIMP_PRESIDENT_DESC_2:0 "47th President of the United States, in office from 20 January 2025.\n\nHis administration emphasizes border security, economic protectionism, deregulation, and an 'America First' approach to both domestic and foreign policy."
+
+ SIMP_PRESIDENT_NAME_3:0 "Joe Biden"
+ SIMP_PRESIDENT_DESC_3:0 "46th President of the United States, in office from 20 January 2021.\n\nHis administration focused on infrastructure investment, expanding clean energy initiatives, strengthening alliances within NATO, and supporting Ukraine."
+
+ # ---- 4 = next president: copy the two lines above and bump the number ----
+ # SIMP_PRESIDENT_NAME_4:0 ""
+ # SIMP_PRESIDENT_DESC_4:0 ""
+
+ SIMP_PRESIDENT_NAME_VACANT:0 "Vacant"
+ SIMP_PRESIDENT_DESC_VACANT:0 "The office is currently vacant."

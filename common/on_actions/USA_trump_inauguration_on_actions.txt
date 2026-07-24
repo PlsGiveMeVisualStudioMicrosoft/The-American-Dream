@@ -3,6 +3,8 @@ on_actions = {
 	on_daily_USA = {
 		effect = {
 			USA = {
+
+				# ---------- 2025.1.20 - Trump (frame 2) ----------
 				if = {
 					limit = {
 						NOT = { has_global_flag = usa_trump_inaugurated }
@@ -10,10 +12,22 @@ on_actions = {
 					}
 					set_global_flag = usa_trump_inaugurated
 					country_event = { id = usa_inauguration.2 hours = 23 }
-					set_variable = {simp_frame_to_set = 2 }
-					set_variable = {simp_slot_frame = simp_frame_to_set}
+					set_variable = { simp_slot_frame = 2 }
 					log = "[GetDateText]: usa_inauguration driver 1 armed"
+					set_variable = {aproval_rate = 47}
+					set_variable = {civil_war = 4}
 				}
+
+				# ---------- next president ----------
+				# if = {
+				# 	limit = {
+				# 		NOT = { has_global_flag = usa_next_inaugurated }
+				# 		date > 2029.1.19
+				# 	}
+				# 	set_global_flag = usa_next_inaugurated
+				# 	set_variable = { simp_slot_frame = 4 }   # 4 = next president
+				# }
+
 			}
 		}
 	}
