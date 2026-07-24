@@ -1,4 +1,5 @@
-﻿ VICTORY_POINTS_2783:0 "Los Angeles"
+﻿l_english:
+ VICTORY_POINTS_2783:0 "Los Angeles"
  VICTORY_POINTS_346:0 "Atlanta"
  VICTORY_POINTS_1141:0 "Chicago"
  VICTORY_POINTS_2807:0 "Philadelphia"
@@ -250,11 +251,7 @@
  VICTORY_POINTS_2879:0 "City 2879"
  VICTORY_POINTS_3085:0 "City 3085"
  VICTORY_POINTS_3121:0 "San Miguel"
-<<<<<<< Updated upstream
  VICTORY_POINTS_3194:0 "Placencia"
-=======
- VICTORY_POINTS_3194:0 "Belize City"
->>>>>>> Stashed changes
  VICTORY_POINTS_3376:0 "City 3376"
  VICTORY_POINTS_3395:0 "San Francisco Gotera"
  VICTORY_POINTS_3570:0 "City 3570"
@@ -308,13 +305,8 @@
  VICTORY_POINTS_9371:0 "Guápiles"
  VICTORY_POINTS_9390:0 "Puerto Limón"
  VICTORY_POINTS_9599:0 "Freeport"
-<<<<<<< Updated upstream
  VICTORY_POINTS_9614:0 "Saint John's"
  VICTORY_POINTS_9615:0 "Plymouth"
-=======
- VICTORY_POINTS_9614:0 "City 9614"
- VICTORY_POINTS_9615:0 "City 9615"
->>>>>>> Stashed changes
 
  VICTORY_POINTS_4175:0 "Wichita Falls"
  VICTORY_POINTS_4988:0 "Syracuse"
