@@ -19,7 +19,7 @@ ideas = {
 	country = {
 
 		USA_approval_tier_1 = {
-			picture = generic_civil_support
+			picture = ARG_american_allyship
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -30,7 +30,7 @@ ideas = {
 		}
 
 		USA_approval_tier_2 = {
-			picture = generic_democratic_drift
+			picture = ARG_american_allyship
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -40,7 +40,7 @@ ideas = {
 		}
 
 		USA_approval_tier_3 = {
-			picture = generic_disjointed_gov
+			picture = ARG_american_allyship
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -51,7 +51,7 @@ ideas = {
 		}
 
 		USA_approval_tier_4 = {
-			picture = usa_great_depression_3
+			picture = ARG_eliminate_american_imperialism
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -62,7 +62,7 @@ ideas = {
 		}
 
 		USA_approval_tier_5 = {
-			picture = usa_great_depression_2
+			picture = GER_attack_usa
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
@@ -74,7 +74,7 @@ ideas = {
 		}
 
 		USA_approval_tier_6 = {
-			picture = usa_great_depression
+			picture = ARG_anti_american_propaganda
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
