@@ -65,12 +65,6 @@ set_popularities = {
 	neutrality = 51
 }
 
-add_ideas = {
-    USA_ISIS_init
-    USA_Exept
-}
-
-
 set_variable = {simp_frame_to_set = 3 }
 set_variable = {simp_slot_frame = simp_frame_to_set}
 
