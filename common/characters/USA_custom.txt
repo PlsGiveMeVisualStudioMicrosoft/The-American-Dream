@@ -1,43 +1,84 @@
 characters={
-	USA_Kamala_Harris={
-		name=USA_Kamala_Harris
-		portraits={
-			civilian={
-				large="GFX_Portrait_USA_Kamala_Harris"
-			}
-		}
-		country_leader={
-			ideology=Democratic_Party
-			expire="2083.1.1.1"
-			id=-1
-		}
-			advisor = {
-			slot = political_advisor
-			idea_token = usa_kamala_harris_gov
-			allowed = { original_tag = USA }
-			traits = { popular_figurehead }
-			cost = 150
-		}
-	}
-	USA_Trump={
-		name=USA_Trump
-		portraits={
-			civilian={
-				large="GFX_Portrait_USA_Trump"
-			}
-		}
-		country_leader={
-			ideology=Republican_Party
-			traits={ GER_supreme_leader }
-			expire="2083.1.1.1"
-			id=-1
-		}
-			advisor = {
-			slot = political_advisor
-			idea_token = usa_trump_gov
-			allowed = { original_tag = USA }
-			traits = { silent_workhorse TAD_art_of_the_deal }
-			cost = 150
-		}
-	}
+    USA_Joe_Biden={
+        name=USA_Joe_Biden
+        portraits={
+            civilian={
+                large="GFX_Portrait_USA_Joe_Biden"
+            }
+        }
+        country_leader={
+            ideology=Democratic_Party
+            traits={ liberal_democratic_paragon old_figurehead }
+            expire="2083.1.1.1"
+            id=-1
+        }
+    }
+    USA_Kamala_Harris={
+        name=USA_Kamala_Harris
+        portraits={
+            civilian={
+                large="GFX_Portrait_USA_Kamala_Harris"
+            }
+        }
+        country_leader={
+            ideology=Democratic_Party
+            traits={ liberal_democratic_paragon }
+            expire="2083.1.1.1"
+            id=-1
+        }
+        advisor={
+            slot = political_advisor
+            idea_token = usa_kamala_harris_gov
+            allowed = { original_tag = USA }
+            traits = { popular_figurehead }
+            cost = 150
+        }
+    }
+    USA_Trump={
+        name=USA_Trump
+        portraits={
+            civilian={
+                large="GFX_Portrait_USA_Trump"
+            }
+        }
+        country_leader={
+            ideology=Republican_Party
+            traits={ GER_supreme_leader }
+            expire="2083.1.1.1"
+            id=-1
+        }
+        advisor={
+            slot = political_advisor
+            idea_token = usa_trump_gov
+            allowed = { original_tag = USA }
+            traits = { silent_workhorse TAD_art_of_the_deal }
+            cost = 150
+        }
+    }
+    USA_Rossana_Cambron={
+        name=USA_Rossana_Cambron
+        portraits={
+            civilian={
+                large="GFX_Portrait_USA_Rossana_Cambron"
+            }
+        }
+        country_leader={
+            ideology=russian_socialism
+            expire="2083.1.1.1"
+            id=-1
+        }
+    }
+    USA_Thomas_Rousseau={
+        name=USA_Thomas_Rousseau
+        portraits={
+            civilian={
+                large="GFX_Portrait_USA_Thomas_Rousseau"
+            }
+        }
+        country_leader={
+            ideology=reactionary_nationalism
+            expire="2083.1.1.1"
+            id=-1
+        }
+    }
 }

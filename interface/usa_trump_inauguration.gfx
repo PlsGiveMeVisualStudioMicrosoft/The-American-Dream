@@ -1,0 +1,19 @@
+spriteTypes = {
+
+	# Blank placeholder pictures. Both .dds files are fully transparent,
+	# so the events run clean with no missing-sprite errors and nothing
+	# odd on screen until you drop in real art.
+	#
+	# To swap in your own image, just overwrite the .dds file in
+	# gfx/event_pictures/ - no need to touch anything here.
+
+	spriteType = {
+		name = "GFX_report_event_usa_inauguration_2025"
+		texturefile = "gfx/event_pictures/usa_inauguration_2025.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_usa_inauguration_2025"
+		texturefile = "gfx/event_pictures/usa_inauguration_2025_news.dds"
+	}
+}

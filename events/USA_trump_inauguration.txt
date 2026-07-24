@@ -1,0 +1,89 @@
+add_namespace = usa_inauguration
+
+########################################################################
+# usa_inauguration.2 - the inauguration (country event, USA only)
+#
+# Fired from common/on_actions/USA_trump_inauguration_on_actions.txt on
+# 20 January 2025. The hidden watchdog event that used to sit in front
+# of this is gone - the daily on_action does that job without the
+# self-firing chain that could break.
+#
+# Note there is no trigger block. A trigger on an is_triggered_only
+# event is one more thing that can silently swallow it, and the driver
+# already scopes to USA and guards with a global flag.
+########################################################################
+country_event = {
+	id = usa_inauguration.2
+	title = usa_inauguration.2.t
+	desc = usa_inauguration.2.d
+	picture = GFX_report_event_usa_inauguration_2025
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_inauguration.2.a
+
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "2024.11.4"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+
+		promote_character = USA_Trump
+
+		# --- FALLBACK ------------------------------------------------
+		# promote_character only works if USA_Trump already has a
+		# country_leader = { ... } role in the NEUTRALITY group in his
+		# character file. If he is defined as democratic, or has no
+		# leader role at all, the ideology will flip but no portrait
+		# will appear. In that case delete promote_character above and
+		# uncomment this, setting the ideology to whichever neutrality
+		# sub-ideology your mod uses (vanilla: despotism, oligarchism,
+		# anarchism, centrism).
+		#
+		# add_country_leader_role = {
+		#	character = USA_Trump
+		#	promote_leader = yes
+		#	country_leader = {
+		#		ideology = despotism
+		#		expire = "2049.1.1.1"
+		#		traits = { }
+		#	}
+		# }
+		# -------------------------------------------------------------
+
+		hidden_effect = {
+			news_event = { id = usa_inauguration.10 hours = 6 random_hours = 3 }
+		}
+	}
+}
+
+########################################################################
+# usa_inauguration.10 - global news event
+#
+# major = yes is what makes a news event reach every country.
+# Do NOT add fire_only_once here: a news event reaching a second
+# country counts as firing again, so fire_only_once would restrict it
+# to a single recipient. Repeat firing is already blocked by the global
+# flag set in the on_actions driver.
+########################################################################
+news_event = {
+	id = usa_inauguration.10
+	title = usa_inauguration.10.t
+	desc = usa_inauguration.10.d
+	picture = GFX_news_event_usa_inauguration_2025
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = usa_inauguration.10.a
+		trigger = { tag = USA }
+	}
+
+	option = {
+		name = usa_inauguration.10.b
+		trigger = { NOT = { tag = USA } }
+	}
+}

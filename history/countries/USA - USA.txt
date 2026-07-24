@@ -2,6 +2,8 @@ capital = 58
 
 oob = "USA_2025"
 
+set_research_slots = 7
+
 # Starting tech - covers every subunit used by USA_2025.txt
 set_technology = {
 	infantry_weapons = 1
@@ -51,7 +53,7 @@ if = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "2024.11.4"
 	election_frequency = 48
 	elections_allowed = yes
@@ -63,10 +65,13 @@ set_popularities = {
 	neutrality = 51
 }
 
-set_variable = {simp_frame_to_set = 2 }
+set_variable = {simp_frame_to_set = 3 }
 set_variable = {simp_slot_frame = simp_frame_to_set}
 
 # Custom characters added by HOI4 Character Generator
+recruit_character = USA_Joe_Biden
+recruit_character = USA_Rossana_Cambron
+recruit_character = USA_Thomas_Rousseau
 recruit_character = USA_Kamala_Harris
 recruit_character = USA_Trump
 
@@ -103,3 +108,4 @@ recruit_character = USA_Markwayne_Mullin
 recruit_character = USA_Susie_Wiles
 
 # end of commanders
+

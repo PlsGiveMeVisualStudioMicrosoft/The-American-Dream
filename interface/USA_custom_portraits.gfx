@@ -9,5 +9,19 @@ spriteTypes = {
 		name = "GFX_Portrait_USA_Trump"
 		texturefile = "gfx/leaders/USA/Portrait_USA_Trump.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_Portrait_USA_Joe_Biden"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Joe_Biden.dds"
+	}
 
+	spriteType = {
+		name = "GFX_Portrait_USA_Rossana_Cambron"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Rossana_Cambron.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_Thomas_Rousseau"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Thomas_Rousseau.dds"
+	}
 }

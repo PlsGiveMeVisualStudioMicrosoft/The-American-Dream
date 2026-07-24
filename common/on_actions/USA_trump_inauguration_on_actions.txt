@@ -1,0 +1,21 @@
+on_actions = {
+
+	on_daily_USA = {
+		effect = {
+			USA = {
+				if = {
+					limit = {
+						NOT = { has_global_flag = usa_trump_inaugurated }
+						date > 2025.1.19
+					}
+					set_global_flag = usa_trump_inaugurated
+					country_event = { id = usa_inauguration.2 hours = 23 }
+					set_variable = {simp_frame_to_set = 2 }
+					set_variable = {simp_slot_frame = simp_frame_to_set}
+					log = "[GetDateText]: usa_inauguration driver 1 armed"
+				}
+			}
+		}
+	}
+
+}
