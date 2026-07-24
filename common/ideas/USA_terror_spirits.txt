@@ -1,0 +1,28 @@
+ideas = {
+
+	country = {
+
+		USA_ISIS_init = {
+			picture = ISIS_USA
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.05
+			}
+		}
+
+		USA_Exept = {
+			picture = USA_Exept
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_weekly_factor = 0.05
+				offensive_war_stability_factor = 0.05
+			}
+		}
+
+	}
+}
