@@ -1,0 +1,32 @@
+on_actions = {
+	on_monthly_BLZ = {
+		effect = {
+			if = {
+				limit = {
+					tag = BLZ
+					check_variable = { BLZ_GUA_tension > 39 }
+					check_variable = { BLZ_GUA_tension < 70 }
+					NOT = { has_war_with = GUA }
+				}
+				random_list = {
+					92 = { }
+					4 = { GUA = { country_event = { id = tad_bg.40 hours = 6 } } }
+					4 = { country_event = { id = tad_bg.41 hours = 6 } }
+				}
+			}
+
+			if = {
+				limit = {
+					tag = BLZ
+					check_variable = { BLZ_GUA_tension > 69 }
+					NOT = { has_war_with = GUA }
+				}
+				random_list = {
+					80 = { }
+					10 = { GUA = { country_event = { id = tad_bg.40 hours = 6 } } }
+					10 = { country_event = { id = tad_bg.41 hours = 6 } }
+				}
+			}
+		}
+	}
+}

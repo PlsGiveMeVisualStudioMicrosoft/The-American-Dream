@@ -1,0 +1,200 @@
+TAD_BG_dispute_category = {
+	# -----------------------------------------------------------------
+	# Belizean decisions
+	# -----------------------------------------------------------------
+	BLZ_fund_icj_case = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		cost = 35
+		days_re_enable = 60
+		complete_effect = {
+			subtract_from_variable = { BLZ_GUA_tension = 4 }
+			TAD_BG_clamp_tension = yes
+			add_political_power = 10
+		}
+		ai_will_do = { base = 80 }
+	}
+
+	BLZ_invite_oas_verification = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		cost = 50
+		days_re_enable = 90
+		complete_effect = {
+			subtract_from_variable = { BLZ_GUA_tension = 6 }
+			TAD_BG_clamp_tension = yes
+			add_stability = 0.01
+		}
+		ai_will_do = { base = 70 }
+	}
+
+	BLZ_expand_adjacency_patrols = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		cost = 40
+		days_re_enable = 75
+		complete_effect = {
+			add_to_variable = { BLZ_GUA_tension = 5 }
+			TAD_BG_clamp_tension = yes
+			army_experience = 5
+			add_war_support = 0.01
+			GUA = { country_event = { id = tad_bg.40 hours = 6 } }
+		}
+		ai_will_do = { base = 45 }
+	}
+
+	BLZ_sovereignty_campaign = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		cost = 30
+		days_re_enable = 60
+		complete_effect = {
+			add_to_variable = { BLZ_GUA_tension = 3 }
+			TAD_BG_clamp_tension = yes
+			add_stability = 0.01
+			add_war_support = 0.01
+		}
+		ai_will_do = { base = 35 }
+	}
+
+	BLZ_cross_border_projects = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		available = { has_completed_focus = BLZ_oas_adjacency_office }
+		cost = 60
+		days_re_enable = 120
+		complete_effect = {
+			subtract_from_variable = { BLZ_GUA_tension = 8 }
+			TAD_BG_clamp_tension = yes
+			add_timed_idea = { idea = BLZ_cross_border_cooperation days = 180 }
+		}
+		ai_will_do = { base = 65 }
+	}
+
+	BLZ_emergency_mobilization = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		available = {
+			check_variable = { BLZ_GUA_tension > 59 }
+			NOT = { has_idea = BLZ_total_defence }
+		}
+		cost = 75
+		fire_only_once = yes
+		complete_effect = {
+			add_to_variable = { BLZ_GUA_tension = 5 }
+			TAD_BG_clamp_tension = yes
+			add_ideas = BLZ_total_defence
+			add_manpower = 1200
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 400
+				producer = BLZ
+			}
+			add_war_support = 0.05
+		}
+		ai_will_do = { base = 160 }
+	}
+
+	# -----------------------------------------------------------------
+	# Guatemalan decisions
+	# -----------------------------------------------------------------
+	GUA_fund_icj_memorial_decision = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		cost = 35
+		days_re_enable = 60
+		complete_effect = {
+			BLZ = { subtract_from_variable = { BLZ_GUA_tension = 4 } }
+			TAD_BG_clamp_tension = yes
+			add_political_power = 10
+		}
+		ai_will_do = { base = 75 }
+	}
+
+	GUA_accept_oas_verification = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		cost = 50
+		days_re_enable = 90
+		complete_effect = {
+			BLZ = { subtract_from_variable = { BLZ_GUA_tension = 6 } }
+			TAD_BG_clamp_tension = yes
+			add_stability = 0.01
+		}
+		ai_will_do = { base = 60 }
+	}
+
+	GUA_expand_peten_patrols = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		cost = 40
+		days_re_enable = 75
+		complete_effect = {
+			BLZ = { add_to_variable = { BLZ_GUA_tension = 6 } }
+			TAD_BG_clamp_tension = yes
+			army_experience = 5
+			add_war_support = 0.01
+			BLZ = { country_event = { id = tad_bg.41 hours = 6 } }
+		}
+		ai_will_do = { base = 55 }
+	}
+
+	GUA_public_claim_campaign = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		cost = 30
+		days_re_enable = 60
+		complete_effect = {
+			BLZ = { add_to_variable = { BLZ_GUA_tension = 4 } }
+			TAD_BG_clamp_tension = yes
+			add_stability = 0.01
+			add_war_support = 0.01
+		}
+		ai_will_do = { base = 45 }
+	}
+
+	GUA_deploy_kaibiles_to_border = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		available = { has_completed_focus = GUA_kaibil_readiness }
+		cost = 60
+		days_re_enable = 120
+		complete_effect = {
+			BLZ = { add_to_variable = { BLZ_GUA_tension = 8 } }
+			TAD_BG_clamp_tension = yes
+			add_timed_idea = { idea = GUA_kaibil_border_deployment days = 120 }
+			army_experience = 5
+		}
+		ai_will_do = { base = 65 }
+	}
+
+	GUA_joint_development_offer_decision = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		available = {
+			has_completed_focus = GUA_propose_joint_development
+			NOT = { has_country_flag = GUA_joint_development_accepted }
+		}
+		cost = 60
+		days_re_enable = 180
+		complete_effect = {
+			BLZ = { country_event = { id = tad_bg.30 hours = 6 } }
+		}
+		ai_will_do = { base = 80 }
+	}
+
+	GUA_issue_belize_ultimatum = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		available = {
+			has_country_flag = GUA_can_issue_belize_ultimatum
+			BLZ = { check_variable = { BLZ_GUA_tension > 84 } }
+		}
+		cost = 100
+		fire_only_once = yes
+		complete_effect = {
+			BLZ = { country_event = { id = tad_bg.50 hours = 6 } }
+		}
+		ai_will_do = { base = 140 }
+	}
+}

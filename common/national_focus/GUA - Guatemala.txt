@@ -1,0 +1,521 @@
+focus_tree = {
+	id = GUA_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = GUA
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 3200 y = 100 }
+
+	focus = {
+		id = GUA_new_spring
+		icon = GFX_goal_generic_national_unity
+		x = 13
+		y = 0
+		cost = 1
+		completion_reward = {
+			add_political_power = 25
+			country_event = { id = tad_bg.2 hours = 6 }
+		}
+	}
+
+	# -----------------------------------------------------------------
+	# Democratic reform and state capacity
+	# -----------------------------------------------------------------
+	focus = {
+		id = GUA_defend_electoral_mandate
+		icon = GFX_goal_generic_political_pressure
+		x = 3
+		y = 2
+		cost = 4
+		prerequisite = { focus = GUA_new_spring }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = GUA_build_congressional_coalition
+		icon = GFX_goal_generic_political_pressure
+		x = 1
+		y = 3
+		cost = 5
+		prerequisite = { focus = GUA_defend_electoral_mandate }
+		completion_reward = {
+			remove_ideas = GUA_fragmented_congress
+			add_ideas = GUA_reform_coalition
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = GUA_civil_service_merit
+		icon = GFX_goal_generic_scientific_exchange
+		x = 3
+		y = 3
+		cost = 5
+		prerequisite = { focus = GUA_defend_electoral_mandate }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = GUA_confront_pact_of_corrupt
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 5
+		y = 3
+		cost = 6
+		prerequisite = { focus = GUA_defend_electoral_mandate }
+		completion_reward = {
+			remove_ideas = GUA_pact_of_corrupt
+			add_ideas = GUA_clean_government
+			add_stability = -0.02
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = GUA_independent_justice
+		icon = GFX_goal_generic_political_pressure
+		x = 4
+		y = 4
+		cost = 6
+		prerequisite = { focus = GUA_civil_service_merit }
+		prerequisite = { focus = GUA_confront_pact_of_corrupt }
+		completion_reward = {
+			add_stability = 0.06
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = GUA_indigenous_dialogue
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 4
+		cost = 5
+		prerequisite = { focus = GUA_build_congressional_coalition }
+		completion_reward = {
+			add_ideas = GUA_rural_inclusion
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
+		id = GUA_new_democratic_compact_focus
+		icon = GFX_goal_generic_national_unity
+		x = 3
+		y = 5
+		cost = 7
+		prerequisite = { focus = GUA_indigenous_dialogue }
+		prerequisite = { focus = GUA_independent_justice }
+		completion_reward = {
+			add_ideas = GUA_new_democratic_compact
+			add_stability = 0.06
+			add_political_power = 75
+		}
+	}
+
+	# -----------------------------------------------------------------
+	# Development and social investment
+	# -----------------------------------------------------------------
+	focus = {
+		id = GUA_rural_roads_program
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 10
+		y = 2
+		cost = 4
+		prerequisite = { focus = GUA_new_spring }
+		completion_reward = {
+			12 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GUA_highlands_investment
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 3
+		cost = 5
+		prerequisite = { focus = GUA_rural_roads_program }
+		completion_reward = {
+			12 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = GUA_remittance_to_investment
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 10
+		y = 3
+		cost = 5
+		prerequisite = { focus = GUA_rural_roads_program }
+		completion_reward = {
+			remove_ideas = GUA_remittance_economy
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = GUA_pacific_logistics
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 12
+		y = 3
+		cost = 5
+		prerequisite = { focus = GUA_rural_roads_program }
+		completion_reward = {
+			12 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 8
+			}
+		}
+	}
+
+	focus = {
+		id = GUA_northern_development
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 10
+		y = 4
+		cost = 6
+		prerequisite = { focus = GUA_highlands_investment }
+		prerequisite = { focus = GUA_pacific_logistics }
+		completion_reward = {
+			12 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.03
+		}
+	}
+
+	# -----------------------------------------------------------------
+	# Armed forces and border security
+	# -----------------------------------------------------------------
+	focus = {
+		id = GUA_reorganize_high_command
+		icon = GFX_goal_generic_position_armies
+		x = 17
+		y = 2
+		cost = 4
+		prerequisite = { focus = GUA_new_spring }
+		completion_reward = {
+			army_experience = 15
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = GUA_modernize_infantry_brigades
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 15
+		y = 3
+		cost = 5
+		prerequisite = { focus = GUA_reorganize_high_command }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1800
+				producer = GUA
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 200
+				producer = GUA
+			}
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = GUA_kaibil_readiness
+		icon = GFX_goal_generic_special_forces
+		x = 17
+		y = 3
+		cost = 5
+		prerequisite = { focus = GUA_reorganize_high_command }
+		completion_reward = {
+			army_experience = 20
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = GUA_air_mobility
+		icon = GFX_goal_generic_army_motorized
+		x = 19
+		y = 3
+		cost = 5
+		prerequisite = { focus = GUA_reorganize_high_command }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 200
+				producer = GUA
+			}
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = GUA_border_task_forces
+		icon = GFX_goal_generic_position_armies
+		x = 17
+		y = 4
+		cost = 6
+		prerequisite = { focus = GUA_modernize_infantry_brigades }
+		prerequisite = { focus = GUA_kaibil_readiness }
+		prerequisite = { focus = GUA_air_mobility }
+		completion_reward = {
+			remove_ideas = GUA_underfunded_security_forces
+			add_ideas = GUA_professional_armed_forces
+			add_manpower = 2500
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = GUA_civilian_control_military
+		icon = GFX_goal_generic_political_pressure
+		x = 17
+		y = 5
+		cost = 6
+		prerequisite = { focus = GUA_border_task_forces }
+		prerequisite = { focus = GUA_new_democratic_compact_focus }
+		completion_reward = {
+			remove_ideas = GUA_legacy_internal_conflict
+			add_stability = 0.08
+			add_political_power = 60
+		}
+	}
+
+	# -----------------------------------------------------------------
+	# The claim to Belize
+	# -----------------------------------------------------------------
+	focus = {
+		id = GUA_reaffirm_historic_claim
+		icon = GFX_goal_generic_demand_territory
+		x = 24
+		y = 2
+		cost = 4
+		prerequisite = { focus = GUA_new_spring }
+		completion_reward = {
+			BLZ = { add_to_variable = { BLZ_GUA_tension = 8 } }
+			TAD_BG_clamp_tension = yes
+			add_war_support = 0.03
+			BLZ = { country_event = { id = tad_bg.20 hours = 12 } }
+		}
+	}
+
+	focus = {
+		id = GUA_icj_memorial
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 22
+		y = 3
+		cost = 5
+		prerequisite = { focus = GUA_reaffirm_historic_claim }
+		completion_reward = {
+			BLZ = { subtract_from_variable = { BLZ_GUA_tension = 5 } }
+			TAD_BG_clamp_tension = yes
+			add_political_power = 50
+			set_country_flag = GUA_icj_case_prepared
+		}
+	}
+
+	focus = {
+		id = GUA_adjacent_zone_patrols
+		icon = GFX_goal_generic_position_armies
+		x = 26
+		y = 3
+		cost = 5
+		prerequisite = { focus = GUA_reaffirm_historic_claim }
+		completion_reward = {
+			BLZ = { add_to_variable = { BLZ_GUA_tension = 10 } }
+			TAD_BG_clamp_tension = yes
+			add_war_support = 0.04
+			set_country_flag = GUA_expanded_adjacency_patrols
+		}
+	}
+
+	focus = {
+		id = GUA_propose_joint_development
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 22
+		y = 4
+		cost = 6
+		prerequisite = { focus = GUA_icj_memorial }
+		mutually_exclusive = { focus = GUA_pressure_belmopan }
+		completion_reward = {
+			BLZ = { country_event = { id = tad_bg.30 hours = 12 } }
+			set_country_flag = GUA_joint_development_path
+		}
+	}
+
+	focus = {
+		id = GUA_accept_binding_judgment
+		icon = GFX_goal_generic_forceful_treaty
+		x = 22
+		y = 5
+		cost = 6
+		prerequisite = { focus = GUA_propose_joint_development }
+		completion_reward = {
+			remove_ideas = GUA_historic_claim_to_belize
+			BLZ = { remove_ideas = BLZ_guatemalan_claim }
+			BLZ = { set_variable = { BLZ_GUA_tension = 0 } }
+			TAD_BG_clamp_tension = yes
+			add_stability = 0.08
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = GUA_pressure_belmopan
+		icon = GFX_goal_generic_demand_territory
+		x = 26
+		y = 4
+		cost = 6
+		prerequisite = { focus = GUA_adjacent_zone_patrols }
+		mutually_exclusive = { focus = GUA_propose_joint_development }
+		completion_reward = {
+			BLZ = { add_to_variable = { BLZ_GUA_tension = 15 } }
+			TAD_BG_clamp_tension = yes
+			add_war_support = 0.06
+			set_country_flag = GUA_hardline_claim_policy
+		}
+	}
+
+	focus = {
+		id = GUA_enforce_historic_claim
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 26
+		y = 5
+		cost = 7
+		prerequisite = { focus = GUA_pressure_belmopan }
+		available = {
+			BLZ = { check_variable = { BLZ_GUA_tension > 59 } }
+		}
+		completion_reward = {
+			15 = { add_claim_by = GUA }
+			88 = { add_claim_by = GUA }
+			set_country_flag = GUA_can_issue_belize_ultimatum
+			BLZ = { add_to_variable = { BLZ_GUA_tension = 15 } }
+			TAD_BG_clamp_tension = yes
+			add_war_support = 0.08
+		}
+	}
+
+	# -----------------------------------------------------------------
+	# Foreign policy and final consolidation
+	# -----------------------------------------------------------------
+	focus = {
+		id = GUA_central_american_leadership
+		icon = GFX_goal_generic_major_alliance
+		x = 8
+		y = 6
+		cost = 5
+		prerequisite = { focus = GUA_new_democratic_compact_focus }
+		prerequisite = { focus = GUA_northern_development }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = GUA_us_security_partnership
+		icon = GFX_goal_generic_major_alliance
+		x = 17
+		y = 6
+		cost = 5
+		prerequisite = { focus = GUA_civilian_control_military }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1200
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 200
+				producer = USA
+			}
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = GUA_taiwan_cooperation
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 11
+		y = 6
+		cost = 5
+		prerequisite = { focus = GUA_northern_development }
+		completion_reward = {
+			12 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = GUA_guatemala_avanza
+		icon = GFX_goal_generic_national_unity
+		x = 13
+		y = 7
+		cost = 7
+		prerequisite = { focus = GUA_central_american_leadership }
+		prerequisite = { focus = GUA_us_security_partnership }
+		prerequisite = { focus = GUA_taiwan_cooperation }
+		prerequisite = {
+			focus = GUA_accept_binding_judgment
+			focus = GUA_enforce_historic_claim
+		}
+		completion_reward = {
+			add_stability = 0.08
+			add_war_support = 0.04
+			add_political_power = 100
+		}
+	}
+}

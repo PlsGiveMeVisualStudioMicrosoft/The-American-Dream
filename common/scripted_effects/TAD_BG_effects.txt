@@ -1,0 +1,12 @@
+TAD_BG_clamp_tension = {
+	BLZ = {
+		if = {
+			limit = { check_variable = { BLZ_GUA_tension > 100 } }
+			set_variable = { BLZ_GUA_tension = 100 }
+		}
+		if = {
+			limit = { check_variable = { BLZ_GUA_tension < 0 } }
+			set_variable = { BLZ_GUA_tension = 0 }
+		}
+	}
+}

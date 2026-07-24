@@ -1,0 +1,13 @@
+TAD_BG_dispute_category = {
+	icon = generic_research
+	allowed = {
+		OR = {
+			tag = BLZ
+			tag = GUA
+		}
+	}
+	visible = {
+		BLZ = { has_country_flag = TAD_BG_dispute_active }
+	}
+	priority = 120
+}

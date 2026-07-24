@@ -1,0 +1,497 @@
+focus_tree = {
+	id = BLZ_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = BLZ
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 3200 y = 100 }
+
+	focus = {
+		id = BLZ_the_jewel_in_2025
+		icon = GFX_goal_generic_national_unity
+		x = 12
+		y = 0
+		cost = 1
+		completion_reward = {
+			add_political_power = 25
+			country_event = { id = tad_bg.1 hours = 6 }
+		}
+	}
+
+	# -----------------------------------------------------------------
+	# Government and institutions
+	# -----------------------------------------------------------------
+	focus = {
+		id = BLZ_second_term_mandate
+		icon = GFX_goal_generic_political_pressure
+		x = 3
+		y = 2
+		cost = 4
+		prerequisite = { focus = BLZ_the_jewel_in_2025 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
+		id = BLZ_constitutional_reform_commission
+		icon = GFX_goal_generic_political_pressure
+		x = 2
+		y = 3
+		cost = 5
+		prerequisite = { focus = BLZ_second_term_mandate }
+		completion_reward = {
+			add_ideas = BLZ_constitutional_reform_process
+			add_political_power = 35
+		}
+	}
+
+	focus = {
+		id = BLZ_strengthen_local_government
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 3
+		cost = 5
+		prerequisite = { focus = BLZ_second_term_mandate }
+		completion_reward = {
+			15 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			88 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = BLZ_decolonise_public_institutions
+		icon = GFX_goal_generic_national_unity
+		x = 3
+		y = 4
+		cost = 5
+		prerequisite = { focus = BLZ_constitutional_reform_commission }
+		prerequisite = { focus = BLZ_strengthen_local_government }
+		completion_reward = {
+			remove_ideas = BLZ_colonial_institutions
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	# -----------------------------------------------------------------
+	# Economy and development
+	# -----------------------------------------------------------------
+	focus = {
+		id = BLZ_plan_belize_growth
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 9
+		y = 2
+		cost = 4
+		prerequisite = { focus = BLZ_the_jewel_in_2025 }
+		completion_reward = {
+			15 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = BLZ_tourism_resilience
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 7
+		y = 3
+		cost = 5
+		prerequisite = { focus = BLZ_plan_belize_growth }
+		completion_reward = {
+			remove_ideas = BLZ_tourism_dependent_economy
+			add_ideas = BLZ_resilient_tourism_sector
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = BLZ_blue_economy_agenda
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 9
+		y = 3
+		cost = 5
+		prerequisite = { focus = BLZ_plan_belize_growth }
+		completion_reward = {
+			15 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 5
+			}
+		}
+	}
+
+	focus = {
+		id = BLZ_agricultural_modernisation
+		icon = GFX_goal_generic_production
+		x = 11
+		y = 3
+		cost = 5
+		prerequisite = { focus = BLZ_plan_belize_growth }
+		completion_reward = {
+			15 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = BLZ_digital_belize
+		icon = GFX_goal_generic_scientific_exchange
+		x = 9
+		y = 4
+		cost = 5
+		prerequisite = { focus = BLZ_tourism_resilience }
+		prerequisite = { focus = BLZ_agricultural_modernisation }
+		completion_reward = {
+			add_research_slot = 1
+			add_political_power = 40
+		}
+	}
+
+	# -----------------------------------------------------------------
+	# Defence force
+	# -----------------------------------------------------------------
+	focus = {
+		id = BLZ_review_bdf_readiness
+		icon = GFX_goal_generic_position_armies
+		x = 16
+		y = 2
+		cost = 4
+		prerequisite = { focus = BLZ_the_jewel_in_2025 }
+		completion_reward = {
+			army_experience = 10
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 200
+				producer = BLZ
+			}
+		}
+	}
+
+	focus = {
+		id = BLZ_first_battalion_readiness
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 14
+		y = 3
+		cost = 4
+		prerequisite = { focus = BLZ_review_bdf_readiness }
+		completion_reward = {
+			add_manpower = 500
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 250
+				producer = BLZ
+			}
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = BLZ_second_battalion_readiness
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 16
+		y = 3
+		cost = 4
+		prerequisite = { focus = BLZ_review_bdf_readiness }
+		completion_reward = {
+			add_manpower = 500
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 250
+				producer = BLZ
+			}
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = BLZ_volunteer_guard
+		icon = GFX_goal_generic_small_arms
+		x = 18
+		y = 3
+		cost = 4
+		prerequisite = { focus = BLZ_review_bdf_readiness }
+		completion_reward = {
+			add_manpower = 750
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 200
+				producer = BLZ
+			}
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = BLZ_jungle_warfare_school
+		icon = GFX_goal_generic_special_forces
+		x = 15
+		y = 4
+		cost = 5
+		prerequisite = { focus = BLZ_first_battalion_readiness }
+		prerequisite = { focus = BLZ_second_battalion_readiness }
+		completion_reward = {
+			remove_ideas = BLZ_compact_defence_force
+			add_ideas = BLZ_professional_bdf
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = BLZ_coast_guard_coordination
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 18
+		y = 4
+		cost = 5
+		prerequisite = { focus = BLZ_volunteer_guard }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 5
+			}
+			add_political_power = 25
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = BLZ_batsub_partnership
+		icon = GFX_goal_generic_major_alliance
+		x = 16
+		y = 5
+		cost = 5
+		prerequisite = { focus = BLZ_jungle_warfare_school }
+		prerequisite = { focus = BLZ_coast_guard_coordination }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 350
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 75
+				producer = ENG
+			}
+			army_experience = 10
+		}
+	}
+
+	# -----------------------------------------------------------------
+	# The Belize-Guatemala differendum
+	# -----------------------------------------------------------------
+	focus = {
+		id = BLZ_icj_legal_team
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 23
+		y = 2
+		cost = 4
+		prerequisite = { focus = BLZ_the_jewel_in_2025 }
+		completion_reward = {
+			add_political_power = 35
+			subtract_from_variable = { BLZ_GUA_tension = 5 }
+			TAD_BG_clamp_tension = yes
+			set_country_flag = BLZ_icj_team_funded
+		}
+	}
+
+	focus = {
+		id = BLZ_oas_adjacency_office
+		icon = GFX_goal_generic_major_alliance
+		x = 21
+		y = 3
+		cost = 5
+		prerequisite = { focus = BLZ_icj_legal_team }
+		completion_reward = {
+			subtract_from_variable = { BLZ_GUA_tension = 8 }
+			TAD_BG_clamp_tension = yes
+			add_ideas = BLZ_cross_border_cooperation
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = BLZ_document_every_incident
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 25
+		y = 3
+		cost = 5
+		prerequisite = { focus = BLZ_icj_legal_team }
+		completion_reward = {
+			set_country_flag = BLZ_border_incident_archive
+			add_political_power = 50
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = BLZ_seek_final_settlement
+		icon = GFX_goal_generic_forceful_treaty
+		x = 21
+		y = 4
+		cost = 6
+		prerequisite = { focus = BLZ_oas_adjacency_office }
+		mutually_exclusive = { focus = BLZ_hold_the_line }
+		completion_reward = {
+			GUA = { country_event = { id = tad_bg.10 hours = 12 } }
+			set_country_flag = BLZ_peaceful_settlement_path
+		}
+	}
+
+	focus = {
+		id = BLZ_hold_the_line
+		icon = GFX_goal_generic_demand_territory
+		x = 25
+		y = 4
+		cost = 6
+		prerequisite = { focus = BLZ_document_every_incident }
+		mutually_exclusive = { focus = BLZ_seek_final_settlement }
+		completion_reward = {
+			add_to_variable = { BLZ_GUA_tension = 10 }
+			TAD_BG_clamp_tension = yes
+			add_war_support = 0.06
+			set_country_flag = BLZ_hardline_border_policy
+		}
+	}
+
+	focus = {
+		id = BLZ_total_defence_plan
+		icon = GFX_goal_generic_fortify_city
+		x = 25
+		y = 5
+		cost = 6
+		prerequisite = { focus = BLZ_hold_the_line }
+		completion_reward = {
+			add_ideas = BLZ_total_defence
+			15 = {
+				add_building_construction = {
+					type = bunker
+					province = 3337
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_manpower = 1000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 500
+				producer = BLZ
+			}
+		}
+	}
+
+	# -----------------------------------------------------------------
+	# Regional and external partnerships
+	# -----------------------------------------------------------------
+	focus = {
+		id = BLZ_caricom_anchor
+		icon = GFX_goal_generic_major_alliance
+		x = 7
+		y = 6
+		cost = 5
+		prerequisite = { focus = BLZ_decolonise_public_institutions }
+		prerequisite = { focus = BLZ_digital_belize }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = BLZ_taiwan_partnership
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 9
+		y = 6
+		cost = 5
+		prerequisite = { focus = BLZ_digital_belize }
+		completion_reward = {
+			88 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 35
+		}
+	}
+
+	focus = {
+		id = BLZ_us_security_assistance
+		icon = GFX_goal_generic_major_alliance
+		x = 16
+		y = 6
+		cost = 5
+		prerequisite = { focus = BLZ_batsub_partnership }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 500
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 100
+				producer = USA
+			}
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = BLZ_secure_sovereignty
+		icon = GFX_goal_generic_national_unity
+		x = 16
+		y = 7
+		cost = 7
+		prerequisite = { focus = BLZ_caricom_anchor }
+		prerequisite = { focus = BLZ_us_security_assistance }
+		prerequisite = {
+			focus = BLZ_seek_final_settlement
+			focus = BLZ_total_defence_plan
+		}
+		completion_reward = {
+			add_stability = 0.08
+			add_war_support = 0.05
+			add_political_power = 75
+		}
+	}
+}
