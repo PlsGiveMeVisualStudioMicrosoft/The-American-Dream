@@ -1,0 +1,27 @@
+﻿l_english:
+
+ USA_approval_dm:0 "Standing With The Public"
+
+ USA_APR_ARROW_UP:0 "§GThe national trend is pulling upward, toward [?USA.usa_apr_target|0]%.§!"
+ USA_APR_ARROW_DOWN:0 "§RThe national trend is pulling downward, toward [?USA.usa_apr_target|0]%.§!"
+ USA_APR_ARROW_FLAT:0 "§YThe national trend is holding near [?USA.usa_apr_target|0]%.§!"
+
+ USA_APR_SHARED_DESC:0 "Approval currently reads §Y[?USA.aproval_rate|0]%§!.\n\n[GetUSAApprovalArrow]\n\nCampaigning, decisions and events all move the number, but the country has its own gravity. Approval can never sit more than §Y[?USA.usa_apr_band|0]§! points away from the trend, and half of whatever gap remains closes again every month."
+
+ USA_approval_tier_1:0 "Commanding Numbers"
+ USA_approval_tier_1_desc:0 "The administration is polling above water. Congress is pliable, the party is disciplined, and the press cycle is survivable.\n\n[USA_APR_SHARED_DESC]"
+
+ USA_approval_tier_2:0 "Slipping Support"
+ USA_approval_tier_2_desc:0 "The honeymoon is over. Independents have drifted away and the coalition now holds together on partisanship alone.\n\n[USA_APR_SHARED_DESC]"
+
+ USA_approval_tier_3:0 "Underwater"
+ USA_approval_tier_3_desc:0 "More of the country disapproves than approves, and it has been that way long enough to be treated as permanent. Members of the President's own party have begun distancing themselves.\n\n[USA_APR_SHARED_DESC]"
+
+ USA_approval_tier_4:0 "Collapsing Support"
+ USA_approval_tier_4_desc:0 "Approval has fallen below anything seen in the modern era. Governing now means governing against the country rather than with it.\n\n[USA_APR_SHARED_DESC]"
+
+ USA_approval_tier_5:0 "Repudiated Presidency"
+ USA_approval_tier_5_desc:0 "Only the hardest core remains. Every institution that can put distance between itself and the White House has already done so, and enforcement is increasingly a matter of loyalty rather than law.\n\n[USA_APR_SHARED_DESC]"
+
+ USA_approval_tier_6:0 "Terminal Legitimacy"
+ USA_approval_tier_6_desc:0 "The administration commands almost no public consent at all. Orders travel down the chain and stop somewhere before they reach the ground.\n\n[USA_APR_SHARED_DESC]"

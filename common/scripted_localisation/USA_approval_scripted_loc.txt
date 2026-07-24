@@ -1,0 +1,30 @@
+# ==============================================================
+#  USA APPROVAL - SCRIPTED LOCALISATION
+#
+#  Gives the tier spirit tooltips a live line telling the player
+#  which way the national trend is pulling. Scripted loc inside
+#  an idea description re-evaluates every time the tooltip is
+#  drawn, so it is always current.
+# ==============================================================
+
+defined_text = {
+	name = GetUSAApprovalArrow
+
+	text = {
+		trigger = {
+			USA = { check_variable = { var = usa_apr_target value = usa_apr_real compare = greater_than } }
+		}
+		localization_key = USA_APR_ARROW_UP
+	}
+	text = {
+		trigger = {
+			USA = { check_variable = { var = usa_apr_target value = usa_apr_real compare = less_than } }
+		}
+		localization_key = USA_APR_ARROW_DOWN
+	}
+
+	# no trigger - must stay last
+	text = {
+		localization_key = USA_APR_ARROW_FLAT
+	}
+}

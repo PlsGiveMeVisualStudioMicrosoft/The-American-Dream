@@ -1,0 +1,88 @@
+# ==============================================================
+#  USA APPROVAL - TIER SPIRITS
+#
+#  Six mutually exclusive national spirits. Only one is ever
+#  active; the swap is handled by USA_apr_apply_tier and the
+#  thresholds live in USA_approval_00_tuning.txt.
+#
+#  The modifiers here are STEP effects - they change only when
+#  the tier changes. The smooth, continuously scaling effects
+#  live in the dynamic modifier USA_approval_dm instead.
+#
+#  The pictures are vanilla idea sprites so this works with no
+#  new art. To use your own, uncomment the block in
+#  interface/USA_approval_spirits.gfx and change picture = here.
+# ==============================================================
+
+ideas = {
+
+	country = {
+
+		USA_approval_tier_1 = {
+			picture = generic_civil_support
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				drift_defence_factor = 0.10
+			}
+		}
+
+		USA_approval_tier_2 = {
+			picture = generic_democratic_drift
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+			}
+		}
+
+		USA_approval_tier_3 = {
+			picture = generic_disjointed_gov
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.05
+				drift_defence_factor = -0.10
+			}
+		}
+
+		USA_approval_tier_4 = {
+			picture = usa_great_depression_3
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.15
+				army_morale_factor = -0.05
+			}
+		}
+
+		USA_approval_tier_5 = {
+			picture = usa_great_depression_2
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.25
+				army_morale_factor = -0.10
+				surrender_limit = -0.10
+			}
+		}
+
+		USA_approval_tier_6 = {
+			picture = usa_great_depression
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.40
+				army_morale_factor = -0.15
+				surrender_limit = -0.20
+			}
+		}
+	}
+}

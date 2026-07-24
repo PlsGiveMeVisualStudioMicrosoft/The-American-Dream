@@ -1,0 +1,60 @@
+﻿l_english:
+
+ USA_APR_EVT_TAIL_HIGH:0 "§RThe polling has already begun to move. Approval is sliding back toward the national trend of [?USA.usa_apr_target|0]%, about a point every other day, until it sits inside the normal range again.§!"
+ USA_APR_EVT_TAIL_LOW:0 "§GThe polling has already begun to move. Approval is climbing back toward the national trend of [?USA.usa_apr_target|0]%, about a point every other day, until it sits inside the normal range again.§!"
+
+ usa_approval.1.t:0 "The Numbers Come In"
+ usa_approval.1.d:0 "The monthly price figures land badly. Grocery and energy costs have run ahead of wages for another quarter, and the administration's line that the worst is behind it does not survive contact with the data.\n\nEvery network leads with the same chart. Whatever goodwill the last few months bought, it does not extend to the checkout line.\n\n[USA_APR_EVT_TAIL_HIGH]"
+ usa_approval.1.a:0 "The numbers are the numbers."
+
+ usa_approval.2.t:0 "The Courts Push Back"
+ usa_approval.2.d:0 "A federal appeals court strikes down one of the administration's signature policies, ruling that it exceeded the authority Congress delegated. The decision is stayed pending appeal, but the reasoning is quoted everywhere.\n\nThe legal argument is technical. The headline is not: the courts have said no, and the White House has to answer for it.\n\n[USA_APR_EVT_TAIL_HIGH]"
+ usa_approval.2.a:0 "We will appeal."
+
+ usa_approval.3.t:0 "A Resignation, and a Microphone"
+ usa_approval.3.d:0 "A cabinet secretary resigns, and then does something departing officials usually do not: gives interviews. The account is measured, specific, and unflattering, and it names meetings and dates.\n\nThe administration dismisses it as a disgruntled account. Enough of the details check out that the story runs for a week.\n\n[USA_APR_EVT_TAIL_HIGH]"
+ usa_approval.3.a:0 "Let them talk."
+
+ usa_approval.4.t:0 "The Response Falls Short"
+ usa_approval.4.d:0 "A major storm system leaves several states without power for days. The federal response is slow to arrive and slower to coordinate, and local officials from both parties say so on camera.\n\nCompetence is not an ideological question. Footage of people queuing for water does more damage than any opposition advertisement could.\n\n[USA_APR_EVT_TAIL_HIGH]"
+ usa_approval.4.a:0 "Get the convoys moving."
+
+ usa_approval.5.t:0 "The Coalition Cracks"
+ usa_approval.5.d:0 "A must-pass bill stalls when a bloc of the President's own party refuses to move without concessions. The negotiations happen in public, at length, and end in a short-term extension that satisfies nobody.\n\nMembers in competitive districts have begun doing the arithmetic on their own re-election, and the answer is not loyalty.\n\n[USA_APR_EVT_TAIL_HIGH]"
+ usa_approval.5.a:0 "They will remember this."
+
+ usa_approval.6.t:0 "The Memo Gets Out"
+ usa_approval.6.d:0 "An internal planning document reaches a newsroom. Nothing in it is illegal. What it is, unambiguously, is candid — about what the administration expects to accomplish, and about how little of the public messaging it believes.\n\nThe gap between the private assessment and the public one is the story.\n\n[USA_APR_EVT_TAIL_HIGH]"
+ usa_approval.6.a:0 "Find out who leaked it."
+
+ usa_approval.7.t:0 "The Summit Collapses"
+ usa_approval.7.d:0 "Talks that were briefed for weeks as a breakthrough end early and without a communiqué. The other delegation departs first, and its readout is released before the American one.\n\nForeign policy rarely moves domestic numbers on its own. A visibly failed negotiation, staged and promoted in advance, is the exception.\n\n[USA_APR_EVT_TAIL_HIGH]"
+ usa_approval.7.a:0 "It was never going to be easy."
+
+ usa_approval.11.t:0 "Prices Come Down"
+ usa_approval.11.d:0 "For the first time in over a year the inflation figures move decisively the right way. Fuel prices fall through the season, and the effect is visible on every forecourt in the country.\n\nThe administration had little to do with it. It will take the credit anyway, and for once the public is inclined to hand some over.\n\n[USA_APR_EVT_TAIL_LOW]"
+ usa_approval.11.a:0 "We said it would work."
+
+ usa_approval.12.t:0 "Everyone Comes Home"
+ usa_approval.12.d:0 "A months-long negotiation ends with a group of detained Americans on a plane out. The families are at the airfield, and the footage runs on a loop for two days.\n\nIt is a narrow, human, entirely legible success, and it cuts through in a way that policy never does.\n\n[USA_APR_EVT_TAIL_LOW]"
+ usa_approval.12.a:0 "Bring them home."
+
+ usa_approval.13.t:0 "The Other Side Stumbles"
+ usa_approval.13.d:0 "The opposition spends the month on its own problems. A funding scandal in a leadership office consumes the news cycle, and the party's response is slow and internally contradictory.\n\nNothing improves about the administration's position on the merits. It simply stops being the thing everyone is arguing about.\n\n[USA_APR_EVT_TAIL_LOW]"
+ usa_approval.13.a:0 "Say nothing and let it run."
+
+ usa_approval.14.t:0 "The Machine Works"
+ usa_approval.14.d:0 "A wildfire season that forecasters called catastrophic is met with pre-positioned crews, early evacuation orders and federal money released before it is asked for. Governors of both parties say so publicly.\n\nGovernment functioning as intended is not usually a story. After the last few years, it is.\n\n[USA_APR_EVT_TAIL_LOW]"
+ usa_approval.14.a:0 "This is what it looks like."
+
+ usa_approval.15.t:0 "Ground Is Broken"
+ usa_approval.15.d:0 "A consortium announces the largest domestic manufacturing investment in a decade, spread across four states that badly need it. The groundbreaking is staged, scheduled and thoroughly covered.\n\nThe plants will take years to produce anything. The announcement produces something immediately.\n\n[USA_APR_EVT_TAIL_LOW]"
+ usa_approval.15.a:0 "Built here."
+
+ usa_approval.16.t:0 "Vindicated In Court"
+ usa_approval.16.d:0 "The Supreme Court declines to hear a challenge that had hung over the administration's central programme for a year, leaving the lower court ruling in its favour standing.\n\nA procedural non-decision, technically. It is reported as a win, and it is received as one.\n\n[USA_APR_EVT_TAIL_LOW]"
+ usa_approval.16.a:0 "The law is settled."
+
+ usa_approval.17.t:0 "The Plot Is Broken Up"
+ usa_approval.17.d:0 "Federal agents announce arrests in a plot against a government building, disrupted well before it could be carried out. The briefing is detailed, the timeline is clean, and the co-operation between agencies is unusually well documented.\n\nThe rally is real but shallow. Threats remembered are not threats felt.\n\n[USA_APR_EVT_TAIL_LOW]"
+ usa_approval.17.a:0 "Good work."

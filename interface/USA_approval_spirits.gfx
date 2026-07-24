@@ -1,0 +1,44 @@
+# ==============================================================
+#  USA APPROVAL - CUSTOM SPIRIT ART (optional)
+#
+#  The six tier spirits currently use vanilla idea pictures, so
+#  nothing here is required. When you want your own art:
+#
+#    1. drop six 96x96 .dds files into
+#       gfx/interface/ideas/
+#    2. uncomment the block below
+#    3. change picture = ... in
+#       common/ideas/USA_approval_spirits.txt to match, e.g.
+#       picture = USA_approval_tier_6
+#
+#  HOI4 expects the sprite name to be GFX_idea_<picture value>.
+# ==============================================================
+
+spriteTypes = {
+
+#	spriteType = {
+#		name = "GFX_idea_USA_approval_tier_1"
+#		texturefile = "gfx/interface/ideas/USA_approval_tier_1.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_USA_approval_tier_2"
+#		texturefile = "gfx/interface/ideas/USA_approval_tier_2.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_USA_approval_tier_3"
+#		texturefile = "gfx/interface/ideas/USA_approval_tier_3.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_USA_approval_tier_4"
+#		texturefile = "gfx/interface/ideas/USA_approval_tier_4.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_USA_approval_tier_5"
+#		texturefile = "gfx/interface/ideas/USA_approval_tier_5.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_idea_USA_approval_tier_6"
+#		texturefile = "gfx/interface/ideas/USA_approval_tier_6.dds"
+#	}
+
+}

@@ -31,6 +31,7 @@ country_event = {
 		}
 
 		promote_character = USA_Trump
+		set_global_flag = usa_trump_inaugurated
 
 		# --- FALLBACK ------------------------------------------------
 		# promote_character only works if USA_Trump already has a

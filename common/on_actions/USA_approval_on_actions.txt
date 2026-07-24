@@ -1,0 +1,39 @@
+# ==============================================================
+#  USA APPROVAL - DRIVERS
+#
+#  Two ticks. The monthly one advances the curve; the daily one
+#  runs the correction and does nothing at all while approval
+#  sits inside the band.
+#
+#  Both flag checks are the on/off switch: nothing runs before
+#  inauguration, and nothing runs after USA_apr_shutdown.
+# ==============================================================
+
+on_actions = {
+
+	on_monthly_USA = {
+		effect = {
+			if = {
+				limit = {
+					tag = USA
+					has_global_flag = usa_approval_system_on
+					NOT = { has_global_flag = usa_approval_system_off }
+				}
+				USA_apr_monthly_tick = yes
+			}
+		}
+	}
+
+	on_daily_USA = {
+		effect = {
+			if = {
+				limit = {
+					tag = USA
+					has_global_flag = usa_approval_system_on
+					NOT = { has_global_flag = usa_approval_system_off }
+				}
+				USA_apr_daily_correction = yes
+			}
+		}
+	}
+}

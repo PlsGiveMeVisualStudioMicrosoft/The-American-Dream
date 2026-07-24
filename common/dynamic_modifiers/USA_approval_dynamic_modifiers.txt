@@ -1,0 +1,25 @@
+# ==============================================================
+#  USA APPROVAL - SCALING MODIFIER
+#
+#  Added once when the system arms, removed by USA_apr_shutdown.
+#  Every value is a live variable recalculated each month by
+#  USA_apr_recalc_modifiers, so the effects slide smoothly with
+#  the bars instead of jumping at tier boundaries.
+#
+#  To add another effect: add a line here using any country
+#  modifier name, then compute a variable for it in
+#  USA_apr_recalc_modifiers.
+# ==============================================================
+
+USA_approval_dm = {
+
+	enable = { always = yes }
+	icon = GFX_idea_generic_disjointed_gov
+
+	stability_factor = usa_apr_mod_stability
+	war_support_factor = usa_apr_mod_warsupport
+	political_power_gain = usa_apr_mod_pp
+
+	consumer_goods_factor = usa_apr_mod_consumer
+	conscription_factor = usa_apr_mod_conscription
+}

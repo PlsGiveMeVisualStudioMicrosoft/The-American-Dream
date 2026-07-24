@@ -14,8 +14,11 @@ on_actions = {
 					country_event = { id = usa_inauguration.2 hours = 23 }
 					set_variable = { simp_slot_frame = 2 }
 					log = "[GetDateText]: usa_inauguration driver 1 armed"
-					set_variable = {aproval_rate = 47}
-					set_variable = {civil_war = 4}
+
+					# the two set_variable lines that used to sit
+					# here now live inside USA_apr_arm_system, so
+					# the starting numbers are tunable in one place
+					USA_apr_arm_system = yes
 				}
 
 				# ---------- next president ----------

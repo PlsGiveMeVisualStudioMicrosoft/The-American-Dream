@@ -1,0 +1,574 @@
+# ==============================================================
+#  USA APPROVAL SYSTEM - MACHINERY
+#
+#  You should not need to edit this file. All numbers live in
+#  USA_approval_00_tuning.txt.
+#
+#  HOW IT WORKS
+#    aproval_rate and civil_war are DISPLAY variables. They are
+#    whole numbers because the progress bars use steps = 100 and
+#    would stair-step badly otherwise. The real values are kept
+#    at full precision in usa_apr_real and usa_chaos_real.
+#
+#    Two rails, running at different speeds:
+#
+#      DAILY   if approval is outside the band, it walks back
+#              toward the edge at usa_apr_bleed_per_day. It
+#              stops dead at the edge and never crosses it.
+#      MONTHLY the target moves to the next value on the curve,
+#              and IF approval is already inside the band, the
+#              usa_apr_pull decay applies on top.
+#
+#    The monthly pull is deliberately skipped while outside the
+#    band. That is the whole point of the bleed - if both ran, a
+#    big overshoot would still snap most of the way back on the
+#    first monthly tick.
+#
+#    Your decisions and events should write to usa_apr_real, not
+#    to aproval_rate. There are two helpers at the bottom.
+#
+#  PUBLIC EFFECTS - the ones you call from events and decisions
+#    USA_apr_arm_system      start everything (already wired
+#                            into the inauguration on_action)
+#    USA_apr_shutdown        stop everything, strip the spirit
+#                            and the modifier. Call this from
+#                            your 2028 collapse event.
+#    USA_apr_add             push approval up or down. Set the
+#                            temp variable apr_delta first.
+#    USA_chaos_add           push chaos up or down. Set the
+#                            temp variable chaos_delta first.
+# ==============================================================
+
+
+# --------------------------------------------------------------
+#  ARM
+#  Called once, on inauguration day.
+# --------------------------------------------------------------
+USA_apr_arm_system = {
+
+	USA_apr_load_tuning = yes
+	USA_apr_load_curve = yes
+
+	set_variable = { usa_apr_month = 0 }
+	set_variable = { usa_apr_real = usa_apr_start }
+	set_variable = { usa_chaos_real = usa_chaos_start }
+	set_variable = { usa_apr_target = usa_apr_start }
+
+	set_variable = { usa_apr_tier = 0 }
+	set_variable = { usa_apr_evt_cd = 0 }
+
+	clr_country_flag = usa_apr_high_episode
+	clr_country_flag = usa_apr_low_episode
+	USA_apr_clear_high_bag = yes
+	USA_apr_clear_low_bag = yes
+
+	if = {
+		limit = { NOT = { has_dynamic_modifier = { modifier = USA_approval_dm } } }
+		add_dynamic_modifier = { modifier = USA_approval_dm }
+	}
+
+	set_variable = { civil_war = usa_chaos_real }
+	round_variable = civil_war
+	USA_apr_refresh = yes
+
+	set_global_flag = usa_approval_system_on
+	clr_global_flag = usa_approval_system_off
+
+	log = "[GetDateText]: USA approval system armed"
+}
+
+
+# --------------------------------------------------------------
+#  REFRESH
+#  Pushes the high-precision value onto the bar and re-evaluates
+#  everything that depends on it. Called by every path that
+#  changes approval.
+# --------------------------------------------------------------
+USA_apr_refresh = {
+	clamp_variable = { var = usa_apr_real min = 0 max = 100 }
+	set_variable = { aproval_rate = usa_apr_real }
+	round_variable = aproval_rate
+	USA_apr_recalc_modifiers = yes
+	USA_apr_apply_tier = yes
+}
+
+
+# --------------------------------------------------------------
+#  DAILY CORRECTION
+#  Driven from on_daily_USA. Does nothing at all while approval
+#  sits inside the band, which is the normal case.
+# --------------------------------------------------------------
+USA_apr_daily_correction = {
+
+	# event cooldown ticks down whatever else happens
+	if = {
+		limit = { check_variable = { var = usa_apr_evt_cd value = 0 compare = greater_than } }
+		subtract_from_variable = { usa_apr_evt_cd = 1 }
+	}
+
+	# how far from trend, signed. Positive = above.
+	set_temp_variable = { apr_dev = usa_apr_real }
+	subtract_from_temp_variable = { apr_dev = usa_apr_target }
+
+	# the two edges of the corridor
+	set_temp_variable = { apr_edge_hi = usa_apr_target }
+	add_to_temp_variable = { apr_edge_hi = usa_apr_band }
+	set_temp_variable = { apr_edge_lo = usa_apr_target }
+	subtract_from_temp_variable = { apr_edge_lo = usa_apr_band }
+
+	set_temp_variable = { apr_band_neg = usa_apr_band }
+	multiply_temp_variable = { apr_band_neg = -1 }
+
+	# ---------- ABOVE the band ----------
+	if = {
+		limit = { check_variable = { var = apr_dev value = usa_apr_band compare = greater_than } }
+
+		set_temp_variable = { apr_excess = apr_dev }
+		subtract_from_temp_variable = { apr_excess = usa_apr_band }
+
+		# one event per episode, gated by the shared cooldown
+		if = {
+			limit = {
+				NOT = { has_country_flag = usa_apr_high_episode }
+				check_variable = { var = apr_excess value = usa_apr_event_at compare = greater_than_or_equals }
+				check_variable = { var = usa_apr_evt_cd value = 0 compare = less_than_or_equals }
+			}
+			set_country_flag = usa_apr_high_episode
+			set_variable = { usa_apr_evt_cd = usa_apr_evt_cooldown }
+			USA_apr_fire_high_event = yes
+		}
+
+		subtract_from_variable = { usa_apr_real = usa_apr_bleed_per_day }
+
+		# stop dead at the edge, never overshoot inward
+		if = {
+			limit = { check_variable = { var = usa_apr_real value = apr_edge_hi compare = less_than } }
+			set_variable = { usa_apr_real = apr_edge_hi }
+		}
+
+		USA_apr_refresh = yes
+	}
+
+	# ---------- BELOW the band ----------
+	if = {
+		limit = { check_variable = { var = apr_dev value = apr_band_neg compare = less_than } }
+
+		set_temp_variable = { apr_excess = apr_dev }
+		multiply_temp_variable = { apr_excess = -1 }
+		subtract_from_temp_variable = { apr_excess = usa_apr_band }
+
+		if = {
+			limit = {
+				NOT = { has_country_flag = usa_apr_low_episode }
+				check_variable = { var = apr_excess value = usa_apr_event_at compare = greater_than_or_equals }
+				check_variable = { var = usa_apr_evt_cd value = 0 compare = less_than_or_equals }
+			}
+			set_country_flag = usa_apr_low_episode
+			set_variable = { usa_apr_evt_cd = usa_apr_evt_cooldown }
+			USA_apr_fire_low_event = yes
+		}
+
+		add_to_variable = { usa_apr_real = usa_apr_bleed_per_day }
+
+		if = {
+			limit = { check_variable = { var = usa_apr_real value = apr_edge_lo compare = greater_than } }
+			set_variable = { usa_apr_real = apr_edge_lo }
+		}
+
+		USA_apr_refresh = yes
+	}
+
+	# ---------- back inside - arm the next episode ----------
+	if = {
+		limit = {
+			check_variable = { var = apr_dev value = usa_apr_band compare = less_than_or_equals }
+			check_variable = { var = apr_dev value = apr_band_neg compare = greater_than_or_equals }
+		}
+		clr_country_flag = usa_apr_high_episode
+		clr_country_flag = usa_apr_low_episode
+	}
+}
+
+
+# --------------------------------------------------------------
+#  MONTHLY TICK
+#  Driven from on_monthly_USA.
+# --------------------------------------------------------------
+USA_apr_monthly_tick = {
+
+	# 1. advance the clock. The clamp is what freezes the curve
+	#    at its last entry - raise 47 if you extend past 2028.
+	add_to_variable = { usa_apr_month = 1 }
+	clamp_variable = { var = usa_apr_month min = 0 max = 47 }
+
+	# 2. read this month's target off the curve
+	set_variable = { usa_apr_target = usa_apr_target_array^usa_apr_month }
+
+	# 3. distance from the new target, unsigned
+	set_temp_variable = { apr_dev = usa_apr_real }
+	subtract_from_temp_variable = { apr_dev = usa_apr_target }
+	set_temp_variable = { apr_dev_abs = apr_dev }
+	if = {
+		limit = { check_variable = { var = apr_dev value = 0 compare = less_than } }
+		multiply_temp_variable = { apr_dev_abs = -1 }
+	}
+
+	# 4. PULL, inside the band only. Outside it the daily bleed
+	#    is already handling the correction, and stacking the two
+	#    would put the snap back.
+	if = {
+		limit = { check_variable = { var = apr_dev_abs value = usa_apr_band compare = less_than_or_equals } }
+		set_temp_variable = { apr_gap = usa_apr_target }
+		subtract_from_temp_variable = { apr_gap = usa_apr_real }
+		multiply_temp_variable = { apr_gap = usa_apr_pull }
+		add_to_variable = { usa_apr_real = apr_gap }
+	}
+
+	USA_apr_chaos_creep = yes
+	USA_apr_refresh = yes
+}
+
+
+# --------------------------------------------------------------
+#  OVERSHOOT EVENT PICKERS
+#
+#  Draws one of seven at random, without replacement. Each event
+#  sets its own country flag; the factor = 0 modifier removes it
+#  from the draw. When all seven are set the bag empties and the
+#  cycle starts again.
+#
+#  The events carry no effects. The bleed has already started
+#  moving the number by the time the player reads them.
+#
+#  ADDING AN EIGHTH: add an entry to the random_list and a
+#  matching clr_country_flag in the bag-clearing effect below.
+# --------------------------------------------------------------
+USA_apr_fire_high_event = {
+
+	# refill the bag if every event has been used
+	if = {
+		limit = {
+			has_country_flag = usa_apr_evt_high_1
+			has_country_flag = usa_apr_evt_high_2
+			has_country_flag = usa_apr_evt_high_3
+			has_country_flag = usa_apr_evt_high_4
+			has_country_flag = usa_apr_evt_high_5
+			has_country_flag = usa_apr_evt_high_6
+			has_country_flag = usa_apr_evt_high_7
+		}
+		USA_apr_clear_high_bag = yes
+	}
+
+	random_list = {
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_high_1 }
+			set_country_flag = usa_apr_evt_high_1
+			country_event = { id = usa_approval.1 hours = 6 }
+		}
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_high_2 }
+			set_country_flag = usa_apr_evt_high_2
+			country_event = { id = usa_approval.2 hours = 6 }
+		}
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_high_3 }
+			set_country_flag = usa_apr_evt_high_3
+			country_event = { id = usa_approval.3 hours = 6 }
+		}
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_high_4 }
+			set_country_flag = usa_apr_evt_high_4
+			country_event = { id = usa_approval.4 hours = 6 }
+		}
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_high_5 }
+			set_country_flag = usa_apr_evt_high_5
+			country_event = { id = usa_approval.5 hours = 6 }
+		}
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_high_6 }
+			set_country_flag = usa_apr_evt_high_6
+			country_event = { id = usa_approval.6 hours = 6 }
+		}
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_high_7 }
+			set_country_flag = usa_apr_evt_high_7
+			country_event = { id = usa_approval.7 hours = 6 }
+		}
+	}
+}
+
+USA_apr_clear_high_bag = {
+	clr_country_flag = usa_apr_evt_high_1
+	clr_country_flag = usa_apr_evt_high_2
+	clr_country_flag = usa_apr_evt_high_3
+	clr_country_flag = usa_apr_evt_high_4
+	clr_country_flag = usa_apr_evt_high_5
+	clr_country_flag = usa_apr_evt_high_6
+	clr_country_flag = usa_apr_evt_high_7
+}
+
+
+USA_apr_fire_low_event = {
+
+	if = {
+		limit = {
+			has_country_flag = usa_apr_evt_low_1
+			has_country_flag = usa_apr_evt_low_2
+			has_country_flag = usa_apr_evt_low_3
+			has_country_flag = usa_apr_evt_low_4
+			has_country_flag = usa_apr_evt_low_5
+			has_country_flag = usa_apr_evt_low_6
+			has_country_flag = usa_apr_evt_low_7
+		}
+		USA_apr_clear_low_bag = yes
+	}
+
+	random_list = {
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_low_1 }
+			set_country_flag = usa_apr_evt_low_1
+			country_event = { id = usa_approval.11 hours = 6 }
+		}
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_low_2 }
+			set_country_flag = usa_apr_evt_low_2
+			country_event = { id = usa_approval.12 hours = 6 }
+		}
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_low_3 }
+			set_country_flag = usa_apr_evt_low_3
+			country_event = { id = usa_approval.13 hours = 6 }
+		}
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_low_4 }
+			set_country_flag = usa_apr_evt_low_4
+			country_event = { id = usa_approval.14 hours = 6 }
+		}
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_low_5 }
+			set_country_flag = usa_apr_evt_low_5
+			country_event = { id = usa_approval.15 hours = 6 }
+		}
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_low_6 }
+			set_country_flag = usa_apr_evt_low_6
+			country_event = { id = usa_approval.16 hours = 6 }
+		}
+		10 = {
+			modifier = { factor = 0 has_country_flag = usa_apr_evt_low_7 }
+			set_country_flag = usa_apr_evt_low_7
+			country_event = { id = usa_approval.17 hours = 6 }
+		}
+	}
+}
+
+USA_apr_clear_low_bag = {
+	clr_country_flag = usa_apr_evt_low_1
+	clr_country_flag = usa_apr_evt_low_2
+	clr_country_flag = usa_apr_evt_low_3
+	clr_country_flag = usa_apr_evt_low_4
+	clr_country_flag = usa_apr_evt_low_5
+	clr_country_flag = usa_apr_evt_low_6
+	clr_country_flag = usa_apr_evt_low_7
+}
+
+
+# --------------------------------------------------------------
+#  CHAOS CREEP
+#  Deliberately small. Chaos is event-driven; this only gives it
+#  a slow upward bias while the country is unhappy and unstable.
+# --------------------------------------------------------------
+USA_apr_chaos_creep = {
+
+	# component one - how far approval is below 50
+	set_temp_variable = { chaos_gain = 50 }
+	subtract_from_temp_variable = { chaos_gain = usa_apr_real }
+	multiply_temp_variable = { chaos_gain = usa_chaos_from_approval }
+
+	# component two - how far stability is below 50%
+	set_temp_variable = { chaos_stab = 0.5 }
+	subtract_from_temp_variable = { chaos_stab = stability }
+	multiply_temp_variable = { chaos_stab = usa_chaos_from_stability }
+
+	add_to_temp_variable = { chaos_gain = chaos_stab }
+
+	# never negative, never more than the cap. Chaos only falls
+	# through your own events.
+	clamp_temp_variable = { var = chaos_gain min = 0 max = usa_chaos_creep_cap }
+
+	add_to_variable = { usa_chaos_real = chaos_gain }
+	clamp_variable = { var = usa_chaos_real min = 0 max = 100 }
+	set_variable = { civil_war = usa_chaos_real }
+	round_variable = civil_war
+}
+
+
+# --------------------------------------------------------------
+#  SCALING MODIFIERS
+#  Feeds the dynamic modifier USA_approval_dm.
+# --------------------------------------------------------------
+USA_apr_recalc_modifiers = {
+
+	# approval-driven, all three off the same normalised base
+	set_variable = { usa_apr_mod_stability = usa_apr_real }
+	subtract_from_variable = { usa_apr_mod_stability = usa_apr_neutral }
+	divide_variable = { usa_apr_mod_stability = 100 }
+
+	set_variable = { usa_apr_mod_warsupport = usa_apr_mod_stability }
+	set_variable = { usa_apr_mod_pp = usa_apr_mod_stability }
+
+	multiply_variable = { usa_apr_mod_stability = usa_apr_stab_scale }
+	multiply_variable = { usa_apr_mod_warsupport = usa_apr_ws_scale }
+	multiply_variable = { usa_apr_mod_pp = usa_apr_pp_scale }
+
+	# chaos-driven
+	set_variable = { usa_apr_mod_consumer = usa_chaos_real }
+	divide_variable = { usa_apr_mod_consumer = 100 }
+	set_variable = { usa_apr_mod_conscription = usa_apr_mod_consumer }
+
+	multiply_variable = { usa_apr_mod_consumer = usa_chaos_consumer_scale }
+	multiply_variable = { usa_apr_mod_conscription = usa_chaos_consc_scale }
+	multiply_variable = { usa_apr_mod_conscription = -1 }
+}
+
+
+# --------------------------------------------------------------
+#  TIER SPIRIT
+#  Six national spirits, one live at a time. The sequential ifs
+#  overwrite each other on the way down, so the lowest matching
+#  threshold wins.
+# --------------------------------------------------------------
+USA_apr_apply_tier = {
+
+	set_temp_variable = { apr_new_tier = 1 }
+
+	if = {
+		limit = { check_variable = { var = usa_apr_real value = usa_apr_tier2_at compare = less_than } }
+		set_temp_variable = { apr_new_tier = 2 }
+	}
+	if = {
+		limit = { check_variable = { var = usa_apr_real value = usa_apr_tier3_at compare = less_than } }
+		set_temp_variable = { apr_new_tier = 3 }
+	}
+	if = {
+		limit = { check_variable = { var = usa_apr_real value = usa_apr_tier4_at compare = less_than } }
+		set_temp_variable = { apr_new_tier = 4 }
+	}
+	if = {
+		limit = { check_variable = { var = usa_apr_real value = usa_apr_tier5_at compare = less_than } }
+		set_temp_variable = { apr_new_tier = 5 }
+	}
+	if = {
+		limit = { check_variable = { var = usa_apr_real value = usa_apr_tier6_at compare = less_than } }
+		set_temp_variable = { apr_new_tier = 6 }
+	}
+
+	# only touch the idea list when the tier actually changed,
+	# otherwise the player gets a notification every day
+	if = {
+		limit = {
+			NOT = { check_variable = { var = usa_apr_tier value = apr_new_tier compare = equals } }
+		}
+
+		USA_apr_clear_tiers = yes
+		set_variable = { usa_apr_tier = apr_new_tier }
+
+		if = {
+			limit = { check_variable = { var = usa_apr_tier value = 1 compare = equals } }
+			add_ideas = USA_approval_tier_1
+		}
+		if = {
+			limit = { check_variable = { var = usa_apr_tier value = 2 compare = equals } }
+			add_ideas = USA_approval_tier_2
+		}
+		if = {
+			limit = { check_variable = { var = usa_apr_tier value = 3 compare = equals } }
+			add_ideas = USA_approval_tier_3
+		}
+		if = {
+			limit = { check_variable = { var = usa_apr_tier value = 4 compare = equals } }
+			add_ideas = USA_approval_tier_4
+		}
+		if = {
+			limit = { check_variable = { var = usa_apr_tier value = 5 compare = equals } }
+			add_ideas = USA_approval_tier_5
+		}
+		if = {
+			limit = { check_variable = { var = usa_apr_tier value = 6 compare = equals } }
+			add_ideas = USA_approval_tier_6
+		}
+	}
+}
+
+
+USA_apr_clear_tiers = {
+	if = { limit = { has_idea = USA_approval_tier_1 } remove_ideas = USA_approval_tier_1 }
+	if = { limit = { has_idea = USA_approval_tier_2 } remove_ideas = USA_approval_tier_2 }
+	if = { limit = { has_idea = USA_approval_tier_3 } remove_ideas = USA_approval_tier_3 }
+	if = { limit = { has_idea = USA_approval_tier_4 } remove_ideas = USA_approval_tier_4 }
+	if = { limit = { has_idea = USA_approval_tier_5 } remove_ideas = USA_approval_tier_5 }
+	if = { limit = { has_idea = USA_approval_tier_6 } remove_ideas = USA_approval_tier_6 }
+}
+
+
+# --------------------------------------------------------------
+#  SHUTDOWN
+#  Call this from the 2028 collapse event. It stops both ticks,
+#  strips the spirit and the dynamic modifier, and leaves the
+#  bars frozen at their last value.
+#
+#      USA = { USA_apr_shutdown = yes }
+#
+#  To also hide the panel itself, add
+#  NOT = { has_global_flag = usa_approval_system_off }
+#  to the visible block of simp_propoganda_category.
+# --------------------------------------------------------------
+USA_apr_shutdown = {
+
+	set_global_flag = usa_approval_system_off
+	clr_global_flag = usa_approval_system_on
+
+	USA_apr_clear_tiers = yes
+
+	if = {
+		limit = { has_dynamic_modifier = { modifier = USA_approval_dm } }
+		remove_dynamic_modifier = { modifier = USA_approval_dm }
+	}
+
+	clr_country_flag = usa_apr_high_episode
+	clr_country_flag = usa_apr_low_episode
+	set_variable = { usa_apr_tier = 0 }
+
+	log = "[GetDateText]: USA approval system shut down"
+}
+
+
+# --------------------------------------------------------------
+#  HELPERS FOR YOUR DECISIONS AND EVENTS
+#
+#  Use these instead of writing to aproval_rate directly, so the
+#  high-precision value and the bar stay in sync and the tier
+#  spirit updates immediately.
+#
+#      complete_effect = {
+#          set_temp_variable = { apr_delta = 1 }
+#          USA_apr_add = yes
+#      }
+#
+#  Negative numbers work the same way. Nothing is clipped at the
+#  moment you call this - the value lands in full, and the daily
+#  correction walks it back from there.
+# --------------------------------------------------------------
+USA_apr_add = {
+	add_to_variable = { usa_apr_real = apr_delta }
+	USA_apr_refresh = yes
+}
+
+USA_chaos_add = {
+	add_to_variable = { usa_chaos_real = chaos_delta }
+	clamp_variable = { var = usa_chaos_real min = 0 max = 100 }
+	set_variable = { civil_war = usa_chaos_real }
+	round_variable = civil_war
+	USA_apr_recalc_modifiers = yes
+}

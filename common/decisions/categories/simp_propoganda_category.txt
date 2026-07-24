@@ -7,4 +7,6 @@ simp_propoganda_category = {
     allowed = { original_tag = USA }
     scripted_gui = simp_propoganda_ui
     priority = 1000
+    visible_when_empty = yes 
+
 }

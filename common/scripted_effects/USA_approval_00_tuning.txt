@@ -1,0 +1,204 @@
+# ==============================================================
+#  USA APPROVAL SYSTEM - TUNING
+#
+#  THIS IS THE ONLY FILE YOU NEED TO EDIT TO RETUNE THE SYSTEM.
+#  Everything else is machinery and can be left alone.
+#
+#  Two things live here:
+#     1. USA_apr_load_tuning - all the knobs
+#     2. USA_apr_load_curve   - the 48 monthly target numbers
+#
+#  Both are re-read every time the system is armed, so you can
+#  edit and restart a save-compatible campaign without touching
+#  any other file.
+# ==============================================================
+
+
+USA_apr_load_tuning = {
+
+	# ---- THE LEASH ------------------------------------------
+	# usa_apr_band  the corridor. Approval is free to sit
+	#               anywhere within this many points of the
+	#               month's target. Outside it, the daily bleed
+	#               below starts walking it back.
+	#               Lower = tighter rails. 0 = no player freedom.
+	#
+	# usa_apr_pull  monthly decay INSIDE the band only. 0.5 =
+	#               half the remaining gap per month, so a legal
+	#               deviation is ~94% gone after 4 months.
+	#               Deliberately skipped while outside the band,
+	#               because the bleed already owns the correction
+	#               there and running both would snap the bar.
+	#
+	# usa_apr_bleed_per_day
+	#               how fast approval walks back to the edge of
+	#               the band, per day, in real points. 0.5 shows
+	#               up on the bar as -1 every two days, because
+	#               the bar reads the rounded value. Raise for a
+	#               harder correction, lower for a softer one.
+
+	set_variable = { usa_apr_band = 8 }
+	set_variable = { usa_apr_pull = 0.5 }
+	set_variable = { usa_apr_bleed_per_day = 0.5 }
+
+
+	# ---- OVERSHOOT EVENTS -----------------------------------
+	# usa_apr_event_at
+	#               how far PAST the edge of the band the value
+	#               has to go before an explanatory event fires.
+	#               10 with a band of 8 means a deviation of 18+
+	#               from trend. Exactly one event fires per
+	#               overshoot episode, chosen at random from the
+	#               seven, and no event repeats until all seven
+	#               have been used.
+	#
+	# usa_apr_evt_cooldown
+	#               minimum days between any two overshoot
+	#               events, high or low. Stops a player who
+	#               oscillates across the band from generating a
+	#               news event every week. Should comfortably
+	#               exceed the time it takes to bleed off a
+	#               typical overshoot: at 0.5/day, a 10-point
+	#               excess takes 20 days.
+
+	set_variable = { usa_apr_event_at = 10 }
+	set_variable = { usa_apr_evt_cooldown = 30 }
+
+
+	# ---- MODIFIER SCALING -----------------------------------
+	# usa_apr_neutral   approval at which all scaling modifiers
+	#                   read exactly zero. Above it you get
+	#                   bonuses, below it penalties.
+	# the three scales  multiply (approval - neutral) / 100.
+	#                   At 10% approval with neutral 40 that is
+	#                   -0.30, so stab_scale 1.0 gives -30%
+	#                   stability, ws_scale 0.6 gives -18% war
+	#                   support, pp_scale 1.5 gives -0.45 PP/day.
+
+	set_variable = { usa_apr_neutral = 40 }
+	set_variable = { usa_apr_stab_scale = 1 }
+	set_variable = { usa_apr_ws_scale = 0.6 }
+	set_variable = { usa_apr_pp_scale = 1.5 }
+
+
+	# ---- CHAOS CREEP ----------------------------------------
+	# Chaos is NOT on rails. It only creeps upward a little each
+	# month as approval and stability fall. Everything dramatic
+	# should come from your events and decisions.
+	#
+	# from_approval   points of chaos per month, per point of
+	#                 approval below 50. At 35% approval that is
+	#                 15 * 0.01 = 0.15 chaos/month.
+	# from_stability  points of chaos per month, per point of
+	#                 stability below 50%. At 30% stability that
+	#                 is 0.2 * 2 = 0.4 chaos/month.
+	# creep_cap       hard ceiling on the monthly total. Raise
+	#                 this if chaos feels too slow to build.
+	#
+	# The two _scale values turn the CURRENT chaos value into
+	# live modifiers: at 60 chaos, consumer goods +24% and
+	# conscription -30%.
+
+	set_variable = { usa_chaos_from_approval = 0.01 }
+	set_variable = { usa_chaos_from_stability = 2 }
+	set_variable = { usa_chaos_creep_cap = 1 }
+	set_variable = { usa_chaos_consumer_scale = 0.4 }
+	set_variable = { usa_chaos_consc_scale = 0.5 }
+
+
+	# ---- TIER THRESHOLDS ------------------------------------
+	# Approval at which each tier spirit takes over. Read them
+	# downward: at or above tier2_at you are tier 1, below
+	# tier2_at you are tier 2, and so on.
+	# Tier 6 is the bottom and has no threshold of its own.
+
+	set_variable = { usa_apr_tier2_at = 45 }
+	set_variable = { usa_apr_tier3_at = 38 }
+	set_variable = { usa_apr_tier4_at = 31 }
+	set_variable = { usa_apr_tier5_at = 24 }
+	set_variable = { usa_apr_tier6_at = 15 }
+
+
+	# ---- STARTING VALUES ------------------------------------
+	# What the two bars read on inauguration day.
+
+	set_variable = { usa_apr_start = 47 }
+	set_variable = { usa_chaos_start = 4 }
+}
+
+
+# ==============================================================
+#  THE CURVE
+#
+#  48 numbers, one per month, January 2025 through December
+#  2028. Index 0 is January 2025.
+#
+#  Jan 2025 - Jul 2026 are real polling averages of all-adults
+#  surveys. Everything from Aug 2026 onward is the mod's own
+#  storyline and is yours to rewrite.
+#
+#  To change history: edit a number. To extend past 2028: add
+#  more lines and raise the clamp ceiling in
+#  USA_apr_monthly_tick (it is currently 47).
+# ==============================================================
+
+USA_apr_load_curve = {
+
+	clear_array = usa_apr_target_array
+
+	# ---- 2025 - real ----------------------------------------
+	add_to_array = { array = usa_apr_target_array value = 47 }	# Jan  inauguration
+	add_to_array = { array = usa_apr_target_array value = 45 }	# Feb
+	add_to_array = { array = usa_apr_target_array value = 43 }	# Mar
+	add_to_array = { array = usa_apr_target_array value = 44 }	# Apr
+	add_to_array = { array = usa_apr_target_array value = 43 }	# May
+	add_to_array = { array = usa_apr_target_array value = 40 }	# Jun
+	add_to_array = { array = usa_apr_target_array value = 37 }	# Jul
+	add_to_array = { array = usa_apr_target_array value = 40 }	# Aug
+	add_to_array = { array = usa_apr_target_array value = 40 }	# Sep
+	add_to_array = { array = usa_apr_target_array value = 41 }	# Oct
+	add_to_array = { array = usa_apr_target_array value = 36 }	# Nov
+	add_to_array = { array = usa_apr_target_array value = 36 }	# Dec
+
+	# ---- 2026 - real to July, then the mod's story ----------
+	add_to_array = { array = usa_apr_target_array value = 39 }	# Jan
+	add_to_array = { array = usa_apr_target_array value = 36 }	# Feb
+	add_to_array = { array = usa_apr_target_array value = 37 }	# Mar
+	add_to_array = { array = usa_apr_target_array value = 35 }	# Apr
+	add_to_array = { array = usa_apr_target_array value = 35 }	# May
+	add_to_array = { array = usa_apr_target_array value = 35 }	# Jun
+	add_to_array = { array = usa_apr_target_array value = 35 }	# Jul  last real datapoint
+	add_to_array = { array = usa_apr_target_array value = 34 }	# Aug
+	add_to_array = { array = usa_apr_target_array value = 33 }	# Sep
+	add_to_array = { array = usa_apr_target_array value = 32 }	# Oct
+	add_to_array = { array = usa_apr_target_array value = 30 }	# Nov  midterms
+	add_to_array = { array = usa_apr_target_array value = 29 }	# Dec
+
+	# ---- 2027 - the long slide ------------------------------
+	add_to_array = { array = usa_apr_target_array value = 28 }	# Jan
+	add_to_array = { array = usa_apr_target_array value = 27 }	# Feb
+	add_to_array = { array = usa_apr_target_array value = 26 }	# Mar
+	add_to_array = { array = usa_apr_target_array value = 25 }	# Apr
+	add_to_array = { array = usa_apr_target_array value = 24 }	# May
+	add_to_array = { array = usa_apr_target_array value = 23 }	# Jun
+	add_to_array = { array = usa_apr_target_array value = 22 }	# Jul
+	add_to_array = { array = usa_apr_target_array value = 21 }	# Aug
+	add_to_array = { array = usa_apr_target_array value = 20 }	# Sep
+	add_to_array = { array = usa_apr_target_array value = 19 }	# Oct
+	add_to_array = { array = usa_apr_target_array value = 18 }	# Nov
+	add_to_array = { array = usa_apr_target_array value = 17 }	# Dec
+
+	# ---- 2028 - scandal, election, collapse -----------------
+	add_to_array = { array = usa_apr_target_array value = 16 }	# Jan
+	add_to_array = { array = usa_apr_target_array value = 15 }	# Feb
+	add_to_array = { array = usa_apr_target_array value = 15 }	# Mar
+	add_to_array = { array = usa_apr_target_array value = 14 }	# Apr
+	add_to_array = { array = usa_apr_target_array value = 13 }	# May
+	add_to_array = { array = usa_apr_target_array value = 13 }	# Jun
+	add_to_array = { array = usa_apr_target_array value = 12 }	# Jul
+	add_to_array = { array = usa_apr_target_array value = 12 }	# Aug
+	add_to_array = { array = usa_apr_target_array value = 11 }	# Sep
+	add_to_array = { array = usa_apr_target_array value = 10 }	# Oct  scandal breaks
+	add_to_array = { array = usa_apr_target_array value = 8 }	# Nov  election
+	add_to_array = { array = usa_apr_target_array value = 7 }	# Dec  third term, collapse
+}
