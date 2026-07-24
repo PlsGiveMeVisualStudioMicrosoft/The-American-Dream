@@ -1,5 +1,4 @@
 ideas = {
-
 	country = {
 
 		USA_ISIS_init = {
@@ -11,7 +10,6 @@ ideas = {
 				political_power_gain = -0.05
 			}
 		}
-
 		USA_Exept = {
 			picture = USA_Exept
 			allowed = { always = no }
@@ -23,6 +21,5 @@ ideas = {
 				offensive_war_stability_factor = 0.05
 			}
 		}
-
 	}
 }
