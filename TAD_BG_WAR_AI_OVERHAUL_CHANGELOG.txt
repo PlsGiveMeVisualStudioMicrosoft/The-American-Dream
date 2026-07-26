@@ -1,0 +1,72 @@
+THE AMERICAN DREAM — BELIZE/GUATEMALA WAR & AI OVERHAUL
+========================================================
+
+IMPORTANT
+---------
+Start a NEW GAME when testing this build. Existing saves will not reliably receive
+new starting divisions, restored victory points, locked templates, or the full AI
+strategy setup.
+
+CORE CHANGES
+------------
+1. Emergency force-generation decisions
+   - Belize and Guatemala can raise real formations for political power only.
+   - Decision-created formations enter at 1% equipment.
+   - The remaining manpower and equipment must come from the country's real pools.
+   - AI receives high decision priority and sensible division caps/cooldowns.
+
+2. Army and template overhaul
+   - Belize starts with four useful formations instead of tiny duplicate structures.
+   - Guatemala starts with eight formations suited to the northern campaign.
+   - Core templates are locked so the AI cannot decommission them.
+   - The old focus-created free border-garrison OOB was removed.
+
+3. Dedicated war AI
+   - Guatemala concentrates divisions against Belize and executes offensive plans.
+   - Belize prioritises the Guatemalan front and national defence.
+   - Both AIs prioritise army construction and emergency recruitment decisions.
+
+4. No early scripted white peace
+   - The old six-month ceasefire escape has been removed.
+   - A ceasefire can only be proposed after 18+ months, strong Belizean resistance,
+     and severe Guatemalan political exhaustion.
+   - Guatemala normally continues the campaign unless conditions are extreme.
+
+5. Consolidated state modifiers
+   - Belize: Defence Network, Mopan Line, Distributed Supply Network.
+   - Guatemala: Petén Logistics, Campaign Support, Border Command.
+   - Tiers replace one another instead of stacking a wall of near-identical icons.
+   - Legacy modifier IDs remain only for save compatibility and are safely removed.
+
+6. Focus reward rebalance
+   - Major rifle/support-equipment giveaways were sharply reduced.
+   - Military focuses now specialise in recruitment authority, manpower, logistics,
+     command, fortifications, intelligence, or industry instead of repeating stockpiles.
+   - Border forts were reduced to key positions rather than covering every province.
+
+7. Belizean cities restored
+   - Belize City, Belmopan, Corozal, Orange Walk, San Ignacio, Dangriga,
+     Placencia, and Punta Gorda now have named victory points.
+
+8. Continuous focus panel
+   - Moved far away from the normal Belize and Guatemala focus trees.
+
+9. Error cleanup included in this system
+   - Missing decision categories defined.
+   - Guatemala mountaineer technology key corrected.
+   - Belize victory-point syntax corrected.
+   - Known missing postwar focus icons replaced with valid generic icons.
+   - Unsafe repeated dynamic-modifier removals replaced with guarded cleanup.
+
+TEST CHECKLIST
+--------------
+- Begin a new 2025 game.
+- Observe Belize and Guatemala division templates: core templates should not be
+  decommissioned.
+- At tension 40+, check Emergency Force Generation decisions.
+- Use one decision and confirm the new unit appears at roughly 1% equipment and
+  reinforces from stockpile/manpower.
+- During war, verify Guatemala concentrates and attacks instead of indefinitely
+  standing still.
+- Verify Belize's state panel shows no more than three persistent modifier systems.
+- Verify there is no automatic six-month white peace.

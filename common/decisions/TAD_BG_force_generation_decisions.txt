@@ -1,0 +1,183 @@
+TAD_BG_force_generation_category = {
+
+    # -------------------------------------------------------------------------
+    # BELIZE
+    # These decisions cost political power only. New formations appear at 1%
+    # equipment, so their manpower and weapons must be supplied by Belize's real
+    # pools instead of being created for free by the decision.
+    # -------------------------------------------------------------------------
+    BLZ_raise_territorial_group = {
+        icon = GFX_decision_generic_propaganda
+        allowed = { tag = BLZ }
+        available = {
+            has_manpower > 999
+            has_army_size = { size < 10 }
+        }
+        cost = 30
+        days_re_enable = 24
+        complete_effect = {
+            88 = {
+                create_unit = {
+                    division = "name = \"Emergency Territorial Group\" division_template = \"Belize Territorial Defence Group\" start_experience_factor = 0.05 start_equipment_factor = 0.01"
+                    owner = BLZ
+                    prioritize_location = 14954
+                }
+            }
+            # create_unit supplies the formation internally, so deduct the full
+            # domestic manpower requirement from Belize's free pool here.
+            add_manpower = -1000
+            add_to_variable = { BLZ_border_readiness = 1 }
+            TAD_BG_clamp_metrics = yes
+        }
+        ai_will_do = {
+            base = 260
+            modifier = { factor = 3 has_war_with = GUA }
+            modifier = { factor = 0.25 has_army_size = { size > 7 } }
+            modifier = { factor = 0 has_army_size = { size > 9 } }
+        }
+    }
+
+    BLZ_raise_regular_battalion = {
+        icon = GFX_decision_generic_propaganda
+        allowed = { tag = BLZ }
+        visible = {
+            OR = {
+                has_completed_focus = BLZ_professional_bdf
+                has_completed_focus = BLZ_proclaim_emergency_defense_act
+                has_country_flag = BLZ_GUA_war_started
+            }
+        }
+        available = {
+            has_manpower > 2299
+            has_army_size = { size < 9 }
+        }
+        cost = 50
+        days_re_enable = 35
+        complete_effect = {
+            88 = {
+                create_unit = {
+                    division = "name = \"Emergency BDF Battalion\" division_template = \"BDF Regular Battalion\" start_experience_factor = 0.10 start_equipment_factor = 0.01"
+                    owner = BLZ
+                    prioritize_location = 14954
+                }
+            }
+            add_manpower = -2300
+            add_to_variable = { BLZ_border_readiness = 2 }
+            TAD_BG_clamp_metrics = yes
+        }
+        ai_will_do = {
+            base = 180
+            modifier = { factor = 4 has_war_with = GUA }
+            modifier = { factor = 0.20 has_army_size = { size > 6 } }
+            modifier = { factor = 0 has_army_size = { size > 8 } }
+        }
+    }
+
+    # -------------------------------------------------------------------------
+    # GUATEMALA
+    # -------------------------------------------------------------------------
+    GUA_raise_infantry_brigade = {
+        icon = GFX_decision_generic_propaganda
+        allowed = { tag = GUA }
+        available = {
+            has_manpower > 4499
+            has_army_size = { size < 16 }
+        }
+        cost = 45
+        days_re_enable = 24
+        complete_effect = {
+            89 = {
+                create_unit = {
+                    division = "name = \"Emergency Northern Infantry Brigade\" division_template = \"Guatemalan Infantry Brigade\" start_experience_factor = 0.08 start_equipment_factor = 0.01"
+                    owner = GUA
+                    prioritize_location = 89
+                }
+            }
+            add_manpower = -4500
+            add_to_variable = { GUA_military_pressure = 2 }
+            TAD_BG_clamp_metrics = yes
+        }
+        ai_will_do = {
+            base = 280
+            modifier = { factor = 4 has_war_with = BLZ }
+            modifier = { factor = 0.30 has_army_size = { size > 12 } }
+            modifier = { factor = 0 has_army_size = { size > 15 } }
+        }
+    }
+
+    GUA_raise_mountain_brigade = {
+        icon = GFX_decision_generic_propaganda
+        allowed = { tag = GUA }
+        visible = {
+            OR = {
+                has_completed_focus = GUA_kaibil_readiness
+                has_completed_focus = GUA_peten_engineer_battalions
+                has_country_flag = GUA_Belize_war_started
+            }
+        }
+        available = {
+            has_manpower > 2499
+            has_army_size = { size < 14 }
+        }
+        cost = 65
+        days_re_enable = 45
+        complete_effect = {
+            89 = {
+                create_unit = {
+                    division = "name = \"Emergency Petén Mountain Brigade\" division_template = \"Guatemalan Mountain Brigade\" start_experience_factor = 0.12 start_equipment_factor = 0.01"
+                    owner = GUA
+                    prioritize_location = 89
+                }
+            }
+            add_manpower = -2500
+            add_to_variable = { GUA_military_pressure = 3 }
+            TAD_BG_clamp_metrics = yes
+        }
+        ai_will_do = {
+            base = 120
+            modifier = { factor = 3 has_war_with = BLZ }
+            modifier = { factor = 0.20 has_army_size = { size > 10 } }
+            modifier = { factor = 0 has_army_size = { size > 13 } }
+        }
+    }
+
+# Foreign personnel: no Guatemalan manpower deduction, but a long industrial
+# contract raises consumer-goods demand. Limited to one formation.
+GUA_contract_foreign_security_brigade = {
+    icon = GFX_decision_generic_propaganda
+    allowed = { tag = GUA }
+    visible = {
+        OR = {
+            has_war_with = BLZ
+            BLZ = { check_variable = { BLZ_GUA_tension > 69 } }
+        }
+    }
+    available = {
+        NOT = { has_country_flag = GUA_used_foreign_security_contract }
+        has_army_size = { size < 18 }
+    }
+    cost = 100
+    fire_only_once = yes
+    complete_effect = {
+        set_country_flag = GUA_used_foreign_security_contract
+        89 = {
+            create_unit = {
+                division = "name = \"Foreign Security Brigade\" division_template = \"Guatemalan Infantry Brigade\" start_experience_factor = 0.20 start_equipment_factor = 0.01"
+                owner = GUA
+                prioritize_location = 89
+            }
+        }
+        add_timed_idea = { idea = GUA_foreign_security_contract days = 365 }
+        add_to_variable = { GUA_military_pressure = 2 }
+        add_war_support = -0.01
+        TAD_BG_clamp_metrics = yes
+    }
+    ai_will_do = {
+        base = 30
+        modifier = { factor = 4 has_war_with = BLZ }
+        modifier = { factor = 3 has_manpower < 10000 }
+        modifier = { factor = 0 has_country_flag = GUA_used_foreign_security_contract }
+    }
+}
+
+}

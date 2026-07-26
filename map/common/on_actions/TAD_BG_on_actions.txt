@@ -1,0 +1,80 @@
+on_actions = {
+	on_daily_BLZ = {
+		effect = {
+			if = { limit = { tag = BLZ } TAD_BG_refresh_BLZ_state_modifiers = yes }
+		}
+	}
+	on_daily_GUA = {
+		effect = {
+			if = { limit = { tag = GUA } TAD_BG_refresh_GUA_state_modifiers = yes }
+		}
+	}
+
+	on_monthly_BLZ = {
+		effect = {
+			if = { limit = { tag = BLZ } TAD_BG_refresh_BLZ_state_modifiers = yes }
+			if = {
+				limit = { tag = BLZ check_variable = { BLZ_GUA_tension > 39 } NOT = { has_country_flag = BLZ_tension_40_notified } }
+				set_country_flag = BLZ_tension_40_notified
+				country_event = { id = tad_bg.100 hours = 6 }
+			}
+			if = {
+				limit = { tag = BLZ check_variable = { BLZ_GUA_tension > 69 } NOT = { has_country_flag = BLZ_tension_70_notified } }
+				set_country_flag = BLZ_tension_70_notified
+				country_event = { id = tad_bg.101 hours = 6 }
+			}
+			if = {
+				limit = { tag = BLZ check_variable = { BLZ_GUA_tension > 89 } NOT = { has_country_flag = BLZ_tension_90_notified } }
+				set_country_flag = BLZ_tension_90_notified
+				country_event = { id = tad_bg.102 hours = 6 }
+			}
+			if = {
+				limit = { tag = BLZ has_war_with = GUA NOT = { has_country_flag = BLZ_GUA_war_started } }
+				set_country_flag = BLZ_GUA_war_started
+				set_variable = { BLZ_GUA_war_months = 0 }
+				TAD_BG_apply_last_line = yes
+				country_event = { id = tad_bg.110 hours = 6 }
+			}
+			if = { limit = { tag = BLZ has_war_with = GUA } add_to_variable = { BLZ_GUA_war_months = 1 } }
+			if = {
+				limit = { tag = BLZ has_war_with = GUA check_variable = { BLZ_GUA_war_months > 5 } check_variable = { BLZ_international_support > 59 } controls_state = 88 NOT = { has_country_flag = BLZ_ceasefire_pressure_triggered } }
+				set_country_flag = BLZ_ceasefire_pressure_triggered
+				GUA = { country_event = { id = tad_bg.120 hours = 6 } }
+			}
+		}
+	}
+
+	on_monthly_GUA = {
+		effect = {
+			if = { limit = { tag = GUA } TAD_BG_refresh_GUA_state_modifiers = yes }
+			if = {
+				limit = { tag = GUA is_ai = yes NOT = { has_war_with = BLZ } BLZ = { check_variable = { BLZ_GUA_tension < 40 } } }
+				random_list = {
+					30 = { }
+					55 = { BLZ = { add_to_variable = { BLZ_GUA_tension = 3 } country_event = { id = tad_bg.130 hours = 6 } } add_to_variable = { GUA_claim_momentum = 3 } add_to_variable = { GUA_military_pressure = 2 } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+					15 = { BLZ = { subtract_from_variable = { BLZ_GUA_tension = 2 } } add_stability = 0.005 TAD_BG_clamp_tension = yes }
+				}
+			}
+			if = {
+				limit = { tag = GUA is_ai = yes NOT = { has_war_with = BLZ } BLZ = { check_variable = { BLZ_GUA_tension > 39 } check_variable = { BLZ_GUA_tension < 70 } } }
+				random_list = {
+					20 = { }
+					65 = { BLZ = { add_to_variable = { BLZ_GUA_tension = 5 } country_event = { id = tad_bg.131 hours = 6 } } add_to_variable = { GUA_claim_momentum = 4 } add_to_variable = { GUA_military_pressure = 5 } add_war_support = 0.005 TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+					15 = { BLZ = { subtract_from_variable = { BLZ_GUA_tension = 2 } } add_stability = 0.005 TAD_BG_clamp_tension = yes }
+				}
+			}
+			if = {
+				limit = { tag = GUA is_ai = yes NOT = { has_war_with = BLZ } BLZ = { check_variable = { BLZ_GUA_tension > 69 } check_variable = { BLZ_GUA_tension < 90 } } }
+				random_list = {
+					10 = { }
+					75 = { BLZ = { add_to_variable = { BLZ_GUA_tension = 6 } country_event = { id = tad_bg.131 hours = 6 } } add_to_variable = { GUA_claim_momentum = 5 } add_to_variable = { GUA_military_pressure = 7 } add_war_support = 0.01 TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+					15 = { add_to_variable = { GUA_military_pressure = 5 } army_experience = 2 TAD_BG_clamp_metrics = yes }
+				}
+			}
+			if = {
+				limit = { tag = GUA is_ai = yes NOT = { has_war_with = BLZ } has_country_flag = GUA_can_issue_belize_ultimatum NOT = { has_country_flag = GUA_ultimatum_sent } BLZ = { check_variable = { BLZ_GUA_tension > 89 } } }
+				random_list = { 25 = { } 75 = { set_country_flag = GUA_ultimatum_sent BLZ = { country_event = { id = tad_bg.50 hours = 6 } } } }
+			}
+		}
+	}
+}

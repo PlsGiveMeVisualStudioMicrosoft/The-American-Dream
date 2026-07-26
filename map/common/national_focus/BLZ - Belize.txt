@@ -1,0 +1,377 @@
+focus_tree = {
+	id = BLZ_focus
+	country = { factor = 0 modifier = { add = 100 tag = BLZ } }
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 3200 y = 100 }
+
+	focus = {
+		id = BLZ_the_jewel_in_2025
+		icon = GFX_goal_generic_national_unity
+		x = 12 y = 0 cost = 1
+		completion_reward = { add_political_power = 25 country_event = { id = tad_bg.1 hours = 6 } }
+	}
+
+# DEMOCRATIC STATE
+	focus = {
+		id = BLZ_second_term_mandate
+		icon = GFX_goal_generic_political_pressure
+		x = 3 y = 2 cost = 4
+		prerequisite = { focus = BLZ_the_jewel_in_2025 }
+		completion_reward = { add_political_power = 50 add_stability = 0.04 }
+		ai_will_do = { factor = 1.1 }
+	}
+	focus = {
+		id = BLZ_strengthen_public_service
+		icon = GFX_goal_generic_political_pressure
+		x = 2 y = 3 cost = 5
+		prerequisite = { focus = BLZ_second_term_mandate }
+		completion_reward = { add_political_power = 60 add_stability = 0.02 }
+	}
+	focus = {
+		id = BLZ_local_government_compact
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4 y = 3 cost = 5
+		prerequisite = { focus = BLZ_second_term_mandate }
+		completion_reward = {
+			15 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			88 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = BLZ_constitutional_reform_commission
+		icon = GFX_goal_generic_political_pressure
+		x = 1 y = 4 cost = 5
+		prerequisite = { focus = BLZ_strengthen_public_service }
+		completion_reward = { add_ideas = BLZ_constitutional_reform_process add_political_power = 35 }
+	}
+	focus = {
+		id = BLZ_clean_procurement
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 3 y = 4 cost = 5
+		prerequisite = { focus = BLZ_strengthen_public_service }
+		completion_reward = { add_stability = 0.04 add_political_power = 45 }
+	}
+	focus = {
+		id = BLZ_democratic_resilience
+		icon = GFX_goal_generic_national_unity
+		x = 2 y = 5 cost = 6
+		prerequisite = { focus = BLZ_constitutional_reform_commission }
+		prerequisite = { focus = BLZ_clean_procurement }
+		completion_reward = { remove_ideas = BLZ_colonial_institutions add_stability = 0.06 add_political_power = 75 }
+	}
+
+# BELIZEAN ECONOMY
+	focus = {
+		id = BLZ_plan_belize_growth
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 9 y = 2 cost = 4
+		prerequisite = { focus = BLZ_the_jewel_in_2025 }
+		completion_reward = { 15 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_political_power = 25 }
+	}
+	focus = {
+		id = BLZ_develop_belmopan
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 7 y = 3 cost = 5
+		prerequisite = { focus = BLZ_plan_belize_growth }
+		completion_reward = {
+			88 = {
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = BLZ_modernise_belize_city
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 9 y = 3 cost = 5
+		prerequisite = { focus = BLZ_plan_belize_growth }
+		completion_reward = { 15 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_stability = 0.02 }
+	}
+	focus = {
+		id = BLZ_tourism_resilience
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 11 y = 3 cost = 5
+		prerequisite = { focus = BLZ_plan_belize_growth }
+		completion_reward = { remove_ideas = BLZ_tourism_dependent_economy add_ideas = BLZ_resilient_tourism_sector add_stability = 0.02 }
+	}
+	focus = {
+		id = BLZ_blue_economy_agenda
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 8 y = 4 cost = 5
+		prerequisite = { focus = BLZ_modernise_belize_city }
+		completion_reward = { 15 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } } add_equipment_to_stockpile = { type = convoy_1 amount = 5 } }
+	}
+	focus = {
+		id = BLZ_agricultural_modernisation
+		icon = GFX_goal_generic_production
+		x = 10 y = 4 cost = 5
+		prerequisite = { focus = BLZ_tourism_resilience }
+		completion_reward = { 15 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_political_power = 30 }
+	}
+	focus = {
+		id = BLZ_digital_belize
+		icon = GFX_goal_generic_scientific_exchange
+		x = 7 y = 5 cost = 6
+		prerequisite = { focus = BLZ_develop_belmopan }
+		completion_reward = { add_research_slot = 1 add_political_power = 40 }
+	}
+	focus = {
+		id = BLZ_diversify_beyond_tourism
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 10 y = 5 cost = 6
+		prerequisite = { focus = BLZ_blue_economy_agenda }
+		prerequisite = { focus = BLZ_agricultural_modernisation }
+		completion_reward = { add_stability = 0.04 add_political_power = 60 88 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+
+# COMPACT DEFENCE FORCE
+	focus = {
+		id = BLZ_review_bdf_readiness
+		icon = GFX_goal_generic_position_armies
+		x = 16 y = 2 cost = 4
+		prerequisite = { focus = BLZ_the_jewel_in_2025 }
+		completion_reward = { army_experience = 10 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 200 producer = BLZ } add_to_variable = { BLZ_border_readiness = 5 } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 1.3 }
+	}
+	focus = {
+		id = BLZ_jungle_warfare_school
+		icon = GFX_goal_generic_army_doctrines
+		x = 14 y = 3 cost = 5
+		prerequisite = { focus = BLZ_review_bdf_readiness }
+		completion_reward = { army_experience = 15 TAD_BG_apply_jungle_defence = yes }
+	}
+	focus = {
+		id = BLZ_expand_volunteer_battalion
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 16 y = 3 cost = 5
+		prerequisite = { focus = BLZ_review_bdf_readiness }
+		completion_reward = { add_manpower = 750 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 200 producer = BLZ } add_to_variable = { BLZ_border_readiness = 6 } TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = BLZ_coastal_surveillance
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 18 y = 3 cost = 5
+		prerequisite = { focus = BLZ_review_bdf_readiness }
+		completion_reward = { navy_experience = 8 add_equipment_to_stockpile = { type = convoy_1 amount = 4 } add_political_power = 30 }
+	}
+	focus = {
+		id = BLZ_stockpile_support_equipment
+		icon = GFX_goal_generic_small_arms
+		x = 15 y = 4 cost = 5
+		prerequisite = { focus = BLZ_jungle_warfare_school }
+		prerequisite = { focus = BLZ_expand_volunteer_battalion }
+		completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 350 producer = BLZ } add_equipment_to_stockpile = { type = support_equipment_1 amount = 60 producer = BLZ } }
+	}
+	focus = {
+		id = BLZ_professional_bdf
+		icon = GFX_goal_generic_army_doctrines
+		x = 17 y = 4 cost = 6
+		prerequisite = { focus = BLZ_expand_volunteer_battalion }
+		prerequisite = { focus = BLZ_coastal_surveillance }
+		completion_reward = { remove_ideas = BLZ_compact_defence_force add_ideas = BLZ_professional_bdf army_experience = 20 add_to_variable = { BLZ_border_readiness = 10 } TAD_BG_clamp_metrics = yes }
+	}
+
+# INTERNATIONALISE THE DISPUTE
+	focus = {
+		id = BLZ_internationalise_dispute
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 22 y = 2 cost = 4
+		prerequisite = { focus = BLZ_the_jewel_in_2025 }
+		completion_reward = { add_to_variable = { BLZ_international_support = 8 } add_political_power = 35 TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = BLZ_appeal_caricom
+		icon = GFX_goal_generic_alliance
+		x = 20 y = 3 cost = 5
+		prerequisite = { focus = BLZ_internationalise_dispute }
+		completion_reward = { add_to_variable = { BLZ_international_support = 12 } add_stability = 0.02 TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = BLZ_oas_adjacency_office
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 22 y = 3 cost = 5
+		prerequisite = { focus = BLZ_internationalise_dispute }
+		completion_reward = { subtract_from_variable = { BLZ_GUA_tension = 5 } add_to_variable = { BLZ_international_support = 8 } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = BLZ_trust_in_icj
+		icon = GFX_goal_generic_political_pressure
+		x = 24 y = 3 cost = 5
+		prerequisite = { focus = BLZ_internationalise_dispute }
+		completion_reward = { add_to_variable = { BLZ_international_support = 10 } add_political_power = 50 TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = BLZ_regional_security_network
+		icon = GFX_goal_generic_alliance
+		x = 22 y = 4 cost = 6
+		prerequisite = { focus = BLZ_appeal_caricom }
+		prerequisite = { focus = BLZ_oas_adjacency_office }
+		completion_reward = { add_to_variable = { BLZ_international_support = 12 } add_to_variable = { BLZ_border_readiness = 5 } add_political_power = 50 TAD_BG_clamp_metrics = yes }
+	}
+
+# EMERGENCY BRANCH - unlocks at 40 tension
+	focus = {
+		id = BLZ_warn_people_imminent_crisis
+		icon = GFX_goal_generic_national_unity
+		x = 16 y = 6 cost = 3
+		prerequisite = { focus = BLZ_review_bdf_readiness }
+		prerequisite = { focus = BLZ_internationalise_dispute }
+		available = { check_variable = { BLZ_GUA_tension > 39 } }
+		completion_reward = {
+			set_technology = { TAD_belize_territorial_tech = 1 }
+			load_oob = "BLZ_crisis_territorials"
+			add_ideas = BLZ_crisis_readiness
+			add_to_variable = { BLZ_border_readiness = 15 }
+			add_to_variable = { BLZ_public_confidence = 8 }
+			add_war_support = 0.05
+			TAD_BG_clamp_metrics = yes
+		}
+		ai_will_do = { factor = 20 }
+	}
+	focus = {
+		id = BLZ_stockpile_every_rifle
+		icon = GFX_goal_generic_small_arms
+		x = 14 y = 7 cost = 4
+		prerequisite = { focus = BLZ_warn_people_imminent_crisis }
+		completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 500 producer = BLZ } add_equipment_to_stockpile = { type = support_equipment_1 amount = 75 producer = BLZ } add_to_variable = { BLZ_border_readiness = 8 } TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = BLZ_prepare_belmopan
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 16 y = 7 cost = 4
+		prerequisite = { focus = BLZ_warn_people_imminent_crisis }
+		completion_reward = {
+			88 = {
+				add_building_construction = { type = bunker level = 2 instant_build = yes }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			TAD_BG_apply_belmopan_fortification = yes
+			add_to_variable = { BLZ_border_readiness = 10 }
+			TAD_BG_clamp_metrics = yes
+		}
+	}
+	focus = {
+		id = BLZ_jungle_defence_training
+		icon = GFX_goal_generic_army_doctrines
+		x = 18 y = 7 cost = 4
+		prerequisite = { focus = BLZ_warn_people_imminent_crisis }
+		completion_reward = { TAD_BG_apply_jungle_defence = yes army_experience = 15 add_to_variable = { BLZ_border_readiness = 8 } TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = BLZ_appeal_foreign_volunteers
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 13 y = 8 cost = 5
+		prerequisite = { focus = BLZ_stockpile_every_rifle }
+		prerequisite = { focus = BLZ_regional_security_network }
+		completion_reward = {
+			set_technology = { TAD_foreign_volunteer_tech = 1 }
+			add_ideas = BLZ_foreign_volunteer_network
+			set_country_flag = BLZ_foreign_volunteers_unlocked
+			add_to_variable = { BLZ_international_support = 5 }
+			TAD_BG_clamp_metrics = yes
+		}
+		ai_will_do = { factor = 12 }
+	}
+		focus = {
+		id = BLZ_total_defence_focus
+		icon = GFX_goal_generic_military_sphere
+		x = 17 y = 8 cost = 5
+		prerequisite = { focus = BLZ_prepare_belmopan }
+		prerequisite = { focus = BLZ_jungle_defence_training }
+		completion_reward = { TAD_BG_apply_total_defence = yes add_manpower = 800 add_war_support = 0.05 add_to_variable = { BLZ_border_readiness = 12 } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 15 }
+	}
+	focus = {
+		id = BLZ_hold_until_world_listens
+		icon = GFX_goal_generic_national_unity
+		x = 16 y = 9 cost = 6
+		prerequisite = { focus = BLZ_appeal_foreign_volunteers }
+		prerequisite = { focus = BLZ_total_defence_focus }
+		completion_reward = { TAD_BG_apply_last_line = yes add_to_variable = { BLZ_international_support = 15 } add_to_variable = { BLZ_public_confidence = 10 } add_war_support = 0.08 TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 20 }
+	}
+
+	focus = {
+		id = BLZ_civil_defence_committees
+		icon = GFX_goal_generic_national_unity
+		x = 11 y = 8 cost = 4
+		prerequisite = { focus = BLZ_warn_people_imminent_crisis }
+		completion_reward = { TAD_BG_apply_civil_defence = yes add_to_variable = { BLZ_public_confidence = 6 } add_war_support = 0.02 TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 12 }
+	}
+	focus = {
+		id = BLZ_disperse_reserve_stocks
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 14 y = 8 cost = 4
+		prerequisite = { focus = BLZ_stockpile_every_rifle }
+		completion_reward = { TAD_BG_apply_distributed_stockpiles = yes add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 250 producer = BLZ } add_to_variable = { BLZ_border_readiness = 6 } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 15 }
+	}
+	focus = {
+		id = BLZ_continuity_of_government
+		icon = GFX_goal_generic_political_pressure
+		x = 16 y = 8 cost = 4
+		prerequisite = { focus = BLZ_prepare_belmopan }
+		completion_reward = { TAD_BG_apply_continuity = yes add_stability = 0.03 add_to_variable = { BLZ_public_confidence = 5 } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 12 }
+	}
+	focus = {
+		id = BLZ_hold_the_sarstoon
+		icon = GFX_goal_generic_special_forces
+		x = 19 y = 8 cost = 4
+		prerequisite = { focus = BLZ_jungle_defence_training }
+		completion_reward = { TAD_BG_apply_sarstoon_denial = yes army_experience = 10 add_to_variable = { BLZ_border_readiness = 7 } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 14 }
+	}
+	focus = {
+		id = BLZ_emergency_radio_network
+		icon = GFX_goal_generic_radar
+		x = 11 y = 9 cost = 4
+		prerequisite = { focus = BLZ_civil_defence_committees }
+		completion_reward = { TAD_BG_apply_emergency_comms = yes add_to_variable = { BLZ_public_confidence = 4 } add_to_variable = { BLZ_border_readiness = 4 } TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = BLZ_civilian_logistics_corps
+		icon = GFX_goal_generic_army_motorized
+		x = 14 y = 9 cost = 4
+		prerequisite = { focus = BLZ_disperse_reserve_stocks }
+		completion_reward = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 50 producer = BLZ } add_equipment_to_stockpile = { type = support_equipment_1 amount = 60 producer = BLZ } add_to_variable = { BLZ_border_readiness = 6 } TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = BLZ_integrated_defence_command
+		icon = GFX_goal_generic_major_war
+		x = 16 y = 10 cost = 5
+		prerequisite = { focus = BLZ_continuity_of_government }
+		prerequisite = { focus = BLZ_total_defence_focus }
+		completion_reward = { army_experience = 20 add_command_power = 20 add_to_variable = { BLZ_border_readiness = 10 } add_war_support = 0.03 TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 16 }
+	}
+	focus = {
+		id = BLZ_western_highway_redoubts
+		icon = GFX_goal_generic_fortify_city
+		x = 19 y = 9 cost = 5
+		prerequisite = { focus = BLZ_hold_the_sarstoon }
+		completion_reward = { 15 = { add_building_construction = { type = bunker level = 1 instant_build = yes } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_to_variable = { BLZ_border_readiness = 8 } TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = BLZ_caricom_mutual_aid_protocol
+		icon = GFX_goal_generic_alliance
+		x = 12 y = 10 cost = 5
+		prerequisite = { focus = BLZ_emergency_radio_network }
+		prerequisite = { focus = BLZ_appeal_foreign_volunteers }
+		completion_reward = { add_to_variable = { BLZ_international_support = 12 } add_political_power = 40 set_country_flag = BLZ_caricom_emergency_protocol TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = BLZ_national_survival_plan
+		icon = GFX_goal_generic_national_unity
+		x = 16 y = 11 cost = 6
+		prerequisite = { focus = BLZ_caricom_mutual_aid_protocol }
+		prerequisite = { focus = BLZ_integrated_defence_command }
+		prerequisite = { focus = BLZ_western_highway_redoubts }
+		prerequisite = { focus = BLZ_hold_until_world_listens }
+		completion_reward = { TAD_BG_apply_last_line = yes add_stability = 0.04 add_war_support = 0.06 add_to_variable = { BLZ_international_support = 10 } add_to_variable = { BLZ_border_readiness = 10 } add_to_variable = { BLZ_public_confidence = 10 } TAD_BG_clamp_metrics = yes country_event = { id = tad_bg.440 hours = 6 } }
+		ai_will_do = { factor = 25 }
+	}
+}

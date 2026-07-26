@@ -1,0 +1,418 @@
+TAD_BG_foreign_divisions_category = {
+
+
+# These are personnel contracts rather than domestic mobilisation. They add
+# manpower directly, but impose temporary consumer-goods costs and are
+# strictly one-use decisions.
+BLZ_recruit_caribbean_manpower_pool = {
+    icon = GFX_decision_generic_propaganda
+    allowed = { tag = BLZ }
+    visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+    available = {
+        check_variable = { BLZ_GUA_tension > 39 }
+        NOT = { has_country_flag = BLZ_used_caribbean_manpower_pool }
+    }
+    cost = 55
+    fire_only_once = yes
+    complete_effect = {
+        set_country_flag = BLZ_used_caribbean_manpower_pool
+        add_manpower = 700
+        add_timed_idea = { idea = BLZ_caribbean_manpower_contract days = 180 }
+        add_to_variable = { BLZ_international_support = 2 }
+        TAD_BG_clamp_metrics = yes
+    }
+    ai_will_do = {
+        base = 35
+        modifier = { factor = 4 has_war_with = GUA }
+        modifier = { factor = 4 has_manpower < 1000 }
+    }
+}
+
+BLZ_expand_diaspora_manpower_pool = {
+    icon = GFX_decision_generic_propaganda
+    allowed = { tag = BLZ }
+    visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+    available = {
+        check_variable = { BLZ_GUA_tension > 54 }
+        NOT = { has_country_flag = BLZ_used_diaspora_manpower_pool }
+    }
+    cost = 45
+    fire_only_once = yes
+    complete_effect = {
+        set_country_flag = BLZ_used_diaspora_manpower_pool
+        add_manpower = 450
+        add_timed_idea = { idea = BLZ_diaspora_manpower_contract days = 180 }
+        add_to_variable = { BLZ_public_confidence = 1 }
+        TAD_BG_clamp_metrics = yes
+    }
+    ai_will_do = {
+        base = 25
+        modifier = { factor = 4 has_war_with = GUA }
+        modifier = { factor = 5 has_manpower < 750 }
+    }
+}
+	BLZ_call_diaspora = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+		available = {
+			has_completed_focus = BLZ_proclaim_emergency_defense_act
+			check_variable = { BLZ_GUA_tension > 39 }
+			OR = {
+				AND = { has_completed_focus = BLZ_convert_our_industry check_variable = { BLZ_foreign_contingents < 4 } }
+				AND = { has_completed_focus = BLZ_preemptive_border_garrison check_variable = { BLZ_foreign_contingents < 3 } }
+				AND = { has_completed_focus = BLZ_fortify_mopan_border check_variable = { BLZ_foreign_contingents < 2 } }
+				AND = { has_completed_focus = BLZ_proclaim_emergency_defense_act check_variable = { BLZ_foreign_contingents < 1 } }
+			}
+			NOT = { has_country_flag = BLZ_used_diaspora }
+		}
+		cost = 25
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BLZ_used_diaspora
+			add_to_variable = { BLZ_foreign_contingents = 1 }
+			add_to_variable = { BLZ_GUA_tension = 2 }
+			add_to_variable = { BLZ_border_readiness = 6 }
+			add_timed_idea = { idea = BLZ_contract_diaspora days = 180 }
+			load_oob = "BLZ_foreign_diaspora"
+			
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.210 hours = 6 } }
+		}
+		ai_will_do = { factor = 20 modifier = { factor = 3 has_war_with = GUA } }
+	}
+
+	BLZ_request_jamaican_volunteers = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+		available = {
+			has_completed_focus = BLZ_proclaim_emergency_defense_act
+			check_variable = { BLZ_GUA_tension > 39 }
+			OR = {
+				AND = { has_completed_focus = BLZ_convert_our_industry check_variable = { BLZ_foreign_contingents < 4 } }
+				AND = { has_completed_focus = BLZ_preemptive_border_garrison check_variable = { BLZ_foreign_contingents < 3 } }
+				AND = { has_completed_focus = BLZ_fortify_mopan_border check_variable = { BLZ_foreign_contingents < 2 } }
+				AND = { has_completed_focus = BLZ_proclaim_emergency_defense_act check_variable = { BLZ_foreign_contingents < 1 } }
+			}
+			NOT = { has_country_flag = BLZ_used_jamaica }
+		}
+		cost = 40
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BLZ_used_jamaica
+			add_to_variable = { BLZ_foreign_contingents = 1 }
+			add_to_variable = { BLZ_GUA_tension = 4 }
+			add_to_variable = { BLZ_border_readiness = 6 }
+			add_timed_idea = { idea = BLZ_contract_jamaica days = 180 }
+			load_oob = "BLZ_foreign_jamaica"
+			
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.211 hours = 6 } }
+		}
+		ai_will_do = { factor = 20 modifier = { factor = 3 has_war_with = GUA } }
+	}
+
+	BLZ_request_guyanese_volunteers = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+		available = {
+			has_completed_focus = BLZ_proclaim_emergency_defense_act
+			check_variable = { BLZ_GUA_tension > 39 }
+			OR = {
+				AND = { has_completed_focus = BLZ_convert_our_industry check_variable = { BLZ_foreign_contingents < 4 } }
+				AND = { has_completed_focus = BLZ_preemptive_border_garrison check_variable = { BLZ_foreign_contingents < 3 } }
+				AND = { has_completed_focus = BLZ_fortify_mopan_border check_variable = { BLZ_foreign_contingents < 2 } }
+				AND = { has_completed_focus = BLZ_proclaim_emergency_defense_act check_variable = { BLZ_foreign_contingents < 1 } }
+			}
+			NOT = { has_country_flag = BLZ_used_guyana }
+		}
+		cost = 45
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BLZ_used_guyana
+			add_to_variable = { BLZ_foreign_contingents = 1 }
+			add_to_variable = { BLZ_GUA_tension = 4 }
+			add_to_variable = { BLZ_border_readiness = 6 }
+			add_timed_idea = { idea = BLZ_contract_guyana days = 180 }
+			load_oob = "BLZ_foreign_guyana"
+			
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.212 hours = 6 } }
+		}
+		ai_will_do = { factor = 20 modifier = { factor = 3 has_war_with = GUA } }
+	}
+
+	BLZ_request_trinidad_security_group = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+		available = {
+			has_completed_focus = BLZ_proclaim_emergency_defense_act
+			check_variable = { BLZ_GUA_tension > 39 }
+			OR = {
+				AND = { has_completed_focus = BLZ_convert_our_industry check_variable = { BLZ_foreign_contingents < 4 } }
+				AND = { has_completed_focus = BLZ_preemptive_border_garrison check_variable = { BLZ_foreign_contingents < 3 } }
+				AND = { has_completed_focus = BLZ_fortify_mopan_border check_variable = { BLZ_foreign_contingents < 2 } }
+				AND = { has_completed_focus = BLZ_proclaim_emergency_defense_act check_variable = { BLZ_foreign_contingents < 1 } }
+			}
+			NOT = { has_country_flag = BLZ_used_trinidad }
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BLZ_used_trinidad
+			add_to_variable = { BLZ_foreign_contingents = 1 }
+			add_to_variable = { BLZ_GUA_tension = 5 }
+			add_to_variable = { BLZ_border_readiness = 6 }
+			add_timed_idea = { idea = BLZ_contract_trinidad days = 180 }
+			load_oob = "BLZ_foreign_trinidad"
+			add_equipment_to_stockpile = { type = convoy_1 amount = -4 }
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.213 hours = 6 } }
+		}
+		ai_will_do = { factor = 20 modifier = { factor = 3 has_war_with = GUA } }
+	}
+
+	BLZ_recruit_honduran_volunteers = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+		available = {
+			has_completed_focus = BLZ_proclaim_emergency_defense_act
+			check_variable = { BLZ_GUA_tension > 39 }
+			OR = {
+				AND = { has_completed_focus = BLZ_convert_our_industry check_variable = { BLZ_foreign_contingents < 4 } }
+				AND = { has_completed_focus = BLZ_preemptive_border_garrison check_variable = { BLZ_foreign_contingents < 3 } }
+				AND = { has_completed_focus = BLZ_fortify_mopan_border check_variable = { BLZ_foreign_contingents < 2 } }
+				AND = { has_completed_focus = BLZ_proclaim_emergency_defense_act check_variable = { BLZ_foreign_contingents < 1 } }
+			}
+			NOT = { has_country_flag = BLZ_used_honduras }
+		}
+		cost = 45
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BLZ_used_honduras
+			add_to_variable = { BLZ_foreign_contingents = 1 }
+			add_to_variable = { BLZ_GUA_tension = 6 }
+			add_to_variable = { BLZ_border_readiness = 6 }
+			add_timed_idea = { idea = BLZ_contract_honduras days = 180 }
+			load_oob = "BLZ_foreign_honduras"
+			
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.214 hours = 6 } }
+		}
+		ai_will_do = { factor = 20 modifier = { factor = 3 has_war_with = GUA } }
+	}
+
+	BLZ_recruit_dominican_volunteers = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+		available = {
+			has_completed_focus = BLZ_proclaim_emergency_defense_act
+			check_variable = { BLZ_GUA_tension > 39 }
+			OR = {
+				AND = { has_completed_focus = BLZ_convert_our_industry check_variable = { BLZ_foreign_contingents < 4 } }
+				AND = { has_completed_focus = BLZ_preemptive_border_garrison check_variable = { BLZ_foreign_contingents < 3 } }
+				AND = { has_completed_focus = BLZ_fortify_mopan_border check_variable = { BLZ_foreign_contingents < 2 } }
+				AND = { has_completed_focus = BLZ_proclaim_emergency_defense_act check_variable = { BLZ_foreign_contingents < 1 } }
+			}
+			NOT = { has_country_flag = BLZ_used_dominican }
+		}
+		cost = 55
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BLZ_used_dominican
+			add_to_variable = { BLZ_foreign_contingents = 1 }
+			add_to_variable = { BLZ_GUA_tension = 7 }
+			add_to_variable = { BLZ_border_readiness = 6 }
+			add_timed_idea = { idea = BLZ_contract_dominican days = 180 }
+			load_oob = "BLZ_foreign_dominican"
+			add_equipment_to_stockpile = { type = convoy_1 amount = -6 }
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.215 hours = 6 } }
+		}
+		ai_will_do = { factor = 20 modifier = { factor = 3 has_war_with = GUA } }
+	}
+
+	BLZ_recruit_salvadoran_veterans = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+		available = {
+			has_completed_focus = BLZ_proclaim_emergency_defense_act
+			check_variable = { BLZ_GUA_tension > 39 }
+			OR = {
+				AND = { has_completed_focus = BLZ_convert_our_industry check_variable = { BLZ_foreign_contingents < 4 } }
+				AND = { has_completed_focus = BLZ_preemptive_border_garrison check_variable = { BLZ_foreign_contingents < 3 } }
+				AND = { has_completed_focus = BLZ_fortify_mopan_border check_variable = { BLZ_foreign_contingents < 2 } }
+				AND = { has_completed_focus = BLZ_proclaim_emergency_defense_act check_variable = { BLZ_foreign_contingents < 1 } }
+			}
+			NOT = { has_country_flag = BLZ_used_salvador }
+		}
+		cost = 60
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BLZ_used_salvador
+			add_to_variable = { BLZ_foreign_contingents = 1 }
+			add_to_variable = { BLZ_GUA_tension = 8 }
+			add_to_variable = { BLZ_border_readiness = 6 }
+			add_timed_idea = { idea = BLZ_contract_salvador days = 180 }
+			load_oob = "BLZ_foreign_salvador"
+			
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.216 hours = 6 } }
+		}
+		ai_will_do = { factor = 20 modifier = { factor = 3 has_war_with = GUA } }
+	}
+
+	BLZ_accept_cuban_internationalists = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+		available = {
+			has_completed_focus = BLZ_proclaim_emergency_defense_act
+			check_variable = { BLZ_GUA_tension > 39 }
+			OR = {
+				AND = { has_completed_focus = BLZ_convert_our_industry check_variable = { BLZ_foreign_contingents < 4 } }
+				AND = { has_completed_focus = BLZ_preemptive_border_garrison check_variable = { BLZ_foreign_contingents < 3 } }
+				AND = { has_completed_focus = BLZ_fortify_mopan_border check_variable = { BLZ_foreign_contingents < 2 } }
+				AND = { has_completed_focus = BLZ_proclaim_emergency_defense_act check_variable = { BLZ_foreign_contingents < 1 } }
+			}
+			NOT = { has_country_flag = BLZ_used_cuba }
+			OR = { has_government = communism communism > 0.15 }
+		}
+		cost = 65
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BLZ_used_cuba
+			add_to_variable = { BLZ_foreign_contingents = 1 }
+			add_to_variable = { BLZ_GUA_tension = 10 }
+			add_to_variable = { BLZ_border_readiness = 6 }
+			add_timed_idea = { idea = BLZ_contract_cuba days = 180 }
+			load_oob = "BLZ_foreign_cuba"
+			
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.217 hours = 6 } }
+		}
+		ai_will_do = { factor = 20 modifier = { factor = 3 has_war_with = GUA } }
+	}
+
+	BLZ_accept_nicaraguan_volunteers = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+		available = {
+			has_completed_focus = BLZ_proclaim_emergency_defense_act
+			check_variable = { BLZ_GUA_tension > 39 }
+			OR = {
+				AND = { has_completed_focus = BLZ_convert_our_industry check_variable = { BLZ_foreign_contingents < 4 } }
+				AND = { has_completed_focus = BLZ_preemptive_border_garrison check_variable = { BLZ_foreign_contingents < 3 } }
+				AND = { has_completed_focus = BLZ_fortify_mopan_border check_variable = { BLZ_foreign_contingents < 2 } }
+				AND = { has_completed_focus = BLZ_proclaim_emergency_defense_act check_variable = { BLZ_foreign_contingents < 1 } }
+			}
+			NOT = { has_country_flag = BLZ_used_nicaragua }
+			OR = { has_government = communism communism > 0.10 has_government = neutrality }
+		}
+		cost = 65
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BLZ_used_nicaragua
+			add_to_variable = { BLZ_foreign_contingents = 1 }
+			add_to_variable = { BLZ_GUA_tension = 10 }
+			add_to_variable = { BLZ_border_readiness = 6 }
+			add_timed_idea = { idea = BLZ_contract_nicaragua days = 180 }
+			load_oob = "BLZ_foreign_nicaragua"
+			
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.218 hours = 6 } }
+		}
+		ai_will_do = { factor = 20 modifier = { factor = 3 has_war_with = GUA } }
+	}
+
+	BLZ_open_yucatan_network = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+		available = {
+			has_completed_focus = BLZ_proclaim_emergency_defense_act
+			check_variable = { BLZ_GUA_tension > 39 }
+			OR = {
+				AND = { has_completed_focus = BLZ_convert_our_industry check_variable = { BLZ_foreign_contingents < 4 } }
+				AND = { has_completed_focus = BLZ_preemptive_border_garrison check_variable = { BLZ_foreign_contingents < 3 } }
+				AND = { has_completed_focus = BLZ_fortify_mopan_border check_variable = { BLZ_foreign_contingents < 2 } }
+				AND = { has_completed_focus = BLZ_proclaim_emergency_defense_act check_variable = { BLZ_foreign_contingents < 1 } }
+			}
+			NOT = { has_country_flag = BLZ_used_mexico }
+		}
+		cost = 75
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BLZ_used_mexico
+			add_to_variable = { BLZ_foreign_contingents = 1 }
+			add_to_variable = { BLZ_GUA_tension = 12 }
+			add_to_variable = { BLZ_border_readiness = 6 }
+			add_timed_idea = { idea = BLZ_contract_mexico days = 180 }
+			load_oob = "BLZ_foreign_mexico"
+			
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.219 hours = 6 } }
+		}
+		ai_will_do = { factor = 20 modifier = { factor = 3 has_war_with = GUA } }
+	}
+
+	BLZ_contract_colombian_pmc = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_proclaim_emergency_defense_act }
+		available = {
+			has_completed_focus = BLZ_proclaim_emergency_defense_act
+			check_variable = { BLZ_GUA_tension > 39 }
+			OR = {
+				AND = { has_completed_focus = BLZ_convert_our_industry check_variable = { BLZ_foreign_contingents < 4 } }
+				AND = { has_completed_focus = BLZ_preemptive_border_garrison check_variable = { BLZ_foreign_contingents < 3 } }
+				AND = { has_completed_focus = BLZ_fortify_mopan_border check_variable = { BLZ_foreign_contingents < 2 } }
+				AND = { has_completed_focus = BLZ_proclaim_emergency_defense_act check_variable = { BLZ_foreign_contingents < 1 } }
+			}
+			NOT = { has_country_flag = BLZ_used_colombia }
+		}
+		cost = 100
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = BLZ_used_colombia
+			add_to_variable = { BLZ_foreign_contingents = 1 }
+			add_to_variable = { BLZ_GUA_tension = 15 }
+			add_to_variable = { BLZ_border_readiness = 6 }
+			add_timed_idea = { idea = BLZ_contract_colombia days = 120 }
+			load_oob = "BLZ_foreign_colombia"
+			add_equipment_to_stockpile = { type = convoy_1 amount = -15 }
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.220 hours = 6 } }
+		}
+		ai_will_do = { factor = 20 modifier = { factor = 3 has_war_with = GUA } }
+	}
+}

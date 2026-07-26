@@ -1,0 +1,8 @@
+division_template = {
+	name = "BDF Emergency Reinforcement Company"
+	is_locked = yes
+	regiments = {
+		belize_diaspora_infantry = { x = 0 y = 0 }
+	}
+	priority = 2
+}

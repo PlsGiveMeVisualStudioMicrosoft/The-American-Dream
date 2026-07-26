@@ -1,0 +1,6 @@
+opinion_modifiers = {
+    TAD_BG_postwar_partnership = {
+        value = 25
+        decay = 0
+    }
+}

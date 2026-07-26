@@ -1,0 +1,19 @@
+THEAMERICANDREAM — BELIZE/GUATEMALA RELIABILITY & CONTENT UPDATE
+
+CLEAN INSTALL REQUIRED
+1. Close Hearts of Iron IV and the Paradox Launcher.
+2. Rename your current mod/TheAmericanDream folder to TheAmericanDream_BACKUP.
+3. Extract this archive into Documents/Paradox Interactive/Hearts of Iron IV/mod/.
+4. The extracted folder is already named TheAmericanDream.
+5. Start a NEW GAME. Do not test state-history, country-history, OOB or focus-tree changes on an old save.
+
+Why a clean install?
+The leader portraits now use new cache-busted filenames and the obsolete portrait DDS files were removed. Copying over an old folder can leave stale files behind.
+
+Main checks completed:
+- State modifiers initialise from state/country history and self-repair daily.
+- Event, focus and decision IDs and references were statically checked.
+- New localisation keys were checked.
+- Old leader portrait files/references are absent.
+- New portraits are 156x210 ARGB8888 DDS.
+- Haiti repayment is controlled by Haitian AI decisions; Belize has no reminder focus.

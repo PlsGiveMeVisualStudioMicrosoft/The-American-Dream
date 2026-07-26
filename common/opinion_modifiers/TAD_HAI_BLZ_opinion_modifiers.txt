@@ -1,0 +1,17 @@
+opinion_modifiers = {
+	TAD_HAI_military_assistance = {
+		value = 25
+	}
+
+	TAD_HAI_emergency_assistance = {
+		value = 10
+	}
+
+	TAD_HAI_emergency_reinforcement = {
+		value = 15
+	}
+
+	TAD_BLZ_honoured_assistance_agreement = {
+		value = 25
+	}
+}

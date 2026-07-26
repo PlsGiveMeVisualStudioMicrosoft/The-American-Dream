@@ -1,0 +1,235 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_report_event_hai_fall_port_au_prince"
+		texturefile = "gfx/event_pictures/hai_fall_port_au_prince.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_hai_fall_port_au_prince"
+		texturefile = "gfx/event_pictures/hai_fall_port_au_prince_news.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_fall_of_haiti"
+		texturefile = "gfx/event_pictures/hai_fall_of_haiti.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_hai_fall_of_haiti"
+		texturefile = "gfx/event_pictures/hai_fall_of_haiti_news.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_viv_collapse"
+		texturefile = "gfx/event_pictures/hai_viv_collapse.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_hai_viv_collapse"
+		texturefile = "gfx/event_pictures/hai_viv_collapse_news.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_grf_collapse"
+		texturefile = "gfx/event_pictures/hai_grf_collapse.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_hai_grf_collapse"
+		texturefile = "gfx/event_pictures/hai_grf_collapse_news.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_krb_collapse"
+		texturefile = "gfx/event_pictures/hai_krb_collapse.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_hai_krb_collapse"
+		texturefile = "gfx/event_pictures/hai_krb_collapse_news.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_palace_looted"
+		texturefile = "gfx/event_pictures/hai_palace_looted.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_bank_raid"
+		texturefile = "gfx/event_pictures/hai_bank_raid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_fuel_convoy_hijacked"
+		texturefile = "gfx/event_pictures/hai_fuel_convoy_hijacked.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_port_warehouses_burn"
+		texturefile = "gfx/event_pictures/hai_port_warehouses_burn.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_mass_prison_break"
+		texturefile = "gfx/event_pictures/hai_mass_prison_break.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_airport_falls_silent"
+		texturefile = "gfx/event_pictures/hai_airport_falls_silent.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_cap_haitien_seized"
+		texturefile = "gfx/event_pictures/hai_cap_haitien_seized.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_gonave_plundered"
+		texturefile = "gfx/event_pictures/hai_gonave_plundered.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_capital_reclaimed"
+		texturefile = "gfx/event_pictures/hai_capital_reclaimed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_humanitarian_corridor"
+		texturefile = "gfx/event_pictures/hai_humanitarian_corridor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hai_crisis_victory"
+		texturefile = "gfx/event_pictures/hai_crisis_victory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_hai_crisis_victory"
+		texturefile = "gfx/event_pictures/hai_crisis_victory_news.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_blz_fortifications_complete"
+		texturefile = "gfx/event_pictures/blz_fortifications_complete.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_blz_foreign_volunteers_arrive"
+		texturefile = "gfx/event_pictures/blz_foreign_volunteers_arrive.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_blz_port_belize_expanded"
+		texturefile = "gfx/event_pictures/blz_port_belize_expanded.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_blz_belmopan_under_fire"
+		texturefile = "gfx/event_pictures/blz_belmopan_under_fire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_blz_survives"
+		texturefile = "gfx/event_pictures/blz_survives.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_blz_survives"
+		texturefile = "gfx/event_pictures/blz_survives_news.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_blz_fall"
+		texturefile = "gfx/event_pictures/blz_fall.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_blz_fall"
+		texturefile = "gfx/event_pictures/blz_fall_news.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_gua_peten_mobilized"
+		texturefile = "gfx/event_pictures/gua_peten_mobilized.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_gua_crosses_border"
+		texturefile = "gfx/event_pictures/gua_crosses_border.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_gua_belmopan_captured"
+		texturefile = "gfx/event_pictures/gua_belmopan_captured.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_gua_belmopan_captured"
+		texturefile = "gfx/event_pictures/gua_belmopan_captured_news.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_gua_jungle_stalemate"
+		texturefile = "gfx/event_pictures/gua_jungle_stalemate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_gua_belizean_resistance"
+		texturefile = "gfx/event_pictures/gua_belizean_resistance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_gua_victory"
+		texturefile = "gfx/event_pictures/gua_victory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_gua_victory"
+		texturefile = "gfx/event_pictures/gua_victory_news.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_gua_defeat"
+		texturefile = "gfx/event_pictures/gua_defeat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_gua_defeat"
+		texturefile = "gfx/event_pictures/gua_defeat_news.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_gua_troops_return"
+		texturefile = "gfx/event_pictures/gua_troops_return.dds"
+	}
+
+
+
+spriteType = {
+	name = "GFX_report_event_hai_at_edge"
+	texturefile = "gfx/event_pictures/hai_at_edge.dds"
+}
+
+spriteType = {
+	name = "GFX_report_event_blz_drills_begin"
+	texturefile = "gfx/event_pictures/blz_drills_begin.dds"
+}
+
+spriteType = {
+	name = "GFX_report_event_blz_requests_protection"
+	texturefile = "gfx/event_pictures/blz_requests_protection.dds"
+}
+
+spriteType = {
+	name = "GFX_report_event_blz_border_incident"
+	texturefile = "gfx/event_pictures/blz_border_incident.dds"
+}
+
+spriteType = {
+	name = "GFX_report_event_gua_pressure_mounts"
+	texturefile = "gfx/event_pictures/gua_pressure_mounts.dds"
+}
+
+}

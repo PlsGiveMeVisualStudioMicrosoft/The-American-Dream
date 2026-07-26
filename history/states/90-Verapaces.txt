@@ -1,0 +1,25 @@
+state={
+	id=90
+	name="STATE_90"
+	history={
+		owner = GUA
+		victory_points = {
+			9132 3
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+		}
+		add_core_of = GUA
+	}
+
+	provinces={
+		2809 2918 3643 4904 5513 9057 9064 9075 9087 9096 9104 9114 9126 9129 9132 9147 9152 
+	}
+	manpower=1800000
+	resources={
+		rubber = 3
+	}
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

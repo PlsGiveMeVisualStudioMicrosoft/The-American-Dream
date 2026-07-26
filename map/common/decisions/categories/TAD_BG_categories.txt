@@ -1,0 +1,27 @@
+TAD_BG_dispute_category = {
+	icon = generic_research
+	allowed = {
+		OR = {
+			tag = BLZ
+			tag = GUA
+		}
+	}
+	visible = {
+		BLZ = { has_country_flag = TAD_BG_dispute_active }
+	}
+	priority = 120
+}
+
+
+TAD_HAI_BLZ_assistance_category = {
+	icon = generic_propaganda
+	allowed = { tag = HAI }
+	visible = {
+		OR = {
+			has_country_flag = HAI_crisis_active
+			has_country_flag = HAI_owes_belize_troops
+			has_country_flag = HAI_owes_belize_arms
+		}
+	}
+	priority = 121
+}

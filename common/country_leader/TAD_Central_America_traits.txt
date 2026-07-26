@@ -1,0 +1,15 @@
+leader_traits = {
+	BLZ_pragmatic_modernizer = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.05
+		production_speed_infrastructure_factor = 0.05
+	}
+
+	GUA_anti_corruption_reformer = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.03
+		research_speed_factor = 0.03
+	}
+}

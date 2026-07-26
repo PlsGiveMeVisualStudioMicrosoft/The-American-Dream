@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_BLZ_John_Briceno_2025"
+		texturefile = "gfx/leaders/BLZ/Portrait_BLZ_John_Briceno_2025.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_GUA_Bernardo_Arevalo_2025"
+		texturefile = "gfx/leaders/GUA/Portrait_GUA_Bernardo_Arevalo_2025.dds"
+	}
+}

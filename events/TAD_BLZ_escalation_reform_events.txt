@@ -1,0 +1,90 @@
+add_namespace = tad_blz_reform
+
+country_event = {
+	id = tad_blz_reform.1
+	title = tad_blz_reform.1.t
+	desc = tad_blz_reform.1.d
+	picture = GFX_report_event_generic_diplomatic_treaty
+	is_triggered_only = yes
+	option = {
+		name = tad_blz_reform.1.a
+		ai_chance = { factor = 50 }
+		JAM = { country_event = { id = tad_blz_reform.2 hours = 6 } }
+	}
+	option = {
+		name = tad_blz_reform.1.b
+		ai_chance = { factor = 30 }
+		DOM = { country_event = { id = tad_blz_reform.3 hours = 6 } }
+	}
+	option = {
+		name = tad_blz_reform.1.c
+		ai_chance = { factor = 20 }
+		COL = { country_event = { id = tad_blz_reform.4 hours = 6 } }
+	}
+}
+
+country_event = {
+	id = tad_blz_reform.2
+	title = tad_blz_reform.2.t
+	desc = tad_blz_reform.2.d
+	picture = GFX_report_event_generic_diplomatic_treaty
+	is_triggered_only = yes
+	option = { name = tad_blz_reform.2.a ai_chance = { factor = 20 } BLZ = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 500 producer = JAM } add_equipment_to_stockpile = { type = support_equipment_1 amount = 75 producer = JAM } add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 25 producer = JAM } add_equipment_to_stockpile = { type = convoy_1 amount = 5 } add_to_variable = { BLZ_international_support = 8 } add_to_variable = { BLZ_border_readiness = 5 } country_event = { id = tad_blz_reform.10 hours = 6 } TAD_BG_clamp_metrics = yes } }
+	option = { name = tad_blz_reform.2.b ai_chance = { factor = 45 } BLZ = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 300 producer = JAM } add_equipment_to_stockpile = { type = support_equipment_1 amount = 40 producer = JAM } add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 10 producer = JAM } add_to_variable = { BLZ_international_support = 5 } add_to_variable = { BLZ_border_readiness = 3 } country_event = { id = tad_blz_reform.11 hours = 6 } TAD_BG_clamp_metrics = yes } }
+	option = { name = tad_blz_reform.2.c ai_chance = { factor = 25 } BLZ = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 150 producer = JAM } add_equipment_to_stockpile = { type = support_equipment_1 amount = 20 producer = JAM } add_to_variable = { BLZ_international_support = 3 } add_to_variable = { BLZ_border_readiness = 2 } country_event = { id = tad_blz_reform.12 hours = 6 } TAD_BG_clamp_metrics = yes } }
+	option = { name = tad_blz_reform.2.e ai_chance = { factor = 10 } BLZ = { add_ideas = BLZ_left_to_our_own_devices country_event = { id = tad_blz_reform.13 hours = 6 } } }
+}
+
+country_event = {
+	id = tad_blz_reform.3
+	title = tad_blz_reform.3.t
+	desc = tad_blz_reform.3.d
+	picture = GFX_report_event_generic_diplomatic_treaty
+	is_triggered_only = yes
+	option = { name = tad_blz_reform.3.a ai_chance = { factor = 15 } BLZ = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 600 producer = DOM } add_equipment_to_stockpile = { type = support_equipment_1 amount = 100 producer = DOM } add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 30 producer = DOM } add_equipment_to_stockpile = { type = convoy_1 amount = 6 } add_to_variable = { BLZ_international_support = 8 } add_to_variable = { BLZ_border_readiness = 6 } country_event = { id = tad_blz_reform.14 hours = 6 } TAD_BG_clamp_metrics = yes } }
+	option = { name = tad_blz_reform.3.b ai_chance = { factor = 35 } BLZ = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 350 producer = DOM } add_equipment_to_stockpile = { type = support_equipment_1 amount = 60 producer = DOM } add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 15 producer = DOM } add_to_variable = { BLZ_international_support = 5 } add_to_variable = { BLZ_border_readiness = 4 } country_event = { id = tad_blz_reform.15 hours = 6 } TAD_BG_clamp_metrics = yes } }
+	option = { name = tad_blz_reform.3.c ai_chance = { factor = 30 } BLZ = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 180 producer = DOM } add_equipment_to_stockpile = { type = support_equipment_1 amount = 25 producer = DOM } add_to_variable = { BLZ_international_support = 3 } add_to_variable = { BLZ_border_readiness = 2 } country_event = { id = tad_blz_reform.16 hours = 6 } TAD_BG_clamp_metrics = yes } }
+	option = { name = tad_blz_reform.3.e ai_chance = { factor = 20 } BLZ = { add_ideas = BLZ_left_to_our_own_devices country_event = { id = tad_blz_reform.13 hours = 6 } } }
+}
+
+country_event = {
+	id = tad_blz_reform.4
+	title = tad_blz_reform.4.t
+	desc = tad_blz_reform.4.d
+	picture = GFX_report_event_generic_diplomatic_treaty
+	is_triggered_only = yes
+	option = { name = tad_blz_reform.4.a ai_chance = { factor = 10 } BLZ = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 700 producer = COL } add_equipment_to_stockpile = { type = support_equipment_1 amount = 120 producer = COL } add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 40 producer = COL } add_equipment_to_stockpile = { type = convoy_1 amount = 8 } army_experience = 15 add_to_variable = { BLZ_international_support = 9 } add_to_variable = { BLZ_border_readiness = 7 } country_event = { id = tad_blz_reform.17 hours = 6 } TAD_BG_clamp_metrics = yes } }
+	option = { name = tad_blz_reform.4.b ai_chance = { factor = 30 } BLZ = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 400 producer = COL } add_equipment_to_stockpile = { type = support_equipment_1 amount = 70 producer = COL } add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 20 producer = COL } army_experience = 8 add_to_variable = { BLZ_international_support = 6 } add_to_variable = { BLZ_border_readiness = 5 } country_event = { id = tad_blz_reform.18 hours = 6 } TAD_BG_clamp_metrics = yes } }
+	option = { name = tad_blz_reform.4.c ai_chance = { factor = 35 } BLZ = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 220 producer = COL } add_equipment_to_stockpile = { type = support_equipment_1 amount = 30 producer = COL } army_experience = 4 add_to_variable = { BLZ_international_support = 3 } add_to_variable = { BLZ_border_readiness = 3 } country_event = { id = tad_blz_reform.19 hours = 6 } TAD_BG_clamp_metrics = yes } }
+	option = { name = tad_blz_reform.4.e ai_chance = { factor = 25 } BLZ = { add_ideas = BLZ_left_to_our_own_devices country_event = { id = tad_blz_reform.13 hours = 6 } } }
+}
+
+country_event = { id = tad_blz_reform.10 title = tad_blz_reform.10.t desc = tad_blz_reform.10.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_blz_reform.ok } }
+country_event = { id = tad_blz_reform.11 title = tad_blz_reform.11.t desc = tad_blz_reform.11.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_blz_reform.ok } }
+country_event = { id = tad_blz_reform.12 title = tad_blz_reform.12.t desc = tad_blz_reform.12.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_blz_reform.ok } }
+country_event = { id = tad_blz_reform.13 title = tad_blz_reform.13.t desc = tad_blz_reform.13.d picture = GFX_report_event_generic_diplomatic_treaty is_triggered_only = yes option = { name = tad_blz_reform.13.a } }
+country_event = { id = tad_blz_reform.14 title = tad_blz_reform.14.t desc = tad_blz_reform.14.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_blz_reform.ok } }
+country_event = { id = tad_blz_reform.15 title = tad_blz_reform.15.t desc = tad_blz_reform.15.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_blz_reform.ok } }
+country_event = { id = tad_blz_reform.16 title = tad_blz_reform.16.t desc = tad_blz_reform.16.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_blz_reform.ok } }
+country_event = { id = tad_blz_reform.17 title = tad_blz_reform.17.t desc = tad_blz_reform.17.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_blz_reform.ok } }
+country_event = { id = tad_blz_reform.18 title = tad_blz_reform.18.t desc = tad_blz_reform.18.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_blz_reform.ok } }
+country_event = { id = tad_blz_reform.19 title = tad_blz_reform.19.t desc = tad_blz_reform.19.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_blz_reform.ok } }
+
+country_event = {
+	id = tad_blz_reform.25
+	title = tad_blz_reform.25.t
+	desc = tad_blz_reform.25.d
+	picture = GFX_report_event_generic_military
+	is_triggered_only = yes
+	option = { name = tad_blz_reform.25.a ai_chance = { factor = 70 } add_to_variable = { GUA_military_pressure = 2 } add_to_variable = { GUA_domestic_support = 1 } }
+	option = { name = tad_blz_reform.25.b ai_chance = { factor = 30 } BLZ = { add_to_variable = { BLZ_GUA_tension = 1 } } add_political_power = -10 TAD_BG_clamp_tension = yes }
+}
+
+country_event = {
+	id = tad_blz_reform.30
+	title = tad_blz_reform.30.t
+	desc = tad_blz_reform.30.d
+	picture = GFX_report_event_generic_military
+	is_triggered_only = yes
+	option = { name = tad_blz_reform.30.a }
+}

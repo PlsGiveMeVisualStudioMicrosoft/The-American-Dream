@@ -4,7 +4,7 @@ country_event = {
 	id = hai_crisis.1
 	title = hai_crisis.1.t
 	desc = hai_crisis.1.d
-	picture = GFX_report_event_generic_political_reform
+	picture = GFX_report_event_hai_at_edge
 	is_triggered_only = yes
 
 	option = {

@@ -1,0 +1,79 @@
+# Dedicated Belize–Guatemala military AI.
+# The general AI previously treated the long jungle frontier as an unattractive
+# stalemate. These strategies concentrate units, force order execution and make
+# both sides spend political power on the new force-generation decisions.
+
+GUA_prepare_for_belize_ai_strategy = {
+    allowed = { original_tag = GUA }
+    enable = {
+        NOT = { has_war_with = BLZ }
+        BLZ = { check_variable = { BLZ_GUA_tension > 69 } }
+    }
+    abort = { has_war_with = BLZ }
+    abort_when_not_enabled = yes
+
+    ai_strategy = { type = prepare_for_war id = BLZ value = 250 }
+    ai_strategy = { type = front_unit_request tag = BLZ value = 180 }
+    ai_strategy = { type = force_build_armies value = 80 }
+    ai_strategy = { type = pp_spend_priority id = decision value = 200 }
+}
+
+GUA_belize_offensive_ai_strategy = {
+    allowed = { original_tag = GUA }
+    enable = { has_war_with = BLZ }
+    abort = { NOT = { has_war_with = BLZ } }
+    abort_when_not_enabled = yes
+
+    ai_strategy = { type = front_unit_request tag = BLZ value = 450 }
+    ai_strategy = {
+        type = front_control
+        tag = BLZ
+        ratio = 0.80
+        priority = 20
+        ordertype = front
+        execution_type = rush_weak
+        execute_order = yes
+        manual_attack = yes
+    }
+    ai_strategy = { type = force_build_armies value = 140 }
+    ai_strategy = { type = pp_spend_priority id = decision value = 300 }
+    ai_strategy = { type = garrison value = -40 }
+}
+
+BLZ_prepare_for_guatemala_ai_strategy = {
+    allowed = { original_tag = BLZ }
+    enable = {
+        NOT = { has_war_with = GUA }
+        check_variable = { BLZ_GUA_tension > 49 }
+    }
+    abort = { has_war_with = GUA }
+    abort_when_not_enabled = yes
+
+    ai_strategy = { type = front_unit_request tag = GUA value = 180 }
+    ai_strategy = { type = force_build_armies value = 90 }
+    ai_strategy = { type = pp_spend_priority id = decision value = 250 }
+}
+
+BLZ_defend_the_country_ai_strategy = {
+    allowed = { original_tag = BLZ }
+    enable = { has_war_with = GUA }
+    abort = { NOT = { has_war_with = GUA } }
+    abort_when_not_enabled = yes
+
+    # Belize must hold its own territory. It can fill the frontier, but the
+    # battleplan is deliberately not executed and manual attacks are disabled.
+    ai_strategy = { type = front_unit_request tag = GUA value = 500 }
+    ai_strategy = {
+        type = front_control
+        tag = GUA
+        ratio = 0.95
+        priority = 30
+        ordertype = front
+        execution_type = careful
+        execute_order = no
+        manual_attack = no
+    }
+    ai_strategy = { type = force_build_armies value = 85 }
+    ai_strategy = { type = pp_spend_priority id = decision value = 300 }
+    ai_strategy = { type = garrison value = 40 }
+}

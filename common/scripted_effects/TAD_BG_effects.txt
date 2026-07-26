@@ -1,0 +1,286 @@
+TAD_BG_clamp_tension = {
+    BLZ = {
+        if = { limit = { check_variable = { BLZ_GUA_tension > 100 } } set_variable = { BLZ_GUA_tension = 100 } }
+        if = { limit = { check_variable = { BLZ_GUA_tension < 0 } } set_variable = { BLZ_GUA_tension = 0 } }
+    }
+}
+
+TAD_BG_clamp_metrics = {
+    BLZ = {
+        if = { limit = { check_variable = { BLZ_international_support > 100 } } set_variable = { BLZ_international_support = 100 } }
+        if = { limit = { check_variable = { BLZ_international_support < 0 } } set_variable = { BLZ_international_support = 0 } }
+        if = { limit = { check_variable = { BLZ_border_readiness > 100 } } set_variable = { BLZ_border_readiness = 100 } }
+        if = { limit = { check_variable = { BLZ_border_readiness < 0 } } set_variable = { BLZ_border_readiness = 0 } }
+        if = { limit = { check_variable = { BLZ_public_confidence > 100 } } set_variable = { BLZ_public_confidence = 100 } }
+        if = { limit = { check_variable = { BLZ_public_confidence < 0 } } set_variable = { BLZ_public_confidence = 0 } }
+    }
+    GUA = {
+        if = { limit = { check_variable = { GUA_claim_momentum > 100 } } set_variable = { GUA_claim_momentum = 100 } }
+        if = { limit = { check_variable = { GUA_claim_momentum < 0 } } set_variable = { GUA_claim_momentum = 0 } }
+        if = { limit = { check_variable = { GUA_military_pressure > 100 } } set_variable = { GUA_military_pressure = 100 } }
+        if = { limit = { check_variable = { GUA_military_pressure < 0 } } set_variable = { GUA_military_pressure = 0 } }
+        if = { limit = { check_variable = { GUA_domestic_support > 100 } } set_variable = { GUA_domestic_support = 100 } }
+        if = { limit = { check_variable = { GUA_domestic_support < 0 } } set_variable = { GUA_domestic_support = 0 } }
+    }
+}
+
+# -----------------------------------------------------------------------------
+# SAFE MODIFIER CLEANUP
+# HOI4 logs an error when remove_dynamic_modifier targets a modifier that is not
+# present. Every removal is therefore guarded by has_dynamic_modifier.
+# -----------------------------------------------------------------------------
+TAD_BG_clear_BLZ_state_modifiers = {
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_homeland_defence_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_homeland_defence_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_belmopan_fortified_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_belmopan_fortified_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_jungle_defence_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_jungle_defence_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_total_defence_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_total_defence_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_last_line_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_last_line_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_civil_defence_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_civil_defence_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_distributed_stockpiles_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_distributed_stockpiles_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_emergency_comms_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_emergency_comms_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_sarstoon_denial_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_sarstoon_denial_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_continuity_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_continuity_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_frontline_rotation_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_frontline_rotation_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_mopan_border_fortifications_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_mopan_border_fortifications_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_preemptive_garrison_state_modifier } } remove_dynamic_modifier = { modifier = BLZ_preemptive_garrison_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_defence_network_tier_1 } } remove_dynamic_modifier = { modifier = BLZ_defence_network_tier_1 } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_defence_network_tier_2 } } remove_dynamic_modifier = { modifier = BLZ_defence_network_tier_2 } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_defence_network_tier_3 } } remove_dynamic_modifier = { modifier = BLZ_defence_network_tier_3 } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_mopan_line_tier_1 } } remove_dynamic_modifier = { modifier = BLZ_mopan_line_tier_1 } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_mopan_line_tier_2 } } remove_dynamic_modifier = { modifier = BLZ_mopan_line_tier_2 } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_supply_network_tier_1 } } remove_dynamic_modifier = { modifier = BLZ_supply_network_tier_1 } }
+    if = { limit = { has_dynamic_modifier = { modifier = BLZ_supply_network_tier_2 } } remove_dynamic_modifier = { modifier = BLZ_supply_network_tier_2 } }
+}
+
+TAD_BG_clear_GUA_state_modifiers = {
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_peten_bottleneck_state_modifier } } remove_dynamic_modifier = { modifier = GUA_peten_bottleneck_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_peten_improved_state_modifier } } remove_dynamic_modifier = { modifier = GUA_peten_improved_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_peten_forward_network_state_modifier } } remove_dynamic_modifier = { modifier = GUA_peten_forward_network_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_peten_rotation_state_modifier } } remove_dynamic_modifier = { modifier = GUA_peten_rotation_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_requisitioned_transport_state_modifier } } remove_dynamic_modifier = { modifier = GUA_requisitioned_transport_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_closed_crossings_state_modifier } } remove_dynamic_modifier = { modifier = GUA_closed_crossings_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_limited_mobilisation_state_modifier } } remove_dynamic_modifier = { modifier = GUA_limited_mobilisation_state_modifier } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_peten_logistics_tier_1 } } remove_dynamic_modifier = { modifier = GUA_peten_logistics_tier_1 } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_peten_logistics_tier_2 } } remove_dynamic_modifier = { modifier = GUA_peten_logistics_tier_2 } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_peten_logistics_tier_3 } } remove_dynamic_modifier = { modifier = GUA_peten_logistics_tier_3 } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_campaign_support_tier_1 } } remove_dynamic_modifier = { modifier = GUA_campaign_support_tier_1 } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_campaign_support_tier_2 } } remove_dynamic_modifier = { modifier = GUA_campaign_support_tier_2 } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_border_command_tier_1 } } remove_dynamic_modifier = { modifier = GUA_border_command_tier_1 } }
+    if = { limit = { has_dynamic_modifier = { modifier = GUA_border_command_tier_2 } } remove_dynamic_modifier = { modifier = GUA_border_command_tier_2 } }
+}
+
+# -----------------------------------------------------------------------------
+# CONSOLIDATED REFRESH EFFECTS
+# -----------------------------------------------------------------------------
+TAD_BG_refresh_BLZ_state_modifiers = {
+    15 = { TAD_BG_clear_BLZ_state_modifiers = yes }
+    88 = { TAD_BG_clear_BLZ_state_modifiers = yes }
+
+    # Defence network: exactly one tier.
+    if = {
+        limit = {
+            OR = {
+                has_country_flag = BLZ_total_defence_activated
+                has_country_flag = BLZ_last_line_activated
+                has_country_flag = BLZ_GUA_war_started
+                has_completed_focus = BLZ_total_defence_focus
+                has_completed_focus = BLZ_hold_until_world_listens
+                has_completed_focus = BLZ_national_survival_plan
+            }
+        }
+        15 = { add_dynamic_modifier = { modifier = BLZ_defence_network_tier_3 } }
+        88 = { add_dynamic_modifier = { modifier = BLZ_defence_network_tier_3 } }
+    }
+    else_if = {
+        limit = {
+            OR = {
+                has_country_flag = BLZ_defence_network_improved
+                has_completed_focus = BLZ_prepare_belmopan
+                has_completed_focus = BLZ_jungle_defence_training
+                has_completed_focus = BLZ_jungle_warfare_school
+                has_completed_focus = BLZ_civil_defence_committees
+                has_completed_focus = BLZ_integrated_defence_command
+            }
+        }
+        15 = { add_dynamic_modifier = { modifier = BLZ_defence_network_tier_2 } }
+        88 = { add_dynamic_modifier = { modifier = BLZ_defence_network_tier_2 } }
+    }
+    else = {
+        15 = { add_dynamic_modifier = { modifier = BLZ_defence_network_tier_1 } }
+        88 = { add_dynamic_modifier = { modifier = BLZ_defence_network_tier_1 } }
+    }
+
+    # Mopan line: zero or one tier.
+    if = {
+        limit = {
+            OR = {
+                has_country_flag = BLZ_mopan_line_advanced
+                has_completed_focus = BLZ_preemptive_border_garrison
+                has_completed_focus = BLZ_western_highway_redoubts
+            }
+        }
+        15 = { add_dynamic_modifier = { modifier = BLZ_mopan_line_tier_2 } }
+        88 = { add_dynamic_modifier = { modifier = BLZ_mopan_line_tier_2 } }
+    }
+    else_if = {
+        limit = {
+            OR = {
+                has_country_flag = BLZ_mopan_line_built
+                has_completed_focus = BLZ_fortify_mopan_border
+                has_completed_focus = BLZ_prepare_belmopan
+            }
+        }
+        15 = { add_dynamic_modifier = { modifier = BLZ_mopan_line_tier_1 } }
+        88 = { add_dynamic_modifier = { modifier = BLZ_mopan_line_tier_1 } }
+    }
+
+    # Distributed supply network: zero or one tier.
+    if = {
+        limit = {
+            OR = {
+                has_country_flag = BLZ_supply_network_advanced
+                has_completed_focus = BLZ_emergency_radio_network
+                has_completed_focus = BLZ_civilian_logistics_corps
+                has_completed_focus = BLZ_integrated_defence_command
+            }
+        }
+        15 = { add_dynamic_modifier = { modifier = BLZ_supply_network_tier_2 } }
+        88 = { add_dynamic_modifier = { modifier = BLZ_supply_network_tier_2 } }
+    }
+    else_if = {
+        limit = {
+            OR = {
+                has_country_flag = BLZ_supply_network_started
+                has_completed_focus = BLZ_disperse_reserve_stocks
+                has_completed_focus = BLZ_emergency_radio_network
+            }
+        }
+        15 = { add_dynamic_modifier = { modifier = BLZ_supply_network_tier_1 } }
+        88 = { add_dynamic_modifier = { modifier = BLZ_supply_network_tier_1 } }
+    }
+}
+
+TAD_BG_refresh_GUA_state_modifiers = {
+    89 = { TAD_BG_clear_GUA_state_modifiers = yes }
+
+    # Peten logistics: exactly one tier.
+    if = {
+        limit = {
+            OR = {
+                has_country_flag = GUA_forward_depots_built
+                has_country_flag = GUA_peten_forward_network_flag
+                has_completed_focus = GUA_forward_supply_depots
+                has_completed_focus = GUA_sustain_extended_campaign
+            }
+        }
+        89 = { add_dynamic_modifier = { modifier = GUA_peten_logistics_tier_3 } }
+    }
+    else_if = {
+        limit = {
+            OR = {
+                has_country_flag = GUA_peten_logistics_improved_flag
+                has_completed_focus = GUA_peten_logistics_corps
+                has_completed_focus = GUA_peten_engineer_battalions
+            }
+        }
+        89 = { add_dynamic_modifier = { modifier = GUA_peten_logistics_tier_2 } }
+    }
+    else = { 89 = { add_dynamic_modifier = { modifier = GUA_peten_logistics_tier_1 } } }
+
+    # Campaign support: zero or one tier.
+    if = {
+        limit = {
+            OR = {
+                has_country_flag = GUA_campaign_support_advanced
+                has_completed_focus = GUA_sustain_extended_campaign
+                has_war_with = BLZ
+            }
+        }
+        89 = { add_dynamic_modifier = { modifier = GUA_campaign_support_tier_2 } }
+    }
+    else_if = {
+        limit = {
+            OR = {
+                has_country_flag = GUA_campaign_support_started
+                has_completed_focus = GUA_peten_field_hospitals
+                has_completed_focus = GUA_requisition_transport_fleet
+            }
+        }
+        89 = { add_dynamic_modifier = { modifier = GUA_campaign_support_tier_1 } }
+    }
+
+    # Border command: zero or one tier.
+    if = {
+        limit = {
+            OR = {
+                has_country_flag = GUA_border_command_advanced
+                has_completed_focus = GUA_limited_border_operation
+                has_completed_focus = GUA_operation_national_integrity
+            }
+        }
+        89 = { add_dynamic_modifier = { modifier = GUA_border_command_tier_2 } }
+    }
+    else_if = {
+        limit = {
+            OR = {
+                has_country_flag = GUA_border_command_started
+                has_completed_focus = GUA_adjacency_zone_command
+                has_completed_focus = GUA_militarise_adjacency_zone
+            }
+        }
+        89 = { add_dynamic_modifier = { modifier = GUA_border_command_tier_1 } }
+    }
+}
+
+# -----------------------------------------------------------------------------
+# COMPATIBILITY ENTRY POINTS USED BY EXISTING FOCUSES/EVENTS
+# -----------------------------------------------------------------------------
+TAD_BG_apply_initial_BLZ_state_modifiers = { TAD_BG_refresh_BLZ_state_modifiers = yes }
+TAD_BG_apply_initial_GUA_state_modifiers = { TAD_BG_refresh_GUA_state_modifiers = yes }
+
+TAD_BG_apply_belmopan_fortification = {
+    set_country_flag = BLZ_defence_network_improved
+    set_country_flag = BLZ_mopan_line_built
+    TAD_BG_refresh_BLZ_state_modifiers = yes
+}
+TAD_BG_apply_jungle_defence = {
+    set_country_flag = BLZ_defence_network_improved
+    TAD_BG_refresh_BLZ_state_modifiers = yes
+}
+TAD_BG_apply_total_defence = {
+    set_country_flag = BLZ_total_defence_activated
+    TAD_BG_refresh_BLZ_state_modifiers = yes
+}
+TAD_BG_apply_last_line = {
+    set_country_flag = BLZ_last_line_activated
+    TAD_BG_refresh_BLZ_state_modifiers = yes
+}
+TAD_BG_apply_civil_defence = {
+    set_country_flag = BLZ_defence_network_improved
+    TAD_BG_refresh_BLZ_state_modifiers = yes
+}
+TAD_BG_apply_distributed_stockpiles = {
+    set_country_flag = BLZ_supply_network_started
+    TAD_BG_refresh_BLZ_state_modifiers = yes
+}
+TAD_BG_apply_emergency_comms = {
+    set_country_flag = BLZ_supply_network_advanced
+    TAD_BG_refresh_BLZ_state_modifiers = yes
+}
+TAD_BG_apply_sarstoon_denial = {
+    set_country_flag = BLZ_mopan_line_advanced
+    TAD_BG_refresh_BLZ_state_modifiers = yes
+}
+TAD_BG_apply_continuity = {
+    set_country_flag = BLZ_defence_network_improved
+    TAD_BG_refresh_BLZ_state_modifiers = yes
+}
+
+TAD_BG_set_peten_logistics_improved = {
+    set_country_flag = GUA_peten_logistics_improved_flag
+    TAD_BG_refresh_GUA_state_modifiers = yes
+}
+TAD_BG_set_peten_forward_network = {
+    set_country_flag = GUA_peten_forward_network_flag
+    TAD_BG_refresh_GUA_state_modifiers = yes
+}

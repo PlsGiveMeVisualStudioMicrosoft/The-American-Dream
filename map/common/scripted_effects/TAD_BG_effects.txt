@@ -1,0 +1,107 @@
+TAD_BG_clamp_tension = {
+	BLZ = {
+		if = { limit = { check_variable = { BLZ_GUA_tension > 100 } } set_variable = { BLZ_GUA_tension = 100 } }
+		if = { limit = { check_variable = { BLZ_GUA_tension < 0 } } set_variable = { BLZ_GUA_tension = 0 } }
+	}
+}
+
+TAD_BG_clamp_metrics = {
+	BLZ = {
+		if = { limit = { check_variable = { BLZ_international_support > 100 } } set_variable = { BLZ_international_support = 100 } }
+		if = { limit = { check_variable = { BLZ_international_support < 0 } } set_variable = { BLZ_international_support = 0 } }
+		if = { limit = { check_variable = { BLZ_border_readiness > 100 } } set_variable = { BLZ_border_readiness = 100 } }
+		if = { limit = { check_variable = { BLZ_border_readiness < 0 } } set_variable = { BLZ_border_readiness = 0 } }
+		if = { limit = { check_variable = { BLZ_public_confidence > 100 } } set_variable = { BLZ_public_confidence = 100 } }
+		if = { limit = { check_variable = { BLZ_public_confidence < 0 } } set_variable = { BLZ_public_confidence = 0 } }
+	}
+	GUA = {
+		if = { limit = { check_variable = { GUA_claim_momentum > 100 } } set_variable = { GUA_claim_momentum = 100 } }
+		if = { limit = { check_variable = { GUA_claim_momentum < 0 } } set_variable = { GUA_claim_momentum = 0 } }
+		if = { limit = { check_variable = { GUA_military_pressure > 100 } } set_variable = { GUA_military_pressure = 100 } }
+		if = { limit = { check_variable = { GUA_military_pressure < 0 } } set_variable = { GUA_military_pressure = 0 } }
+		if = { limit = { check_variable = { GUA_domestic_support > 100 } } set_variable = { GUA_domestic_support = 100 } }
+		if = { limit = { check_variable = { GUA_domestic_support < 0 } } set_variable = { GUA_domestic_support = 0 } }
+	}
+}
+
+TAD_BG_apply_initial_BLZ_state_modifiers = {
+	15 = { add_dynamic_modifier = { modifier = BLZ_homeland_defence_state_modifier } }
+	88 = { add_dynamic_modifier = { modifier = BLZ_homeland_defence_state_modifier } }
+}
+
+TAD_BG_apply_initial_GUA_state_modifiers = {
+	89 = { add_dynamic_modifier = { modifier = GUA_peten_bottleneck_state_modifier } }
+}
+
+TAD_BG_apply_belmopan_fortification = { 88 = { add_dynamic_modifier = { modifier = BLZ_belmopan_fortified_state_modifier } } }
+TAD_BG_apply_jungle_defence = { 15 = { add_dynamic_modifier = { modifier = BLZ_jungle_defence_state_modifier } } }
+TAD_BG_apply_total_defence = {
+	15 = { add_dynamic_modifier = { modifier = BLZ_total_defence_state_modifier } }
+	88 = { add_dynamic_modifier = { modifier = BLZ_total_defence_state_modifier } }
+}
+TAD_BG_apply_last_line = {
+	15 = { add_dynamic_modifier = { modifier = BLZ_last_line_state_modifier } }
+	88 = { add_dynamic_modifier = { modifier = BLZ_last_line_state_modifier } }
+}
+TAD_BG_apply_civil_defence = {
+	15 = { add_dynamic_modifier = { modifier = BLZ_civil_defence_state_modifier } }
+	88 = { add_dynamic_modifier = { modifier = BLZ_civil_defence_state_modifier } }
+}
+TAD_BG_apply_distributed_stockpiles = {
+	15 = { add_dynamic_modifier = { modifier = BLZ_distributed_stockpiles_state_modifier } }
+	88 = { add_dynamic_modifier = { modifier = BLZ_distributed_stockpiles_state_modifier } }
+}
+TAD_BG_apply_emergency_comms = {
+	15 = { add_dynamic_modifier = { modifier = BLZ_emergency_comms_state_modifier } }
+	88 = { add_dynamic_modifier = { modifier = BLZ_emergency_comms_state_modifier } }
+}
+TAD_BG_apply_sarstoon_denial = { 15 = { add_dynamic_modifier = { modifier = BLZ_sarstoon_denial_state_modifier } } }
+TAD_BG_apply_continuity = { 88 = { add_dynamic_modifier = { modifier = BLZ_continuity_state_modifier } } }
+
+TAD_BG_set_peten_logistics_improved = {
+	89 = {
+		remove_dynamic_modifier = { modifier = GUA_peten_bottleneck_state_modifier }
+		remove_dynamic_modifier = { modifier = GUA_peten_forward_network_state_modifier }
+		add_dynamic_modifier = { modifier = GUA_peten_improved_state_modifier }
+	}
+}
+TAD_BG_set_peten_forward_network = {
+	89 = {
+		remove_dynamic_modifier = { modifier = GUA_peten_bottleneck_state_modifier }
+		remove_dynamic_modifier = { modifier = GUA_peten_improved_state_modifier }
+		add_dynamic_modifier = { modifier = GUA_peten_forward_network_state_modifier }
+	}
+}
+
+TAD_BG_refresh_BLZ_state_modifiers = {
+	remove_ideas = BLZ_homeland_defence_doctrine
+	remove_ideas = BLZ_belmopan_fortified
+	remove_ideas = BLZ_jungle_defence_network
+	remove_ideas = BLZ_total_defence
+	remove_ideas = BLZ_last_line_of_defence
+	TAD_BG_apply_initial_BLZ_state_modifiers = yes
+	if = { limit = { has_completed_focus = BLZ_prepare_belmopan } TAD_BG_apply_belmopan_fortification = yes }
+	if = { limit = { OR = { has_completed_focus = BLZ_jungle_defence_training has_completed_focus = BLZ_jungle_warfare_school } } TAD_BG_apply_jungle_defence = yes }
+	if = { limit = { has_completed_focus = BLZ_total_defence_focus } TAD_BG_apply_total_defence = yes }
+	if = { limit = { OR = { has_completed_focus = BLZ_hold_until_world_listens has_country_flag = BLZ_GUA_war_started } } TAD_BG_apply_last_line = yes }
+	if = { limit = { has_completed_focus = BLZ_civil_defence_committees } TAD_BG_apply_civil_defence = yes }
+	if = { limit = { has_completed_focus = BLZ_disperse_reserve_stocks } TAD_BG_apply_distributed_stockpiles = yes }
+	if = { limit = { has_completed_focus = BLZ_emergency_radio_network } TAD_BG_apply_emergency_comms = yes }
+	if = { limit = { has_completed_focus = BLZ_hold_the_sarstoon } TAD_BG_apply_sarstoon_denial = yes }
+	if = { limit = { has_completed_focus = BLZ_continuity_of_government } TAD_BG_apply_continuity = yes }
+}
+
+TAD_BG_refresh_GUA_state_modifiers = {
+	remove_ideas = GUA_peten_logistical_bottleneck
+	remove_ideas = GUA_peten_logistics_improved
+	remove_ideas = GUA_forward_supply_network
+	if = {
+		limit = { OR = { has_completed_focus = GUA_forward_supply_depots has_country_flag = GUA_forward_depots_built } }
+		TAD_BG_set_peten_forward_network = yes
+	}
+	else_if = {
+		limit = { has_completed_focus = GUA_peten_logistics_corps }
+		TAD_BG_set_peten_logistics_improved = yes
+	}
+	else = { 89 = { add_dynamic_modifier = { modifier = GUA_peten_bottleneck_state_modifier } } }
+}

@@ -1,0 +1,246 @@
+ideas = {
+	country = {
+		# -----------------------------------------------------------------
+		# Belize
+		# -----------------------------------------------------------------
+		BLZ_small_but_sovereign = {
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.05
+				recruitable_population_factor = -0.01
+			}
+		}
+
+		BLZ_tourism_dependent_economy = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.03
+			}
+		}
+
+		BLZ_guatemalan_claim = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.08
+				army_defence_factor = 0.05
+			}
+		}
+
+		BLZ_compact_defence_force = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.08
+				training_time_army_factor = -0.10
+				recruitable_population_factor = -0.01
+			}
+		}
+
+		BLZ_commonwealth_caricom_links = {
+			picture = generic_volunteer_expedition_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.03
+				trade_opinion_factor = 0.10
+			}
+		}
+
+		BLZ_colonial_institutions = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.02
+			}
+		}
+
+		BLZ_resilient_tourism_sector = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+
+		BLZ_professional_bdf = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.12
+				army_defence_factor = 0.08
+				training_time_army_factor = -0.10
+				experience_gain_army_factor = 0.10
+			}
+		}
+
+		BLZ_total_defence = {
+			picture = generic_morale_bonus
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.12
+				army_defence_factor = 0.12
+				recruitable_population_factor = 0.01
+				training_time_army_factor = -0.10
+			}
+		}
+
+		BLZ_cross_border_cooperation = {
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		BLZ_constitutional_reform_process = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+
+		# -----------------------------------------------------------------
+		# Guatemala
+		# -----------------------------------------------------------------
+		GUA_pact_of_corrupt = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.08
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		GUA_fragmented_congress = {
+			picture = generic_political_reform
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.03
+			}
+		}
+
+		GUA_remittance_economy = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.03
+			}
+		}
+
+		GUA_legacy_internal_conflict = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.07
+				army_org_factor = -0.05
+				recruitable_population_factor = -0.01
+			}
+		}
+
+		GUA_historic_claim_to_belize = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				political_power_factor = -0.03
+				justify_war_goal_time = -0.10
+			}
+		}
+
+		GUA_underfunded_security_forces = {
+			picture = generic_army_problems
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.08
+				training_time_army_factor = 0.10
+				industrial_capacity_factory = -0.03
+			}
+		}
+
+		GUA_reform_coalition = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.05
+			}
+		}
+
+		GUA_clean_government = {
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.12
+				consumer_goods_factor = -0.03
+				research_speed_factor = 0.03
+			}
+		}
+
+		GUA_rural_inclusion = {
+			picture = generic_manpower_bonus
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				production_speed_infrastructure_factor = 0.08
+				recruitable_population_factor = 0.005
+			}
+		}
+
+		GUA_professional_armed_forces = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.10
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				training_time_army_factor = -0.10
+			}
+		}
+
+		GUA_kaibil_border_deployment = {
+			picture = generic_army_doctrines
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.08
+				war_support_factor = 0.04
+				stability_factor = -0.02
+			}
+		}
+
+		GUA_new_democratic_compact = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = 0.10
+				research_speed_factor = 0.03
+			}
+		}
+
+		GUA_joint_development_zone = {
+			picture = generic_industrial_concern_1
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.03
+			}
+		}
+	}
+}

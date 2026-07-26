@@ -1,0 +1,31 @@
+characters = {
+	BLZ_John_Briceno = {
+		name = BLZ_John_Briceno
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_BLZ_John_Briceno_2025"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			traits = { BLZ_pragmatic_modernizer }
+			expire = "2083.1.1.1"
+			id = -1
+		}
+	}
+
+	GUA_Bernardo_Arevalo = {
+		name = GUA_Bernardo_Arevalo
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_GUA_Bernardo_Arevalo_2025"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			traits = { GUA_anti_corruption_reformer }
+			expire = "2083.1.1.1"
+			id = -1
+		}
+	}
+}

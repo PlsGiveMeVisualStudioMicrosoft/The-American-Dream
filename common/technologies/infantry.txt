@@ -3609,4 +3609,28 @@ technologies = {
 			factor = 1
 		}
 	}
+
+	TAD_belize_territorial_tech = {
+		allow = { always = no }
+		enable_subunits = { belize_territorial_infantry }
+	}
+
+	TAD_foreign_volunteer_tech = {
+		allow = { always = no }
+		enable_subunits = {
+			bdf_security_infantry
+			belize_diaspora_infantry
+			jamaican_volunteer_infantry
+			guyanese_volunteer_infantry
+			trinidad_security_infantry
+			honduran_volunteer_infantry
+			dominican_security_infantry
+			salvadoran_veteran_infantry
+			cuban_internationalist_infantry
+			nicaraguan_volunteer_infantry
+			mexican_contract_infantry
+			colombian_pmc_infantry
+		}
+	}
+
 }

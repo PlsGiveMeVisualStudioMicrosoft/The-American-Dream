@@ -1,0 +1,153 @@
+on_actions = {
+    # Modifier refreshes are monthly only. Focuses/events call the refresh
+    # effects immediately, so daily reapplication is unnecessary and noisy.
+    on_monthly_BLZ = {
+        effect = {
+            if = {
+                limit = { tag = BLZ }
+                TAD_BG_refresh_BLZ_state_modifiers = yes
+                set_division_template_lock = { division_template = "BDF Regular Battalion" is_locked = yes }
+                set_division_force_allow_recruiting = { division_template = "BDF Regular Battalion" force_allow_recruiting = yes }
+                set_division_template_lock = { division_template = "Belize Territorial Defence Group" is_locked = yes }
+                set_division_force_allow_recruiting = { division_template = "Belize Territorial Defence Group" force_allow_recruiting = yes }
+                set_division_template_lock = { division_template = "BDF Volunteer Battalion" is_locked = yes }
+                set_division_force_allow_recruiting = { division_template = "BDF Volunteer Battalion" force_allow_recruiting = yes }
+            }
+
+            if = {
+                limit = { tag = BLZ check_variable = { BLZ_GUA_tension > 39 } NOT = { has_country_flag = BLZ_tension_40_notified } }
+                set_country_flag = BLZ_tension_40_notified
+                country_event = { id = tad_bg.100 hours = 6 }
+            }
+            if = {
+                limit = { tag = BLZ check_variable = { BLZ_GUA_tension > 69 } NOT = { has_country_flag = BLZ_tension_70_notified } }
+                set_country_flag = BLZ_tension_70_notified
+                country_event = { id = tad_bg.101 hours = 6 }
+            }
+            if = {
+                limit = { tag = BLZ check_variable = { BLZ_GUA_tension > 89 } NOT = { has_country_flag = BLZ_tension_90_notified } }
+                set_country_flag = BLZ_tension_90_notified
+                country_event = { id = tad_bg.102 hours = 6 }
+            }
+
+            # Initialise the actual war system once.
+            if = {
+                limit = { tag = BLZ has_war_with = GUA NOT = { has_country_flag = BLZ_GUA_war_started } }
+                set_country_flag = BLZ_GUA_war_started
+                set_variable = { BLZ_GUA_war_months = 0 }
+                add_ideas = BLZ_wartime_mobilisation
+                TAD_BG_apply_last_line = yes
+                country_event = { id = tad_bg.110 hours = 6 }
+                GUA = {
+                    set_country_flag = GUA_Belize_war_started
+                    add_ideas = GUA_operation_belize_offensive
+                    set_country_flag = GUA_campaign_support_advanced
+                    set_country_flag = GUA_border_command_advanced
+                    TAD_BG_refresh_GUA_state_modifiers = yes
+                }
+            }
+            if = { limit = { tag = BLZ has_war_with = GUA } add_to_variable = { BLZ_GUA_war_months = 1 } }
+
+            # No automatic or AI-scripted white peace. The war ends only
+            # through capitulation or a future player-controlled settlement.
+
+            # Clean up wartime systems after peace.
+            if = {
+                limit = {
+                    tag = BLZ
+                    has_country_flag = BLZ_GUA_war_started
+                    NOT = { has_war_with = GUA }
+                    NOT = { has_country_flag = BLZ_BG_war_cleanup_done }
+                }
+                set_country_flag = BLZ_BG_war_cleanup_done
+                remove_ideas = BLZ_wartime_mobilisation
+                GUA = {
+                    remove_ideas = GUA_operation_belize_offensive
+                    clr_country_flag = GUA_campaign_support_advanced
+                    clr_country_flag = GUA_border_command_advanced
+                    TAD_BG_refresh_GUA_state_modifiers = yes
+                }
+            }
+        }
+    }
+
+    on_monthly_GUA = {
+        effect = {
+            if = {
+                limit = { tag = GUA }
+                TAD_BG_refresh_GUA_state_modifiers = yes
+                set_division_template_lock = { division_template = "Guatemalan Infantry Brigade" is_locked = yes }
+                set_division_force_allow_recruiting = { division_template = "Guatemalan Infantry Brigade" force_allow_recruiting = yes }
+                set_division_template_lock = { division_template = "Mariscal Zavala Strategic Brigade" is_locked = yes }
+                set_division_force_allow_recruiting = { division_template = "Mariscal Zavala Strategic Brigade" force_allow_recruiting = yes }
+                set_division_template_lock = { division_template = "Guatemalan Mountain Brigade" is_locked = yes }
+                set_division_force_allow_recruiting = { division_template = "Guatemalan Mountain Brigade" force_allow_recruiting = yes }
+                set_division_template_lock = { division_template = "Kaibil Special Operations Group" is_locked = yes }
+                set_division_force_allow_recruiting = { division_template = "Kaibil Special Operations Group" force_allow_recruiting = yes }
+            }
+
+            # Peace-time pressure cycle.
+            if = {
+                limit = { tag = GUA is_ai = yes NOT = { has_war_with = BLZ } BLZ = { check_variable = { BLZ_GUA_tension < 40 } } }
+                random_list = {
+                    30 = { }
+                    55 = {
+                        BLZ = { add_to_variable = { BLZ_GUA_tension = 3 } country_event = { id = tad_bg.130 hours = 6 } }
+                        add_to_variable = { GUA_claim_momentum = 3 }
+                        add_to_variable = { GUA_military_pressure = 2 }
+                        TAD_BG_clamp_tension = yes
+                        TAD_BG_clamp_metrics = yes
+                    }
+                    15 = { BLZ = { subtract_from_variable = { BLZ_GUA_tension = 2 } } add_stability = 0.005 TAD_BG_clamp_tension = yes }
+                }
+            }
+            if = {
+                limit = { tag = GUA is_ai = yes NOT = { has_war_with = BLZ } BLZ = { check_variable = { BLZ_GUA_tension > 39 } check_variable = { BLZ_GUA_tension < 70 } } }
+                random_list = {
+                    20 = { }
+                    65 = {
+                        BLZ = { add_to_variable = { BLZ_GUA_tension = 5 } country_event = { id = tad_bg.131 hours = 6 } }
+                        add_to_variable = { GUA_claim_momentum = 4 }
+                        add_to_variable = { GUA_military_pressure = 5 }
+                        add_war_support = 0.005
+                        TAD_BG_clamp_tension = yes
+                        TAD_BG_clamp_metrics = yes
+                    }
+                    15 = { BLZ = { subtract_from_variable = { BLZ_GUA_tension = 2 } } add_stability = 0.005 TAD_BG_clamp_tension = yes }
+                }
+            }
+            if = {
+                limit = { tag = GUA is_ai = yes NOT = { has_war_with = BLZ } BLZ = { check_variable = { BLZ_GUA_tension > 69 } check_variable = { BLZ_GUA_tension < 90 } } }
+                random_list = {
+                    10 = { }
+                    75 = {
+                        BLZ = { add_to_variable = { BLZ_GUA_tension = 6 } country_event = { id = tad_bg.131 hours = 6 } }
+                        add_to_variable = { GUA_claim_momentum = 5 }
+                        add_to_variable = { GUA_military_pressure = 7 }
+                        add_war_support = 0.01
+                        TAD_BG_clamp_tension = yes
+                        TAD_BG_clamp_metrics = yes
+                    }
+                    15 = { add_to_variable = { GUA_military_pressure = 5 } army_experience = 2 TAD_BG_clamp_metrics = yes }
+                }
+            }
+            if = {
+                limit = {
+                    tag = GUA
+                    is_ai = yes
+                    NOT = { has_war_with = BLZ }
+                    has_country_flag = GUA_can_issue_belize_ultimatum
+                    NOT = { has_country_flag = GUA_ultimatum_sent }
+                    BLZ = { check_variable = { BLZ_GUA_tension > 89 } }
+                }
+                random_list = {
+                    25 = { }
+                    75 = {
+                        set_country_flag = GUA_ultimatum_sent
+                        BLZ = { country_event = { id = tad_bg.50 hours = 6 } }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+﻿l_english:
+ TAD_HAI_BLZ_assistance_category:0 "Caribbean Reciprocal Assistance"
+ TAD_HAI_BLZ_assistance_category_desc:0 "At §Y40 Haitian escalation§!, Haiti may request Belizean assistance regardless of Belize–Guatemala tension. If Belize helps, Haiti later repays the same class of aid through its own AI-controlled decision once Haiti is at peace and Belize is fighting Guatemala."
+ HAI_request_belizean_assistance:0 "Request Belizean Assistance"
+ HAI_request_belizean_assistance_desc:0 "Ask Belize for weapons or a BDF security detachment once the Haitian crisis reaches §Y40 escalation§!. Belize–Guatemala tension does not restrict the request."
+ HAI_honour_belizean_troop_debt:0 "Honour the Troop Commitment to Belize"
+ HAI_honour_belizean_troop_debt_desc:0 "Dispatch the Haitian Solidarity Brigade to Belize. Additional Belizean help during Haiti's crisis increases the equipment package accompanying the brigade."
+ HAI_honour_belizean_arms_debt:0 "Repay Belize with Arms"
+ HAI_honour_belizean_arms_debt_desc:0 "Return military equipment to Belize. The shipment varies with Haiti's recovery and grows if Belize intervened a second time."
+
+ TAD_HAI_military_assistance:0 "Military Assistance"
+ TAD_HAI_emergency_assistance:0 "Emergency Military Assistance"
+ TAD_HAI_emergency_reinforcement:0 "BDF Emergency Reinforcement"
+ TAD_BLZ_honoured_assistance_agreement:0 "Honoured Our Assistance Agreement"
+
+ tad_bg.300.t:0 "A Call from Port-au-Prince"
+ tad_bg.300.d:0 "Haiti requests assistance during its security crisis. A material shipment would create an obligation to return arms later. Deploying BDF personnel would create a stronger obligation: Haiti would send troops if Belize later faced war."
+ tad_bg.300.a:0 "Send weapons and support equipment."
+ tad_bg.300.b:0 "Deploy a BDF security detachment."
+ tad_bg.300.c:0 "We cannot weaken our own defences."
+
+ tad_bg.301.t:0 "Belizean Arms Reach Port-au-Prince"
+ tad_bg.301.d:0 "Crates of Belizean rifles and support equipment have been unloaded and distributed to government security forces. Belmopan has asked for no immediate payment, but both governments understand that this assistance creates a future obligation."
+ tad_bg.301.a:0 "Record the shipment and put it into service."
+
+ tad_bg.302.t:0 "A BDF Detachment Arrives"
+ tad_bg.302.d:0 "A one-thousand-person Belizean security detachment has arrived in Port-au-Prince. Its two light-infantry elements and engineer company are ready for urban and jungle security duties. Haiti has accepted a reciprocal obligation to provide troops if Belize is later attacked."
+ tad_bg.302.a:0 "Deploy them to the Haitian theatre."
+ TAD_HAI_BDF_DETACHMENT_CREATED_TT:0 "Creates the §YBDF Caribbean Security Detachment§! in Port-au-Prince:\n- approximately §Y1,000 personnel§!\n- §Y4 combat width§!\n- Engineer Company\n- Regular training\n- §Y90% equipment strength§!"
+
+ tad_bg.303.t:0 "Belize Declines"
+ tad_bg.303.d:0 "Belmopan argues that its own exposed border prevents it from providing meaningful assistance. Haiti must seek support elsewhere."
+ tad_bg.303.a:0 "We will remember the refusal."
+
+ tad_bg.310.t:0 "The Haitian Solidarity Brigade Arrives"
+ tad_bg.310.d:0 "Haiti has honoured the troop commitment made during its own crisis. The Haitian Solidarity Brigade has landed at Belmopan with §Y87% equipment strength§!. Extra material accompanying it: §Y[?HAI.HAI_belize_troop_bonus_rifles|0] rifles§! and §Y[?HAI.HAI_belize_troop_bonus_support|0] support equipment§!."
+ tad_bg.310.a:0 "Haiti has kept its word."
+ TAD_HAI_SOLIDARITY_BRIGADE_CREATED_TT:0 "Creates the §YHaitian Solidarity Brigade§! in Belmopan:\n- 4 infantry battalions\n- §Y8 combat width§!\n- Engineer Company\n- Regular training\n- §Y87% equipment strength§!"
+
+ tad_bg.311.t:0 "Haiti Repays Its Material Debt"
+ tad_bg.311.d:0 "Haiti has honoured the earlier assistance agreement. The shipment contains §Y[?HAI.HAI_belize_repayment_rifles|0] rifles§! and §Y[?HAI.HAI_belize_repayment_support|0] support equipment§!. Its size reflects both Haiti's recovery and the scale of Belize's earlier commitment."
+ tad_bg.311.a:0 "Unload every crate."
+ tad_bg.312.t:0 "The Caribbean Agreement Is Honoured"
+ tad_bg.312.d:0 "Haiti has fulfilled the reciprocal obligation created during the earlier crisis. The decision carries real cost, but it demonstrates that regional solidarity can survive beyond speeches and communiques."
+ tad_bg.312.a:0 "A promise repaid."
+
+ tad_bg.320.t:0 "Cap-Haitien Has Fallen"
+ tad_bg.320.d:0 "Haitian authorities report that Cap-Haitien has fallen out of government control. The earlier Belizean package helped, but the northern collapse now threatens supply routes, civilian evacuations and the legitimacy of the Haitian government. Port-au-Prince asks whether Belize can intervene a second time. Any new commitment will increase Haiti's eventual repayment to Belize."
+ tad_bg.320.a:0 "Launch an emergency weapons airlift."
+ tad_bg.320.b:0 "Send a BDF reinforcement company."
+ tad_bg.320.c:0 "Belize can do no more."
+
+ tad_bg.321.t:0 "Emergency Belizean Airlift Arrives"
+ tad_bg.321.d:0 "A second Belizean shipment has reached Port-au-Prince despite the loss of Cap-Haitien. The crates contain rifles, engineering stores and support equipment intended to prevent the northern collapse from spreading. Haiti's future obligation to Belize has grown."
+ tad_bg.321.a:0 "Distribute the emergency shipment."
+
+ tad_bg.322.t:0 "BDF Reinforcements Reach Haiti"
+ tad_bg.322.d:0 "Belize has reinforced its existing mission with an additional BDF company. The small formation cannot reverse the crisis alone, but it gives the Haitian government another disciplined unit for protecting roads, depots and evacuation corridors. Haiti now owes Belize substantially greater assistance."
+ tad_bg.322.a:0 "Attach them to the Belizean mission."
+ TAD_HAI_BDF_REINFORCEMENT_CREATED_TT:0 "Creates the §YBDF Emergency Reinforcement Company§! in Port-au-Prince with approximately §Y500 personnel§! and §Y85% equipment strength§!."
+
+ tad_bg.323.t:0 "Belize Cannot Reinforce the Mission"
+ tad_bg.323.d:0 "Belmopan expresses alarm at the fall of Cap-Haitien but refuses a second commitment. Belizean officials cite their own border crisis and the danger of stripping the country of its remaining reserves."
+ tad_bg.323.a:0 "We are on our own."
+
+ tad_bg.324.t:0 "The BDF Mission Comes to an End"
+ tad_bg.324.d:0 "Haiti's open conflict has ended. The Belizean personnel who served through the crisis are preparing to return home. Their experience, losses and equipment condition will reflect the state in which Haiti emerged from the war."
+ tad_bg.324.a:0 "Thank them before they depart."
+
+ tad_bg.325.t:0 "The Haiti Veterans Return"
+ tad_bg.325.d:0 "The BDF Caribbean Security Detachment has returned to Belmopan after a successful Haitian mission. Its personnel are battle-tested, its engineering teams have extensive field experience, and most of its equipment has survived the deployment."
+ tad_bg.325.a:0 "Their experience will strengthen Belize."
+ tad_bg.326.t:0 "The BDF Detachment Returns Home"
+ tad_bg.326.d:0 "The Belizean mission has returned from Haiti. The detachment is intact but worn by months of security operations, convoy duty and urban fighting. It will require refitting before the Guatemalan crisis reaches its final stage."
+ tad_bg.326.a:0 "Begin the refit immediately."
+ tad_bg.327.t:0 "A Battered Mission Returns"
+ tad_bg.327.d:0 "The BDF personnel returning from Haiti carry hard-earned experience, but the mission has suffered losses and abandoned equipment. Belize regains the formation, though it is far from full strength."
+ tad_bg.327.a:0 "Welcome the survivors home."

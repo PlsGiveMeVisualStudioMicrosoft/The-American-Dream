@@ -1,0 +1,71 @@
+##############################################################################
+# BELIZE - 2025 ORDER OF BATTLE
+# Locked templates prevent the AI from decommissioning the only useful force
+# structures. Emergency decision units spawn at 1% equipment and draw their
+# manpower/equipment from Belize normally after creation.
+##############################################################################
+
+division_template = {
+    name = "BDF Regular Battalion"
+    is_locked = yes
+    force_allow_recruiting = yes
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+    }
+    priority = 3
+}
+
+division_template = {
+    name = "Belize Territorial Defence Group"
+    is_locked = yes
+    force_allow_recruiting = yes
+    regiments = {
+        militia = { x = 0 y = 0 }
+    }
+    priority = 2
+}
+
+division_template = {
+    name = "BDF Volunteer Battalion"
+    is_locked = yes
+    force_allow_recruiting = yes
+    regiments = {
+        militia = { x = 0 y = 0 }
+    }
+    priority = 2
+}
+
+units = {
+    division = {
+        name = "1st Infantry Battalion, BDF"
+        location = 2140
+        division_template = "BDF Regular Battalion"
+        start_experience_factor = 0.35
+        start_equipment_factor = 0.72
+    }
+    division = {
+        name = "2nd Infantry Battalion, BDF"
+        location = 14954
+        division_template = "BDF Regular Battalion"
+        start_experience_factor = 0.30
+        start_equipment_factor = 0.68
+    }
+    division = {
+        name = "Northern Territorial Group"
+        location = 1655
+        division_template = "Belize Territorial Defence Group"
+        start_experience_factor = 0.15
+        start_equipment_factor = 0.42
+    }
+    division = {
+        name = "Southern Territorial Group"
+        location = 4783
+        division_template = "Belize Territorial Defence Group"
+        start_experience_factor = 0.12
+        start_equipment_factor = 0.38
+    }
+}

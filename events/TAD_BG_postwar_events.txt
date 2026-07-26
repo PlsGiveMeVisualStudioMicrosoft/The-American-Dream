@@ -1,0 +1,82 @@
+add_namespace = tad_bg_postwar
+
+country_event = {
+    id = tad_bg_postwar.1
+    title = tad_bg_postwar.1.t
+    desc = tad_bg_postwar.1.d
+    picture = GFX_report_event_generic_political_reform
+    is_triggered_only = yes
+    option = { name = tad_bg_postwar.1.a add_stability = 0.01 }
+}
+
+country_event = {
+    id = tad_bg_postwar.2
+    title = tad_bg_postwar.2.t
+    desc = tad_bg_postwar.2.d
+    picture = GFX_report_event_generic_political_reform
+    is_triggered_only = yes
+    option = { name = tad_bg_postwar.2.a add_political_power = 15 }
+}
+
+country_event = {
+    id = tad_bg_postwar.3
+    title = tad_bg_postwar.3.t
+    desc = tad_bg_postwar.3.d
+    picture = GFX_report_event_generic_diplomatic_treaty
+    is_triggered_only = yes
+    option = {
+        name = tad_bg_postwar.3.a
+        ai_chance = { factor = 75 modifier = { factor = 0.5 has_war = yes } }
+        set_country_flag = GUA_postwar_trade_zone
+        add_opinion_modifier = { target = BLZ modifier = TAD_BG_postwar_partnership }
+        BLZ = {
+            set_country_flag = BLZ_postwar_trade_zone
+            add_opinion_modifier = { target = GUA modifier = TAD_BG_postwar_partnership }
+            subtract_from_variable = { BLZ_GUA_tension = 15 }
+            country_event = { id = tad_bg_postwar.4 hours = 6 }
+            TAD_BG_clamp_tension = yes
+        }
+        add_stability = 0.01
+    }
+    option = {
+        name = tad_bg_postwar.3.b
+        ai_chance = { factor = 25 }
+        BLZ = { add_to_variable = { BLZ_GUA_tension = 3 } country_event = { id = tad_bg_postwar.5 hours = 6 } TAD_BG_clamp_tension = yes }
+    }
+}
+
+country_event = {
+    id = tad_bg_postwar.4
+    title = tad_bg_postwar.4.t
+    desc = tad_bg_postwar.4.d
+    picture = GFX_report_event_generic_diplomatic_treaty
+    is_triggered_only = yes
+    option = { name = tad_bg_postwar.4.a add_stability = 0.02 add_political_power = 30 }
+}
+
+country_event = {
+    id = tad_bg_postwar.5
+    title = tad_bg_postwar.5.t
+    desc = tad_bg_postwar.5.d
+    picture = GFX_report_event_generic_political_reform
+    is_triggered_only = yes
+    option = { name = tad_bg_postwar.5.a add_to_variable = { BLZ_public_confidence = 2 } TAD_BG_clamp_metrics = yes }
+}
+
+country_event = {
+    id = tad_bg_postwar.6
+    title = tad_bg_postwar.6.t
+    desc = tad_bg_postwar.6.d
+    picture = GFX_report_event_generic_political_reform
+    is_triggered_only = yes
+    option = { name = tad_bg_postwar.6.a add_stability = 0.02 }
+}
+
+country_event = {
+    id = tad_bg_postwar.7
+    title = tad_bg_postwar.7.t
+    desc = tad_bg_postwar.7.d
+    picture = GFX_report_event_generic_political_reform
+    is_triggered_only = yes
+    option = { name = tad_bg_postwar.7.a add_stability = 0.02 }
+}

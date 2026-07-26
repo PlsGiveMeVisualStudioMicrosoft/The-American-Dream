@@ -1,0 +1,349 @@
+TAD_BG_dispute_category = {
+	BLZ_fund_icj_case = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		cost = 35
+		days_re_enable = 60
+		complete_effect = {
+			subtract_from_variable = { BLZ_GUA_tension = 4 }
+			add_to_variable = { BLZ_international_support = 5 }
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.60 hours = 6 } }
+		}
+		ai_will_do = { base = 75 }
+	}
+	BLZ_invite_oas_verification = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		cost = 50
+		days_re_enable = 90
+		complete_effect = {
+			subtract_from_variable = { BLZ_GUA_tension = 5 }
+			add_to_variable = { BLZ_international_support = 8 }
+			add_stability = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.61 hours = 6 } }
+		}
+		ai_will_do = { base = 90 }
+	}
+	BLZ_expand_adjacency_patrols = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		cost = 40
+		days_re_enable = 75
+		complete_effect = {
+			add_to_variable = { BLZ_GUA_tension = 5 }
+			add_to_variable = { BLZ_border_readiness = 7 }
+			army_experience = 5
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.40 hours = 6 } }
+		}
+		ai_will_do = { base = 35 modifier = { factor = 3 check_variable = { BLZ_GUA_tension > 59 } } }
+	}
+	BLZ_sovereignty_campaign = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		cost = 30
+		days_re_enable = 60
+		complete_effect = {
+			add_to_variable = { BLZ_GUA_tension = 3 }
+			add_to_variable = { BLZ_public_confidence = 7 }
+			add_stability = 0.01
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.62 hours = 6 } }
+		}
+		ai_will_do = { base = 45 }
+	}
+	BLZ_emergency_mobilization = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		available = { check_variable = { BLZ_GUA_tension > 59 } NOT = { has_country_flag = BLZ_total_defence_activated } }
+		cost = 75
+		fire_only_once = yes
+		complete_effect = {
+			add_to_variable = { BLZ_GUA_tension = 4 }
+			add_to_variable = { BLZ_border_readiness = 12 }
+			TAD_BG_apply_total_defence = yes
+			set_country_flag = BLZ_total_defence_activated
+			set_country_flag = BLZ_force_generation_unlocked
+			add_war_support = 0.05
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			GUA = { country_event = { id = tad_bg.63 hours = 6 } }
+		}
+		ai_will_do = { base = 180 }
+	}
+
+
+
+
+	GUA_fund_icj_memorial_decision = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		cost = 35
+		days_re_enable = 60
+		complete_effect = {
+			BLZ = { subtract_from_variable = { BLZ_GUA_tension = 3 } add_to_variable = { BLZ_international_support = 2 } }
+			add_to_variable = { GUA_claim_momentum = 4 }
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+			BLZ = { country_event = { id = tad_bg.70 hours = 6 } }
+		}
+		ai_will_do = { base = 35 }
+	}
+	GUA_accept_oas_verification = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		cost = 50
+		days_re_enable = 90
+		complete_effect = {
+			BLZ = { subtract_from_variable = { BLZ_GUA_tension = 5 } add_to_variable = { BLZ_international_support = 4 } country_event = { id = tad_bg.71 hours = 6 } }
+			add_stability = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+		}
+		ai_will_do = { base = 25 modifier = { factor = 4 has_stability < 0.35 } }
+	}
+	GUA_expand_peten_patrols = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		cost = 40
+		days_re_enable = 60
+		complete_effect = {
+			BLZ = { add_to_variable = { BLZ_GUA_tension = 6 } country_event = { id = tad_bg.41 hours = 6 } }
+			add_to_variable = { GUA_military_pressure = 8 }
+			add_to_variable = { GUA_claim_momentum = 3 }
+			army_experience = 5
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+		}
+		ai_will_do = { base = 105 modifier = { factor = 2 BLZ = { check_variable = { BLZ_GUA_tension > 39 } } } }
+	}
+	GUA_public_claim_campaign = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		cost = 30
+		days_re_enable = 50
+		complete_effect = {
+			BLZ = { add_to_variable = { BLZ_GUA_tension = 4 } country_event = { id = tad_bg.72 hours = 6 } }
+			add_to_variable = { GUA_claim_momentum = 7 }
+			add_to_variable = { GUA_domestic_support = 5 }
+			add_war_support = 0.01
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+		}
+		ai_will_do = { base = 120 }
+	}
+	GUA_deploy_kaibiles_to_border = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		available = { has_completed_focus = GUA_kaibil_readiness }
+		cost = 60
+		days_re_enable = 120
+		complete_effect = {
+			BLZ = { add_to_variable = { BLZ_GUA_tension = 8 } country_event = { id = tad_bg.73 hours = 6 } }
+			add_to_variable = { GUA_military_pressure = 12 }
+			add_timed_idea = { idea = GUA_kaibil_border_deployment days = 120 }
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+		}
+		ai_will_do = { base = 130 }
+	}
+	GUA_build_forward_supply_depots = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		available = { has_completed_focus = GUA_forward_supply_depots }
+		cost = 75
+		fire_only_once = yes
+		complete_effect = {
+			TAD_BG_set_peten_forward_network = yes
+			89 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_to_variable = { GUA_military_pressure = 10 }
+			BLZ = { add_to_variable = { BLZ_GUA_tension = 5 } country_event = { id = tad_bg.74 hours = 6 } }
+			TAD_BG_clamp_tension = yes
+			TAD_BG_clamp_metrics = yes
+		}
+		ai_will_do = { base = 160 }
+	}
+	GUA_issue_belize_ultimatum = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		available = {
+			has_country_flag = GUA_can_issue_belize_ultimatum
+			BLZ = { check_variable = { BLZ_GUA_tension > 84 } }
+			NOT = { has_war_with = BLZ }
+		}
+		cost = 100
+		fire_only_once = yes
+		complete_effect = { BLZ = { country_event = { id = tad_bg.50 hours = 6 } } }
+		ai_will_do = { base = 220 modifier = { factor = 0.2 has_stability < 0.30 } }
+	}
+
+BLZ_run_civil_defence_drill = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		available = { check_variable = { BLZ_GUA_tension > 34 } }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { BLZ_border_readiness = 4 } add_to_variable = { BLZ_public_confidence = 2 } army_experience = 3 GUA = { country_event = { id = tad_bg.400 hours = 6 } } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 100 }
+	}
+	BLZ_disperse_emergency_stockpiles = {
+		icon = GFX_decision_generic_industry
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_disperse_reserve_stocks }
+		available = { has_completed_focus = BLZ_disperse_reserve_stocks NOT = { has_country_flag = BLZ_stockpiles_distributed } }
+		cost = 45
+		fire_only_once = yes
+		complete_effect = { set_country_flag = BLZ_stockpiles_distributed TAD_BG_apply_distributed_stockpiles = yes add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 50 producer = BLZ } add_to_variable = { BLZ_border_readiness = 5 } GUA = { country_event = { id = tad_bg.401 hours = 6 } } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 150 }
+	}
+	BLZ_requisition_civilian_transport = {
+		icon = GFX_decision_generic_industry
+		allowed = { tag = BLZ }
+		available = { check_variable = { BLZ_GUA_tension > 49 } }
+		cost = 40
+		days_re_enable = 120
+		complete_effect = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 35 producer = BLZ } add_stability = -0.01 add_to_variable = { BLZ_border_readiness = 5 } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 80 modifier = { factor = 3 has_war_with = GUA } }
+	}
+	BLZ_establish_emergency_radio_net = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_emergency_radio_network }
+		available = { has_completed_focus = BLZ_emergency_radio_network NOT = { has_country_flag = BLZ_emergency_radio_active } }
+		cost = 35
+		fire_only_once = yes
+		complete_effect = { set_country_flag = BLZ_emergency_radio_active TAD_BG_apply_emergency_comms = yes add_to_variable = { BLZ_public_confidence = 4 } add_to_variable = { BLZ_border_readiness = 3 } TAD_BG_clamp_metrics = yes }
+	}
+	BLZ_evacuate_border_communities = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = BLZ }
+		available = { check_variable = { BLZ_GUA_tension > 69 } NOT = { has_country_flag = BLZ_border_evacuations_complete } }
+		cost = 50
+		fire_only_once = yes
+		complete_effect = { set_country_flag = BLZ_border_evacuations_complete add_stability = -0.01 add_war_support = 0.03 add_to_variable = { BLZ_border_readiness = 7 } add_to_variable = { BLZ_public_confidence = 3 } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 160 }
+	}
+	BLZ_caricom_emergency_airlift = {
+		icon = GFX_decision_generic_allies_build_infantry
+		allowed = { tag = BLZ }
+		visible = { has_country_flag = BLZ_caricom_emergency_protocol }
+		available = { has_country_flag = BLZ_caricom_emergency_protocol check_variable = { BLZ_international_support > 49 } check_variable = { BLZ_GUA_tension > 54 } }
+		cost = 60
+		days_re_enable = 120
+		complete_effect = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 180 producer = BLZ } add_equipment_to_stockpile = { type = support_equipment_1 amount = 45 producer = BLZ } add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 15 producer = BLZ } add_to_variable = { BLZ_international_support = 3 } GUA = { country_event = { id = tad_bg.402 hours = 6 } } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 120 }
+	}
+	BLZ_request_oas_emergency_session = {
+		icon = GFX_decision_generic_diplomatic_treaty
+		allowed = { tag = BLZ }
+		available = { check_variable = { BLZ_GUA_tension > 74 } check_variable = { BLZ_international_support > 39 } }
+		cost = 75
+		days_re_enable = 120
+		complete_effect = { subtract_from_variable = { BLZ_GUA_tension = 5 } add_to_variable = { BLZ_international_support = 8 } GUA = { country_event = { id = tad_bg.403 hours = 6 } } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 180 }
+	}
+	BLZ_rotate_frontline_battalions = {
+		icon = GFX_decision_generic_army_support
+		allowed = { tag = BLZ }
+		available = { has_war_with = GUA }
+		cost = 35
+		days_re_enable = 45
+		complete_effect = { add_command_power = 8 army_experience = 2 add_to_variable = { BLZ_border_readiness = 2 } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 150 }
+	}
+	BLZ_prepare_sarstoon_denial_positions = {
+		icon = GFX_decision_generic_army_support
+		allowed = { tag = BLZ }
+		visible = { has_completed_focus = BLZ_hold_the_sarstoon }
+		available = { has_completed_focus = BLZ_hold_the_sarstoon NOT = { has_country_flag = BLZ_sarstoon_positions_complete } }
+		cost = 55
+		fire_only_once = yes
+		complete_effect = { set_country_flag = BLZ_sarstoon_positions_complete TAD_BG_apply_sarstoon_denial = yes 15 = { add_building_construction = { type = bunker level = 1 province = 9038 instant_build = yes } add_building_construction = { type = bunker level = 1 province = 4783 instant_build = yes } } add_to_variable = { BLZ_border_readiness = 6 } TAD_BG_clamp_metrics = yes }
+	}
+
+	GUA_rotate_peten_brigades = {
+		icon = GFX_decision_generic_army_support
+		allowed = { tag = GUA }
+		cost = 35
+		days_re_enable = 60
+		complete_effect = { add_command_power = 8 add_to_variable = { GUA_military_pressure = 3 } army_experience = 3 TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 120 }
+	}
+	GUA_requisition_commercial_transport = {
+		icon = GFX_decision_generic_industry
+		allowed = { tag = GUA }
+		available = { has_completed_focus = GUA_peten_logistics_corps }
+		cost = 45
+		days_re_enable = 120
+		complete_effect = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 40 producer = GUA } set_country_flag = GUA_campaign_support_started TAD_BG_refresh_GUA_state_modifiers = yes add_stability = -0.01 add_to_variable = { GUA_military_pressure = 5 } BLZ = { country_event = { id = tad_bg.420 hours = 6 } } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 140 }
+	}
+	GUA_adjacency_mapping_mission = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		cost = 30
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { GUA_claim_momentum = 5 } add_to_variable = { GUA_military_pressure = 2 } BLZ = { add_to_variable = { BLZ_GUA_tension = 3 } country_event = { id = tad_bg.410 hours = 6 } } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 130 }
+	}
+	GUA_offer_border_development_fund = {
+		icon = GFX_decision_generic_construct_civ_factory
+		allowed = { tag = GUA }
+		available = { BLZ = { check_variable = { BLZ_GUA_tension < 75 } } }
+		cost = 50
+		days_re_enable = 150
+		complete_effect = { BLZ = { country_event = { id = tad_bg.411 hours = 6 } } }
+		ai_will_do = { base = 35 modifier = { factor = 4 has_stability < 0.35 } }
+	}
+	GUA_close_informal_crossings = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		available = { BLZ = { check_variable = { BLZ_GUA_tension > 49 } } }
+		cost = 35
+		days_re_enable = 100
+		complete_effect = { set_country_flag = GUA_border_command_started TAD_BG_refresh_GUA_state_modifiers = yes add_to_variable = { GUA_military_pressure = 5 } BLZ = { add_to_variable = { BLZ_GUA_tension = 4 } country_event = { id = tad_bg.412 hours = 6 } } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 135 }
+	}
+	GUA_launch_claim_broadcasts = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = GUA }
+		cost = 30
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { GUA_claim_momentum = 6 } add_to_variable = { GUA_domestic_support = 4 } BLZ = { add_to_variable = { BLZ_GUA_tension = 3 } country_event = { id = tad_bg.413 hours = 6 } } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 150 }
+	}
+	GUA_open_secret_backchannel = {
+		icon = GFX_decision_generic_diplomatic_treaty
+		allowed = { tag = GUA }
+		available = { BLZ = { check_variable = { BLZ_GUA_tension > 54 } } }
+		cost = 50
+		days_re_enable = 150
+		complete_effect = { BLZ = { country_event = { id = tad_bg.414 hours = 6 } } }
+		ai_will_do = { base = 45 modifier = { factor = 4 has_stability < 0.35 } }
+	}
+	GUA_limited_peten_mobilisation = {
+		icon = GFX_decision_generic_army_support
+		allowed = { tag = GUA }
+		available = { BLZ = { check_variable = { BLZ_GUA_tension > 64 } } NOT = { has_country_flag = GUA_limited_mobilisation_done } }
+		cost = 75
+		fire_only_once = yes
+		complete_effect = { set_country_flag = GUA_limited_mobilisation_done set_country_flag = GUA_force_generation_unlocked set_country_flag = GUA_border_command_advanced TAD_BG_refresh_GUA_state_modifiers = yes add_manpower = 1000 add_political_power = 35 add_to_variable = { GUA_military_pressure = 12 } BLZ = { add_to_variable = { BLZ_GUA_tension = 8 } country_event = { id = tad_bg.421 hours = 6 } } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 200 }
+	}
+	GUA_order_temporary_stand_down = {
+		icon = GFX_decision_generic_diplomatic_treaty
+		allowed = { tag = GUA }
+		available = { BLZ = { check_variable = { BLZ_GUA_tension > 34 } } }
+		cost = 35
+		days_re_enable = 120
+		complete_effect = { BLZ = { subtract_from_variable = { BLZ_GUA_tension = 6 } add_to_variable = { BLZ_international_support = 2 } country_event = { id = tad_bg.422 hours = 6 } } subtract_from_variable = { GUA_military_pressure = 4 } add_stability = 0.01 TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { base = 20 modifier = { factor = 5 has_stability < 0.30 } }
+	}
+}

@@ -1,0 +1,118 @@
+##############################################################################
+# GUATEMALA - 2025 ORDER OF BATTLE
+# Core templates are locked so the AI retains and recruits them.
+##############################################################################
+
+division_template = {
+    name = "Guatemalan Infantry Brigade"
+    is_locked = yes
+    force_allow_recruiting = yes
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+    }
+    support = { recon = { x = 0 y = 0 } }
+    priority = 3
+}
+
+division_template = {
+    name = "Mariscal Zavala Strategic Brigade"
+    is_locked = yes
+    force_allow_recruiting = yes
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        motorized = { x = 1 y = 0 }
+    }
+    support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+    }
+    priority = 4
+}
+
+division_template = {
+    name = "Guatemalan Mountain Brigade"
+    is_locked = yes
+    force_allow_recruiting = yes
+    regiments = {
+        mountaineers = { x = 0 y = 0 }
+        mountaineers = { x = 0 y = 1 }
+    }
+    support = { recon = { x = 0 y = 0 } }
+    priority = 3
+}
+
+division_template = {
+    name = "Kaibil Special Operations Group"
+    is_locked = yes
+    force_allow_recruiting = yes
+    regiments = { mountaineers = { x = 0 y = 0 } }
+    support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+    }
+    priority = 4
+}
+
+units = {
+    division = {
+        name = "1a Brigada de Infantería General Luis García León"
+        location = 3282
+        division_template = "Guatemalan Infantry Brigade"
+        start_experience_factor = 0.45
+        start_equipment_factor = 0.78
+    }
+    division = {
+        name = "2a Brigada de Infantería Capitán General Rafael Carrera"
+        location = 9205
+        division_template = "Guatemalan Infantry Brigade"
+        start_experience_factor = 0.43
+        start_equipment_factor = 0.76
+    }
+    division = {
+        name = "3a Brigada de Infantería General Manuel Aguilar Santamaría"
+        location = 14951
+        division_template = "Guatemalan Infantry Brigade"
+        start_experience_factor = 0.42
+        start_equipment_factor = 0.74
+    }
+    division = {
+        name = "4a Brigada de Infantería Petén"
+        location = 89
+        division_template = "Guatemalan Infantry Brigade"
+        start_experience_factor = 0.38
+        start_equipment_factor = 0.68
+    }
+    division = {
+        name = "5a Brigada de Infantería Izabal"
+        location = 14951
+        division_template = "Guatemalan Infantry Brigade"
+        start_experience_factor = 0.36
+        start_equipment_factor = 0.65
+    }
+    division = {
+        name = "Brigada Militar Mariscal Zavala"
+        location = 3282
+        division_template = "Mariscal Zavala Strategic Brigade"
+        start_experience_factor = 0.58
+        start_equipment_factor = 0.82
+    }
+    division = {
+        name = "Brigada de Operaciones para Montaña"
+        location = 9200
+        division_template = "Guatemalan Mountain Brigade"
+        start_experience_factor = 0.62
+        start_equipment_factor = 0.80
+    }
+    division = {
+        name = "Kaibil Special Operations Group"
+        location = 89
+        division_template = "Kaibil Special Operations Group"
+        start_experience_factor = 0.88
+        start_equipment_factor = 0.90
+    }
+}
