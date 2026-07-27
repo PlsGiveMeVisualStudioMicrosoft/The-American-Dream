@@ -1,0 +1,52 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_report_event_new_project_14_"
+		texturefile = "gfx/event_pictures/new_project_14_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_new_project_15_"
+		texturefile = "gfx/event_pictures/new_project_15_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_new_project"
+		texturefile = "gfx/event_pictures/new_project.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_untitled-1"
+		texturefile = "gfx/event_pictures/untitled-1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_untitled"
+		texturefile = "gfx/event_pictures/untitled.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_putiom"
+		texturefile = "gfx/event_pictures/putiom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_new_project_2_"
+		texturefile = "gfx/event_pictures/new_project_2_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_new_project_33_"
+		texturefile = "gfx/event_pictures/new_project_33_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_new_project_4_"
+		texturefile = "gfx/event_pictures/new_project_4_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_new_project_3_"
+		texturefile = "gfx/event_pictures/new_project_3_.dds"
+	}
+}

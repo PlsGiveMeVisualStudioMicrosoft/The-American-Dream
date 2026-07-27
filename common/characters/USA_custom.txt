@@ -49,7 +49,7 @@ characters={
         }
         advisor={
             slot = political_advisor
-            idea_token = usa_trump_gov
+            idea_token = usa_kamala_harris_gov #usa_trump_gov
             allowed = { original_tag = USA }
             traits = { silent_workhorse TAD_art_of_the_deal }
             cost = 150
