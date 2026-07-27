@@ -1,0 +1,98 @@
+add_namespace = tad_bg
+
+country_event = {
+	id = tad_bg.400
+	title = tad_bg.400.t
+	desc = tad_bg.400.d
+	picture = GFX_report_event_generic_military
+	is_triggered_only = yes
+	option = { name = tad_bg.400.a ai_chance = { factor = 65 } add_to_variable = { GUA_military_pressure = 2 } add_to_variable = { GUA_domestic_support = 1 } TAD_BG_clamp_metrics = yes }
+	option = { name = tad_bg.400.b ai_chance = { factor = 35 } BLZ = { add_to_variable = { BLZ_GUA_tension = 2 } } add_war_support = 0.01 TAD_BG_clamp_tension = yes }
+}
+country_event = {
+	id = tad_bg.401
+	title = tad_bg.401.t
+	desc = tad_bg.401.d
+	picture = GFX_report_event_generic_military
+	is_triggered_only = yes
+	option = { name = tad_bg.401.a add_to_variable = { GUA_military_pressure = 2 } TAD_BG_clamp_metrics = yes }
+}
+country_event = {
+	id = tad_bg.402
+	title = tad_bg.402.t
+	desc = tad_bg.402.d
+	picture = GFX_report_event_generic_diplomatic_treaty
+	is_triggered_only = yes
+	option = { name = tad_bg.402.a ai_chance = { factor = 70 } add_to_variable = { GUA_claim_momentum = 2 } BLZ = { add_to_variable = { BLZ_GUA_tension = 2 } } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+	option = { name = tad_bg.402.b ai_chance = { factor = 30 } add_stability = 0.005 }
+}
+country_event = {
+	id = tad_bg.403
+	title = tad_bg.403.t
+	desc = tad_bg.403.d
+	picture = GFX_report_event_generic_diplomatic_treaty
+	is_triggered_only = yes
+	option = { name = tad_bg.403.a ai_chance = { factor = 35 } BLZ = { subtract_from_variable = { BLZ_GUA_tension = 3 } } subtract_from_variable = { GUA_military_pressure = 2 } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+	option = { name = tad_bg.403.b ai_chance = { factor = 65 } add_to_variable = { GUA_domestic_support = 3 } BLZ = { add_to_variable = { BLZ_GUA_tension = 3 } } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+}
+country_event = {
+	id = tad_bg.410
+	title = tad_bg.410.t
+	desc = tad_bg.410.d
+	picture = GFX_report_event_generic_military
+	is_triggered_only = yes
+	option = { name = tad_bg.410.a ai_chance = { factor = 65 } add_to_variable = { BLZ_international_support = 3 } GUA = { country_event = { id = tad_bg.415 hours = 6 } } TAD_BG_clamp_metrics = yes }
+	option = { name = tad_bg.410.b ai_chance = { factor = 35 } add_to_variable = { BLZ_border_readiness = 3 } add_to_variable = { BLZ_GUA_tension = 2 } GUA = { country_event = { id = tad_bg.416 hours = 6 } } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+}
+country_event = {
+	id = tad_bg.411
+	title = tad_bg.411.t
+	desc = tad_bg.411.d
+	picture = GFX_report_event_generic_diplomatic_treaty
+	is_triggered_only = yes
+	option = { name = tad_bg.411.a ai_chance = { factor = 45 } subtract_from_variable = { BLZ_GUA_tension = 5 } add_stability = 0.01 GUA = { add_to_variable = { GUA_domestic_support = 3 } country_event = { id = tad_bg.417 hours = 6 } } TAD_BG_clamp_tension = yes }
+	option = { name = tad_bg.411.b ai_chance = { factor = 55 } add_to_variable = { BLZ_international_support = 2 } add_to_variable = { BLZ_public_confidence = 2 } GUA = { add_to_variable = { GUA_claim_momentum = 2 } country_event = { id = tad_bg.418 hours = 6 } } TAD_BG_clamp_metrics = yes }
+}
+country_event = {
+	id = tad_bg.412
+	title = tad_bg.412.t
+	desc = tad_bg.412.d
+	picture = GFX_report_event_generic_military
+	is_triggered_only = yes
+	option = { name = tad_bg.412.a ai_chance = { factor = 60 } add_to_variable = { BLZ_international_support = 3 } add_political_power = -10 TAD_BG_clamp_metrics = yes }
+	option = { name = tad_bg.412.b ai_chance = { factor = 40 } add_to_variable = { BLZ_border_readiness = 3 } add_stability = -0.005 TAD_BG_clamp_metrics = yes }
+}
+country_event = {
+	id = tad_bg.413
+	title = tad_bg.413.t
+	desc = tad_bg.413.d
+	picture = GFX_report_event_generic_propaganda
+	is_triggered_only = yes
+	option = { name = tad_bg.413.a ai_chance = { factor = 75 } add_to_variable = { BLZ_public_confidence = 4 } add_to_variable = { BLZ_GUA_tension = 2 } GUA = { country_event = { id = tad_bg.419 hours = 6 } } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+	option = { name = tad_bg.413.b ai_chance = { factor = 25 } subtract_from_variable = { BLZ_GUA_tension = 1 } add_political_power = 10 TAD_BG_clamp_tension = yes }
+}
+country_event = {
+	id = tad_bg.414
+	title = tad_bg.414.t
+	desc = tad_bg.414.d
+	picture = GFX_report_event_generic_diplomatic_treaty
+	is_triggered_only = yes
+	option = { name = tad_bg.414.a ai_chance = { factor = 35 } subtract_from_variable = { BLZ_GUA_tension = 6 } GUA = { subtract_from_variable = { GUA_military_pressure = 4 } add_stability = 0.01 country_event = { id = tad_bg.423 hours = 6 } } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+	option = { name = tad_bg.414.b ai_chance = { factor = 45 } add_to_variable = { BLZ_international_support = 4 } GUA = { country_event = { id = tad_bg.424 hours = 6 } } TAD_BG_clamp_metrics = yes }
+	option = { name = tad_bg.414.c ai_chance = { factor = 20 } add_to_variable = { BLZ_GUA_tension = 4 } add_to_variable = { BLZ_public_confidence = 3 } GUA = { add_to_variable = { GUA_claim_momentum = 3 } country_event = { id = tad_bg.425 hours = 6 } } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+}
+
+country_event = { id = tad_bg.415 title = tad_bg.415.t desc = tad_bg.415.d picture = GFX_report_event_generic_diplomatic_treaty is_triggered_only = yes option = { name = tad_bg.415.a } }
+country_event = { id = tad_bg.416 title = tad_bg.416.t desc = tad_bg.416.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_bg.416.a } }
+country_event = { id = tad_bg.417 title = tad_bg.417.t desc = tad_bg.417.d picture = GFX_report_event_generic_diplomatic_treaty is_triggered_only = yes option = { name = tad_bg.417.a BLZ = { subtract_from_variable = { BLZ_GUA_tension = 2 } } TAD_BG_clamp_tension = yes } }
+country_event = { id = tad_bg.418 title = tad_bg.418.t desc = tad_bg.418.d picture = GFX_report_event_generic_diplomatic_treaty is_triggered_only = yes option = { name = tad_bg.418.a add_to_variable = { GUA_claim_momentum = 2 } TAD_BG_clamp_metrics = yes } }
+country_event = { id = tad_bg.419 title = tad_bg.419.t desc = tad_bg.419.d picture = GFX_report_event_generic_propaganda is_triggered_only = yes option = { name = tad_bg.419.a add_to_variable = { GUA_domestic_support = 2 } TAD_BG_clamp_metrics = yes } }
+country_event = { id = tad_bg.420 title = tad_bg.420.t desc = tad_bg.420.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_bg.420.a add_to_variable = { BLZ_border_readiness = 2 } TAD_BG_clamp_metrics = yes } }
+country_event = { id = tad_bg.421 title = tad_bg.421.t desc = tad_bg.421.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_bg.421.a add_to_variable = { BLZ_border_readiness = 5 } add_war_support = 0.02 TAD_BG_clamp_metrics = yes } }
+country_event = { id = tad_bg.422 title = tad_bg.422.t desc = tad_bg.422.d picture = GFX_report_event_generic_diplomatic_treaty is_triggered_only = yes option = { name = tad_bg.422.a add_to_variable = { BLZ_public_confidence = 2 } TAD_BG_clamp_metrics = yes } }
+country_event = { id = tad_bg.423 title = tad_bg.423.t desc = tad_bg.423.d picture = GFX_report_event_generic_diplomatic_treaty is_triggered_only = yes option = { name = tad_bg.423.a } }
+country_event = { id = tad_bg.424 title = tad_bg.424.t desc = tad_bg.424.d picture = GFX_report_event_generic_diplomatic_treaty is_triggered_only = yes option = { name = tad_bg.424.a } }
+country_event = { id = tad_bg.425 title = tad_bg.425.t desc = tad_bg.425.d picture = GFX_report_event_generic_diplomatic_treaty is_triggered_only = yes option = { name = tad_bg.425.a } }
+
+country_event = { id = tad_bg.440 title = tad_bg.440.t desc = tad_bg.440.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_bg.440.a } }
+country_event = { id = tad_bg.450 title = tad_bg.450.t desc = tad_bg.450.d picture = GFX_report_event_generic_military is_triggered_only = yes option = { name = tad_bg.450.a } }

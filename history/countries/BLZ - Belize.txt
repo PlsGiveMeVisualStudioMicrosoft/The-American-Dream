@@ -34,6 +34,10 @@ set_stability = 0.68
 set_war_support = 0.32
 
 set_variable = { BLZ_GUA_tension = 25 }
+set_variable = { BLZ_international_support = 25 }
+set_variable = { BLZ_border_readiness = 20 }
+set_variable = { BLZ_public_confidence = 55 }
+set_variable = { BLZ_foreign_contingents = 0 }
 set_country_flag = TAD_BG_dispute_active
 set_country_flag = BLZ_2025_government
 

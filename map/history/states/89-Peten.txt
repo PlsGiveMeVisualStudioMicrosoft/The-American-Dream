@@ -1,0 +1,26 @@
+state={
+	id=89
+	name="STATE_89"
+	history={
+		owner = GUA
+		victory_points = {
+			89 2
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+		}
+		add_core_of = GUA
+		add_dynamic_modifier = { modifier = GUA_peten_bottleneck_state_modifier }
+	}
+
+	provinces={
+		89 655 2335 2900 3203 3786 4271 4437 4743 4844 4865 5054 5524 5696 8947 8955 8996 8997 9000 9012 9021 9033 9046 
+	}
+	manpower=600000
+	resources={
+		rubber = 1
+	}
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

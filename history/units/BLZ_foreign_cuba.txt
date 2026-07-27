@@ -1,0 +1,17 @@
+division_template = {
+	name = "Cuban Internationalist Group"
+	regiments = {
+		cuban_internationalist_infantry = { x = 0 y = 0 }
+		cuban_internationalist_infantry = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+units = {
+	division = {
+		name = "Cuban Internationalist Group"
+		location = 14954
+		division_template = "Cuban Internationalist Group"
+		start_experience_factor = 0.68
+		start_equipment_factor = 0.88
+	}
+}

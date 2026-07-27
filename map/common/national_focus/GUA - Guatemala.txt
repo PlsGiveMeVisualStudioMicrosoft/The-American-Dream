@@ -1,0 +1,414 @@
+focus_tree = {
+	id = GUA_focus
+	country = { factor = 0 modifier = { add = 100 tag = GUA } }
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 3200 y = 100 }
+
+	focus = {
+		id = GUA_new_spring
+		icon = GFX_goal_generic_national_unity
+		x = 13 y = 0 cost = 1
+		completion_reward = { add_political_power = 25 country_event = { id = tad_bg.2 hours = 6 } }
+	}
+
+# POLITICAL REFORM
+	focus = {
+		id = GUA_defend_electoral_mandate
+		icon = GFX_goal_generic_political_pressure
+		x = 3 y = 2 cost = 4
+		prerequisite = { focus = GUA_new_spring }
+		completion_reward = { add_stability = 0.04 add_political_power = 50 }
+		ai_will_do = { factor = 1.0 }
+	}
+	focus = {
+		id = GUA_build_congressional_coalition
+		icon = GFX_goal_generic_political_pressure
+		x = 1 y = 3 cost = 5
+		prerequisite = { focus = GUA_defend_electoral_mandate }
+		completion_reward = { remove_ideas = GUA_fragmented_congress add_ideas = GUA_reform_coalition add_political_power = 40 }
+	}
+	focus = {
+		id = GUA_civil_service_merit
+		icon = GFX_goal_generic_scientific_exchange
+		x = 3 y = 3 cost = 5
+		prerequisite = { focus = GUA_defend_electoral_mandate }
+		completion_reward = { add_political_power = 60 add_stability = 0.02 }
+	}
+	focus = {
+		id = GUA_confront_pact_of_corrupt
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 5 y = 3 cost = 6
+		prerequisite = { focus = GUA_defend_electoral_mandate }
+		completion_reward = { remove_ideas = GUA_pact_of_corrupt add_ideas = GUA_clean_government add_stability = -0.02 add_political_power = 40 }
+	}
+	focus = {
+		id = GUA_indigenous_dialogue
+		icon = GFX_goal_generic_national_unity
+		x = 1 y = 4 cost = 5
+		prerequisite = { focus = GUA_build_congressional_coalition }
+		completion_reward = { add_ideas = GUA_rural_inclusion add_stability = 0.04 }
+	}
+	focus = {
+		id = GUA_independent_justice
+		icon = GFX_goal_generic_political_pressure
+		x = 4 y = 4 cost = 6
+		prerequisite = { focus = GUA_civil_service_merit }
+		prerequisite = { focus = GUA_confront_pact_of_corrupt }
+		completion_reward = { add_stability = 0.06 add_political_power = 50 }
+	}
+	focus = {
+		id = GUA_new_democratic_compact_focus
+		icon = GFX_goal_generic_national_unity
+		x = 3 y = 5 cost = 7
+		prerequisite = { focus = GUA_indigenous_dialogue }
+		prerequisite = { focus = GUA_independent_justice }
+		completion_reward = { add_ideas = GUA_new_democratic_compact add_stability = 0.06 add_political_power = 75 }
+	}
+
+# SEVEN-STATE DEVELOPMENT
+	focus = {
+		id = GUA_map_the_national_inequality
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 10 y = 2 cost = 4
+		prerequisite = { focus = GUA_new_spring }
+		completion_reward = { add_political_power = 35 }
+	}
+	focus = {
+		id = GUA_peten_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 7 y = 3 cost = 5
+		prerequisite = { focus = GUA_map_the_national_inequality }
+		completion_reward = { 89 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_stability = 0.01 }
+	}
+	focus = {
+		id = GUA_verapaces_social_investment
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8 y = 4 cost = 5
+		prerequisite = { focus = GUA_map_the_national_inequality }
+		completion_reward = { 90 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_stability = 0.02 }
+	}
+	focus = {
+		id = GUA_izabal_ports
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 10 y = 3 cost = 5
+		prerequisite = { focus = GUA_map_the_national_inequality }
+		completion_reward = { 91 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } } add_equipment_to_stockpile = { type = convoy_1 amount = 6 } }
+	}
+	focus = {
+		id = GUA_western_highlands_agriculture
+		icon = GFX_goal_generic_production
+		x = 9 y = 4 cost = 5
+		prerequisite = { focus = GUA_map_the_national_inequality }
+		completion_reward = { 92 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_stability = 0.02 }
+	}
+	focus = {
+		id = GUA_pacific_export_corridor
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 11 y = 4 cost = 5
+		prerequisite = { focus = GUA_izabal_ports }
+		completion_reward = { 93 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } add_building_construction = { type = dockyard level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = GUA_eastern_dry_corridor
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 12 y = 3 cost = 5
+		prerequisite = { focus = GUA_map_the_national_inequality }
+		completion_reward = { 94 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_stability = 0.01 }
+	}
+	focus = {
+		id = GUA_capital_modernisation
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 10 y = 5 cost = 6
+		prerequisite = { focus = GUA_verapaces_social_investment }
+		prerequisite = { focus = GUA_pacific_export_corridor }
+		completion_reward = { 12 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_research_slot = 1 }
+	}
+	focus = {
+		id = GUA_integrate_national_market
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 10 y = 6 cost = 7
+		prerequisite = { focus = GUA_western_highlands_agriculture }
+		prerequisite = { focus = GUA_capital_modernisation }
+		prerequisite = { focus = GUA_eastern_dry_corridor }
+		completion_reward = { add_stability = 0.05 add_political_power = 75 }
+	}
+
+# ARMED FORCES
+	focus = {
+		id = GUA_reorganize_high_command
+		icon = GFX_goal_generic_position_armies
+		x = 17 y = 2 cost = 4
+		prerequisite = { focus = GUA_new_spring }
+		completion_reward = { army_experience = 12 add_political_power = 30 }
+		ai_will_do = { factor = 1.4 }
+	}
+	focus = {
+		id = GUA_modernize_infantry_brigades
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 15 y = 3 cost = 5
+		prerequisite = { focus = GUA_reorganize_high_command }
+		completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 900 producer = GUA } add_equipment_to_stockpile = { type = support_equipment_1 amount = 120 producer = GUA } army_experience = 10 }
+	}
+	focus = {
+		id = GUA_peten_logistics_corps
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 17 y = 3 cost = 5
+		prerequisite = { focus = GUA_reorganize_high_command }
+		completion_reward = { TAD_BG_set_peten_logistics_improved = yes 89 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = GUA_mountain_warfare_command
+		icon = GFX_goal_generic_army_doctrines
+		x = 19 y = 3 cost = 5
+		prerequisite = { focus = GUA_reorganize_high_command }
+		completion_reward = { army_experience = 15 add_war_support = 0.02 }
+	}
+	focus = {
+		id = GUA_kaibil_readiness
+		icon = GFX_goal_generic_special_forces
+		x = 15 y = 4 cost = 5
+		prerequisite = { focus = GUA_modernize_infantry_brigades }
+		completion_reward = { army_experience = 15 add_to_variable = { GUA_military_pressure = 8 } TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = GUA_air_mobility
+		icon = GFX_goal_generic_air_fighter
+		x = 19 y = 4 cost = 5
+		prerequisite = { focus = GUA_mountain_warfare_command }
+		completion_reward = { air_experience = 10 add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 120 producer = GUA } }
+	}
+	focus = {
+		id = GUA_integrated_border_task_forces
+		icon = GFX_goal_generic_position_armies
+		x = 17 y = 5 cost = 6
+		prerequisite = { focus = GUA_peten_logistics_corps }
+		prerequisite = { focus = GUA_kaibil_readiness }
+		completion_reward = { add_to_variable = { GUA_military_pressure = 10 } army_experience = 12 TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = GUA_professional_armed_forces_focus
+		icon = GFX_goal_generic_army_doctrines
+		x = 17 y = 6 cost = 7
+		prerequisite = { focus = GUA_integrated_border_task_forces }
+		prerequisite = { focus = GUA_air_mobility }
+		completion_reward = { remove_ideas = GUA_underfunded_security_forces add_ideas = GUA_professional_armed_forces army_experience = 20 }
+	}
+
+# BELIZE CLAIM: LEGAL OR PRESSURE
+	focus = {
+		id = GUA_reaffirm_historic_claim
+		icon = GFX_goal_generic_political_pressure
+		x = 24 y = 2 cost = 4
+		prerequisite = { focus = GUA_new_spring }
+		completion_reward = { BLZ = { add_to_variable = { BLZ_GUA_tension = 4 } } add_to_variable = { GUA_claim_momentum = 8 } add_war_support = 0.02 TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 2.0 }
+	}
+	focus = {
+		id = GUA_legal_offensive
+		icon = GFX_goal_generic_political_pressure
+		x = 22 y = 3 cost = 5
+		prerequisite = { focus = GUA_reaffirm_historic_claim }
+		mutually_exclusive = { focus = GUA_pressure_belmopan }
+		completion_reward = { BLZ = { subtract_from_variable = { BLZ_GUA_tension = 3 } } add_to_variable = { GUA_claim_momentum = 6 } add_political_power = 50 TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 0.45 modifier = { factor = 3 stability < 0.35 } }
+	}
+	focus = {
+		id = GUA_oas_diplomacy
+		icon = GFX_goal_generic_alliance
+		x = 21 y = 4 cost = 5
+		prerequisite = { focus = GUA_legal_offensive }
+		completion_reward = { BLZ = { subtract_from_variable = { BLZ_GUA_tension = 5 } add_to_variable = { BLZ_international_support = 3 } } add_stability = 0.02 TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = GUA_propose_joint_development
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 23 y = 4 cost = 5
+		prerequisite = { focus = GUA_legal_offensive }
+		completion_reward = { BLZ = { country_event = { id = tad_bg.30 hours = 6 } } }
+	}
+	focus = {
+		id = GUA_accept_binding_judgment
+		icon = GFX_goal_generic_national_unity
+		x = 22 y = 5 cost = 6
+		prerequisite = { focus = GUA_oas_diplomacy }
+		prerequisite = { focus = GUA_propose_joint_development }
+		completion_reward = { remove_ideas = GUA_historic_claim_to_belize BLZ = { remove_ideas = BLZ_guatemalan_claim set_variable = { BLZ_GUA_tension = 0 } add_stability = 0.06 } add_stability = 0.06 set_country_flag = TAD_BG_settlement_reached }
+		ai_will_do = { factor = 0.4 }
+	}
+
+	focus = {
+		id = GUA_pressure_belmopan
+		icon = GFX_goal_generic_military_sphere
+		x = 26 y = 3 cost = 5
+		prerequisite = { focus = GUA_reaffirm_historic_claim }
+		mutually_exclusive = { focus = GUA_legal_offensive }
+		completion_reward = { BLZ = { add_to_variable = { BLZ_GUA_tension = 8 } country_event = { id = tad_bg.72 hours = 6 } } add_to_variable = { GUA_claim_momentum = 8 } add_to_variable = { GUA_domestic_support = 6 } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 2.2 }
+	}
+	focus = {
+		id = GUA_expand_peten_patrol_focus
+		icon = GFX_goal_generic_position_armies
+		x = 25 y = 4 cost = 5
+		prerequisite = { focus = GUA_pressure_belmopan }
+		completion_reward = { BLZ = { add_to_variable = { BLZ_GUA_tension = 7 } country_event = { id = tad_bg.41 hours = 6 } } add_to_variable = { GUA_military_pressure = 10 } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 2.5 }
+	}
+	focus = {
+		id = GUA_militarise_adjacency_zone
+		icon = GFX_goal_generic_position_armies
+		x = 27 y = 4 cost = 5
+		prerequisite = { focus = GUA_pressure_belmopan }
+		completion_reward = { add_ideas = GUA_border_pressure_campaign BLZ = { add_to_variable = { BLZ_GUA_tension = 9 } } add_to_variable = { GUA_military_pressure = 12 } add_war_support = 0.03 TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 2.4 }
+	}
+	focus = {
+		id = GUA_forward_supply_depots
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 25 y = 5 cost = 5
+		prerequisite = { focus = GUA_expand_peten_patrol_focus }
+		prerequisite = { focus = GUA_peten_logistics_corps }
+		completion_reward = { 89 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_to_variable = { GUA_military_pressure = 8 } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 2.5 }
+	}
+	focus = {
+		id = GUA_border_incidents_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		x = 27 y = 5 cost = 5
+		prerequisite = { focus = GUA_militarise_adjacency_zone }
+		completion_reward = { BLZ = { add_to_variable = { BLZ_GUA_tension = 10 } } add_to_variable = { GUA_claim_momentum = 7 } add_to_variable = { GUA_military_pressure = 8 } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 2.7 }
+	}
+	focus = {
+		id = GUA_operation_national_integrity
+		icon = GFX_goal_generic_major_war
+		x = 26 y = 6 cost = 6
+		prerequisite = { focus = GUA_forward_supply_depots }
+		prerequisite = { focus = GUA_border_incidents_doctrine }
+		available = { BLZ = { check_variable = { BLZ_GUA_tension > 69 } } }
+		completion_reward = { set_country_flag = GUA_can_issue_belize_ultimatum add_to_variable = { GUA_military_pressure = 15 } add_war_support = 0.05 BLZ = { add_to_variable = { BLZ_GUA_tension = 8 } } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 3.0 }
+	}
+	focus = {
+		id = GUA_enforce_historic_claim
+		icon = GFX_goal_generic_major_war
+		x = 26 y = 7 cost = 7
+		prerequisite = { focus = GUA_operation_national_integrity }
+		available = { BLZ = { check_variable = { BLZ_GUA_tension > 84 } } }
+		completion_reward = { BLZ = { country_event = { id = tad_bg.50 hours = 6 } } }
+		ai_will_do = { factor = 4.0 modifier = { factor = 0.2 stability < 0.30 } }
+	}
+
+# REGIONAL ROLE
+	focus = {
+		id = GUA_central_american_leadership
+		icon = GFX_goal_generic_alliance
+		x = 7 y = 7 cost = 6
+		prerequisite = { focus = GUA_integrate_national_market }
+		completion_reward = { add_political_power = 75 add_stability = 0.03 }
+	}
+	focus = {
+		id = GUA_guatemala_avanza
+		icon = GFX_goal_generic_national_unity
+		x = 12 y = 8 cost = 8
+		prerequisite = { focus = GUA_new_democratic_compact_focus }
+		prerequisite = { focus = GUA_integrate_national_market }
+		prerequisite = { focus = GUA_professional_armed_forces_focus }
+		completion_reward = { add_stability = 0.08 add_political_power = 100 add_war_support = 0.03 }
+	}
+
+	focus = {
+		id = GUA_peten_engineer_battalions
+		icon = GFX_goal_generic_engineering
+		x = 14 y = 5 cost = 4
+		prerequisite = { focus = GUA_modernize_infantry_brigades }
+		prerequisite = { focus = GUA_peten_logistics_corps }
+		completion_reward = { army_experience = 15 add_equipment_to_stockpile = { type = support_equipment_1 amount = 150 producer = GUA } add_to_variable = { GUA_military_pressure = 5 } TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = GUA_peten_field_hospitals
+		icon = GFX_goal_generic_army_doctrines
+		x = 16 y = 5 cost = 4
+		prerequisite = { focus = GUA_peten_logistics_corps }
+		completion_reward = { 89 = { add_dynamic_modifier = { modifier = GUA_peten_rotation_state_modifier } } add_manpower = 1500 add_stability = 0.01 }
+	}
+	focus = {
+		id = GUA_adjacency_zone_command
+		icon = GFX_goal_generic_major_war
+		x = 19 y = 6 cost = 5
+		prerequisite = { focus = GUA_integrated_border_task_forces }
+		prerequisite = { focus = GUA_border_incidents_doctrine }
+		completion_reward = { add_command_power = 25 army_experience = 20 add_to_variable = { GUA_military_pressure = 10 } add_to_variable = { GUA_claim_momentum = 5 } TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 14 }
+	}
+	focus = {
+		id = GUA_claim_information_office
+		icon = GFX_goal_generic_propaganda
+		x = 29 y = 4 cost = 4
+		prerequisite = { focus = GUA_pressure_belmopan }
+		completion_reward = { add_to_variable = { GUA_claim_momentum = 10 } add_to_variable = { GUA_domestic_support = 7 } add_political_power = 30 TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 16 }
+	}
+	focus = {
+		id = GUA_diplomatically_isolate_belize
+		icon = GFX_goal_generic_diplomatic_treaty
+		x = 29 y = 5 cost = 5
+		prerequisite = { focus = GUA_claim_information_office }
+		prerequisite = { focus = GUA_legal_offensive }
+		completion_reward = { BLZ = { subtract_from_variable = { BLZ_international_support = 8 } add_to_variable = { BLZ_GUA_tension = 4 } } add_to_variable = { GUA_claim_momentum = 8 } TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = GUA_last_chance_mediation
+		icon = GFX_goal_generic_diplomatic_treaty
+		x = 22 y = 6 cost = 4
+		prerequisite = { focus = GUA_accept_binding_judgment }
+		completion_reward = { BLZ = { country_event = { id = tad_bg.414 hours = 6 } } add_political_power = 25 }
+		ai_will_do = { factor = 3 modifier = { factor = 4 stability < 0.35 } }
+	}
+	focus = {
+		id = GUA_requisition_transport_fleet
+		icon = GFX_goal_generic_army_motorized
+		x = 24 y = 6 cost = 4
+		prerequisite = { focus = GUA_forward_supply_depots }
+		completion_reward = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 180 producer = GUA } 89 = { add_dynamic_modifier = { modifier = GUA_requisitioned_transport_state_modifier } } add_to_variable = { GUA_military_pressure = 8 } TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = GUA_sustain_extended_campaign
+		icon = GFX_goal_generic_army_doctrines
+		x = 24 y = 7 cost = 5
+		prerequisite = { focus = GUA_requisition_transport_fleet }
+		prerequisite = { focus = GUA_operation_national_integrity }
+		completion_reward = { TAD_BG_set_peten_forward_network = yes add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 600 producer = GUA } add_equipment_to_stockpile = { type = support_equipment_1 amount = 120 producer = GUA } add_to_variable = { GUA_military_pressure = 12 } TAD_BG_clamp_metrics = yes country_event = { id = tad_bg.450 hours = 6 } }
+		ai_will_do = { factor = 18 }
+	}
+	focus = {
+		id = GUA_limited_border_operation
+		icon = GFX_goal_generic_major_war
+		x = 28 y = 7 cost = 5
+		prerequisite = { focus = GUA_operation_national_integrity }
+		available = { BLZ = { check_variable = { BLZ_GUA_tension > 69 } } }
+		completion_reward = { 89 = { add_dynamic_modifier = { modifier = GUA_limited_mobilisation_state_modifier } } BLZ = { add_to_variable = { BLZ_GUA_tension = 10 } country_event = { id = tad_bg.421 hours = 6 } } add_to_variable = { GUA_military_pressure = 15 } add_war_support = 0.03 TAD_BG_clamp_tension = yes TAD_BG_clamp_metrics = yes }
+		ai_will_do = { factor = 20 }
+	}
+	focus = {
+		id = GUA_national_claim_consensus
+		icon = GFX_goal_generic_national_unity
+		x = 30 y = 6 cost = 5
+		prerequisite = { focus = GUA_claim_information_office }
+		completion_reward = { add_to_variable = { GUA_domestic_support = 12 } add_to_variable = { GUA_claim_momentum = 8 } add_stability = 0.02 add_war_support = 0.03 TAD_BG_clamp_metrics = yes }
+	}
+	focus = {
+		id = GUA_post_dispute_development_plan
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 22 y = 7 cost = 5
+		prerequisite = { focus = GUA_last_chance_mediation }
+		completion_reward = { add_stability = 0.04 add_political_power = 60 BLZ = { subtract_from_variable = { BLZ_GUA_tension = 10 } add_to_variable = { BLZ_international_support = 3 } } TAD_BG_clamp_tension = yes }
+	}
+	focus = {
+		id = GUA_central_american_security_conference
+		icon = GFX_goal_generic_alliance
+		x = 8 y = 8 cost = 5
+		prerequisite = { focus = GUA_central_american_leadership }
+		completion_reward = { add_political_power = 50 add_stability = 0.02 add_to_variable = { GUA_domestic_support = 5 } TAD_BG_clamp_metrics = yes }
+	}
+}

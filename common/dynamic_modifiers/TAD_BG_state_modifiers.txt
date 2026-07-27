@@ -1,0 +1,184 @@
+# Belize–Guatemala territorial modifiers.
+# Persistent modifiers are deliberately consolidated into no more than three
+# visible systems per country/state: defence, border works and logistics.
+
+# -----------------------------------------------------------------------------
+# BELIZE: NATIONAL DEFENCE NETWORK (one tier at a time)
+# -----------------------------------------------------------------------------
+BLZ_defence_network_tier_1 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_plans
+    army_core_defence_factor = 0.05
+    dig_in_speed_factor = 0.08
+    local_supplies_for_controller = 0.03
+}
+
+BLZ_defence_network_tier_2 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_plans
+    army_core_defence_factor = 0.09
+    dig_in_speed_factor = 0.14
+    max_dig_in_factor = 0.06
+    local_org_regain = 0.04
+    local_supplies_for_controller = 0.05
+    enemy_army_speed_factor = -0.03
+}
+
+BLZ_defence_network_tier_3 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_plans
+    army_core_attack_factor = -0.05
+    army_core_defence_factor = 0.13
+    dig_in_speed_factor = 0.20
+    max_dig_in_factor = 0.10
+    local_org_regain = 0.06
+    local_supplies_for_controller = 0.08
+    enemy_army_speed_factor = -0.05
+    enemy_attrition = 0.03
+}
+
+# -----------------------------------------------------------------------------
+# BELIZE: MOPAN LINE (one tier at a time)
+# -----------------------------------------------------------------------------
+BLZ_mopan_line_tier_1 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_plans
+    army_core_defence_factor = 0.05
+    dig_in_speed_factor = 0.12
+    max_dig_in_factor = 0.05
+    enemy_army_speed_factor = -0.04
+}
+
+BLZ_mopan_line_tier_2 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_plans
+    army_core_defence_factor = 0.08
+    dig_in_speed_factor = 0.18
+    max_dig_in_factor = 0.08
+    local_supplies_for_controller = 0.05
+    enemy_army_speed_factor = -0.07
+    enemy_attrition = 0.04
+}
+
+# -----------------------------------------------------------------------------
+# BELIZE: DISTRIBUTED SUPPLY NETWORK (one tier at a time)
+# -----------------------------------------------------------------------------
+BLZ_supply_network_tier_1 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_industry
+    local_supplies_for_controller = 0.07
+    attrition_for_controller = -0.02
+    local_org_regain = 0.03
+}
+
+BLZ_supply_network_tier_2 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_industry
+    local_supplies_for_controller = 0.12
+    attrition_for_controller = -0.04
+    local_org_regain = 0.06
+    army_speed_factor_for_controller = 0.03
+    enemy_local_supplies = -0.03
+}
+
+# -----------------------------------------------------------------------------
+# GUATEMALA: PETEN LOGISTICS (one tier at a time)
+# -----------------------------------------------------------------------------
+GUA_peten_logistics_tier_1 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_plans
+    army_speed_factor_for_controller = -0.12
+    attrition_for_controller = 0.06
+    local_supplies_for_controller = -0.15
+    dig_in_speed_factor = -0.08
+}
+
+GUA_peten_logistics_tier_2 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_plans
+    army_speed_factor_for_controller = -0.03
+    attrition_for_controller = 0.02
+    local_supplies_for_controller = -0.04
+}
+
+GUA_peten_logistics_tier_3 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_plans
+    army_speed_factor_for_controller = 0.06
+    attrition_for_controller = -0.03
+    local_supplies_for_controller = 0.14
+    dig_in_speed_factor = 0.08
+    local_org_regain = 0.04
+}
+
+# -----------------------------------------------------------------------------
+# GUATEMALA: CAMPAIGN SUPPORT AND BORDER COMMAND
+# -----------------------------------------------------------------------------
+GUA_campaign_support_tier_1 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_industry
+    local_supplies_for_controller = 0.05
+    attrition_for_controller = -0.02
+    local_org_regain = 0.03
+}
+
+GUA_campaign_support_tier_2 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_industry
+    local_supplies_for_controller = 0.09
+    attrition_for_controller = -0.04
+    local_org_regain = 0.06
+    army_speed_factor_for_controller = 0.03
+}
+
+GUA_border_command_tier_1 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_plans
+    dig_in_speed_factor = 0.08
+    local_org_regain = 0.03
+}
+
+GUA_border_command_tier_2 = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_plans
+    dig_in_speed_factor = 0.12
+    local_org_regain = 0.05
+    army_speed_factor_for_controller = 0.04
+}
+
+# Temporary intelligence disruption may appear in addition to the persistent
+# systems, but it expires through its decision timer.
+BLZ_spy_disruption_state_modifier = {
+    enable = { always = yes }
+    icon = GFX_modifiers_generic_military_plans
+    attrition_for_controller = 0.05
+    local_supplies_for_controller = -0.10
+    local_org_regain = -0.08
+    dig_in_speed_factor = -0.15
+    army_speed_factor_for_controller = -0.05
+}
+
+# -----------------------------------------------------------------------------
+# LEGACY IDS
+# Kept for save compatibility. The refresh effects remove these safely.
+# -----------------------------------------------------------------------------
+BLZ_homeland_defence_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+BLZ_belmopan_fortified_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+BLZ_jungle_defence_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+BLZ_total_defence_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+BLZ_last_line_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+BLZ_civil_defence_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+BLZ_distributed_stockpiles_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_industry }
+BLZ_emergency_comms_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+BLZ_sarstoon_denial_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+BLZ_continuity_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+BLZ_frontline_rotation_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+BLZ_mopan_border_fortifications_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+BLZ_preemptive_garrison_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+GUA_peten_bottleneck_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+GUA_peten_improved_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+GUA_peten_forward_network_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+GUA_peten_rotation_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+GUA_requisitioned_transport_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+GUA_closed_crossings_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }
+GUA_limited_mobilisation_state_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans }

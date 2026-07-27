@@ -1,0 +1,223 @@
+TAD_HAI_BLZ_assistance_category = {
+	HAI_request_belizean_assistance = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = {
+			has_country_flag = HAI_crisis_active
+			check_variable = { HAI_escalation > 39 }
+			NOT = { has_country_flag = HAI_requested_belize_assistance }
+		}
+		available = {
+			has_country_flag = HAI_crisis_active
+			check_variable = { HAI_escalation > 39 }
+			NOT = { has_war = yes }
+			BLZ = {
+				exists = yes
+				NOT = { has_war = yes }
+			}
+		}
+		cost = 20
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_requested_belize_assistance
+			BLZ = { country_event = { id = tad_bg.300 hours = 6 } }
+		}
+		ai_will_do = { factor = 10000 }
+	}
+
+	HAI_honour_belizean_troop_debt = {
+		icon = GFX_decision_generic_allies_build_infantry
+		allowed = { tag = HAI }
+		visible = {
+			has_country_flag = HAI_owes_belize_troops
+			BLZ = { has_war_with = GUA }
+		}
+		available = {
+			NOT = { has_war = yes }
+			has_country_flag = HAI_owes_belize_troops
+			BLZ = { has_war_with = GUA }
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_repaid_belize_troops
+			clr_country_flag = HAI_owes_belize_troops
+			set_variable = { HAI_belize_troop_bonus_rifles = 0 }
+			set_variable = { HAI_belize_troop_bonus_support = 0 }
+
+			# The solidarity brigade itself is a real Haitian commitment.
+			add_manpower = -4000
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -400 }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = -30 }
+
+			# Extra Belizean help during the fall of Cap-Haitien is repaid with
+			# a larger material package alongside the brigade.
+			if = {
+				limit = { check_variable = { HAI_belize_aid_level > 2 } }
+				set_variable = { HAI_belize_troop_bonus_rifles = 300 }
+				set_variable = { HAI_belize_troop_bonus_support = 30 }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -300 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -30 }
+				BLZ = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 300 producer = HAI }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 30 producer = HAI }
+				}
+			}
+			if = {
+				limit = { check_variable = { HAI_belize_aid_level > 3 } }
+				add_to_variable = { HAI_belize_troop_bonus_rifles = 200 }
+				add_to_variable = { HAI_belize_troop_bonus_support = 20 }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -200 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -20 }
+				BLZ = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 200 producer = HAI }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 20 producer = HAI }
+				}
+			}
+
+			BLZ = {
+				load_oob = "HAI_return_belize_brigade"
+				add_opinion_modifier = { target = HAI modifier = TAD_BLZ_honoured_assistance_agreement }
+				country_event = { id = tad_bg.310 hours = 6 }
+			}
+			country_event = { id = tad_bg.312 hours = 6 }
+		}
+		ai_will_do = { factor = 10000 }
+	}
+
+	HAI_honour_belizean_arms_debt = {
+		icon = GFX_decision_generic_allies_build_infantry
+		allowed = { tag = HAI }
+		visible = {
+			has_country_flag = HAI_owes_belize_arms
+			BLZ = { has_war_with = GUA }
+		}
+		available = {
+			NOT = { has_war = yes }
+			has_country_flag = HAI_owes_belize_arms
+			BLZ = { has_war_with = GUA }
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_repaid_belize_arms
+			clr_country_flag = HAI_owes_belize_arms
+			set_variable = { HAI_belize_repayment_rifles = 400 }
+			set_variable = { HAI_belize_repayment_support = 40 }
+
+			# Haiti's condition determines the base repayment package.
+			if = {
+				limit = {
+					controls_state = 74
+					controls_state = 83
+					has_stability > 0.50
+				}
+				set_variable = { HAI_belize_repayment_rifles = 600 }
+				set_variable = { HAI_belize_repayment_support = 60 }
+			}
+			else_if = {
+				limit = {
+					OR = {
+						NOT = { controls_state = 83 }
+						has_stability < 0.30
+					}
+				}
+				set_variable = { HAI_belize_repayment_rifles = 250 }
+				set_variable = { HAI_belize_repayment_support = 20 }
+			}
+
+			# A second Belizean intervention raises the eventual repayment.
+			if = {
+				limit = { check_variable = { HAI_belize_aid_level > 1 } }
+				add_to_variable = { HAI_belize_repayment_rifles = 150 }
+				add_to_variable = { HAI_belize_repayment_support = 15 }
+			}
+			if = {
+				limit = { check_variable = { HAI_belize_aid_level > 2 } }
+				add_to_variable = { HAI_belize_repayment_rifles = 150 }
+				add_to_variable = { HAI_belize_repayment_support = 15 }
+			}
+
+			# Fixed branches keep the equipment effects native and visible.
+			if = {
+				limit = { check_variable = { HAI_belize_repayment_rifles = 250 } }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -250 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -20 }
+				BLZ = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 250 producer = HAI }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 20 producer = HAI }
+				}
+			}
+			else_if = {
+				limit = { check_variable = { HAI_belize_repayment_rifles = 400 } }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -400 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -40 }
+				BLZ = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 400 producer = HAI }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 40 producer = HAI }
+				}
+			}
+			else_if = {
+				limit = { check_variable = { HAI_belize_repayment_rifles = 550 } }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -550 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -55 }
+				BLZ = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 550 producer = HAI }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 55 producer = HAI }
+				}
+			}
+			else_if = {
+				limit = { check_variable = { HAI_belize_repayment_rifles = 600 } }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -600 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -60 }
+				BLZ = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 600 producer = HAI }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 60 producer = HAI }
+				}
+			}
+			else_if = {
+				limit = { check_variable = { HAI_belize_repayment_rifles = 700 } }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -700 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -70 }
+				BLZ = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 700 producer = HAI }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 70 producer = HAI }
+				}
+			}
+			else_if = {
+				limit = { check_variable = { HAI_belize_repayment_rifles = 750 } }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -750 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -75 }
+				BLZ = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 750 producer = HAI }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 75 producer = HAI }
+				}
+			}
+			else_if = {
+				limit = { check_variable = { HAI_belize_repayment_rifles = 850 } }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -850 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -75 }
+				BLZ = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 850 producer = HAI }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 75 producer = HAI }
+				}
+			}
+			else = {
+				# Maximum package: strong Haiti plus two rounds of Belizean aid.
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -900 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = -90 }
+				BLZ = {
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 900 producer = HAI }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 90 producer = HAI }
+				}
+			}
+
+			BLZ = {
+				add_opinion_modifier = { target = HAI modifier = TAD_BLZ_honoured_assistance_agreement }
+				country_event = { id = tad_bg.311 hours = 6 }
+			}
+			country_event = { id = tad_bg.312 hours = 6 }
+		}
+		ai_will_do = { factor = 10000 }
+	}
+}

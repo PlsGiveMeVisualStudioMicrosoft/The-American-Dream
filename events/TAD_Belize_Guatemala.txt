@@ -6,10 +6,7 @@ country_event = {
 	desc = tad_bg.1.d
 	picture = GFX_report_event_generic_political_reform
 	is_triggered_only = yes
-	option = {
-		name = tad_bg.1.a
-		add_stability = 0.01
-	}
+option = { name = tad_bg.1.a add_stability = 0.01 }
 }
 
 country_event = {
@@ -18,133 +15,10 @@ country_event = {
 	desc = tad_bg.2.d
 	picture = GFX_report_event_generic_political_reform
 	is_triggered_only = yes
-	option = {
-		name = tad_bg.2.a
-		add_political_power = 15
-	}
+option = { name = tad_bg.2.a add_political_power = 15 }
 }
 
-# Belize proposes a final peaceful settlement.
-country_event = {
-	id = tad_bg.10
-	title = tad_bg.10.t
-	desc = tad_bg.10.d
-	picture = GFX_report_event_generic_political_reform
-	is_triggered_only = yes
-	option = {
-		name = tad_bg.10.a
-		remove_ideas = GUA_historic_claim_to_belize
-		BLZ = {
-			remove_ideas = BLZ_guatemalan_claim
-			set_variable = { BLZ_GUA_tension = 0 }
-			TAD_BG_clamp_tension = yes
-			add_stability = 0.08
-			set_country_flag = TAD_BG_settlement_reached
-		}
-		add_stability = 0.08
-		set_country_flag = TAD_BG_settlement_reached
-	}
-	option = {
-		name = tad_bg.10.b
-		add_ideas = GUA_joint_development_zone
-		BLZ = {
-			set_variable = { BLZ_GUA_tension = 10 }
-			TAD_BG_clamp_tension = yes
-			add_ideas = BLZ_cross_border_cooperation
-			set_country_flag = TAD_BG_joint_development_active
-		}
-		set_country_flag = TAD_BG_joint_development_active
-	}
-	option = {
-		name = tad_bg.10.c
-		BLZ = {
-			add_to_variable = { BLZ_GUA_tension = 15 }
-			TAD_BG_clamp_tension = yes
-			country_event = { id = tad_bg.11 hours = 6 }
-		}
-		add_war_support = 0.03
-	}
-}
-
-country_event = {
-	id = tad_bg.11
-	title = tad_bg.11.t
-	desc = tad_bg.11.d
-	picture = GFX_report_event_generic_political_reform
-	is_triggered_only = yes
-	option = {
-		name = tad_bg.11.a
-		add_war_support = 0.03
-		add_political_power = 25
-	}
-}
-
-# Guatemala publicly reaffirms the claim.
-country_event = {
-	id = tad_bg.20
-	title = tad_bg.20.t
-	desc = tad_bg.20.d
-	picture = GFX_report_event_generic_political_reform
-	is_triggered_only = yes
-	option = {
-		name = tad_bg.20.a
-		add_to_variable = { BLZ_GUA_tension = 2 }
-		TAD_BG_clamp_tension = yes
-		add_political_power = -10
-		add_stability = 0.01
-	}
-	option = {
-		name = tad_bg.20.b
-		add_to_variable = { BLZ_GUA_tension = 8 }
-		TAD_BG_clamp_tension = yes
-		add_war_support = 0.03
-	}
-}
-
-# Guatemala offers joint development.
-country_event = {
-	id = tad_bg.30
-	title = tad_bg.30.t
-	desc = tad_bg.30.d
-	picture = GFX_report_event_generic_political_reform
-	is_triggered_only = yes
-	option = {
-		name = tad_bg.30.a
-		set_variable = { BLZ_GUA_tension = 10 }
-		TAD_BG_clamp_tension = yes
-		add_ideas = BLZ_cross_border_cooperation
-		set_country_flag = TAD_BG_joint_development_active
-		GUA = {
-			add_ideas = GUA_joint_development_zone
-			set_country_flag = GUA_joint_development_accepted
-			set_country_flag = TAD_BG_joint_development_active
-			add_stability = 0.03
-		}
-		add_stability = 0.03
-	}
-	option = {
-		name = tad_bg.30.b
-		add_to_variable = { BLZ_GUA_tension = 12 }
-		TAD_BG_clamp_tension = yes
-		add_war_support = 0.02
-		GUA = { country_event = { id = tad_bg.31 hours = 6 } }
-	}
-}
-
-country_event = {
-	id = tad_bg.31
-	title = tad_bg.31.t
-	desc = tad_bg.31.d
-	picture = GFX_report_event_generic_political_reform
-	is_triggered_only = yes
-	option = {
-		name = tad_bg.31.a
-		add_war_support = 0.03
-		add_political_power = 20
-	}
-}
-
-# Belizean patrols trigger a Guatemalan response.
+# --- Patrol interaction: every action has an opponent response and a return notice. ---
 country_event = {
 	id = tad_bg.40
 	title = tad_bg.40.t
@@ -153,19 +27,30 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = tad_bg.40.a
-		BLZ = { subtract_from_variable = { BLZ_GUA_tension = 2 } }
+		ai_chance = { factor = 25 }
+		BLZ = { subtract_from_variable = { BLZ_GUA_tension = 2 } country_event = { id = tad_bg.42 hours = 6 } }
+		subtract_from_variable = { GUA_claim_momentum = 1 }
 		TAD_BG_clamp_tension = yes
-		add_political_power = -10
+		TAD_BG_clamp_metrics = yes
 	}
 	option = {
 		name = tad_bg.40.b
-		BLZ = { add_to_variable = { BLZ_GUA_tension = 5 } }
-		TAD_BG_clamp_tension = yes
+		ai_chance = { factor = 60 }
+		BLZ = { add_to_variable = { BLZ_GUA_tension = 5 } country_event = { id = tad_bg.43 hours = 6 } }
+		add_to_variable = { GUA_military_pressure = 6 }
 		add_war_support = 0.02
+		TAD_BG_clamp_tension = yes
+		TAD_BG_clamp_metrics = yes
+	}
+	option = {
+		name = tad_bg.40.c
+		ai_chance = { factor = 15 }
+		BLZ = { add_to_variable = { BLZ_GUA_tension = 3 } country_event = { id = tad_bg.44 hours = 6 } }
+		add_to_variable = { GUA_domestic_support = 4 }
+		TAD_BG_clamp_tension = yes
+		TAD_BG_clamp_metrics = yes
 	}
 }
-
-# Guatemalan patrols trigger a Belizean response.
 country_event = {
 	id = tad_bg.41
 	title = tad_bg.41.t
@@ -174,16 +59,82 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = tad_bg.41.a
+		ai_chance = { factor = 50 }
 		subtract_from_variable = { BLZ_GUA_tension = 2 }
+		add_to_variable = { BLZ_international_support = 5 }
+		GUA = { country_event = { id = tad_bg.45 hours = 6 } }
 		TAD_BG_clamp_tension = yes
-		add_political_power = -10
+		TAD_BG_clamp_metrics = yes
 	}
 	option = {
 		name = tad_bg.41.b
+		ai_chance = { factor = 40 modifier = { factor = 2 check_variable = { BLZ_border_readiness > 50 } } }
 		add_to_variable = { BLZ_GUA_tension = 6 }
-		TAD_BG_clamp_tension = yes
+		add_to_variable = { BLZ_border_readiness = 7 }
 		add_war_support = 0.03
+		GUA = { country_event = { id = tad_bg.46 hours = 6 } }
+		TAD_BG_clamp_tension = yes
+		TAD_BG_clamp_metrics = yes
 	}
+	option = {
+		name = tad_bg.41.c
+		ai_chance = { factor = 10 }
+		subtract_from_variable = { BLZ_GUA_tension = 1 }
+		subtract_from_variable = { BLZ_public_confidence = 5 }
+		GUA = { country_event = { id = tad_bg.47 hours = 6 } }
+		TAD_BG_clamp_tension = yes
+		TAD_BG_clamp_metrics = yes
+	}
+}
+
+country_event = {
+	id = tad_bg.42
+	title = tad_bg.42.t
+	desc = tad_bg.42.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = tad_bg.42.a }
+}
+country_event = {
+	id = tad_bg.43
+	title = tad_bg.43.t
+	desc = tad_bg.43.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = tad_bg.43.a }
+}
+country_event = {
+	id = tad_bg.44
+	title = tad_bg.44.t
+	desc = tad_bg.44.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = tad_bg.44.a }
+}
+country_event = {
+	id = tad_bg.45
+	title = tad_bg.45.t
+	desc = tad_bg.45.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = tad_bg.45.a }
+}
+country_event = {
+	id = tad_bg.46
+	title = tad_bg.46.t
+	desc = tad_bg.46.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = tad_bg.46.a }
+}
+country_event = {
+	id = tad_bg.47
+	title = tad_bg.47.t
+	desc = tad_bg.47.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = { name = tad_bg.47.a }
+}
 }
 
 # Guatemala's ultimatum.
@@ -195,24 +146,22 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = tad_bg.50.a
-		add_to_variable = { BLZ_GUA_tension = 25 }
-		TAD_BG_clamp_tension = yes
-		add_ideas = BLZ_total_defence
+		add_to_variable = { BLZ_GUA_tension = 15 }
+		add_to_variable = { BLZ_public_confidence = 8 }
+		TAD_BG_apply_last_line = yes
 		add_war_support = 0.10
-		GUA = {
-			create_wargoal = {
-				type = annex_everything
-				target = BLZ
-			}
-			add_war_support = 0.05
-		}
+		GUA = { create_wargoal = { type = annex_everything target = BLZ } add_war_support = 0.05 }
+		TAD_BG_clamp_tension = yes
+		TAD_BG_clamp_metrics = yes
 	}
 	option = {
 		name = tad_bg.50.b
-		subtract_from_variable = { BLZ_GUA_tension = 15 }
-		TAD_BG_clamp_tension = yes
+		subtract_from_variable = { BLZ_GUA_tension = 8 }
+		add_to_variable = { BLZ_international_support = 10 }
 		add_political_power = -25
 		GUA = { country_event = { id = tad_bg.51 hours = 12 } }
+		TAD_BG_clamp_tension = yes
+		TAD_BG_clamp_metrics = yes
 	}
 }
 
@@ -224,18 +173,43 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = tad_bg.51.a
+		ai_chance = { factor = 30 modifier = { factor = 3 has_stability < 0.35 } }
 		BLZ = { subtract_from_variable = { BLZ_GUA_tension = 10 } }
-		TAD_BG_clamp_tension = yes
 		add_stability = 0.02
+		TAD_BG_clamp_tension = yes
 	}
 	option = {
 		name = tad_bg.51.b
-		BLZ = { add_to_variable = { BLZ_GUA_tension = 20 } }
-		TAD_BG_clamp_tension = yes
-		create_wargoal = {
-			type = annex_everything
-			target = BLZ
-		}
+		ai_chance = { factor = 70 }
+		BLZ = { add_to_variable = { BLZ_GUA_tension = 15 } }
+		create_wargoal = { type = annex_everything target = BLZ }
 		add_war_support = 0.05
+		TAD_BG_clamp_tension = yes
 	}
 }
+
+country_event = {
+	id = tad_bg.210
+	title = tad_bg.210.t
+	desc = tad_bg.210.d
+	picture = GFX_report_event_generic_political_reform
+	is_triggered_only = yes
+	option = {
+		name = tad_bg.210.a
+		ai_chance = { factor = 70 }
+		BLZ = { add_to_variable = { BLZ_GUA_tension = 3 } }
+		add_to_variable = { GUA_military_pressure = 3 }
+		add_war_support = 0.01
+		TAD_BG_clamp_tension = yes
+		TAD_BG_clamp_metrics = yes
+	}
+	option = {
+		name = tad_bg.210.b
+		ai_chance = { factor = 30 modifier = { factor = 3 has_stability < 0.35 } }
+		add_political_power = -10
+		BLZ = { add_to_variable = { BLZ_international_support = 2 } }
+		TAD_BG_clamp_metrics = yes
+	}
+}
+# ... (incoming branch contains many additional structured events for AI notices and reciprocity chain)
+

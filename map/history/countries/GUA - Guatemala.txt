@@ -1,0 +1,72 @@
+capital = 12
+
+oob = "GUA_2025"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	support_weapons = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	basic_machine_tools = 1
+	construction1 = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	mountaineers = 1
+}
+
+set_convoys = 18
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2023.8.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 55
+	neutrality = 28
+	fascism = 10
+	communism = 7
+}
+
+set_stability = 0.48
+set_war_support = 0.37
+
+set_variable = { GUA_claim_momentum = 45 }
+set_variable = { GUA_military_pressure = 25 }
+set_variable = { GUA_domestic_support = 50 }
+set_country_flag = TAD_BG_dispute_active
+set_country_flag = GUA_arevalo_government
+
+add_ideas = {
+	GUA_pact_of_corrupt
+	GUA_fragmented_congress
+	GUA_remittance_economy
+	GUA_legacy_internal_conflict
+	GUA_historic_claim_to_belize
+	GUA_underfunded_security_forces
+}
+
+recruit_character = GUA_Bernardo_Arevalo
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 3200
+	producer = GUA
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 320
+	producer = GUA
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 120
+	producer = GUA
+}
+# Petén logistics are state-scoped, not a national spirit.
+89 = { add_dynamic_modifier = { modifier = GUA_peten_bottleneck_state_modifier } }

@@ -11,3 +11,82 @@ TAD_BG_dispute_category = {
 	}
 	priority = 120
 }
+
+
+TAD_HAI_BLZ_assistance_category = {
+	icon = generic_propaganda
+	allowed = { tag = HAI }
+	visible = {
+		OR = {
+			has_country_flag = HAI_crisis_active
+			has_country_flag = HAI_owes_belize_troops
+			has_country_flag = HAI_owes_belize_arms
+		}
+	}
+	priority = 121
+}
+
+TAD_BG_force_generation_category = {
+    icon = generic_research
+    allowed = {
+        OR = {
+            tag = BLZ
+            tag = GUA
+        }
+    }
+    visible = {
+        OR = {
+            AND = {
+                tag = BLZ
+                OR = {
+                    has_war_with = GUA
+                    check_variable = { BLZ_GUA_tension > 39 }
+                }
+            }
+            AND = {
+                tag = GUA
+                OR = {
+                    has_war_with = BLZ
+                    BLZ = { check_variable = { BLZ_GUA_tension > 39 } }
+                }
+            }
+        }
+    }
+    priority = 119
+}
+
+TAD_BG_foreign_divisions_category = {
+    icon = generic_research
+    allowed = { tag = BLZ }
+    visible = {
+        OR = {
+            has_country_flag = BLZ_foreign_divisions_market_open
+            check_variable = { BLZ_foreign_division_cap > 0 }
+        }
+    }
+    priority = 118
+}
+
+TAD_BG_postwar_recovery_category = {
+    icon = generic_research
+    allowed = {
+        OR = {
+            tag = BLZ
+            tag = GUA
+        }
+    }
+    visible = {
+        OR = {
+            has_country_flag = BLZ_postwar_program_unlocked
+            has_country_flag = GUA_postwar_program_unlocked
+        }
+    }
+    priority = 117
+}
+
+TAD_BLZ_peten_intelligence_category = {
+    icon = generic_research
+    allowed = { tag = BLZ }
+    visible = { has_country_flag = BLZ_peten_spies_unlocked }
+    priority = 116
+}

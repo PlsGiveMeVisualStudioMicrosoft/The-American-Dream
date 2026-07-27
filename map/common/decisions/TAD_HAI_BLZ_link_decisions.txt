@@ -1,0 +1,58 @@
+TAD_HAI_BLZ_assistance_category = {
+	HAI_request_belizean_assistance = {
+		icon = GFX_decision_generic_propaganda
+		allowed = { tag = HAI }
+		visible = { has_country_flag = HAI_crisis_active NOT = { has_country_flag = HAI_requested_belize_assistance } }
+		available = {
+			has_country_flag = HAI_crisis_active
+			check_variable = { HAI_escalation > 39 }
+			NOT = { has_war = yes }
+			BLZ = { exists = yes NOT = { has_war = yes } check_variable = { BLZ_GUA_tension < 40 } }
+		}
+		cost = 35
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_requested_belize_assistance
+			BLZ = { country_event = { id = tad_bg.300 hours = 6 } }
+		}
+		ai_will_do = { base = 500 }
+	}
+
+	HAI_honour_belizean_troop_debt = {
+		icon = GFX_decision_generic_allies_build_infantry
+		allowed = { tag = HAI }
+		visible = { has_country_flag = HAI_owes_belize_troops BLZ = { has_war_with = GUA } }
+		available = { NOT = { has_war = yes } has_country_flag = HAI_owes_belize_troops BLZ = { has_war_with = GUA } }
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_repaid_belize_troops
+			clr_country_flag = HAI_owes_belize_troops
+			BLZ = { load_oob = "HAI_return_belize_brigade" country_event = { id = tad_bg.310 hours = 6 } }
+			country_event = { id = tad_bg.312 hours = 6 }
+		}
+		ai_will_do = { base = 2000 }
+	}
+
+	HAI_honour_belizean_arms_debt = {
+		icon = GFX_decision_generic_allies_build_infantry
+		allowed = { tag = HAI }
+		visible = { has_country_flag = HAI_owes_belize_arms BLZ = { has_war_with = GUA } }
+		available = { NOT = { has_war = yes } has_country_flag = HAI_owes_belize_arms BLZ = { has_war_with = GUA } }
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = HAI_repaid_belize_arms
+			clr_country_flag = HAI_owes_belize_arms
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -700 }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = -75 }
+			BLZ = {
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 700 producer = HAI }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 75 producer = HAI }
+				country_event = { id = tad_bg.311 hours = 6 }
+			}
+			country_event = { id = tad_bg.312 hours = 6 }
+		}
+		ai_will_do = { base = 2000 }
+	}
+}

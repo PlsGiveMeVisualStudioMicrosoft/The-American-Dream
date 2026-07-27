@@ -4,14 +4,22 @@ state={
 	name="STATE_15"
 	history={
 		owner = BLZ
-		victory_points = {
-			3194 1
-		}
+		victory_points = { 1655 1 }
+		victory_points = { 2575 1 }
+		victory_points = { 2140 5 }
+		victory_points = { 8952 2 }
+		victory_points = { 3194 2 }
+		victory_points = { 3848 1 }
+		victory_points = { 4783 2 }
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
+			2140 = {
+				naval_base = 3
+			}
 		}
 		add_core_of = BLZ
+		add_dynamic_modifier = { modifier = BLZ_defence_network_tier_1 }
 	}
 
 	provinces={

@@ -1,0 +1,17 @@
+division_template = {
+	name = "Nicaraguan Volunteer Group"
+	regiments = {
+		nicaraguan_volunteer_infantry = { x = 0 y = 0 }
+		nicaraguan_volunteer_infantry = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+units = {
+	division = {
+		name = "Nicaraguan Volunteer Group"
+		location = 14954
+		division_template = "Nicaraguan Volunteer Group"
+		start_experience_factor = 0.62
+		start_equipment_factor = 0.82
+	}
+}

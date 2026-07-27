@@ -51,6 +51,15 @@ country_event = {
 		trigger = { country_exists = KRB }
 		KRB = { add_timed_idea = { idea = KRB_fuel_police_pressure days = 21 } }
 	}
+	option = {
+		name = hai_fuel.50.e
+		trigger = {
+			NOT = { country_exists = VIV }
+			NOT = { country_exists = GRF }
+			NOT = { country_exists = KRB }
+		}
+		add_political_power = 5
+	}
 }
 
 country_event = {
@@ -349,7 +358,7 @@ country_event = {
 	}
 	option = {
 		name = hai_fuel.130.b
-		trigger = { political_power > 74 }
+		trigger = { has_political_power > 74 }
 		add_political_power = -75
 		custom_effect_tooltip = HAI_escalation_increase_3_tt
 		hidden_effect = { add_to_variable = { HAI_escalation = 3 } }

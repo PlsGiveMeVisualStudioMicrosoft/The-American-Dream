@@ -14,7 +14,7 @@ set_technology = {
 	construction1 = 1
 	motorised_infantry = 1
 	paratroopers = 1
-	mountaineers = 1
+	tech_mountaineers = 1
 }
 
 set_convoys = 18
@@ -36,6 +36,9 @@ set_popularities = {
 set_stability = 0.48
 set_war_support = 0.37
 
+set_variable = { GUA_claim_momentum = 45 }
+set_variable = { GUA_military_pressure = 25 }
+set_variable = { GUA_domestic_support = 50 }
 set_country_flag = TAD_BG_dispute_active
 set_country_flag = GUA_arevalo_government
 

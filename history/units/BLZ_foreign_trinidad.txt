@@ -1,0 +1,17 @@
+division_template = {
+	name = "Trinidad Maritime Security Group"
+	regiments = {
+		trinidad_security_infantry = { x = 0 y = 0 }
+		trinidad_security_infantry = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+units = {
+	division = {
+		name = "Trinidad Maritime Security Group"
+		location = 14954
+		division_template = "Trinidad Maritime Security Group"
+		start_experience_factor = 0.48
+		start_equipment_factor = 0.86
+	}
+}

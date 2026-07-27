@@ -1,0 +1,17 @@
+division_template = {
+	name = "Honduran Border Volunteers"
+	regiments = {
+		honduran_volunteer_infantry = { x = 0 y = 0 }
+		honduran_volunteer_infantry = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+units = {
+	division = {
+		name = "Honduran Border Volunteers"
+		location = 14954
+		division_template = "Honduran Border Volunteers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.55
+	}
+}

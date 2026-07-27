@@ -1,0 +1,24 @@
+division_template = {
+	name = "Belize Territorial Defence Group"
+	regiments = {
+		belize_territorial_infantry = { x = 0 y = 0 }
+		belize_territorial_infantry = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "1st Belize Territorial Defence Group"
+		location = 14954
+		division_template = "Belize Territorial Defence Group"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.60
+	}
+	division = {
+		name = "2nd Belize Territorial Defence Group"
+		location = 3337
+		division_template = "Belize Territorial Defence Group"
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.58
+	}
+}

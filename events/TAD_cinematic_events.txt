@@ -1,0 +1,545 @@
+add_namespace = tad_cine
+
+# =============================================================
+# HAITI - CRISIS, COLLAPSE AND RECOVERY
+# =============================================================
+
+country_event = {
+    id = tad_cine.1
+    title = tad_cine.1.t
+    desc = tad_cine.1.d
+    picture = GFX_report_event_hai_fall_port_au_prince
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.1.a
+        add_stability = -0.04
+        add_war_support = 0.03
+        add_political_power = -35
+        add_to_variable = { HAI_escalation = 8 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.2
+    trigger = { OR = { has_country_flag = HAI_crisis_active has_country_flag = HAI_haiti_war_started } }
+    title = tad_cine.2.t
+    desc = tad_cine.2.d
+    picture = GFX_report_event_hai_palace_looted
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.2.a
+        add_stability = -0.025
+        add_political_power = -45
+        add_to_variable = { HAI_escalation = 4 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.3
+    trigger = { OR = { has_country_flag = HAI_crisis_active has_country_flag = HAI_haiti_war_started } }
+    title = tad_cine.3.t
+    desc = tad_cine.3.d
+    picture = GFX_report_event_hai_bank_raid
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.3.a
+        add_political_power = -60
+        add_stability = -0.015
+        add_to_variable = { HAI_escalation = 3 }
+        VIV = { add_political_power = 25 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.4
+    trigger = { OR = { has_country_flag = HAI_crisis_active has_country_flag = HAI_haiti_war_started } }
+    title = tad_cine.4.t
+    desc = tad_cine.4.d
+    picture = GFX_report_event_hai_fuel_convoy_hijacked
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.4.a
+        add_fuel = -9000
+        add_equipment_to_stockpile = { type = convoy_1 amount = -2 }
+        add_stability = -0.01
+        add_to_variable = { HAI_escalation = 3 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.5
+    trigger = { OR = { has_country_flag = HAI_crisis_active has_country_flag = HAI_haiti_war_started } }
+    title = tad_cine.5.t
+    desc = tad_cine.5.d
+    picture = GFX_report_event_hai_port_warehouses_burn
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.5.a
+        add_equipment_to_stockpile = { type = infantry_equipment_0 amount = -180 }
+        add_equipment_to_stockpile = { type = support_equipment_1 amount = -20 }
+        add_stability = -0.02
+        add_to_variable = { HAI_escalation = 4 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.6
+    trigger = { OR = { has_country_flag = HAI_crisis_active has_country_flag = HAI_haiti_war_started } }
+    title = tad_cine.6.t
+    desc = tad_cine.6.d
+    picture = GFX_report_event_hai_mass_prison_break
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.6.a
+        add_stability = -0.03
+        add_to_variable = { HAI_escalation = 5 }
+        VIV = { add_manpower = 500 }
+        KRB = { add_manpower = 250 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.7
+    trigger = { OR = { has_country_flag = HAI_crisis_active has_country_flag = HAI_haiti_war_started } }
+    title = tad_cine.7.t
+    desc = tad_cine.7.d
+    picture = GFX_report_event_hai_airport_falls_silent
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.7.a
+        add_political_power = -30
+        add_stability = -0.015
+        add_to_variable = { HAI_escalation = 3 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.8
+    title = tad_cine.8.t
+    desc = tad_cine.8.d
+    picture = GFX_report_event_hai_cap_haitien_seized
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.8.a
+        add_stability = -0.025
+        add_war_support = 0.025
+        add_to_variable = { HAI_escalation = 5 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.9
+    title = tad_cine.9.t
+    desc = tad_cine.9.d
+    picture = GFX_report_event_hai_gonave_plundered
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.9.a
+        add_stability = -0.02
+        add_political_power = -30
+        add_to_variable = { HAI_escalation = 4 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.10
+    title = tad_cine.10.t
+    desc = tad_cine.10.d
+    picture = GFX_report_event_hai_capital_reclaimed
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.10.a
+        add_stability = 0.05
+        add_war_support = 0.04
+        add_political_power = 50
+        subtract_from_variable = { HAI_escalation = 6 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.11
+    title = tad_cine.11.t
+    desc = tad_cine.11.d
+    picture = GFX_report_event_hai_humanitarian_corridor
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.11.a
+        trigger = { has_political_power > 29 }
+        add_political_power = -30
+        add_stability = 0.025
+        subtract_from_variable = { HAI_escalation = 4 }
+        add_equipment_to_stockpile = { type = support_equipment_1 amount = 25 }
+        HAI_check_escalation_threshold = yes
+    }
+    option = {
+        name = tad_cine.11.b
+        add_stability = -0.005
+    }
+}
+
+country_event = {
+    id = tad_cine.12
+    title = tad_cine.12.t
+    desc = tad_cine.12.d
+    picture = GFX_report_event_hai_viv_collapse
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.12.a
+        add_stability = 0.035
+        add_war_support = 0.025
+        add_political_power = 45
+        subtract_from_variable = { HAI_escalation = 8 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.13
+    title = tad_cine.13.t
+    desc = tad_cine.13.d
+    picture = GFX_report_event_hai_grf_collapse
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.13.a
+        add_stability = 0.03
+        add_war_support = 0.02
+        add_political_power = 35
+        subtract_from_variable = { HAI_escalation = 6 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.14
+    title = tad_cine.14.t
+    desc = tad_cine.14.d
+    picture = GFX_report_event_hai_krb_collapse
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.14.a
+        add_stability = 0.025
+        add_war_support = 0.02
+        add_political_power = 30
+        subtract_from_variable = { HAI_escalation = 5 }
+        HAI_check_escalation_threshold = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.15
+    title = tad_cine.15.t
+    desc = tad_cine.15.d
+    picture = GFX_report_event_hai_crisis_victory
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.15.a
+        add_stability = 0.10
+        add_war_support = 0.06
+        add_political_power = 150
+        set_variable = { HAI_escalation = 0 }
+    }
+}
+
+# =============================================================
+# BELIZE - PREPARATION, WAR AND SURVIVAL
+# =============================================================
+
+country_event = {
+    id = tad_cine.20
+    title = tad_cine.20.t
+    desc = tad_cine.20.d
+    picture = GFX_report_event_blz_fortifications_complete
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.20.a
+        add_war_support = 0.025
+        add_to_variable = { BLZ_border_readiness = 6 }
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.21
+    title = tad_cine.21.t
+    desc = tad_cine.21.d
+    picture = GFX_report_event_blz_foreign_volunteers_arrive
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.21.a
+        add_stability = 0.01
+        add_war_support = 0.02
+        add_to_variable = { BLZ_public_confidence = 4 }
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.22
+    title = tad_cine.22.t
+    desc = tad_cine.22.d
+    picture = GFX_report_event_blz_port_belize_expanded
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.22.a
+        add_stability = 0.02
+        add_political_power = 40
+    }
+}
+
+country_event = {
+    id = tad_cine.23
+    title = tad_cine.23.t
+    desc = tad_cine.23.d
+    picture = GFX_report_event_blz_belmopan_under_fire
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.23.a
+        add_war_support = 0.08
+        add_stability = -0.04
+        add_to_variable = { BLZ_public_confidence = -8 }
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.24
+    title = tad_cine.24.t
+    desc = tad_cine.24.d
+    picture = GFX_report_event_blz_survives
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.24.a
+        add_stability = 0.08
+        add_war_support = 0.06
+        add_political_power = 120
+        add_to_variable = { BLZ_public_confidence = 15 }
+        add_to_variable = { BLZ_international_support = 10 }
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+# =============================================================
+# GUATEMALA - MOBILISATION, INVASION AND AFTERMATH
+# =============================================================
+
+country_event = {
+    id = tad_cine.30
+    title = tad_cine.30.t
+    desc = tad_cine.30.d
+    picture = GFX_report_event_gua_peten_mobilized
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.30.a
+        add_war_support = 0.025
+        add_to_variable = { GUA_military_pressure = 6 }
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.31
+    title = tad_cine.31.t
+    desc = tad_cine.31.d
+    picture = GFX_report_event_gua_crosses_border
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.31.a
+        add_war_support = 0.05
+        add_stability = -0.01
+    }
+}
+
+country_event = {
+    id = tad_cine.32
+    title = tad_cine.32.t
+    desc = tad_cine.32.d
+    picture = GFX_report_event_gua_belmopan_captured
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.32.a
+        add_war_support = 0.05
+        add_political_power = 60
+        add_to_variable = { GUA_domestic_support = 8 }
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.33
+    title = tad_cine.33.t
+    desc = tad_cine.33.d
+    picture = GFX_report_event_gua_jungle_stalemate
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.33.a
+        add_stability = -0.02
+        add_war_support = -0.025
+        add_to_variable = { GUA_domestic_support = -5 }
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.34
+    title = tad_cine.34.t
+    desc = tad_cine.34.d
+    picture = GFX_report_event_gua_belizean_resistance
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.34.a
+        add_political_power = -30
+        add_stability = -0.015
+        add_to_variable = { GUA_military_pressure = -3 }
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.35
+    title = tad_cine.35.t
+    desc = tad_cine.35.d
+    picture = GFX_report_event_gua_troops_return
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.35.a
+        add_stability = 0.03
+        add_war_support = -0.02
+        add_political_power = 45
+    }
+}
+
+# =============================================================
+# WORLD NEWS EVENTS
+# =============================================================
+
+news_event = { id = tad_cine.101 title = tad_cine.101.t desc = tad_cine.101.d picture = GFX_news_event_hai_fall_port_au_prince major = yes is_triggered_only = yes option = { name = tad_cine.news.a } }
+news_event = { id = tad_cine.102 title = tad_cine.102.t desc = tad_cine.102.d picture = GFX_news_event_hai_fall_of_haiti major = yes is_triggered_only = yes option = { name = tad_cine.news.a } }
+news_event = { id = tad_cine.106 title = tad_cine.106.t desc = tad_cine.106.d picture = GFX_news_event_hai_crisis_victory major = yes is_triggered_only = yes option = { name = tad_cine.news.a } }
+news_event = { id = tad_cine.107 title = tad_cine.107.t desc = tad_cine.107.d picture = GFX_news_event_blz_fall major = yes is_triggered_only = yes option = { name = tad_cine.news.a } }
+news_event = { id = tad_cine.108 title = tad_cine.108.t desc = tad_cine.108.d picture = GFX_news_event_blz_survives major = yes is_triggered_only = yes option = { name = tad_cine.news.a } }
+news_event = { id = tad_cine.109 title = tad_cine.109.t desc = tad_cine.109.d picture = GFX_news_event_gua_belmopan_captured major = yes is_triggered_only = yes option = { name = tad_cine.news.a } }
+news_event = { id = tad_cine.110 title = tad_cine.110.t desc = tad_cine.110.d picture = GFX_news_event_gua_victory major = yes is_triggered_only = yes option = { name = tad_cine.news.a } }
+news_event = { id = tad_cine.111 title = tad_cine.111.t desc = tad_cine.111.d picture = GFX_news_event_gua_defeat major = yes is_triggered_only = yes option = { name = tad_cine.news.a } }
+
+
+# =============================================================
+# ADDITIONAL CINEMATIC COUNTRY EVENTS
+# =============================================================
+
+country_event = {
+    id = tad_cine.16
+    title = tad_cine.16.t
+    desc = tad_cine.16.d
+    picture = GFX_report_event_blz_drills_begin
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.16.a
+        add_command_power = 10
+        add_war_support = 0.01
+        add_to_variable = { BLZ_border_readiness = 2 }
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.17
+    title = tad_cine.17.t
+    desc = tad_cine.17.d
+    picture = GFX_report_event_blz_drills_begin
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.17.a
+        army_experience = 4
+        add_to_variable = { BLZ_border_readiness = 2 }
+        add_to_variable = { BLZ_public_confidence = 2 }
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.18
+    title = tad_cine.18.t
+    desc = tad_cine.18.d
+    picture = GFX_report_event_blz_border_incident
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.18.a
+        add_war_support = 0.01
+        add_to_variable = { GUA_military_pressure = 2 }
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.19
+    title = tad_cine.19.t
+    desc = tad_cine.19.d
+    picture = GFX_report_event_blz_requests_protection
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.19.a
+        add_political_power = 15
+        add_to_variable = { BLZ_international_support = 3 }
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.25
+    title = tad_cine.25.t
+    desc = tad_cine.25.d
+    picture = GFX_report_event_blz_border_incident
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.25.a
+        add_war_support = 0.02
+        add_stability = -0.01
+        add_to_variable = { BLZ_public_confidence = -2 }
+        add_to_variable = { BLZ_GUA_tension = 2 }
+        TAD_BG_clamp_tension = yes
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.26
+    title = tad_cine.26.t
+    desc = tad_cine.26.d
+    picture = GFX_report_event_blz_border_incident
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.26.a
+        add_war_support = 0.02
+        add_stability = -0.005
+        add_to_variable = { GUA_military_pressure = 2 }
+        add_to_variable = { BLZ_GUA_tension = 2 }
+        TAD_BG_clamp_tension = yes
+        TAD_BG_clamp_metrics = yes
+    }
+}
+
+country_event = {
+    id = tad_cine.37
+    title = tad_cine.37.t
+    desc = tad_cine.37.d
+    picture = GFX_report_event_gua_pressure_mounts
+    is_triggered_only = yes
+    option = {
+        name = tad_cine.37.a
+        add_political_power = -35
+        add_war_support = -0.02
+        add_stability = -0.01
+        add_to_variable = { GUA_domestic_support = -4 }
+        TAD_BG_clamp_metrics = yes
+    }
+}

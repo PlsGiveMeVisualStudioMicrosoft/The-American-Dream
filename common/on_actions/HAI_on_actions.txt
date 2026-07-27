@@ -242,6 +242,118 @@ on_actions = {
 					add_ideas = HAI_gonave_shipyards
 				}
 			}
-		}
+		
+
+			# Once Belize has already helped, the fall of Cap-Haitien produces a
+			# second, cinematic appeal. It can happen during the pre-war crisis or
+			# the open conflict, but only once per campaign.
+			if = {
+				limit = {
+					has_country_flag = HAI_belize_assistance_accepted
+					OR = {
+						has_country_flag = HAI_crisis_active
+						has_war = yes
+					}
+					NOT = { controls_province = 3200 }
+					NOT = { has_country_flag = HAI_cap_haitien_appeal_sent }
+					BLZ = { exists = yes }
+				}
+				set_country_flag = HAI_cap_haitien_appeal_sent
+				BLZ = { country_event = { id = tad_bg.320 hours = 6 } }
+			}
+
+			# When Haiti's open war is over, the deployed BDF personnel return to
+			# Belize automatically. The quality of the returning formation reflects
+			# Haiti's final territorial and political condition.
+			if = {
+				limit = {
+					has_country_flag = HAI_bdf_detachment_deployed
+					has_country_flag = HAI_haiti_war_started
+					NOT = { has_war = yes }
+					NOT = { has_country_flag = HAI_bdf_return_processed }
+				}
+				set_country_flag = HAI_bdf_return_processed
+				delete_unit = { id = 905001 disband = no }
+				if = {
+					limit = { has_country_flag = HAI_bdf_reinforcement_deployed }
+					delete_unit = { id = 905002 disband = no }
+				}
+				country_event = { id = tad_bg.324 hours = 3 }
+
+				if = {
+					limit = {
+						controls_state = 74
+						controls_state = 83
+						has_stability > 0.50
+					}
+					BLZ = {
+						set_technology = { TAD_foreign_volunteer_tech = 1 tech_engineers = 1 }
+						load_oob = "BLZ_to_haiti_security_detachment"
+						88 = {
+							create_unit = {
+								division = "name = \"BDF Caribbean Security Detachment - Haiti Veterans\" division_template = \"BDF Caribbean Security Detachment\" start_experience_factor = 0.65 start_equipment_factor = 0.90"
+								owner = BLZ
+								prioritize_location = 14954
+								id = 905101
+							}
+						}
+						country_event = { id = tad_bg.325 hours = 6 }
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							NOT = { controls_state = 83 }
+							has_stability < 0.30
+						}
+					}
+					BLZ = {
+						set_technology = { TAD_foreign_volunteer_tech = 1 tech_engineers = 1 }
+						load_oob = "BLZ_to_haiti_security_detachment"
+						88 = {
+							create_unit = {
+								division = "name = \"BDF Caribbean Security Detachment - Returned Mission\" division_template = \"BDF Caribbean Security Detachment\" start_experience_factor = 0.25 start_equipment_factor = 0.60"
+								owner = BLZ
+								prioritize_location = 14954
+								id = 905101
+							}
+						}
+						country_event = { id = tad_bg.327 hours = 6 }
+					}
+				}
+				else = {
+					BLZ = {
+						set_technology = { TAD_foreign_volunteer_tech = 1 tech_engineers = 1 }
+						load_oob = "BLZ_to_haiti_security_detachment"
+						88 = {
+							create_unit = {
+								division = "name = \"BDF Caribbean Security Detachment - Returned Mission\" division_template = \"BDF Caribbean Security Detachment\" start_experience_factor = 0.45 start_equipment_factor = 0.78"
+								owner = BLZ
+								prioritize_location = 14954
+								id = 905101
+							}
+						}
+						country_event = { id = tad_bg.326 hours = 6 }
+					}
+				}
+
+				# A second BDF company also returns if Belize answered the Cap-Haitien
+				# emergency with personnel rather than weapons.
+				if = {
+					limit = { has_country_flag = HAI_bdf_reinforcement_deployed }
+					BLZ = {
+						load_oob = "BLZ_to_haiti_reinforcement_company"
+						88 = {
+							create_unit = {
+								division = "name = \"BDF Emergency Reinforcement Company - Haiti Returnees\" division_template = \"BDF Emergency Reinforcement Company\" start_experience_factor = 0.40 start_equipment_factor = 0.75"
+								owner = BLZ
+								prioritize_location = 14954
+								id = 905102
+							}
+						}
+					}
+				}
+			}
+}
 	}
 }

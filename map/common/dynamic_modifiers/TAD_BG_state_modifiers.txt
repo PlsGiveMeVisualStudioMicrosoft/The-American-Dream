@@ -1,0 +1,168 @@
+# Belize–Guatemala territorial modifiers. All combat effects are state-scoped.
+
+BLZ_homeland_defence_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_core_attack_factor = -0.10
+	army_core_defence_factor = 0.12
+	dig_in_speed_factor = 0.20
+	max_dig_in_factor = 0.10
+	army_speed_factor_for_controller = 0.05
+	attrition_for_controller = -0.03
+	local_supplies_for_controller = 0.08
+	enemy_army_speed_factor = -0.05
+}
+
+BLZ_belmopan_fortified_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_core_defence_factor = 0.10
+	dig_in_speed_factor = 0.25
+	max_dig_in_factor = 0.12
+	local_supplies_for_controller = 0.12
+	enemy_army_speed_factor = -0.08
+	enemy_attrition = 0.04
+}
+
+BLZ_jungle_defence_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_core_defence_factor = 0.10
+	dig_in_speed_factor = 0.12
+	army_speed_factor_for_controller = 0.08
+	attrition_for_controller = -0.06
+	local_supplies_for_controller = 0.08
+	enemy_army_speed_factor = -0.08
+	enemy_attrition = 0.06
+}
+
+BLZ_total_defence_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_core_defence_factor = 0.12
+	dig_in_speed_factor = 0.15
+	max_dig_in_factor = 0.10
+	local_supplies_for_controller = 0.10
+	enemy_army_speed_factor = -0.05
+}
+
+BLZ_last_line_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_core_attack_factor = -0.12
+	army_core_defence_factor = 0.15
+	dig_in_speed_factor = 0.25
+	max_dig_in_factor = 0.15
+	attrition_for_controller = -0.05
+	local_supplies_for_controller = 0.15
+	enemy_army_speed_factor = -0.10
+	enemy_attrition = 0.08
+}
+
+BLZ_civil_defence_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_core_defence_factor = 0.05
+	dig_in_speed_factor = 0.10
+	local_supplies_for_controller = 0.05
+	enemy_attrition = 0.03
+}
+
+BLZ_distributed_stockpiles_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_industry
+	local_supplies_for_controller = 0.12
+	attrition_for_controller = -0.04
+	enemy_local_supplies = -0.04
+}
+
+BLZ_emergency_comms_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	local_org_regain = 0.08
+	army_speed_factor_for_controller = 0.04
+	dig_in_speed_factor = 0.05
+}
+
+BLZ_sarstoon_denial_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_core_defence_factor = 0.08
+	enemy_army_speed_factor = -0.12
+	enemy_attrition = 0.08
+	local_supplies_for_controller = 0.06
+}
+
+BLZ_continuity_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_core_defence_factor = 0.06
+	max_dig_in_factor = 0.10
+	local_supplies_for_controller = 0.12
+	local_org_regain = 0.05
+}
+
+BLZ_frontline_rotation_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	local_org_regain = 0.12
+	attrition_for_controller = -0.04
+}
+
+GUA_peten_bottleneck_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_speed_factor_for_controller = -0.15
+	attrition_for_controller = 0.08
+	local_supplies_for_controller = -0.20
+	dig_in_speed_factor = -0.10
+}
+
+GUA_peten_improved_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_speed_factor_for_controller = -0.05
+	attrition_for_controller = 0.03
+	local_supplies_for_controller = -0.08
+}
+
+GUA_peten_forward_network_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_speed_factor_for_controller = 0.05
+	attrition_for_controller = -0.03
+	local_supplies_for_controller = 0.12
+	dig_in_speed_factor = 0.10
+}
+
+GUA_peten_rotation_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	local_org_regain = 0.10
+	attrition_for_controller = -0.04
+}
+
+GUA_requisitioned_transport_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_speed_factor_for_controller = 0.08
+	local_supplies_for_controller = 0.08
+	attrition_for_controller = 0.02
+}
+
+GUA_closed_crossings_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	enemy_local_supplies = -0.08
+	local_supplies_for_controller = -0.03
+	enemy_army_speed_factor = -0.04
+}
+
+GUA_limited_mobilisation_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	dig_in_speed_factor = 0.12
+	army_speed_factor_for_controller = -0.05
+	local_supplies_for_controller = -0.10
+	local_org_regain = 0.05
+}

@@ -1,0 +1,62 @@
+TAD_BG_postwar_recovery_category = {
+    BLZ_postwar_veterans_housing = {
+        icon = GFX_decision_generic_propaganda
+        allowed = { tag = BLZ }
+        visible = { has_country_flag = BLZ_postwar_program_unlocked }
+        available = { NOT = { has_war = yes } }
+        cost = 35
+        days_re_enable = 120
+        complete_effect = { add_stability = 0.01 add_manpower = 250 }
+        ai_will_do = { factor = 2 }
+    }
+    BLZ_postwar_repair_western_road = {
+        icon = GFX_decision_generic_industry
+        allowed = { tag = BLZ }
+        visible = { has_country_flag = BLZ_postwar_program_unlocked }
+        available = { NOT = { has_war = yes } }
+        cost = 40
+        days_re_enable = 180
+        complete_effect = { 15 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+        ai_will_do = { factor = 1.5 }
+    }
+    BLZ_postwar_port_shipping_contracts = {
+        icon = GFX_decision_generic_industry
+        allowed = { tag = BLZ }
+        visible = { has_country_flag = BLZ_postwar_program_unlocked }
+        available = { NOT = { has_war = yes } }
+        cost = 50
+        days_re_enable = 180
+        complete_effect = { 15 = { add_building_construction = { type = naval_base level = 1 province = 2140 instant_build = yes } } add_equipment_to_stockpile = { type = convoy_1 amount = 4 } }
+        ai_will_do = { factor = 1.5 }
+    }
+    GUA_postwar_veterans_grants = {
+        icon = GFX_decision_generic_propaganda
+        allowed = { tag = GUA }
+        visible = { has_country_flag = GUA_postwar_program_unlocked }
+        available = { NOT = { has_war = yes } }
+        cost = 40
+        days_re_enable = 120
+        complete_effect = { add_stability = 0.01 add_manpower = 500 }
+        ai_will_do = { factor = 2 }
+    }
+    GUA_postwar_peten_reconstruction = {
+        icon = GFX_decision_generic_industry
+        allowed = { tag = GUA }
+        visible = { has_country_flag = GUA_postwar_program_unlocked }
+        available = { NOT = { has_war = yes } }
+        cost = 45
+        days_re_enable = 180
+        complete_effect = { 89 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+        ai_will_do = { factor = 1.5 }
+    }
+    GUA_postwar_border_trade_permits = {
+        icon = GFX_decision_generic_diplomatic_treaty
+        allowed = { tag = GUA }
+        visible = { has_country_flag = GUA_postwar_trade_zone }
+        available = { NOT = { has_war_with = BLZ } }
+        cost = 35
+        days_re_enable = 120
+        complete_effect = { add_opinion_modifier = { target = BLZ modifier = TAD_BG_postwar_partnership } BLZ = { add_opinion_modifier = { target = GUA modifier = TAD_BG_postwar_partnership } subtract_from_variable = { BLZ_GUA_tension = 2 } TAD_BG_clamp_tension = yes } }
+        ai_will_do = { factor = 2 }
+    }
+}
