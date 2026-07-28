@@ -58,3 +58,6 @@
  usa_approval.17.t:0 "The Plot Is Broken Up"
  usa_approval.17.d:0 "Federal agents announce arrests in a plot against a government building, disrupted well before it could be carried out. The briefing is detailed, the timeline is clean, and the co-operation between agencies is unusually well documented.\n\nThe rally is real but shallow. Threats remembered are not threats felt.\n\n[USA_APR_EVT_TAIL_LOW]"
  usa_approval.17.a:0 "Good work."
+
+ EU_AU_USA_Trump:0 "Trump Loves EU?"
+ EU_Normal_USA_Trump:0 "Tarrif Time!!"

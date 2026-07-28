@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		USA_murder_the_baltics = {
+			picture = GFX_SOV_bringing_breakaways_back_to_the_fold_ccp_2d_sov_compatibility
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+			}
+		}
+		USA_research = {
+			picture = GFX_focus_NORDIC_dem_research
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+	}
+}

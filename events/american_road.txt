@@ -1,12 +1,5 @@
 add_namespace = american_road
 
-########################################################################
-# american_road.1 - Truck Attack in New Orleans
-#
-# Scheduled from common/on_actions at game start, with no delay (fires at start).
-# No daily check runs. Any trigger below is an extra prerequisite,
-# tested when the delay elapses.
-########################################################################
 country_event = {
 	id = american_road.1
 	title = american_road.1.t
@@ -27,13 +20,6 @@ country_event = {
 	}
 }
 
-########################################################################
-# american_road.2 - The Munich Security Conference Speech
-#
-# Scheduled from common/on_actions at game start, with a 44-day delay.
-# No daily check runs. Any trigger below is an extra prerequisite,
-# tested when the delay elapses.
-########################################################################
 country_event = {
 	id = american_road.2
 	title = american_road.2.t
@@ -51,6 +37,7 @@ country_event = {
 		USA_apr_add = yes
 		set_temp_variable = { chaos_delta = 2 }
 		USA_chaos_add = yes
+		set_country_flag = EU_Normal_USA_Trump
 	}
 
 	option = {
@@ -61,16 +48,10 @@ country_event = {
 		USA_apr_add = yes
 		set_temp_variable = { chaos_delta = -5 }
 		USA_chaos_add = yes
+		set_country_flag = EU_AU_USA_Trump
 	}
 }
 
-########################################################################
-# american_road.3 - Elon's DOGE cuts over 6,000 jobs at IRS
-#
-# Scheduled from common/on_actions at game start, with a 50-day delay.
-# No daily check runs. Any trigger below is an extra prerequisite,
-# tested when the delay elapses.
-########################################################################
 country_event = {
 	id = american_road.3
 	title = american_road.3.t
@@ -101,13 +82,6 @@ country_event = {
 	}
 }
 
-########################################################################
-# american_road.4 - New Russian Ambassador
-#
-# Scheduled from common/on_actions at game start, with a 58-day delay.
-# No daily check runs. Any trigger below is an extra prerequisite,
-# tested when the delay elapses.
-########################################################################
 country_event = {
 	id = american_road.4
 	title = american_road.4.t
@@ -126,18 +100,11 @@ country_event = {
 	}
 }
 
-########################################################################
-# american_road.5 - Please, come to Greenland!
-#
-# Scheduled from common/on_actions at game start, with a 71-day delay.
-# No daily check runs. Any trigger below is an extra prerequisite,
-# tested when the delay elapses.
-########################################################################
 country_event = {
 	id = american_road.5
 	title = american_road.5.t
 	desc = american_road.5.d
-	picture = GFX_report_event_untitled
+	picture = GFX_report_event_new_proj212ect
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -146,25 +113,18 @@ country_event = {
 		name = american_road.5.a
 
 		custom_effect_tooltip = american_road.5.a_tt
-		set_temp_variable = { apr_delta = -7 }
+		set_temp_variable = { apr_delta = -13 }
 		USA_apr_add = yes
-		set_temp_variable = { chaos_delta = 6 }
+		set_temp_variable = { chaos_delta = 1 }
 		USA_chaos_add = yes
 	}
 }
 
-########################################################################
-# american_road.6 - Hello? Is this Putin?
-#
-# Scheduled from common/on_actions at game start, with a 76-day delay.
-# No daily check runs. Any trigger below is an extra prerequisite,
-# tested when the delay elapses.
-########################################################################
 country_event = {
 	id = american_road.6
 	title = american_road.6.t
 	desc = american_road.6.d
-	picture = GFX_report_event_putiom
+	picture = GFX_report_event_untitled
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -173,25 +133,18 @@ country_event = {
 		name = american_road.6.a
 
 		custom_effect_tooltip = american_road.6.a_tt
-		set_temp_variable = { apr_delta = 3 }
+		set_temp_variable = { apr_delta = -7 }
 		USA_apr_add = yes
-		set_temp_variable = { chaos_delta = 1 }
+		set_temp_variable = { chaos_delta = 6 }
 		USA_chaos_add = yes
 	}
 }
 
-########################################################################
-# american_road.7 - Bodies of missing aid workers found in Gaza ‘mass grave’ following Israeli attacks
-#
-# Scheduled from common/on_actions at game start, with a 89-day delay.
-# No daily check runs. Any trigger below is an extra prerequisite,
-# tested when the delay elapses.
-########################################################################
 country_event = {
 	id = american_road.7
 	title = american_road.7.t
 	desc = american_road.7.d
-	picture = GFX_report_event_new_project_2_
+	picture = GFX_report_event_putiom
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -200,35 +153,18 @@ country_event = {
 		name = american_road.7.a
 
 		custom_effect_tooltip = american_road.7.a_tt
-		set_temp_variable = { apr_delta = -3 }
+		set_temp_variable = { apr_delta = 3 }
 		USA_apr_add = yes
-		set_temp_variable = { chaos_delta = 5 }
-		USA_chaos_add = yes
-	}
-
-	option = {
-		name = american_road.7.b
-
-		custom_effect_tooltip = american_road.7.b_tt
-		set_temp_variable = { apr_delta = -5 }
-		USA_apr_add = yes
-		set_temp_variable = { chaos_delta = 3 }
+		set_temp_variable = { chaos_delta = 1 }
 		USA_chaos_add = yes
 	}
 }
 
-########################################################################
-# american_road.8 - More than 100 immigrants detained at an illegal after-hours nightclub in Colorado
-#
-# Scheduled from common/on_actions at game start, with a 116-day delay.
-# No daily check runs. Any trigger below is an extra prerequisite,
-# tested when the delay elapses.
-########################################################################
 country_event = {
 	id = american_road.8
 	title = american_road.8.t
 	desc = american_road.8.d
-	picture = GFX_report_event_new_project_33_
+	picture = GFX_report_event_new_project_2_
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -237,25 +173,28 @@ country_event = {
 		name = american_road.8.a
 
 		custom_effect_tooltip = american_road.8.a_tt
-		set_temp_variable = { apr_delta = 4 }
+		set_temp_variable = { apr_delta = -3 }
 		USA_apr_add = yes
-		set_temp_variable = { chaos_delta = 4 }
+		set_temp_variable = { chaos_delta = 5 }
+		USA_chaos_add = yes
+	}
+
+	option = {
+		name = american_road.8.b
+
+		custom_effect_tooltip = american_road.8.b_tt
+		set_temp_variable = { apr_delta = -5 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 3 }
 		USA_chaos_add = yes
 	}
 }
 
-########################################################################
-# american_road.9 - Tarrif, Tarrif, Tarrif...
-#
-# Scheduled from common/on_actions at game start, with a 152-day delay.
-# No daily check runs. Any trigger below is an extra prerequisite,
-# tested when the delay elapses.
-########################################################################
 country_event = {
 	id = american_road.9
 	title = american_road.9.t
 	desc = american_road.9.d
-	picture = GFX_report_event_new_project_4_
+	picture = GFX_report_event_new_project_33_
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -264,6 +203,26 @@ country_event = {
 		name = american_road.9.a
 
 		custom_effect_tooltip = american_road.9.a_tt
+		set_temp_variable = { apr_delta = 4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 4 }
+		USA_chaos_add = yes
+	}
+}
+
+country_event = {
+	id = american_road.10
+	title = american_road.10.t
+	desc = american_road.10.d
+	picture = GFX_report_event_new_project_4_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.10.a
+
+		custom_effect_tooltip = american_road.10.a_tt
 		set_temp_variable = { apr_delta = -6 }
 		USA_apr_add = yes
 		set_temp_variable = { chaos_delta = 7 }
@@ -271,13 +230,6 @@ country_event = {
 	}
 }
 
-########################################################################
-# american_road.100 - Death of Pope Francis
-#
-# Scheduled from common/on_actions at game start, with a 110-day delay.
-# No daily check runs. Any trigger below is an extra prerequisite,
-# tested when the delay elapses.
-########################################################################
 news_event = {
 	id = american_road.100
 	title = american_road.100.t
@@ -289,5 +241,25 @@ news_event = {
 
 	option = {
 		name = american_road.100.a
+	}
+}
+
+country_event = {
+	id = american_road.11
+	title = american_road.11.t
+	desc = american_road.11.d
+	picture = GFX_report_event_new_project
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.11.a
+
+		custom_effect_tooltip = american_road.11.a_tt
+		set_temp_variable = { apr_delta = 5 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = -5 }
+		USA_chaos_add = yes
 	}
 }
