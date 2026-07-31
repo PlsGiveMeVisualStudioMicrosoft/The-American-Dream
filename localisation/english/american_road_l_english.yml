@@ -71,7 +71,7 @@
  american_road.100.a:0 "Rest in Peace Pope Francis!"
 
  american_road.11.t:0 "Deal in Iran"
- american_road.11.d:0 "Our diplomats have agreed to begin preliminary talks in Iran next month. While no formal agreements have been reached, both sides have expressed a willingness to explore common ground and reduce tensions. These first meetings will test whether diplomacy can achieve what years of hostility could not. Success is far from guaranteed, but even opening the door to negotiations marks a significant step forward. Human history does enjoy spending decades arguing before discovering that talking was an option all along.\n\n[american_road.11.tt]"
+ american_road.11.d:0 "Our diplomats have agreed to begin preliminary talks in Iran next month. While no formal agreements have been reached, both sides have expressed a willingness to explore common ground and reduce tensions. These first meetings will test whether diplomacy can achieve what years of hostility could not. Success is far from guaranteed, but even opening the door to negotiations marks a significant step forward.\n\n[american_road.11.tt]"
  american_road.11.tt:0 "[?USA.aproval_rate|0][?USA.civil_war|0]"
  american_road.11.a:0 "Yes! I love Deals. Art of the Deal!!!"
  american_road.11.a_tt:0 "§GApproval +5§! (now [?USA.aproval_rate|0]%)\n§GChaos -5§! (now [?USA.civil_war|0])"
