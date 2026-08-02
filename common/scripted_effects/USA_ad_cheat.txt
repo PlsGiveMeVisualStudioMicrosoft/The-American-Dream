@@ -1,0 +1,149 @@
+# ==============================================================
+#  THE AMERICAN DREAM - THE TWO STEALS (legitimacy minigames)
+#
+#  Two cheat minigames share one idea: blatant tactics buy seats
+#  or a "win", but they burn LEGITIMACY, and spent legitimacy
+#  turns into chaos and, past a floor, a fracturing union.
+#
+#     usa_midterm_cheat  hidden score - how thoroughly 2026 was
+#                        rigged. The finisher reads it.
+#     usa_steal_cheat    same, for the 2028 election.
+#
+#  Flags: usa_midterms_open / usa_steal_open (window is live),
+#         usa_stole_midterms / usa_lost_house, usa_collapse_triggered.
+# ==============================================================
+
+
+# ==============================================================
+#  2026 MIDTERMS
+# ==============================================================
+
+# opened by the focus "Question the Count" (or event usa_ad.20 pre)
+USA_ad_mid_open = {
+	set_variable = { usa_midterm_cheat = 0 }
+	set_country_flag = usa_midterms_open
+	log = "[GetDateText]: American Dream - midterms window open"
+}
+
+# small shared helper: burn legitimacy -> some of it becomes chaos
+USA_ad_burn_legit = {			# set temp burn = points
+	set_temp_variable = { legit_delta = burn }
+	multiply_temp_variable = { legit_delta = -1 }
+	USA_ad_legit_add = yes
+	set_temp_variable = { chaos_delta = burn }
+	multiply_temp_variable = { chaos_delta = 0.3 }		# 30% of the burn leaks to chaos now
+	USA_chaos_add = yes
+}
+
+# --- tactics ---
+USA_ad_mid_purge_rolls = {
+	set_temp_variable = { seats = 6 }
+	USA_ad_maga_house = yes
+	subtract_from_variable = { usa_house_dem = 6 }
+	add_to_variable = { usa_midterm_cheat = 2 }
+	set_temp_variable = { burn = 6 } USA_ad_burn_legit = yes
+	USA_ad_politics_recalc = yes
+}
+
+USA_ad_mid_gerrymander = {
+	set_temp_variable = { seats = 5 }
+	USA_ad_maga_house = yes
+	set_temp_variable = { seats = -3 }
+	USA_ad_estab_house = yes				# MAGA replaces the old guard
+	add_to_variable = { usa_midterm_cheat = 2 }
+	set_temp_variable = { burn = 4 } USA_ad_burn_legit = yes
+}
+
+USA_ad_mid_seize = {						# blatant
+	set_temp_variable = { seats = 12 }
+	USA_ad_maga_house = yes
+	subtract_from_variable = { usa_house_dem = 12 }
+	set_temp_variable = { seats = 4 }
+	USA_ad_maga_senate = yes
+	subtract_from_variable = { usa_senate_dem = 4 }
+	add_to_variable = { usa_midterm_cheat = 4 }
+	set_temp_variable = { burn = 18 } USA_ad_burn_legit = yes
+	USA_ad_politics_recalc = yes
+}
+
+USA_ad_mid_flood = {						# disinformation
+	set_temp_variable = { apr_delta = 1 }				# steadies the base
+	USA_apr_add = yes
+	add_to_variable = { usa_midterm_cheat = 2 }
+	set_temp_variable = { burn = 5 } USA_ad_burn_legit = yes
+}
+
+# --- resolution ---
+# Certify Our Result. Available once you have cheated enough.
+# It locks in control and hands off to the Blatant/Quiet CHOICE event
+# (usa_ad.62), whose option completes the matching focus - that focus's
+# reward carries the big chaos beat. So the beat fires exactly once.
+USA_ad_mid_certify = {
+	clr_country_flag = usa_midterms_open
+	set_country_flag = usa_stole_midterms
+
+	# lock in GOP/MAGA control no matter what the count said
+	if = {
+		limit = { check_variable = { var = usa_house_gop value = usa_house_dem compare = less_than_or_equals } }
+		set_variable = { usa_house_gop = 224 }
+		set_variable = { usa_house_dem = 211 }
+	}
+
+	set_temp_variable = { legit_delta = -6 }
+	USA_ad_legit_add = yes
+
+	country_event = { id = usa_ad.62 hours = 4 }		# "The Count Is Ours" - Blatant / Quiet
+	USA_ad_politics_recalc = yes
+}
+
+# The honest road (or the window lapsing): the House is lost.
+USA_ad_mid_lost = {
+	clr_country_flag = usa_midterms_open
+	set_country_flag = usa_lost_house
+	# Democrats take the House
+	set_variable = { usa_house_gop = 205 }
+	set_variable = { usa_house_dem = 230 }
+	set_temp_variable = { seats = -20 }
+	USA_ad_maga_house = yes
+	set_temp_variable = { apr_delta = -3 }
+	USA_apr_add = yes
+	country_event = { id = usa_ad.21 hours = 4 }		# The Midterms Are Lost
+	USA_ad_politics_recalc = yes
+	# [BUILD] YOU: on this path, impeachment becomes possible - a big
+	# branch of its own. Marked, not built.
+}
+
+
+# ==============================================================
+#  2028 ELECTION
+# ==============================================================
+
+USA_ad_steal_open = {
+	set_variable = { usa_steal_cheat = 0 }
+	set_country_flag = usa_steal_open
+	log = "[GetDateText]: American Dream - the steal window open"
+}
+
+USA_ad_steal_integrity_force = {
+	add_to_variable = { usa_steal_cheat = 2 }
+	set_temp_variable = { burn = 6 } USA_ad_burn_legit = yes
+}
+
+USA_ad_steal_purge_newsom = {
+	add_to_variable = { usa_steal_cheat = 3 }
+	set_temp_variable = { burn = 10 } USA_ad_burn_legit = yes
+}
+
+USA_ad_steal_seize_ballots = {				# blatant
+	add_to_variable = { usa_steal_cheat = 4 }
+	set_temp_variable = { burn = 18 } USA_ad_burn_legit = yes
+}
+
+# Declare Victory - the finisher. Hands off to the Brazen/Quiet CHOICE
+# event (usa_ad.63); the option you pick completes the matching focus,
+# and THAT focus's reward pins chaos, shuts the systems down and fires
+# the collapse. One path, one collapse.
+USA_ad_steal_declare = {
+	clr_country_flag = usa_steal_open
+	country_event = { id = usa_ad.63 hours = 2 }		# "Declare Victory" - Brazen / Quiet
+}

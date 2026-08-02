@@ -1,0 +1,39 @@
+# ==============================================================
+#  WASHINGTON SCOREBOARD  (display-only readout)
+#
+#  These decisions do nothing - available = no keeps them from
+#  being clicked. Their whole job is to show the live variables in
+#  their name/description via [?variable|decimals] tags. Swap them
+#  for a real GUI window later.
+# ==============================================================
+
+usa_ad_scoreboard_cat = {
+
+	ad_score_house = {
+		icon = generic_operation
+		available = { always = no }
+		visible   = { has_country_flag = usa_ad_initialized }
+		ai_will_do = { factor = 0 }
+	}
+
+	ad_score_senate = {
+		icon = generic_operation
+		available = { always = no }
+		visible   = { has_country_flag = usa_ad_initialized }
+		ai_will_do = { factor = 0 }
+	}
+
+	ad_score_tribes = {
+		icon = generic_operation
+		available = { always = no }
+		visible   = { has_country_flag = usa_ad_initialized }
+		ai_will_do = { factor = 0 }
+	}
+
+	ad_score_mood = {
+		icon = generic_operation
+		available = { always = no }
+		visible   = { has_country_flag = usa_ad_initialized }
+		ai_will_do = { factor = 0 }
+	}
+}

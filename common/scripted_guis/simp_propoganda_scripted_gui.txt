@@ -2,7 +2,16 @@ scripted_gui = {
 	simp_propoganda_ui = {
 		context_type = decision_category
 		window_name = simp_propoganda_ui_window
-		
+
+		# The round Capitol emblem on the president opens the House/
+		# Senate window; the window's own X button closes it.
+		effects = {
+			usa_congress_open_button_click = {
+				set_country_flag = usa_congress_window_open
+				USA_congress_diagram_tick = yes
+			}
+		}
+
 		properties = {
 			simp_slot = {
 				image = "[simp_tileset]"

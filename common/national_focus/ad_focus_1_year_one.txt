@@ -1,0 +1,531 @@
+# Year One - The Golden Age  -  tree id: ad_dream_y1
+# One of four chapter-trees for The American Dream. Loaded by
+# load_focus_tree (part 1 at game start, the rest from the capstone
+# focus of the previous chapter). See README_INTERACTIVE.md.
+focus_tree = {
+	id = ad_dream_y1
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = USA
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+	initial_show_position = { focus = USA_state_of_the_union }
+	continuous_focus_position = { x = 50 y = 2700 }
+
+	focus = {
+		id = USA_state_of_the_union
+		icon = GFX_focus_USA_uncle_sam
+		x = 13
+		y = 0
+		cost = 0
+		completion_reward = {
+			add_political_power = 150
+			hidden_effect = {
+				country_event = { id = american_road.13 days = 25 }
+				country_event = { id = american_road.14 days = 31 }
+			}
+		}
+	}
+	focus = {
+		id = USA_the_golden_age
+		icon = GFX_goal_generic_propaganda
+		x = 13
+		y = 1
+		cost = 5
+		prerequisite = { focus = USA_state_of_the_union }
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.03
+			set_temp_variable = { apr_delta = 0.6 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.4 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.15 days = 0 }
+			}
+		}
+	}
+	focus = {
+		id = USA_bring_back_manufacturing
+		icon = GFX_SOV_steel_casting_industry_ccp_2d_sov_compatibility
+		x = 13
+		y = 2
+		cost = 1
+		prerequisite = { focus = USA_the_golden_age }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.02
+			set_temp_variable = { apr_delta = 0.4 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.2 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.2 days = 2 }
+				country_event = { id = american_road.3 days = 8 }
+				country_event = { id = american_road.4 days = 15 }
+				country_event = { id = american_road.16 days = 22 }
+			}
+		}
+	}
+	focus = {
+		id = USA_drain_the_swamp
+		icon = GFX_goal_generic_forceful_treaty
+		x = 13
+		y = 3
+		cost = 4
+		prerequisite = { focus = USA_bring_back_manufacturing }
+		completion_reward = {
+			add_political_power = 80
+			add_stability = -0.03
+			set_temp_variable = { seats = -4 }
+			USA_ad_estab_house = yes
+			set_temp_variable = { apr_delta = 0.4 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.8 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.6 days = 1 }
+				country_event = { id = american_road.7 days = 6 }
+			}
+		}
+	}
+	focus = {
+		id = USA_tarrifs_on_china
+		icon = GFX_focus_PRC_autonomous_regions
+		x = 13
+		y = 4
+		cost = 1
+		prerequisite = { focus = USA_drain_the_swamp }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = -1 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.6 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.17 days = 6 }
+			}
+		}
+	}
+	focus = {
+		id = USA_maximum_pressure
+		icon = GFX_focus_PER_iran_first
+		x = 13
+		y = 5
+		cost = 1
+		prerequisite = { focus = USA_tarrifs_on_china }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = 0.2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.6 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.8 days = 5 }
+				country_event = { id = american_road.18 days = 7 }
+				country_event = { id = american_road.19 days = 14 }
+			}
+		}
+	}
+	focus = {
+		id = USA_the_enemy_within
+		icon = GFX_goal_generic_fascism_on_the_rise
+		x = 13
+		y = 6
+		cost = 3
+		prerequisite = { focus = USA_maximum_pressure }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = 0.2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 1 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				news_event = { id = american_road.100 days = 5 }
+			}
+		}
+	}
+	focus = {
+		id = USA_liberation_day
+		icon = GFX_goal_generic_construct_civ
+		x = 13
+		y = 7
+		cost = 1
+		prerequisite = { focus = USA_the_enemy_within }
+		completion_reward = {
+			add_political_power = 80
+			add_stability = -0.04
+			set_temp_variable = { legit_delta = -2 }
+			USA_ad_legit_add = yes
+			country_event = { id = usa_ad.61 hours = 6 }
+			set_temp_variable = { apr_delta = 0.4 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 1.2 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.9 days = 4 }
+				country_event = { id = american_road.20 days = 15 }
+				news_event = { id = american_road.112 days = 22 }
+			}
+		}
+	}
+	focus = {
+		id = USA_befriend_europe
+		icon = GFX_focus_usa_focus_on_asia
+		x = 12
+		y = 8
+		cost = 1
+		prerequisite = { focus = USA_liberation_day }
+		mutually_exclusive = { focus = USA_tarrif_the_world }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.02
+			set_temp_variable = { apr_delta = 0.4 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.4 }
+			USA_chaos_add = yes
+		}
+	}
+	focus = {
+		id = USA_tarrif_the_world
+		icon = GFX_focus_usa_focus_on_europe
+		x = 14
+		y = 8
+		cost = 1
+		prerequisite = { focus = USA_liberation_day }
+		mutually_exclusive = { focus = USA_befriend_europe }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			add_political_power = 40
+			add_stability = -0.03
+			set_temp_variable = { apr_delta = 0.2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.8 }
+			USA_chaos_add = yes
+		}
+	}
+	focus = {
+		id = USA_purge_the_bureaucracy
+		icon = GFX_goal_generic_political_pressure
+		x = 13
+		y = 9
+		cost = 4
+		prerequisite = { focus = USA_liberation_day }
+		completion_reward = {
+			add_political_power = 90
+			add_stability = -0.02
+			set_temp_variable = { seats = 6 }
+			USA_ad_maga_house = yes
+			set_temp_variable = { seats = -4 }
+			USA_ad_estab_house = yes
+			set_temp_variable = { apr_delta = 0.2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 1 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.21 days = 1 }
+			}
+		}
+	}
+	focus = {
+		id = USA_stand_with_israel
+		icon = GFX_goal_generic_dangerous_deal
+		x = 13
+		y = 10
+		cost = 1
+		prerequisite = { focus = USA_purge_the_bureaucracy }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = 0.4 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.8 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.10 days = 5 }
+				country_event = { id = american_road.22 days = 11 }
+				country_event = { id = american_road.23 days = 17 }
+				country_event = { id = american_road.24 days = 24 }
+			}
+		}
+	}
+	focus = {
+		id = USA_law_and_order
+		icon = GFX_goal_generic_position_armies
+		x = 13
+		y = 11
+		cost = 4
+		prerequisite = { focus = USA_stand_with_israel }
+		completion_reward = {
+			add_political_power = 70
+			add_war_support = 0.05
+			add_stability = -0.03
+			set_temp_variable = { seats = 4 }
+			USA_ad_prowar_house = yes
+			set_temp_variable = { apr_delta = 2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 6 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.25 days = 6 }
+			}
+		}
+	}
+	focus = {
+		id = USA_steel_aluminum_50
+		icon = GFX_SOV_steel_casting_industry_ccp_2d_sov_compatibility
+		x = 13
+		y = 12
+		cost = 1
+		prerequisite = { focus = USA_law_and_order }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = 0.2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.6 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.26 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = USA_big_beautiful_bill
+		icon = GFX_goal_generic_construct_civ
+		x = 13
+		y = 13
+		cost = 4
+		prerequisite = { focus = USA_steel_aluminum_50 }
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.05
+			set_temp_variable = { seats = 4 }
+			USA_ad_estab_house = yes
+			set_temp_variable = { apr_delta = 4 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 2 }
+			USA_chaos_add = yes
+		}
+	}
+	focus = {
+		id = USA_the_june_war
+		icon = GFX_focus_PER_iran_first
+		x = 13
+		y = 14
+		cost = 1
+		prerequisite = { focus = USA_big_beautiful_bill }
+		completion_reward = {
+			add_political_power = 60
+			add_war_support = 0.08
+			set_temp_variable = { seats = 6 }
+			USA_ad_prowar_house = yes
+			set_temp_variable = { apr_delta = 5 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 8 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.27 days = 1 }
+			}
+		}
+	}
+	focus = {
+		id = USA_bomb_iran
+		icon = GFX_focus_PER_iran_first
+		x = 13
+		y = 15
+		cost = 1
+		prerequisite = { focus = USA_the_june_war }
+		completion_reward = {
+			add_war_support = 0.05
+			set_temp_variable = { apr_delta = -0.6 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.4 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.28 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = USA_redraw_the_map
+		icon = GFX_goal_generic_demand_territory
+		x = 13
+		y = 16
+		cost = 3
+		prerequisite = { focus = USA_bomb_iran }
+		completion_reward = {
+			add_political_power = 60
+			set_temp_variable = { seats = 6 }
+			USA_ad_maga_house = yes
+			set_temp_variable = { chaos_delta = 1 }
+			USA_chaos_add = yes
+		}
+	}
+	focus = {
+		id = USA_the_manufacturing_mirage
+		icon = GFX_goal_generic_construct_civ
+		x = 13
+		y = 17
+		cost = 1
+		prerequisite = { focus = USA_redraw_the_map }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = 0.8 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.4 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				news_event = { id = american_road.113 days = 5 }
+			}
+		}
+	}
+	focus = {
+		id = USA_reopen_the_straits
+		icon = GFX_focus_PER_invite_oil_nations
+		x = 13
+		y = 18
+		cost = 1
+		prerequisite = { focus = USA_the_manufacturing_mirage }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+			set_temp_variable = { apr_delta = 0.6 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = -1.4 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.30 days = 0 }
+				country_event = { id = american_road.29 days = 13 }
+			}
+		}
+	}
+	focus = {
+		id = USA_consolidate_the_party
+		icon = GFX_goal_generic_political_pressure
+		x = 13
+		y = 19
+		cost = 3
+		prerequisite = { focus = USA_reopen_the_straits }
+		completion_reward = {
+			add_political_power = 80
+			set_temp_variable = { seats = 8 }
+			USA_ad_maga_house = yes
+			set_temp_variable = { seats = 2 }
+			USA_ad_maga_senate = yes
+			set_temp_variable = { seats = -6 }
+			USA_ad_estab_house = yes
+			set_temp_variable = { apr_delta = 0.2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.6 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.32 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = USA_fragile_ceasefire
+		icon = GFX_goal_generic_dangerous_deal
+		x = 13
+		y = 20
+		cost = 1
+		prerequisite = { focus = USA_consolidate_the_party }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = 0.4 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.4 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.31 days = 0 }
+				country_event = { id = american_road.33 days = 20 }
+			}
+		}
+	}
+	focus = {
+		id = USA_the_2026_machine
+		icon = GFX_goal_generic_propaganda
+		x = 13
+		y = 21
+		cost = 4
+		prerequisite = { focus = USA_fragile_ceasefire }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = 0.2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 0.6 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.34 days = 0 }
+				country_event = { id = american_road.35 days = 21 }
+			}
+		}
+	}
+	focus = {
+		id = USA_loyalty_above_all
+		icon = GFX_goal_generic_fascism_on_the_rise
+		x = 13
+		y = 22
+		cost = 5
+		prerequisite = { focus = USA_the_2026_machine }
+		completion_reward = {
+			add_political_power = 70
+			add_stability = -0.03
+			set_temp_variable = { seats = 10 }
+			USA_ad_maga_house = yes
+			set_temp_variable = { seats = 3 }
+			USA_ad_maga_senate = yes
+			set_temp_variable = { seats = -6 }
+			USA_ad_estab_house = yes
+			set_temp_variable = { apr_delta = -0.2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 1 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.36 days = 1 }
+			}
+		}
+	}
+	focus = {
+		id = USA_the_fed_feud
+		icon = GFX_goal_generic_political_pressure
+		x = 13
+		y = 23
+		cost = 1
+		prerequisite = { focus = USA_loyalty_above_all }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = 0.2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 1.2 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.38 days = 21 }
+				news_event = { id = american_road.114 days = 27 }
+			}
+		}
+	}
+	focus = {
+		id = USA_chapter_one_end
+		icon = GFX_focus_USA_uncle_sam
+		x = 13
+		y = 24
+		cost = 0
+		prerequisite = { focus = USA_loyalty_above_all }
+		completion_reward = {
+			load_focus_tree = { tree = ad_dream_y2 keep_completed = yes }
+			set_country_flag = usa_ad_chapter_2
+			news_event = { id = usa_ad.80 hours = 2 }
+		}
+	}
+}

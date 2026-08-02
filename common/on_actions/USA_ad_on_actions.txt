@@ -1,0 +1,48 @@
+# ==============================================================
+#  THE AMERICAN DREAM - INTERACTIVE DRIVERS
+#
+#  Merges with the game's other on_actions (and with your approval
+#  / chaos on_actions). Two jobs:
+#    * lazy-init the Congress/tribe system on the first day and keep
+#      its convenience flags fresh,
+#    * tick the Iran attrition clock every month while it runs.
+# ==============================================================
+
+on_actions = {
+
+	on_daily_USA = {
+		effect = {
+			if = {
+				limit = { tag = USA }
+
+				# init once
+				if = {
+					limit = { NOT = { has_country_flag = usa_ad_initialized } }
+					USA_ad_politics_init = yes
+					# load the FIRST chapter-tree. Parts 2-4 are loaded by the
+					# capstone focus of the previous chapter (load_focus_tree).
+					load_focus_tree = { tree = ad_dream_y1 keep_completed = yes }
+					set_country_flag = usa_ad_chapter_1
+				}
+
+				# keep gop_holds_* / maga_super / third_term_legal fresh
+				if = {
+					limit = { has_country_flag = usa_ad_initialized }
+					USA_ad_politics_recalc = yes
+				}
+			}
+		}
+	}
+
+	on_monthly_USA = {
+		effect = {
+			if = {
+				limit = {
+					tag = USA
+					has_country_flag = usa_ad_initialized
+				}
+				USA_ad_iran_tick = yes
+			}
+		}
+	}
+}

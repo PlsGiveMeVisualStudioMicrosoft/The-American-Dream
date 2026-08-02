@@ -1,0 +1,128 @@
+# ==============================================================
+#  THE IRAN FRONT  - the staged minigame.
+#  Stage 1 (cold war) and 2 (open strikes) are survivable. Only
+#  stage 3 (ground war) arms the unwinnable attrition clock.
+#  Mechanics live in USA_ad_iran.txt; the stages are opened by
+#  focuses (The Nuclear Question / The Second Strike / Boots on
+#  the Ground).
+# ==============================================================
+
+usa_ad_iran_cat = {
+
+	# Status readout (display-only) - stage / tension / the clock.
+	ad_iran_status = {
+		icon = generic_operation
+		available = { always = no }
+		visible   = { has_country_flag = usa_iran_s1 }
+		ai_will_do = { factor = 0 }
+	}
+
+	# ---------- STAGE 1: cold war / proxies ----------
+	ad_iran_sanctions = {
+		icon = generic_operation
+		available = { has_country_flag = usa_iran_s1 }
+		visible   = { has_country_flag = usa_iran_s1  NOT = { has_country_flag = usa_iran_war_active } }
+		cost = 25
+		days_re_enable = 20
+		complete_effect = { USA_ad_iran_sanctions = yes }
+		ai_will_do = { factor = 1 }
+	}
+	ad_iran_proxies = {
+		icon = generic_operation
+		available = { has_country_flag = usa_iran_s1 }
+		visible   = { has_country_flag = usa_iran_s1  NOT = { has_country_flag = usa_iran_war_active } }
+		cost = 30
+		days_re_enable = 20
+		complete_effect = { USA_ad_iran_proxies = yes }
+		ai_will_do = { factor = 1 }
+	}
+	ad_iran_skirmish = {
+		icon = generic_operation
+		available = { has_country_flag = usa_iran_s1 }
+		visible   = { has_country_flag = usa_iran_s1  NOT = { has_country_flag = usa_iran_war_active } }
+		cost = 20
+		days_re_enable = 15
+		complete_effect = { USA_ad_iran_skirmish = yes }
+		ai_will_do = { factor = 1 }
+	}
+
+	# ---------- STAGE 2: open strikes ----------
+	ad_iran_airstrikes = {
+		icon = generic_operation
+		available = { has_country_flag = usa_iran_s2 }
+		visible   = { has_country_flag = usa_iran_s2  NOT = { has_country_flag = usa_iran_war_active } }
+		cost = 40
+		days_re_enable = 25
+		complete_effect = { USA_ad_iran_airstrikes = yes }
+		ai_will_do = { factor = 1 }
+	}
+	ad_iran_blockade = {
+		icon = generic_operation
+		available = { has_country_flag = usa_iran_s2 }
+		visible   = { has_country_flag = usa_iran_s2  NOT = { has_country_flag = usa_iran_war_active } }
+		cost = 35
+		days_re_enable = 25
+		complete_effect = { USA_ad_iran_blockade = yes }
+		ai_will_do = { factor = 1 }
+	}
+	ad_iran_decapitate = {
+		icon = generic_operation
+		available = { has_country_flag = usa_iran_s2 }
+		visible   = { has_country_flag = usa_iran_s2  NOT = { has_country_flag = usa_iran_war_active } }
+		cost = 50
+		days_re_enable = 30
+		complete_effect = { USA_ad_iran_decapitate = yes }
+		ai_will_do = { factor = 1 }
+	}
+
+	# ---------- STAGE 3: the ground war (unwinnable clock) ----------
+	ad_iran_reinforce = {
+		icon = generic_operation
+		available = { has_country_flag = usa_iran_war_active }
+		visible   = { has_country_flag = usa_iran_war_active }
+		cost = 40
+		days_re_enable = 30
+		complete_effect = { USA_ad_iran_reinforce = yes }
+		ai_will_do = { factor = 1 }
+	}
+	ad_iran_escalate = {
+		icon = generic_operation
+		available = { has_country_flag = usa_iran_war_active }
+		visible   = { has_country_flag = usa_iran_war_active }
+		cost = 25
+		days_re_enable = 30
+		complete_effect = { USA_ad_iran_escalate = yes }
+		ai_will_do = { factor = 1 }
+	}
+	ad_iran_dig_in = {
+		icon = generic_operation
+		available = { has_country_flag = usa_iran_war_active }
+		visible   = { has_country_flag = usa_iran_war_active }
+		cost = 10
+		days_re_enable = 30
+		complete_effect = { USA_ad_iran_dig_in = yes }
+		ai_will_do = { factor = 1 }
+	}
+	ad_iran_seek_terms = {
+		icon = generic_operation
+		available = {
+			has_country_flag = usa_iran_war_active
+			NOT = { has_country_flag = usa_iran_terms_tried }
+		}
+		visible = { has_country_flag = usa_iran_war_active }
+		cost = 30
+		complete_effect = { USA_ad_iran_seek_terms = yes }
+		ai_will_do = { factor = 0 }
+	}
+	ad_iran_coalition = {
+		icon = generic_operation
+		available = {
+			has_country_flag = usa_iran_war_active
+			NOT = { has_country_flag = usa_iran_coalition_used }
+		}
+		visible = { has_country_flag = usa_iran_war_active }
+		cost = 60
+		complete_effect = { USA_ad_iran_coalition = yes }
+		ai_will_do = { factor = 0 }
+	}
+}

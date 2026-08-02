@@ -1,0 +1,129 @@
+# ====================================================================
+#  Precise-date drivers for the american_road events.
+#
+#  Every event is scheduled once, here at game start, with the
+#  exact number of days from 2025.1.1 to its date. No daily
+#  check runs and no guard flag is needed - the schedule fires it
+#  a single time on the right day. Days are counted on the game's
+#  own 365-day calendar, which has no leap day.
+#
+#  Any extra prerequisite lives in the event's own trigger block
+#  and is checked when the delay elapses; if it fails then, the
+#  event is simply skipped.
+# ====================================================================
+
+on_actions = {
+	on_startup = {
+		effect = {
+
+			USA = {
+				country_event = { id = american_road.1 }             # 2025.1.1 (at start)  Truch
+				country_event = { id = american_road.12 days = 19 }  # 2025.1.20  Inauguration Day
+				news_event = { id = american_road.111 days = 19 }    # 2025.1.20  A Nation Sworn In — and Split In Two
+				country_event = { id = american_road.13 days = 25 }  # 2025.1.26  Colombia Deportation Standoff
+				country_event = { id = american_road.14 days = 31 }  # 2025.2.1  Tariffs on Canada, Mexico & China
+				country_event = { id = american_road.15 days = 35 }  # 2025.2.5  USAID Shutdown
+				country_event = { id = american_road.2 days = 44 }   # 2025.2.14  The Munich Security Conference Speech
+				country_event = { id = american_road.3 days = 50 }   # 2025.2.20  Elon's DOGE cuts over 6,000 jobs at IRS
+				country_event = { id = american_road.4 days = 58 }   # 2025.2.28  New Russian Ambassador
+				country_event = { id = american_road.5 days = 58 }   # 2025.2.28  Minab school attack
+				country_event = { id = american_road.16 days = 64 }  # 2025.3.6  Tariff Whiplash
+				country_event = { id = american_road.6 days = 71 }   # 2025.3.13  Please, come to Greenland!
+				country_event = { id = american_road.7 days = 76 }   # 2025.3.18  Hello? Is this Putin?
+				country_event = { id = american_road.17 days = 83 }  # 2025.3.25  Greenland / Panama Talk
+				country_event = { id = american_road.8 days = 89 }   # 2025.3.31  Bodies of missing aid workers found in Gaza ‘mass grave’ following Israeli attacks
+				country_event = { id = american_road.18 days = 91 }  # 2025.4.2  Liberation Day
+				country_event = { id = american_road.19 days = 98 }  # 2025.4.9  Meltdown → 90-Day Pause
+				news_event = { id = american_road.100 days = 110 }   # 2025.4.21  Death of Pope Francis
+				country_event = { id = american_road.9 days = 116 }  # 2025.4.27  More than 100 immigrants detained at an illegal after-hours nightclub in Colorado
+				country_event = { id = american_road.20 days = 127 } # 2025.5.8  Trade-Deal Blitz
+				news_event = { id = american_road.112 days = 134 }   # 2025.5.15  Markets Whipsaw as Tariffs Change by the Hour
+				country_event = { id = american_road.21 days = 141 } # 2025.5.22  Big Beautiful Bill Clears the House
+				country_event = { id = american_road.10 days = 152 } # 2025.6.2  Tarrif, Tarrif, Tarrif...
+				country_event = { id = american_road.22 days = 158 } # 2025.6.8  LA Immigration Riots
+				country_event = { id = american_road.23 days = 164 } # 2025.6.14  “No Kings” Marches
+				country_event = { id = american_road.24 days = 171 } # 2025.6.21  The June War
+				country_event = { id = american_road.25 days = 181 } # 2025.7.1  The 12-Day War Ceasefire
+				country_event = { id = american_road.26 days = 184 } # 2025.7.4  The Big Beautiful Bill Is Signed
+				country_event = { id = american_road.27 days = 218 } # 2025.8.7  Tariffs Bite
+				country_event = { id = american_road.28 days = 226 } # 2025.8.15  The Alaska Summit
+				news_event = { id = american_road.113 days = 257 }   # 2025.9.15  Washington Lurches Toward a Shutdown
+				country_event = { id = american_road.30 days = 259 } # 2025.9.17  The Powell Feud
+				country_event = { id = american_road.29 days = 272 } # 2025.9.30  The Shutdown Fight
+				country_event = { id = american_road.32 days = 282 } # 2025.10.10  Gaza Ceasefire & Hostage Deal
+				country_event = { id = american_road.31 days = 287 } # 2025.10.15  The Shutdown Drags On
+				country_event = { id = american_road.33 days = 307 } # 2025.11.4  The Off-Year Sweep
+				country_event = { id = american_road.34 days = 315 } # 2025.11.12  The Affordability Backlash
+				country_event = { id = american_road.35 days = 336 } # 2025.12.3  SCOTUS Hears the Tariff Case
+				country_event = { id = american_road.36 days = 351 } # 2025.12.18  Venezuela Escalation
+				country_event = { id = american_road.38 days = 378 } # 2026.1.14  SCOTUS Limits the Tariffs
+				news_event = { id = american_road.114 days = 384 }   # 2026.1.20  One Year On, Two Americas Mark the Day
+				country_event = { id = american_road.37 days = 385 } # 2026.1.21  One Year In
+				country_event = { id = american_road.39 days = 406 } # 2026.2.11  Inflation Reaccelerates
+				country_event = { id = american_road.40 days = 419 } # 2026.2.24  The Primary Purges
+				country_event = { id = american_road.41 days = 433 } # 2026.3.10  The Gerrymander Rulings
+				country_event = { id = american_road.42 days = 443 } # 2026.3.20  The Iran Deal Collapses
+				country_event = { id = american_road.43 days = 456 } # 2026.4.2  Liberation Day Anniversary
+				country_event = { id = american_road.44 days = 472 } # 2026.4.18  The Gulf Incident
+				country_event = { id = american_road.45 days = 496 } # 2026.5.12  Primary Upsets
+				news_event = { id = american_road.115 days = 499 }   # 2026.5.15  The Only Poll That Matters Is at the Checkout
+				country_event = { id = american_road.46 days = 510 } # 2026.5.26  Iran Proxies Hit a US Base
+				country_event = { id = american_road.47 days = 524 } # 2026.6.9  The Grocery & Gas Crisis
+				country_event = { id = american_road.48 days = 537 } # 2026.6.22  Assassination in the Gulf
+				country_event = { id = american_road.49 days = 549 } # 2026.7.4  America 250
+				country_event = { id = american_road.50 days = 565 } # 2026.7.20  Approval Near Record Low
+				country_event = { id = american_road.51 days = 582 } # 2026.8.6  Summer of Discontent
+				country_event = { id = american_road.52 days = 594 } # 2026.8.18  The “Election Integrity” Push
+				country_event = { id = american_road.54 days = 610 } # 2026.9.3  “The Election Will Be Rigged”
+				news_event = { id = american_road.116 days = 622 }   # 2026.9.15  White House Says the Midterms Are 'Already Being Stolen'
+				country_event = { id = american_road.55 days = 627 } # 2026.9.20  Voter-Roll Purges
+				country_event = { id = american_road.59 days = 682 } # 2026.11.14  Protests → Crackdown
+				country_event = { id = american_road.60 days = 702 } # 2026.12.4  Govern by Decree
+				country_event = { id = american_road.61 days = 716 } # 2026.12.18  The Iran Quagmire Deepens
+				news_event = { id = american_road.117 days = 744 }   # 2027.1.15  Hormuz Closed; Gas Passes $10 a Gallon
+				country_event = { id = american_road.63 days = 745 } # 2027.1.16  The Oil Shock
+				country_event = { id = american_road.64 days = 770 } # 2027.2.10  Fuel Rationing Begins
+				country_event = { id = american_road.65 days = 782 } # 2027.2.22  Anti-War Protests Explode
+				country_event = { id = american_road.67 days = 812 } # 2027.3.24  Blame the Generals
+				country_event = { id = american_road.68 days = 827 } # 2027.4.8  Coalition Collapses
+				country_event = { id = american_road.69 days = 841 } # 2027.4.22  Price Controls Imposed
+				news_event = { id = american_road.118 days = 864 }   # 2027.5.15  Withdrawal From Iran Ends in Rout
+				country_event = { id = american_road.71 days = 875 } # 2027.5.26  Martial Law in the Cities
+				country_event = { id = american_road.72 days = 889 } # 2027.6.9  Bring the Troops Home
+				country_event = { id = american_road.73 days = 902 } # 2027.6.22  Hyperinflation Sets In
+				country_event = { id = american_road.74 days = 920 } # 2027.7.10  The New Dollar
+				country_event = { id = american_road.75 days = 934 } # 2027.7.24  Third-Term Trial Balloon
+				country_event = { id = american_road.77 days = 966 } # 2027.8.25  Federal Ration Cards
+				country_event = { id = american_road.78 days = 981 } # 2027.9.9  Purge of the Pentagon
+				news_event = { id = american_road.119 days = 987 }   # 2027.9.15  Governors Form Regional Compacts as Washington Falters
+				country_event = { id = american_road.79 days = 995 } # 2027.9.23  Emergency Economic Powers
+				country_event = { id = american_road.80 days = 1012 } # 2027.10.10  “I'll Run Again”
+				country_event = { id = american_road.81 days = 1026 } # 2027.10.24  Regional Governments Consolidate
+				country_event = { id = american_road.82 days = 1040 } # 2027.11.7  One Year to the Election
+				country_event = { id = american_road.83 days = 1054 } # 2027.11.21  The West Coast Compact
+				country_event = { id = american_road.85 days = 1083 } # 2027.12.20  Newsom Formally Launches
+				country_event = { id = american_road.86 days = 1108 } # 2028.1.14  The Eligibility Ruling
+				news_event = { id = american_road.120 days = 1109 }  # 2028.1.15  Court Splits; President Stays on the Ballot
+				country_event = { id = american_road.87 days = 1118 } # 2028.1.24  Newsom vs. Trump
+				country_event = { id = american_road.88 days = 1136 } # 2028.2.11  Rig the Primaries
+				country_event = { id = american_road.89 days = 1150 } # 2028.2.25  Militia Standoffs
+				country_event = { id = american_road.90 days = 1160 } # 2028.3.7  Super Tuesday Chaos
+				country_event = { id = american_road.91 days = 1174 } # 2028.3.21  Federal Troops in Swing States
+				country_event = { id = american_road.92 days = 1190 } # 2028.4.6  Trump Declares Candidacy
+				country_event = { id = american_road.93 days = 1204 } # 2028.4.20  Blue States Threaten Secession
+				country_event = { id = american_road.94 days = 1225 } # 2028.5.11  Newsom Nominated
+				news_event = { id = american_road.121 days = 1229 }  # 2028.5.15  Two Conventions, Two Countries
+				country_event = { id = american_road.95 days = 1239 } # 2028.5.25  The “Integrity Force” Deploys
+				country_event = { id = american_road.96 days = 1254 } # 2028.6.9  Two Americas
+				country_event = { id = american_road.98 days = 1279 } # 2028.7.4  The 252nd of July
+				country_event = { id = american_road.99 days = 1295 } # 2028.7.20  States Refuse Federal Ballots
+				country_event = { id = american_road.101 days = 1316 } # 2028.8.10  The Final Sprint
+				country_event = { id = american_road.102 days = 1330 } # 2028.8.24  Ballot Seizures Begin Early
+				country_event = { id = american_road.103 days = 1347 } # 2028.9.10  Dueling Rallies
+				news_event = { id = american_road.122 days = 1352 }  # 2028.9.15  West Coast Vows It Won't Certify a Stolen Win
+				country_event = { id = american_road.104 days = 1361 } # 2028.9.24  “We Won't Certify a Stolen Win”
+				country_event = { id = american_road.106 days = 1395 } # 2028.10.28  Governors Mobilize State Forces
+			}
+		}
+	}
+}

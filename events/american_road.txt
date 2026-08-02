@@ -1,5 +1,11 @@
 add_namespace = american_road
 
+########################################################################
+# american_road.1 - Truck Attack in New Orleans
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
 country_event = {
 	id = american_road.1
 	title = american_road.1.t
@@ -13,13 +19,19 @@ country_event = {
 		name = american_road.1.a
 
 		custom_effect_tooltip = american_road.1.a_tt
-		set_temp_variable = { chaos_delta = 1 }
+		set_temp_variable = { apr_delta = 0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.6 }
 		USA_chaos_add = yes
-		add_stability = -0.01
-		add_manpower = -15
 	}
 }
 
+########################################################################
+# american_road.2 - The Munich Security Conference Speech
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
 country_event = {
 	id = american_road.2
 	title = american_road.2.t
@@ -52,6 +64,12 @@ country_event = {
 	}
 }
 
+########################################################################
+# american_road.3 - Elon's DOGE cuts over 6,000 jobs at IRS
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
 country_event = {
 	id = american_road.3
 	title = american_road.3.t
@@ -82,6 +100,12 @@ country_event = {
 	}
 }
 
+########################################################################
+# american_road.4 - New Russian Ambassador
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
 country_event = {
 	id = american_road.4
 	title = american_road.4.t
@@ -100,6 +124,12 @@ country_event = {
 	}
 }
 
+########################################################################
+# american_road.5 - Minab school attack
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
 country_event = {
 	id = american_road.5
 	title = american_road.5.t
@@ -120,6 +150,12 @@ country_event = {
 	}
 }
 
+########################################################################
+# american_road.6 - Please, come to Greenland!
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
 country_event = {
 	id = american_road.6
 	title = american_road.6.t
@@ -140,6 +176,12 @@ country_event = {
 	}
 }
 
+########################################################################
+# american_road.7 - Hello? Is this Putin?
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
 country_event = {
 	id = american_road.7
 	title = american_road.7.t
@@ -160,6 +202,12 @@ country_event = {
 	}
 }
 
+########################################################################
+# american_road.8 - Bodies of missing aid workers found in Gaza ‘mass grave’ following Israeli attacks
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
 country_event = {
 	id = american_road.8
 	title = american_road.8.t
@@ -190,6 +238,12 @@ country_event = {
 	}
 }
 
+########################################################################
+# american_road.9 - More than 100 immigrants detained at an illegal after-hours nightclub in Colorado
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
 country_event = {
 	id = american_road.9
 	title = american_road.9.t
@@ -210,6 +264,12 @@ country_event = {
 	}
 }
 
+########################################################################
+# american_road.10 - Tarrif, Tarrif, Tarrif...
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
 country_event = {
 	id = american_road.10
 	title = american_road.10.t
@@ -230,6 +290,12 @@ country_event = {
 	}
 }
 
+########################################################################
+# american_road.100 - Death of Pope Francis
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
 news_event = {
 	id = american_road.100
 	title = american_road.100.t
@@ -244,11 +310,17 @@ news_event = {
 	}
 }
 
+########################################################################
+# american_road.11 - Deal in Iran
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
 country_event = {
 	id = american_road.11
 	title = american_road.11.t
 	desc = american_road.11.d
-	picture = GFX_report_event_new_project
+	picture = GFX_report_event_untitledirantrump
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -261,5 +333,2661 @@ country_event = {
 		USA_apr_add = yes
 		set_temp_variable = { chaos_delta = -5 }
 		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.13 - Colombia Deportation Standoff
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.13
+	title = american_road.13.t
+	desc = american_road.13.d
+	picture = GFX_report_event_usacolumbia_1_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.13.a
+
+		custom_effect_tooltip = american_road.13.a_tt
+		set_temp_variable = { apr_delta = 0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.14 - Tariffs on Canada, Mexico & China
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.14
+	title = american_road.14.t
+	desc = american_road.14.d
+	picture = GFX_report_event_truptarrif
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.14.a
+
+		custom_effect_tooltip = american_road.14.a_tt
+		set_temp_variable = { apr_delta = 0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.15 - USAID Shutdown
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.15
+	title = american_road.15.t
+	desc = american_road.15.d
+	picture = GFX_report_event_usaid
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.15.a
+
+		custom_effect_tooltip = american_road.15.a_tt
+		set_temp_variable = { apr_delta = 0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.16 - I love Tariff
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.16
+	title = american_road.16.t
+	desc = american_road.16.d
+	picture = GFX_report_event_tarrifproblem
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.16.a
+
+		custom_effect_tooltip = american_road.16.a_tt
+		set_temp_variable = { apr_delta = -0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.17 - Greenland / Panama Talk
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.17
+	title = american_road.17.t
+	desc = american_road.17.d
+	picture = GFX_report_event_newg4_project
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.17.a
+
+		custom_effect_tooltip = american_road.17.a_tt
+		set_temp_variable = { chaos_delta = 0.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.18 - Liberation Day
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.18
+	title = american_road.18.t
+	desc = american_road.18.d
+	picture = GFX_report_event_libday
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.18.a
+
+		custom_effect_tooltip = american_road.18.a_tt
+		set_temp_variable = { apr_delta = 0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.6 }
+		USA_chaos_add = yes
+		add_stability = -0.03
+		set_temp_variable = { legit_delta = -2 }
+		USA_ad_legit_add = yes
+	}
+}
+
+########################################################################
+# american_road.19 - Oops!
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.19
+	title = american_road.19.t
+	desc = american_road.19.d
+	picture = GFX_report_event_nvmnotarrif
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.19.a
+
+		custom_effect_tooltip = american_road.19.a_tt
+		set_temp_variable = { apr_delta = -0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.20 - Trade-Deal Blitz
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.20
+	title = american_road.20.t
+	desc = american_road.20.d
+	picture = GFX_report_event_dealusabritan
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.20.a
+
+		custom_effect_tooltip = american_road.20.a_tt
+		set_temp_variable = { apr_delta = 0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.21 - Big Beautiful Bill Clears the House
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.21
+	title = american_road.21.t
+	desc = american_road.21.d
+	picture = GFX_report_event_bigbill
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.21.a
+
+		custom_effect_tooltip = american_road.21.a_tt
+		set_temp_variable = { apr_delta = 0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.22 - LA Immigration Riots
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.22
+	title = american_road.22.t
+	desc = american_road.22.d
+	picture = GFX_report_event_icecali
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.22.a
+
+		custom_effect_tooltip = american_road.22.a_tt
+		set_temp_variable = { apr_delta = 0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.23 - “No Kings” Marches
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.23
+	title = american_road.23.t
+	desc = american_road.23.d
+	picture = GFX_report_event_nokingproject
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.23.a
+
+		custom_effect_tooltip = american_road.23.a_tt
+		set_temp_variable = { apr_delta = -0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.24 - The June War
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.24
+	title = american_road.24.t
+	desc = american_road.24.d
+	picture = GFX_report_event_roar
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.24.a
+
+		custom_effect_tooltip = american_road.24.a_tt
+		set_temp_variable = { apr_delta = 5 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 10 }
+		USA_chaos_add = yes
+	}
+
+	option = {
+		name = american_road.24.b
+
+		custom_effect_tooltip = american_road.24.b_tt
+		set_temp_variable = { apr_delta = 3 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.25 - The 12-Day War Ceasefire
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.25
+	title = american_road.25.t
+	desc = american_road.25.d
+	picture = GFX_report_event_goofyahh
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.25.a
+
+		custom_effect_tooltip = american_road.25.a_tt
+		set_temp_variable = { apr_delta = 0.8 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.26 - The Big Beautiful Bill Is Signed
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.26
+	title = american_road.26.t
+	desc = american_road.26.d
+	picture = GFX_report_event_bigbill
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.26.a
+
+		custom_effect_tooltip = american_road.26.a_tt
+		set_temp_variable = { apr_delta = 0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.27 - Tariffs Bite
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.27
+	title = american_road.27.t
+	desc = american_road.27.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.27.a
+
+		custom_effect_tooltip = american_road.27.a_tt
+		set_temp_variable = { apr_delta = -0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.28 - The Alaska Summit
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.28
+	title = american_road.28.t
+	desc = american_road.28.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.28.a
+
+		custom_effect_tooltip = american_road.28.a_tt
+		set_temp_variable = { apr_delta = 0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.29 - The Shutdown Fight
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.29
+	title = american_road.29.t
+	desc = american_road.29.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.29.a
+
+		custom_effect_tooltip = american_road.29.a_tt
+		set_temp_variable = { apr_delta = -0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.30 - The Powell Feud
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.30
+	title = american_road.30.t
+	desc = american_road.30.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.30.a
+
+		custom_effect_tooltip = american_road.30.a_tt
+		set_temp_variable = { apr_delta = 0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.31 - The Shutdown Drags On
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.31
+	title = american_road.31.t
+	desc = american_road.31.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.31.a
+
+		custom_effect_tooltip = american_road.31.a_tt
+		set_temp_variable = { apr_delta = -0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.32 - Gaza Ceasefire & Hostage Deal
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.32
+	title = american_road.32.t
+	desc = american_road.32.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.32.a
+
+		custom_effect_tooltip = american_road.32.a_tt
+		set_temp_variable = { apr_delta = 0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.33 - The Off-Year Sweep
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.33
+	title = american_road.33.t
+	desc = american_road.33.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.33.a
+
+		custom_effect_tooltip = american_road.33.a_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.34 - The Affordability Backlash
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.34
+	title = american_road.34.t
+	desc = american_road.34.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.34.a
+
+		custom_effect_tooltip = american_road.34.a_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.35 - SCOTUS Hears the Tariff Case
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.35
+	title = american_road.35.t
+	desc = american_road.35.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.35.a
+
+		custom_effect_tooltip = american_road.35.a_tt
+		set_temp_variable = { chaos_delta = 0.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.36 - Venezuela Escalation
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.36
+	title = american_road.36.t
+	desc = american_road.36.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.36.a
+
+		custom_effect_tooltip = american_road.36.a_tt
+		set_temp_variable = { apr_delta = 0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.37 - One Year In
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.37
+	title = american_road.37.t
+	desc = american_road.37.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.37.a
+
+		custom_effect_tooltip = american_road.37.a_tt
+		set_temp_variable = { apr_delta = -0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.38 - SCOTUS Limits the Tariffs
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.38
+	title = american_road.38.t
+	desc = american_road.38.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.38.a
+
+		custom_effect_tooltip = american_road.38.a_tt
+		set_temp_variable = { chaos_delta = 1.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.39 - Inflation Reaccelerates
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.39
+	title = american_road.39.t
+	desc = american_road.39.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.39.a
+
+		custom_effect_tooltip = american_road.39.a_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.40 - The Primary Purges
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.40
+	title = american_road.40.t
+	desc = american_road.40.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.40.a
+
+		custom_effect_tooltip = american_road.40.a_tt
+		set_temp_variable = { chaos_delta = 0.8 }
+		USA_chaos_add = yes
+		set_temp_variable = { seats = 5 }
+		USA_ad_maga_house = yes
+		set_temp_variable = { seats = -4 }
+		USA_ad_estab_house = yes
+	}
+}
+
+########################################################################
+# american_road.41 - The Gerrymander Rulings
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.41
+	title = american_road.41.t
+	desc = american_road.41.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.41.a
+
+		custom_effect_tooltip = american_road.41.a_tt
+		set_temp_variable = { chaos_delta = 1.2 }
+		USA_chaos_add = yes
+		set_temp_variable = { seats = 4 }
+		USA_ad_maga_house = yes
+	}
+}
+
+########################################################################
+# american_road.42 - The Iran Deal Collapses
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.42
+	title = american_road.42.t
+	desc = american_road.42.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.42.a
+
+		custom_effect_tooltip = american_road.42.a_tt
+		set_temp_variable = { chaos_delta = 1.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.43 - Liberation Day Anniversary
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.43
+	title = american_road.43.t
+	desc = american_road.43.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.43.a
+
+		custom_effect_tooltip = american_road.43.a_tt
+		set_temp_variable = { chaos_delta = 1.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.44 - The Gulf Incident
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.44
+	title = american_road.44.t
+	desc = american_road.44.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.44.a
+
+		custom_effect_tooltip = american_road.44.a_tt
+		set_temp_variable = { chaos_delta = 1.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.45 - Primary Upsets
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.45
+	title = american_road.45.t
+	desc = american_road.45.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.45.a
+
+		custom_effect_tooltip = american_road.45.a_tt
+		set_temp_variable = { chaos_delta = 1 }
+		USA_chaos_add = yes
+		set_temp_variable = { seats = 5 }
+		USA_ad_maga_house = yes
+		set_temp_variable = { seats = -4 }
+		USA_ad_estab_house = yes
+	}
+}
+
+########################################################################
+# american_road.46 - Iran Proxies Hit a US Base
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.46
+	title = american_road.46.t
+	desc = american_road.46.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.46.a
+
+		custom_effect_tooltip = american_road.46.a_tt
+		set_temp_variable = { apr_delta = -0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.4 }
+		USA_chaos_add = yes
+		set_temp_variable = { seats = 4 }
+		USA_ad_prowar_house = yes
+	}
+}
+
+########################################################################
+# american_road.47 - The Grocery & Gas Crisis
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.47
+	title = american_road.47.t
+	desc = american_road.47.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.47.a
+
+		custom_effect_tooltip = american_road.47.a_tt
+		set_temp_variable = { apr_delta = -4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.48 - Assassination in the Gulf
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.48
+	title = american_road.48.t
+	desc = american_road.48.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.48.a
+
+		custom_effect_tooltip = american_road.48.a_tt
+		set_temp_variable = { chaos_delta = 1.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.49 - America 250
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.49
+	title = american_road.49.t
+	desc = american_road.49.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.49.a
+
+		custom_effect_tooltip = american_road.49.a_tt
+		set_temp_variable = { apr_delta = 0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1 }
+		USA_chaos_add = yes
+		add_political_power = 40
+		add_stability = 0.03
+	}
+}
+
+########################################################################
+# american_road.50 - Approval Near Record Low
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.50
+	title = american_road.50.t
+	desc = american_road.50.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.50.a
+
+		custom_effect_tooltip = american_road.50.a_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 0.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.51 - Summer of Discontent
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.51
+	title = american_road.51.t
+	desc = american_road.51.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.51.a
+
+		custom_effect_tooltip = american_road.51.a_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.52 - The “Election Integrity” Push
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.52
+	title = american_road.52.t
+	desc = american_road.52.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.52.a
+
+		custom_effect_tooltip = american_road.52.a_tt
+		set_temp_variable = { chaos_delta = 1.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.53 - The Iran Ultimatum
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.53
+	title = american_road.53.t
+	desc = american_road.53.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.53.a
+
+		custom_effect_tooltip = american_road.53.a_tt
+		set_temp_variable = { chaos_delta = 1.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.54 - “The Election Will Be Rigged”
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.54
+	title = american_road.54.t
+	desc = american_road.54.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.54.a
+
+		custom_effect_tooltip = american_road.54.a_tt
+		set_temp_variable = { apr_delta = -0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.55 - Voter-Roll Purges
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.55
+	title = american_road.55.t
+	desc = american_road.55.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.55.a
+
+		custom_effect_tooltip = american_road.55.a_tt
+		set_temp_variable = { apr_delta = -0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.4 }
+		USA_chaos_add = yes
+	}
+
+	option = {
+		name = american_road.55.b
+
+		custom_effect_tooltip = american_road.55.b_tt
+		set_temp_variable = { apr_delta = -0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.56 - Operation Secure the Vote
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.56
+	title = american_road.56.t
+	desc = american_road.56.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.56.a
+
+		custom_effect_tooltip = american_road.56.a_tt
+		set_temp_variable = { apr_delta = -0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.8 }
+		USA_chaos_add = yes
+	}
+
+	option = {
+		name = american_road.56.b
+
+		custom_effect_tooltip = american_road.56.b_tt
+		set_temp_variable = { apr_delta = -0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.57 - The Second Strike
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.57
+	title = american_road.57.t
+	desc = american_road.57.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.57.a
+
+		custom_effect_tooltip = american_road.57.a_tt
+		set_temp_variable = { apr_delta = 0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.58 - The Stolen Midterms
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.58
+	title = american_road.58.t
+	desc = american_road.58.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.58.a
+
+		custom_effect_tooltip = american_road.58.a_tt
+		set_temp_variable = { apr_delta = -1 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.59 - Protests → Crackdown
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.59
+	title = american_road.59.t
+	desc = american_road.59.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.59.a
+
+		custom_effect_tooltip = american_road.59.a_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.60 - Govern by Decree
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.60
+	title = american_road.60.t
+	desc = american_road.60.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.60.a
+
+		custom_effect_tooltip = american_road.60.a_tt
+		set_temp_variable = { apr_delta = -0.8 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.61 - The Iran Quagmire Deepens
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.61
+	title = american_road.61.t
+	desc = american_road.61.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.61.a
+
+		custom_effect_tooltip = american_road.61.a_tt
+		set_temp_variable = { apr_delta = -0.8 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.62 - The Hormuz Disaster
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.62
+	title = american_road.62.t
+	desc = american_road.62.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.62.a
+
+		custom_effect_tooltip = american_road.62.a_tt
+		set_temp_variable = { apr_delta = -5 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 18 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.63 - The Oil Shock
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.63
+	title = american_road.63.t
+	desc = american_road.63.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.63.a
+
+		custom_effect_tooltip = american_road.63.a_tt
+		set_temp_variable = { apr_delta = -6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 16 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.64 - Fuel Rationing Begins
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.64
+	title = american_road.64.t
+	desc = american_road.64.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.64.a
+
+		custom_effect_tooltip = american_road.64.a_tt
+		set_temp_variable = { apr_delta = -0.8 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.65 - Anti-War Protests Explode
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.65
+	title = american_road.65.t
+	desc = american_road.65.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.65.a
+
+		custom_effect_tooltip = american_road.65.a_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.66 - The Zagros Meat Grinder
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.66
+	title = american_road.66.t
+	desc = american_road.66.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.66.a
+
+		custom_effect_tooltip = american_road.66.a_tt
+		set_temp_variable = { apr_delta = -1.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.67 - Blame the Generals
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.67
+	title = american_road.67.t
+	desc = american_road.67.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.67.a
+
+		custom_effect_tooltip = american_road.67.a_tt
+		set_temp_variable = { apr_delta = -0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.68 - Coalition Collapses
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.68
+	title = american_road.68.t
+	desc = american_road.68.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.68.a
+
+		custom_effect_tooltip = american_road.68.a_tt
+		set_temp_variable = { apr_delta = -0.8 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.69 - Price Controls Imposed
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.69
+	title = american_road.69.t
+	desc = american_road.69.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.69.a
+
+		custom_effect_tooltip = american_road.69.a_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.70 - The Rout
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.70
+	title = american_road.70.t
+	desc = american_road.70.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.70.a
+
+		custom_effect_tooltip = american_road.70.a_tt
+		set_temp_variable = { apr_delta = -2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 4.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.71 - Martial Law in the Cities
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.71
+	title = american_road.71.t
+	desc = american_road.71.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.71.a
+
+		custom_effect_tooltip = american_road.71.a_tt
+		set_temp_variable = { apr_delta = -0.8 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.72 - Bring the Troops Home
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.72
+	title = american_road.72.t
+	desc = american_road.72.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.72.a
+
+		custom_effect_tooltip = american_road.72.a_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.73 - Hyperinflation Sets In
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.73
+	title = american_road.73.t
+	desc = american_road.73.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.73.a
+
+		custom_effect_tooltip = american_road.73.a_tt
+		set_temp_variable = { apr_delta = -6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 18 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.74 - The New Dollar
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.74
+	title = american_road.74.t
+	desc = american_road.74.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.74.a
+
+		custom_effect_tooltip = american_road.74.a_tt
+		set_temp_variable = { apr_delta = -1.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.75 - Third-Term Trial Balloon
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.75
+	title = american_road.75.t
+	desc = american_road.75.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.75.a
+
+		custom_effect_tooltip = american_road.75.a_tt
+		set_temp_variable = { apr_delta = -0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.76 - Reinterpret the 22nd Amendment
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.76
+	title = american_road.76.t
+	desc = american_road.76.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.76.a
+
+		custom_effect_tooltip = american_road.76.a_tt
+		set_temp_variable = { apr_delta = -1 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+		set_temp_variable = { legit_delta = -8 }
+		USA_ad_legit_add = yes
+	}
+}
+
+########################################################################
+# american_road.77 - Federal Ration Cards
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.77
+	title = american_road.77.t
+	desc = american_road.77.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.77.a
+
+		custom_effect_tooltip = american_road.77.a_tt
+		set_temp_variable = { apr_delta = -0.8 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.78 - Purge of the Pentagon
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.78
+	title = american_road.78.t
+	desc = american_road.78.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.78.a
+
+		custom_effect_tooltip = american_road.78.a_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.79 - Emergency Economic Powers
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.79
+	title = american_road.79.t
+	desc = american_road.79.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.79.a
+
+		custom_effect_tooltip = american_road.79.a_tt
+		set_temp_variable = { apr_delta = -0.8 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.80 - “I'll Run Again”
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.80
+	title = american_road.80.t
+	desc = american_road.80.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.80.a
+
+		custom_effect_tooltip = american_road.80.a_tt
+		set_temp_variable = { apr_delta = -0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.81 - Regional Governments Consolidate
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.81
+	title = american_road.81.t
+	desc = american_road.81.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.81.a
+
+		custom_effect_tooltip = american_road.81.a_tt
+		set_temp_variable = { chaos_delta = 3 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.82 - One Year to the Election
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.82
+	title = american_road.82.t
+	desc = american_road.82.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.82.a
+
+		custom_effect_tooltip = american_road.82.a_tt
+		set_temp_variable = { chaos_delta = 2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.83 - The West Coast Compact
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.83
+	title = american_road.83.t
+	desc = american_road.83.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.83.a
+
+		custom_effect_tooltip = american_road.83.a_tt
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.84 - He IS Running
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.84
+	title = american_road.84.t
+	desc = american_road.84.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.84.a
+
+		custom_effect_tooltip = american_road.84.a_tt
+		set_temp_variable = { apr_delta = 0.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.85 - Newsom Formally Launches
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.85
+	title = american_road.85.t
+	desc = american_road.85.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.85.a
+
+		custom_effect_tooltip = american_road.85.a_tt
+		set_temp_variable = { apr_delta = -0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.86 - The Eligibility Ruling
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.86
+	title = american_road.86.t
+	desc = american_road.86.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.86.a
+
+		custom_effect_tooltip = american_road.86.a_tt
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.87 - Newsom vs. Trump
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.87
+	title = american_road.87.t
+	desc = american_road.87.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.87.a
+
+		custom_effect_tooltip = american_road.87.a_tt
+		set_temp_variable = { apr_delta = -0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 1.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.88 - Rig the Primaries
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.88
+	title = american_road.88.t
+	desc = american_road.88.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.88.a
+
+		custom_effect_tooltip = american_road.88.a_tt
+		set_temp_variable = { apr_delta = -0.8 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.89 - Militia Standoffs
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.89
+	title = american_road.89.t
+	desc = american_road.89.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.89.a
+
+		custom_effect_tooltip = american_road.89.a_tt
+		set_temp_variable = { chaos_delta = 3 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.90 - Super Tuesday Chaos
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.90
+	title = american_road.90.t
+	desc = american_road.90.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.90.a
+
+		custom_effect_tooltip = american_road.90.a_tt
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.91 - Federal Troops in Swing States
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.91
+	title = american_road.91.t
+	desc = american_road.91.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.91.a
+
+		custom_effect_tooltip = american_road.91.a_tt
+		set_temp_variable = { chaos_delta = 3 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.92 - Trump Declares Candidacy
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.92
+	title = american_road.92.t
+	desc = american_road.92.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.92.a
+
+		custom_effect_tooltip = american_road.92.a_tt
+		set_temp_variable = { apr_delta = 0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.93 - Blue States Threaten Secession
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.93
+	title = american_road.93.t
+	desc = american_road.93.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.93.a
+
+		custom_effect_tooltip = american_road.93.a_tt
+		set_temp_variable = { chaos_delta = 3.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.94 - Newsom Nominated
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.94
+	title = american_road.94.t
+	desc = american_road.94.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.94.a
+
+		custom_effect_tooltip = american_road.94.a_tt
+		set_temp_variable = { apr_delta = -0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.95 - The “Integrity Force” Deploys
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.95
+	title = american_road.95.t
+	desc = american_road.95.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.95.a
+
+		custom_effect_tooltip = american_road.95.a_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 3.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.96 - Two Americas
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.96
+	title = american_road.96.t
+	desc = american_road.96.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.96.a
+
+		custom_effect_tooltip = american_road.96.a_tt
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.97 - Suppress the Newsom Vote
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.97
+	title = american_road.97.t
+	desc = american_road.97.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.97.a
+
+		custom_effect_tooltip = american_road.97.a_tt
+		set_temp_variable = { apr_delta = -0.8 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 4 }
+		USA_chaos_add = yes
+	}
+
+	option = {
+		name = american_road.97.b
+
+		custom_effect_tooltip = american_road.97.b_tt
+		set_temp_variable = { apr_delta = -0.4 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.98 - The 252nd of July
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.98
+	title = american_road.98.t
+	desc = american_road.98.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.98.a
+
+		custom_effect_tooltip = american_road.98.a_tt
+		set_temp_variable = { chaos_delta = 2.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.99 - States Refuse Federal Ballots
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.99
+	title = american_road.99.t
+	desc = american_road.99.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.99.a
+
+		custom_effect_tooltip = american_road.99.a_tt
+		set_temp_variable = { chaos_delta = 3.6 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.101 - The Final Sprint
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.101
+	title = american_road.101.t
+	desc = american_road.101.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.101.a
+
+		custom_effect_tooltip = american_road.101.a_tt
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.102 - Ballot Seizures Begin Early
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.102
+	title = american_road.102.t
+	desc = american_road.102.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.102.a
+
+		custom_effect_tooltip = american_road.102.a_tt
+		set_temp_variable = { apr_delta = -0.8 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.103 - Dueling Rallies
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.103
+	title = american_road.103.t
+	desc = american_road.103.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.103.a
+
+		custom_effect_tooltip = american_road.103.a_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 2.8 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.104 - “We Won't Certify a Stolen Win”
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.104
+	title = american_road.104.t
+	desc = american_road.104.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.104.a
+
+		custom_effect_tooltip = american_road.104.a_tt
+		set_temp_variable = { chaos_delta = 4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.105 - Steal the Election
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.105
+	title = american_road.105.t
+	desc = american_road.105.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.105.a
+
+		custom_effect_tooltip = american_road.105.a_tt
+		set_temp_variable = { apr_delta = -1.2 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 5 }
+		USA_chaos_add = yes
+	}
+
+	option = {
+		name = american_road.105.b
+
+		custom_effect_tooltip = american_road.105.b_tt
+		set_temp_variable = { apr_delta = -0.6 }
+		USA_apr_add = yes
+		set_temp_variable = { chaos_delta = 3.2 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.106 - Governors Mobilize State Forces
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.106
+	title = american_road.106.t
+	desc = american_road.106.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.106.a
+
+		custom_effect_tooltip = american_road.106.a_tt
+		set_temp_variable = { chaos_delta = 4.4 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.107 - Election Day — Trump “Wins”
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.107
+	title = american_road.107.t
+	desc = american_road.107.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.107.a
+
+		custom_effect_tooltip = american_road.107.a_tt
+		set_temp_variable = { chaos_delta = 40 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.108 - THE COLLAPSE
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.108
+	title = american_road.108.t
+	desc = american_road.108.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.108.a
+
+		custom_effect_tooltip = american_road.108.a_tt
+		USA_chaos_collapse = yes
+	}
+}
+
+########################################################################
+# american_road.109 - The Red Militias March
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.109
+	title = american_road.109.t
+	desc = american_road.109.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.109.a
+
+		custom_effect_tooltip = american_road.109.a_tt
+		set_temp_variable = { chaos_delta = 40 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.110 - The American Dream Ends
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+country_event = {
+	id = american_road.110
+	title = american_road.110.t
+	desc = american_road.110.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = american_road.110.a
+
+		custom_effect_tooltip = american_road.110.a_tt
+		set_temp_variable = { chaos_delta = 40 }
+		USA_chaos_add = yes
+	}
+}
+
+########################################################################
+# american_road.112 - Markets Whipsaw as Tariffs Change by the Hour
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+news_event = {
+	id = american_road.112
+	title = american_road.112.t
+	desc = american_road.112.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = american_road.112.a
+	}
+}
+
+########################################################################
+# american_road.113 - Washington Lurches Toward a Shutdown
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+news_event = {
+	id = american_road.113
+	title = american_road.113.t
+	desc = american_road.113.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = american_road.113.a
+	}
+}
+
+########################################################################
+# american_road.114 - One Year On, Two Americas Mark the Day
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+news_event = {
+	id = american_road.114
+	title = american_road.114.t
+	desc = american_road.114.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = american_road.114.a
+	}
+}
+
+########################################################################
+# american_road.115 - The Only Poll That Matters Is at the Checkout
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+news_event = {
+	id = american_road.115
+	title = american_road.115.t
+	desc = american_road.115.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = american_road.115.a
+	}
+}
+
+########################################################################
+# american_road.116 - White House Says the Midterms Are 'Already Being Stolen'
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+news_event = {
+	id = american_road.116
+	title = american_road.116.t
+	desc = american_road.116.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = american_road.116.a
+	}
+}
+
+########################################################################
+# american_road.117 - Hormuz Closed; Gas Passes $10 a Gallon
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+news_event = {
+	id = american_road.117
+	title = american_road.117.t
+	desc = american_road.117.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = american_road.117.a
+	}
+}
+
+########################################################################
+# american_road.118 - Withdrawal From Iran Ends in Rout
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+news_event = {
+	id = american_road.118
+	title = american_road.118.t
+	desc = american_road.118.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = american_road.118.a
+	}
+}
+
+########################################################################
+# american_road.119 - Governors Form Regional Compacts as Washington Falters
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+news_event = {
+	id = american_road.119
+	title = american_road.119.t
+	desc = american_road.119.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = american_road.119.a
+	}
+}
+
+########################################################################
+# american_road.120 - Court Splits; President Stays on the Ballot
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+news_event = {
+	id = american_road.120
+	title = american_road.120.t
+	desc = american_road.120.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = american_road.120.a
+	}
+}
+
+########################################################################
+# american_road.121 - Two Conventions, Two Countries
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+news_event = {
+	id = american_road.121
+	title = american_road.121.t
+	desc = american_road.121.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = american_road.121.a
+	}
+}
+
+########################################################################
+# american_road.122 - West Coast Vows It Won't Certify a Stolen Win
+#
+# Triggered only. Fire it from another event, a decision, a focus
+# or an on_action.
+########################################################################
+news_event = {
+	id = american_road.122
+	title = american_road.122.t
+	desc = american_road.122.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = american_road.122.a
 	}
 }

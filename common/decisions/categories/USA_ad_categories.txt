@@ -1,0 +1,36 @@
+# ==============================================================
+#  THE AMERICAN DREAM - DECISION CATEGORIES (the three minigames)
+#  Each category only shows while its window/flag is live.
+#  Swap the `icon`s for nicer art whenever you like.
+# ==============================================================
+
+usa_ad_iran_cat = {
+	icon = generic_operation
+	priority = 200
+	allowed = { original_tag = USA }
+	visible = { has_country_flag = usa_iran_s1 }
+}
+
+usa_ad_midterm_cat = {
+	icon = generic_operation
+	priority = 190
+	allowed = { original_tag = USA }
+	visible = { has_country_flag = usa_midterms_open }
+}
+
+usa_ad_steal_cat = {
+	icon = generic_operation
+	priority = 180
+	allowed = { original_tag = USA }
+	visible = { has_country_flag = usa_steal_open }
+}
+
+# Always-on readout of Congress, the tribes, legitimacy and the mood
+# bars. The "decisions" inside are display-only (available = no); the
+# live numbers live in their localisation via [?variable] tags.
+usa_ad_scoreboard_cat = {
+	icon = generic_operation
+	priority = 500
+	allowed = { original_tag = USA }
+	visible = { has_country_flag = usa_ad_initialized }
+}

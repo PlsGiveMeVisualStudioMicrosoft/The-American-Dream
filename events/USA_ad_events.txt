@@ -1,0 +1,282 @@
+# ==============================================================
+#  THE AMERICAN DREAM - INTERACTIVE EVENTS
+#
+#  All is_triggered_only - fired by a focus, a decision, or the
+#  Iran clock, NEVER by a date. Every story beat fires here exactly
+#  once. The CHOICE events (61/62/63) complete one of a pair of
+#  fork focuses via complete_national_focus - that focus's reward
+#  carries the consequences, so the beat can't double up.
+#
+#  Pictures are generic placeholders - swap for your own art.
+# ==============================================================
+
+add_namespace = usa_ad
+
+# --------------------------------------------------------------
+#  IRAN
+# --------------------------------------------------------------
+
+# usa_ad.70 - Stage 1 opener, fired by "The Nuclear Question" focus.
+country_event = {
+	id = usa_ad.70
+	title = usa_ad.70.t
+	desc = usa_ad.70.d
+	picture = GFX_report_event_generic_army_marching
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = usa_ad.70.a }
+}
+
+# usa_ad.71 - Stage 2 opener, fired by "The Second Strike" focus.
+country_event = {
+	id = usa_ad.71
+	title = usa_ad.71.t
+	desc = usa_ad.71.d
+	picture = GFX_report_event_generic_army_marching
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = { name = usa_ad.71.a }
+}
+
+# usa_ad.72 - Stage 3 opener (ground war, clock arms), from "Boots on the Ground".
+country_event = {
+	id = usa_ad.72
+	title = usa_ad.72.t
+	desc = usa_ad.72.d
+	picture = GFX_report_event_generic_army_marching
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = { name = usa_ad.72.a }
+}
+
+# usa_ad.10 - THE ROUT. Fired ONCE by the clock (USA_ad_iran_rout).
+country_event = {
+	id = usa_ad.10
+	title = usa_ad.10.t
+	desc = usa_ad.10.d
+	picture = GFX_report_event_generic_army_marching
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = usa_ad.10.a
+		set_country_flag = usa_iran_war_over
+		# [BUILD] YOU: real withdrawal / loss of the deployed army.
+	}
+}
+
+# usa_ad.11 - Tehran Refuses (from Sue for Terms).
+country_event = {
+	id = usa_ad.11
+	title = usa_ad.11.t
+	desc = usa_ad.11.d
+	picture = GFX_report_event_generic_army_marching
+	is_triggered_only = yes
+	option = { name = usa_ad.11.a }
+}
+
+# usa_ad.12 - The Coalition Collapses (delayed from Call the Coalition).
+country_event = {
+	id = usa_ad.12
+	title = usa_ad.12.t
+	desc = usa_ad.12.d
+	picture = GFX_report_event_generic_army_marching
+	is_triggered_only = yes
+	option = { name = usa_ad.12.a  USA_ad_iran_coalition_collapse = yes }
+}
+
+# --- small Iran flavour, fired (delayed) from the decisions ---
+country_event = {		# usa_ad.73 - from Tighten the Sanctions
+	id = usa_ad.73
+	title = usa_ad.73.t
+	desc = usa_ad.73.d
+	picture = GFX_report_event_generic_army_marching
+	is_triggered_only = yes
+	option = { name = usa_ad.73.a }
+}
+country_event = {		# usa_ad.74 - from Answer the Skirmish
+	id = usa_ad.74
+	title = usa_ad.74.t
+	desc = usa_ad.74.d
+	picture = GFX_report_event_generic_army_marching
+	is_triggered_only = yes
+	option = { name = usa_ad.74.a }
+}
+country_event = {		# usa_ad.75 - from Airstrike Campaign
+	id = usa_ad.75
+	title = usa_ad.75.t
+	desc = usa_ad.75.d
+	picture = GFX_report_event_generic_army_marching
+	is_triggered_only = yes
+	option = { name = usa_ad.75.a }
+}
+country_event = {		# usa_ad.76 - from Decapitation Strike (a gamble that fails)
+	id = usa_ad.76
+	title = usa_ad.76.t
+	desc = usa_ad.76.d
+	picture = GFX_report_event_generic_army_marching
+	is_triggered_only = yes
+	option = { name = usa_ad.76.a }
+}
+
+# --------------------------------------------------------------
+#  MIDTERMS
+# --------------------------------------------------------------
+
+# usa_ad.30 - fired by the focus "Question the Count". Opens the window.
+country_event = {
+	id = usa_ad.30
+	title = usa_ad.30.t
+	desc = usa_ad.30.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { USA_ad_mid_open = yes }
+	option = { name = usa_ad.30.a }
+}
+
+# usa_ad.62 - THE COUNT IS OURS. Fired by the Certify decision.
+# The option completes Blatant Steal or Quiet Steal (their reward
+# carries the chaos / legitimacy hit).
+country_event = {
+	id = usa_ad.62
+	title = usa_ad.62.t
+	desc = usa_ad.62.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = usa_ad.62.a		# "Do it on camera" -> Blatant Steal
+		complete_national_focus = USA_blatant_steal
+	}
+	option = {
+		name = usa_ad.62.b		# "Do it in the dark" -> Quiet Steal
+		complete_national_focus = USA_quiet_steal
+	}
+}
+
+# usa_ad.21 - The Midterms Are Lost (from Let Them Count).
+country_event = {
+	id = usa_ad.21
+	title = usa_ad.21.t
+	desc = usa_ad.21.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { name = usa_ad.21.a }
+	# [BUILD] YOU: opens the impeachment branch.
+}
+
+# --------------------------------------------------------------
+#  THE STEAL / COLLAPSE
+# --------------------------------------------------------------
+
+# usa_ad.50 - fired by the focus "Suppress the Vote". Opens the window.
+country_event = {
+	id = usa_ad.50
+	title = usa_ad.50.t
+	desc = usa_ad.50.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { USA_ad_steal_open = yes }
+	option = { name = usa_ad.50.a }
+}
+
+# usa_ad.63 - DECLARE VICTORY. Fired by the Declare Victory decision.
+# The option completes Brazen Fraud or Quiet Rigging; that focus's
+# reward triggers the collapse (USA_chaos_collapse + usa_ad.40).
+country_event = {
+	id = usa_ad.63
+	title = usa_ad.63.t
+	desc = usa_ad.63.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = usa_ad.63.a		# "Declare it before the count" -> Brazen Fraud
+		complete_national_focus = USA_brazen_fraud
+	}
+	option = {
+		name = usa_ad.63.b		# "Rig it quietly" -> Quiet Rigging
+		complete_national_focus = USA_quiet_rigging
+	}
+}
+
+# usa_ad.40 - THE COLLAPSE. Fired by the Brazen/Quiet focus reward.
+country_event = {
+	id = usa_ad.40
+	title = usa_ad.40.t
+	desc = usa_ad.40.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = usa_ad.40.a
+		# [BUILD] YOU - the big one: release the West-Coast compact
+		# + blue-state bloc as countries, start_civil_war, scale the
+		# number of breakaways to how low usa_legitimacy fell.
+	}
+}
+
+# --------------------------------------------------------------
+#  CHAPTER TRANSITIONS  (fired by the end-of-chapter capstone focus,
+#  which also swaps the focus tree via load_focus_tree)
+# --------------------------------------------------------------
+news_event = {		# usa_ad.80 - Year One -> Year Two
+	id = usa_ad.80
+	title = usa_ad.80.t
+	desc = usa_ad.80.d
+	picture = GFX_news_event_generic_sit_broadcast
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = { name = usa_ad.80.a }
+}
+news_event = {		# usa_ad.81 - Year Two -> The Iran War
+	id = usa_ad.81
+	title = usa_ad.81.t
+	desc = usa_ad.81.d
+	picture = GFX_news_event_generic_sit_broadcast
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = { name = usa_ad.81.a }
+}
+news_event = {		# usa_ad.82 - The Iran War -> The Collapse
+	id = usa_ad.82
+	title = usa_ad.82.t
+	desc = usa_ad.82.d
+	picture = GFX_news_event_generic_sit_broadcast
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = { name = usa_ad.82.a }
+}
+
+# --------------------------------------------------------------
+#  ECONOMY CHOICE
+# --------------------------------------------------------------
+
+# usa_ad.61 - EUROPE OR ALONE. Fired by the focus "Liberation Day".
+country_event = {
+	id = usa_ad.61
+	title = usa_ad.61.t
+	desc = usa_ad.61.d
+	picture = GFX_report_event_generic_army_marching
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = usa_ad.61.a		# "Cut Europe a deal" -> Befriend Europe
+		complete_national_focus = USA_befriend_europe
+	}
+	option = {
+		name = usa_ad.61.b		# "Tariff them too" -> Tarrif the World
+		complete_national_focus = USA_tarrif_the_world
+	}
+}

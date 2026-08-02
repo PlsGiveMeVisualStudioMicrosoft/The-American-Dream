@@ -1,19 +1,30 @@
 ideas = {
 	country = {
-		USA_murder_the_baltics = {
-			picture = GFX_SOV_bringing_breakaways_back_to_the_fold_ccp_2d_sov_compatibility
+		MAGA_mandate = {
+			picture = GFX_goal_generic_propaganda
 			allowed = { always = yes }
 			removal_cost = -1
 			modifier = {
-				army_attack_factor = 0.05
+				political_power_gain = 0.15
+				stability_weekly = -0.02
 			}
 		}
-		USA_research = {
-			picture = GFX_focus_NORDIC_dem_research
+		inflation_nation = {
+			picture = GFX_goal_generic_trade
 			allowed = { always = yes }
 			removal_cost = -1
 			modifier = {
-				research_speed_factor = 0.05
+				consumer_goods_factor = 0.20
+				stability_weekly = -0.03
+			}
+		}
+		constitutional_crisis = {
+			picture = GFX_goal_generic_intelligence_focus
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.30
+				war_support_factor = -0.15
 			}
 		}
 	}

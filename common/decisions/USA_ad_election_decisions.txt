@@ -1,0 +1,62 @@
+# ==============================================================
+#  THE STEAL  - the 2028 election minigame.
+#  Same legitimacy engine as the midterms, but the finisher is
+#  the collapse itself. By now legitimacy is usually near the
+#  floor, so "Declare Victory" ends the game's story.
+#  (Mechanics live in USA_ad_cheat.txt.)
+# ==============================================================
+
+usa_ad_steal_cat = {
+
+	# Status readout (display-only) - legitimacy / cheat banked.
+	ad_steal_status = {
+		icon = generic_operation
+		available = { always = no }
+		visible   = { has_country_flag = usa_steal_open }
+		ai_will_do = { factor = 0 }
+	}
+
+	ad_steal_integrity_force = {
+		icon = generic_operation
+		available = { has_country_flag = usa_steal_open }
+		visible   = { has_country_flag = usa_steal_open }
+		cost = 40
+		days_re_enable = 20
+		complete_effect = { USA_ad_steal_integrity_force = yes }
+		ai_will_do = { factor = 1 }
+	}
+
+	ad_steal_purge_newsom = {
+		icon = generic_operation
+		available = { has_country_flag = usa_steal_open }
+		visible   = { has_country_flag = usa_steal_open }
+		cost = 40
+		days_re_enable = 20
+		complete_effect = { USA_ad_steal_purge_newsom = yes }
+		ai_will_do = { factor = 1 }
+	}
+
+	ad_steal_seize_ballots = {			# blatant
+		icon = generic_operation
+		available = { has_country_flag = usa_steal_open }
+		visible   = { has_country_flag = usa_steal_open }
+		cost = 70
+		days_re_enable = 25
+		complete_effect = { USA_ad_steal_seize_ballots = yes }
+		ai_will_do = { factor = 1 }
+	}
+
+	# --- Finisher: declare victory -> THE COLLAPSE (cheat >= 6) ---
+	ad_steal_declare_victory = {
+		icon = generic_operation
+		available = {
+			has_country_flag = usa_steal_open
+			check_variable = { var = usa_steal_cheat value = 6 compare = greater_than_or_equals }
+		}
+		visible = { has_country_flag = usa_steal_open }
+		cost = 0
+		fire_only_once = yes
+		complete_effect = { USA_ad_steal_declare = yes }
+		ai_will_do = { factor = 1 }
+	}
+}

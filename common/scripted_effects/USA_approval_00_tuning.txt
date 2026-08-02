@@ -101,7 +101,7 @@ USA_apr_load_tuning = {
 
 	set_variable = { usa_chaos_from_approval = 0.01 }
 	set_variable = { usa_chaos_from_stability = 2 }
-	set_variable = { usa_chaos_creep_cap = 1 }
+	set_variable = { usa_chaos_creep_cap = 0 }
 	set_variable = { usa_chaos_consumer_scale = 0.4 }
 	set_variable = { usa_chaos_consc_scale = 0.5 }
 

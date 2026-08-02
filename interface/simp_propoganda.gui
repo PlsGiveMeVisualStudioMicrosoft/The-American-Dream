@@ -86,8 +86,21 @@ guiTypes = {
  		name = "GFX_ISK_cw_progress_bar_2"
   		spriteType = "GFX_ISK_cw_2"
   		position = { x = 50 y = 50 }
-		}   
-       
+		}
+
+        # Round Capitol emblem sitting on the president portrait. Opens
+        # the House/Senate window. A static button DOES fire its _click
+        # here as long as its sprite loads and it has a clicked_sound
+        # (the previous button used a sprite that never loaded, so it had
+        # no clickable area). Nudge the position to taste.
+        buttonType = {
+            name = "usa_congress_open_button"
+            position = { x = 137 y = 14 }
+            spriteType = "GFX_usa_congress_open_button"
+            pdx_tooltip = "usa_congress_open_tt"
+            clicked_sound = "click_default"
+        }
+
     }
 
 }

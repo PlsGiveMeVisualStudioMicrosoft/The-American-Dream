@@ -1,0 +1,170 @@
+guiTypes = {
+
+	# ==========================================================
+	#  UNITED STATES CONGRESS  -  floating window
+	#
+	#  House (435) on the left, Senate (100) on the right, both drawn
+	#  as hemicycles of 18px dots over a faint Capitol backdrop. Each
+	#  gridbox lives inside its own transparent box so it stays fully
+	#  inside the window (a gridbox that overruns the window edge
+	#  pushed the Senate out of frame). Seat colour (frame), x and y
+	#  come from arrays built in USA_congress.txt and bound to the
+	#  icons in USA_congress_scripted_gui.txt.
+	# ==========================================================
+	containerWindowType = {
+		name = "usa_congress_window"
+		position = { x = 0 y = 0 }
+		size = { width = 1040 height = 500 }
+		orientation = center
+		origo = center
+		moveable = yes
+		
+		background = {
+			name = "usa_congress_bg_border"
+			quadTextureSprite = "GFX_tiled_window_2b_border"
+		}
+
+		# faint Capitol watermark, behind everything else
+		iconType = {
+			name = "usa_congress_backdrop"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_usa_congress_bg"
+		}
+
+		instantTextBoxType = {
+			name = "usa_congress_title"
+			position = { x = 0 y = 16 }
+			font = "hoi_24header"
+			text = "usa_congress_window_title"
+			maxWidth = 1040
+			maxHeight = 28
+			format = centre
+		}
+
+		buttonType = {
+			name = "usa_congress_close_button"
+			position = { x = 1002 y = 14 }
+			spriteType = "GFX_closebutton"
+			pdx_tooltip = "usa_congress_close_tt"
+			clicked_sound = "click_close"
+		}
+
+		# ---------------- HOUSE (435 seats) ----------------
+		instantTextBoxType = {
+			name = "usa_congress_house_label"
+			position = { x = 30 y = 60 }
+			font = "hoi_18b"
+			text = "ad_score_house"
+			maxWidth = 461
+			maxHeight = 22
+			format = centre
+		}
+		containerWindowType = {
+			name = "usa_house_box"
+			position = { x = 35 y = 88 }
+			size = { width = 465 height = 250 }
+
+			gridboxtype = {
+				name = "usa_house_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+
+		# ---------------- SENATE (100 seats) ----------------
+		instantTextBoxType = {
+			name = "usa_congress_senate_label"
+			position = { x = 615 y = 60 }
+			font = "hoi_18b"
+			text = "ad_score_senate"
+			maxWidth = 300
+			maxHeight = 22
+			format = centre
+		}
+		containerWindowType = {
+			name = "usa_senate_box"
+			position = { x = 615 y = 88 }
+			size = { width = 300 height = 180 }
+
+			gridboxtype = {
+				name = "usa_senate_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+
+		# ---------------- TRIBES + MOOD read-outs ----------------
+		instantTextBoxType = {
+			name = "usa_congress_tribes_title"
+			position = { x = 40 y = 340 }
+			font = "hoi_18b"
+			text = "ad_score_tribes"
+			maxWidth = 490
+			maxHeight = 22
+			format = left
+		}
+		instantTextBoxType = {
+			name = "usa_congress_tribes_desc"
+			position = { x = 40 y = 364 }
+			font = "hoi_16mbs"
+			text = "ad_score_tribes_desc"
+			maxWidth = 490
+			maxHeight = 120
+			format = left
+		}
+		instantTextBoxType = {
+			name = "usa_congress_mood_title"
+			position = { x = 555 y = 340 }
+			font = "hoi_18b"
+			text = "ad_score_mood"
+			maxWidth = 450
+			maxHeight = 22
+			format = left
+		}
+		instantTextBoxType = {
+			name = "usa_congress_mood_desc"
+			position = { x = 555 y = 364 }
+			font = "hoi_16mbs"
+			text = "ad_score_mood_desc"
+			maxWidth = 450
+			maxHeight = 120
+			format = left
+		}
+	}
+
+	# ==========================================================
+	#  A single House seat (coloured dot).
+	# ==========================================================
+	containerWindowType = {
+		name = "usa_house_seat_entry"
+		position = { x = 0 y = 0 }
+
+		iconType = {
+			name = "usa_house_seat_icon"
+			spriteType = "GFX_usa_congress_party_icon"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "usa_house_seat_tt"
+		}
+	}
+
+	# ==========================================================
+	#  A single Senate seat (coloured dot).
+	# ==========================================================
+	containerWindowType = {
+		name = "usa_senate_seat_entry"
+		position = { x = 0 y = 0 }
+
+		iconType = {
+			name = "usa_senate_seat_icon"
+			spriteType = "GFX_usa_congress_party_icon"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "usa_senate_seat_tt"
+		}
+	}
+}

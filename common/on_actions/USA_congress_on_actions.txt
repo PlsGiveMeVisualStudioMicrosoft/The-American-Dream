@@ -1,0 +1,28 @@
+# ==============================================================
+#  THE AMERICAN DREAM - CONGRESS  (drivers)
+#
+#  Keeps the House/Senate diagram built and in sync with the live
+#  variables, independently of whichever system raised
+#  usa_ad_initialized. on_startup paints it immediately (new game
+#  or loaded save); on_daily_USA keeps it current as seats move.
+#
+#  Adding a third on_daily_USA / on_startup block is fine - the
+#  engine merges every definition of an on_action across all files.
+# ==============================================================
+on_actions = {
+
+	on_startup = {
+		effect = {
+			USA = { USA_congress_diagram_tick = yes }
+		}
+	}
+
+	on_daily_USA = {
+		effect = {
+			if = {
+				limit = { tag = USA }
+				USA_congress_diagram_tick = yes
+			}
+		}
+	}
+}

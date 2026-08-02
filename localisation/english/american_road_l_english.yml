@@ -1,10 +1,9 @@
 ﻿l_english:
 
  american_road.1.t:0 "Truck Attack in New Orleans"
- american_road.1.d:0 "At 3AM local time, An Islamic Terrorist, sympathetic to ISIS, rammed his car down the street, trough Bourbon Street. The street was hosting parties and other New Years celebrations, making the total injury count we know of so far, at 52. The FBI puts the death count at 14 so far.\n\nThe FBI is confident that the attacker, Jabbar Shamsud-Din Bahar acted alone, and without foreign help. Investigators also found two pipe bombs inside coolers on Bourbon Street a few blocks from the attack. The devices were rigged for detonation, and connected to a wireless remote found in the truck.\n\n[american_road.1.tt]"
- american_road.1.tt:0 "[?USA.civil_war|0]"
+ american_road.1.d:0 "At 3AM local time, An Islamic Terrorist, sympathetic to ISIS, rammed his car down the street, trough Bourbon Street. The street was hosting parties and other New Years celebrations, making the total injury count we know of so far, at 52. The FBI puts the death count at 14 so far.\n\nThe FBI is confident that the attacker, Jabbar Shamsud-Din Bahar acted alone, and without foreign help. Investigators also found two pipe bombs inside coolers on Bourbon Street a few blocks from the attack. The devices were rigged for detonation, and connected to a wireless remote found in the truck."
  american_road.1.a:0 "The Nation Grieves"
- american_road.1.a_tt:0 "§RChaos +1§! (now [?USA.civil_war|0])"
+ american_road.1.a_tt:0 "§GApproval +0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.6§! (now [?USA.civil_war|0])"
 
  american_road.2.t:0 "The Munich Security Conference Speech"
  american_road.2.d:0 "On February 14th, Vice President JD Vance addressed the Munich Security Conference, delivering a sharp critique of European governments over issues of free speech, immigration, and domestic politics. His remarks caused controversy among America's allies, with some viewing them as a challenge to the foundations of the transatlantic alliance, while others celebrated the speech as a defense of national sovereignty and conservative values.\n\n[american_road.2.tt]"
@@ -75,3 +74,542 @@
  american_road.11.tt:0 "[?USA.aproval_rate|0][?USA.civil_war|0]"
  american_road.11.a:0 "Yes! I love Deals. Art of the Deal!!!"
  american_road.11.a_tt:0 "§GApproval +5§! (now [?USA.aproval_rate|0]%)\n§GChaos -5§! (now [?USA.civil_war|0])"
+
+ american_road.13.t:0 "Colombia Deportation Standoff"
+ american_road.13.d:0 "Bogotá has turned back two deportation flights.\n\nThis is unacceptable, so we will threaten 25% tariffs. They will fold under the might of our Presidents genius!\nMigrants will be returned to Colombia on military aircraft “without limitation and delay”"
+ american_road.13.a:0 "Send the planes"
+ american_road.13.a_tt:0 "§GApproval +0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.4§! (now [?USA.civil_war|0])"
+
+ american_road.14.t:0 "Tariffs on Canada, Mexico & China"
+ american_road.14.d:0 "We will place tariffs of 25% on Canada, 25% on Mexico, 10% on China. This will bring manufacturing back home!"
+ american_road.14.a:0 "Tariff them all"
+ american_road.14.a_tt:0 "§GApproval +0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.8§! (now [?USA.civil_war|0])"
+
+ american_road.15.t:0 "USAID Shutdown"
+ american_road.15.d:0 "The Democrat scam, known as USAID, has been sending woke ideology all over the world, costing the taxpayer millions of dollars. We need to put a stop to this farce at once!"
+ american_road.15.a:0 "Pull the plug"
+ american_road.15.a_tt:0 "§GApproval +0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.8§! (now [?USA.civil_war|0])"
+
+ american_road.16.t:0 "I love Tariff"
+ american_road.16.d:0 "The democrats, socialists, and woke people hate Tariffs! This means that they are not only working, but will be remembered as the greatest success in the world!\n\nWe will save America!"
+ american_road.16.a:0 "Keep them guessing"
+ american_road.16.a_tt:0 "§RApproval -0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +1§! (now [?USA.civil_war|0])"
+
+ american_road.17.t:0 "Greenland / Panama Talk"
+ american_road.17.d:0 "Our Great leader muses, again, about buying Greenland and taking back the Panama Canal. Allies are scared. Good.\nWe'll get the upper hand."
+ american_road.17.a:0 "Manifest Destiny 2.0"
+ american_road.17.a_tt:0 "§RChaos +0.8§! (now [?USA.civil_war|0])"
+
+ american_road.18.t:0 "Liberation Day"
+ american_road.18.d:0 "The nations of the World have screwed us over for too long! We will Tariff the freeloaders, winning back manufacturing to our country!"
+ american_road.18.a:0 "Raise the wall"
+ american_road.18.a_tt:0 "§GApproval +0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.6§! (now [?USA.civil_war|0])"
+
+ american_road.19.t:0 "Oops!"
+ american_road.19.d:0 "The bond market crashed, the stock market crashed, umm, we'll need to pause this tariff business for a while..."
+ american_road.19.a:0 "It was the plan all along"
+ american_road.19.a_tt:0 "§RApproval -0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +1§! (now [?USA.civil_war|0])"
+
+ american_road.20.t:0 "Trade-Deal Blitz"
+ american_road.20.d:0 "We will sign deals, so we can get manufacturing back, while keeping the Tariff impact low."
+ american_road.20.a:0 "Announce the deal"
+ american_road.20.a_tt:0 "§GApproval +0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.4§! (now [?USA.civil_war|0])"
+
+ american_road.21.t:0 "Big Beautiful Bill Clears the House"
+ american_road.21.d:0 "The Biggest, Beautiful-est Bill has been passed!"
+ american_road.21.a:0 "Pass the Bill"
+ american_road.21.a_tt:0 "§GApproval +0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.6§! (now [?USA.civil_war|0])"
+
+ american_road.22.t:0 "LA Immigration Riots"
+ american_road.22.d:0 "ICE raids have sparked days of unrest in Los Angeles. We will federalize the Guard and send in Marines over the governor's objections."
+ american_road.22.a:0 "Send in the troops"
+ american_road.22.a_tt:0 "§GApproval +0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.6§! (now [?USA.civil_war|0])"
+
+ american_road.23.t:0 "“No Kings” Marches"
+ american_road.23.d:0 "Millions of Woke Treasonists march in hundreds of cities under one slogan: No Kings.\nWe will holds a military parade the same day. We have the power!"
+ american_road.23.a:0 "Dismiss the mob"
+ american_road.23.a_tt:0 "§RApproval -0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.2§! (now [?USA.civil_war|0])"
+
+ american_road.24.t:0 "The June War"
+ american_road.24.d:0 "Israel opens with Operation Rising Lion; days later American B-2s put bunker-busters through Fordow, Natanz and Isfahan. The President announces Iran's program is 'obliterated.'"
+ american_road.24.a:0 "Finish the job"
+ american_road.24.a_tt:0 "§GApproval +5§! (now [?USA.aproval_rate|0]%)\n§RChaos +10§! (now [?USA.civil_war|0])"
+ american_road.24.b:0 "Declare victory and leave"
+ american_road.24.b_tt:0 "§GApproval +3§! (now [?USA.aproval_rate|0]%)\n§RChaos +4§! (now [?USA.civil_war|0])"
+
+ american_road.25.t:0 "The 12-Day War Ceasefire"
+ american_road.25.d:0 "Twelve days, one shattered ceasefire and a great many superlatives later, the guns go quiet. Whether anything was actually destroyed is a question for another news cycle."
+ american_road.25.a:0 "Take the win"
+ american_road.25.a_tt:0 "§GApproval +0.8§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.6§! (now [?USA.civil_war|0])"
+
+ american_road.26.t:0 "The Big Beautiful Bill Is Signed"
+ american_road.26.d:0 "On Independence Day, under fireworks, the Bill is signed into law. Yay!"
+ american_road.26.a:0 "Sign it on the Fourth"
+ american_road.26.a_tt:0 "§GApproval +0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.4§! (now [?USA.civil_war|0])"
+
+ american_road.27.t:0 "Tariffs Bite"
+ american_road.27.d:0 "The delayed tariffs finally reach the shelves, and prices tick up on everything from cars to coffee. The word 'transitory' is quietly retired again."
+ american_road.27.a:0 "Blame the importers"
+ american_road.27.a_tt:0 "§RApproval -0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.8§! (now [?USA.civil_war|0])"
+
+ american_road.28.t:0 "The Alaska Summit"
+ american_road.28.d:0 "A red-carpet summit in Anchorage produces handshakes, a 'framework,' and no actual peace. The photo op, however, is historic."
+ american_road.28.a:0 "Shake hands for the cameras"
+ american_road.28.a_tt:0 "§GApproval +0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.6§! (now [?USA.civil_war|0])"
+
+ american_road.29.t:0 "The Shutdown Fight"
+ american_road.29.d:0 "The fiscal year ends without a deal and the government lurches toward a shutdown. Each side blames the other; the workers just go unpaid."
+ american_road.29.a:0 "Let it shut down"
+ american_road.29.a_tt:0 "§RApproval -0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +1§! (now [?USA.civil_war|0])"
+
+ american_road.30.t:0 "The Powell Feud"
+ american_road.30.d:0 "The President demands the Fed slash rates and muses aloud about firing its Chair. Markets shudder as the word 'independence' becomes optional."
+ american_road.30.a:0 "Threaten the Fed"
+ american_road.30.a_tt:0 "§GApproval +0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.8§! (now [?USA.civil_war|0])"
+
+ american_road.31.t:0 "The Shutdown Drags On"
+ american_road.31.d:0 "The shutdown sets a length record; parks close, paychecks stop, and both sides fundraise off the misery. Nobody blinks."
+ american_road.31.a:0 "Hold the line"
+ american_road.31.a_tt:0 "§RApproval -0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.2§! (now [?USA.civil_war|0])"
+
+ american_road.32.t:0 "Gaza Ceasefire & Hostage Deal"
+ american_road.32.d:0 "A US-brokered deal pauses the fighting in Gaza and brings hostages home. The President demands the Nobel; the committee demurs."
+ american_road.32.a:0 "Claim the peace"
+ american_road.32.a_tt:0 "§GApproval +0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.4§! (now [?USA.civil_war|0])"
+
+ american_road.33.t:0 "The Off-Year Sweep"
+ american_road.33.d:0 "Democrats sweep Virginia, New Jersey and the New York mayoralty; every exit poll says one word: affordability. The White House calls it a low-turnout fluke."
+ american_road.33.a:0 "It doesn't count"
+ american_road.33.a_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +1§! (now [?USA.civil_war|0])"
+
+ american_road.34.t:0 "The Affordability Backlash"
+ american_road.34.d:0 "'It's the prices, stupid' becomes the phrase of the season. Groceries, rent and insurance are all up — and the tariffs have a return address."
+ american_road.34.a:0 "Insist the economy is booming"
+ american_road.34.a_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +1§! (now [?USA.civil_war|0])"
+
+ american_road.35.t:0 "SCOTUS Hears the Tariff Case"
+ american_road.35.d:0 "The Supreme Court hears whether the President can tariff the planet by emergency decree. A ruling against would mean refunds in the hundreds of billions."
+ american_road.35.a:0 "Await the Court"
+ american_road.35.a_tt:0 "§RChaos +0.8§! (now [?USA.civil_war|0])"
+
+ american_road.36.t:0 "Venezuela Escalation"
+ american_road.36.d:0 "US forces strike 'narco' vessels in the Caribbean and pressure mounts on Caracas. The phrase 'regime change' drifts back into fashion.\n\n[BUILD] Maduro captured / regime change in Caracas — a big effect for you to script."
+ american_road.36.a:0 "Turn up the heat"
+ american_road.36.a_tt:0 "§GApproval +0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.2§! (now [?USA.civil_war|0])"
+
+ american_road.37.t:0 "One Year In"
+ american_road.37.d:0 "The anniversary address is a triumphant list of enemies vanquished and factories promised. Half the chamber stands; half stares at the price of eggs."
+ american_road.37.a:0 "Declare it a golden year"
+ american_road.37.a_tt:0 "§RApproval -0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.8§! (now [?USA.civil_war|0])"
+
+ american_road.38.t:0 "SCOTUS Limits the Tariffs"
+ american_road.38.d:0 "The Court trims the emergency tariff power, and suddenly Washington owes refunds it cannot pay. The workaround is drafted before the ink dries."
+ american_road.38.a:0 "Find another statute"
+ american_road.38.a_tt:0 "§RChaos +1.4§! (now [?USA.civil_war|0])"
+
+ american_road.39.t:0 "Inflation Reaccelerates"
+ american_road.39.d:0 "CPI comes in hot and undeniable. The tariffs everyone was promised would be painless are, it emerges, painful."
+ american_road.39.a:0 "Attack the number"
+ american_road.39.a_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.2§! (now [?USA.civil_war|0])"
+
+ american_road.40.t:0 "The Primary Purges"
+ american_road.40.d:0 "Endorsements go out like subpoenas; any Republican who wavered in 2025 draws a loyal primary challenger. There is only one faction now."
+ american_road.40.a:0 "Purge the disloyal"
+ american_road.40.a_tt:0 "§RChaos +0.8§! (now [?USA.civil_war|0])\nHouse: MAGA +5, establishment -4"
+
+ american_road.41.t:0 "The Gerrymander Rulings"
+ american_road.41.d:0 "Mid-decade maps drawn to order wind through the courts. Whoever draws the lines picks the voters — and the lines are being redrawn everywhere."
+ american_road.41.a:0 "Draw the map"
+ american_road.41.a_tt:0 "§RChaos +1.2§! (now [?USA.civil_war|0])\nHouse MAGA +4"
+
+ american_road.42.t:0 "The Iran Deal Collapses"
+ american_road.42.d:0 "What was left of the Iran understanding falls apart amid IAEA alarms and fresh enrichment. The 'obliterated' program appears to be enriching again."
+ american_road.42.a:0 "Rattle the saber"
+ american_road.42.a_tt:0 "§RChaos +1.2§! (now [?USA.civil_war|0])"
+
+ american_road.43.t:0 "Liberation Day Anniversary"
+ american_road.43.d:0 "One year of Liberation is celebrated with — what else — a fresh round of tariffs. The chart is bigger this time."
+ american_road.43.a:0 "Raise them again"
+ american_road.43.a_tt:0 "§RChaos +1.2§! (now [?USA.civil_war|0])"
+
+ american_road.44.t:0 "The Gulf Incident"
+ american_road.44.d:0 "An American warship is harassed in the Gulf; accounts differ, tempers do not. Both capitals reach for the word 'provocation.'"
+ american_road.44.a:0 "Answer the provocation"
+ american_road.44.a_tt:0 "§RChaos +1.2§! (now [?USA.civil_war|0])"
+
+ american_road.45.t:0 "Primary Upsets"
+ american_road.45.d:0 "Primary night delivers MAGA insurgents over party veterans in a dozen races. The purge is working exactly as designed."
+ american_road.45.a:0 "Reward loyalty"
+ american_road.45.a_tt:0 "§RChaos +1§! (now [?USA.civil_war|0])"
+
+ american_road.46.t:0 "Iran Proxies Hit a US Base"
+ american_road.46.d:0 "A militia rocket finds an American base and there are flag-draped coffins. The pressure to answer — hard — becomes its own momentum."
+ american_road.46.a:0 "Prepare a response"
+ american_road.46.a_tt:0 "§RApproval -0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.4§! (now [?USA.civil_war|0])\nHouse pro-war +4"
+
+ american_road.47.t:0 "The Grocery & Gas Crisis"
+ american_road.47.d:0 "Gas and groceries cross the lines voters actually feel. Kitchen-table math is now a national emergency the White House refuses to name."
+ american_road.47.a:0 "Insist prices are falling"
+ american_road.47.a_tt:0 "§RApproval -4§! (now [?USA.aproval_rate|0]%)\n§RChaos +8§! (now [?USA.civil_war|0])"
+
+ american_road.48.t:0 "Assassination in the Gulf"
+ american_road.48.d:0 "A senior figure is killed in a Gulf strike and each side blames the other. The war drums, dormant since last summer, start again."
+ american_road.48.a:0 "Beat the drum"
+ american_road.48.a_tt:0 "§RChaos +1.6§! (now [?USA.civil_war|0])"
+
+ american_road.49.t:0 "America 250"
+ american_road.49.d:0 "The Republic turns 250 in a wall-to-wall spectacle of flyovers and fireworks, staged over a country that can barely afford the barbecue."
+ american_road.49.a:0 "Throw the party of the century"
+ american_road.49.a_tt:0 "§GApproval +0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +1§! (now [?USA.civil_war|0])"
+
+ american_road.50.t:0 "Approval Near Record Low"
+ american_road.50.d:0 "The polls slide to the basement of the term. The White House commissions its own poll and leads with that one instead."
+ american_road.50.a:0 "Trust the internal numbers"
+ american_road.50.a_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +0.6§! (now [?USA.civil_war|0])"
+
+ american_road.51.t:0 "Summer of Discontent"
+ american_road.51.d:0 "Strikes, marches and heat blur into one long summer of grievance. The last quiet season before the storm ends without anyone noticing."
+ american_road.51.a:0 "Weather it"
+ american_road.51.a_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.4§! (now [?USA.civil_war|0])"
+
+ american_road.52.t:0 "The “Election Integrity” Push"
+ american_road.52.d:0 "Ninety days out, the White House announces a sweeping 'election integrity' operation. The pivot from campaigning to controlling has begun."
+ american_road.52.a:0 "Secure the election"
+ american_road.52.a_tt:0 "§RChaos +1.4§! (now [?USA.civil_war|0])"
+
+ american_road.53.t:0 "The Iran Ultimatum"
+ american_road.53.d:0 "An impossible ultimatum is delivered to Tehran with a countdown attached. Nothing distracts from bad numbers like a good enemy.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.53.a:0 "Start the clock"
+ american_road.53.a_tt:0 "§RChaos +1.6§! (now [?USA.civil_war|0])"
+
+ american_road.54.t:0 "“The Election Will Be Rigged”"
+ american_road.54.d:0 "Before a single vote is cast, the President declares the midterms already stolen — by the other side, naturally. The frame is set for whatever comes next."
+ american_road.54.a:0 "Pre-declare the fraud"
+ american_road.54.a_tt:0 "§RApproval -0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.8§! (now [?USA.civil_war|0])"
+
+ american_road.55.t:0 "Voter-Roll Purges"
+ american_road.55.d:0 "Swing-state rolls are 'audited' and millions of names quietly vanish. Somewhere, a clerk who objects is escorted out."
+ american_road.55.a:0 "Purge quietly"
+ american_road.55.a_tt:0 "§RApproval -0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.4§! (now [?USA.civil_war|0])"
+ american_road.55.b:0 "Purge loudly"
+ american_road.55.b_tt:0 "§RApproval -0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.2§! (now [?USA.civil_war|0])"
+
+ american_road.56.t:0 "Operation Secure the Vote"
+ american_road.56.d:0 "Federal 'integrity' teams fan out over the swing precincts — seizing machines, closing sites, photographing anyone who complains. This is the cheat, in daylight.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.56.a:0 "Blatant seizure"
+ american_road.56.a_tt:0 "§RApproval -0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.8§! (now [?USA.civil_war|0])"
+ american_road.56.b:0 "Quiet suppression"
+ american_road.56.b_tt:0 "§RApproval -0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.8§! (now [?USA.civil_war|0])"
+
+ american_road.57.t:0 "The Second Strike"
+ american_road.57.d:0 "The ultimatum lapses and the bombing resumes, bigger and with no off-ramp. A convenient war blooms exactly as the votes are being counted.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.57.a:0 "Reopen the war"
+ american_road.57.a_tt:0 "§GApproval +0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.4§! (now [?USA.civil_war|0])"
+
+ american_road.58.t:0 "The Stolen Midterms"
+ american_road.58.d:0 "The counts say one thing; the President says another and 'holds' Congress. Blue states refuse to certify, and the country wakes up with two answers to one question.\n\n[NOTE] the real mechanics now live in the midterms minigame (decisions -> usa_ad.20). Keep this as dated flavour or delete it.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.58.a:0 "Declare Congress held"
+ american_road.58.a_tt:0 "§RApproval -1§! (now [?USA.aproval_rate|0]%)\n§RChaos +4§! (now [?USA.civil_war|0])"
+
+ american_road.59.t:0 "Protests → Crackdown"
+ american_road.59.d:0 "Millions pour into the streets; the response is tear gas, curfews and mass arrests. The word 'insurrection' is now aimed the other way."
+ american_road.59.a:0 "Restore order"
+ american_road.59.a_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.8§! (now [?USA.civil_war|0])"
+
+ american_road.60.t:0 "Govern by Decree"
+ american_road.60.d:0 "With his legitimacy in tatters, the President stops pretending to need Congress and rules by proclamation. The signatures pile up; the checks and balances do not."
+ american_road.60.a:0 "Rule by decree"
+ american_road.60.a_tt:0 "§RApproval -0.8§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.8§! (now [?USA.civil_war|0])"
+
+ american_road.61.t:0 "The Iran Quagmire Deepens"
+ american_road.61.d:0 "The 'quick' second war settles into a grinding stalemate, and the casualty notices arrive faster than the victories. Withdrawal is unthinkable; so is winning."
+ american_road.61.a:0 "Send more"
+ american_road.61.a_tt:0 "§RApproval -0.8§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.4§! (now [?USA.civil_war|0])"
+
+ american_road.62.t:0 "The Hormuz Disaster"
+ american_road.62.d:0 "A carrier is crippled and the Strait of Hormuz slams shut. A fifth of the world's oil stops moving in an afternoon.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.62.a:0 "Steady the nation"
+ american_road.62.a_tt:0 "§RApproval -5§! (now [?USA.aproval_rate|0]%)\n§RChaos +18§! (now [?USA.civil_war|0])"
+
+ american_road.63.t:0 "The Oil Shock"
+ american_road.63.d:0 "By morning gasoline passes ten dollars a gallon and the lines stretch around the block. The Strategic Reserve is a rounding error against panic."
+ american_road.63.a:0 "Open the reserve"
+ american_road.63.a_tt:0 "§RApproval -6§! (now [?USA.aproval_rate|0]%)\n§RChaos +16§! (now [?USA.civil_war|0])"
+
+ american_road.64.t:0 "Fuel Rationing Begins"
+ american_road.64.d:0 "Odd-even days, sealed pumps, and a black market by the weekend. Rationing was supposed to be a word from the history books."
+ american_road.64.a:0 "Ration the fuel"
+ american_road.64.a_tt:0 "§RApproval -0.8§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.4§! (now [?USA.civil_war|0])"
+
+ american_road.65.t:0 "Anti-War Protests Explode"
+ american_road.65.d:0 "Draft rumours and body bags put a generation in the streets. The chant is simple: bring them home."
+ american_road.65.a:0 "Ignore the streets"
+ american_road.65.a_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.4§! (now [?USA.civil_war|0])"
+
+ american_road.66.t:0 "The Zagros Meat Grinder"
+ american_road.66.d:0 "The invasion dies in the mountains, one ridge at a time. The maps that looked so easy are now measured in caskets per mile.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.66.a:0 "Hold the line"
+ american_road.66.a_tt:0 "§RApproval -1.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +3.2§! (now [?USA.civil_war|0])"
+
+ american_road.67.t:0 "Blame the Generals"
+ american_road.67.d:0 "As the front collapses, the search for scapegoats begins at the top. The generals who warned against this are, naturally, the first to blame."
+ american_road.67.a:0 "Fire the doubters"
+ american_road.67.a_tt:0 "§RApproval -0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +2§! (now [?USA.civil_war|0])"
+
+ american_road.68.t:0 "Coalition Collapses"
+ american_road.68.d:0 "One by one the allies quietly withdraw, and America is left alone in a war it started. The phones in Europe stop being answered."
+ american_road.68.a:0 "Go it alone"
+ american_road.68.a_tt:0 "§RApproval -0.8§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.4§! (now [?USA.civil_war|0])"
+
+ american_road.69.t:0 "Price Controls Imposed"
+ american_road.69.d:0 "Prices are frozen by decree, and within a week the shelves are too. You cannot legislate away a shortage, but you can certainly try."
+ american_road.69.a:0 "Freeze the prices"
+ american_road.69.a_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.4§! (now [?USA.civil_war|0])"
+
+ american_road.70.t:0 "The Rout"
+ american_road.70.d:0 "It ends in catastrophe: a withdrawal under fire, columns of prisoners, a broken army streaming out of Iran. The greatest military on earth is humbled on live television.\n\n[NOTE] the real defeat now comes from the Iran attrition clock (usa_ad.10). Optional dated flavour.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.70.a:0 "Order the retreat"
+ american_road.70.a_tt:0 "§RApproval -2§! (now [?USA.aproval_rate|0]%)\n§RChaos +4.8§! (now [?USA.civil_war|0])"
+
+ american_road.71.t:0 "Martial Law in the Cities"
+ american_road.71.d:0 "With defeat abroad and fury at home, troops deploy into American cities. The Constitution is suspended 'temporarily' — a word doing enormous work."
+ american_road.71.a:0 "Declare martial law"
+ american_road.71.a_tt:0 "§RApproval -0.8§! (now [?USA.aproval_rate|0]%)\n§RChaos +3.2§! (now [?USA.civil_war|0])"
+
+ american_road.72.t:0 "Bring the Troops Home"
+ american_road.72.d:0 "The last transports land to no parades. Radicalized and abandoned, the veterans come home to a country already at war with itself."
+ american_road.72.a:0 "Bury the defeat"
+ american_road.72.a_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.4§! (now [?USA.civil_war|0])"
+
+ american_road.73.t:0 "Hyperinflation Sets In"
+ american_road.73.d:0 "The dollar goes into freefall and prices double, then double again. Wages chase a currency that is already gone."
+ american_road.73.a:0 "Print more"
+ american_road.73.a_tt:0 "§RApproval -6§! (now [?USA.aproval_rate|0]%)\n§RChaos +18§! (now [?USA.civil_war|0])"
+
+ american_road.74.t:0 "The New Dollar"
+ american_road.74.d:0 "A 'currency reform' lops three zeroes off the dollar overnight. It is sold as strength; it lands as theft, and everyone's savings evaporate."
+ american_road.74.a:0 "Reset the currency"
+ american_road.74.a_tt:0 "§RApproval -1.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +3.2§! (now [?USA.civil_war|0])"
+
+ american_road.75.t:0 "Third-Term Trial Balloon"
+ american_road.75.d:0 "Friendly outlets begin asking, gently, why a great leader should be forced to leave. The balloon goes up to see who salutes."
+ american_road.75.a:0 "Float the idea"
+ american_road.75.a_tt:0 "§RApproval -0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.4§! (now [?USA.civil_war|0])"
+
+ american_road.76.t:0 "Reinterpret the 22nd Amendment"
+ american_road.76.d:0 "Loyalist lawyers unveil a theory in which the 22nd Amendment doesn't mean what it plainly says. The Constitution, it turns out, is negotiable.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.76.a:0 "Reinterpret the limit"
+ american_road.76.a_tt:0 "§RApproval -1§! (now [?USA.aproval_rate|0]%)\n§RChaos +3.2§! (now [?USA.civil_war|0])\nLegitimacy -8"
+
+ american_road.77.t:0 "Federal Ration Cards"
+ american_road.77.d:0 "Ration cards go federal — food, fuel, medicine, all by the book. The breadlines form under billboards promising a Golden Age."
+ american_road.77.a:0 "Issue the cards"
+ american_road.77.a_tt:0 "§RApproval -0.8§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.4§! (now [?USA.civil_war|0])"
+
+ american_road.78.t:0 "Purge of the Pentagon"
+ american_road.78.d:0 "The officers who lost the war — or who might say no to the next order — are marched out. The ones who remain salute a little faster."
+ american_road.78.a:0 "Install the loyal"
+ american_road.78.a_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.8§! (now [?USA.civil_war|0])"
+
+ american_road.79.t:0 "Emergency Economic Powers"
+ american_road.79.d:0 "By decree the President seizes the banks, the prices and the panic itself. It is called stabilization; it feels like the last lever being pulled."
+ american_road.79.a:0 "Seize control"
+ american_road.79.a_tt:0 "§RApproval -0.8§! (now [?USA.aproval_rate|0]%)\n§RChaos +3.2§! (now [?USA.civil_war|0])"
+
+ american_road.80.t:0 "“I'll Run Again”"
+ american_road.80.d:0 "At a rally that feels like a coronation, the President all but confirms a third run. The crowd chants twelve more years; the cameras dutifully agree."
+ american_road.80.a:0 "Tease the third term"
+ american_road.80.a_tt:0 "§RApproval -0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.8§! (now [?USA.civil_war|0])"
+
+ american_road.81.t:0 "Regional Governments Consolidate"
+ american_road.81.d:0 "As Washington flails, governors and regional compacts quietly take over the functions the federal government can no longer perform. Power is leaking to the edges."
+ american_road.81.a:0 "Watch the map fracture"
+ american_road.81.a_tt:0 "§RChaos +3§! (now [?USA.civil_war|0])"
+
+ american_road.82.t:0 "One Year to the Election"
+ american_road.82.d:0 "A ruined, rationed country marks one year until an election nobody trusts. Both sides begin preparing — some with ballots, some with rifles."
+ american_road.82.a:0 "Start the countdown"
+ american_road.82.a_tt:0 "§RChaos +2§! (now [?USA.civil_war|0])"
+
+ american_road.83.t:0 "The West Coast Compact"
+ american_road.83.d:0 "California, Oregon and Washington formalize a compact that looks, if you squint, exactly like a government-in-waiting. The word 'independence' is spoken aloud."
+ american_road.83.a:0 "Note the threat"
+ american_road.83.a_tt:0 "§RChaos +3.2§! (now [?USA.civil_war|0])"
+
+ american_road.84.t:0 "He IS Running"
+ american_road.84.d:0 "It's official: he is running for a third term, statute and Constitution be damned. The eligibility fight goes to a court he has spent a year reshaping.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.84.a:0 "Announce the run"
+ american_road.84.a_tt:0 "§GApproval +0.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +3.2§! (now [?USA.civil_war|0])"
+
+ american_road.85.t:0 "Newsom Formally Launches"
+ american_road.85.d:0 "From Sacramento, Gavin Newsom launches his campaign as the last defender of the Republic — or the man who breaks it in two. The West has its champion."
+ american_road.85.a:0 "Name the rival"
+ american_road.85.a_tt:0 "§RApproval -0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.6§! (now [?USA.civil_war|0])"
+
+ american_road.86.t:0 "The Eligibility Ruling"
+ american_road.86.d:0 "The reshaped Court splits and, somehow, the President stays on the ballot. Half the country accepts it; half stops recognizing the Court at all."
+ american_road.86.a:0 "Take the ballot line"
+ american_road.86.a_tt:0 "§RChaos +3.2§! (now [?USA.civil_war|0])"
+
+ american_road.87.t:0 "Newsom vs. Trump"
+ american_road.87.d:0 "The race hardens into two irreconcilable Americas with two irreconcilable stories. There is no middle left to campaign for."
+ american_road.87.a:0 "Draw the battle lines"
+ american_road.87.a_tt:0 "§RApproval -0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +1.6§! (now [?USA.civil_war|0])"
+
+ american_road.88.t:0 "Rig the Primaries"
+ american_road.88.d:0 "The 'integrity' machine turns on the primaries themselves, thinning the opposition's turnout precinct by precinct. The result is arranged before the polls open."
+ american_road.88.a:0 "Thin the opposition"
+ american_road.88.a_tt:0 "§RApproval -0.8§! (now [?USA.aproval_rate|0]%)\n§RChaos +3.2§! (now [?USA.civil_war|0])"
+
+ american_road.89.t:0 "Militia Standoffs"
+ american_road.89.d:0 "Armed groups on both sides square off at statehouses and armouries. So far only warnings are fired; nobody expects that to last."
+ american_road.89.a:0 "Let them posture"
+ american_road.89.a_tt:0 "§RChaos +3§! (now [?USA.civil_war|0])"
+
+ american_road.90.t:0 "Super Tuesday Chaos"
+ american_road.90.d:0 "Two sets of results roll in from two systems that no longer trust each other. Every network calls a different country's election."
+ american_road.90.a:0 "Declare your winner"
+ american_road.90.a_tt:0 "§RChaos +3.2§! (now [?USA.civil_war|0])"
+
+ american_road.91.t:0 "Federal Troops in Swing States"
+ american_road.91.d:0 "Soldiers deploy to 'protect' the vote in the states that matter most. Whether they are guarding the election or capturing it depends entirely on who you ask."
+ american_road.91.a:0 "Occupy the swing states"
+ american_road.91.a_tt:0 "§RChaos +3§! (now [?USA.civil_war|0])"
+
+ american_road.92.t:0 "Trump Declares Candidacy"
+ american_road.92.d:0 "The formal third-term campaign launches to stadium roars and constitutional horror in equal measure. The rules are whatever survives contact with the crowd."
+ american_road.92.a:0 "Launch the campaign"
+ american_road.92.a_tt:0 "§GApproval +0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.8§! (now [?USA.civil_war|0])"
+
+ american_road.93.t:0 "Blue States Threaten Secession"
+ american_road.93.d:0 "A bloc of governors states plainly that a stolen victory will not be recognized — and that a Union which allows it is one they may leave. The threat is no longer rhetorical."
+ american_road.93.a:0 "Call their bluff"
+ american_road.93.a_tt:0 "§RChaos +3.6§! (now [?USA.civil_war|0])"
+
+ american_road.94.t:0 "Newsom Nominated"
+ american_road.94.d:0 "Newsom takes the nomination as the man standing between the President and forever. The finale's two combatants are now locked in."
+ american_road.94.a:0 "Meet your opponent"
+ american_road.94.a_tt:0 "§RApproval -0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +2§! (now [?USA.civil_war|0])"
+
+ american_road.95.t:0 "The “Integrity Force” Deploys"
+ american_road.95.d:0 "A nationwide 'election integrity force' — loyal, armed, and answerable only to the top — stands up in every state. It is a private army with a bureaucratic name."
+ american_road.95.a:0 "Deploy the force"
+ american_road.95.a_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +3.6§! (now [?USA.civil_war|0])"
+
+ american_road.96.t:0 "Two Americas"
+ american_road.96.d:0 "Rival governments now exist in all but name, each with its own courts, its own guard, its own truth. The election is just the day they stop pretending."
+ american_road.96.a:0 "Accept the split"
+ american_road.96.a_tt:0 "§RChaos +3.2§! (now [?USA.civil_war|0])"
+
+ american_road.97.t:0 "Suppress the Newsom Vote"
+ american_road.97.d:0 "Mass purges, closed sites and 'lost' ballots hollow out the opposition's count in real time. The steal is no longer a plan; it is an operation.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.97.a:0 "Full suppression"
+ american_road.97.a_tt:0 "§RApproval -0.8§! (now [?USA.aproval_rate|0]%)\n§RChaos +4§! (now [?USA.civil_war|0])"
+ american_road.97.b:0 "Deniable suppression"
+ american_road.97.b_tt:0 "§RApproval -0.4§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.6§! (now [?USA.civil_war|0])"
+
+ american_road.98.t:0 "The 252nd of July"
+ american_road.98.d:0 "A fractured, rationed nation 'celebrates' its 252nd birthday behind checkpoints. The fireworks look, from a distance, a lot like something else."
+ american_road.98.a:0 "Wave the flag"
+ american_road.98.a_tt:0 "§RChaos +2.4§! (now [?USA.civil_war|0])"
+
+ american_road.99.t:0 "States Refuse Federal Ballots"
+ american_road.99.d:0 "Whole states reject the federally-mandated ballots and print their own. There is no longer a single election; there are fifty arguments."
+ american_road.99.a:0 "Escalate the standoff"
+ american_road.99.a_tt:0 "§RChaos +3.6§! (now [?USA.civil_war|0])"
+
+ american_road.101.t:0 "The Final Sprint"
+ american_road.101.d:0 "With weeks to go, both sides vow to win 'no matter what' — and mean it. The phrase 'peaceful transfer of power' has quietly left the vocabulary."
+ american_road.101.a:0 "Sprint to the finish"
+ american_road.101.a_tt:0 "§RChaos +3.2§! (now [?USA.civil_war|0])"
+
+ american_road.102.t:0 "Ballot Seizures Begin Early"
+ american_road.102.d:0 "The integrity force starts seizing ballots weeks before the vote, 'for safekeeping.' Nobody who hands them over expects to see them counted."
+ american_road.102.a:0 "Seize them early"
+ american_road.102.a_tt:0 "§RApproval -0.8§! (now [?USA.aproval_rate|0]%)\n§RChaos +4§! (now [?USA.civil_war|0])"
+
+ american_road.103.t:0 "Dueling Rallies"
+ american_road.103.d:0 "No debate — just two rallies on the same night, in two countries that share a map. Each crowd is told the other side is the end of America."
+ american_road.103.a:0 "Rally the faithful"
+ american_road.103.a_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +2.8§! (now [?USA.civil_war|0])"
+
+ american_road.104.t:0 "“We Won't Certify a Stolen Win”"
+ american_road.104.d:0 "The West Coast compact declares in advance that it will not certify a result it considers stolen. The exit door is now marked, and open.\n\n[BUILD] the West-Coast compact begins acting as a state — pre-collapse autonomy."
+ american_road.104.a:0 "Dare them to walk"
+ american_road.104.a_tt:0 "§RChaos +4§! (now [?USA.civil_war|0])"
+
+ american_road.105.t:0 "Steal the Election"
+ american_road.105.d:0 "In the final stretch the machine runs at full tilt — seizures, purges, 'lost' precincts, pre-written results. The outcome is decided; only the announcement remains.\n\n[NOTE] the real steal now lives in the 2028 election minigame. Optional dated flavour.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.105.a:0 "Brazen fraud"
+ american_road.105.a_tt:0 "§RApproval -1.2§! (now [?USA.aproval_rate|0]%)\n§RChaos +5§! (now [?USA.civil_war|0])"
+ american_road.105.b:0 "Quiet rigging"
+ american_road.105.b_tt:0 "§RApproval -0.6§! (now [?USA.aproval_rate|0]%)\n§RChaos +3.2§! (now [?USA.civil_war|0])"
+
+ american_road.106.t:0 "Governors Mobilize State Forces"
+ american_road.106.d:0 "Governors call up their guards and state police — not to keep order, but to be ready for what the count will bring. The country is now a loaded room."
+ american_road.106.a:0 "Match the mobilization"
+ american_road.106.a_tt:0 "§RChaos +4.4§! (now [?USA.civil_war|0])"
+
+ american_road.107.t:0 "Election Day — Trump “Wins”"
+ american_road.107.d:0 "Polls close, and within the hour the President declares a sweeping victory that no independent count supports. The result is announced. The country inhales.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.107.a:0 "Declare victory"
+ american_road.107.a_tt:0 "§RChaos +40§! (now [?USA.civil_war|0])"
+
+ american_road.108.t:0 "THE COLLAPSE"
+ american_road.108.d:0 "California and the West Coast refuse the result outright; the blue-state compacts follow within hours. By nightfall the Union has, for all practical purposes, dissolved. The American Dream is over.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.108.a:0 "Watch it fall apart"
+ american_road.108.a_tt:0 "§RChaos → 100§!\nThe Union dissolves. The approval and chaos systems shut down."
+
+ american_road.109.t:0 "The Red Militias March"
+ american_road.109.d:0 "In answer, armed loyalist columns move on the defecting states. The Second Civil War does not begin with a declaration — it begins with a convoy.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.109.a:0 "Loose the militias"
+ american_road.109.a_tt:0 "§RChaos +40§! (now [?USA.civil_war|0])"
+
+ american_road.110.t:0 "The American Dream Ends"
+ american_road.110.d:0 "The federal government splinters, the military divides, and the map that meant one country now means several. Whatever comes next, this is where the dream ends.\n\n[SUPERSEDED] This beat now fires from the tree/minigame (the interactive usa_ad event). Triggered-only + not wired to any focus, so it never fires. Delete or keep as reference."
+ american_road.110.a:0 "The end"
+ american_road.110.a_tt:0 "§RChaos +40§! (now [?USA.civil_war|0])"
+
+ american_road.112.t:0 "Markets Whipsaw as Tariffs Change by the Hour"
+ american_road.112.d:0 "Wall Street has given up forecasting policy and started forecasting the President's mood. Volatility is the only thing trading up, and every exporter in the country is holding its breath."
+ american_road.112.a:0 "So it goes"
+
+ american_road.113.t:0 "Washington Lurches Toward a Shutdown"
+ american_road.113.d:0 "With the fiscal year expiring and no deal in sight, federal workers brace for missed paychecks while both parties quietly fundraise off the standoff. Nobody blinks; the government just stops."
+ american_road.113.a:0 "So it goes"
+
+ american_road.114.t:0 "One Year On, Two Americas Mark the Day"
+ american_road.114.d:0 "The anniversary is a golden age on one half of the dial and a slow-motion emergency on the other. The only figure both sides agree on is the price of eggs, and it keeps going up."
+ american_road.114.a:0 "So it goes"
+
+ american_road.115.t:0 "The Only Poll That Matters Is at the Checkout"
+ american_road.115.d:0 "Groceries and gas have become the country's real approval rating, and the numbers on the shelf are not improving. 'Affordability' has quietly become the most dangerous word in politics."
+ american_road.115.a:0 "So it goes"
+
+ american_road.116.t:0 "White House Says the Midterms Are 'Already Being Stolen'"
+ american_road.116.d:0 "Weeks before a single ballot is cast, officials announce a sweeping 'election integrity' operation and warn that the coming result cannot be trusted. The frame is set before the vote."
+ american_road.116.a:0 "So it goes"
+
+ american_road.117.t:0 "Hormuz Closed; Gas Passes $10 a Gallon"
+ american_road.117.d:0 "A crippled carrier and a shut strait have detonated the oil price overnight. Lines stretch around the block from Bangor to San Diego, and the Strategic Reserve looks like a rounding error against the panic."
+ american_road.117.a:0 "So it goes"
+
+ american_road.118.t:0 "Withdrawal From Iran Ends in Rout"
+ american_road.118.d:0 "The last columns stream out under fire, leaving equipment, prisoners and any remaining illusions behind. The most powerful military on earth is humbled on live television, and the country goes into mourning."
+ american_road.118.a:0 "So it goes"
+
+ american_road.119.t:0 "Governors Form Regional Compacts as Washington Falters"
+ american_road.119.d:0 "With the federal government unable to pay its bills or protect its cities, states are quietly assuming powers no one voted to give them. Authority is leaking to the edges of the map."
+ american_road.119.a:0 "So it goes"
+
+ american_road.120.t:0 "Court Splits; President Stays on the Ballot"
+ american_road.120.d:0 "A divided bench lets a third-term run proceed. Half the country accepts the ruling; the other half stops recognizing the court that issued it. The word 'unprecedented' has lost all meaning."
+ american_road.120.a:0 "So it goes"
+
+ american_road.121.t:0 "Two Conventions, Two Countries"
+ american_road.121.d:0 "Newsom accepts one nomination behind blast walls while the President accepts another across the country. Between them there is no shared story left — only two crowds each told the other side is the end of America."
+ american_road.121.a:0 "So it goes"
+
+ american_road.122.t:0 "West Coast Vows It Won't Certify a Stolen Win"
+ american_road.122.d:0 "The coastal compact says plainly that it will not accept a result it considers fraudulent — and, for the first time, points openly at the door marked exit. The country is one announcement away from breaking."
+ american_road.122.a:0 "So it goes"

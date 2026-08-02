@@ -1,0 +1,24 @@
+# ==============================================================
+#  THE AMERICAN DREAM - CONGRESS  (scripted localisation)
+#
+#  Turns a seat's party id (the array value "v" under the cursor)
+#  into a readable party name for the dot tooltips. Ids match the
+#  sprite frames: 1 = GOP, 4 = Dem.
+# ==============================================================
+defined_text = {
+	name = GetUSACongressParty
+
+	text = {
+		trigger = { check_variable = { v = 1 } }
+		localization_key = usa_party_gop
+	}
+	text = {
+		trigger = { check_variable = { v = 4 } }
+		localization_key = usa_party_dem
+	}
+
+	# Fallback - must stay last (no trigger, always matches).
+	text = {
+		localization_key = usa_party_unknown
+	}
+}

@@ -1,0 +1,282 @@
+# ==============================================================
+#  THE AMERICAN DREAM - THE IRAN WAR (staged)
+#
+#  Three focus-gated stages. The unwinnable attrition clock only
+#  runs in the last one, so the early game is survivable.
+#
+#    STAGE 1  Cold war / proxies   (opened ~Feb 2026 by "The
+#             Nuclear Question")  - manage tension, no clock.
+#    STAGE 2  Open strikes         (opened by "The Second Strike")
+#             - harsher decisions, still no clock.
+#    STAGE 3  Ground war           (opened by "Boots on the
+#             Ground")  - the clock arms and walks to the Rout.
+#
+#  Variables
+#    usa_iran_stage      0..3
+#    usa_iran_tension    0..100, the stage 1-2 pressure meter
+#    usa_iran_progress   0..100, the stage-3 attrition clock (Rout at 100)
+#    usa_iran_intensity  monthly clock gain; drifts back to 18
+#    usa_iran_casualties running total, thousands
+#  Flags
+#    usa_iran_s1 / usa_iran_s2 / usa_iran_war_active / usa_iran_lost
+#
+#  Wiring (Mixed, as asked): the big beats fire from the focuses
+#  (the three openers + the Rout); small flavour fires from the
+#  decisions via delayed hidden_effects.
+# ==============================================================
+
+
+# --------------------------------------------------------------
+#  STAGE OPENERS  (called from focus completion_rewards)
+# --------------------------------------------------------------
+USA_ad_iran_open_s1 = {
+	set_variable = { usa_iran_stage = 1 }
+	set_variable = { usa_iran_tension = 15 }
+	set_country_flag = usa_iran_s1
+	log = "[GetDateText]: American Dream - Iran stage 1 (cold war)"
+}
+
+USA_ad_iran_open_s2 = {
+	set_variable = { usa_iran_stage = 2 }
+	add_to_variable = { usa_iran_tension = 25 }
+	clamp_variable = { var = usa_iran_tension min = 0 max = 100 }
+	set_country_flag = usa_iran_s2
+	log = "[GetDateText]: American Dream - Iran stage 2 (open strikes)"
+}
+
+# Stage 3 - the ground war. This is where it becomes unwinnable.
+USA_ad_iran_open_s3 = {
+	set_variable = { usa_iran_stage = 3 }
+	set_variable = { usa_iran_progress = 0 }
+	set_variable = { usa_iran_intensity = 18 }
+	set_variable = { usa_iran_casualties = 0 }
+	set_country_flag = usa_iran_war_active
+	clr_country_flag = usa_iran_lost
+	clr_country_flag = usa_iran_coalition_used
+	clr_country_flag = usa_iran_terms_tried
+	log = "[GetDateText]: American Dream - Iran stage 3 (ground war, clock armed)"
+}
+
+
+# --------------------------------------------------------------
+#  MONTHLY TICK  - only the stage-3 clock advances.
+# --------------------------------------------------------------
+USA_ad_iran_tick = {
+	if = {
+		limit = { has_country_flag = usa_iran_war_active }
+
+		# intensity drifts back toward the baseline of 18
+		if = {
+			limit = { check_variable = { var = usa_iran_intensity value = 18 compare = greater_than } }
+			subtract_from_variable = { usa_iran_intensity = 2 }
+		}
+		if = {
+			limit = { check_variable = { var = usa_iran_intensity value = 18 compare = less_than } }
+			add_to_variable = { usa_iran_intensity = 2 }
+		}
+		clamp_variable = { var = usa_iran_intensity min = 8 max = 30 }
+
+		# the clock only ever advances
+		add_to_variable = { usa_iran_progress = usa_iran_intensity }
+
+		set_temp_variable = { cas = usa_iran_intensity }
+		multiply_temp_variable = { cas = 2 }
+		add_to_variable = { usa_iran_casualties = cas }
+
+		set_temp_variable = { chaos_delta = 0.8 }
+		USA_chaos_add = yes
+
+		# mid-war flavour - YOUR news events, fired in order as the clock climbs,
+		# each once, and only while the war runs. Tied to the real war state so
+		# they can never fire before the war or after the Rout.
+		if = {
+			limit = {
+				check_variable = { var = usa_iran_progress value = 30 compare = greater_than_or_equals }
+				NOT = { has_country_flag = usa_ad_iran_flavor_a }
+			}
+			set_country_flag = usa_ad_iran_flavor_a
+			country_event = { id = american_road.61 hours = 6 }		# "The Iran Quagmire Deepens"
+		}
+		if = {
+			limit = {
+				check_variable = { var = usa_iran_progress value = 55 compare = greater_than_or_equals }
+				NOT = { has_country_flag = usa_ad_iran_flavor_b }
+			}
+			set_country_flag = usa_ad_iran_flavor_b
+			country_event = { id = american_road.66 hours = 6 }		# "The Zagros Meat Grinder"
+		}
+		if = {
+			limit = {
+				check_variable = { var = usa_iran_progress value = 80 compare = greater_than_or_equals }
+				NOT = { has_country_flag = usa_ad_iran_flavor_c }
+			}
+			set_country_flag = usa_ad_iran_flavor_c
+			country_event = { id = american_road.68 hours = 6 }		# "Coalition Collapses"
+		}
+
+		if = {
+			limit = { check_variable = { var = usa_iran_progress value = 100 compare = greater_than_or_equals } }
+			USA_ad_iran_rout = yes
+		}
+	}
+}
+
+
+# --------------------------------------------------------------
+#  THE ROUT  - marquee beat, fired once by the clock.
+# --------------------------------------------------------------
+USA_ad_iran_rout = {
+	clr_country_flag = usa_iran_war_active
+	set_country_flag = usa_iran_lost
+
+	set_temp_variable = { apr_delta = -8 }
+	USA_apr_add = yes
+	set_temp_variable = { chaos_delta = 18 }
+	USA_chaos_add = yes
+
+	add_stability = -0.15
+	add_war_support = -0.20
+
+	set_temp_variable = { seats = -22 }
+	USA_ad_prowar_house = yes
+	set_temp_variable = { seats = -8 }
+	USA_ad_prowar_senate = yes
+	set_temp_variable = { legit_delta = -10 }
+	USA_ad_legit_add = yes
+
+	country_event = { id = usa_ad.10 hours = 4 }		# The Rout (interactive beat)
+	# your own war-end news, fired ONLY when the clock actually reaches the Rout
+	# (never on a fixed date) so it can't announce defeat mid-war.
+	country_event = { id = american_road.70 hours = 6 }	# "The Rout"
+	news_event    = { id = american_road.118 hours = 10 }	# "Withdrawal From Iran Ends in Rout"
+	# [BUILD] YOU: real withdrawal / loss of the deployed army.
+	log = "[GetDateText]: American Dream - the Iran Rout"
+}
+
+
+# ==============================================================
+#  STAGE 1 DECISION EFFECTS  (cold war - survivable)
+# ==============================================================
+USA_ad_iran_sanctions = {			# Tighten the Sanctions
+	add_to_variable = { usa_iran_tension = 6 }
+	clamp_variable = { var = usa_iran_tension min = 0 max = 100 }
+	set_temp_variable = { legit_delta = 1 }
+	USA_ad_legit_add = yes
+	set_temp_variable = { chaos_delta = 0.5 }
+	USA_chaos_add = yes
+	hidden_effect = { country_event = { id = usa_ad.73 days = 4 } }
+}
+
+USA_ad_iran_proxies = {				# Arm the Proxies
+	add_to_variable = { usa_iran_tension = 8 }
+	clamp_variable = { var = usa_iran_tension min = 0 max = 100 }
+	set_temp_variable = { seats = 2 }
+	USA_ad_prowar_house = yes
+	set_temp_variable = { chaos_delta = 1 }
+	USA_chaos_add = yes
+}
+
+USA_ad_iran_skirmish = {			# Answer the Skirmish
+	add_to_variable = { usa_iran_tension = 5 }
+	clamp_variable = { var = usa_iran_tension min = 0 max = 100 }
+	add_war_support = 0.02
+	add_to_variable = { usa_iran_casualties = 2 }
+	set_temp_variable = { chaos_delta = 0.5 }
+	USA_chaos_add = yes
+	hidden_effect = { country_event = { id = usa_ad.74 days = 6 } }
+}
+
+
+# ==============================================================
+#  STAGE 2 DECISION EFFECTS  (open strikes)
+# ==============================================================
+USA_ad_iran_airstrikes = {			# Airstrike Campaign
+	add_to_variable = { usa_iran_tension = 10 }
+	clamp_variable = { var = usa_iran_tension min = 0 max = 100 }
+	set_temp_variable = { apr_delta = 2 }			# small base rally
+	USA_apr_add = yes
+	set_temp_variable = { chaos_delta = 3 }
+	USA_chaos_add = yes
+	set_temp_variable = { seats = 4 }
+	USA_ad_prowar_house = yes
+	add_war_support = 0.03
+	add_to_variable = { usa_iran_casualties = 8 }
+	hidden_effect = { country_event = { id = usa_ad.75 days = 5 } }
+}
+
+USA_ad_iran_blockade = {			# Blockade the Coast
+	add_to_variable = { usa_iran_tension = 8 }
+	clamp_variable = { var = usa_iran_tension min = 0 max = 100 }
+	set_temp_variable = { chaos_delta = 2 }
+	USA_chaos_add = yes
+	set_temp_variable = { legit_delta = -2 }
+	USA_ad_legit_add = yes
+}
+
+USA_ad_iran_decapitate = {			# Decapitation Strike (a gamble)
+	add_to_variable = { usa_iran_tension = 12 }
+	clamp_variable = { var = usa_iran_tension min = 0 max = 100 }
+	set_temp_variable = { chaos_delta = 4 }
+	USA_chaos_add = yes
+	add_to_variable = { usa_iran_casualties = 5 }
+	hidden_effect = { country_event = { id = usa_ad.76 days = 3 } }
+}
+
+
+# ==============================================================
+#  STAGE 3 DECISION EFFECTS  (the attrition grind)
+# ==============================================================
+USA_ad_iran_reinforce = {
+	subtract_from_variable = { usa_iran_intensity = 3 }
+	add_to_variable = { usa_iran_casualties = 18 }
+	add_manpower = -25000
+	add_war_support = 0.03
+	set_temp_variable = { chaos_delta = 0.5 }
+	USA_chaos_add = yes
+	clamp_variable = { var = usa_iran_intensity min = 8 max = 30 }
+}
+
+USA_ad_iran_escalate = {
+	add_to_variable = { usa_iran_intensity = 4 }
+	add_to_variable = { usa_iran_casualties = 30 }
+	set_temp_variable = { apr_delta = 2 }
+	USA_apr_add = yes
+	set_temp_variable = { chaos_delta = 2 }
+	USA_chaos_add = yes
+	set_temp_variable = { seats = 4 }
+	USA_ad_prowar_house = yes
+	clamp_variable = { var = usa_iran_intensity min = 8 max = 30 }
+}
+
+USA_ad_iran_dig_in = {
+	subtract_from_variable = { usa_iran_intensity = 5 }
+	add_war_support = -0.02
+	set_temp_variable = { chaos_delta = 0.3 }
+	USA_chaos_add = yes
+	clamp_variable = { var = usa_iran_intensity min = 8 max = 30 }
+}
+
+USA_ad_iran_seek_terms = {			# doomed - Tehran refuses
+	set_country_flag = usa_iran_terms_tried
+	set_temp_variable = { apr_delta = -2 }
+	USA_apr_add = yes
+	set_temp_variable = { chaos_delta = -1 }
+	USA_chaos_add = yes
+	country_event = { id = usa_ad.11 hours = 4 }
+}
+
+USA_ad_iran_coalition = {			# one big delay, then it collapses
+	set_country_flag = usa_iran_coalition_used
+	subtract_from_variable = { usa_iran_intensity = 6 }
+	clamp_variable = { var = usa_iran_intensity min = 8 max = 30 }
+	country_event = { id = usa_ad.12 days = 45 }
+}
+
+USA_ad_iran_coalition_collapse = {
+	add_to_variable = { usa_iran_intensity = 8 }
+	clamp_variable = { var = usa_iran_intensity min = 8 max = 30 }
+	set_temp_variable = { chaos_delta = 3 }
+	USA_chaos_add = yes
+	set_temp_variable = { legit_delta = -4 }
+	USA_ad_legit_add = yes
+}

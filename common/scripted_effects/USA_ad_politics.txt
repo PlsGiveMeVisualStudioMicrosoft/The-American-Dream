@@ -1,0 +1,152 @@
+# ==============================================================
+#  THE AMERICAN DREAM - CONGRESS & TRIBES
+#
+#  New state the mod tracks, all UN-leashed (unlike the mood
+#  bars): the two chambers, the overlapping "tribes" inside them,
+#  and a legitimacy meter the cheating burns through.
+#
+#  This is where the weight of a decision actually lands. Events
+#  and focuses only nudge approval/chaos a little now; the real
+#  consequence is here.
+#
+#  DISPLAY / GUI comes later - for now these are just variables
+#  you can read in triggers and show with [?USA.usa_house_maga|0]
+#  style tags.
+#
+#  Seats
+#     usa_house_gop / usa_house_dem      (435 total)
+#     usa_senate_gop / usa_senate_dem    (100 total)
+#  Tribes - OVERLAPPING counts, a member can be several
+#     usa_house_maga / usa_house_prowar / usa_house_estab
+#     usa_senate_maga / usa_senate_prowar / usa_senate_estab
+#  Legitimacy
+#     usa_legitimacy   0-100, starts 72. Blatant cheating drops
+#                      it; below 30 the union starts to fracture.
+# ==============================================================
+
+
+# --------------------------------------------------------------
+#  INIT  - lazy-called from the first on_action tick.
+#  Roughly the real 119th-Congress starting point, Jan 2025.
+# --------------------------------------------------------------
+USA_ad_politics_init = {
+
+	# ---- House (435) ----
+	set_variable = { usa_house_gop = 220 }
+	set_variable = { usa_house_dem = 215 }
+	set_variable = { usa_house_maga = 150 }		# MAGA loyalists (subset, mostly GOP)
+	set_variable = { usa_house_prowar = 95 }	# hawks (crosses party)
+	set_variable = { usa_house_estab = 70 }		# old-guard GOP - the brake
+
+	# ---- Senate (100) ----
+	set_variable = { usa_senate_gop = 53 }
+	set_variable = { usa_senate_dem = 47 }
+	set_variable = { usa_senate_maga = 27 }
+	set_variable = { usa_senate_prowar = 34 }
+	set_variable = { usa_senate_estab = 26 }
+
+	# ---- Legitimacy ----
+	set_variable = { usa_legitimacy = 72 }
+
+	set_country_flag = usa_ad_initialized
+	USA_ad_politics_recalc = yes
+
+	log = "[GetDateText]: American Dream - Congress & tribes initialised"
+}
+
+
+# --------------------------------------------------------------
+#  CLAMP  - keep every count inside its legal range. Call after
+#  any block that shoves the numbers around.
+# --------------------------------------------------------------
+USA_ad_politics_clamp = {
+	clamp_variable = { var = usa_house_gop     min = 0 max = 435 }
+	clamp_variable = { var = usa_house_dem     min = 0 max = 435 }
+	clamp_variable = { var = usa_house_maga    min = 0 max = 435 }
+	clamp_variable = { var = usa_house_prowar  min = 0 max = 435 }
+	clamp_variable = { var = usa_house_estab   min = 0 max = 435 }
+	clamp_variable = { var = usa_senate_gop    min = 0 max = 100 }
+	clamp_variable = { var = usa_senate_dem    min = 0 max = 100 }
+	clamp_variable = { var = usa_senate_maga   min = 0 max = 100 }
+	clamp_variable = { var = usa_senate_prowar min = 0 max = 100 }
+	clamp_variable = { var = usa_senate_estab  min = 0 max = 100 }
+	clamp_variable = { var = usa_legitimacy    min = 0 max = 100 }
+}
+
+
+# --------------------------------------------------------------
+#  RECALC  - derive the convenience flags other content checks.
+#  Cheap; run it daily from the on_action so triggers stay fresh.
+# --------------------------------------------------------------
+USA_ad_politics_recalc = {
+
+	USA_ad_politics_clamp = yes
+
+	# ---- who holds each chamber ----
+	if = {
+		limit = { check_variable = { var = usa_house_gop value = usa_house_dem compare = greater_than } }
+		set_country_flag = usa_gop_holds_house
+	}
+	else = { clr_country_flag = usa_gop_holds_house }
+
+	if = {
+		limit = { check_variable = { var = usa_senate_gop value = usa_senate_dem compare = greater_than } }
+		set_country_flag = usa_gop_holds_senate
+	}
+	else = { clr_country_flag = usa_gop_holds_senate }
+
+	# ---- MAGA super-majorities (2/3: 290 House, 67 Senate) ----
+	if = {
+		limit = { check_variable = { var = usa_house_maga value = 290 compare = greater_than_or_equals } }
+		set_country_flag = usa_maga_house_super
+	}
+	else = { clr_country_flag = usa_maga_house_super }
+
+	if = {
+		limit = { check_variable = { var = usa_senate_maga value = 67 compare = greater_than_or_equals } }
+		set_country_flag = usa_maga_senate_super
+	}
+	else = { clr_country_flag = usa_maga_senate_super }
+
+	# ---- third term is "legal" only with both super-majorities ----
+	if = {
+		limit = {
+			has_country_flag = usa_maga_house_super
+			has_country_flag = usa_maga_senate_super
+		}
+		set_country_flag = usa_third_term_legal
+	}
+	else = { clr_country_flag = usa_third_term_legal }
+
+	# ---- legitimacy floor: the union starts to fracture ----
+	if = {
+		limit = { check_variable = { var = usa_legitimacy value = 30 compare = less_than } }
+		set_country_flag = usa_low_legitimacy
+		# [BUILD] YOU: when this flag is set, begin releasing / flipping
+		# the West-Coast and blue states. Left to you - it is a big effect.
+	}
+	else = { clr_country_flag = usa_low_legitimacy }
+}
+
+
+# --------------------------------------------------------------
+#  SEAT / TRIBE NUDGES  - thin wrappers so events and decisions
+#  read cleanly. Set the temp var, call the effect.
+#
+#      set_temp_variable = { seats = 6 }
+#      USA_ad_maga_house = yes      # +6 MAGA House seats, re-derived
+#
+#  Negative numbers shrink a tribe. Everything re-clamps + recalcs.
+# --------------------------------------------------------------
+USA_ad_maga_house    = { add_to_variable = { usa_house_maga    = seats } USA_ad_politics_recalc = yes }
+USA_ad_maga_senate   = { add_to_variable = { usa_senate_maga   = seats } USA_ad_politics_recalc = yes }
+USA_ad_prowar_house  = { add_to_variable = { usa_house_prowar  = seats } USA_ad_politics_recalc = yes }
+USA_ad_prowar_senate = { add_to_variable = { usa_senate_prowar = seats } USA_ad_politics_recalc = yes }
+USA_ad_estab_house   = { add_to_variable = { usa_house_estab   = seats } USA_ad_politics_recalc = yes }
+USA_ad_estab_senate  = { add_to_variable = { usa_senate_estab  = seats } USA_ad_politics_recalc = yes }
+
+# legitimacy: set temp legit_delta, call
+USA_ad_legit_add = {
+	add_to_variable = { usa_legitimacy = legit_delta }
+	USA_ad_politics_recalc = yes
+}

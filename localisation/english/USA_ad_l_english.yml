@@ -1,0 +1,159 @@
+﻿l_english:
+
+ # ===== DECISION CATEGORIES =====
+ usa_ad_iran_cat:0 "The Iran Front"
+ usa_ad_midterm_cat:0 "The 2026 Midterms"
+ usa_ad_steal_cat:0 "The 2028 Election"
+
+ # ===== IRAN DECISIONS =====
+ ad_iran_reinforce:0 "Reinforce the Front"
+ ad_iran_reinforce_desc:0 "Feed another wave into the mountains. Slows the collapse by a month — and bleeds 25,000 men and a little war support to do it. It does not win the war. Nothing wins the war."
+ ad_iran_escalate:0 "Escalate the Bombing"
+ ad_iran_escalate_desc:0 "Flatten another city for the cameras. The base roars (+approval) and the front lurches forward into over-extension — which brings the Rout sooner, not later. The hawks love it."
+ ad_iran_dig_in:0 "Dig In"
+ ad_iran_dig_in_desc:0 "Stop attacking; hold what you have. The clock slows, but a stalemate on live television costs war support. Cheap, and it buys time you will only spend losing."
+ ad_iran_seek_terms:0 "Sue for Terms"
+ ad_iran_seek_terms_desc:0 "Quietly ask Tehran for a way out. It looks weak at home (−approval) and — this being an unwinnable war — Tehran refuses. Once per war."
+ ad_iran_coalition:0 "Call in the Coalition"
+ ad_iran_coalition_desc:0 "Beg the allies for help. A real reprieve for six weeks — and then they read the room and go home, and the war speeds up worse than before. Once per war."
+
+ # ===== MIDTERM DECISIONS =====
+ ad_mid_purge_rolls:0 "Purge the Voter Rolls"
+ ad_mid_purge_rolls_desc:0 "Strike names in the blue districts. +6 MAGA House seats, −6 Democrats. Burns 6 legitimacy (some of it leaks straight to chaos). Banks progress toward certifying."
+ ad_mid_gerrymander:0 "Gerrymander Harder"
+ ad_mid_gerrymander_desc:0 "Redraw until the lines pick the voters. +5 MAGA House seats at the expense of the old guard. Burns 4 legitimacy. Cheaper, quieter."
+ ad_mid_seize_machines:0 "Seize the Machines"
+ ad_mid_seize_machines_desc:0 "Do it on camera. +12 MAGA House and +4 MAGA Senate, −12 House / −4 Senate Democrats. Burns 18 legitimacy — the blatant option. Banks a lot toward certifying."
+ ad_mid_flood_the_zone:0 "Flood the Zone"
+ ad_mid_flood_the_zone_desc:0 "Drown the country in noise until no count is trusted. Steadies the base (+approval), burns 5 legitimacy. No seats, but it banks progress."
+ ad_mid_certify:0 "Certify Our Result"
+ ad_mid_certify_desc:0 "Declare Congress held, whatever the numbers said. Available once you have rigged enough. Locks in GOP/MAGA control, and the country wakes up with two answers to one question. Marquee chaos. [Fires: The Stolen Midterms.]"
+ ad_mid_let_them_count:0 "Let Them Count"
+ ad_mid_let_them_count_desc:0 "The honest road. The Democrats take the House, the third-term branch closes, and impeachment becomes possible. Choose this and the story forks hard."
+
+ # ===== ELECTION DECISIONS =====
+ ad_steal_integrity_force:0 "Deploy the Integrity Force"
+ ad_steal_integrity_force_desc:0 "Put your private army in every precinct. Burns 6 legitimacy. Banks progress toward declaring victory."
+ ad_steal_purge_newsom:0 "Purge the Newsom Vote"
+ ad_steal_purge_newsom_desc:0 "Hollow out the opposition's count in real time. Burns 10 legitimacy. Banks a lot."
+ ad_steal_seize_ballots:0 "Seize the Ballots"
+ ad_steal_seize_ballots_desc:0 "Take them 'for safekeeping' before they are counted. Burns 18 legitimacy — the blatant option."
+ ad_steal_declare_victory:0 "Declare Victory"
+ ad_steal_declare_victory_desc:0 "Announce the sweep no independent count supports. Available once you have rigged enough. This is the end: chaos is pinned to 100, the mood systems shut down, and the union comes apart. [Fires: THE COLLAPSE.]"
+
+ # ===== EVENTS =====
+ # ---- Iran stage openers ----
+ usa_ad.70.t:0 "The Nuclear Question"
+ usa_ad.70.d:0 "The 'obliterated' program is enriching again, the proxies are stirring, and the Gulf is one incident away from a spark. The Iran Front opens — for now a cold war of sanctions, skirmishes and posturing. Manage it however you like; nothing here is fatal yet."
+ usa_ad.70.a:0 "Turn the screws"
+ usa_ad.71.t:0 "The Second Strike"
+ usa_ad.71.d:0 "The skirmishing tips into open war. The bombers fly, the Gulf burns, and the base roars for more. Harsher options are on the table now — but the road only runs one way from here."
+ usa_ad.71.a:0 "Escalate"
+ usa_ad.72.t:0 "Boots on the Ground"
+ usa_ad.72.d:0 "The invasion begins. The maps look easy; they always do. From this moment the war has a clock, and the clock does not run in your favour. Everything you do now only decides how fast, and how bloody, the Rout arrives."
+ usa_ad.72.a:0 "Cross the frontier"
+ # ---- Iran flavour (from decisions) ----
+ usa_ad.73.t:0 "The Sanctions Bite"
+ usa_ad.73.d:0 "Tehran's economy staggers under the new measures — and hardens. The hardliners have never been more popular. Every turn of the screw is a recruiting poster."
+ usa_ad.73.a:0 "Good"
+ usa_ad.74.t:0 "Blood on the Border"
+ usa_ad.74.d:0 "The tit-for-tat leaves flag-draped coffins on a tarmac at Dover. The pressure to answer — harder — becomes its own momentum."
+ usa_ad.74.a:0 "Answer it"
+ usa_ad.75.t:0 "Collateral"
+ usa_ad.75.d:0 "A strike meant for a bunker finds an apartment block, and the footage is everywhere by morning. At home the base cheers; everywhere else, the recruiters do."
+ usa_ad.75.a:0 "It was a legitimate target"
+ usa_ad.76.t:0 "The Strike Misses"
+ usa_ad.76.d:0 "The decapitation strike hits the motorcade — the wrong motorcade. The man you wanted goes on television that night, alive and furious, and the war gets longer."
+ usa_ad.76.a:0 "Try again"
+
+ usa_ad.10.t:0 "The Rout"
+ usa_ad.10.d:0 "It ends in catastrophe. The last columns stream out under fire, leaving equipment, prisoners, and every remaining illusion behind. The most powerful military on earth is humbled on live television, the hawks are discredited overnight, and the country goes into mourning."
+ usa_ad.10.a:0 "Bring them home"
+
+ usa_ad.11.t:0 "Tehran Refuses"
+ usa_ad.11.d:0 "The feelers are batted away with contempt. There is no deal to be had — only the choice of how much longer to bleed. Word of the failed approach leaks, and you look weaker than before you asked."
+ usa_ad.11.a:0 "Fight on, then"
+
+ usa_ad.12.t:0 "The Coalition Collapses"
+ usa_ad.12.d:0 "The allies who bought you six weeks have quietly gone home, one embassy statement at a time. America is alone in the mountains now, and the war accelerates worse than before."
+ usa_ad.12.a:0 "We never needed them"
+
+ usa_ad.30.t:0 "Question the Count"
+ usa_ad.30.d:0 "Weeks before a ballot is cast, you declare the midterms already stolen — by the other side, naturally. The 'integrity' operation stands up nationwide. How thoroughly you rig it, and how much legitimacy you are willing to burn, is now up to you."
+ usa_ad.30.a:0 "Secure the vote"
+
+ usa_ad.20.t:0 "The Stolen Midterms"
+ usa_ad.20.d:0 "The counts said one thing; you said another, and Congress is 'held.' Blue states refuse to certify. The country wakes up with two answers to one question — and only one of them has an army."
+ usa_ad.20.a:0 "Congress is held"
+
+ usa_ad.21.t:0 "The Midterms Are Lost"
+ usa_ad.21.d:0 "You let them count, and they counted you out. The Democrats take the House, the subpoenas are already being drafted, and every door marked 'third term' just quietly locked."
+ usa_ad.21.a:0 "This isn't over"
+
+ usa_ad.50.t:0 "Election Night Preparations"
+ usa_ad.50.d:0 "The machine you spent a year building stands ready in every state. A ruined, rationed, furious country is about to vote, and you have no intention of letting the result depend on it. Burn what legitimacy is left; there was never much to spend."
+ usa_ad.50.a:0 "Whatever it takes"
+
+ usa_ad.40.t:0 "THE COLLAPSE"
+ usa_ad.40.d:0 "You declare the sweep. Within the hour California and the West Coast refuse it, and the blue-state compacts follow. By nightfall the union has, for all practical purposes, dissolved. The American Dream is over — and the next war is a domestic one."
+ usa_ad.40.a:0 "So it ends"
+
+ # ===== CHAPTER TRANSITIONS (fired by the end-of-chapter capstone) =====
+ usa_ad.80.t:0 "One Year In"
+ usa_ad.80.d:0 "The first year in office is behind you. The Golden Age chapter closes and the focus tree turns to the year of the midterms — the machine, the base, and the first real test of whether the numbers can be made to say what you need."
+ usa_ad.80.a:0 "On to Year Two"
+ usa_ad.81.t:0 "The Reckoning Begins"
+ usa_ad.81.d:0 "The midterms are settled. The tree now narrows to the war in the desert — the one that will define, and end, the presidency. From here it is Iran, and everything Iran drags down with it."
+ usa_ad.81.a:0 "Into the fire"
+ usa_ad.82.t:0 "The War Is Lost"
+ usa_ad.82.d:0 "The army is broken and the country knows it. One chapter remains: hold power through a third term the Constitution forbids and an election that must be stolen — or watch it all come apart. The final tree opens."
+ usa_ad.82.a:0 "The last campaign"
+
+ # ===== CHOICE EVENTS (options complete a fork focus) =====
+ usa_ad.61.t:0 "Liberation Day — Europe or Alone?"
+ usa_ad.61.d:0 "The tariff wall is up. Now the strategic question: gang up on China with the Europeans, or tariff friend and foe alike and go it completely alone?"
+ usa_ad.61.a:0 "Cut Europe a deal §G(Befriend Europe)§!"
+ usa_ad.61.b:0 "Tariff them too §R(Tarrif the World)§!"
+
+ usa_ad.62.t:0 "The Count Is Ours"
+ usa_ad.62.d:0 "The tally is arranged; Congress will be held no matter what the voters thought. Only one question remains — how openly do you want to have done it?"
+ usa_ad.62.a:0 "Do it on camera §R(Blatant Steal — heavy legitimacy hit, big chaos)§!"
+ usa_ad.62.b:0 "Do it in the dark §Y(Quiet Steal — deniable, less chaos)§!"
+
+ usa_ad.63.t:0 "Declare Victory"
+ usa_ad.63.d:0 "The machine has run. The result no independent count supports is ready to announce. This is the end of the republic either way — the only choice left is the manner of it."
+ usa_ad.63.a:0 "Declare it before the count §R(Brazen Fraud — the union shatters)§!"
+ usa_ad.63.b:0 "Rig it quietly §Y(Quiet Rigging — it still shatters, slower)§!"
+
+ # ===== SCOREBOARD (display-only; live variables via [?var]) =====
+ usa_ad_scoreboard_cat:0 "Washington Scoreboard"
+ ad_score_house:0 "House — GOP [?usa_house_gop|0]  ·  Dem [?usa_house_dem|0]"
+ ad_score_house_desc:0 "The 435-seat House.\nGOP [?usa_house_gop|0]  /  Dem [?usa_house_dem|0]\nThe GOP holds the House while GOP > Dem."
+ ad_score_senate:0 "Senate — GOP [?usa_senate_gop|0]  ·  Dem [?usa_senate_dem|0]"
+ ad_score_senate_desc:0 "The 100-seat Senate.\nGOP [?usa_senate_gop|0]  /  Dem [?usa_senate_dem|0]"
+ ad_score_tribes:0 "Tribes — MAGA House [?usa_house_maga|0]  Senate [?usa_senate_maga|0]"
+ ad_score_tribes_desc:0 "Overlapping counts (a member can be several).\nMAGA: House [?usa_house_maga|0] / Senate [?usa_senate_maga|0]  (super-majority at 290 / 67)\nPro-war: House [?usa_house_prowar|0] / Senate [?usa_senate_prowar|0]\nEstablishment: House [?usa_house_estab|0] / Senate [?usa_senate_estab|0]"
+ ad_score_mood:0 "Legitimacy [?usa_legitimacy|0]  ·  Approval [?aproval_rate]  ·  Chaos [?civil_war]"
+ ad_score_mood_desc:0 "Legitimacy [?usa_legitimacy|0]/100 — the union starts to fracture below 30.\nApproval [?aproval_rate]%\nChaos [?civil_war]"
+
+ # ===== STATUS READOUTS inside the minigame categories =====
+ ad_iran_status:0 "Iran — stage [?usa_iran_stage|0]/3  ·  tension [?usa_iran_tension|0]  ·  clock [?usa_iran_progress|0]/100"
+ ad_iran_status_desc:0 "Stage [?usa_iran_stage|0] of 3  (1 cold war · 2 open strikes · 3 ground war).\nTension: [?usa_iran_tension|0] / 100\nAttrition clock (stage 3 only, unwinnable): [?usa_iran_progress|0] / 100, this month +[?usa_iran_intensity|0]\nCasualties: [?usa_iran_casualties|0]k\nChaos [?civil_war]  ·  Approval [?aproval_rate]"
+
+ # ---- new staged Iran decisions ----
+ ad_iran_sanctions:0 "Tighten the Sanctions"
+ ad_iran_sanctions_desc:0 "Squeeze Tehran a little harder. +6 tension, a point of legitimacy (you look tough), a touch of chaos. Survivable."
+ ad_iran_proxies:0 "Arm the Proxies"
+ ad_iran_proxies_desc:0 "Funnel weapons to the militias. +8 tension, +2 pro-war House, a little chaos."
+ ad_iran_skirmish:0 "Answer the Skirmish"
+ ad_iran_skirmish_desc:0 "Hit back at a border clash. +5 tension, +war support, a few casualties. Keeps the pot simmering."
+ ad_iran_airstrikes:0 "Airstrike Campaign"
+ ad_iran_airstrikes_desc:0 "Open bombing. The base rallies (+approval), +10 tension, +3 chaos, +4 pro-war House, +war support, casualties climb. This is how it starts."
+ ad_iran_blockade:0 "Blockade the Coast"
+ ad_iran_blockade_desc:0 "Choke the Gulf. +8 tension, +2 chaos, −2 legitimacy as the world protests."
+ ad_iran_decapitate:0 "Decapitation Strike"
+ ad_iran_decapitate_desc:0 "Try to end it with one blow. +12 tension, +4 chaos, casualties — and, this being an unwinnable war, it does not end it."
+ ad_mid_status:0 "Legitimacy [?usa_legitimacy|0]  ·  banked [?usa_midterm_cheat|0]/5"
+ ad_mid_status_desc:0 "Legitimacy [?usa_legitimacy|0] / 100\nCheat banked: [?usa_midterm_cheat|0]  (need 5 to Certify)\nHouse: GOP [?usa_house_gop|0] / Dem [?usa_house_dem|0], MAGA [?usa_house_maga|0]"
+ ad_steal_status:0 "Legitimacy [?usa_legitimacy|0]  ·  banked [?usa_steal_cheat|0]/6"
+ ad_steal_status_desc:0 "Legitimacy [?usa_legitimacy|0] / 100\nCheat banked: [?usa_steal_cheat|0]  (need 6 to Declare Victory)"

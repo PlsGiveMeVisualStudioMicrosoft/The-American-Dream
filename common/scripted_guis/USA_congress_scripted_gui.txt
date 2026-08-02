@@ -1,0 +1,59 @@
+# ==============================================================
+#  THE AMERICAN DREAM - UNITED STATES CONGRESS  (scripted GUI)
+#
+#  usa_congress_ui - the House/Senate window, shown while the
+#  usa_congress_window_open flag is up. It is opened by the round
+#  emblem button on the propaganda panel (see simp_propoganda) and
+#  closed by its own X button.
+#
+#  Each chamber's dots are a dynamic list over its *_main_array
+#  (one entry per seat, value = party id). For every entry the
+#  icon takes its colour from the party id (frame = v) and its
+#  screen offset from the matching x/y position arrays.
+# ==============================================================
+scripted_gui = {
+
+	# ---- the House / Senate window ----
+	usa_congress_ui = {
+		context_type = player_context
+		window_name = "usa_congress_window"
+
+		visible = {
+			has_country_flag = usa_congress_window_open
+		}
+
+		dynamic_lists = {
+			usa_house_grid = {
+				array = usa_house_main_array
+				index = usa_house_index
+				change_scope = no
+				entry_container = usa_house_seat_entry
+			}
+			usa_senate_grid = {
+				array = usa_senate_main_array
+				index = usa_senate_index
+				change_scope = no
+				entry_container = usa_senate_seat_entry
+			}
+		}
+
+		effects = {
+			usa_congress_close_button_click = {
+				clr_country_flag = usa_congress_window_open
+			}
+		}
+
+		properties = {
+			usa_house_seat_icon = {
+				frame = v
+				x = usa_house_x_array^usa_house_index
+				y = usa_house_y_array^usa_house_index
+			}
+			usa_senate_seat_icon = {
+				frame = v
+				x = usa_senate_x_array^usa_senate_index
+				y = usa_senate_y_array^usa_senate_index
+			}
+		}
+	}
+}

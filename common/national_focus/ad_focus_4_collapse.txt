@@ -1,0 +1,314 @@
+# The Collapse  -  tree id: ad_dream_end
+# One of four chapter-trees for The American Dream. Loaded by
+# load_focus_tree (part 1 at game start, the rest from the capstone
+# focus of the previous chapter). See README_INTERACTIVE.md.
+focus_tree = {
+	id = ad_dream_end
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = USA
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+	initial_show_position = { focus = USA_reinterpret_the_22nd }
+	continuous_focus_position = { x = 50 y = 1700 }
+
+	focus = {
+		id = USA_reinterpret_the_22nd
+		icon = GFX_goal_generic_intelligence_focus
+		x = 13
+		y = 0
+		cost = 5
+		available = {
+			has_country_flag = usa_stole_midterms
+		}
+		completion_reward = {
+			add_political_power = 40
+			set_temp_variable = { legit_delta = -10 }
+			USA_ad_legit_add = yes
+			set_temp_variable = { apr_delta = -1.2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 3.6 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.88 days = 16 }
+				country_event = { id = american_road.89 days = 30 }
+			}
+		}
+	}
+	focus = {
+		id = USA_pack_the_courts
+		icon = GFX_goal_generic_intelligence_focus
+		x = 13
+		y = 1
+		cost = 5
+		prerequisite = { focus = USA_reinterpret_the_22nd }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = -0.6 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 2.8 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.90 days = 6 }
+			}
+		}
+	}
+	focus = {
+		id = USA_hyperinflation
+		icon = GFX_goal_generic_destroy_versailles
+		x = 13
+		y = 2
+		cost = 1
+		prerequisite = { focus = USA_pack_the_courts }
+		completion_reward = {
+			add_stability = -0.10
+			set_temp_variable = { legit_delta = -6 }
+			USA_ad_legit_add = yes
+			set_temp_variable = { apr_delta = -8 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 22 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.91 days = 13 }
+			}
+		}
+	}
+	focus = {
+		id = USA_declare_candidacy
+		icon = GFX_focus_USA_uncle_sam
+		x = 13
+		y = 3
+		cost = 4
+		prerequisite = { focus = USA_hyperinflation }
+		available = {
+			has_country_flag = usa_stole_midterms
+		}
+		completion_reward = {
+			add_political_power = 60
+			set_temp_variable = { apr_delta = 0.4 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 2.8 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.92 days = 1 }
+				country_event = { id = american_road.93 days = 15 }
+			}
+		}
+	}
+	focus = {
+		id = USA_the_newsom_threat
+		icon = GFX_focus_usa_focus_on_europe
+		x = 13
+		y = 4
+		cost = 5
+		prerequisite = { focus = USA_declare_candidacy }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = -0.6 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 2 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.94 days = 1 }
+				news_event = { id = american_road.121 days = 5 }
+				country_event = { id = american_road.95 days = 15 }
+				country_event = { id = american_road.96 days = 30 }
+			}
+		}
+	}
+	focus = {
+		id = USA_build_the_machine
+		icon = GFX_goal_generic_demand_territory
+		x = 13
+		y = 5
+		cost = 5
+		prerequisite = { focus = USA_the_newsom_threat }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = -0.8 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 3.6 }
+			USA_chaos_add = yes
+		}
+	}
+	focus = {
+		id = USA_the_new_dollar
+		icon = GFX_goal_generic_construct_civ
+		x = 13
+		y = 6
+		cost = 1
+		prerequisite = { focus = USA_build_the_machine }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = -1.2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 3.6 }
+			USA_chaos_add = yes
+		}
+	}
+	focus = {
+		id = USA_bring_the_troops_home
+		icon = GFX_goal_generic_position_armies
+		x = 13
+		y = 7
+		cost = 1
+		prerequisite = { focus = USA_the_new_dollar }
+		available = {
+			has_country_flag = usa_iran_lost
+		}
+		completion_reward = {
+			add_political_power = 30
+			add_war_support = -0.03
+			country_event = { id = american_road.72 hours = 6 }
+			set_temp_variable = { apr_delta = -0.8 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 3.2 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.98 days = 6 }
+			}
+		}
+	}
+	focus = {
+		id = USA_suppress_the_vote
+		icon = GFX_goal_generic_fascism_on_the_rise
+		x = 13
+		y = 8
+		cost = 3
+		prerequisite = { focus = USA_bring_the_troops_home }
+		completion_reward = {
+			add_political_power = 40
+			country_event = { id = usa_ad.50 hours = 6 }
+			set_temp_variable = { apr_delta = -0.8 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 4 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.99 days = 1 }
+				country_event = { id = american_road.101 days = 22 }
+			}
+		}
+	}
+	focus = {
+		id = USA_the_final_campaign
+		icon = GFX_goal_generic_destroy_versailles
+		x = 13
+		y = 9
+		cost = 5
+		prerequisite = { focus = USA_suppress_the_vote }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = -1 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 3.6 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.102 days = 1 }
+				country_event = { id = american_road.103 days = 18 }
+				news_event = { id = american_road.122 days = 23 }
+				country_event = { id = american_road.104 days = 32 }
+			}
+		}
+	}
+	focus = {
+		id = USA_election_eve
+		icon = GFX_goal_generic_political_pressure
+		x = 13
+		y = 10
+		cost = 5
+		prerequisite = { focus = USA_the_final_campaign }
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = { apr_delta = -0.8 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 3.2 }
+			USA_chaos_add = yes
+		}
+	}
+	focus = {
+		id = USA_rationing
+		icon = GFX_goal_generic_trade
+		x = 13
+		y = 11
+		cost = 1
+		prerequisite = { focus = USA_election_eve }
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = -0.03
+			set_temp_variable = { apr_delta = -1.2 }
+			USA_apr_add = yes
+			set_temp_variable = { chaos_delta = 4 }
+			USA_chaos_add = yes
+			hidden_effect = {
+				country_event = { id = american_road.106 days = 24 }
+			}
+		}
+	}
+	focus = {
+		id = USA_steal_the_election
+		icon = GFX_goal_generic_demand_territory
+		x = 13
+		y = 12
+		cost = 4
+		prerequisite = { focus = USA_rationing }
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = USA_brazen_fraud
+		icon = GFX_goal_generic_fascism_on_the_rise
+		x = 12
+		y = 13
+		cost = 2
+		prerequisite = { focus = USA_steal_the_election }
+		mutually_exclusive = { focus = USA_quiet_rigging }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			set_temp_variable = { legit_delta = -18 }
+			USA_ad_legit_add = yes
+			set_country_flag = usa_collapse_triggered
+			USA_chaos_collapse = yes
+			country_event = { id = usa_ad.40 hours = 2 }
+		}
+	}
+	focus = {
+		id = USA_quiet_rigging
+		icon = GFX_goal_generic_dangerous_deal
+		x = 14
+		y = 13
+		cost = 2
+		prerequisite = { focus = USA_steal_the_election }
+		mutually_exclusive = { focus = USA_brazen_fraud }
+		available = {
+			always = no
+		}
+		completion_reward = {
+			set_temp_variable = { legit_delta = -10 }
+			USA_ad_legit_add = yes
+			set_country_flag = usa_collapse_triggered
+			USA_chaos_collapse = yes
+			country_event = { id = usa_ad.40 hours = 2 }
+		}
+	}
+	focus = {
+		id = USA_declare_victory_collapse
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 13
+		y = 14
+		cost = 5
+		prerequisite = { focus = USA_steal_the_election }
+		available = {
+			has_country_flag = usa_collapse_triggered
+		}
+		completion_reward = { }
+	}
+}

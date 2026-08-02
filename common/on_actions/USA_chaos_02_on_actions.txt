@@ -1,0 +1,41 @@
+# ==============================================================
+#  USA CHAOS - DRIVERS
+#
+#  A separate on_actions file. HoI4 merges every on_action block
+#  it finds, so these run ALONGSIDE the approval ticks in
+#  USA_approval_on_actions.txt - no need to edit that file.
+#
+#  Same on/off gate as approval: nothing runs before inauguration
+#  (usa_approval_system_on) and nothing runs after USA_apr_shutdown
+#  (usa_approval_system_off). The chaos leash lazy-arms itself on
+#  the first tick that passes the gate.
+# ==============================================================
+
+on_actions = {
+
+	on_monthly_USA = {
+		effect = {
+			if = {
+				limit = {
+					tag = USA
+					has_global_flag = usa_approval_system_on
+					NOT = { has_global_flag = usa_approval_system_off }
+				}
+				USA_chaos_monthly_tick = yes
+			}
+		}
+	}
+
+	on_daily_USA = {
+		effect = {
+			if = {
+				limit = {
+					tag = USA
+					has_global_flag = usa_approval_system_on
+					NOT = { has_global_flag = usa_approval_system_off }
+				}
+				USA_chaos_daily_correction = yes
+			}
+		}
+	}
+}

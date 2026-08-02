@@ -1,0 +1,28 @@
+# ==============================================================
+#  THE AMERICAN DREAM - CONGRESS WINDOW SPRITES
+#
+#  Party dots, 18px, four frames each: 1=red GOP, 2=yellow,
+#  3=green, 4=blue Dem. Both chambers use the same small sheet.
+#
+#  GFX_usa_congress_open_button - the round Capitol emblem that
+#  opens the window (2 frames: normal, hover).
+#
+#  GFX_usa_congress_bg - low-opacity Capitol backdrop. To use your
+#  own image, overwrite gfx/interface/usa_congress_bg.dds.
+# ==============================================================
+spriteTypes = {
+	spriteType = {
+		name = "GFX_usa_congress_party_icon"
+		texturefile = "gfx/interface/usa_congress_parties.dds"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_usa_congress_open_button"
+		texturefile = "gfx/interface/usa_congress_open_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_usa_congress_bg"
+		texturefile = "gfx/interface/usa_congress_bg.dds"
+	}
+}

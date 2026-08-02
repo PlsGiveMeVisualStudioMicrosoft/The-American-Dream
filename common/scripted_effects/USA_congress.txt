@@ -1,0 +1,1235 @@
+# ==============================================================
+#  THE AMERICAN DREAM - UNITED STATES CONGRESS  (effects)
+#
+#  Draws the House / Senate hemicycle window from a small set of
+#  country variables. The diagram is a PURE VISUALISER - it never
+#  owns the numbers, it only reads them:
+#
+#    usa_house_gop  usa_house_dem   (must sum to 435)
+#    usa_senate_gop usa_senate_dem  (must sum to 100)
+#
+#  Everything is driven from common/on_actions/USA_congress_on_actions.txt
+#  via USA_congress_diagram_tick, which fires at startup and daily.
+#  That means the diagram works no matter WHO raises the
+#  has_country_flag = usa_ad_initialized switch - the mod's own
+#  Congress/tribes init, or the fallback seeder below for a bare
+#  install. It is deliberately NOT gated behind that flag being set
+#  by this file, which was the reason the boxes came up empty.
+#
+#  Party ids double as sprite frames in GFX_usa_congress_party_icon:
+#         1 = GOP  (red frame 1)     4 = Dem  (blue frame 4)
+#
+#  ---- Writing to Congress from your own content ----
+#  Never touch usa_*_main_array directly. Move seats through the
+#  named variables; the daily tick repaints, or call it now:
+#         add_to_variable      = { usa_house_gop = 3 }
+#         subtract_from_variable = { usa_house_dem = 3 }
+#         USA_congress_refresh = yes
+# ==============================================================
+
+# --------------------------------------------------------------
+#  MAIN TICK  (called from on_startup and on_daily_USA)
+#
+#  1. If nothing has initialised Congress yet, seed sensible
+#     defaults - but only AFTER inauguration, so we can never race
+#     an external init that runs at game start.
+#  2. Once the system is live (however it was raised), lay out the
+#     static dot positions once, then repaint the seats.
+# --------------------------------------------------------------
+USA_congress_diagram_tick = {
+	# Seed sensible defaults the moment nothing else has set Congress
+	# up. (If your own Congress/tribes init should own these numbers,
+	# gate this behind a flag your init sets - or just tell me and I'll
+	# do it. The daily repaint reads the live variables either way.)
+	if = {
+		limit = { NOT = { has_country_flag = usa_ad_initialized } }
+		USA_congress_seed_defaults = yes
+	}
+
+	# Lay out the static dot positions once...
+	if = {
+		limit = { NOT = { has_country_flag = usa_congress_positions_built } }
+		USA_house_positions = yes
+		USA_senate_positions = yes
+		set_country_flag = usa_congress_positions_built
+	}
+
+	# ...then repaint the seats from whatever the variables are now.
+	# Deliberately NOT gated on usa_ad_initialized, so the diagram
+	# fills in no matter how the numbers got set.
+	USA_congress_refresh = yes
+}
+
+# --------------------------------------------------------------
+#  FALLBACK SEEDER  (only fires on a bare install with no other
+#  Congress system - edit the starting numbers freely)
+# --------------------------------------------------------------
+USA_congress_seed_defaults = {
+	# House: 435 seats total (GOP + Dem must sum to 435)
+	set_variable = { usa_house_gop = 220 }
+	set_variable = { usa_house_dem = 215 }
+	# Senate: 100 seats total (GOP + Dem must sum to 100)
+	set_variable = { usa_senate_gop = 53 }
+	set_variable = { usa_senate_dem = 47 }
+
+	# Tribes - overlapping head-counts, a member can be several.
+	# MAGA super-majority triggers at 290 (House) / 67 (Senate).
+	set_variable = { usa_house_maga   = 160 }
+	set_variable = { usa_senate_maga  = 30 }
+	set_variable = { usa_house_prowar = 250 }
+	set_variable = { usa_senate_prowar = 68 }
+	set_variable = { usa_house_estab  = 300 }
+	set_variable = { usa_senate_estab = 82 }
+
+	# Union legitimacy - the union starts to fracture below 30.
+	set_variable = { usa_legitimacy = 72 }
+
+	set_country_flag = usa_ad_initialized
+	log = "[GetDateText]: USA Congress defaults seeded (fallback)"
+}
+
+# --------------------------------------------------------------
+#  REPAINT BOTH CHAMBERS
+# --------------------------------------------------------------
+USA_congress_refresh = {
+	USA_house_reload = yes
+	USA_senate_reload = yes
+}
+
+# --------------------------------------------------------------
+#  REBUILD ONE CHAMBER'S SEAT ARRAY FROM ITS GOP/DEM VARIABLES
+#
+#  usa_*_main_array holds one entry per seat: the party id of the
+#  seat's occupant. We lay the GOP block down first (ids = 1) then
+#  the Dem block (ids = 4), one add_to_array per seat. The x/y
+#  arrays are ordered left -> right, so GOP fills the left wedge
+#  and Dem the right. (Plain add_to_array in a while loop - no
+#  resize_array - so the array is always exactly GOP+Dem long.)
+# --------------------------------------------------------------
+USA_house_reload = {
+	clear_array = usa_house_main_array
+
+	set_temp_variable = { seat_i = 0 }
+	while_loop_effect = {
+		limit = { check_variable = { seat_i < usa_house_gop } }
+		add_to_array = { usa_house_main_array = 1 }   # GOP
+		add_to_temp_variable = { seat_i = 1 }
+	}
+
+	set_temp_variable = { seat_i = 0 }
+	while_loop_effect = {
+		limit = { check_variable = { seat_i < usa_house_dem } }
+		add_to_array = { usa_house_main_array = 4 }   # Dem
+		add_to_temp_variable = { seat_i = 1 }
+	}
+	log = "[GetDateText]: House repainted - GOP [?usa_house_gop] Dem [?usa_house_dem]"
+}
+
+USA_senate_reload = {
+	clear_array = usa_senate_main_array
+
+	set_temp_variable = { seat_i = 0 }
+	while_loop_effect = {
+		limit = { check_variable = { seat_i < usa_senate_gop } }
+		add_to_array = { usa_senate_main_array = 1 }   # GOP
+		add_to_temp_variable = { seat_i = 1 }
+	}
+
+	set_temp_variable = { seat_i = 0 }
+	while_loop_effect = {
+		limit = { check_variable = { seat_i < usa_senate_dem } }
+		add_to_array = { usa_senate_main_array = 4 }   # Dem
+		add_to_temp_variable = { seat_i = 1 }
+	}
+	log = "[GetDateText]: Senate repainted - GOP [?usa_senate_gop] Dem [?usa_senate_dem]"
+}
+
+# --------------------------------------------------------------
+#  STATIC DOT POSITIONS  (generated with Flaxbeard's
+#  hoi4-parliament-diagram tool: spread 1.85, first-row radius 5.7,
+#  18 px dots. 435 entries for the House, ordered left -> right.)
+#  Cleared first so a re-run can never double the arrays.
+# --------------------------------------------------------------
+USA_house_positions = {
+	clear_array = usa_house_x_array
+	clear_array = usa_house_y_array
+	add_to_array = { usa_house_x_array = 0 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 12 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 23 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 35 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 46 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 58 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 69 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 81 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 93 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 104 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 116 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 1 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 13 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 24 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 36 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 48 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 59 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 71 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 3 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 83 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 14 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 94 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 26 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 38 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 106 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 50 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 61 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 118 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 5 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 17 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 73 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 29 }
+	add_to_array = { usa_house_y_array = 182 }
+	add_to_array = { usa_house_x_array = 85 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 41 }
+	add_to_array = { usa_house_y_array = 182 }
+	add_to_array = { usa_house_x_array = 8 }
+	add_to_array = { usa_house_y_array = 170 }
+	add_to_array = { usa_house_x_array = 97 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 53 }
+	add_to_array = { usa_house_y_array = 182 }
+	add_to_array = { usa_house_x_array = 20 }
+	add_to_array = { usa_house_y_array = 170 }
+	add_to_array = { usa_house_x_array = 65 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 109 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 32 }
+	add_to_array = { usa_house_y_array = 170 }
+	add_to_array = { usa_house_x_array = 77 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 45 }
+	add_to_array = { usa_house_y_array = 170 }
+	add_to_array = { usa_house_x_array = 12 }
+	add_to_array = { usa_house_y_array = 158 }
+	add_to_array = { usa_house_x_array = 121 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 89 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 24 }
+	add_to_array = { usa_house_y_array = 158 }
+	add_to_array = { usa_house_x_array = 57 }
+	add_to_array = { usa_house_y_array = 170 }
+	add_to_array = { usa_house_x_array = 69 }
+	add_to_array = { usa_house_y_array = 171 }
+	add_to_array = { usa_house_x_array = 37 }
+	add_to_array = { usa_house_y_array = 158 }
+	add_to_array = { usa_house_x_array = 101 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 16 }
+	add_to_array = { usa_house_y_array = 146 }
+	add_to_array = { usa_house_x_array = 49 }
+	add_to_array = { usa_house_y_array = 158 }
+	add_to_array = { usa_house_x_array = 81 }
+	add_to_array = { usa_house_y_array = 171 }
+	add_to_array = { usa_house_x_array = 29 }
+	add_to_array = { usa_house_y_array = 146 }
+	add_to_array = { usa_house_x_array = 114 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 62 }
+	add_to_array = { usa_house_y_array = 158 }
+	add_to_array = { usa_house_x_array = 94 }
+	add_to_array = { usa_house_y_array = 171 }
+	add_to_array = { usa_house_x_array = 42 }
+	add_to_array = { usa_house_y_array = 146 }
+	add_to_array = { usa_house_x_array = 22 }
+	add_to_array = { usa_house_y_array = 135 }
+	add_to_array = { usa_house_x_array = 74 }
+	add_to_array = { usa_house_y_array = 160 }
+	add_to_array = { usa_house_x_array = 127 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 54 }
+	add_to_array = { usa_house_y_array = 146 }
+	add_to_array = { usa_house_x_array = 34 }
+	add_to_array = { usa_house_y_array = 135 }
+	add_to_array = { usa_house_x_array = 107 }
+	add_to_array = { usa_house_y_array = 171 }
+	add_to_array = { usa_house_x_array = 87 }
+	add_to_array = { usa_house_y_array = 160 }
+	add_to_array = { usa_house_x_array = 67 }
+	add_to_array = { usa_house_y_array = 146 }
+	add_to_array = { usa_house_x_array = 48 }
+	add_to_array = { usa_house_y_array = 135 }
+	add_to_array = { usa_house_x_array = 28 }
+	add_to_array = { usa_house_y_array = 123 }
+	add_to_array = { usa_house_x_array = 120 }
+	add_to_array = { usa_house_y_array = 172 }
+	add_to_array = { usa_house_x_array = 100 }
+	add_to_array = { usa_house_y_array = 160 }
+	add_to_array = { usa_house_x_array = 80 }
+	add_to_array = { usa_house_y_array = 148 }
+	add_to_array = { usa_house_x_array = 41 }
+	add_to_array = { usa_house_y_array = 123 }
+	add_to_array = { usa_house_x_array = 61 }
+	add_to_array = { usa_house_y_array = 135 }
+	add_to_array = { usa_house_x_array = 34 }
+	add_to_array = { usa_house_y_array = 112 }
+	add_to_array = { usa_house_x_array = 93 }
+	add_to_array = { usa_house_y_array = 149 }
+	add_to_array = { usa_house_x_array = 54 }
+	add_to_array = { usa_house_y_array = 124 }
+	add_to_array = { usa_house_x_array = 74 }
+	add_to_array = { usa_house_y_array = 135 }
+	add_to_array = { usa_house_x_array = 113 }
+	add_to_array = { usa_house_y_array = 160 }
+	add_to_array = { usa_house_x_array = 133 }
+	add_to_array = { usa_house_y_array = 172 }
+	add_to_array = { usa_house_x_array = 48 }
+	add_to_array = { usa_house_y_array = 113 }
+	add_to_array = { usa_house_x_array = 86 }
+	add_to_array = { usa_house_y_array = 138 }
+	add_to_array = { usa_house_x_array = 68 }
+	add_to_array = { usa_house_y_array = 124 }
+	add_to_array = { usa_house_x_array = 107 }
+	add_to_array = { usa_house_y_array = 149 }
+	add_to_array = { usa_house_x_array = 41 }
+	add_to_array = { usa_house_y_array = 102 }
+	add_to_array = { usa_house_x_array = 61 }
+	add_to_array = { usa_house_y_array = 113 }
+	add_to_array = { usa_house_x_array = 127 }
+	add_to_array = { usa_house_y_array = 161 }
+	add_to_array = { usa_house_x_array = 82 }
+	add_to_array = { usa_house_y_array = 125 }
+	add_to_array = { usa_house_x_array = 100 }
+	add_to_array = { usa_house_y_array = 138 }
+	add_to_array = { usa_house_x_array = 55 }
+	add_to_array = { usa_house_y_array = 102 }
+	add_to_array = { usa_house_x_array = 75 }
+	add_to_array = { usa_house_y_array = 114 }
+	add_to_array = { usa_house_x_array = 121 }
+	add_to_array = { usa_house_y_array = 150 }
+	add_to_array = { usa_house_x_array = 49 }
+	add_to_array = { usa_house_y_array = 91 }
+	add_to_array = { usa_house_x_array = 94 }
+	add_to_array = { usa_house_y_array = 127 }
+	add_to_array = { usa_house_x_array = 69 }
+	add_to_array = { usa_house_y_array = 103 }
+	add_to_array = { usa_house_x_array = 114 }
+	add_to_array = { usa_house_y_array = 139 }
+	add_to_array = { usa_house_x_array = 141 }
+	add_to_array = { usa_house_y_array = 161 }
+	add_to_array = { usa_house_x_array = 63 }
+	add_to_array = { usa_house_y_array = 92 }
+	add_to_array = { usa_house_x_array = 90 }
+	add_to_array = { usa_house_y_array = 115 }
+	add_to_array = { usa_house_x_array = 108 }
+	add_to_array = { usa_house_y_array = 128 }
+	add_to_array = { usa_house_x_array = 57 }
+	add_to_array = { usa_house_y_array = 82 }
+	add_to_array = { usa_house_x_array = 84 }
+	add_to_array = { usa_house_y_array = 104 }
+	add_to_array = { usa_house_x_array = 135 }
+	add_to_array = { usa_house_y_array = 151 }
+	add_to_array = { usa_house_x_array = 102 }
+	add_to_array = { usa_house_y_array = 118 }
+	add_to_array = { usa_house_x_array = 78 }
+	add_to_array = { usa_house_y_array = 93 }
+	add_to_array = { usa_house_x_array = 129 }
+	add_to_array = { usa_house_y_array = 140 }
+	add_to_array = { usa_house_x_array = 72 }
+	add_to_array = { usa_house_y_array = 83 }
+	add_to_array = { usa_house_x_array = 66 }
+	add_to_array = { usa_house_y_array = 73 }
+	add_to_array = { usa_house_x_array = 99 }
+	add_to_array = { usa_house_y_array = 105 }
+	add_to_array = { usa_house_x_array = 123 }
+	add_to_array = { usa_house_y_array = 130 }
+	add_to_array = { usa_house_x_array = 93 }
+	add_to_array = { usa_house_y_array = 95 }
+	add_to_array = { usa_house_x_array = 117 }
+	add_to_array = { usa_house_y_array = 119 }
+	add_to_array = { usa_house_x_array = 87 }
+	add_to_array = { usa_house_y_array = 85 }
+	add_to_array = { usa_house_x_array = 150 }
+	add_to_array = { usa_house_y_array = 152 }
+	add_to_array = { usa_house_x_array = 111 }
+	add_to_array = { usa_house_y_array = 109 }
+	add_to_array = { usa_house_x_array = 81 }
+	add_to_array = { usa_house_y_array = 74 }
+	add_to_array = { usa_house_x_array = 75 }
+	add_to_array = { usa_house_y_array = 64 }
+	add_to_array = { usa_house_x_array = 144 }
+	add_to_array = { usa_house_y_array = 142 }
+	add_to_array = { usa_house_x_array = 108 }
+	add_to_array = { usa_house_y_array = 97 }
+	add_to_array = { usa_house_x_array = 138 }
+	add_to_array = { usa_house_y_array = 132 }
+	add_to_array = { usa_house_x_array = 102 }
+	add_to_array = { usa_house_y_array = 86 }
+	add_to_array = { usa_house_x_array = 133 }
+	add_to_array = { usa_house_y_array = 121 }
+	add_to_array = { usa_house_x_array = 97 }
+	add_to_array = { usa_house_y_array = 76 }
+	add_to_array = { usa_house_x_array = 91 }
+	add_to_array = { usa_house_y_array = 66 }
+	add_to_array = { usa_house_x_array = 127 }
+	add_to_array = { usa_house_y_array = 111 }
+	add_to_array = { usa_house_x_array = 85 }
+	add_to_array = { usa_house_y_array = 56 }
+	add_to_array = { usa_house_x_array = 121 }
+	add_to_array = { usa_house_y_array = 101 }
+	add_to_array = { usa_house_x_array = 118 }
+	add_to_array = { usa_house_y_array = 89 }
+	add_to_array = { usa_house_x_array = 113 }
+	add_to_array = { usa_house_y_array = 78 }
+	add_to_array = { usa_house_x_array = 160 }
+	add_to_array = { usa_house_y_array = 144 }
+	add_to_array = { usa_house_x_array = 107 }
+	add_to_array = { usa_house_y_array = 68 }
+	add_to_array = { usa_house_x_array = 101 }
+	add_to_array = { usa_house_y_array = 58 }
+	add_to_array = { usa_house_x_array = 154 }
+	add_to_array = { usa_house_y_array = 134 }
+	add_to_array = { usa_house_x_array = 95 }
+	add_to_array = { usa_house_y_array = 48 }
+	add_to_array = { usa_house_x_array = 149 }
+	add_to_array = { usa_house_y_array = 124 }
+	add_to_array = { usa_house_x_array = 143 }
+	add_to_array = { usa_house_y_array = 114 }
+	add_to_array = { usa_house_x_array = 137 }
+	add_to_array = { usa_house_y_array = 104 }
+	add_to_array = { usa_house_x_array = 132 }
+	add_to_array = { usa_house_y_array = 94 }
+	add_to_array = { usa_house_x_array = 129 }
+	add_to_array = { usa_house_y_array = 81 }
+	add_to_array = { usa_house_x_array = 123 }
+	add_to_array = { usa_house_y_array = 71 }
+	add_to_array = { usa_house_x_array = 118 }
+	add_to_array = { usa_house_y_array = 61 }
+	add_to_array = { usa_house_x_array = 112 }
+	add_to_array = { usa_house_y_array = 51 }
+	add_to_array = { usa_house_x_array = 106 }
+	add_to_array = { usa_house_y_array = 41 }
+	add_to_array = { usa_house_x_array = 142 }
+	add_to_array = { usa_house_y_array = 87 }
+	add_to_array = { usa_house_x_array = 148 }
+	add_to_array = { usa_house_y_array = 97 }
+	add_to_array = { usa_house_x_array = 154 }
+	add_to_array = { usa_house_y_array = 107 }
+	add_to_array = { usa_house_x_array = 160 }
+	add_to_array = { usa_house_y_array = 117 }
+	add_to_array = { usa_house_x_array = 165 }
+	add_to_array = { usa_house_y_array = 127 }
+	add_to_array = { usa_house_x_array = 171 }
+	add_to_array = { usa_house_y_array = 137 }
+	add_to_array = { usa_house_x_array = 117 }
+	add_to_array = { usa_house_y_array = 35 }
+	add_to_array = { usa_house_x_array = 123 }
+	add_to_array = { usa_house_y_array = 45 }
+	add_to_array = { usa_house_x_array = 129 }
+	add_to_array = { usa_house_y_array = 55 }
+	add_to_array = { usa_house_x_array = 135 }
+	add_to_array = { usa_house_y_array = 65 }
+	add_to_array = { usa_house_x_array = 140 }
+	add_to_array = { usa_house_y_array = 75 }
+	add_to_array = { usa_house_x_array = 129 }
+	add_to_array = { usa_house_y_array = 29 }
+	add_to_array = { usa_house_x_array = 134 }
+	add_to_array = { usa_house_y_array = 39 }
+	add_to_array = { usa_house_x_array = 154 }
+	add_to_array = { usa_house_y_array = 81 }
+	add_to_array = { usa_house_x_array = 140 }
+	add_to_array = { usa_house_y_array = 49 }
+	add_to_array = { usa_house_x_array = 160 }
+	add_to_array = { usa_house_y_array = 91 }
+	add_to_array = { usa_house_x_array = 146 }
+	add_to_array = { usa_house_y_array = 59 }
+	add_to_array = { usa_house_x_array = 165 }
+	add_to_array = { usa_house_y_array = 101 }
+	add_to_array = { usa_house_x_array = 152 }
+	add_to_array = { usa_house_y_array = 69 }
+	add_to_array = { usa_house_x_array = 171 }
+	add_to_array = { usa_house_y_array = 112 }
+	add_to_array = { usa_house_x_array = 177 }
+	add_to_array = { usa_house_y_array = 122 }
+	add_to_array = { usa_house_x_array = 140 }
+	add_to_array = { usa_house_y_array = 24 }
+	add_to_array = { usa_house_x_array = 183 }
+	add_to_array = { usa_house_y_array = 132 }
+	add_to_array = { usa_house_x_array = 146 }
+	add_to_array = { usa_house_y_array = 34 }
+	add_to_array = { usa_house_x_array = 152 }
+	add_to_array = { usa_house_y_array = 44 }
+	add_to_array = { usa_house_x_array = 165 }
+	add_to_array = { usa_house_y_array = 77 }
+	add_to_array = { usa_house_x_array = 158 }
+	add_to_array = { usa_house_y_array = 55 }
+	add_to_array = { usa_house_x_array = 171 }
+	add_to_array = { usa_house_y_array = 87 }
+	add_to_array = { usa_house_x_array = 164 }
+	add_to_array = { usa_house_y_array = 65 }
+	add_to_array = { usa_house_x_array = 177 }
+	add_to_array = { usa_house_y_array = 97 }
+	add_to_array = { usa_house_x_array = 152 }
+	add_to_array = { usa_house_y_array = 20 }
+	add_to_array = { usa_house_x_array = 158 }
+	add_to_array = { usa_house_y_array = 30 }
+	add_to_array = { usa_house_x_array = 183 }
+	add_to_array = { usa_house_y_array = 107 }
+	add_to_array = { usa_house_x_array = 164 }
+	add_to_array = { usa_house_y_array = 40 }
+	add_to_array = { usa_house_x_array = 170 }
+	add_to_array = { usa_house_y_array = 51 }
+	add_to_array = { usa_house_x_array = 189 }
+	add_to_array = { usa_house_y_array = 117 }
+	add_to_array = { usa_house_x_array = 178 }
+	add_to_array = { usa_house_y_array = 73 }
+	add_to_array = { usa_house_x_array = 165 }
+	add_to_array = { usa_house_y_array = 16 }
+	add_to_array = { usa_house_x_array = 177 }
+	add_to_array = { usa_house_y_array = 61 }
+	add_to_array = { usa_house_x_array = 184 }
+	add_to_array = { usa_house_y_array = 83 }
+	add_to_array = { usa_house_x_array = 196 }
+	add_to_array = { usa_house_y_array = 128 }
+	add_to_array = { usa_house_x_array = 171 }
+	add_to_array = { usa_house_y_array = 27 }
+	add_to_array = { usa_house_x_array = 190 }
+	add_to_array = { usa_house_y_array = 93 }
+	add_to_array = { usa_house_x_array = 177 }
+	add_to_array = { usa_house_y_array = 37 }
+	add_to_array = { usa_house_x_array = 183 }
+	add_to_array = { usa_house_y_array = 48 }
+	add_to_array = { usa_house_x_array = 177 }
+	add_to_array = { usa_house_y_array = 13 }
+	add_to_array = { usa_house_x_array = 196 }
+	add_to_array = { usa_house_y_array = 104 }
+	add_to_array = { usa_house_x_array = 190 }
+	add_to_array = { usa_house_y_array = 70 }
+	add_to_array = { usa_house_x_array = 189 }
+	add_to_array = { usa_house_y_array = 58 }
+	add_to_array = { usa_house_x_array = 183 }
+	add_to_array = { usa_house_y_array = 24 }
+	add_to_array = { usa_house_x_array = 196 }
+	add_to_array = { usa_house_y_array = 80 }
+	add_to_array = { usa_house_x_array = 202 }
+	add_to_array = { usa_house_y_array = 115 }
+	add_to_array = { usa_house_x_array = 189 }
+	add_to_array = { usa_house_y_array = 35 }
+	add_to_array = { usa_house_x_array = 190 }
+	add_to_array = { usa_house_y_array = 11 }
+	add_to_array = { usa_house_x_array = 196 }
+	add_to_array = { usa_house_y_array = 45 }
+	add_to_array = { usa_house_x_array = 202 }
+	add_to_array = { usa_house_y_array = 91 }
+	add_to_array = { usa_house_x_array = 208 }
+	add_to_array = { usa_house_y_array = 125 }
+	add_to_array = { usa_house_x_array = 196 }
+	add_to_array = { usa_house_y_array = 22 }
+	add_to_array = { usa_house_x_array = 202 }
+	add_to_array = { usa_house_y_array = 68 }
+	add_to_array = { usa_house_x_array = 202 }
+	add_to_array = { usa_house_y_array = 56 }
+	add_to_array = { usa_house_x_array = 209 }
+	add_to_array = { usa_house_y_array = 102 }
+	add_to_array = { usa_house_x_array = 202 }
+	add_to_array = { usa_house_y_array = 33 }
+	add_to_array = { usa_house_x_array = 202 }
+	add_to_array = { usa_house_y_array = 10 }
+	add_to_array = { usa_house_x_array = 209 }
+	add_to_array = { usa_house_y_array = 79 }
+	add_to_array = { usa_house_x_array = 208 }
+	add_to_array = { usa_house_y_array = 44 }
+	add_to_array = { usa_house_x_array = 209 }
+	add_to_array = { usa_house_y_array = 21 }
+	add_to_array = { usa_house_x_array = 215 }
+	add_to_array = { usa_house_y_array = 113 }
+	add_to_array = { usa_house_x_array = 215 }
+	add_to_array = { usa_house_y_array = 90 }
+	add_to_array = { usa_house_x_array = 215 }
+	add_to_array = { usa_house_y_array = 67 }
+	add_to_array = { usa_house_x_array = 215 }
+	add_to_array = { usa_house_y_array = 55 }
+	add_to_array = { usa_house_x_array = 215 }
+	add_to_array = { usa_house_y_array = 32 }
+	add_to_array = { usa_house_x_array = 215 }
+	add_to_array = { usa_house_y_array = 9 }
+	add_to_array = { usa_house_x_array = 221 }
+	add_to_array = { usa_house_y_array = 125 }
+	add_to_array = { usa_house_x_array = 221 }
+	add_to_array = { usa_house_y_array = 101 }
+	add_to_array = { usa_house_x_array = 221 }
+	add_to_array = { usa_house_y_array = 78 }
+	add_to_array = { usa_house_x_array = 221 }
+	add_to_array = { usa_house_y_array = 44 }
+	add_to_array = { usa_house_x_array = 221 }
+	add_to_array = { usa_house_y_array = 21 }
+	add_to_array = { usa_house_x_array = 228 }
+	add_to_array = { usa_house_y_array = 9 }
+	add_to_array = { usa_house_x_array = 228 }
+	add_to_array = { usa_house_y_array = 32 }
+	add_to_array = { usa_house_x_array = 228 }
+	add_to_array = { usa_house_y_array = 55 }
+	add_to_array = { usa_house_x_array = 228 }
+	add_to_array = { usa_house_y_array = 67 }
+	add_to_array = { usa_house_x_array = 228 }
+	add_to_array = { usa_house_y_array = 90 }
+	add_to_array = { usa_house_x_array = 228 }
+	add_to_array = { usa_house_y_array = 113 }
+	add_to_array = { usa_house_x_array = 234 }
+	add_to_array = { usa_house_y_array = 21 }
+	add_to_array = { usa_house_x_array = 234 }
+	add_to_array = { usa_house_y_array = 44 }
+	add_to_array = { usa_house_x_array = 234 }
+	add_to_array = { usa_house_y_array = 79 }
+	add_to_array = { usa_house_x_array = 240 }
+	add_to_array = { usa_house_y_array = 10 }
+	add_to_array = { usa_house_x_array = 241 }
+	add_to_array = { usa_house_y_array = 33 }
+	add_to_array = { usa_house_x_array = 234 }
+	add_to_array = { usa_house_y_array = 102 }
+	add_to_array = { usa_house_x_array = 241 }
+	add_to_array = { usa_house_y_array = 56 }
+	add_to_array = { usa_house_x_array = 240 }
+	add_to_array = { usa_house_y_array = 68 }
+	add_to_array = { usa_house_x_array = 247 }
+	add_to_array = { usa_house_y_array = 22 }
+	add_to_array = { usa_house_x_array = 234 }
+	add_to_array = { usa_house_y_array = 125 }
+	add_to_array = { usa_house_x_array = 240 }
+	add_to_array = { usa_house_y_array = 91 }
+	add_to_array = { usa_house_x_array = 247 }
+	add_to_array = { usa_house_y_array = 45 }
+	add_to_array = { usa_house_x_array = 253 }
+	add_to_array = { usa_house_y_array = 11 }
+	add_to_array = { usa_house_x_array = 253 }
+	add_to_array = { usa_house_y_array = 35 }
+	add_to_array = { usa_house_x_array = 241 }
+	add_to_array = { usa_house_y_array = 115 }
+	add_to_array = { usa_house_x_array = 247 }
+	add_to_array = { usa_house_y_array = 80 }
+	add_to_array = { usa_house_x_array = 260 }
+	add_to_array = { usa_house_y_array = 24 }
+	add_to_array = { usa_house_x_array = 254 }
+	add_to_array = { usa_house_y_array = 58 }
+	add_to_array = { usa_house_x_array = 253 }
+	add_to_array = { usa_house_y_array = 70 }
+	add_to_array = { usa_house_x_array = 247 }
+	add_to_array = { usa_house_y_array = 104 }
+	add_to_array = { usa_house_x_array = 266 }
+	add_to_array = { usa_house_y_array = 13 }
+	add_to_array = { usa_house_x_array = 260 }
+	add_to_array = { usa_house_y_array = 48 }
+	add_to_array = { usa_house_x_array = 266 }
+	add_to_array = { usa_house_y_array = 37 }
+	add_to_array = { usa_house_x_array = 253 }
+	add_to_array = { usa_house_y_array = 93 }
+	add_to_array = { usa_house_x_array = 272 }
+	add_to_array = { usa_house_y_array = 27 }
+	add_to_array = { usa_house_x_array = 247 }
+	add_to_array = { usa_house_y_array = 128 }
+	add_to_array = { usa_house_x_array = 259 }
+	add_to_array = { usa_house_y_array = 83 }
+	add_to_array = { usa_house_x_array = 266 }
+	add_to_array = { usa_house_y_array = 61 }
+	add_to_array = { usa_house_x_array = 278 }
+	add_to_array = { usa_house_y_array = 16 }
+	add_to_array = { usa_house_x_array = 265 }
+	add_to_array = { usa_house_y_array = 73 }
+	add_to_array = { usa_house_x_array = 253 }
+	add_to_array = { usa_house_y_array = 117 }
+	add_to_array = { usa_house_x_array = 272 }
+	add_to_array = { usa_house_y_array = 51 }
+	add_to_array = { usa_house_x_array = 278 }
+	add_to_array = { usa_house_y_array = 40 }
+	add_to_array = { usa_house_x_array = 259 }
+	add_to_array = { usa_house_y_array = 107 }
+	add_to_array = { usa_house_x_array = 284 }
+	add_to_array = { usa_house_y_array = 30 }
+	add_to_array = { usa_house_x_array = 290 }
+	add_to_array = { usa_house_y_array = 20 }
+	add_to_array = { usa_house_x_array = 265 }
+	add_to_array = { usa_house_y_array = 97 }
+	add_to_array = { usa_house_x_array = 279 }
+	add_to_array = { usa_house_y_array = 65 }
+	add_to_array = { usa_house_x_array = 271 }
+	add_to_array = { usa_house_y_array = 87 }
+	add_to_array = { usa_house_x_array = 285 }
+	add_to_array = { usa_house_y_array = 55 }
+	add_to_array = { usa_house_x_array = 277 }
+	add_to_array = { usa_house_y_array = 77 }
+	add_to_array = { usa_house_x_array = 290 }
+	add_to_array = { usa_house_y_array = 44 }
+	add_to_array = { usa_house_x_array = 296 }
+	add_to_array = { usa_house_y_array = 34 }
+	add_to_array = { usa_house_x_array = 260 }
+	add_to_array = { usa_house_y_array = 132 }
+	add_to_array = { usa_house_x_array = 302 }
+	add_to_array = { usa_house_y_array = 24 }
+	add_to_array = { usa_house_x_array = 265 }
+	add_to_array = { usa_house_y_array = 122 }
+	add_to_array = { usa_house_x_array = 271 }
+	add_to_array = { usa_house_y_array = 112 }
+	add_to_array = { usa_house_x_array = 291 }
+	add_to_array = { usa_house_y_array = 69 }
+	add_to_array = { usa_house_x_array = 277 }
+	add_to_array = { usa_house_y_array = 101 }
+	add_to_array = { usa_house_x_array = 296 }
+	add_to_array = { usa_house_y_array = 59 }
+	add_to_array = { usa_house_x_array = 283 }
+	add_to_array = { usa_house_y_array = 91 }
+	add_to_array = { usa_house_x_array = 302 }
+	add_to_array = { usa_house_y_array = 49 }
+	add_to_array = { usa_house_x_array = 289 }
+	add_to_array = { usa_house_y_array = 81 }
+	add_to_array = { usa_house_x_array = 308 }
+	add_to_array = { usa_house_y_array = 39 }
+	add_to_array = { usa_house_x_array = 314 }
+	add_to_array = { usa_house_y_array = 29 }
+	add_to_array = { usa_house_x_array = 302 }
+	add_to_array = { usa_house_y_array = 75 }
+	add_to_array = { usa_house_x_array = 308 }
+	add_to_array = { usa_house_y_array = 65 }
+	add_to_array = { usa_house_x_array = 314 }
+	add_to_array = { usa_house_y_array = 55 }
+	add_to_array = { usa_house_x_array = 320 }
+	add_to_array = { usa_house_y_array = 45 }
+	add_to_array = { usa_house_x_array = 325 }
+	add_to_array = { usa_house_y_array = 35 }
+	add_to_array = { usa_house_x_array = 271 }
+	add_to_array = { usa_house_y_array = 137 }
+	add_to_array = { usa_house_x_array = 277 }
+	add_to_array = { usa_house_y_array = 127 }
+	add_to_array = { usa_house_x_array = 283 }
+	add_to_array = { usa_house_y_array = 117 }
+	add_to_array = { usa_house_x_array = 289 }
+	add_to_array = { usa_house_y_array = 107 }
+	add_to_array = { usa_house_x_array = 295 }
+	add_to_array = { usa_house_y_array = 97 }
+	add_to_array = { usa_house_x_array = 300 }
+	add_to_array = { usa_house_y_array = 87 }
+	add_to_array = { usa_house_x_array = 337 }
+	add_to_array = { usa_house_y_array = 41 }
+	add_to_array = { usa_house_x_array = 331 }
+	add_to_array = { usa_house_y_array = 51 }
+	add_to_array = { usa_house_x_array = 325 }
+	add_to_array = { usa_house_y_array = 61 }
+	add_to_array = { usa_house_x_array = 319 }
+	add_to_array = { usa_house_y_array = 71 }
+	add_to_array = { usa_house_x_array = 314 }
+	add_to_array = { usa_house_y_array = 81 }
+	add_to_array = { usa_house_x_array = 311 }
+	add_to_array = { usa_house_y_array = 94 }
+	add_to_array = { usa_house_x_array = 305 }
+	add_to_array = { usa_house_y_array = 104 }
+	add_to_array = { usa_house_x_array = 300 }
+	add_to_array = { usa_house_y_array = 114 }
+	add_to_array = { usa_house_x_array = 294 }
+	add_to_array = { usa_house_y_array = 124 }
+	add_to_array = { usa_house_x_array = 347 }
+	add_to_array = { usa_house_y_array = 48 }
+	add_to_array = { usa_house_x_array = 288 }
+	add_to_array = { usa_house_y_array = 134 }
+	add_to_array = { usa_house_x_array = 342 }
+	add_to_array = { usa_house_y_array = 58 }
+	add_to_array = { usa_house_x_array = 336 }
+	add_to_array = { usa_house_y_array = 68 }
+	add_to_array = { usa_house_x_array = 282 }
+	add_to_array = { usa_house_y_array = 144 }
+	add_to_array = { usa_house_x_array = 330 }
+	add_to_array = { usa_house_y_array = 78 }
+	add_to_array = { usa_house_x_array = 324 }
+	add_to_array = { usa_house_y_array = 89 }
+	add_to_array = { usa_house_x_array = 321 }
+	add_to_array = { usa_house_y_array = 101 }
+	add_to_array = { usa_house_x_array = 358 }
+	add_to_array = { usa_house_y_array = 56 }
+	add_to_array = { usa_house_x_array = 316 }
+	add_to_array = { usa_house_y_array = 111 }
+	add_to_array = { usa_house_x_array = 352 }
+	add_to_array = { usa_house_y_array = 66 }
+	add_to_array = { usa_house_x_array = 346 }
+	add_to_array = { usa_house_y_array = 76 }
+	add_to_array = { usa_house_x_array = 310 }
+	add_to_array = { usa_house_y_array = 121 }
+	add_to_array = { usa_house_x_array = 340 }
+	add_to_array = { usa_house_y_array = 86 }
+	add_to_array = { usa_house_x_array = 304 }
+	add_to_array = { usa_house_y_array = 132 }
+	add_to_array = { usa_house_x_array = 334 }
+	add_to_array = { usa_house_y_array = 97 }
+	add_to_array = { usa_house_x_array = 298 }
+	add_to_array = { usa_house_y_array = 142 }
+	add_to_array = { usa_house_x_array = 367 }
+	add_to_array = { usa_house_y_array = 64 }
+	add_to_array = { usa_house_x_array = 362 }
+	add_to_array = { usa_house_y_array = 74 }
+	add_to_array = { usa_house_x_array = 331 }
+	add_to_array = { usa_house_y_array = 109 }
+	add_to_array = { usa_house_x_array = 293 }
+	add_to_array = { usa_house_y_array = 152 }
+	add_to_array = { usa_house_x_array = 356 }
+	add_to_array = { usa_house_y_array = 85 }
+	add_to_array = { usa_house_x_array = 325 }
+	add_to_array = { usa_house_y_array = 119 }
+	add_to_array = { usa_house_x_array = 350 }
+	add_to_array = { usa_house_y_array = 95 }
+	add_to_array = { usa_house_x_array = 319 }
+	add_to_array = { usa_house_y_array = 130 }
+	add_to_array = { usa_house_x_array = 344 }
+	add_to_array = { usa_house_y_array = 105 }
+	add_to_array = { usa_house_x_array = 377 }
+	add_to_array = { usa_house_y_array = 73 }
+	add_to_array = { usa_house_x_array = 371 }
+	add_to_array = { usa_house_y_array = 83 }
+	add_to_array = { usa_house_x_array = 314 }
+	add_to_array = { usa_house_y_array = 140 }
+	add_to_array = { usa_house_x_array = 365 }
+	add_to_array = { usa_house_y_array = 93 }
+	add_to_array = { usa_house_x_array = 340 }
+	add_to_array = { usa_house_y_array = 118 }
+	add_to_array = { usa_house_x_array = 308 }
+	add_to_array = { usa_house_y_array = 151 }
+	add_to_array = { usa_house_x_array = 359 }
+	add_to_array = { usa_house_y_array = 104 }
+	add_to_array = { usa_house_x_array = 386 }
+	add_to_array = { usa_house_y_array = 82 }
+	add_to_array = { usa_house_x_array = 334 }
+	add_to_array = { usa_house_y_array = 128 }
+	add_to_array = { usa_house_x_array = 353 }
+	add_to_array = { usa_house_y_array = 115 }
+	add_to_array = { usa_house_x_array = 380 }
+	add_to_array = { usa_house_y_array = 92 }
+	add_to_array = { usa_house_x_array = 302 }
+	add_to_array = { usa_house_y_array = 161 }
+	add_to_array = { usa_house_x_array = 328 }
+	add_to_array = { usa_house_y_array = 139 }
+	add_to_array = { usa_house_x_array = 373 }
+	add_to_array = { usa_house_y_array = 103 }
+	add_to_array = { usa_house_x_array = 349 }
+	add_to_array = { usa_house_y_array = 127 }
+	add_to_array = { usa_house_x_array = 394 }
+	add_to_array = { usa_house_y_array = 91 }
+	add_to_array = { usa_house_x_array = 322 }
+	add_to_array = { usa_house_y_array = 150 }
+	add_to_array = { usa_house_x_array = 367 }
+	add_to_array = { usa_house_y_array = 114 }
+	add_to_array = { usa_house_x_array = 388 }
+	add_to_array = { usa_house_y_array = 102 }
+	add_to_array = { usa_house_x_array = 342 }
+	add_to_array = { usa_house_y_array = 138 }
+	add_to_array = { usa_house_x_array = 361 }
+	add_to_array = { usa_house_y_array = 125 }
+	add_to_array = { usa_house_x_array = 316 }
+	add_to_array = { usa_house_y_array = 161 }
+	add_to_array = { usa_house_x_array = 381 }
+	add_to_array = { usa_house_y_array = 113 }
+	add_to_array = { usa_house_x_array = 402 }
+	add_to_array = { usa_house_y_array = 102 }
+	add_to_array = { usa_house_x_array = 336 }
+	add_to_array = { usa_house_y_array = 149 }
+	add_to_array = { usa_house_x_array = 375 }
+	add_to_array = { usa_house_y_array = 124 }
+	add_to_array = { usa_house_x_array = 356 }
+	add_to_array = { usa_house_y_array = 138 }
+	add_to_array = { usa_house_x_array = 395 }
+	add_to_array = { usa_house_y_array = 113 }
+	add_to_array = { usa_house_x_array = 310 }
+	add_to_array = { usa_house_y_array = 172 }
+	add_to_array = { usa_house_x_array = 330 }
+	add_to_array = { usa_house_y_array = 160 }
+	add_to_array = { usa_house_x_array = 369 }
+	add_to_array = { usa_house_y_array = 135 }
+	add_to_array = { usa_house_x_array = 389 }
+	add_to_array = { usa_house_y_array = 124 }
+	add_to_array = { usa_house_x_array = 350 }
+	add_to_array = { usa_house_y_array = 149 }
+	add_to_array = { usa_house_x_array = 409 }
+	add_to_array = { usa_house_y_array = 112 }
+	add_to_array = { usa_house_x_array = 382 }
+	add_to_array = { usa_house_y_array = 135 }
+	add_to_array = { usa_house_x_array = 402 }
+	add_to_array = { usa_house_y_array = 123 }
+	add_to_array = { usa_house_x_array = 363 }
+	add_to_array = { usa_house_y_array = 148 }
+	add_to_array = { usa_house_x_array = 343 }
+	add_to_array = { usa_house_y_array = 160 }
+	add_to_array = { usa_house_x_array = 323 }
+	add_to_array = { usa_house_y_array = 172 }
+	add_to_array = { usa_house_x_array = 415 }
+	add_to_array = { usa_house_y_array = 123 }
+	add_to_array = { usa_house_x_array = 395 }
+	add_to_array = { usa_house_y_array = 135 }
+	add_to_array = { usa_house_x_array = 375 }
+	add_to_array = { usa_house_y_array = 146 }
+	add_to_array = { usa_house_x_array = 356 }
+	add_to_array = { usa_house_y_array = 160 }
+	add_to_array = { usa_house_x_array = 336 }
+	add_to_array = { usa_house_y_array = 171 }
+	add_to_array = { usa_house_x_array = 408 }
+	add_to_array = { usa_house_y_array = 135 }
+	add_to_array = { usa_house_x_array = 388 }
+	add_to_array = { usa_house_y_array = 146 }
+	add_to_array = { usa_house_x_array = 316 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 369 }
+	add_to_array = { usa_house_y_array = 160 }
+	add_to_array = { usa_house_x_array = 421 }
+	add_to_array = { usa_house_y_array = 135 }
+	add_to_array = { usa_house_x_array = 401 }
+	add_to_array = { usa_house_y_array = 146 }
+	add_to_array = { usa_house_x_array = 349 }
+	add_to_array = { usa_house_y_array = 171 }
+	add_to_array = { usa_house_x_array = 381 }
+	add_to_array = { usa_house_y_array = 158 }
+	add_to_array = { usa_house_x_array = 329 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 414 }
+	add_to_array = { usa_house_y_array = 146 }
+	add_to_array = { usa_house_x_array = 362 }
+	add_to_array = { usa_house_y_array = 171 }
+	add_to_array = { usa_house_x_array = 394 }
+	add_to_array = { usa_house_y_array = 158 }
+	add_to_array = { usa_house_x_array = 426 }
+	add_to_array = { usa_house_y_array = 146 }
+	add_to_array = { usa_house_x_array = 341 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 406 }
+	add_to_array = { usa_house_y_array = 158 }
+	add_to_array = { usa_house_x_array = 374 }
+	add_to_array = { usa_house_y_array = 171 }
+	add_to_array = { usa_house_x_array = 386 }
+	add_to_array = { usa_house_y_array = 170 }
+	add_to_array = { usa_house_x_array = 418 }
+	add_to_array = { usa_house_y_array = 158 }
+	add_to_array = { usa_house_x_array = 354 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 321 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 431 }
+	add_to_array = { usa_house_y_array = 158 }
+	add_to_array = { usa_house_x_array = 398 }
+	add_to_array = { usa_house_y_array = 170 }
+	add_to_array = { usa_house_x_array = 366 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 410 }
+	add_to_array = { usa_house_y_array = 170 }
+	add_to_array = { usa_house_x_array = 333 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 378 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 422 }
+	add_to_array = { usa_house_y_array = 170 }
+	add_to_array = { usa_house_x_array = 390 }
+	add_to_array = { usa_house_y_array = 182 }
+	add_to_array = { usa_house_x_array = 345 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 435 }
+	add_to_array = { usa_house_y_array = 170 }
+	add_to_array = { usa_house_x_array = 402 }
+	add_to_array = { usa_house_y_array = 182 }
+	add_to_array = { usa_house_x_array = 357 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 414 }
+	add_to_array = { usa_house_y_array = 182 }
+	add_to_array = { usa_house_x_array = 369 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 426 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 438 }
+	add_to_array = { usa_house_y_array = 183 }
+	add_to_array = { usa_house_x_array = 325 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 381 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 393 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 337 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 405 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 417 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 348 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 428 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 360 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 440 }
+	add_to_array = { usa_house_y_array = 195 }
+	add_to_array = { usa_house_x_array = 372 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 384 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 395 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 407 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 418 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 430 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 442 }
+	add_to_array = { usa_house_y_array = 208 }
+	add_to_array = { usa_house_x_array = 327 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 338 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 350 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 362 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 373 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 385 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 396 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 408 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 420 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 431 }
+	add_to_array = { usa_house_y_array = 221 }
+	add_to_array = { usa_house_x_array = 443 }
+	add_to_array = { usa_house_y_array = 221 }
+}
+
+# --------------------------------------------------------------
+#  100 entries for the Senate, same generator settings.
+# --------------------------------------------------------------
+USA_senate_positions = {
+	clear_array = usa_senate_x_array
+	clear_array = usa_senate_y_array
+
+	add_to_array = { usa_senate_x_array = 0 }
+	add_to_array = { usa_senate_y_array = 135 }
+	add_to_array = { usa_senate_x_array = 14 }
+	add_to_array = { usa_senate_y_array = 135 }
+	add_to_array = { usa_senate_x_array = 28 }
+	add_to_array = { usa_senate_y_array = 135 }
+	add_to_array = { usa_senate_x_array = 41 }
+	add_to_array = { usa_senate_y_array = 135 }
+	add_to_array = { usa_senate_x_array = 55 }
+	add_to_array = { usa_senate_y_array = 135 }
+	add_to_array = { usa_senate_x_array = 69 }
+	add_to_array = { usa_senate_y_array = 135 }
+	add_to_array = { usa_senate_x_array = 3 }
+	add_to_array = { usa_senate_y_array = 116 }
+	add_to_array = { usa_senate_x_array = 17 }
+	add_to_array = { usa_senate_y_array = 116 }
+	add_to_array = { usa_senate_x_array = 31 }
+	add_to_array = { usa_senate_y_array = 116 }
+	add_to_array = { usa_senate_x_array = 46 }
+	add_to_array = { usa_senate_y_array = 115 }
+	add_to_array = { usa_senate_x_array = 8 }
+	add_to_array = { usa_senate_y_array = 99 }
+	add_to_array = { usa_senate_x_array = 60 }
+	add_to_array = { usa_senate_y_array = 116 }
+	add_to_array = { usa_senate_x_array = 23 }
+	add_to_array = { usa_senate_y_array = 98 }
+	add_to_array = { usa_senate_x_array = 75 }
+	add_to_array = { usa_senate_y_array = 117 }
+	add_to_array = { usa_senate_x_array = 37 }
+	add_to_array = { usa_senate_y_array = 99 }
+	add_to_array = { usa_senate_x_array = 15 }
+	add_to_array = { usa_senate_y_array = 82 }
+	add_to_array = { usa_senate_x_array = 54 }
+	add_to_array = { usa_senate_y_array = 97 }
+	add_to_array = { usa_senate_x_array = 31 }
+	add_to_array = { usa_senate_y_array = 81 }
+	add_to_array = { usa_senate_x_array = 69 }
+	add_to_array = { usa_senate_y_array = 99 }
+	add_to_array = { usa_senate_x_array = 47 }
+	add_to_array = { usa_senate_y_array = 82 }
+	add_to_array = { usa_senate_x_array = 25 }
+	add_to_array = { usa_senate_y_array = 66 }
+	add_to_array = { usa_senate_x_array = 43 }
+	add_to_array = { usa_senate_y_array = 65 }
+	add_to_array = { usa_senate_x_array = 85 }
+	add_to_array = { usa_senate_y_array = 101 }
+	add_to_array = { usa_senate_x_array = 65 }
+	add_to_array = { usa_senate_y_array = 82 }
+	add_to_array = { usa_senate_x_array = 36 }
+	add_to_array = { usa_senate_y_array = 52 }
+	add_to_array = { usa_senate_x_array = 59 }
+	add_to_array = { usa_senate_y_array = 68 }
+	add_to_array = { usa_senate_x_array = 82 }
+	add_to_array = { usa_senate_y_array = 84 }
+	add_to_array = { usa_senate_x_array = 56 }
+	add_to_array = { usa_senate_y_array = 52 }
+	add_to_array = { usa_senate_x_array = 50 }
+	add_to_array = { usa_senate_y_array = 39 }
+	add_to_array = { usa_senate_x_array = 80 }
+	add_to_array = { usa_senate_y_array = 68 }
+	add_to_array = { usa_senate_x_array = 73 }
+	add_to_array = { usa_senate_y_array = 56 }
+	add_to_array = { usa_senate_x_array = 99 }
+	add_to_array = { usa_senate_y_array = 88 }
+	add_to_array = { usa_senate_x_array = 72 }
+	add_to_array = { usa_senate_y_array = 41 }
+	add_to_array = { usa_senate_x_array = 65 }
+	add_to_array = { usa_senate_y_array = 29 }
+	add_to_array = { usa_senate_x_array = 98 }
+	add_to_array = { usa_senate_y_array = 73 }
+	add_to_array = { usa_senate_x_array = 90 }
+	add_to_array = { usa_senate_y_array = 47 }
+	add_to_array = { usa_senate_x_array = 97 }
+	add_to_array = { usa_senate_y_array = 58 }
+	add_to_array = { usa_senate_x_array = 81 }
+	add_to_array = { usa_senate_y_array = 20 }
+	add_to_array = { usa_senate_x_array = 89 }
+	add_to_array = { usa_senate_y_array = 32 }
+	add_to_array = { usa_senate_x_array = 116 }
+	add_to_array = { usa_senate_y_array = 81 }
+	add_to_array = { usa_senate_x_array = 99 }
+	add_to_array = { usa_senate_y_array = 14 }
+	add_to_array = { usa_senate_x_array = 107 }
+	add_to_array = { usa_senate_y_array = 40 }
+	add_to_array = { usa_senate_x_array = 116 }
+	add_to_array = { usa_senate_y_array = 66 }
+	add_to_array = { usa_senate_x_array = 107 }
+	add_to_array = { usa_senate_y_array = 26 }
+	add_to_array = { usa_senate_x_array = 116 }
+	add_to_array = { usa_senate_y_array = 52 }
+	add_to_array = { usa_senate_x_array = 117 }
+	add_to_array = { usa_senate_y_array = 10 }
+	add_to_array = { usa_senate_x_array = 126 }
+	add_to_array = { usa_senate_y_array = 37 }
+	add_to_array = { usa_senate_x_array = 126 }
+	add_to_array = { usa_senate_y_array = 23 }
+	add_to_array = { usa_senate_x_array = 135 }
+	add_to_array = { usa_senate_y_array = 78 }
+	add_to_array = { usa_senate_x_array = 135 }
+	add_to_array = { usa_senate_y_array = 64 }
+	add_to_array = { usa_senate_x_array = 135 }
+	add_to_array = { usa_senate_y_array = 50 }
+	add_to_array = { usa_senate_x_array = 135 }
+	add_to_array = { usa_senate_y_array = 9 }
+	add_to_array = { usa_senate_x_array = 145 }
+	add_to_array = { usa_senate_y_array = 23 }
+	add_to_array = { usa_senate_x_array = 145 }
+	add_to_array = { usa_senate_y_array = 37 }
+	add_to_array = { usa_senate_x_array = 154 }
+	add_to_array = { usa_senate_y_array = 10 }
+	add_to_array = { usa_senate_x_array = 155 }
+	add_to_array = { usa_senate_y_array = 52 }
+	add_to_array = { usa_senate_x_array = 164 }
+	add_to_array = { usa_senate_y_array = 26 }
+	add_to_array = { usa_senate_x_array = 155 }
+	add_to_array = { usa_senate_y_array = 66 }
+	add_to_array = { usa_senate_x_array = 163 }
+	add_to_array = { usa_senate_y_array = 40 }
+	add_to_array = { usa_senate_x_array = 172 }
+	add_to_array = { usa_senate_y_array = 14 }
+	add_to_array = { usa_senate_x_array = 154 }
+	add_to_array = { usa_senate_y_array = 81 }
+	add_to_array = { usa_senate_x_array = 182 }
+	add_to_array = { usa_senate_y_array = 32 }
+	add_to_array = { usa_senate_x_array = 189 }
+	add_to_array = { usa_senate_y_array = 20 }
+	add_to_array = { usa_senate_x_array = 174 }
+	add_to_array = { usa_senate_y_array = 58 }
+	add_to_array = { usa_senate_x_array = 181 }
+	add_to_array = { usa_senate_y_array = 47 }
+	add_to_array = { usa_senate_x_array = 173 }
+	add_to_array = { usa_senate_y_array = 73 }
+	add_to_array = { usa_senate_x_array = 205 }
+	add_to_array = { usa_senate_y_array = 29 }
+	add_to_array = { usa_senate_x_array = 199 }
+	add_to_array = { usa_senate_y_array = 41 }
+	add_to_array = { usa_senate_x_array = 171 }
+	add_to_array = { usa_senate_y_array = 88 }
+	add_to_array = { usa_senate_x_array = 197 }
+	add_to_array = { usa_senate_y_array = 56 }
+	add_to_array = { usa_senate_x_array = 191 }
+	add_to_array = { usa_senate_y_array = 68 }
+	add_to_array = { usa_senate_x_array = 221 }
+	add_to_array = { usa_senate_y_array = 39 }
+	add_to_array = { usa_senate_x_array = 214 }
+	add_to_array = { usa_senate_y_array = 52 }
+	add_to_array = { usa_senate_x_array = 189 }
+	add_to_array = { usa_senate_y_array = 84 }
+	add_to_array = { usa_senate_x_array = 212 }
+	add_to_array = { usa_senate_y_array = 68 }
+	add_to_array = { usa_senate_x_array = 234 }
+	add_to_array = { usa_senate_y_array = 52 }
+	add_to_array = { usa_senate_x_array = 205 }
+	add_to_array = { usa_senate_y_array = 82 }
+	add_to_array = { usa_senate_x_array = 186 }
+	add_to_array = { usa_senate_y_array = 101 }
+	add_to_array = { usa_senate_x_array = 228 }
+	add_to_array = { usa_senate_y_array = 65 }
+	add_to_array = { usa_senate_x_array = 246 }
+	add_to_array = { usa_senate_y_array = 66 }
+	add_to_array = { usa_senate_x_array = 224 }
+	add_to_array = { usa_senate_y_array = 82 }
+	add_to_array = { usa_senate_x_array = 202 }
+	add_to_array = { usa_senate_y_array = 99 }
+	add_to_array = { usa_senate_x_array = 239 }
+	add_to_array = { usa_senate_y_array = 81 }
+	add_to_array = { usa_senate_x_array = 217 }
+	add_to_array = { usa_senate_y_array = 97 }
+	add_to_array = { usa_senate_x_array = 255 }
+	add_to_array = { usa_senate_y_array = 82 }
+	add_to_array = { usa_senate_x_array = 233 }
+	add_to_array = { usa_senate_y_array = 99 }
+	add_to_array = { usa_senate_x_array = 196 }
+	add_to_array = { usa_senate_y_array = 117 }
+	add_to_array = { usa_senate_x_array = 248 }
+	add_to_array = { usa_senate_y_array = 98 }
+	add_to_array = { usa_senate_x_array = 211 }
+	add_to_array = { usa_senate_y_array = 116 }
+	add_to_array = { usa_senate_x_array = 263 }
+	add_to_array = { usa_senate_y_array = 99 }
+	add_to_array = { usa_senate_x_array = 225 }
+	add_to_array = { usa_senate_y_array = 115 }
+	add_to_array = { usa_senate_x_array = 240 }
+	add_to_array = { usa_senate_y_array = 116 }
+	add_to_array = { usa_senate_x_array = 254 }
+	add_to_array = { usa_senate_y_array = 116 }
+	add_to_array = { usa_senate_x_array = 268 }
+	add_to_array = { usa_senate_y_array = 116 }
+	add_to_array = { usa_senate_x_array = 201 }
+	add_to_array = { usa_senate_y_array = 135 }
+	add_to_array = { usa_senate_x_array = 215 }
+	add_to_array = { usa_senate_y_array = 135 }
+	add_to_array = { usa_senate_x_array = 229 }
+	add_to_array = { usa_senate_y_array = 135 }
+	add_to_array = { usa_senate_x_array = 243 }
+	add_to_array = { usa_senate_y_array = 135 }
+	add_to_array = { usa_senate_x_array = 257 }
+	add_to_array = { usa_senate_y_array = 135 }
+	add_to_array = { usa_senate_x_array = 271 }
+	add_to_array = { usa_senate_y_array = 135 }
+}

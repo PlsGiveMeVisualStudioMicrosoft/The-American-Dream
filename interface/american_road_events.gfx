@@ -54,4 +54,74 @@ spriteTypes = {
 		name = "GFX_news_event_new_project_3_"
 		texturefile = "gfx/event_pictures/new_project_3_.dds"
 	}
+
+	spriteType = {
+		name = "GFX_report_event_untitledirantrump"
+		texturefile = "gfx/event_pictures/untitledirantrump.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_usacolumbia_1_"
+		texturefile = "gfx/event_pictures/usacolumbia_1_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_truptarrif"
+		texturefile = "gfx/event_pictures/truptarrif.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_usaid"
+		texturefile = "gfx/event_pictures/usaid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_tarrifproblem"
+		texturefile = "gfx/event_pictures/tarrifproblem.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_newg4_project"
+		texturefile = "gfx/event_pictures/newg4_project.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_libday"
+		texturefile = "gfx/event_pictures/libday.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_nvmnotarrif"
+		texturefile = "gfx/event_pictures/nvmnotarrif.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_dealusabritan"
+		texturefile = "gfx/event_pictures/dealusabritan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_bigbill"
+		texturefile = "gfx/event_pictures/bigbill.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_icecali"
+		texturefile = "gfx/event_pictures/icecali.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_nokingproject"
+		texturefile = "gfx/event_pictures/nokingproject.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_roar"
+		texturefile = "gfx/event_pictures/roar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_goofyahh"
+		texturefile = "gfx/event_pictures/goofyahh.dds"
+	}
 }

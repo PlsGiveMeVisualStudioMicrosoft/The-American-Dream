@@ -1,0 +1,198 @@
+# ==============================================================
+#  USA CHAOS SYSTEM - MACHINERY
+#
+#  You should not need to edit this file. All numbers live in
+#  USA_chaos_00_tuning.txt.
+#
+#  HOW IT WORKS
+#    civil_war is the DISPLAY variable (the "Chaos" bar). The real
+#    value is kept at full precision in usa_chaos_real, exactly
+#    like usa_apr_real drives aproval_rate.
+#
+#    Two rails, same as approval:
+#      DAILY   if chaos is outside the band, it walks back toward
+#              the edge at usa_chaos_bleed_per_day and stops dead
+#              at the edge. No event fires - this is the silent
+#              corridor.
+#      MONTHLY the target moves to the next value on the chaos
+#              curve, and IF chaos is already inside the band the
+#              usa_chaos_pull decay applies on top.
+#
+#    Your events keep using USA_chaos_add (defined in the approval
+#    machinery). A +20 spike now lands in full and then bleeds
+#    back to the curve over the following weeks, instead of
+#    sticking forever - which is what stops chaos hitting 100
+#    halfway through the game.
+#
+#  ARMING
+#    The leash lazy-arms itself the first time a tick runs while
+#    the approval system is on, so you do NOT have to touch the
+#    inauguration on_action. (If you prefer an explicit arm, call
+#    USA = { USA_chaos_arm = yes } right after USA_apr_arm_system.)
+#
+#  PUBLIC EFFECTS
+#    USA_chaos_arm       load tuning + curve, seed the clock.
+#    USA_chaos_add       (lives in the approval machinery) push
+#                        chaos up or down; set temp chaos_delta.
+#    USA_apr_shutdown    (approval machinery) stops BOTH ticks.
+#                        Call it from the 2028 collapse event; the
+#                        collapse event should also pin chaos to
+#                        100 first (see the note at the bottom).
+# ==============================================================
+
+
+# --------------------------------------------------------------
+#  ARM
+#  Lazy-called from the first tick, or explicitly on inauguration.
+# --------------------------------------------------------------
+USA_chaos_arm = {
+
+	USA_chaos_load_tuning = yes
+	USA_chaos_load_curve = yes
+
+	set_variable = { usa_chaos_month = 0 }
+	set_variable = { usa_chaos_target = usa_chaos_start }
+
+	# usa_chaos_real is seeded by USA_apr_arm_system on inauguration
+	# day. If the leash ever arms before that, seed it here too so
+	# we never start from a stale 0.
+	if = {
+		limit = { NOT = { check_variable = { var = usa_chaos_real value = 0 compare = greater_than } } }
+		set_variable = { usa_chaos_real = usa_chaos_start }
+	}
+
+	set_country_flag = usa_chaos_armed
+	USA_chaos_refresh = yes
+
+	log = "[GetDateText]: USA chaos leash armed"
+}
+
+
+# --------------------------------------------------------------
+#  REFRESH
+#  Pushes the high-precision value onto the bar and re-runs the
+#  chaos-driven modifiers.
+# --------------------------------------------------------------
+USA_chaos_refresh = {
+	clamp_variable = { var = usa_chaos_real min = 0 max = 100 }
+	set_variable = { civil_war = usa_chaos_real }
+	round_variable = civil_war
+	USA_apr_recalc_modifiers = yes
+}
+
+
+# --------------------------------------------------------------
+#  DAILY CORRECTION
+#  Driven from on_daily_USA. Does nothing while chaos sits inside
+#  the band. Silent - fires no events.
+# --------------------------------------------------------------
+USA_chaos_daily_correction = {
+
+	# lazy-arm on the first tick
+	if = {
+		limit = { NOT = { has_country_flag = usa_chaos_armed } }
+		USA_chaos_arm = yes
+	}
+
+	# how far from trend, signed. Positive = above.
+	set_temp_variable = { chaos_dev = usa_chaos_real }
+	subtract_from_temp_variable = { chaos_dev = usa_chaos_target }
+
+	# the two edges of the corridor
+	set_temp_variable = { chaos_edge_hi = usa_chaos_target }
+	add_to_temp_variable = { chaos_edge_hi = usa_chaos_band }
+	set_temp_variable = { chaos_edge_lo = usa_chaos_target }
+	subtract_from_temp_variable = { chaos_edge_lo = usa_chaos_band }
+
+	set_temp_variable = { chaos_band_neg = usa_chaos_band }
+	multiply_temp_variable = { chaos_band_neg = -1 }
+
+	# ---------- ABOVE the band ---------- (bleed down to the edge)
+	if = {
+		limit = { check_variable = { var = chaos_dev value = usa_chaos_band compare = greater_than } }
+
+		subtract_from_variable = { usa_chaos_real = usa_chaos_bleed_per_day }
+
+		if = {
+			limit = { check_variable = { var = usa_chaos_real value = chaos_edge_hi compare = less_than } }
+			set_variable = { usa_chaos_real = chaos_edge_hi }
+		}
+
+		USA_chaos_refresh = yes
+	}
+
+	# ---------- BELOW the band ---------- (bleed up to the edge)
+	if = {
+		limit = { check_variable = { var = chaos_dev value = chaos_band_neg compare = less_than } }
+
+		add_to_variable = { usa_chaos_real = usa_chaos_bleed_per_day }
+
+		if = {
+			limit = { check_variable = { var = usa_chaos_real value = chaos_edge_lo compare = greater_than } }
+			set_variable = { usa_chaos_real = chaos_edge_lo }
+		}
+
+		USA_chaos_refresh = yes
+	}
+}
+
+
+# --------------------------------------------------------------
+#  MONTHLY TICK
+#  Driven from on_monthly_USA. Advances the curve, then pulls
+#  chaos toward the new target while it is inside the band.
+# --------------------------------------------------------------
+USA_chaos_monthly_tick = {
+
+	if = {
+		limit = { NOT = { has_country_flag = usa_chaos_armed } }
+		USA_chaos_arm = yes
+	}
+
+	# 1. advance the clock. The clamp freezes the curve at its last
+	#    entry - raise 47 if you extend the curve past 2028.
+	add_to_variable = { usa_chaos_month = 1 }
+	clamp_variable = { var = usa_chaos_month min = 0 max = 47 }
+
+	# 2. read this month's target off the curve
+	set_variable = { usa_chaos_target = usa_chaos_target_array^usa_chaos_month }
+
+	# 3. distance from the new target, unsigned
+	set_temp_variable = { chaos_dev = usa_chaos_real }
+	subtract_from_temp_variable = { chaos_dev = usa_chaos_target }
+	set_temp_variable = { chaos_dev_abs = chaos_dev }
+	if = {
+		limit = { check_variable = { var = chaos_dev value = 0 compare = less_than } }
+		multiply_temp_variable = { chaos_dev_abs = -1 }
+	}
+
+	# 4. PULL, inside the band only. Outside it the daily bleed is
+	#    already handling the correction.
+	if = {
+		limit = { check_variable = { var = chaos_dev_abs value = usa_chaos_band compare = less_than_or_equals } }
+		set_temp_variable = { chaos_gap = usa_chaos_target }
+		subtract_from_temp_variable = { chaos_gap = usa_chaos_real }
+		multiply_temp_variable = { chaos_gap = usa_chaos_pull }
+		add_to_variable = { usa_chaos_real = chaos_gap }
+	}
+
+	USA_chaos_refresh = yes
+}
+
+
+# --------------------------------------------------------------
+#  COLLAPSE HELPER (optional convenience)
+#
+#  Call this from the 2028 collapse event to pin chaos to 100 and
+#  stop both systems in one line:
+#
+#      USA = { USA_chaos_collapse = yes }
+#
+#  It sets chaos to the ceiling, refreshes the bar, then calls the
+#  approval machinery's shutdown, which freezes both bars.
+# --------------------------------------------------------------
+USA_chaos_collapse = {
+	set_variable = { usa_chaos_real = 100 }
+	USA_chaos_refresh = yes
+	USA_apr_shutdown = yes
+}

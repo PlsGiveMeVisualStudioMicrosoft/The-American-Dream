@@ -1,0 +1,135 @@
+# ==============================================================
+#  USA CHAOS SYSTEM - TUNING
+#
+#  Chaos now runs on the SAME kind of leash as approval. It
+#  follows a 48-month target curve inside a band; push it out of
+#  the band with an event or decision and it bleeds back to the
+#  edge, so a spike is temporary instead of permanent.
+#
+#  THIS IS THE ONLY CHAOS FILE YOU NEED TO EDIT.
+#  Everything else is machinery and can be left alone.
+#
+#  Two things live here:
+#     1. USA_chaos_load_tuning - the knobs
+#     2. USA_chaos_load_curve   - the 48 monthly target numbers
+#
+#  Both are re-read every time the leash is armed.
+#
+#  ONE-TIME SWITCH IN THE APPROVAL TUNING FILE:
+#     In USA_approval_00_tuning.txt set
+#         usa_chaos_creep_cap = 0
+#     to retire the old upward "creep". The curve below replaces
+#     it. (Leaving creep on just adds a tiny bias on top; 0 is
+#     cleanest.)
+# ==============================================================
+
+
+USA_chaos_load_tuning = {
+
+	# ---- THE LEASH ------------------------------------------
+	# usa_chaos_band  the corridor. Chaos is free to sit anywhere
+	#                 within this many points of the month's
+	#                 target. Outside it, the daily bleed walks it
+	#                 back. Lower = tighter rails.
+	#
+	# usa_chaos_pull  monthly decay INSIDE the band only. 0.5 =
+	#                 half the remaining gap to target per month.
+	#                 Skipped while outside the band, because the
+	#                 bleed already owns the correction there.
+	#
+	# usa_chaos_bleed_per_day
+	#                 how fast chaos walks back to the edge of the
+	#                 band, per day, in real points. 0.5 reads on
+	#                 the bar as -1 every two days. Raise for a
+	#                 harder correction after a spike, lower for a
+	#                 softer one.
+
+	set_variable = { usa_chaos_band = 8 }
+	set_variable = { usa_chaos_pull = 0.5 }
+	set_variable = { usa_chaos_bleed_per_day = 0.5 }
+
+	# ---- NO OVERSHOOT EVENTS --------------------------------
+	# Unlike approval, chaos is a SILENT corridor: it bleeds back
+	# with no "why did that happen" pop-up. The only chaos-flavour
+	# news comes from the scheduled news events in the event file.
+	# (If you ever want overshoot events, copy the high/low bag
+	#  machinery from the approval system and add the two knobs
+	#  usa_chaos_event_at / usa_chaos_evt_cooldown here.)
+}
+
+
+# ==============================================================
+#  THE CHAOS CURVE
+#
+#  48 numbers, one per month, January 2025 through December 2028.
+#  Index 0 is January 2025.
+#
+#  Terraced against the story: near-flat through 2025, a first
+#  step up around the stolen midterms, a big jump through the
+#  Iran war and hyperinflation in 2027, then a ramp to 100 that
+#  is only reached in the final month, right before the collapse.
+#
+#  chaos_start is set in the approval tuning file (currently 4);
+#  index 0 below should match it.
+# ==============================================================
+
+USA_chaos_load_curve = {
+
+	clear_array = usa_chaos_target_array
+
+	# ---- 2025 - the quiet before ----------------------------
+	add_to_array = { array = usa_chaos_target_array value = 4 }	# Jan  inauguration
+	add_to_array = { array = usa_chaos_target_array value = 6 }	# Feb  tariff war opens
+	add_to_array = { array = usa_chaos_target_array value = 8 }	# Mar
+	add_to_array = { array = usa_chaos_target_array value = 10 }	# Apr  Liberation Day
+	add_to_array = { array = usa_chaos_target_array value = 10 }	# May
+	add_to_array = { array = usa_chaos_target_array value = 12 }	# Jun  LA riots, June War
+	add_to_array = { array = usa_chaos_target_array value = 11 }	# Jul  ceasefire
+	add_to_array = { array = usa_chaos_target_array value = 12 }	# Aug
+	add_to_array = { array = usa_chaos_target_array value = 12 }	# Sep
+	add_to_array = { array = usa_chaos_target_array value = 12 }	# Oct
+	add_to_array = { array = usa_chaos_target_array value = 13 }	# Nov
+	add_to_array = { array = usa_chaos_target_array value = 13 }	# Dec
+
+	# ---- 2026 - the pivot -----------------------------------
+	add_to_array = { array = usa_chaos_target_array value = 14 }	# Jan
+	add_to_array = { array = usa_chaos_target_array value = 14 }	# Feb
+	add_to_array = { array = usa_chaos_target_array value = 15 }	# Mar
+	add_to_array = { array = usa_chaos_target_array value = 15 }	# Apr
+	add_to_array = { array = usa_chaos_target_array value = 16 }	# May
+	add_to_array = { array = usa_chaos_target_array value = 18 }	# Jun  grocery/gas crisis
+	add_to_array = { array = usa_chaos_target_array value = 18 }	# Jul
+	add_to_array = { array = usa_chaos_target_array value = 20 }	# Aug  integrity pivot
+	add_to_array = { array = usa_chaos_target_array value = 24 }	# Sep  question the count
+	add_to_array = { array = usa_chaos_target_array value = 30 }	# Oct  secure the vote / Iran round 2
+	add_to_array = { array = usa_chaos_target_array value = 40 }	# Nov  STOLEN MIDTERMS
+	add_to_array = { array = usa_chaos_target_array value = 42 }	# Dec  govern by decree
+
+	# ---- 2027 - the catastrophe -----------------------------
+	add_to_array = { array = usa_chaos_target_array value = 45 }	# Jan  Hormuz / oil shock
+	add_to_array = { array = usa_chaos_target_array value = 47 }	# Feb
+	add_to_array = { array = usa_chaos_target_array value = 54 }	# Mar  Zagros meat grinder
+	add_to_array = { array = usa_chaos_target_array value = 56 }	# Apr
+	add_to_array = { array = usa_chaos_target_array value = 66 }	# May  THE ROUT
+	add_to_array = { array = usa_chaos_target_array value = 70 }	# Jun  hyperinflation
+	add_to_array = { array = usa_chaos_target_array value = 72 }	# Jul
+	add_to_array = { array = usa_chaos_target_array value = 74 }	# Aug  reinterpret the 22nd
+	add_to_array = { array = usa_chaos_target_array value = 75 }	# Sep
+	add_to_array = { array = usa_chaos_target_array value = 77 }	# Oct
+	add_to_array = { array = usa_chaos_target_array value = 78 }	# Nov
+	add_to_array = { array = usa_chaos_target_array value = 80 }	# Dec
+
+	# ---- 2028 - the ramp to collapse ------------------------
+	add_to_array = { array = usa_chaos_target_array value = 82 }	# Jan
+	add_to_array = { array = usa_chaos_target_array value = 84 }	# Feb
+	add_to_array = { array = usa_chaos_target_array value = 85 }	# Mar
+	add_to_array = { array = usa_chaos_target_array value = 86 }	# Apr  declare candidacy
+	add_to_array = { array = usa_chaos_target_array value = 87 }	# May  Newsom nominated
+	add_to_array = { array = usa_chaos_target_array value = 89 }	# Jun  suppress the vote
+	add_to_array = { array = usa_chaos_target_array value = 90 }	# Jul
+	add_to_array = { array = usa_chaos_target_array value = 92 }	# Aug
+	add_to_array = { array = usa_chaos_target_array value = 94 }	# Sep
+	add_to_array = { array = usa_chaos_target_array value = 96 }	# Oct  steal the election
+	add_to_array = { array = usa_chaos_target_array value = 98 }	# Nov  election day
+	add_to_array = { array = usa_chaos_target_array value = 100 }	# Dec  THIRD TERM - COLLAPSE
+}

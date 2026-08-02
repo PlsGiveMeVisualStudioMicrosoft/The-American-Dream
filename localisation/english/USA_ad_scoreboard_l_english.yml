@@ -1,0 +1,29 @@
+﻿l_english:
+
+ # ---- Washington Scoreboard (numeric readout) ----
+ usa_ad_scoreboard_cat:0 "Washington Scoreboard"
+ ad_score_house:0 "House — GOP [?usa_house_gop|0]  ·  Dem [?usa_house_dem|0]"
+ ad_score_house_desc:0 "The 435-seat House.\nGOP [?usa_house_gop|0]  /  Dem [?usa_house_dem|0]\nThe GOP holds the House while GOP > Dem."
+ ad_score_senate:0 "Senate — GOP [?usa_senate_gop|0]  ·  Dem [?usa_senate_dem|0]"
+ ad_score_senate_desc:0 "The 100-seat Senate.\nGOP [?usa_senate_gop|0]  /  Dem [?usa_senate_dem|0]"
+ ad_score_tribes:0 "Tribes — MAGA House [?usa_house_maga|0]  Senate [?usa_senate_maga|0]"
+ ad_score_tribes_desc:0 "\nMAGA: House [?usa_house_maga|0] / Senate [?usa_senate_maga|0]\nPro-war: House [?usa_house_prowar|0] / Senate [?usa_senate_prowar|0]\nEstablishment: House [?usa_house_estab|0] / Senate [?usa_senate_estab|0]"
+ ad_score_mood:0 "Legitimacy [?usa_legitimacy|0]  ·  Approval [?aproval_rate]  ·  Chaos [?civil_war]"
+ ad_score_mood_desc:0 "Legitimacy [?usa_legitimacy|0]/100\nApproval [?aproval_rate]%\nChaos [?civil_war]"
+
+ # ---- Other American-Dream decision categories (names only;
+ #      each stays hidden until its own flag is raised) ----
+ usa_ad_iran_cat:0 "Iran War"
+ usa_ad_midterm_cat:0 "Midterm Elections"
+ usa_ad_steal_cat:0 "Contest the Count"
+
+ # ---- Congress window ----
+ usa_congress_window_title:0 "United States Congress"
+ usa_congress_open_button_label:0 "Congress"
+ usa_congress_open_tt:0 "Open the House and Senate seating chart."
+ usa_congress_close_tt:0 "Close"
+ usa_house_seat_tt:0 "House · [GetUSACongressParty]"
+ usa_senate_seat_tt:0 "Senate · [GetUSACongressParty]"
+ usa_party_gop:0 "Republican (GOP)"
+ usa_party_dem:0 "Democrat"
+ usa_party_unknown:0 "Vacant"

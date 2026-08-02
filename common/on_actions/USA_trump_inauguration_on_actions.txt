@@ -19,6 +19,11 @@ on_actions = {
 					# here now live inside USA_apr_arm_system, so
 					# the starting numbers are tunable in one place
 					USA_apr_arm_system = yes
+
+					# Seed Congress (House/Senate/tribes/legitimacy),
+					# lay out the hemicycles and raise usa_ad_initialized
+					# so the Washington Scoreboard goes live.
+					USA_congress_initial = yes
 				}
 
 				# ---------- next president ----------
