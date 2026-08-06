@@ -10,7 +10,7 @@ Sizes and format are taken from the vanilla files, not guessed:
 Both are uncompressed 32-bit A8R8G8B8 with no mipmap chain, which is
 what this writes.
 
-Usage
+Usagee
 -----
     python make_event_dds.py photo.jpg report out.dds
     python make_event_dds.py photo.jpg news   out.dds

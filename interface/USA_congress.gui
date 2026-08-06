@@ -46,7 +46,7 @@ guiTypes = {
 			position = { x = 1002 y = 14 }
 			spriteType = "GFX_closebutton"
 			pdx_tooltip = "usa_congress_close_tt"
-			clicked_sound = "click_close"
+			clicksound = click_close
 		}
 
 		# ---------------- HOUSE (435 seats) ----------------

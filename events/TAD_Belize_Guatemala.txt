@@ -135,7 +135,6 @@ country_event = {
 	is_triggered_only = yes
 	option = { name = tad_bg.47.a }
 }
-}
 
 # Guatemala's ultimatum.
 country_event = {

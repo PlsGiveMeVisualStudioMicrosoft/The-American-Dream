@@ -284,4 +284,3 @@ TAD_BG_set_peten_forward_network = {
     set_country_flag = GUA_peten_forward_network_flag
     TAD_BG_refresh_GUA_state_modifiers = yes
 }
-}

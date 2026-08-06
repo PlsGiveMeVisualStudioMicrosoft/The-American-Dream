@@ -60,6 +60,10 @@ USA_congress_diagram_tick = {
 	USA_congress_refresh = yes
 }
 
+USA_congress_initial = {
+	USA_congress_diagram_tick = yes
+}
+
 # --------------------------------------------------------------
 #  FALLBACK SEEDER  (only fires on a bare install with no other
 #  Congress system - edit the starting numbers freely)
